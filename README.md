@@ -1,4 +1,4 @@
-# TildaTimeline
+# Tilda
 
 Tilda Johnson (NightShade) is an extraordinary genius, and extensively self-taught in genetics, biochemistry, cybernetics, robotics and physics. She also obtained a doctoral degree from an undisclosed university while in prison.
 
