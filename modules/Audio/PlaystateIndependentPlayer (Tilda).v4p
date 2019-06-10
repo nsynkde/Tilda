@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
-   <PATCH nodename="D:\repositories\TildaTimeline\modules\Audio\PlaystateIndependentPlayer (Tilda).v4p" scrollx="150" scrolly="5475" systemname="PlaystateIndependentPlayer (Tilda)" filename="E:\NSYNK\TildaTimeline\modules\Audio\PlaystateIndependentPlayer (Tilda).v4p" id="17">
+   <PATCH nodename="C:\Users\nsynk\Desktop\Tilda\modules\Audio\PlaystateIndependentPlayer (Tilda).v4p" scrollx="150" scrolly="5475" systemname="PlaystateIndependentPlayer (Tilda)" filename="E:\NSYNK\TildaTimeline\modules\Audio\PlaystateIndependentPlayer (Tilda).v4p" id="17">
    <BOUNDS type="Window" left="13635" top="2685" width="21210" height="14010">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="25" systemname="IOBox (Node)">
@@ -96,30 +96,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="Loop">
    </PIN>
    </NODE>
-   <NODE id="235" systemname="FileStream (VAudio)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.Nodes.dll" nodename="FileStream (VAudio)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="2532" top="14760" width="8805" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2532" top="14760" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
-   </BOUNDS>
-   <PIN pinname="Play" visible="1">
-   </PIN>
-   <PIN pinname="Volume" slicecount="1" visible="1" values="0.1">
-   </PIN>
-   <PIN pinname="Do Seek" visible="1">
-   </PIN>
-   <PIN pinname="Seek Time" visible="1">
-   </PIN>
-   <PIN pinname="Filename" visible="1">
-   </PIN>
-   <PIN pinname="Audio Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="235" srcpinname="Audio Out" dstnodeid="213" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="184" srcpinname="Y Output Value" dstnodeid="235" dstpinname="Loop">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="236" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="10170" top="13935" width="795" height="240">
    </BOUNDS>
@@ -132,8 +108,6 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    </NODE>
-   <LINK srcnodeid="236" srcpinname="Y Output Value" dstnodeid="235" dstpinname="Volume">
-   </LINK>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.7">
    </PACK>
    <NODE id="241" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
@@ -198,8 +172,6 @@
    </NODE>
    <LINK srcnodeid="243" srcpinname="Output" dstnodeid="242" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="242" srcpinname="Output" dstnodeid="235" dstpinname="Seek Time">
-   </LINK>
    <NODE systemname="FrameDifference (Animation)" nodename="FrameDifference (Animation)" componentmode="Hidden" id="247">
    <BOUNDS type="Node" left="6930" top="9600" width="100" height="100">
    </BOUNDS>
@@ -244,8 +216,6 @@
    </NODE>
    <LINK srcnodeid="244" srcpinname="Y Output Value" dstnodeid="245" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="245" srcpinname="Output" dstnodeid="235" dstpinname="Do Seek">
-   </LINK>
    <NODE systemname="GetPlayState (Tilda)" filename="..\..\vl\VVVV.Tilda.vvvv.vl" nodename="GetPlayState (Tilda)" componentmode="Hidden" id="248">
    <BOUNDS type="Node" left="5805" top="8370" width="100" height="100">
    </BOUNDS>
@@ -272,8 +242,6 @@
    <PIN pinname="Level dBs" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="235" srcpinname="Audio Out" dstnodeid="249" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="250" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="5400" top="17685" width="795" height="240">
    </BOUNDS>
@@ -340,8 +308,6 @@
    </NODE>
    <LINK srcnodeid="238" srcpinname="Output String" dstnodeid="255" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="255" srcpinname="Output" dstnodeid="235" dstpinname="Filename">
-   </LINK>
    <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="254" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="254" srcpinname="Output" dstnodeid="214" dstpinname="Input">
@@ -350,8 +316,6 @@
    </LINK>
    <LINK srcnodeid="240" srcpinname="Y Output Value" dstnodeid="252" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="252" srcpinname="Output" dstnodeid="235" dstpinname="Play">
-   </LINK>
    <LINK srcnodeid="248" srcpinname="TC" dstnodeid="251" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="251" srcpinname="Output" dstnodeid="247" dstpinname="Input">
@@ -359,5 +323,37 @@
    <LINK srcnodeid="253" srcpinname="Output" dstnodeid="243" dstpinname="Set">
    </LINK>
    <LINK srcnodeid="252" srcpinname="Output" dstnodeid="243" dstpinname="Input">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="256">
+   <BOUNDS type="Node" left="3750" top="11700" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="252" srcpinname="Output" dstnodeid="256" dstpinname="Input">
+   </LINK>
+   <NODE id="257" systemname="FileStream (VAudio)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.Nodes.dll" nodename="FileStream (VAudio)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="2532" top="14760" width="8805" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2532" top="14760" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="257" srcpinname="Audio Out" dstnodeid="213" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="184" srcpinname="Y Output Value" dstnodeid="257" dstpinname="Loop">
+   </LINK>
+   <LINK srcnodeid="236" srcpinname="Y Output Value" dstnodeid="257" dstpinname="Volume">
+   </LINK>
+   <LINK srcnodeid="257" srcpinname="Audio Out" dstnodeid="249" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="255" srcpinname="Output" dstnodeid="257" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="252" srcpinname="Output" dstnodeid="257" dstpinname="Play">
+   </LINK>
+   <LINK srcnodeid="256" srcpinname="Up Edge" dstnodeid="257" dstpinname="Do Seek">
    </LINK>
    </PATCH>

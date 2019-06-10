@@ -4336,6 +4336,7 @@
                   <Pin Id="IhifdIZRYVLO4i8MQUXuJT" Name="Preload" Kind="InputPin" />
                   <Pin Id="TA957kJY4otOtw1alxj8BH" Name="Clock" Kind="InputPin" />
                   <Pin Id="RtOslQ1iFXhOgO6DFf14m4" Name="Speed" Kind="InputPin" />
+                  <Pin Id="RSBHRkGx2mlP2kwXpdpgMp" Name="SourceDuration" Kind="InputPin" />
                   <Pin Id="CTy9SyhHzgqPHa0MGQ2txb" Name="Format File" Kind="OutputPin" />
                   <Pin Id="Pmg7j0Nd9TRMEcvNg9Yzbf" Name="Frame" Kind="OutputPin" />
                   <Pin Id="LN35M0rJUCZOtsf9xOmmkQ" Name="FrameNumber" Kind="OutputPin" />
@@ -4484,6 +4485,7 @@
           <Link Id="KAL7v6ACFBCPjlPdhVHSTe" Ids="VqvOfe9qdmlODfW3MdDgzL,BfCM8jCgy4sNAAvGN9p757" />
           <Link Id="HXGwtOg1P2aQOZxlQXvCaN" Ids="BfCM8jCgy4sNAAvGN9p757,RpoECupm4VwNIWpdFxSCeY" />
           <Link Id="LRk0YlSPtjYNNz9fJ7bcxM" Ids="BfCM8jCgy4sNAAvGN9p757,G4iQsnnQJtpNGUL7LVDDvs" />
+          <Link Id="VoPyjhwF5YiNGpdUScoRdC" Ids="KhcGgT2dfkCPV6ZJrw1bEU,RSBHRkGx2mlP2kwXpdpgMp" />
         </Patch>
       </Node>
       <!--
@@ -4683,7 +4685,6 @@
               <ControlPoint Id="DxtTDKQ9W9OPbxxpKXdRDU" Bounds="332,422" Alignment="Top" />
               <ControlPoint Id="PdKp6nPYC9uLRJjylrnRVb" Bounds="397,1258" Alignment="Bottom" />
               <ControlPoint Id="Jl9ZdywW6bMN376RyOlp9T" Bounds="842,1258" Alignment="Bottom" />
-              <ControlPoint Id="CFrfuUDoRO1L0Fze379M6j" Bounds="488,422" Alignment="Top" />
               <ControlPoint Id="OC5OYDzVCt1OCTQoxKGUkJ" Bounds="465,1258" Alignment="Bottom" />
             </Node>
             <Node Bounds="270,207,65,26" Id="TEKz3h0n8RPO8KZugav3Rg">
@@ -4739,12 +4740,12 @@
               <Pin Id="OyDST6p145xMbnY5Gv5I11" Name="Clock" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="NuPZ7x1JRoqNdxRAGlaiyY" Bounds="849,1659" />
-            <Pad Id="Mq2Xa6NwhoLPD7IlSGxqcB" SlotId="KytOMTMgWCZOX18OkjXCQv" Bounds="488,357">
-              <p:ValueBoxSettings />
-            </Pad>
             <Pad Id="DRemPZ2WFknL9LmFW7z65j" SlotId="KytOMTMgWCZOX18OkjXCQv" Bounds="465,1312">
               <p:ValueBoxSettings />
             </Pad>
+            <Pad Id="F5dGgRbEIj2Ow7UMpVoAYd" Comment="Has Changed" Bounds="197,1289,35,35" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="TqJ0LL50aOrNwczZighgZs" Comment="Has Changed" Bounds="173,424,35,35" ShowValueBox="true" isIOBox="true" />
+            <ControlPoint Id="IH7By85c6VYPSEmDE8j0O1" Bounds="968,1655" />
           </Canvas>
           <Patch Id="Ui8ueoL8HT6LTvRMCe9mEX" Name="Create" />
           <Patch Id="NEIcRg9cJECND0T4YoDdl6" Name="Update">
@@ -4764,6 +4765,7 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="Rli0weNnv0UL9I6PiINqXF" Name="SearchPattern" Kind="OutputPin" />
+            <Pin Id="MkR5gf7hVXaLfGKHkqjNy8" Name="FrameNumber" Kind="OutputPin" Bounds="968,1655" />
           </Patch>
           <ProcessDefinition Id="GkIPBpWdUw8NvGuACPzO5v">
             <Fragment Id="K89D8JXyTC9LRXk2PMImub" Patch="Ui8ueoL8HT6LTvRMCe9mEX" Enabled="true" />
@@ -4830,7 +4832,6 @@
             </p:TypeAnnotation>
           </Slot>
           <Link Id="TXjYtYrMZNnO5iYdpJ3zRC" Ids="F1aBYDuxavNOwTblZxtGFt,TaJoLNUJQ1VOMg2Na0J7hw" />
-          <Link Id="Of31MuQ3UxLNqPKglvhrop" Ids="Mq2Xa6NwhoLPD7IlSGxqcB,CFrfuUDoRO1L0Fze379M6j" />
           <Link Id="LlsheZokRcANN4vAT3tIxI" Ids="TaJoLNUJQ1VOMg2Na0J7hw,OC5OYDzVCt1OCTQoxKGUkJ" />
           <Link Id="ChLbk9tYEmROxICpG0nunt" Ids="OC5OYDzVCt1OCTQoxKGUkJ,DRemPZ2WFknL9LmFW7z65j" />
           <Link Id="GLxyasZRN6FQSzHXgn13IW" Ids="BpbeqB78asDLa5ebH5F7BK,U8u2q8QOKvqPrPvStDx9at" />
@@ -4839,6 +4840,10 @@
           <Link Id="Oax9ZfvdjDfO4k1mXwhL2l" Ids="FpLJr5Qx7wiLTvnHt7VEoN,LB9AXMRIwaoPyWKRsJqbWp" />
           <Link Id="AsodE5H8sTLQOOkH6KjiZe" Ids="LB9AXMRIwaoPyWKRsJqbWp,PdKp6nPYC9uLRJjylrnRVb" />
           <Link Id="RzSsi6VPrSgNWjoX84V5Mv" Ids="DRemPZ2WFknL9LmFW7z65j,IcG4XsdGONNPsz1iwCQkwk" />
+          <Link Id="PByycCe5m5EPD922X9L7n7" Ids="ChxH29XRBEIOLDVEWXznUc,F5dGgRbEIj2Ow7UMpVoAYd" />
+          <Link Id="MIFHzX3KyxoL7OLSLgjU8Y" Ids="VJRTOUPRlDMOm5UAVW0i79,TqJ0LL50aOrNwczZighgZs" />
+          <Link Id="Nvrzw1v27NcQGkLzca1p78" Ids="VIdWhg5KrdaLbfaEn1PCPT,IH7By85c6VYPSEmDE8j0O1" />
+          <Link Id="Dm48WxEQmCXNYUE5eLhhTg" Ids="IH7By85c6VYPSEmDE8j0O1,MkR5gf7hVXaLfGKHkqjNy8" IsHidden="true" />
         </Patch>
       </Node>
       <Overlay Id="O07n6UrviMgNXNXGF3A7pq" Name="Video" Bounds="744,610,293,180" />

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
-   <PATCH nodename="E:\NSYNK\TildaTimeline\modules\Audio\PlaystateDependentPlayer (Tilda).v4p" systemname="PlaystateDependentPlayer (Tilda)" filename="E:\NSYNK\TildaTimeline\modules\Audio\PlaystateDependentPlayer (Tilda).v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\nsynk\Desktop\Tilda\modules\Audio\PlaystateDependentPlayer (Tilda).v4p" systemname="PlaystateDependentPlayer (Tilda)" filename="E:\NSYNK\TildaTimeline\modules\Audio\PlaystateDependentPlayer (Tilda).v4p" scrollx="0" scrolly="0">
    <NODE id="0" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
    <BOUNDS type="Box" left="7236" top="3594" width="800" height="240">
    </BOUNDS>
@@ -19,9 +19,9 @@
    </PIN>
    </NODE>
    <NODE id="1" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4179" top="8187" width="800" height="240">
+   <BOUNDS type="Box" left="4164" top="8907" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4179" top="8187" width="0" height="0">
+   <BOUNDS type="Node" left="4164" top="8907" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -41,9 +41,9 @@
    </PIN>
    </NODE>
    <NODE id="3" systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="5198" top="7395" width="100" height="100">
+   <BOUNDS type="Node" left="5183" top="8115" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5198" top="7395" width="2000" height="2000">
+   <BOUNDS type="Box" left="5183" top="8115" width="2000" height="2000">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -182,14 +182,6 @@
    <PIN pinname="Audio Out" visible="1">
    </PIN>
    </NODE>
-   <NODE id="13" systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden">
-   <BOUNDS type="Node" left="5220" top="7005" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
    <NODE id="14" systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden">
    <BOUNDS type="Node" left="3705" top="3600" width="100" height="100">
    </BOUNDS>
@@ -201,9 +193,9 @@
    </PIN>
    </NODE>
    <NODE id="17" systemname="Meter (VAudio Sink)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.Nodes.dll" nodename="Meter (VAudio Sink)" componentmode="Hidden">
-   <BOUNDS type="Node" left="5205" top="8655" width="100" height="100">
+   <BOUNDS type="Node" left="5190" top="9375" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5205" top="8655" width="3000" height="3000">
+   <BOUNDS type="Box" left="5190" top="9375" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -253,9 +245,9 @@
    <LINK srcnodeid="14" srcpinname="Output" dstnodeid="2" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="3" srcpinname="Output 1" dstnodeid="2" dstpinname="Input 2" linkstyle="Bezier">
-   <LINKPOINT x="1540" y="7962">
+   <LINKPOINT x="1530" y="8442">
    </LINKPOINT>
-   <LINKPOINT x="1415" y="2853">
+   <LINKPOINT x="1410" y="3093">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Epsilon">
@@ -282,8 +274,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="12" dstpinname="Do Seek">
-   </LINK>
    <LINK srcnodeid="14" srcpinname="Output" dstnodeid="12" dstpinname="Seek Time">
    </LINK>
    <LINK srcnodeid="20" srcpinname="Output" dstnodeid="12" dstpinname="Volume">
@@ -293,9 +283,9 @@
    <NODE id="25" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Audio Out|">
    </PIN>
-   <BOUNDS type="Box" left="3744" top="9255" width="750" height="240">
+   <BOUNDS type="Box" left="3729" top="9975" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3744" top="9255" width="750" height="240">
+   <BOUNDS type="Node" left="3729" top="9975" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="12" srcpinname="Audio Out" dstnodeid="25" dstpinname="Input Node">
@@ -314,21 +304,17 @@
    </LINK>
    <LINK srcnodeid="12" srcpinname="Position" dstnodeid="1" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="3" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="12" srcpinname="Audio Out" dstnodeid="17" dstpinname="Input">
    </LINK>
    <NODE id="27" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Level dBs|">
    </PIN>
-   <BOUNDS type="Box" left="5205" top="9255" width="750" height="240">
+   <BOUNDS type="Box" left="5190" top="9975" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5205" top="9255" width="750" height="240">
+   <BOUNDS type="Node" left="5190" top="9975" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Level dBs" dstnodeid="27" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="12" srcpinname="Position" dstnodeid="13" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="12" srcpinname="Sample Rate" dstnodeid="6" dstpinname="Y Input Value">
    </LINK>
@@ -364,7 +350,7 @@
    </NODE>
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Input 4">
    </LINK>
-   <BOUNDS type="Window" left="4635" top="5985" width="12915" height="11565">
+   <BOUNDS type="Window" left="28290" top="16515" width="12915" height="12105">
    </BOUNDS>
    <PACK Name="addonpack" Version="38.1.0">
    </PACK>
@@ -438,6 +424,94 @@
    </NODE>
    <LINK srcnodeid="21" srcpinname="Playing" dstnodeid="36" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="36" srcpinname="Output" dstnodeid="12" dstpinname="Play">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="37">
+   <BOUNDS type="Box" left="4020" top="5865" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4020" top="5865" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="37" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="38">
+   <BOUNDS type="Node" left="5895" top="5895" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="38" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output" dstnodeid="38" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="12" dstpinname="Do Seek">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="39">
+   <BOUNDS type="Node" left="1500" top="2520" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="36" srcpinname="Output" dstnodeid="39" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output" dstnodeid="39" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="12" dstpinname="Play">
+   </LINK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="40">
+   <BOUNDS type="Node" left="0" top="0" width="450" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="0" width="450" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="gets">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="42">
+   <BOUNDS type="Node" left="4110" top="900" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="42" dstpinname="Input">
+   </LINK>
+   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="41">
+   <BOUNDS type="Node" left="5190" top="7635" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Position" dstnodeid="41" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Count" dstnodeid="41" dstpinname="Bin Size">
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Output" dstnodeid="3" dstpinname="Input 1">
    </LINK>
    </PATCH>
