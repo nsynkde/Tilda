@@ -3406,7 +3406,7 @@
                   <Pin Id="DOLnelqvITHPBkWw7na4Sh" Name="Variable" Kind="OutputPin" />
                   <Pin Id="Mgx1eXMozoxPmdqLFq3ZzI" Name="Category" Kind="OutputPin" />
                   <Pin Id="PH8mqYT2UgzM69W5XMGVsp" Name="InPoint" Kind="OutputPin" />
-                  <Pin Id="RR6bCyv4rsBNTnXujCaCEr" Name="OutPoint" Kind="OutputPin" />
+                  <Pin Id="RR6bCyv4rsBNTnXujCaCEr" Name="SourceDuration" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="316,1020,53,26" Id="LJkfQQqZIkRPNiT0jwx7L1">
                   <p:NodeReference LastCategoryFullName="System.Windows.Forms.Control" LastSymbolSource="System.Windows.Forms.dll">
@@ -4187,13 +4187,13 @@
                     <ControlPoint Id="D94tLhKkfdhLnLoo06xwoT" Bounds="1678,1666" />
                     <ControlPoint Id="F63rhqesPZBPoagIdBj5FU" Bounds="1595,1795" />
                     <Node Bounds="1593,1752,88,26" Id="T7HnPxc83i2M3gSBgw93rl">
-                      <p:NodeReference LastCategoryFullName="VL.Tilda.IClip" LastSymbolSource="VVVV.Tilda.Core.vl">
+                      <p:NodeReference>
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="SetOutPoint" />
+                        <Choice Kind="OperationCallFlag" Name="SetSourceDuration" />
                         <CategoryReference Kind="InterfaceTypeFlag" Name="IClip" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="HSBlltoW5GGPXzNCKR6oPQ" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="PB6meH28O5ePfVnWUyFBLo" Name="OutPoint" Kind="InputPin" />
+                      <Pin Id="PB6meH28O5ePfVnWUyFBLo" Name="SourceDuration" Kind="InputPin" />
                       <Pin Id="PhxPMbTWPF1MFJsWrmQmzm" Name="Output" Kind="StateOutputPin" />
                     </Node>
                     <Node Bounds="1676,1685,65,19" Id="TvGNakF8HFGO2kyxC8fNfA">
@@ -4207,7 +4207,7 @@
                     </Node>
                   </Patch>
                 </Node>
-                <Pad Id="REiW0jAOMo6QVys853IaJy" Comment="Name" Bounds="1392,1588,57,15" ShowValueBox="true" isIOBox="true" Value="OutPoint">
+                <Pad Id="REiW0jAOMo6QVys853IaJy" Comment="Name" Bounds="1392,1588,57,15" ShowValueBox="true" isIOBox="true" Value="SourceDuration">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -6410,7 +6410,7 @@
                   <Pin Id="UtWAOKFDQnZPCdC84AnqDX" Name="Variable" Kind="OutputPin" />
                   <Pin Id="QxCBDmIQDoQNxl4khtamhI" Name="Category" Kind="OutputPin" />
                   <Pin Id="UxEAs5LyNlaQVgykDjHQcm" Name="InPoint" Kind="OutputPin" />
-                  <Pin Id="SQyve7HfaDKL2tDWM4sKD6" Name="OutPoint" Kind="OutputPin" />
+                  <Pin Id="SQyve7HfaDKL2tDWM4sKD6" Name="SourceDuration" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="520,628,55,19" Id="TptEM1vj6uCLXS0GwTUFPZ">
                   <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
@@ -6613,7 +6613,7 @@
                   <Pin Id="TxWwCMtDgxuQd7F16aQbax" Name="Value" Kind="InputPin" />
                   <Pin Id="LpERzJQZjWXPMTtnHb7stL" Name="Output" Kind="OutputPin" />
                 </Node>
-                <Pad Id="IiFT6W6xlmlOMnellDRxaR" Comment="Key" Bounds="963,1201,35,15" ShowValueBox="true" isIOBox="true" Value="OutPoint">
+                <Pad Id="IiFT6W6xlmlOMnellDRxaR" Comment="Key" Bounds="963,1201,84,13" ShowValueBox="true" isIOBox="true" Value="SourceDuration">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>

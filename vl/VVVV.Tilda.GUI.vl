@@ -35,7 +35,7 @@
                 <CategoryReference Kind="Category" Name="Skia" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="15, 60, 1384, 1290">
+              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="72, 85, 1780, 1290">
                 <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                   <Choice Kind="TypeFlag" Name="Rectangle" />
                 </p:TypeAnnotation>
@@ -1224,7 +1224,7 @@
                 <Pin Id="LEGlRdOS85hM7utR9eHsec" Name="Variable" Kind="OutputPin" />
                 <Pin Id="Fd4Eho66ijzOv1c7O1Gvpo" Name="Category" Kind="OutputPin" />
                 <Pin Id="NnEpMYfBE9JQLupy0cPXzR" Name="InPoint" Kind="OutputPin" />
-                <Pin Id="GehCkFIsZq6MHgGdCuNwXe" Name="OutPoint" Kind="OutputPin" />
+                <Pin Id="GehCkFIsZq6MHgGdCuNwXe" Name="SourceDuration" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="UEtOeZYNgibP84u1phxs7L" Bounds="1114,693" />
               <ControlPoint Id="S6lCly1msKPN761GPWHT0A" Bounds="1394,148" />
@@ -2296,7 +2296,7 @@
                         <Pin Id="BfLq5Bg2LfjNfJHTZKtmte" Name="Variable" Kind="OutputPin" />
                         <Pin Id="O0X8R5nrvJjM6D1Exzj6bk" Name="Category" Kind="OutputPin" />
                         <Pin Id="PU5DhAPOPDNNAXJETqJNOY" Name="InPoint" Kind="OutputPin" />
-                        <Pin Id="FFIQS79xCHhP16rLuv9fdY" Name="OutPoint" Kind="OutputPin" />
+                        <Pin Id="FFIQS79xCHhP16rLuv9fdY" Name="SourceDuration" Kind="OutputPin" />
                       </Node>
                     </Patch>
                     <ControlPoint Id="FJOqMFiFsA8N0eekhx6lB3" Bounds="1029,1050" Alignment="Top" />
@@ -2339,7 +2339,7 @@
                         <Pin Id="Tpczm630YWJOr78zE0VZuz" Name="Variable" Kind="OutputPin" />
                         <Pin Id="FcvOgIru1h5QGiHORM76YI" Name="Category" Kind="OutputPin" />
                         <Pin Id="U4qyq3yTZPbOF861kobbO2" Name="InPoint" Kind="OutputPin" />
-                        <Pin Id="A2N9gOk686gLSU85G3NFyU" Name="OutPoint" Kind="OutputPin" />
+                        <Pin Id="A2N9gOk686gLSU85G3NFyU" Name="SourceDuration" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="1233,754,25,13" Id="JU2cjjDgOKQO51vLFSj7oy">
                         <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
@@ -3097,7 +3097,7 @@
                         <Pin Id="GdVkPPCb9hzNub7O3PYfOG" Name="Variable" Kind="OutputPin" />
                         <Pin Id="N16KCoCWzW0MHXliX8XHQB" Name="Category" Kind="OutputPin" />
                         <Pin Id="Tw13yvnkg7QLiwUTdWkQKD" Name="InPoint" Kind="OutputPin" />
-                        <Pin Id="Bc2jXLd84GmMfKnHP0Hdik" Name="OutPoint" Kind="OutputPin" />
+                        <Pin Id="Bc2jXLd84GmMfKnHP0Hdik" Name="SourceDuration" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="224,916,82,26" Id="IqYoQE0jwcfOdhffwmcD06">
                         <p:NodeReference LastCategoryFullName="VVVV.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.vl">
@@ -3273,7 +3273,7 @@
                         <Pin Id="SLda5WrvtLtLgNE40nktwT" Name="Variable" Kind="OutputPin" />
                         <Pin Id="MaqC3dQbhasPISuy14sjXX" Name="Category" Kind="OutputPin" />
                         <Pin Id="UHb5vFvZ9CRQEYGdeZnXR0" Name="InPoint" Kind="OutputPin" />
-                        <Pin Id="K7sOAM0KXa1QUdw2SIdai9" Name="OutPoint" Kind="OutputPin" />
+                        <Pin Id="K7sOAM0KXa1QUdw2SIdai9" Name="SourceDuration" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="704,910,82,26" Id="KBgBEmMMo3zQG1K8ppnF7J">
                         <p:NodeReference LastCategoryFullName="VVVV.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.vl">
@@ -3601,7 +3601,7 @@
                     <Pin Id="NoueAsg51HPL1vmFziCbHX" Name="Variable" Kind="OutputPin" />
                     <Pin Id="TMYFnYaIInZNt95A4BKwxH" Name="Category" Kind="OutputPin" />
                     <Pin Id="NoFJNaFQPLZNnBRyYMbtRy" Name="InPoint" Kind="OutputPin" />
-                    <Pin Id="P7Z7DjqD26COgRYITtUNiS" Name="OutPoint" Kind="OutputPin" />
+                    <Pin Id="P7Z7DjqD26COgRYITtUNiS" Name="SourceDuration" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="461,509,25,13" Id="QWkjSgaJ4IhPfStCKfQJ3m">
                     <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
@@ -3811,7 +3811,7 @@
                     <Pin Id="OaZgjCnt0pCLYit7bMRR5g" Name="Variable" Kind="OutputPin" />
                     <Pin Id="UgMN0d47EXcOYmalS0bwGj" Name="Category" Kind="OutputPin" />
                     <Pin Id="NV6iDYg2wORQbEglfO6Wlj" Name="InPoint" Kind="OutputPin" />
-                    <Pin Id="SgPMBa9FqIEOqNgNe9Oi4K" Name="OutPoint" Kind="OutputPin" />
+                    <Pin Id="SgPMBa9FqIEOqNgNe9Oi4K" Name="SourceDuration" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="519,593,25,13" Id="DhVODJyqHoHM0ZIaQlM9AD">
                     <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
@@ -8186,7 +8186,9 @@
                 <Pin Id="RJBkzDoRZbCMEF45cXPAvm" Name="Output" Kind="OutputPin" />
                 <Pin Id="HeSLKzKv8ndMybE7gBtYom" Name="TrimStart" Kind="OutputPin" />
                 <Pin Id="CHqVufv83h3LtT7zE4h3Mi" Name="TrimEnd" Kind="OutputPin" />
-                <Pin Id="AaQ8uhGVzzQOw7ap1I9OrG" Name="TrimStartAndHoldFade" Kind="OutputPin" />
+                <Pin Id="AaQ8uhGVzzQOw7ap1I9OrG" Name="TrimStartAndKeepMediaInPlace" Kind="OutputPin" />
+                <Pin Id="F3mlVjazxEdP7sMTajGrkk" Name="TrimStartAndHoldFade" Kind="OutputPin" />
+                <Pin Id="SxZ5l6zD545L4g3038fnqA" Name="TrimEndAndKeepMediaInPlace" Kind="OutputPin" />
                 <Pin Id="AMOAsO2gj6VPQhpVvfXkIY" Name="TrimEndAndHoldFade" Kind="OutputPin" />
                 <Pin Id="P2PiuK5DhASLknrSmMN3pu" Name="TrimIn" Kind="OutputPin" />
                 <Pin Id="R823CNvounMPCV9kLA78cR" Name="TrimOut" Kind="OutputPin" />
@@ -8221,7 +8223,7 @@
                 <Pin Id="D6vTIhcupD3OBgeuarWWHD" Name="Condition" Kind="InputPin" />
                 <Patch Id="IvW7gUdxdfEN5EO1ll7tgh" ManuallySortedPins="true">
                   <Slot Id="CTkF4vskUPZNmhC4pcwDLk" Name="Dragging" />
-                  <Node Bounds="-248,324,1218,627" Id="CJeRMKIv7Q4OsHmWSjs8oR">
+                  <Node Bounds="-248,324,1272,802" Id="CJeRMKIv7Q4OsHmWSjs8oR">
                     <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
@@ -8575,6 +8577,72 @@
                         <Pin Id="LuFxxRTDHKILR9r1MlVZBy" Name="Input" Kind="StateInputPin" />
                         <Pin Id="FmES8LUM5gnLPruWJIqJnE" Name="Output" Kind="StateOutputPin" />
                       </Node>
+                      <Node Bounds="603,964,171,142" Id="URpKhQrGXI9NXyHb6MRCKG">
+                        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                          <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                          <FullNameCategoryReference ID="Primitive" />
+                        </p:NodeReference>
+                        <Pin Id="JlBThTRqri6QXaMctpUi8Z" Name="Condition" Kind="InputPin" />
+                        <Patch Id="UbxYqhcvFKmL5ARZwue7iJ" ManuallySortedPins="true">
+                          <Patch Id="MtZMJY7X2qKNqj91SAP0YN" Name="Create" ManuallySortedPins="true" />
+                          <Patch Id="HyGCXZ4WL0YMWIVEWKzBAa" Name="Then" ManuallySortedPins="true" />
+                          <Node Bounds="616,998,146,26" Id="MqNohyj2nNBNLgvNz98q9I">
+                            <p:NodeReference>
+                              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                              <CategoryReference Kind="ClassType" Name="ClipOperation" NeedsToBeDirectParent="true" />
+                              <Choice Kind="OperationCallFlag" Name="TrimStartAndKeepMediaInPlace" />
+                            </p:NodeReference>
+                            <Pin Id="Q2P2xcVGsXlLDFsVkTWz8g" Name="Input" Kind="StateInputPin" />
+                            <Pin Id="HvyHvEWoZMcQAEwleyFCAF" Name="Output" Kind="OutputPin" />
+                            <Pin Id="Rzq123JnHPWLKdQhwGgDvb" Name="TildaClip" Kind="StateOutputPin" />
+                          </Node>
+                          <Node Bounds="680,1051,82,26" Id="SbAEO2HekanNSyo1nKOttZ">
+                            <p:NodeReference LastCategoryFullName="VL.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
+                              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                              <Choice Kind="OperationCallFlag" Name="SetClip" />
+                            </p:NodeReference>
+                            <Pin Id="U0J3xuLn0UsLRDbMw0jNY4" Name="Input" Kind="StateInputPin" />
+                            <Pin Id="Nxc5XQQ4kyYPLe80rXlsHi" Name="Clip" Kind="InputPin" />
+                            <Pin Id="DNTBFHjt2odPrKYMJ8wSdz" Name="Output" Kind="StateOutputPin" />
+                          </Node>
+                        </Patch>
+                        <ControlPoint Id="QcrfczzeSO0OWn0OTKCs4X" Bounds="619,970" Alignment="Top" />
+                        <ControlPoint Id="HEWvNfBXRkONKDI2LuGV4v" Bounds="617,1100" Alignment="Bottom" />
+                      </Node>
+                      <Node Bounds="829,959,183,142" Id="LrAUdLbWvj2QGXH9jtxvEE">
+                        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                          <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                          <FullNameCategoryReference ID="Primitive" />
+                        </p:NodeReference>
+                        <Pin Id="CLVOotEQVHpNS15jV35NWP" Name="Condition" Kind="InputPin" />
+                        <Patch Id="GlzII72UOsHOepd6tglNxv" ManuallySortedPins="true">
+                          <Patch Id="ULs6a0joloSO5ZqWWqG6RV" Name="Create" ManuallySortedPins="true" />
+                          <Patch Id="J0nP7Z2qV82NNlfBNStCnl" Name="Then" ManuallySortedPins="true" />
+                          <Node Bounds="842,993,158,26" Id="HbFkPbMTXaSL1eUI0hYzi5">
+                            <p:NodeReference LastCategoryFullName="VL.Tilda.ClipOperation" LastSymbolSource="VVVV.Tilda.Core.vl">
+                              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                              <CategoryReference Kind="ClassType" Name="ClipOperation" NeedsToBeDirectParent="true" />
+                              <Choice Kind="OperationCallFlag" Name="TrimEndAndKeepMediaInPlace" />
+                            </p:NodeReference>
+                            <Pin Id="CvBSr1XOuJ9NMXCVTuwAD2" Name="Input" Kind="StateInputPin" />
+                            <Pin Id="UX5IpxqBvLvNRHVXVVO4Q7" Name="Output" Kind="OutputPin" />
+                            <Pin Id="MKHB88AVKTwOhzwgPY7zxx" Name="TildaClip" Kind="StateOutputPin" />
+                          </Node>
+                          <Node Bounds="906,1046,82,26" Id="UBFznF0yX8SMSiBq6HNrvI">
+                            <p:NodeReference LastCategoryFullName="VL.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
+                              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                              <Choice Kind="OperationCallFlag" Name="SetClip" />
+                            </p:NodeReference>
+                            <Pin Id="QqPJPQtZXfkQAbFTC0kDlx" Name="Input" Kind="StateInputPin" />
+                            <Pin Id="EPkoZY8vlI9LDWbZBMLOH3" Name="Clip" Kind="InputPin" />
+                            <Pin Id="JUMfdPhJ9fjLGz6FSjAJRL" Name="Output" Kind="StateOutputPin" />
+                          </Node>
+                        </Patch>
+                        <ControlPoint Id="U1cCpuKgSUEOFJwUbRLSF5" Bounds="845,965" Alignment="Top" />
+                        <ControlPoint Id="HuEmdWzjB0XMoHISYrNZh7" Bounds="843,1095" Alignment="Bottom" />
+                      </Node>
                     </Patch>
                     <ControlPoint Id="Q2kgUNOQ7jfQYrBnbPfNEy" Bounds="-107,330" Alignment="Top" />
                   </Node>
@@ -8902,6 +8970,7 @@
                 <Pin Id="OlAt9wuII0sLbTHh2IPEx7" Name="Input" Kind="StateInputPin" />
                 <Pin Id="H6CLwsNUzuoMIG7x2eE6AC" Name="State" Kind="OutputPin" />
               </Node>
+              <Pad Id="KBf0hvIRZGVL31amxLwRmx" Comment="TrimStart" Bounds="1077,156,35,35" ShowValueBox="true" isIOBox="true" />
             </Canvas>
             <Patch Id="U9gHB1KoK4NPpZGw5pS860" Name="Create" />
             <Patch Id="GcLVOz6MhYTMn3tcpjNSjc" Name="Update" ParticipatingElements="C4hQ1WaMzj7Og8HGtTUfBP,MjHKVQBfRCzOIaon6WDJFY">
@@ -9089,9 +9158,22 @@
             <Link Id="DZfspHU17SCQXUdtJSRsAB" Ids="TCSUeily8BXLqfuR8ylLEn,AOMmyHdG9QuOhG9BdhjFEJ" />
             <Link Id="SA1novllJ7SPYs16qP7Szw" Ids="HeSLKzKv8ndMybE7gBtYom,Q6rY1CJ4uPkPwor3KTzFmH" />
             <Link Id="C1tQwgjHKE2PsZSCN5LM26" Ids="CHqVufv83h3LtT7zE4h3Mi,HB6dLjNOuJjM7VvLqTdchf" />
-            <Link Id="FEKRE2RYawwPymCU2myVdK" Ids="AaQ8uhGVzzQOw7ap1I9OrG,T8TSgqTe2eoM8MScUobqjm" />
             <Link Id="UUhy73Y5N3iODhY4261IZo" Ids="AMOAsO2gj6VPQhpVvfXkIY,VgAX0AiU1vNMVnXT3TQUvV" />
             <Link Id="I4VY6eq3bqMO6y33k5CQbD" Ids="B9j6jn6iUbENGrGNtkL1Zn,K1YPnodekGfPlEsrnZfDTa" />
+            <Link Id="NZkyeUFPUlrPa0Rrs2HXkL" Ids="QcrfczzeSO0OWn0OTKCs4X,HEWvNfBXRkONKDI2LuGV4v" IsFeedback="true" />
+            <Link Id="BgJm3ACGYmLOTQxGAICx93" Ids="QcrfczzeSO0OWn0OTKCs4X,Q2P2xcVGsXlLDFsVkTWz8g" />
+            <Link Id="RWQDPFbiDIPMAi6Ytb4n8p" Ids="Rzq123JnHPWLKdQhwGgDvb,Nxc5XQQ4kyYPLe80rXlsHi" />
+            <Link Id="M16KA4H2vHbQMFSbbZ4ePI" Ids="MZDIKSxjH5tPw2YeyfSLJw,QcrfczzeSO0OWn0OTKCs4X" />
+            <Link Id="Pf8w5P4VNHoOAld9y54N8i" Ids="TXnrjwtAgC4O2TMCGBQPS0,U0J3xuLn0UsLRDbMw0jNY4" />
+            <Link Id="EjmBzdOZv1EP8S1kKB08gQ" Ids="F3mlVjazxEdP7sMTajGrkk,T8TSgqTe2eoM8MScUobqjm" />
+            <Link Id="MF4GQ6nefW0QdOwasbcuhO" Ids="AaQ8uhGVzzQOw7ap1I9OrG,JlBThTRqri6QXaMctpUi8Z" />
+            <Link Id="VqpwRfPwnP3NdtBnI1ZFkp" Ids="F3mlVjazxEdP7sMTajGrkk,KBf0hvIRZGVL31amxLwRmx" />
+            <Link Id="Ez45CUh6oL5Lg0Wo7A3JTv" Ids="U1cCpuKgSUEOFJwUbRLSF5,HuEmdWzjB0XMoHISYrNZh7" IsFeedback="true" />
+            <Link Id="TFaymFr9rDzON3edwf67Mx" Ids="U1cCpuKgSUEOFJwUbRLSF5,CvBSr1XOuJ9NMXCVTuwAD2" />
+            <Link Id="NG2z9kcOYN4PYH2abVX44o" Ids="MKHB88AVKTwOhzwgPY7zxx,EPkoZY8vlI9LDWbZBMLOH3" />
+            <Link Id="QOfAUDcA5EHLThPlbNRyk1" Ids="TXnrjwtAgC4O2TMCGBQPS0,QqPJPQtZXfkQAbFTC0kDlx" />
+            <Link Id="Fawwa0zBknbNgDfKbv9IJ5" Ids="MZDIKSxjH5tPw2YeyfSLJw,U1cCpuKgSUEOFJwUbRLSF5" />
+            <Link Id="OyDzC2uLWVXMSgr38vowZV" Ids="SxZ5l6zD545L4g3038fnqA,CLVOotEQVHpNS15jV35NWP" />
           </Patch>
         </Node>
         <!--
@@ -9669,7 +9751,7 @@
                   <Choice Kind="ProcessAppFlag" Name="KeyMatch" />
                 </p:NodeReference>
                 <Pin Id="LbNfL5aWKttQZnjm9Av3dw" Name="Keys" Kind="InputPin" />
-                <Pin Id="UhcM9WvjmBXOCDrImGGxsm" Name="Key Name" Kind="InputPin" DefaultValue="ControlKey">
+                <Pin Id="UhcM9WvjmBXOCDrImGGxsm" Name="Key Name" Kind="InputPin" DefaultValue="Menu">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -9685,6 +9767,7 @@
                 </p:NodeReference>
                 <Pin Id="OXPu4L4ngsxMzbuN9Izl5l" Name="Input" Kind="StateInputPin" />
                 <Pin Id="FSr8jwFX0MzLWHLtkhDL54" Name="Input 2" Kind="InputPin" />
+                <Pin Id="KUdsGPB5GRmNuxAU3b49HE" Name="Input 3" Kind="InputPin" />
                 <Pin Id="VZKVktWqkgEQKGJXzzQKle" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="581,1034,37,19" Id="K2fLdcr2VHILDyIdT0Wnta">
@@ -9704,6 +9787,7 @@
                 </p:NodeReference>
                 <Pin Id="Rij31Udl7WbPoi71IOsN0o" Name="Input" Kind="StateInputPin" />
                 <Pin Id="DUKYLe6lQKrPKjWjxeLG4q" Name="Input 2" Kind="InputPin" />
+                <Pin Id="PPrbA7XxUQNNWKkSFVliKR" Name="Input 3" Kind="InputPin" />
                 <Pin Id="S8ZqJVzeyv4OOyx1IFZ9qy" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="1208,1198,37,19" Id="GS3n6v5e3r8LGw2lcvMhXR">
@@ -9714,6 +9798,7 @@
                 </p:NodeReference>
                 <Pin Id="MvOVWD3obQsLU6pSdxqoTZ" Name="Input" Kind="StateInputPin" />
                 <Pin Id="D9kWk3vUKsIN1jBuXPk6l1" Name="Input 2" Kind="InputPin" />
+                <Pin Id="IaPdjk9NZ4rLyJumyrCoNg" Name="Input 3" Kind="InputPin" />
                 <Pin Id="Ih5McLml7WqPW9QYSjMYz5" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="1289,1198,37,19" Id="P5a0sn7QjF4LqfZklUhcez">
@@ -9724,10 +9809,55 @@
                 </p:NodeReference>
                 <Pin Id="EnwNCUWxCs9OiKk0d2jJI1" Name="Input" Kind="StateInputPin" />
                 <Pin Id="MV8TmclPOTcPfX64PapaXm" Name="Input 2" Kind="InputPin" />
+                <Pin Id="ChoFet9c7IWLovfN6pFzyk" Name="Input 3" Kind="InputPin" />
                 <Pin Id="LfMj83SW2N7LeQwQIUH0mj" Name="Output" Kind="StateOutputPin" />
               </Node>
               <ControlPoint Id="ADh6gvmcZJPNrk1bIS5tHM" Bounds="1211,1265" />
               <ControlPoint Id="HwycfpGuI8SOnS7jFBS2QQ" Bounds="1349,1265" />
+              <Node Bounds="503,888,70,19" Id="URcr8Tec2iYLaoJ7Ti0oqY">
+                <p:NodeReference LastCategoryFullName="IO.Keyboard" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="KeyMatch" />
+                </p:NodeReference>
+                <Pin Id="A6u3gjcWRcOOz7O4jNOR4q" Name="Keys" Kind="InputPin" />
+                <Pin Id="GVwC2dtSIIVPlMrUeTEePT" Name="Key Name" Kind="InputPin" DefaultValue="ControlKey">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="NxkreLlxKoKOwZhgdxz0L0" Name="Is Down" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="Shz0d6oQShCO4tQ6JQZMxQ" Bounds="1143,1439" />
+              <Node Bounds="1144,1375,37,19" Id="Ul4EOXYkZYSO8tLboWrehM">
+                <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="AND" />
+                  <CategoryReference Kind="BooleanType" Name="Boolean" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="QURB1TxYp1cP4jh2q1LPJZ" Name="Input" Kind="StateInputPin" />
+                <Pin Id="O21sS9vAb12PzDvk2oqIOK" Name="Input 2" Kind="InputPin" />
+                <Pin Id="JhgCvapWIX7Oi4WSBd7bb2" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="520,1037,37,19" Id="LfdFKF1Gg25Mv4vJ6R6p1H">
+                <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="NOT" />
+                  <CategoryReference Kind="BooleanType" Name="Boolean" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="T8d6sMqyRrOLnle8CoSDtl" Name="Input" Kind="StateInputPin" />
+                <Pin Id="TnyUaGrUW6NOYXsMIT9skN" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <ControlPoint Id="CMWy08wLIIXOXLvfSzLZGU" Bounds="1275,1463" />
+              <Node Bounds="1267,1379,37,19" Id="J8yznLV0E8mOwrSVuKUF4K">
+                <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="AND" />
+                  <CategoryReference Kind="BooleanType" Name="Boolean" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="E5xYWU7SiXNPJhiCuoukUH" Name="Input" Kind="StateInputPin" />
+                <Pin Id="HapT5Fd6CQ6PLXpuoeLV29" Name="Input 2" Kind="InputPin" />
+                <Pin Id="P3whHVzaqKsLX5Vw3gBOUV" Name="Output" Kind="StateOutputPin" />
+              </Node>
             </Canvas>
             <Patch Id="Tx8DJKmpNi6M0WkTQj9Aqs" Name="Create" />
             <Patch Id="ETOUHtnYMeKNWxVY5yLgyj" Name="Update" ParticipatingElements="KWCjhdaIc7JPExUIqgDP49,SfIciu2pv4mMUbCEesbgBC">
@@ -9738,8 +9868,10 @@
               <Pin Id="U6K1M267Na5QN9VlrXbjbE" Name="TrimStart" Kind="OutputPin" Bounds="1050,1201" />
               <Pin Id="PvDZYOJH4Z9MXgETgKEPVY" Name="MousePosition" Kind="InputPin" />
               <Pin Id="Uffv6YVYz5ZQWI94s51Wsr" MergeId="647836" Name="TrimEnd" Kind="OutputPin" Bounds="1050,1201" />
+              <Pin Id="Rmv2RAm6xXbNbR0qkAVrwy" Name="TrimStartAndKeepMediaInPlace" Kind="OutputPin" />
               <Pin Id="JBQquDL0bLFMuH5Brr9xCV" Name="TrimStartAndHoldFade" Kind="OutputPin" />
               <Pin Id="FYQvJ1QHj04NrCSNZUCKFR" Name="LeftButton" Kind="InputPin" Bounds="1428,313" />
+              <Pin Id="CgJ4kbV1aO1OykWfQmfUGr" MergeId="111922" Name="TrimEndAndKeepMediaInPlace" Kind="OutputPin" />
               <Pin Id="AtBOPBQEylFO4CGgRjbnds" Name="TrimEndAndHoldFade" Kind="OutputPin" />
               <Pin Id="F4qbeK5Uj57LbmfFFz3fjj" Name="TrimIn" Kind="OutputPin" Bounds="1050,1201" />
               <Pin Id="Rnjfn2aiaPmNx40ATZKNrN" Name="TrimOut" Kind="OutputPin" Bounds="1050,1201" />
@@ -9863,6 +9995,20 @@
             <Link Id="PAMzseCWIpRL3kZT19v0iR" Ids="Ih5McLml7WqPW9QYSjMYz5,ADh6gvmcZJPNrk1bIS5tHM" />
             <Link Id="MqO3nhdluLaMrYt8TP4Iex" Ids="HwycfpGuI8SOnS7jFBS2QQ,AtBOPBQEylFO4CGgRjbnds" IsHidden="true" />
             <Link Id="QBOfGd4FcAaM8M7kyLjSMS" Ids="LfMj83SW2N7LeQwQIUH0mj,HwycfpGuI8SOnS7jFBS2QQ" />
+            <Link Id="O3DYYz1jOuVNATPBLJJLA9" Ids="QlArRLW5h47QUGQMc9qI4x,A6u3gjcWRcOOz7O4jNOR4q" />
+            <Link Id="OsB6AXNw9UFNGL0gCkPGXT" Ids="Shz0d6oQShCO4tQ6JQZMxQ,Rmv2RAm6xXbNbR0qkAVrwy" IsHidden="true" />
+            <Link Id="UtppmwzDinyNG81sICTE0P" Ids="QSIsciE8PgrLOZyIVNZQOl,QURB1TxYp1cP4jh2q1LPJZ" />
+            <Link Id="TnyL4p823UqMLkzGYAKtz7" Ids="NxkreLlxKoKOwZhgdxz0L0,O21sS9vAb12PzDvk2oqIOK" />
+            <Link Id="BwMzBKgstamL9xcFX7wN2E" Ids="JhgCvapWIX7Oi4WSBd7bb2,Shz0d6oQShCO4tQ6JQZMxQ" />
+            <Link Id="DtB6Ku9fKOnLbkV68xZCtJ" Ids="NxkreLlxKoKOwZhgdxz0L0,T8d6sMqyRrOLnle8CoSDtl" />
+            <Link Id="Jt2oCGSBrDDLtwybXedjdM" Ids="TnyUaGrUW6NOYXsMIT9skN,KUdsGPB5GRmNuxAU3b49HE" />
+            <Link Id="ORPtxJtVBrZO4ExxLTTaDK" Ids="TnyUaGrUW6NOYXsMIT9skN,PPrbA7XxUQNNWKkSFVliKR" />
+            <Link Id="BVtR8B9vIBtNp1LNq5vaAN" Ids="TnyUaGrUW6NOYXsMIT9skN,IaPdjk9NZ4rLyJumyrCoNg" />
+            <Link Id="KcoSuy5U6ZhN5fFnDGdH4F" Ids="TnyUaGrUW6NOYXsMIT9skN,ChoFet9c7IWLovfN6pFzyk" />
+            <Link Id="USIlrmWNq6VMbR3FbKMG6N" Ids="CMWy08wLIIXOXLvfSzLZGU,CgJ4kbV1aO1OykWfQmfUGr" IsHidden="true" />
+            <Link Id="DAivoolpfRnNIxr0szKtxe" Ids="P3whHVzaqKsLX5Vw3gBOUV,CMWy08wLIIXOXLvfSzLZGU" />
+            <Link Id="HNn23e5ttBsOB3AWZTYmQW" Ids="NxkreLlxKoKOwZhgdxz0L0,HapT5Fd6CQ6PLXpuoeLV29" />
+            <Link Id="QdqCTptJiKmLQ786wTBgpO" Ids="RBGCzrczfmJL3WGV6FqQom,E5xYWU7SiXNPJhiCuoukUH" />
           </Patch>
         </Node>
         <!--
@@ -13007,7 +13153,7 @@
                             <Pin Id="SH2lUJ1fMqwN2GHgLWI1Fl" Name="Variable" Kind="OutputPin" />
                             <Pin Id="TpHIM6RX6JaOyGdV93dFLI" Name="Category" Kind="OutputPin" />
                             <Pin Id="H7pixqkN7zjPSmfJ0FbQ5F" Name="InPoint" Kind="OutputPin" />
-                            <Pin Id="AXaHf6STQvYPAegDnNHKqk" Name="OutPoint" Kind="OutputPin" />
+                            <Pin Id="AXaHf6STQvYPAegDnNHKqk" Name="SourceDuration" Kind="OutputPin" />
                           </Node>
                           <Node Bounds="922,1114,72,19" Id="QrsxxSYbf0EPdqYy5NPkr8">
                             <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
@@ -13587,7 +13733,7 @@
                     <Pin Id="KioYiXCTK5pLv6gMxCL0zm" Name="Break" Kind="OutputPin" />
                     <Patch Id="BIRldajaOZgMOMvQx8SMZS" ManuallySortedPins="true">
                       <Patch Id="Srfz7FcNxvwMUnmqPm78Jw" Name="Create" ManuallySortedPins="true" />
-                      <Patch Id="AO7ABLO8LA1QafrRTvmhSU" Name="Update" ParticipatingElements="BQpOkOcl4z7QbjSV4N2Zw6,GB5cZytSAlWMXo5HP0vlwr,Mp9QHfwXmGNOvNwJKmSkn8,N9Veqp7ZKLwPQmaT7Hhd2z,RTfuFnku32gLH6n6mXh29O,VHq96NnBMBKNU5lsdo1VLE,PHbxocvrplOMmdnUHSRez0,TpPPIa4YhHLQUoufZdxZZN,O3Ey5kAyqrFNaHBe8Jj7qB,DNu7Kab47HBM0Yw9CfAOfI,OHVxcBV4yvxNDyZUTGWfY9,KTmRsQSwTLqOBgeeVSC8kR,V5ksiD0ftI2NkDDT0w2Rjl,UJFT4kcYI6VOFtaFUzGTvh,JCktzLZrWs0MJVxZDvR4PZ,CWfd2KS5RYeNNEh0y4KalC,FLYhqAGfdWRMysOVlPPinw,AuCtXw2nv2KLFbmcyw1jqa,NQLNHPpV5RFNRckRtbokjk,B2eWWHR3PtyM2GHXPjJs17,OPYUZeY927IOwjUeD3hCHE,GLuVwz2T9nAOVtN1zUVbZ1,RIUglFvgohdNBgBpUG6Psf,F9PkTIoTGCELLLYKb3GXgr,NTA0PxFGsP2OvGlE5eLhb5,UqYUVcuxRL8QUXuSWV0zwH,HjOVnCru0ubPB431zai0RO,E8nfXLlxUqqPopar9K4VvL,TpjZio1sMNHQdufeJCytzo,OoTMlDekRaUQIRyZKaDaCH,Ca431FX2mcAPggowJXmoyH,AnF6t0hSPb8NjzH4rIHuD3,GlBhdF89xW1LgnKdxuEbcR,RxTO1EHC3aCOeLyFrnguGQ,N2N47I90p4hNW0njIDBhZz" ManuallySortedPins="true">
+                      <Patch Id="AO7ABLO8LA1QafrRTvmhSU" Name="Update" ParticipatingElements="BQpOkOcl4z7QbjSV4N2Zw6,GB5cZytSAlWMXo5HP0vlwr,Mp9QHfwXmGNOvNwJKmSkn8,N9Veqp7ZKLwPQmaT7Hhd2z,RTfuFnku32gLH6n6mXh29O,VHq96NnBMBKNU5lsdo1VLE,PHbxocvrplOMmdnUHSRez0,TpPPIa4YhHLQUoufZdxZZN,O3Ey5kAyqrFNaHBe8Jj7qB,DNu7Kab47HBM0Yw9CfAOfI,OHVxcBV4yvxNDyZUTGWfY9,KTmRsQSwTLqOBgeeVSC8kR,UJFT4kcYI6VOFtaFUzGTvh,CWfd2KS5RYeNNEh0y4KalC,FLYhqAGfdWRMysOVlPPinw,AuCtXw2nv2KLFbmcyw1jqa,NQLNHPpV5RFNRckRtbokjk,B2eWWHR3PtyM2GHXPjJs17,OPYUZeY927IOwjUeD3hCHE,GLuVwz2T9nAOVtN1zUVbZ1,RIUglFvgohdNBgBpUG6Psf,F9PkTIoTGCELLLYKb3GXgr,NTA0PxFGsP2OvGlE5eLhb5,UqYUVcuxRL8QUXuSWV0zwH,HjOVnCru0ubPB431zai0RO,E8nfXLlxUqqPopar9K4VvL,TpjZio1sMNHQdufeJCytzo,OoTMlDekRaUQIRyZKaDaCH,Ca431FX2mcAPggowJXmoyH,AnF6t0hSPb8NjzH4rIHuD3,GlBhdF89xW1LgnKdxuEbcR,RxTO1EHC3aCOeLyFrnguGQ,N2N47I90p4hNW0njIDBhZz" ManuallySortedPins="true">
                         <Pin Id="OQAE2QnFvHONNfhRwTTygR" Name="Height" Kind="InputPin" DefaultValue="30">
                           <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                             <Choice Kind="TypeFlag" Name="Integer32" />
@@ -13715,7 +13861,7 @@
                           <Choice Kind="TypeFlag" Name="Vector2" />
                         </p:TypeAnnotation>
                       </Pad>
-                      <Node Bounds="545,909,92,19" Id="BQpOkOcl4z7QbjSV4N2Zw6">
+                      <Node Bounds="545,1228,92,19" Id="BQpOkOcl4z7QbjSV4N2Zw6">
                         <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
@@ -13725,7 +13871,7 @@
                         <Pin Id="Rm02gd4xrNWLEi4juNSZ8u" Name="Y" Kind="InputPin" />
                         <Pin Id="PbDtlOABQhQNZV9PW9JdI8" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="897,909,99,19" Id="GB5cZytSAlWMXo5HP0vlwr">
+                      <Node Bounds="911,1101,99,19" Id="GB5cZytSAlWMXo5HP0vlwr">
                         <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
@@ -13796,7 +13942,7 @@
                         <Pin Id="AT7mJ1nPcA4MUdnAbz35fV" Name="Variable" Kind="OutputPin" />
                         <Pin Id="AcJftDERKQoNjweo1kQSHt" Name="Category" Kind="OutputPin" />
                         <Pin Id="AvSCt5JiG8OLnVMiWAZUGt" Name="InPoint" Kind="OutputPin" />
-                        <Pin Id="JE5d6SEVOsKPQGBNKQMUJN" Name="OutPoint" Kind="OutputPin" />
+                        <Pin Id="JE5d6SEVOsKPQGBNKQMUJN" Name="SourceDuration" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="990,720,72,19" Id="O3Ey5kAyqrFNaHBe8Jj7qB">
                         <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
@@ -14207,7 +14353,7 @@
                       </Pad>
                       <Pad Id="C1TVlSzF4L6NWkyaJlfKE1" Comment="X" Bounds="1312,1026,35,15" ShowValueBox="true" isIOBox="true" />
                       <Pad Id="F5XTCItNruLPIhrExzJjbc" Comment="ScaleX" Bounds="1455,963,35,15" ShowValueBox="true" isIOBox="true" />
-                      <Pad Id="RR4MMIGHgClModxqd0omZy" Comment="ScaleY" Bounds="1459,1016,35,15" ShowValueBox="true" isIOBox="true" />
+                      <Pad Id="RR4MMIGHgClModxqd0omZy" Comment="ScaleY" Bounds="1492,996,35,15" ShowValueBox="true" isIOBox="true" />
                       <Pad Id="DJpVShBbAmCNOh3ch9uSrv" Comment="ViewZoom" Bounds="1649,1015,35,15" ShowValueBox="true" isIOBox="true" />
                       <Pad Id="BLMjlk06sUMQI66mRkG1zw" Comment="CategoryColor" Bounds="1645,963,136,15" ShowValueBox="true" isIOBox="true" />
                       <Pad Id="NAhLQtyu8DQLs8EAACS57i" Comment="FadeOut" Bounds="1545,1021,35,15" ShowValueBox="true" isIOBox="true" />
@@ -14293,7 +14439,7 @@
                         </Pin>
                         <Pin Id="Vq9WW6zEc3zPGKNfk3emyL" Name="Output" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="1310,907,25,19" Id="E8nfXLlxUqqPopar9K4VvL">
+                      <Node Bounds="545,1111,25,19" Id="E8nfXLlxUqqPopar9K4VvL">
                         <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="*" />
@@ -14302,7 +14448,7 @@
                         <Pin Id="HZyDOJK8XiMPMehpt07kmo" Name="Input 2" Kind="InputPin" />
                         <Pin Id="DjJJMrfVnynNb0QTcdJQBM" Name="Output" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="1310,956,25,19" Id="TpjZio1sMNHQdufeJCytzo">
+                      <Node Bounds="545,1160,25,19" Id="TpjZio1sMNHQdufeJCytzo">
                         <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="+" />
@@ -14311,7 +14457,7 @@
                         <Pin Id="Euvq8MpCLt7O914BYImzKR" Name="Input 2" Kind="InputPin" />
                         <Pin Id="SqWYE35b8OXMH2Ia99dn7f" Name="Output" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="1310,828,72,19" Id="OoTMlDekRaUQIRyZKaDaCH">
+                      <Node Bounds="545,1032,72,19" Id="OoTMlDekRaUQIRyZKaDaCH">
                         <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="ToFloat32" />
@@ -14319,10 +14465,10 @@
                         <Pin Id="Bgf4ad5OQpTLraJigWGDxH" Name="Input" Kind="InputPin" />
                         <Pin Id="FnwXMDAz2xKLeH8k997pB2" Name="Result" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="1308,774,25,19" Id="HbyA3LzWxCqLT5UG1pO41w">
+                      <Node Bounds="543,978,25,19" Id="HbyA3LzWxCqLT5UG1pO41w">
                         <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <Choice Kind="OperationCallFlag" Name="+" />
+                          <Choice Kind="OperationCallFlag" Name="-" />
                         </p:NodeReference>
                         <Pin Id="QilggX7bsCjNCklQzQ1iaV" Name="Input" Kind="InputPin" />
                         <Pin Id="IraPhx6fIkkMYqWG5s29yf" Name="Input 2" Kind="InputPin" />
@@ -14345,24 +14491,15 @@
                         <Pin Id="KXWy9sIw7ryLOobkTTivDd" Name="Input" Kind="InputPin" />
                         <Pin Id="OmsJjLcFxlWLRVWSsP2QWg" Name="Result" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="1482,720,25,19" Id="IVbBDPNZrAwNFFb3C6aPqC">
-                        <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+                      <Node Bounds="817,1297" Id="VwIjnwOdw22LDJL6Vj70M6">
+                        <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <Choice Kind="OperationCallFlag" Name="-" />
+                          <CategoryReference Kind="Vector2Type" Name="Vector2" />
+                          <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
                         </p:NodeReference>
-                        <Pin Id="LEQm6smBXbJQRYqLDJg5Lm" Name="Input" Kind="InputPin" />
-                        <Pin Id="MUgNmDx4ZUbNxIY4Kdqw00" Name="Input 2" Kind="InputPin" />
-                        <Pin Id="IObsHjtR7XjMeflUflVeyJ" Name="Output" Kind="OutputPin" />
-                      </Node>
-                      <Node Bounds="1426,919,35,19" Id="CBrL0v0cpK5QJBmAQAtqcn">
-                        <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
-                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <Choice Kind="OperationCallFlag" Name="Min" />
-                          <CategoryReference Kind="Category" Name="Math" NeedsToBeDirectParent="true" />
-                        </p:NodeReference>
-                        <Pin Id="JeJ6Yu37C3aLkfYBvzyYno" Name="Input" Kind="InputPin" />
-                        <Pin Id="BAy7CMr5UrqNWVKfTCKpIQ" Name="Input 2" Kind="InputPin" />
-                        <Pin Id="OR47zb3s4jDLHQ7cGTeGl2" Name="Output" Kind="OutputPin" />
+                        <Pin Id="C9vKukd3ScYNkfKdf4ghK0" Name="X" Kind="InputPin" />
+                        <Pin Id="CEDufXHmnKaO81ktEqOilU" Name="Y" Kind="InputPin" />
+                        <Pin Id="PWT3DLWPuT0N6dsNpy5wNw" Name="Output" Kind="StateOutputPin" />
                       </Node>
                     </Patch>
                     <ControlPoint Id="VT5qHLYNG8yPzSfTTsZVyq" Bounds="646,295" Alignment="Top" />
@@ -14522,9 +14659,7 @@
             <Link Id="QEJPmAl66gaQNrSqM4VkPx" Ids="FIdlodLE1tYOClDaJ49NSp,HId3wxlaN6oNDAMIAPahfW" />
             <Link Id="HlK2QrtWdU8L7zFKslwqnI" Ids="SnjYiRnWBp9OuGWCjbyrO9,CuaZXAjtyB1Mi0votyak8A" />
             <Link Id="BljUDnuw02dNFLz2PTRe88" Ids="NPPD3NpEJleMOJ7GD2C3AM,GzZIQXSmVH0QFb16opZtbO" />
-            <Link Id="V5ksiD0ftI2NkDDT0w2Rjl" Ids="DYTXAu321MQP6DutlUBTsL,U0JWMsV5MEYPOdD0rn1MSf" />
             <Link Id="UJFT4kcYI6VOFtaFUzGTvh" Ids="Hty4Zv9d22QPy2NC5Tytam,IkV8xGuwHNtN73kvcY9EB4" />
-            <Link Id="JCktzLZrWs0MJVxZDvR4PZ" Ids="PCjnqgml7NDPal42khAhxl,QH9Xy59tB1tQJN2PrVVS7V" />
             <Link Id="CWfd2KS5RYeNNEh0y4KalC" Ids="IfeeWelaSwbOmdJuyCCJ8u,UOz8nY0b8E7NSUt4M0PA3z" />
             <Link Id="FLYhqAGfdWRMysOVlPPinw" Ids="CVxttVMHSaOMnr5qyV9OJX,NN5n0NUIX1wNVVGfBH30iQ" />
             <Link Id="REkMHVaoWF1MHeGf9QbFv8" Ids="DDFUPjk4CmkNoUh3izu9bX,Ftm8BXx1AfFOtIfMv7kDOj" />
@@ -14534,7 +14669,6 @@
             <Link Id="GDpKQ8dJ4qsOENriEIdWeo" Ids="PbDtlOABQhQNZV9PW9JdI8,Uh69B7oD08iM69dbWkDSg9" />
             <Link Id="Ozx6jTTqDUgM89N0rRrWdQ" Ids="ERAncUIC6MMPexVWhcdYez,Tvb3fxfX22DM4QZ9djbDCn" />
             <Link Id="RS7YYDUFWmLLG3zmi1HZvv" Ids="ERAncUIC6MMPexVWhcdYez,QmbYeuyIDO6MBnnKmzzVyg" />
-            <Link Id="AV9GZTN68WhPK5Vz3zcZH4" Ids="PbDtlOABQhQNZV9PW9JdI8,FdmTDJWjrVjLyCxrWr97E6" />
             <Link Id="Ey6ymarjvbnNBlVL9Jgnat" Ids="VT5qHLYNG8yPzSfTTsZVyq,JMsqtErJFARLlxrDeGzMPy" />
             <Link Id="QtiiJOdDXC7OISsFVdf5J7" Ids="GzZIQXSmVH0QFb16opZtbO,LHlCpAOwYJbOVKK8PjqVyJ" />
             <Link Id="AIsHDkID9NCOfow9aLAyun" Ids="VoAeAmflENRMU6BTOwNYKh,OkTszzjTsTCQW0P4tSK30I" />
@@ -14655,15 +14789,16 @@
             <Link Id="DDsKoCAE3PkPEvvEm0kSsQ" Ids="SDgXcbHLtJpODZvjpXTaMR,Bgf4ad5OQpTLraJigWGDxH" />
             <Link Id="P9Wot4lLxBTP3q7REDyNDL" Ids="BQMwgh5ZwktO8zkaG87R3v,Euvq8MpCLt7O914BYImzKR" />
             <Link Id="R02VWZ1tG3ZPOocJo6f0Uz" Ids="JsbUme2M08xLYkQHQmPP2d,HZyDOJK8XiMPMehpt07kmo" />
-            <Link Id="RLlTDzwF6K8N9GJuphrO53" Ids="SqWYE35b8OXMH2Ia99dn7f,C1TVlSzF4L6NWkyaJlfKE1" />
             <Link Id="N2N47I90p4hNW0njIDBhZz" Ids="OmsJjLcFxlWLRVWSsP2QWg,VGAHMHpbZfINbbjPWgZXqK" />
-            <Link Id="EvzVduAXR84NSjm6msXg65" Ids="JE5d6SEVOsKPQGBNKQMUJN,LEQm6smBXbJQRYqLDJg5Lm" />
             <Link Id="M4n1PQnmOStN52MC8pdFEq" Ids="JsbUme2M08xLYkQHQmPP2d,PjSgPK1pwQdM74OY5X6jra" />
-            <Link Id="UdQROsMXEPUOvRF7wjYzpI" Ids="IObsHjtR7XjMeflUflVeyJ,KXWy9sIw7ryLOobkTTivDd" />
-            <Link Id="EDLAP9MbnCsLbyv6GyqBHh" Ids="AvSCt5JiG8OLnVMiWAZUGt,MUgNmDx4ZUbNxIY4Kdqw00" />
-            <Link Id="NApqbjHQR4dP6E00755KD5" Ids="OR47zb3s4jDLHQ7cGTeGl2,F5XTCItNruLPIhrExzJjbc" />
-            <Link Id="K4rLGgVzEGRMvklo1TU9dY" Ids="CIz3OtKZEpROpBzpFGECyA,BAy7CMr5UrqNWVKfTCKpIQ" />
-            <Link Id="I25Ah7z6XbcO0pgG3NIoin" Ids="DYTXAu321MQP6DutlUBTsL,JeJ6Yu37C3aLkfYBvzyYno" />
+            <Link Id="IoeOkDiBaI6POQqfIzD5re" Ids="PCjnqgml7NDPal42khAhxl,C1TVlSzF4L6NWkyaJlfKE1" />
+            <Link Id="PhQKPZR7dUnO9KRk5SumQH" Ids="DYTXAu321MQP6DutlUBTsL,F5XTCItNruLPIhrExzJjbc" />
+            <Link Id="Dcw35o0seRMPHqzPFuFvVc" Ids="SqWYE35b8OXMH2Ia99dn7f,QH9Xy59tB1tQJN2PrVVS7V" />
+            <Link Id="U9cAb8P97dIN4IDQRO9SW5" Ids="JE5d6SEVOsKPQGBNKQMUJN,KXWy9sIw7ryLOobkTTivDd" />
+            <Link Id="UJFTvaXTtC7PurIlfRIRfS" Ids="CIz3OtKZEpROpBzpFGECyA,U0JWMsV5MEYPOdD0rn1MSf" />
+            <Link Id="O46gXpQzdHeNUiDKfJI9kE" Ids="PCjnqgml7NDPal42khAhxl,C9vKukd3ScYNkfKdf4ghK0" />
+            <Link Id="M5InX05yM29PVZ6ZuM9Ed8" Ids="FfQpuSmR1swLRJs7LSLhEi,CEDufXHmnKaO81ktEqOilU" />
+            <Link Id="URmCZq3sRYoOR8SU7muy0D" Ids="PWT3DLWPuT0N6dsNpy5wNw,FdmTDJWjrVjLyCxrWr97E6" />
           </Patch>
         </Node>
         <!--
@@ -16216,7 +16351,7 @@
                         <Pin Id="KVK7NiUEnUtNEXd5B9kONM" Name="Variable" Kind="OutputPin" />
                         <Pin Id="FD7n2CMwNEXLidXDIX8Uqk" Name="Category" Kind="OutputPin" />
                         <Pin Id="LedsdvZAtTIMJFMd8W0ZDm" Name="InPoint" Kind="OutputPin" />
-                        <Pin Id="VbzuBEAwBMbNRGiLWNfgDu" Name="OutPoint" Kind="OutputPin" />
+                        <Pin Id="VbzuBEAwBMbNRGiLWNfgDu" Name="SourceDuration" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="222,718,46,19" Id="DYIDSlbpt06LYI3znvZXbz">
                         <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="CoreLibBasics.vl">

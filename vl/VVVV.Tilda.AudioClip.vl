@@ -148,14 +148,8 @@
               <p:ValueBoxSettings />
             </Pad>
             <ControlPoint Id="Lg6Saw9XihoQHkiqySloS4" Bounds="2265,-180" />
-            <Pad Id="VQZpQ0nRQltMxhHNBOY5kN" SlotId="Se9QooD9XTNNye2hOLwJwh" Bounds="2420,-404">
-              <p:ValueBoxSettings />
-            </Pad>
-            <ControlPoint Id="NrTbSl0VyOnOS1ebXqlOBb" Bounds="2420,-180" />
             <ControlPoint Id="EotSvOqhFbQN3a43WC4V7A" Bounds="2319,-670" />
-            <ControlPoint Id="FygYblRn0CGNf8yYjBfxRf" Bounds="2475,-670" />
             <ControlPoint Id="OEDmoZaRiseNynMofIAhHH" Bounds="2329,-180" />
-            <ControlPoint Id="G59xMIMNG3LPhh4x23pyQt" Bounds="2498,-180" />
             <ControlPoint Id="RlLuNeQeZ7GNbvGJtIKMkq" Bounds="738,-669" />
             <Node Bounds="699,-808,57,19" Id="JZnbtpvjFHHLgDJPVSgJWY">
               <p:NodeReference LastCategoryFullName="System.GUID" LastSymbolSource="CoreLibBasics.vl">
@@ -169,6 +163,21 @@
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pad>
+            <Pad Id="Qi522J0ipEfMhOmmXJarHm" SlotId="GarK2aZ00NiO9iy5gYlvvh" Bounds="2657,-374">
+              <p:ValueBoxSettings />
+            </Pad>
+            <ControlPoint Id="Thmt3nvaiRoQApS7ogW6Ff" Bounds="2657,-179" />
+            <ControlPoint Id="PshlOyvmLS7QWIQCd7OoDh" Bounds="2712,-642" />
+            <ControlPoint Id="RpvC6ApDBNnOA7WBk51xt0" Bounds="2735,-179" />
+            <Node Bounds="2307,-579" Id="KKJq9pYp1t2LClQvZWK8Q8">
+              <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Max" />
+              </p:NodeReference>
+              <Pin Id="Gbvm2vSlgVWM9ffXQLkHNG" Name="Input" Kind="InputPin" />
+              <Pin Id="Jo2xsWveUNUPOvdOz8fu0K" Name="Input 2" Kind="InputPin" />
+              <Pin Id="JYMgKcSWtt3PpgngAyJpwg" Name="Output" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <ProcessDefinition Id="Rsc5P4G7zfvPw7hXgfUzgO" IsHidden="true">
             <Fragment Id="GRq1vcvT0efOlOJk4ikmdb" Patch="DcT1XXhyFmnQVKSjhigrUv" Enabled="true" />
@@ -193,6 +202,8 @@
             <Fragment Id="JR3yGvEYljeNKhBZa9w0xr" Patch="DqueaRkSaPzQECOQ6tZXaG" Enabled="true" />
             <Fragment Id="LASdWhkp5CQPvWN3gvGU2J" Patch="LtqLblk2lSvNjzRhEvTR3p" Enabled="true" />
             <Fragment Id="CflLXowxMFnLkbG2EFTevB" Patch="FQpPBMfefjUOD1vcWg0KcV" Enabled="true" />
+            <Fragment Id="T9jToCXx96gP16peOMZXXJ" Patch="JhgHz78YkYFN2D7OjHklfu" Enabled="true" />
+            <Fragment Id="EMQjH0OgttLONuBrG0OAbV" Patch="DC4OV5cjcMsLIZow1QuDWm" Enabled="true" />
           </ProcessDefinition>
           <Patch Id="DcT1XXhyFmnQVKSjhigrUv" Name="Create" ParticipatingElements="IQl4RrPjIzcP1Hr6wmdngn,O0F3Q6ATF79L3vf9pkyzU8">
             <Pin Id="JNyUel8McCXMOLSDgha3dX" MergeId="154895" Name="Name" Kind="InputPin" />
@@ -235,7 +246,7 @@
             <Pin Id="Gk0lqNTNK5nLrDWnqfugHq" MergeId="155006" Name="Variable" Kind="OutputPin" />
             <Pin Id="Kt7GbT9MNZ4N1MxjwJ8LQ6" MergeId="155009" Name="Category" Kind="OutputPin" />
             <Pin Id="KZuU8REiZDbLmTUlFW9XJH" MergeId="290179" Name="InPoint" Kind="OutputPin" />
-            <Pin Id="G30V0nfHerNOozugzEHCZB" MergeId="290178" Name="OutPoint" Kind="OutputPin" />
+            <Pin Id="FXSUnyiYRp6NKXPHrX3P9X" Name="SourceDuration" Kind="OutputPin" />
           </Patch>
           <Patch Id="LnHigMxNdLFMxtBTpKwT8w" Name="SetStartframe">
             <Pin Id="A1P4oCWTy9yQAGvu9FG4Xf" MergeId="155013" Name="Startframe" Kind="InputPin" />
@@ -317,23 +328,14 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Slot>
-          <Slot Id="Se9QooD9XTNNye2hOLwJwh" Name="OutPoint">
-            <p:TypeAnnotation>
-              <Choice Kind="TypeFlag" Name="Integer32" />
-            </p:TypeAnnotation>
-          </Slot>
           <Patch Id="RL6PzebsmYMPDmHfB1D6Cj" Name="SetInPoint">
             <Pin Id="DYJHtmyzaWJNciOiFqv32z" MergeId="290187" Name="InPoint" Kind="InputPin" />
           </Patch>
-          <Patch Id="AaZwCHuZ4oGQIxmEtUbeMD" Name="SetOutPoint">
-            <Pin Id="ICz0SFCBfHoLHlXJRXe5HO" MergeId="290185" Name="OutPoint" Kind="InputPin" />
-          </Patch>
+          <Patch Id="AaZwCHuZ4oGQIxmEtUbeMD" Name="SetOutPoint" />
           <Patch Id="DqueaRkSaPzQECOQ6tZXaG" Name="GetInPoint">
             <Pin Id="CL2haptibZoPZEydUKF1iC" MergeId="290183" Name="InPoint" Kind="OutputPin" />
           </Patch>
-          <Patch Id="LtqLblk2lSvNjzRhEvTR3p" Name="GetOutPoint">
-            <Pin Id="Rc2zVUpl3HYMAuEp0H2yh7" MergeId="290181" Name="OutPoint" Kind="OutputPin" />
-          </Patch>
+          <Patch Id="LtqLblk2lSvNjzRhEvTR3p" Name="GetOutPoint" />
           <Link Id="D6MB8MIgdqlLDeau4UoAvx" Ids="L6bzhOni1x0NS9lkM64QZ1,S7emJ6ZSFFBP15Ys0qDZu9" IsHidden="true" />
           <Link Id="BQwbGFuR54jOK514GgYIdU" Ids="IshC2FdBB0LMBa9LbgVJHF,LFtVNCckIdGOOnhgAkmYpo" IsHidden="true" />
           <Link Id="L6ZnaHEWiIfPqQWRvBwqqT" Ids="ChOJnlfZctlLQ0n116NPWa,Au3KLy11M5nQVkb9XfOBwM" IsHidden="true" />
@@ -407,16 +409,10 @@
           <Link Id="AiEf1Tyq9RKLtanLBdInaB" Ids="PvlEaVu9cQhM0W38QZjSnH,Gc4nL2kpZ3fOmlY0vtwG0f" />
           <Link Id="MKRDQp0I46DQC25evIJq0n" Ids="Lg6Saw9XihoQHkiqySloS4,KZuU8REiZDbLmTUlFW9XJH" IsHidden="true" />
           <Link Id="BQYJY0ohCHdN8BmoDai8Sd" Ids="PCAJGUVotlTOUcTwP5JB5V,Lg6Saw9XihoQHkiqySloS4" />
-          <Link Id="N43XlXFz6b8LS8iOY2mIMK" Ids="NrTbSl0VyOnOS1ebXqlOBb,G30V0nfHerNOozugzEHCZB" IsHidden="true" />
-          <Link Id="KN7TSP11sYAMBGYQUfNbX3" Ids="VQZpQ0nRQltMxhHNBOY5kN,NrTbSl0VyOnOS1ebXqlOBb" />
           <Link Id="AOVoXFg76AeP6S1l8ktjZn" Ids="DYJHtmyzaWJNciOiFqv32z,EotSvOqhFbQN3a43WC4V7A" IsHidden="true" />
-          <Link Id="QLifOSIeZvyOs2ORWwrtnY" Ids="EotSvOqhFbQN3a43WC4V7A,PCAJGUVotlTOUcTwP5JB5V" />
-          <Link Id="FRzyIHQAMYiNuMUVLsKVmE" Ids="ICz0SFCBfHoLHlXJRXe5HO,FygYblRn0CGNf8yYjBfxRf" IsHidden="true" />
-          <Link Id="N9TS6cNq2UYNr7uNPFvy4M" Ids="FygYblRn0CGNf8yYjBfxRf,VQZpQ0nRQltMxhHNBOY5kN" />
+          <Link Id="QLifOSIeZvyOs2ORWwrtnY" Ids="EotSvOqhFbQN3a43WC4V7A,Gbvm2vSlgVWM9ffXQLkHNG" />
           <Link Id="Aw6tCd4oPzYMIIIA6ENthP" Ids="OEDmoZaRiseNynMofIAhHH,CL2haptibZoPZEydUKF1iC" IsHidden="true" />
           <Link Id="LTrpxDTVM6jNXJul8YG6I2" Ids="PCAJGUVotlTOUcTwP5JB5V,OEDmoZaRiseNynMofIAhHH" />
-          <Link Id="CPPOywtcG4qLymywKisSJU" Ids="G59xMIMNG3LPhh4x23pyQt,Rc2zVUpl3HYMAuEp0H2yh7" IsHidden="true" />
-          <Link Id="FcSkY6kOc7DNZ5PajPNfm9" Ids="VQZpQ0nRQltMxhHNBOY5kN,G59xMIMNG3LPhh4x23pyQt" />
           <Patch Id="FQpPBMfefjUOD1vcWg0KcV" Name="SetGUID">
             <Pin Id="MURzdSk0hXWN3DIYA5srwA" MergeId="103404" Name="GUID" Kind="InputPin" />
           </Patch>
@@ -426,7 +422,25 @@
           <Link Id="PJ6wstW1GElNv3JlHpn940" Ids="Rc11c2HTICSOTPOVNjpFBl,K9DYiltCoMYP2pEmVgpdrc" IsHidden="true" />
           <Link Id="IQl4RrPjIzcP1Hr6wmdngn" Ids="VeeSAtIzbKmPFYuzn3QZpw,U7Ez4M5EuMzNzAD7mgBCUF" />
           <Link Id="O0F3Q6ATF79L3vf9pkyzU8" Ids="CIPcCnhTsvZLXlTR8CYUi3,PCAJGUVotlTOUcTwP5JB5V" />
-          <Link Id="HyFxDADsZsoQN6xWPgmDbD" Ids="Au3KLy11M5nQVkb9XfOBwM,VQZpQ0nRQltMxhHNBOY5kN" />
+          <Patch Id="JhgHz78YkYFN2D7OjHklfu" Name="GetSourceDuration">
+            <Pin Id="Bqbo6h5D7nVNB22Tc5p3Pt" MergeId="400472" Name="SourceDuration" Kind="OutputPin" />
+          </Patch>
+          <Slot Id="GarK2aZ00NiO9iy5gYlvvh" Name="SourceDuration">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Patch Id="DC4OV5cjcMsLIZow1QuDWm" Name="SetSourceDuration">
+            <Pin Id="BgPrLILCgcmOeEYsozdiC6" MergeId="400474" Name="SourceDuration" Kind="InputPin" />
+          </Patch>
+          <Link Id="KTsN4L4PdG3MnW0ZFFNgPp" Ids="Thmt3nvaiRoQApS7ogW6Ff,FXSUnyiYRp6NKXPHrX3P9X" IsHidden="true" />
+          <Link Id="E3hNGONuWBQMsYd73W24hm" Ids="Qi522J0ipEfMhOmmXJarHm,Thmt3nvaiRoQApS7ogW6Ff" />
+          <Link Id="EfPdqSksIa4Mlr6uccCuyy" Ids="BgPrLILCgcmOeEYsozdiC6,PshlOyvmLS7QWIQCd7OoDh" IsHidden="true" />
+          <Link Id="JA6DyYthgACNCl9orOp6Ss" Ids="PshlOyvmLS7QWIQCd7OoDh,Qi522J0ipEfMhOmmXJarHm" />
+          <Link Id="UYV7qsX2JUINqxr5wxjjv4" Ids="RpvC6ApDBNnOA7WBk51xt0,Bqbo6h5D7nVNB22Tc5p3Pt" IsHidden="true" />
+          <Link Id="KbxVh2oYtDeOmH2BPTNAcS" Ids="Qi522J0ipEfMhOmmXJarHm,RpvC6ApDBNnOA7WBk51xt0" />
+          <Link Id="FFUdZGM3GhxQUhNZT2VVo2" Ids="Au3KLy11M5nQVkb9XfOBwM,Qi522J0ipEfMhOmmXJarHm" />
+          <Link Id="ShFxTmryPFzOMKcjkYahmP" Ids="JYMgKcSWtt3PpgngAyJpwg,PCAJGUVotlTOUcTwP5JB5V" />
         </Patch>
       </Node>
       <!--
@@ -934,7 +948,7 @@
                       <Pin Id="VtpRoXQh3ogQbPizmjmaU0" Name="Variable" Kind="OutputPin" />
                       <Pin Id="Ht3lGLpWZSMOa8H1WIhoq4" Name="Category" Kind="OutputPin" />
                       <Pin Id="UoedgwtBgCFLhw2hj9dyP9" Name="InPoint" Kind="OutputPin" />
-                      <Pin Id="CRrBlBMJxFyPoHWEiBNrUZ" Name="OutPoint" Kind="OutputPin" />
+                      <Pin Id="CRrBlBMJxFyPoHWEiBNrUZ" Name="SourceDuration" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="188,941,25,19" Id="RMPgaDrjrHrNrRxU0bIkAr">
                       <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
