@@ -1,0 +1,21 @@
+﻿<StateMachineDescription>
+  <States>
+    <Item Name="Idle" Position="-1.275269, -0.7591398" Id="1" />
+    <Item Name="Hovered" Position="-0.2301075, 0.04516137" Id="2" />
+    <Item Name="Dragging" Position="0.848976, -0.7764505" Id="3" />
+    <Item Name="Editing" Position="-1.275269, 0.7376344" Id="4" />
+    <Item Name="Final" Position="0.8494624, 0.7548387" Id="6" />
+  </States>
+  <Transitions>
+    <Item Name="Within" From="1" To="2" />
+    <Item Name="DragStart" From="2" To="3" />
+    <Item Name="Abort" From="3" To="1" />
+    <Item Name="EditStart" From="2" To="4" />
+    <Item Name="Abort" From="4" To="1" />
+    <Item Name="NotWithin" From="2" To="1" />
+    <Item Name="DragEnd" From="3" To="6" />
+    <Item Name="EditEnd" From="4" To="6" />
+    <Item Name="DragStart" From="1" To="3" />
+    <Item Name="EditStart" From="1" To="4" />
+  </Transitions>
+</StateMachineDescription>

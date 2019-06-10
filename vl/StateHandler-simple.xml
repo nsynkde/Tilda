@@ -1,0 +1,41 @@
+﻿<StateMachineDescription>
+  <States>
+    <Item Name="Idle" Position_0="0.2459089, 0.622173" Id="1" />
+    <Item Name="HoveringScale" Position_0="0.008891493, -2.128038" Id="8" />
+    <Item Name="HoveringTC" Position_0="-1.506422, -1.41474" Id="9" />
+    <Item Name="EditTC" Position_0="-2.074688, -2.174274" Id="10" />
+    <Item Name="DraggingPH" Position_0="1.117566, -0.7081608" Id="11" />
+    <Item Name="Dragging" Position_0="0.2644355, 1.463359" Id="12" />
+    <Item Name="Hovering" Position_0="-1.992826, 0.5081732" Id="13" />
+    <Item Name="Envelope" Position_0="-0.814334, 0.1156154" Id="14" />
+    <Item Name="EnvelopeInteraction" Position_0="-0.8336143, 2.412313" Id="15" />
+    <Item Name="Editing" Position_0="-2.030291, 1.382158" Id="16" />
+  </States>
+  <Transitions>
+    <Item Name="HoverScale" From="1" To="8" />
+    <Item Name="HoverEmpty" From="8" To="1" />
+    <Item Name="HoverTC" From="1" To="9" />
+    <Item Name="HoverEmpty" From="9" To="1" />
+    <Item Name="HoverScale" From="9" To="8" />
+    <Item Name="HoverTC" From="8" To="9" />
+    <Item Name="RightDown" From="9" To="10" />
+    <Item Name="LeftDown" From="8" To="11" />
+    <Item Name="HoverEmpty" From="11" To="1" />
+    <Item Name="LeftUp" From="11" To="8" />
+    <Item Name="Enter" From="10" To="9" />
+    <Item Name="LeftDrag" From="1" To="12" />
+    <Item Name="LeftUp" From="12" To="1" />
+    <Item Name="Hover" From="1" To="13" />
+    <Item Name="HoverEmpty" From="13" To="1" />
+    <Item Name="HoverScale" From="13" To="8" />
+    <Item Name="HoverTC" From="13" To="9" />
+    <Item Name="Alt+E" From="13" To="14" />
+    <Item Name="Alt+E" From="1" To="14" />
+    <Item Name="Alt+E" From="14" To="1" />
+    <Item Name="Alt+E" From="8" To="14" />
+    <Item Name="HandlerPicked" From="14" To="15" />
+    <Item Name="HandlerUnpicked" From="15" To="14" />
+    <Item Name="LeftDown" From="13" To="16" />
+    <Item Name="LeftUp" From="16" To="13" />
+  </Transitions>
+</StateMachineDescription>
