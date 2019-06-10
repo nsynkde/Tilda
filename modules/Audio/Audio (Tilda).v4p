@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
-   <PATCH nodename="D:\repositories\TildaTimeline\modules\Audio\Audio (Tilda).v4p" systemname="Audio (Tilda)" filename="E:\NSYNK\TildaTimeline\modules\Audio\Audio (Tilda).v4p" scrollx="0" scrolly="1455" bgcolor="15132390">
+   <PATCH nodename="D:\repositories\Tilda\modules\Audio\Audio (Tilda).v4p" systemname="Audio (Tilda)" filename="E:\NSYNK\TildaTimeline\modules\Audio\Audio (Tilda).v4p" scrollx="0" scrolly="2235" bgcolor="15132390">
    <NODE systemname="AudioOut (VAudio)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.Nodes.dll" nodename="AudioOut (VAudio)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="6924" top="14310" width="100" height="100">
    </BOUNDS>
@@ -10,7 +10,7 @@
    <PIN pinname="Channel Offset" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="900" top="3840" width="21450" height="17160">
+   <BOUNDS type="Window" left="19305" top="3015" width="21450" height="17160">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -142,32 +142,6 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="GetClipsByCategory (Tilda)" filename="..\..\vl\VVVV.Tilda.vvvv.vl" nodename="GetClipsByCategory (Tilda)" componentmode="Hidden" id="250">
-   <BOUNDS type="Node" left="6885" top="6945" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Timeline" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Name" slicecount="1" visible="1" values="|Moderator Text|">
-   </PIN>
-   <PIN pinname="Seconds" visible="1">
-   </PIN>
-   <PIN pinname="Variable" visible="1">
-   </PIN>
-   <PIN pinname="Active" visible="1">
-   </PIN>
-   <PIN pinname="Fade" visible="1">
-   </PIN>
-   <PIN pinname="Category" visible="1">
-   </PIN>
-   <PIN pinname="UnifiedMode" slicecount="1" values="1">
-   </PIN>
-   <BOUNDS type="Box" left="6885" top="6945">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="255" srcpinname="Output String" dstnodeid="250" dstpinname="Name">
-   </LINK>
-   <LINK srcnodeid="255" srcpinname="Output String" dstnodeid="250" dstpinname="Category">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="306" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="510" top="2295" width="795" height="240">
    </BOUNDS>
@@ -180,8 +154,6 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="306" srcpinname="Output Node" dstnodeid="250" dstpinname="Timeline">
-   </LINK>
    <NODE systemname="PlaystateDependentPlayer (Tilda)" filename="PlaystateDependentPlayer (Tilda).v4p" nodename="PlaystateDependentPlayer (Tilda)" componentmode="Hidden" id="307">
    <BOUNDS type="Node" left="6930" top="10185" width="0" height="0">
    </BOUNDS>
@@ -195,17 +167,11 @@
    </PIN>
    <PIN pinname="Level dBs" visible="1">
    </PIN>
-   <PIN pinname="Timeline" visible="1">
+   <PIN pinname="Timeline" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Seconds" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="250" srcpinname="Variable" dstnodeid="307" dstpinname="Filename">
-   </LINK>
-   <LINK srcnodeid="250" srcpinname="Active" dstnodeid="307" dstpinname="Active">
-   </LINK>
-   <LINK srcnodeid="250" srcpinname="Seconds" dstnodeid="307" dstpinname="Seconds">
-   </LINK>
-   <LINK srcnodeid="250" srcpinname="Fade" dstnodeid="307" dstpinname="Fade">
-   </LINK>
    <NODE systemname="PlaystateIndependentPlayer (Tilda)" filename="PlaystateIndependentPlayer (Tilda).v4p" nodename="PlaystateIndependentPlayer (Tilda)" componentmode="Hidden" id="308">
    <BOUNDS type="Node" left="10545" top="10185" width="1650" height="270">
    </BOUNDS>
@@ -215,7 +181,7 @@
    </PIN>
    <PIN pinname="Loop" visible="1">
    </PIN>
-   <PIN pinname="Active" visible="1">
+   <PIN pinname="Active" visible="1" slicecount="5" values="0,0,0,0,0">
    </PIN>
    <PIN pinname="Volume" visible="1">
    </PIN>
@@ -223,9 +189,9 @@
    </PIN>
    <PIN pinname="Timeline" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Seconds" visible="1">
+   <PIN pinname="Seconds" visible="1" slicecount="5" values="0,0,0,0,0">
    </PIN>
-   <PIN pinname="Filename" visible="1">
+   <PIN pinname="Filename" visible="1" slicecount="5" values=",,,,">
    </PIN>
    <PIN pinname="Level dBs" visible="1">
    </PIN>
@@ -248,36 +214,6 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="GetClipsByCategory (Tilda)" filename="..\..\vl\VVVV.Tilda.vvvv.vl" nodename="GetClipsByCategory (Tilda)" componentmode="Hidden" id="309">
-   <BOUNDS type="Node" left="10545" top="6945" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Timeline" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Name" slicecount="1" visible="1" values="|Moderator Text|">
-   </PIN>
-   <PIN pinname="Seconds" visible="1">
-   </PIN>
-   <PIN pinname="Variable" visible="1">
-   </PIN>
-   <PIN pinname="Active" visible="1">
-   </PIN>
-   <PIN pinname="Fade" visible="1">
-   </PIN>
-   <PIN pinname="Category" visible="1" slicecount="1" values="Audio">
-   </PIN>
-   <PIN pinname="UnifiedMode" slicecount="1" values="1">
-   </PIN>
-   <BOUNDS type="Box" left="10545" top="6945">
-   </BOUNDS>
-   <PIN pinname="Clips Bin Size" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="310" srcpinname="Output String" dstnodeid="309" dstpinname="Name">
-   </LINK>
-   <LINK srcnodeid="310" srcpinname="Output String" dstnodeid="309" dstpinname="Category">
-   </LINK>
-   <LINK srcnodeid="309" srcpinname="Active" dstnodeid="308" dstpinname="Play">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="311">
    <BOUNDS type="Box" left="11205" top="9105" width="480" height="480">
    </BOUNDS>
@@ -350,16 +286,6 @@
    </NODE>
    <LINK srcnodeid="307" srcpinname="Level dBs" dstnodeid="316" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="309" srcpinname="Active" dstnodeid="308" dstpinname="Active">
-   </LINK>
-   <LINK srcnodeid="306" srcpinname="Output Node" dstnodeid="309" dstpinname="Timeline">
-   </LINK>
-   <LINK srcnodeid="250" srcpinname="Timeline" dstnodeid="307" dstpinname="Timeline">
-   </LINK>
-   <LINK srcnodeid="309" srcpinname="Timeline" dstnodeid="308" dstpinname="Timeline">
-   </LINK>
-   <LINK srcnodeid="309" srcpinname="Seconds" dstnodeid="308" dstpinname="Seconds">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="317">
    <BOUNDS type="Box" left="12270" top="9105" width="795" height="240">
    </BOUNDS>
@@ -376,8 +302,6 @@
    </NODE>
    <LINK srcnodeid="317" srcpinname="Y Output Value" dstnodeid="308" dstpinname="Volume">
    </LINK>
-   <LINK srcnodeid="309" srcpinname="Variable" dstnodeid="308" dstpinname="Filename">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="318">
    <BOUNDS type="Box" left="12135" top="10785" width="795" height="240">
    </BOUNDS>
@@ -391,5 +315,53 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="308" srcpinname="Level dBs" dstnodeid="318" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="GetClipsByCategory (Tilda)" filename="..\..\vl\VVVV.Tilda.vvvv.vl" nodename="GetClipsByCategory (Tilda)" componentmode="Hidden" id="319">
+   <BOUNDS type="Node" left="6885" top="6945" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6885" top="6945">
+   </BOUNDS>
+   <PIN pinname="SourceTime" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="255" srcpinname="Output String" dstnodeid="319" dstpinname="Name">
+   </LINK>
+   <LINK srcnodeid="255" srcpinname="Output String" dstnodeid="319" dstpinname="Category">
+   </LINK>
+   <LINK srcnodeid="306" srcpinname="Output Node" dstnodeid="319" dstpinname="Timeline">
+   </LINK>
+   <LINK srcnodeid="319" srcpinname="Variable" dstnodeid="307" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="319" srcpinname="Active" dstnodeid="307" dstpinname="Active">
+   </LINK>
+   <LINK srcnodeid="319" srcpinname="Fade" dstnodeid="307" dstpinname="Fade">
+   </LINK>
+   <LINK srcnodeid="319" srcpinname="Timeline" dstnodeid="307" dstpinname="Timeline">
+   </LINK>
+   <NODE systemname="GetClipsByCategory (Tilda)" filename="..\..\vl\VVVV.Tilda.vvvv.vl" nodename="GetClipsByCategory (Tilda)" componentmode="Hidden" id="320">
+   <BOUNDS type="Node" left="10545" top="6945" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10545" top="6945">
+   </BOUNDS>
+   <PIN pinname="SourceTime" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="310" srcpinname="Output String" dstnodeid="320" dstpinname="Name">
+   </LINK>
+   <LINK srcnodeid="310" srcpinname="Output String" dstnodeid="320" dstpinname="Category">
+   </LINK>
+   <LINK srcnodeid="320" srcpinname="Active" dstnodeid="308" dstpinname="Play">
+   </LINK>
+   <LINK srcnodeid="320" srcpinname="Active" dstnodeid="308" dstpinname="Active">
+   </LINK>
+   <LINK srcnodeid="306" srcpinname="Output Node" dstnodeid="320" dstpinname="Timeline">
+   </LINK>
+   <LINK srcnodeid="320" srcpinname="Timeline" dstnodeid="308" dstpinname="Timeline">
+   </LINK>
+   <LINK srcnodeid="320" srcpinname="Variable" dstnodeid="308" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="319" srcpinname="SourceTime" dstnodeid="307" dstpinname="Seconds">
+   </LINK>
+   <LINK srcnodeid="320" srcpinname="SourceTime" dstnodeid="308" dstpinname="Seconds">
    </LINK>
    </PATCH>
