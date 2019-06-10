@@ -2157,7 +2157,7 @@
                   <Pin Id="VkDNjTI6Ne8Nl1PBr1jMRM" Name="TextChanged" Kind="InputPin" />
                   <Pin Id="DS5FAOQZ4SNM5xbJW3dIoE" Name="Controls" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="624,786,50,26" Id="KHixurUMg24PFKQyENtNqq">
+                <Node Bounds="611,730,50,26" Id="KHixurUMg24PFKQyENtNqq">
                   <p:NodeReference LastCategoryFullName="System.Windows.Forms.Form" LastSymbolSource="System.Windows.Forms.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="Form" />
@@ -2166,7 +2166,7 @@
                   <Pin Id="Od0T1SLB42nLrQlm3R9ZMX" Name="Input" Kind="StateInputPin" />
                   <Pin Id="M961R8CUISNNXFDD8elqbb" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="623,848,53,19" Id="VP8Jb1qe6MpPOHqlBncd85">
+                <Node Bounds="612,777,53,19" Id="VP8Jb1qe6MpPOHqlBncd85">
                   <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="Sampler" />
@@ -2185,7 +2185,7 @@
                   <Pin Id="IrtUKzAmXpJL6CbcMytiQu" Name="Input 2" Kind="InputPin" />
                   <Pin Id="SUEpSgMXIt6M54QN4jmDJD" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Node Bounds="671,910" Id="AreE143JE5GPu0i1KQuC7M">
+                <Node Bounds="676,904,37,19" Id="AreE143JE5GPu0i1KQuC7M">
                   <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="NOT" />
@@ -2193,6 +2193,15 @@
                   </p:NodeReference>
                   <Pin Id="DbxEMy2RVqtMhl6vqXvkZa" Name="Input" Kind="StateInputPin" />
                   <Pin Id="G5IOiZ4S46JMbpNxPdG95M" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="724,854,56,19" Id="NXzfcN2hev1N3Fm8aHQ8mM">
+                  <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="FlipFlop" />
+                  </p:NodeReference>
+                  <Pin Id="Rhw838Ezg5LOB6Hxx5lRx6" Name="Set" Kind="InputPin" />
+                  <Pin Id="SZO87qjEWOCN0iDxUCJxWf" Name="Reset" Kind="InputPin" />
+                  <Pin Id="ALC04RxGOaHOEbiEnWgQi9" Name="State" Kind="OutputPin" />
                 </Node>
               </Patch>
               <ControlPoint Id="AAzk0w4sbDHP73mOCYRYAr" Bounds="1090,654" Name="Editor" Alignment="Top" />
@@ -2532,8 +2541,10 @@
           <Link Id="L5nxz5CdcGOLKWbm9OV9So" Ids="M961R8CUISNNXFDD8elqbb,Rzsq9wC8Jr5Mr9P3UBnHHJ" />
           <Link Id="DKR57lVkFu9PfHxkinpI5H" Ids="RPHkMyWZdSdPAMCnGLfUFr,Moc8jAJNJh2NS7bIaqbAXw" />
           <Link Id="Rey74JcOykUO0FedhqDW62" Ids="SUEpSgMXIt6M54QN4jmDJD,EwD1KFY2hXDNGIpJC6Ds8i" />
-          <Link Id="N8vRTEYDXobNYElmCGMjTF" Ids="Vol45wKjxDCOxlvdjnnbYo,DbxEMy2RVqtMhl6vqXvkZa" />
-          <Link Id="Lq2Q8E7OvwuN15MbBI8Etg" Ids="G5IOiZ4S46JMbpNxPdG95M,IrtUKzAmXpJL6CbcMytiQu" />
+          <Link Id="PMVc71leZzKMZeZzrHi5F1" Ids="Vol45wKjxDCOxlvdjnnbYo,Rhw838Ezg5LOB6Hxx5lRx6" />
+          <Link Id="JCETM1cbFF9L3JUMHRNxdo" Ids="TJuc8WJXJY8PIkax7lXWQk,SZO87qjEWOCN0iDxUCJxWf" />
+          <Link Id="Qjn8b6hUAqrPEVQeLWN9Bp" Ids="ALC04RxGOaHOEbiEnWgQi9,DbxEMy2RVqtMhl6vqXvkZa" />
+          <Link Id="V2hofDWCoICOizGitF4OYf" Ids="G5IOiZ4S46JMbpNxPdG95M,IrtUKzAmXpJL6CbcMytiQu" />
         </Patch>
       </Node>
       <!--
