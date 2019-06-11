@@ -2,7 +2,7 @@
 
 Tilda Johnson (NightShade) is an extraordinary genius, and extensively self-taught in genetics, biochemistry, cybernetics, robotics and physics. She also obtained a doctoral degree from an undisclosed university while in prison.
 
---
+![onSite](/onSite.jpg)
 
 Tilda is a sequencing timeline that contains clips of various types. Tilda organizes these clips only in time. The vertical position of a clip on the timeline is used only for visual organization. Currently, there is no such concept as a track in tilda.
 
@@ -21,6 +21,8 @@ Other clip types are built on top of these control clips. Currently there are au
 Refer to the help patches to see how to work with the getter nodes.
 
 ## using tilda
+
+### Tilda was built and tested on vvvv_50alpha38.2 (14/05/2019) and won't work in previous versions!
 
 Navigating the timeline should be self explanatory. 
 
@@ -59,12 +61,14 @@ Selct clips left click or selection rect.
 
 ### Trimming
 
-Clips have handles to trim their start and end and fade in and out values.
+Clips have handles to trim their start and end, fade in and out and source in point and duration values.
 
 you can edit multiple clips at a time if you have many selected and trim one of them.
 
 Otions:
-Hold shift to trim the start or end and keep the fade times.
+Hold shift to snap to snapping points.
+Hold control to hold the source media time in place, so to trim Start and In together (or out / duration only).
+Hold alt to trim and keep the fading points in place.
 
 
 ### the inspector
@@ -77,8 +81,7 @@ To create a new category type a new name in the category field. Colors will be a
 * Duration is the duration on tilda timeline.
 * FadeIn and FadeOut is the duration of the fade ramps at sart and end of a clip.
 * InPoint is the first frame in the source media.
-* OutPoint is the last frame in the source media.
-* If OutPint - InPoint is not equal the duartion of a clip, the content or clip time will be stretched.
+* SourceDuration is the length of the available source media.
 
 It is on purpose that the changes made in the inspector are written to the clip immediately, so you can see the effect of the value change immediately without opening / cloing the inspector each time.
 
