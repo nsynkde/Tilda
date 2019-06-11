@@ -59,12 +59,14 @@ Selct clips left click or selection rect.
 
 ### Trimming
 
-Clips have handles to trim their start and end and fade in and out values.
+Clips have handles to trim their start and end, fade in and out and source in point and duration values.
 
 you can edit multiple clips at a time if you have many selected and trim one of them.
 
 Otions:
-Hold shift to trim the start or end and keep the fade times.
+Hold shift to snap to snapping points.
+Hold control to hold the source media time in place, so to trim Start and In together (or out / duration only).
+Hold alt to trim and keep the fading points in place.
 
 
 ### the inspector
@@ -77,8 +79,7 @@ To create a new category type a new name in the category field. Colors will be a
 * Duration is the duration on tilda timeline.
 * FadeIn and FadeOut is the duration of the fade ramps at sart and end of a clip.
 * InPoint is the first frame in the source media.
-* OutPoint is the last frame in the source media.
-* If OutPint - InPoint is not equal the duartion of a clip, the content or clip time will be stretched.
+* SourceDuration is the length of the available source media.
 
 It is on purpose that the changes made in the inspector are written to the clip immediately, so you can see the effect of the value change immediately without opening / cloing the inspector each time.
 
