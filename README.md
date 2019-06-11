@@ -50,7 +50,7 @@ The default clip type is control clip. All functionality of the control clip is 
 You can create other clip types by holdig a letter while double clicking. Hold
 * A for a new audio clip
 * E for a new envelope clip
-* F for a new keyframe clip
+* K for a new keyframe clip
 * V for a new video clip.
 
 Selct clips left click or selection rect.
