@@ -22,6 +22,8 @@ Refer to the help patches to see how to work with the getter nodes.
 
 ## using tilda
 
+### Tilda was built and tested on vvvv_50alpha38.2 (14/05/2019) and won't work in previous versions!
+
 Navigating the timeline should be self explanatory. 
 
 Right click and drag in the canvas to pan. Scroll wheel to zoom.
