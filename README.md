@@ -59,6 +59,8 @@ Selct clips left click or selection rect.
 * Ctrl C + V for copy and paste at CTI Position.
 * Ctrl Z + Y for undo / redo.
 
+Limit moving of clips to X and Y with Ctrl and Alt keys.
+
 ### Trimming
 
 Clips have handles to trim their start and end, fade in and out and source in point and duration values.
