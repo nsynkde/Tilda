@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0344-gd5eabf23a7" Version="0.128">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0417-g808f072318" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -524,12 +524,12 @@
           <Patch Id="E5xAmIsGGVJQYCvfxbXoLf" Name="Update">
             <Pin Id="BjFQRSe3yJkMxNI4LSX6WD" Name="Timeline" Kind="InputPin" Bounds="399,196" />
             <Pin Id="JENgWflFTZiMRicxcTnK5l" Name="Category" Kind="InputPin" Bounds="828,286" />
-            <Pin Id="DrUekqCdpjyQdsfU1Wudts" Name="Count" Kind="OutputPin" Bounds="1018,1644" />
             <Pin Id="TXzMXsgoIp8NCbCdbIHg3c" Name="StartFrame" Kind="InputPin" Bounds="1028,279" />
-            <Pin Id="HiXcw5NTwnCMKk3tAQKGRj" Name="TC" Kind="OutputPin" Bounds="1112,830" />
             <Pin Id="Iy1dKyjDDBqLwIlcDDsegz" Name="EndFrame" Kind="InputPin" Bounds="1188,267" />
             <Pin Id="SsUvtkxE0RkMtfxXowmy69" Name="NewCategory" Kind="InputPin" Bounds="1354,274" />
             <Pin Id="LYbKGdtWk8rNByxoBzVaLV" Name="Change" Kind="InputPin" Bounds="1519,272" />
+            <Pin Id="DrUekqCdpjyQdsfU1Wudts" Name="Count" Kind="OutputPin" Bounds="1018,1644" />
+            <Pin Id="HiXcw5NTwnCMKk3tAQKGRj" Name="TC" Kind="OutputPin" Bounds="1112,830" />
           </Patch>
           <ProcessDefinition Id="MYeOgzaHP55LZYQVk1JEVm">
             <Fragment Id="HSsNXdghp58MWlSJkwQymQ" Patch="LEwNJYiA0jWMrykdgP2mPf" Enabled="true" />
@@ -689,11 +689,11 @@
           </Canvas>
           <Patch Id="Kd0KGHarfUHP1zFLYQYcwM" Name="Create" />
           <Patch Id="I8R1CiQqcN9OtL4n8jg9eQ" Name="Update" ParticipatingElements="PAf8A8d6GwXOBmbPZH9ZQD,RZMmuVNJ02ALg2z7TjAzLC">
+            <Pin Id="PCJwvEcIiQZOix6OxX6h09" Name="Search Pattern" Kind="InputPin" Bounds="806,518" />
+            <Pin Id="UNiz8cd8J6rLFjQ4ueCHoK" Name="Variable" Kind="InputPin" />
             <Pin Id="U8PCrRrDAAWN6vzdhGRbU2" Name="Directory" Kind="OutputPin" Bounds="525,1052" />
             <Pin Id="UVLqyiywGBVNxMeZqPfcPH" Name="AccumulatedFrames" Kind="OutputPin" Bounds="649,1175" />
             <Pin Id="R08TYBIJdVpNjgnbKjhi7J" Name="Frames" Kind="OutputPin" Bounds="796,1250" />
-            <Pin Id="PCJwvEcIiQZOix6OxX6h09" Name="Search Pattern" Kind="InputPin" Bounds="806,518" />
-            <Pin Id="UNiz8cd8J6rLFjQ4ueCHoK" Name="Variable" Kind="InputPin" />
           </Patch>
           <ProcessDefinition Id="Rpj8DG89HiYNSGBbkBTf8m">
             <Fragment Id="RZyJKh2cqRdNDI0qkfFyD1" Patch="Kd0KGHarfUHP1zFLYQYcwM" Enabled="true" />
@@ -1031,21 +1031,21 @@
           </Canvas>
           <Patch Id="J5louUiR643OJaPKimlR53" Name="Create" />
           <Patch Id="SGBqVvBTswYLUNLFVk4BOV" Name="Update">
-            <Pin Id="FyEhN6mMFkCOgwmRNTz6Qv" Name="Timeline" Kind="OutputPin" />
             <Pin Id="MbyX7ORgnZOL2VmpxhQ32R" Name="Timeline" Kind="InputPin" Bounds="399,196" />
             <Pin Id="BJumpMb58LDMemQim8sMwM" Name="Name" Kind="InputPin" Bounds="1186,1026" />
-            <Pin Id="ASuPrG6S648LEqcEWvmjNv" Name="Clips" Kind="OutputPin" Bounds="1014,1291" />
             <Pin Id="BMTjXMp2h6WOps1CRT76yC" Name="UnifiedMode" Kind="InputPin" Bounds="985,439" />
-            <Pin Id="EAt2hbGpJI9N08EAPMiAIc" Name="Active" Kind="OutputPin" Bounds="715,1263" />
-            <Pin Id="BVttQ8xXoFXPB1rA1Ks1FI" Name="NormalizedTime" Kind="OutputPin" Bounds="635,1060" />
-            <Pin Id="JoJP3YAs8B6OCoZO1fuFwb" Name="Seconds" Kind="OutputPin" Bounds="991,1478" />
-            <Pin Id="UoqAP4M1iQLMZrKvHlvG3v" Name="Fade" Kind="OutputPin" Bounds="912,1152" />
-            <Pin Id="ABsmMaxNXvlLdZITI9ynYW" Name="Variable" Kind="OutputPin" Bounds="1001,1157" />
             <Pin Id="UQG2zxpbdOcN48MY0zaVQF" Name="End Fade Value" Kind="InputPin" Bounds="787,925" DefaultValue="2">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="FyEhN6mMFkCOgwmRNTz6Qv" Name="Timeline" Kind="OutputPin" />
+            <Pin Id="ASuPrG6S648LEqcEWvmjNv" Name="Clips" Kind="OutputPin" Bounds="1014,1291" />
+            <Pin Id="EAt2hbGpJI9N08EAPMiAIc" Name="Active" Kind="OutputPin" Bounds="715,1263" />
+            <Pin Id="BVttQ8xXoFXPB1rA1Ks1FI" Name="NormalizedTime" Kind="OutputPin" Bounds="635,1060" />
+            <Pin Id="JoJP3YAs8B6OCoZO1fuFwb" Name="Seconds" Kind="OutputPin" Bounds="991,1478" />
+            <Pin Id="UoqAP4M1iQLMZrKvHlvG3v" Name="Fade" Kind="OutputPin" Bounds="912,1152" />
+            <Pin Id="ABsmMaxNXvlLdZITI9ynYW" Name="Variable" Kind="OutputPin" Bounds="1001,1157" />
           </Patch>
           <ProcessDefinition Id="MucNhlHxcPuPl6HLmYeePt">
             <Fragment Id="GO2MK5X7ur1Oz9ioBb9yfC" Patch="J5louUiR643OJaPKimlR53" Enabled="true" />
@@ -1577,17 +1577,17 @@
           </Canvas>
           <Patch Id="UaKecaWdFpRNrxHd4WILP8" Name="Create" />
           <Patch Id="Es1VXklZaKzLJU6AB03jMd" Name="Update">
-            <Pin Id="Venu8Gz6pYvMkTjaiAB3q9" Name="Timeline" Kind="OutputPin" />
             <Pin Id="UswbU6bqIGXQW6iSv6aPtC" Name="Timeline" Kind="InputPin" Bounds="399,196" />
-            <Pin Id="O6ksPb2DJWvPaAMkBp1Xvq" Name="Clips" Kind="OutputPin" Bounds="1014,1291" />
             <Pin Id="SCPys1bPlx5MIug29SEfwe" Name="Category" Kind="InputPin" Bounds="1186,1026" />
             <Pin Id="C9XMYSJn2zDMP5JTLlINKd" Name="UnifiedMode" Kind="InputPin" Bounds="985,439" />
+            <Pin Id="CeYoE2gIt4HN8CtbhFgPXB" Name="End Fade Value" Kind="InputPin" Bounds="1207,789" />
+            <Pin Id="Venu8Gz6pYvMkTjaiAB3q9" Name="Timeline" Kind="OutputPin" />
+            <Pin Id="O6ksPb2DJWvPaAMkBp1Xvq" Name="Clips" Kind="OutputPin" Bounds="1014,1291" />
             <Pin Id="UJwx3NUuQGoLqOfj5dbgSA" Name="Name" Kind="OutputPin" Bounds="672,1471" />
             <Pin Id="VUrIdG38obSMkbfhWl2DAS" Name="Active" Kind="OutputPin" Bounds="709,1386" />
             <Pin Id="AeXCny4A8JqLyLlc0Weee9" Name="ClipTimeNormalized" Kind="OutputPin" Bounds="635,1060" />
             <Pin Id="GjPY6Y90LzRQYym2txbuXx" Name="ClipTime" Kind="OutputPin" Bounds="933,1463" />
             <Pin Id="LeOLUCaFwTxMu7ZJkW5vR9" Name="Fade" Kind="OutputPin" Bounds="912,1152" />
-            <Pin Id="CeYoE2gIt4HN8CtbhFgPXB" Name="End Fade Value" Kind="InputPin" Bounds="1207,789" />
             <Pin Id="Gybk6xVe38gN3GsYLCjonw" Name="Variable" Kind="OutputPin" Bounds="1001,1157" />
             <Pin Id="LLujDYASyYFOaaMumEa2Ui" Name="SourceTimeNormalized" Kind="OutputPin" />
             <Pin Id="HnFy1CozXc7MUadt0Gb8Uh" Name="SourceTime" Kind="OutputPin" />
@@ -1900,7 +1900,6 @@
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="R56ewZtMOwnMj2jvRT00qb" Name="Fade" Kind="OutputPin" />
             <Pin Id="BxZapsiTruxMUVD3xQi8wy" Name="Duration" Kind="InputPin" Bounds="551,265" />
             <Pin Id="PXCndHNmrt0NIXiEF5443u" Name="FadeIn" Kind="InputPin" Bounds="663,273" />
             <Pin Id="FoiJrJNBXMePMoVmq3ME8T" Name="FadeOut" Kind="InputPin" Bounds="796,279" />
@@ -1909,6 +1908,7 @@
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="R56ewZtMOwnMj2jvRT00qb" Name="Fade" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="VVYM8Z77d2FLJeCclw6XYa">
             <Fragment Id="CCkNXWwEQjqQDBnSJokm0j" Patch="FSJDVFvjoboP2WQEIs0LdF" Enabled="true" />
@@ -2969,12 +2969,12 @@
                 <Choice Kind="TypeFlag" Name="Observable" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="EeKbE4LT94zPneGRXsV2L7" Name="Due Time" Kind="InputPin" Bounds="762,137" />
             <Pin Id="QG3UCajqGZDP0y5gS5TT48" Name="Result" Kind="OutputPin" Bounds="662,491">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Observable" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="EeKbE4LT94zPneGRXsV2L7" Name="Due Time" Kind="InputPin" Bounds="762,137" />
             <Pin Id="UlgmrCMG67FQEHfTNyt28I" Name="Changed" Kind="OutputPin" Bounds="820,280" />
           </Patch>
           <ProcessDefinition Id="RB7jXLaIxZxLI02RjcKrEV">
@@ -3217,10 +3217,10 @@
           <Patch Id="UbT8brridP4OIKnFDE9RbJ" Name="Create" />
           <Patch Id="N2XvAAmxR4XLSDCFUtDoNC" Name="Update">
             <Pin Id="TaZkl2xJNDYM6jWbQsS2CI" Name="Timeline" Kind="InputPin" Bounds="833,151" />
-            <Pin Id="A2Ovi2C9IsOOiByHr1HegQ" Name="Frame" Kind="OutputPin" Bounds="967,1444" />
             <Pin Id="HTA1y6ezGp0LvD2CLZkM7X" Name="FrameOffset" Kind="InputPin" Bounds="1204,438" />
             <Pin Id="Q1358MQNk2SMyviBP35LEg" Name="ClipName" Kind="InputPin" Bounds="1117,437" />
             <Pin Id="P9j8BvpJQWQPqMiDGNRL1k" Name="Set" Kind="InputPin" Bounds="1237,488" />
+            <Pin Id="A2Ovi2C9IsOOiByHr1HegQ" Name="Frame" Kind="OutputPin" Bounds="967,1444" />
             <Pin Id="NoIeaiYChQvN6GnegAQCyB" Name="InstancesFound" Kind="OutputPin" Bounds="1081,1429" />
           </Patch>
           <ProcessDefinition Id="Qrlg1jYGHlAQKx6exji0CN">
@@ -3916,7 +3916,6 @@
                 </p:TypeArguments>
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="R8w3m01F1PtNa8Umenf2aQ" Name="TildaClip" Kind="OutputPin" />
             <Pin Id="OVLGV2F4bkMP7NcOp4Hxcz" Name="Variable" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Spread" />
@@ -3937,6 +3936,7 @@
                 </p:TypeArguments>
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="R8w3m01F1PtNa8Umenf2aQ" Name="TildaClip" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="JbqZzd7qTtTPLnq00QjJOA">
             <Fragment Id="UoeeyzEjlm9NINhk1uLt7E" Patch="OiTOKBwNFNQNblHIh3LWUj" Enabled="true" />
@@ -4065,8 +4065,8 @@
           <Patch Id="Dwf5AgDFQKTMHuFWFQFxxe" Name="Create" />
           <Patch Id="El4vAs42cc4QXe0CgIPC99" Name="Update">
             <Pin Id="DgxDFubR3A9N7cmRsGPy2q" Name="Input" Kind="InputPin" Bounds="522,258" />
-            <Pin Id="KpkKvI9Q1WNLJiIpIKwX2F" Name="Clips" Kind="OutputPin" Bounds="610,731" />
             <Pin Id="Ja2pwKnykbMMyFrCwyJwqF" Name="Category" Kind="InputPin" Bounds="1117,437" />
+            <Pin Id="KpkKvI9Q1WNLJiIpIKwX2F" Name="Clips" Kind="OutputPin" Bounds="610,731" />
           </Patch>
           <ProcessDefinition Id="O8u2Gpdrks1Pb0gsy4jlNu">
             <Fragment Id="VQhgehwzRBFNfkXMTCoupo" Patch="Dwf5AgDFQKTMHuFWFQFxxe" Enabled="true" />
@@ -4123,10 +4123,10 @@
           <Patch Id="Kwe0SuhYekGMUeXLFG4LXM" Name="Create" />
           <Patch Id="Sh5fsmxs399M9GaWKnifxO" Name="Update">
             <Pin Id="POfE7IfkfuWPfDS2gKd9IH" Name="Timeline" Kind="InputPin" />
-            <Pin Id="VfD1ZjD6KSGNWC1TQvPOPj" Name="Value" Kind="OutputPin" />
             <Pin Id="MHIAllOWVpxMtNO9pp3QE5" Name="EnvelopeClip" Kind="InputPin" />
             <Pin Id="CMpa1uakTYlNBVgkRwBvxO" Name="Resolution" Kind="InputPin" />
             <Pin Id="AeSPfza9vUbM6NKLiHrM5W" Name="Clamp" Kind="InputPin" />
+            <Pin Id="VfD1ZjD6KSGNWC1TQvPOPj" Name="Value" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="PTGnSyzGMy4MU3c9vwcLx4">
             <Fragment Id="EMuAoinWLKvMCTR79yldRA" Patch="Kwe0SuhYekGMUeXLFG4LXM" Enabled="true" />
@@ -4179,6 +4179,9 @@
               <Pin Id="MIKELbrgfbwLArNy2frjvQ" Name="RemoveKeyframe" Kind="InputPin" />
               <Pin Id="GkhVcd8HbzSNTVGMddhydJ" Name="Timeline" Kind="OutputPin" />
               <Pin Id="AJYKVcafdSLOfnJHHaTHDy" Name="Values" Kind="OutputPin" />
+              <Pin Id="SdU9lLNWBb2MVhbIMxn68u" Name="PreviousKeyframeValues" Kind="OutputPin" />
+              <Pin Id="E39761Q9iysPGcGiFAIQkX" Name="NextkeyframeValues" Kind="OutputPin" />
+              <Pin Id="QwMEr0AkMD4LzCdo0dmOZG" Name="LerpFactor" Kind="OutputPin" />
               <Pin Id="RfMUNCHysLMMHmkyGdC2Ql" Name="Log" Kind="OutputPin" />
               <Pin Id="TrZVk7SxhZBOy9qpsEBxkL" Name="TC on Keyframe" Kind="OutputPin" />
               <Pin Id="KpMPigcFInjMdxH8U6y0KH" Name="ActiveKeyframe" Kind="OutputPin" />
@@ -4193,29 +4196,35 @@
             <ControlPoint Id="BPoN5SK2mNXNxvE4YREtSx" Bounds="1162,253" />
             <ControlPoint Id="S1VlI1lZJPULPxt0CEnAZa" Bounds="1282,253" />
             <ControlPoint Id="Pv1q4gbVAZ3OGq5WTpvj2e" Bounds="1369,253" />
-            <ControlPoint Id="K2KY2ocTttEL3KIYbzJhXS" Bounds="431,484" />
-            <ControlPoint Id="Tnazq07OOqpLt6FmhKuCvd" Bounds="651,484" />
-            <ControlPoint Id="F7CJpf7P8yiOy6DB5quAxC" Bounds="871,484" />
-            <ControlPoint Id="Pe1rAyM4qicM50ZGtkUhse" Bounds="1093,484" />
-            <ControlPoint Id="CdvYFkseDXVMdOxweBZKSy" Bounds="1312,484" />
+            <ControlPoint Id="K2KY2ocTttEL3KIYbzJhXS" Bounds="431,480" />
+            <ControlPoint Id="Tnazq07OOqpLt6FmhKuCvd" Bounds="557,480" />
+            <ControlPoint Id="F7CJpf7P8yiOy6DB5quAxC" Bounds="1058,480" />
+            <ControlPoint Id="Pe1rAyM4qicM50ZGtkUhse" Bounds="1185,480" />
+            <ControlPoint Id="CdvYFkseDXVMdOxweBZKSy" Bounds="1312,480" />
+            <ControlPoint Id="RvqMQiw4oG4Mn3Sah7AndW" Bounds="682,480" />
+            <ControlPoint Id="SkKDZdtpehsNp6ln4aD8sb" Bounds="809,480" />
+            <ControlPoint Id="MJRZMckkpOcP6LQntDgKHc" Bounds="934,480" />
           </Canvas>
           <Patch Id="D7D9BmDPlEDOfkA74nNAaa" Name="Create" />
           <Patch Id="Ewvv10AR9XGNtvp7Dm3AMi" Name="Update">
-            <Pin Id="A974VK8OeGQNxHXv2V0PkU" Name="Timeline" Kind="OutputPin" />
             <Pin Id="BzjUphaCGztNUZ4NxxO74I" Name="Timeline" Kind="InputPin" />
             <Pin Id="ORawxSVsXxjNMbxCKn3sUg" Name="KeyframesClip" Kind="InputPin" />
             <Pin Id="GKCA1OBErl3Lg5KFogJOkt" Name="UseThru" Kind="InputPin" />
-            <Pin Id="Jdg1P0vo0MiLzBT9Rl9NUq" Name="Values" Kind="OutputPin" />
             <Pin Id="Rtvpx9zmLYlMeygP2CvV5L" Name="Values" Kind="InputPin" />
             <Pin Id="ElXjFIMb1DVPmuHHUpRqrj" Name="Set" Kind="InputPin" />
-            <Pin Id="NZEjbjnvW2HN8PM9IzQicC" Name="Log" Kind="OutputPin" />
             <Pin Id="RU7Q4DAMg37L1puN2pDw9H" Name="Capacity" Kind="InputPin" />
             <Pin Id="AOpWAFMJhH7MyCbOj6WZ6B" Name="GoToPreviousKeyframe" Kind="InputPin" />
-            <Pin Id="C8c3liju0ydOKTdnbO0oMM" Name="TC on Keyframe" Kind="OutputPin" />
             <Pin Id="JcynsProKdNMKnoh5oAXal" Name="GoToNextKeyframe" Kind="InputPin" />
             <Pin Id="VumK2C6YMlBQbNIbESrl37" Name="AddKeyframe" Kind="InputPin" />
-            <Pin Id="HlyULP7QzFxODvS6JTdqGd" Name="ActiveKeyframe" Kind="OutputPin" />
             <Pin Id="U2enlrX9UAVPXZKZmRyPtc" Name="RemoveKeyframe" Kind="InputPin" />
+            <Pin Id="A974VK8OeGQNxHXv2V0PkU" Name="Timeline" Kind="OutputPin" />
+            <Pin Id="Jdg1P0vo0MiLzBT9Rl9NUq" Name="Values" Kind="OutputPin" />
+            <Pin Id="NZEjbjnvW2HN8PM9IzQicC" Name="Log" Kind="OutputPin" />
+            <Pin Id="C8c3liju0ydOKTdnbO0oMM" Name="TC on Keyframe" Kind="OutputPin" />
+            <Pin Id="HlyULP7QzFxODvS6JTdqGd" Name="ActiveKeyframe" Kind="OutputPin" />
+            <Pin Id="C9MISwYPbJlNY4TQx5spdx" Name="PreviousKeyframeValues" Kind="OutputPin" />
+            <Pin Id="K2RvoDoNnzSLlVOKvmREvc" Name="NextkeyframeValues" Kind="OutputPin" />
+            <Pin Id="LExJ7pAvUFhPHJ3wSk7728" Name="LerpFactor" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="SVKSepoeao5Ow2TorDvKP5">
             <Fragment Id="DcIR1X812OTNASCMkAUc03" Patch="D7D9BmDPlEDOfkA74nNAaa" Enabled="true" />
@@ -4251,6 +4260,12 @@
           <Link Id="UGQvQWLojfELsh9TCFVEhz" Ids="TrZVk7SxhZBOy9qpsEBxkL,Pe1rAyM4qicM50ZGtkUhse" />
           <Link Id="KVpOPY7snK1MRedoDcJ0Tg" Ids="CdvYFkseDXVMdOxweBZKSy,HlyULP7QzFxODvS6JTdqGd" IsHidden="true" />
           <Link Id="Uy9yBZYICkvM1rS5C2wjuz" Ids="KpMPigcFInjMdxH8U6y0KH,CdvYFkseDXVMdOxweBZKSy" />
+          <Link Id="FmxdO6Ro3cOMldyRc5EAL0" Ids="RvqMQiw4oG4Mn3Sah7AndW,C9MISwYPbJlNY4TQx5spdx" IsHidden="true" />
+          <Link Id="JE4CC7KWrfELmDjIhAwZc6" Ids="SdU9lLNWBb2MVhbIMxn68u,RvqMQiw4oG4Mn3Sah7AndW" />
+          <Link Id="EKHmgXKCuxHPyLi6DEkC3j" Ids="SkKDZdtpehsNp6ln4aD8sb,K2RvoDoNnzSLlVOKvmREvc" IsHidden="true" />
+          <Link Id="VI6QeqDSyGrPFTPr3Qb49M" Ids="E39761Q9iysPGcGiFAIQkX,SkKDZdtpehsNp6ln4aD8sb" />
+          <Link Id="Q0uZDxjesFCNhanGRgVzfG" Ids="MJRZMckkpOcP6LQntDgKHc,LExJ7pAvUFhPHJ3wSk7728" IsHidden="true" />
+          <Link Id="P9bTGKYO6XFPu2YAPP0jIK" Ids="QwMEr0AkMD4LzCdo0dmOZG,MJRZMckkpOcP6LQntDgKHc" />
         </Patch>
       </Node>
       <Overlay Id="IHfRRPHw0CzMjTq8hZh6xy" Name="Keyframe" Bounds="1060,401,235,179" />
@@ -4419,20 +4434,20 @@
                 </p:TypeArguments>
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="SiSMMpKqNxMM1kQNumla55" Name="Fade" Kind="OutputPin" Bounds="314,1111" />
             <Pin Id="NLfSVOhqsWJNYmjJYbgiNr" Name="Frames" Kind="InputPin" />
-            <Pin Id="HRsqG7t3zVpMDcmlCIwA3m" Name="FramesNumber" Kind="OutputPin" Bounds="401,1128" />
-            <Pin Id="Ke1Ey7sIdFBLogDh70ivWR" Name="Format File" Kind="OutputPin" Bounds="-34,2734" />
-            <Pin Id="P1ryPYHVzYhOv3sLI1iR9I" Name="Frames" Kind="OutputPin" Bounds="383,3197" />
             <Pin Id="JXhqhAjQNhtMNRvSmKbepz" Name="TC" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="TWJ3jCxz3UZLfaTF1SaT16" Name="Preload" Kind="InputPin" />
-            <Pin Id="IeNPjc45ETeMhc0U2NRaor" Name="FrameNumber" Kind="OutputPin" Bounds="714,1230" />
             <Pin Id="MIDtY5tw04yOfr9Hy1PeWI" Name="LoopableClipColor" Kind="InputPin" Bounds="1318,162" />
             <Pin Id="HQHZtko2TQMLB83BJY8pTy" Name="Clock" Kind="InputPin" />
+            <Pin Id="SiSMMpKqNxMM1kQNumla55" Name="Fade" Kind="OutputPin" Bounds="314,1111" />
+            <Pin Id="HRsqG7t3zVpMDcmlCIwA3m" Name="FramesNumber" Kind="OutputPin" Bounds="401,1128" />
+            <Pin Id="Ke1Ey7sIdFBLogDh70ivWR" Name="Format File" Kind="OutputPin" Bounds="-34,2734" />
+            <Pin Id="P1ryPYHVzYhOv3sLI1iR9I" Name="Frames" Kind="OutputPin" Bounds="383,3197" />
+            <Pin Id="IeNPjc45ETeMhc0U2NRaor" Name="FrameNumber" Kind="OutputPin" Bounds="714,1230" />
           </Patch>
           <ProcessDefinition Id="PdPi4pmg0NWNGjWZle9Gdt">
             <Fragment Id="GCanMhNbhWWQElEbgQq3Kl" Patch="PJ7pXONpoCkNfYZAbvwFG0" Enabled="true" />
@@ -4750,20 +4765,20 @@
           <Patch Id="Ui8ueoL8HT6LTvRMCe9mEX" Name="Create" />
           <Patch Id="NEIcRg9cJECND0T4YoDdl6" Name="Update">
             <Pin Id="FWOivJTjlIMPi5F4FDQmN6" Name="Timeline" Kind="InputPin" Bounds="833,151" />
-            <Pin Id="FAHrXoSkDMbOe0Ahrjktud" Name="Fade" Kind="OutputPin" Bounds="116,2593" />
-            <Pin Id="OoAUpDG5sZTMDF7EubuLdG" Name="Frames In Directory" Kind="OutputPin" Bounds="641,1829" />
-            <Pin Id="Kl0LS7SjgdXNhFujKRLKGR" Name="Format File" Kind="OutputPin" Bounds="-34,2734" />
             <Pin Id="NxANjDFY3lFPPeIEHyKasT" Name="Preload" Kind="InputPin" DefaultValue="7">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="EqLq9lgHQ4KL02uAvbBywq" Name="Frames" Kind="OutputPin" Bounds="383,3197" />
             <Pin Id="E5Nylw7mONoPhCkizUabnA" Name="LoopableClipCategory" Kind="InputPin" Bounds="1479,-77" DefaultValue="Loop">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="FAHrXoSkDMbOe0Ahrjktud" Name="Fade" Kind="OutputPin" Bounds="116,2593" />
+            <Pin Id="OoAUpDG5sZTMDF7EubuLdG" Name="Frames In Directory" Kind="OutputPin" Bounds="641,1829" />
+            <Pin Id="Kl0LS7SjgdXNhFujKRLKGR" Name="Format File" Kind="OutputPin" Bounds="-34,2734" />
+            <Pin Id="EqLq9lgHQ4KL02uAvbBywq" Name="Frames" Kind="OutputPin" Bounds="383,3197" />
             <Pin Id="Rli0weNnv0UL9I6PiINqXF" Name="SearchPattern" Kind="OutputPin" />
             <Pin Id="MkR5gf7hVXaLfGKHkqjNy8" Name="FrameNumber" Kind="OutputPin" Bounds="968,1655" />
           </Patch>
