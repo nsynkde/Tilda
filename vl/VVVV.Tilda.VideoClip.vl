@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0344-gd5eabf23a7" Version="0.128">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0411-gf6daa4918b" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -20,18 +20,12 @@
             <Pin Id="G0DZWIMg38rLctzVsidZXH" Name="ImageStackDirectory" Kind="InputPin" Bounds="-105,467" />
             <Pin Id="DOcmv8i4kQ9MsT3iG1N2Jb" Name="AudioFile" Kind="InputPin" Bounds="-133,155" />
             <Pin Id="Kipln06mPs4ONjcVbTFzqO" Name="Set" Kind="InputPin" Bounds="111,414" />
-            <Pin Id="HFfyIC2T5ooMnPpMJYIIhx" Name="Format File Player 1" Kind="OutputPin" Bounds="-378,1772" />
             <Pin Id="MneaXUuk4OAN8FBW8ePxix" Name="In" Kind="InputPin" Bounds="147,494" />
-            <Pin Id="MDTAQ1OcsqPNTL5Lx0sccK" Name="FramesToPlay Player 1" Kind="OutputPin" Bounds="342,1342" />
             <Pin Id="Q245f6MS5JDOE1hnnY6ejY" Name="Out" Kind="InputPin" Bounds="171,548" />
             <Pin Id="Mqb6NxAec0POKUeLW4uEdb" Name="LoopCount" Kind="InputPin" Bounds="172,637" />
-            <Pin Id="Tn8DvaXQv8VNXsIqOiGk8C" Name="BlendLevel" Kind="OutputPin" Bounds="255,977" />
-            <Pin Id="RWjSgux1GfJQHPYCD2A3Xu" Name="PlayerStatistics" Kind="OutputPin" Bounds="113,1325" />
             <Pin Id="U5vlaci57zpMjiu8FF2wlG" Name="Preload Count" Kind="InputPin" Bounds="188,590" />
             <Pin Id="QDYSVqJMmviNnC9dyOxQ0y" Name="Preroll" Kind="InputPin" Bounds="219,670" />
-            <Pin Id="HuyueAfl1uHLtSqrCN9ii7" MergeId="94484" Name="Format File Player 2" Kind="OutputPin" Bounds="-378,1772" />
             <Pin Id="NE0CFT9zSUNOxaMt80x13R" Name="BlendFrames" Kind="InputPin" Bounds="533,234" />
-            <Pin Id="Fn2F4OYVJrhMVWBidsKWGU" MergeId="266" Name="FramesToPlay Player 2" Kind="OutputPin" Bounds="342,1342" />
             <Pin Id="HoGp9XIDIo1OKNLCqxcnJx" Name="TC" Kind="InputPin" Bounds="197,636" />
             <Pin Id="QQckJO3nqcbNAWxOT6O8AC" Name="Rescan Directories" Kind="InputPin" Bounds="366,20">
               <p:TypeAnnotation>
@@ -45,6 +39,12 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="TLOcDpsUIWMO69gO1A8aSc" Name="Framebase" Kind="InputPin" Bounds="997,152" />
+            <Pin Id="HFfyIC2T5ooMnPpMJYIIhx" Name="Format File Player 1" Kind="OutputPin" Bounds="-378,1772" />
+            <Pin Id="MDTAQ1OcsqPNTL5Lx0sccK" Name="FramesToPlay Player 1" Kind="OutputPin" Bounds="342,1342" />
+            <Pin Id="Tn8DvaXQv8VNXsIqOiGk8C" Name="BlendLevel" Kind="OutputPin" Bounds="255,977" />
+            <Pin Id="RWjSgux1GfJQHPYCD2A3Xu" Name="PlayerStatistics" Kind="OutputPin" Bounds="113,1325" />
+            <Pin Id="HuyueAfl1uHLtSqrCN9ii7" MergeId="94484" Name="Format File Player 2" Kind="OutputPin" Bounds="-378,1772" />
+            <Pin Id="Fn2F4OYVJrhMVWBidsKWGU" MergeId="266" Name="FramesToPlay Player 2" Kind="OutputPin" Bounds="342,1342" />
           </Patch>
           <Canvas Id="LDtJ0tZl0ZpPGWEr6dn6fp" CanvasType="Group">
             <ControlPoint Id="AqCwVdTJmZUOIO2NtWkuWM" Bounds="828,153" />
@@ -426,13 +426,13 @@
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="MThVI0QX6poPZY0FhzSmWS" Name="Directories" Kind="OutputPin" Bounds="616,1004" />
             <Pin Id="FMLQYl3ejT7PRAboSINKRt" Name="BaseDirectory" Kind="InputPin" />
             <Pin Id="SLAPewS4wpzPGB3OiF7bAc" Name="Search Pattern" Kind="InputPin" Bounds="432,512" DefaultValue="*.tga">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="MThVI0QX6poPZY0FhzSmWS" Name="Directories" Kind="OutputPin" Bounds="616,1004" />
           </Patch>
           <ProcessDefinition Id="QRSElNyI9T6PtCD5M9g2tB">
             <Fragment Id="MI4xE5Onj8xPAMdC1FMXUv" Patch="ScmpP6X2QBMLOIrPUF0S0k" Enabled="true" />
@@ -914,12 +914,9 @@
           <Patch Id="BnqLvsGu6sGNXdA4feaKSt" Name="Create" />
           <Patch Id="UGzXkg54bKbOhyYiL3s2F3" Name="Update">
             <Pin Id="CKM4au1M5C4Lhw5N9g6XuK" Name="Set" Kind="InputPin" />
-            <Pin Id="RTaJ93yph10PI0ZAZ4auWQ" Name="Format File" Kind="OutputPin" Bounds="-378,1772" />
             <Pin Id="G75pzOAWM7CPR8oLB2ZviS" Name="PlaybackInstruction" Kind="InputPin" Bounds="954,166" />
             <Pin Id="P3YEtxhYHf6NVYgpAOCV3Z" Name="Directories" Kind="InputPin" Bounds="1357,459" />
-            <Pin Id="Gtxcv43BO9lOWgJf4mgYdk" Name="FramesToPlay" Kind="OutputPin" Bounds="342,1342" />
             <Pin Id="DrV5nEocHcILdhSojiHyip" Name="Search Pattern" Kind="InputPin" Bounds="875,1001" />
-            <Pin Id="FUqu2CX5dxPLYiKlIpfJeI" Name="PlayerStatistics" Kind="OutputPin" Bounds="1440,1785" />
             <Pin Id="CBL9pKLHiLbPPolpwbbi2s" Name="TC" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Integer32" />
@@ -927,6 +924,9 @@
             </Pin>
             <Pin Id="D9Z76NSJ0iHNB1x9V4BOCh" Name="IsActive" Kind="InputPin" Bounds="1660,255" />
             <Pin Id="SHs4LVJGIjvLY2ksv7GT1v" Name="Framebase" Kind="InputPin" Bounds="1797,271" />
+            <Pin Id="RTaJ93yph10PI0ZAZ4auWQ" Name="Format File" Kind="OutputPin" Bounds="-378,1772" />
+            <Pin Id="Gtxcv43BO9lOWgJf4mgYdk" Name="FramesToPlay" Kind="OutputPin" Bounds="342,1342" />
+            <Pin Id="FUqu2CX5dxPLYiKlIpfJeI" Name="PlayerStatistics" Kind="OutputPin" Bounds="1440,1785" />
           </Patch>
           <ProcessDefinition Id="MhRQRJd72qpPscdmeSwJbp">
             <Fragment Id="HekSear6XTvPVqSGLPcKAP" Patch="BnqLvsGu6sGNXdA4feaKSt" Enabled="true" />
@@ -1313,7 +1313,6 @@
           <Link Id="VVCnwMyuYFDOcwk8U99keR" Ids="AHAR1MzutjaLnZYDITVGqY,IC6npekikzyPSjwxAs6D8r" IsHidden="true" />
           <Patch Id="SpXB8xXEayZNgJEWlAERa1" Name="CalcBlend" ParticipatingElements="RKdRNkTvRESQE8XKRvj4ve,HzFFLIG2RVFLYu3JANP5v0,OrSYoVJToNlPQb1edsIoo4">
             <Pin Id="E4PMoIFe7IEMcRq28dI28I" Name="BlendTC" Kind="InputPin" />
-            <Pin Id="IC6npekikzyPSjwxAs6D8r" Name="BlendValue" Kind="OutputPin" />
             <Pin Id="U07CrPOLMn2O1r9pzV3p9y" Name="Min" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Integer32" />
@@ -1324,6 +1323,7 @@
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="IC6npekikzyPSjwxAs6D8r" Name="BlendValue" Kind="OutputPin" />
           </Patch>
           <Slot Id="C3WqUndV1I9PLiCh7YaKAG" Name="BlendStartFrame" />
           <Link Id="Igv9FElUioYNlqN1BcCI0s" Ids="Ar4mVCFhlBmPxKnxt6KDyQ,JbuBGXWjlBML5jG6ejHm1A" />
@@ -1797,10 +1797,10 @@
           </Canvas>
           <Patch Id="AF6E3cSUWArMWjKoHA17zF" Name="Create" />
           <Patch Id="DyIEJJjroCxOMApER8Twfo" Name="Update" ParticipatingElements="KIoBhsWcZ6cLQOmjalEKgI,Bu8i0L9VipJLpt126yIybj">
-            <Pin Id="KpbgKVmHGZbNG6EkEnsGj4" Name="Frames" Kind="OutputPin" Bounds="796,1250" />
             <Pin Id="RPF0yP16f0XN4N20S6tuSf" Name="Search Pattern" Kind="InputPin" Bounds="806,518" />
-            <Pin Id="ASzLTetXkAlLj4nhjTaT0F" Name="Count" Kind="OutputPin" />
             <Pin Id="DRFMcNbqrxAO043FKOvADs" Name="Variable" Kind="InputPin" />
+            <Pin Id="KpbgKVmHGZbNG6EkEnsGj4" Name="Frames" Kind="OutputPin" Bounds="796,1250" />
+            <Pin Id="ASzLTetXkAlLj4nhjTaT0F" Name="Count" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="FMONC35mGwJLe1ZjUnaAQK">
             <Fragment Id="SwRaJJOQkyfLLd1Kvv1175" Patch="AF6E3cSUWArMWjKoHA17zF" Enabled="true" />
@@ -2200,9 +2200,7 @@
           <Patch Id="DWEMnutyQPnNYIP0iIzL22" Name="Update" ParticipatingElements="UarpoS9KDSaM8RDheM17P1,DLrK5wUwIp6MqbvvWWRLw1,Q7OkXBssynULebl1WqEG10,Kh4pb1eWdEKPogrbttWrtk,U4fX9QqTn1KNEsTUAte4f7,S5CVd9ImgqlOsD42Q8cLsH,KTra7LDxnK9MzelqdFxtEP">
             <Pin Id="G7JJ0Cb6XslNF2HPCVsPUJ" Name="Category" Kind="InputPin" />
             <Pin Id="MMGkQEsVTilP71PFpEmctF" Name="StartFrame" Kind="InputPin" />
-            <Pin Id="TudvundKvUVMWWnMY7pNMd" Name="Format File" Kind="OutputPin" />
             <Pin Id="QatNdAL1Q66LVjqW2jsatO" Name="Duration" Kind="InputPin" />
-            <Pin Id="K6kCBr3Aee3Matl4ATW4sS" Name="Frame" Kind="OutputPin" />
             <Pin Id="GdZnPpp2lPZM6n5tDjWx3w" Name="Frames" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Spread" />
@@ -2218,7 +2216,6 @@
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="UJREBKtX7umM0tE6hMcyXZ" Name="FrameNumber" Kind="OutputPin" Bounds="1270,1268" />
             <Pin Id="MnbHwmwlTvHLi7nDBZPmCy" Name="LoopableClipColor" Kind="InputPin" Bounds="1185,500" />
             <Pin Id="J5zOumJOVhaOq3KZDeotKy" Name="TC" Kind="InputPin" />
             <Pin Id="PbzM6BiIUXfPcuPgpofUuJ" Name="Preload" Kind="InputPin" />
@@ -2229,6 +2226,9 @@
             </Pin>
             <Pin Id="PUl3EozMT0MLMAbgwGTL8U" Name="Speed" Kind="InputPin" />
             <Pin Id="L8PuR3Tl85jPX4loooovFW" Name="SourceDuration" Kind="InputPin" Bounds="1744,214" />
+            <Pin Id="TudvundKvUVMWWnMY7pNMd" Name="Format File" Kind="OutputPin" />
+            <Pin Id="K6kCBr3Aee3Matl4ATW4sS" Name="Frame" Kind="OutputPin" />
+            <Pin Id="UJREBKtX7umM0tE6hMcyXZ" Name="FrameNumber" Kind="OutputPin" Bounds="1270,1268" />
           </Patch>
           <ProcessDefinition Id="T7vR89iFaMjL0G6hyDPQoj">
             <Fragment Id="LznwKsWGI9qQF2yK8YMVJr" Patch="MO4HxzDNXgFM7AQNQfL5Rk" Enabled="true" />
@@ -2546,6 +2546,7 @@
             </Pad>
           </Canvas>
           <Patch Id="Jzn4VDColctL9uYUoUWMFn" Name="Create" ParticipatingElements="I7OblTLEpjyPHkeJXbgvFt,Ug6KscfTDm1Mh5yIyp8pdW,M2wbMMbgjY2LDaNcUCc2F6,DaHj3ojbq1rQMsVZUw3QeY">
+            <Pin Id="PIJN9xgCEXaNHclwpn98AY" Name="Node Context" Kind="InputPin" />
             <Pin Id="Sf1YCL8M2o6LsqCNkXgiqK" Name="Name" Kind="InputPin" />
             <Pin Id="J5CJCKMKLQSQLXOeZonb9V" Name="Y" Kind="InputPin">
               <p:TypeAnnotation>
@@ -2902,6 +2903,7 @@
                 <Choice Kind="OperationCallFlag" Name="Create" />
                 <CategoryReference Kind="RecordType" Name="VideoClip" NeedsToBeDirectParent="true" />
               </p:NodeReference>
+              <Pin Id="AJTJw2q9FPcLel7ulcbSDC" Name="Node Context" Kind="InputPin" />
               <Pin Id="TAOcTl3F4czOQe5WEA8rtX" Name="Name" Kind="InputPin" />
               <Pin Id="VPBmYXbbHqONFXF2LlLjsM" Name="Y" Kind="InputPin" />
               <Pin Id="S6NDe6DFtDYNkR7OGedEqQ" Name="Startframe" Kind="InputPin" />
@@ -4217,10 +4219,10 @@
           <Patch Id="Pk5c6eElOZsOyXYi9oqnis" Name="Create" />
           <Patch Id="VrYdC0LPIBrP7fZVCh5J72" Name="Update">
             <Pin Id="HvZnt2zSQJ6Obg0QS6Pcwc" Name="IClipForm" Kind="InputPin" />
-            <Pin Id="FYmdjlP5IJ5PSME7UF3QBH" Name="IClipForm" Kind="OutputPin" />
             <Pin Id="MoROCypELF3QWOx9KjzfW7" Name="HoveredClip" Kind="InputPin" />
             <Pin Id="IqKAhfyWqgRNowjwj0NL4N" Name="Timeline" Kind="InputPin" />
             <Pin Id="C3fBmmqC7raOuwHQmnKPO1" Name="Fill" Kind="InputPin" />
+            <Pin Id="FYmdjlP5IJ5PSME7UF3QBH" Name="IClipForm" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="Ps2H7PAdRfDNMJ6OlziLwD">
             <Fragment Id="GtEWN62DQXyMV4qrNqJdur" Patch="Pk5c6eElOZsOyXYi9oqnis" Enabled="true" />
@@ -4885,15 +4887,15 @@
           </Canvas>
           <Patch Id="TqUnaXerQFpNBH2JGlAIX5" Name="Create" />
           <Patch Id="IszaazMDNFTPGLdenhldpS" Name="Update">
-            <Pin Id="OerCioonCvcMmm0OxXv6DG" Name="IClipForm" Kind="OutputPin" />
             <Pin Id="FZCXKBsxjnyOx15PW1S6LY" Name="IClipForm" Kind="InputPin" />
-            <Pin Id="RrG5OQdbDNdNEfOZMFwUmB" Name="SearchPatternsComboBox" Kind="OutputPin" />
             <Pin Id="TYYZA8Ib20rLj8pcRtzIeQ" Name="SearchPattern" Kind="InputPin" />
             <Pin Id="VtaaF9YvJWkNNtyzQp2b5d" Name="ControlName" Kind="InputPin" DefaultValue="SearchPattern">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="OerCioonCvcMmm0OxXv6DG" Name="IClipForm" Kind="OutputPin" />
+            <Pin Id="RrG5OQdbDNdNEfOZMFwUmB" Name="SearchPatternsComboBox" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="N8wdhEwVfRRQbsoL52TQ1u">
             <Fragment Id="HSoVCNCeZ7GMM59gvaaRpW" Patch="TqUnaXerQFpNBH2JGlAIX5" Enabled="true" />

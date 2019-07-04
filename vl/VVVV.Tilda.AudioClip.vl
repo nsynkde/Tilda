@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0344-gd5eabf23a7" Version="0.128">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0411-gf6daa4918b" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -206,6 +206,7 @@
             <Fragment Id="EMQjH0OgttLONuBrG0OAbV" Patch="DC4OV5cjcMsLIZow1QuDWm" Enabled="true" />
           </ProcessDefinition>
           <Patch Id="DcT1XXhyFmnQVKSjhigrUv" Name="Create" ParticipatingElements="IQl4RrPjIzcP1Hr6wmdngn,O0F3Q6ATF79L3vf9pkyzU8">
+            <Pin Id="IkjceZg5WaMQc1JCeYDAke" Name="Node Context" Kind="InputPin" />
             <Pin Id="JNyUel8McCXMOLSDgha3dX" MergeId="154895" Name="Name" Kind="InputPin" />
             <Pin Id="L6bzhOni1x0NS9lkM64QZ1" MergeId="154901" Name="Y" Kind="InputPin">
               <p:TypeAnnotation>
@@ -804,6 +805,12 @@
           </Canvas>
           <Patch Id="DNvd4sOjO62NCrlKPtHt01" Name="Create" />
           <Patch Id="UnsHXUQLWOcNLu7vk7tM9c" Name="Update">
+            <Pin Id="DNr9bLKCxtnQZVetj5LjRz" Name="Filepath" Kind="InputPin" DefaultValue="">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="Path" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="C37VXi8GVirQM5jETdpM1t" Name="Framebase" Kind="InputPin" />
             <Pin Id="RidGdsIXEPVOFP8HMZUD1E" Name="Peaks" Kind="OutputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Spread" />
@@ -814,13 +821,7 @@
                 </p:TypeArguments>
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="DNr9bLKCxtnQZVetj5LjRz" Name="Filepath" Kind="InputPin" DefaultValue="">
-              <p:TypeAnnotation>
-                <Choice Kind="TypeFlag" Name="Path" />
-              </p:TypeAnnotation>
-            </Pin>
             <Pin Id="HFslOKJKPEaN5FknYLGGYa" Name="Length" Kind="OutputPin" />
-            <Pin Id="C37VXi8GVirQM5jETdpM1t" Name="Framebase" Kind="InputPin" />
           </Patch>
           <ProcessDefinition Id="OStPuBC8re1M58s81dEOzV">
             <Fragment Id="Nu9OJhSy8XZLgERrOYWxC7" Patch="DNvd4sOjO62NCrlKPtHt01" Enabled="true" />
@@ -1234,8 +1235,8 @@
           <Patch Id="Jw2OKWJ5uUyMbKSsoNJQjC" Name="Create" ParticipatingElements="VQoelTxGYRNMiXWiRnHybz" />
           <Patch Id="CxohQ0apsd7LgQBvxo1dSR" Name="Update">
             <Pin Id="MMyS0Mgu6BSNwgDxTQ5qIC" Name="Timeline" Kind="InputPin" />
-            <Pin Id="GsduIeNlBvBQYogFJPhVdk" Name="Output" Kind="OutputPin" />
             <Pin Id="QKC327kOC9OLMAaEVYXiZb" Name="Editor" Kind="InputPin" />
+            <Pin Id="GsduIeNlBvBQYogFJPhVdk" Name="Output" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="RQ3uP47fsZZNdPDZfTo8oc">
             <Fragment Id="IiGqAMj7zn1NAy1PD0Kg4c" Patch="Jw2OKWJ5uUyMbKSsoNJQjC" Enabled="true" />
@@ -2228,9 +2229,9 @@
           </Canvas>
           <Patch Id="RYWoHeh7ItEMG4lef5HHEi" Name="Create" />
           <Patch Id="NQ1OeqwasqAPdeqtXkRBvB" Name="Update">
-            <Pin Id="UOAPxjELsqcNthZmc8ZvM9" Name="ClipsSpread" Kind="OutputPin" />
             <Pin Id="Uyj7YEJZoHvLydsEf12N5L" Name="PeakHolder" Kind="InputPin" />
             <Pin Id="UOThGFF70bOLvyUTkCu8or" Name="Timeline" Kind="InputPin" />
+            <Pin Id="UOAPxjELsqcNthZmc8ZvM9" Name="ClipsSpread" Kind="OutputPin" />
             <Pin Id="AuGmSyLa9mDM489IlgyK2I" Name="Output" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="ERRONCVPJRvP62XVaRO6m8">
@@ -2932,7 +2933,6 @@
                 <Choice Kind="TypeFlag" Name="Vector2" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="Urblw4JEbtAMXgHmA0HK9a" Name="Output" Kind="OutputPin" />
             <Pin Id="T578EXdB8F9M5kwvcz1Xlf" Name="Zoom" Kind="InputPin" />
             <Pin Id="Dxev80hcHczNU6KlGvmVmQ" Name="Startframe" Kind="InputPin">
               <p:TypeAnnotation>
@@ -2953,6 +2953,7 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="SO43FkNsfpuN8Oc1K5Mibd" Name="RenderSize" Kind="InputPin" />
+            <Pin Id="Urblw4JEbtAMXgHmA0HK9a" Name="Output" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="TzeTyRHFfwINwW06RkTOOR">
             <Fragment Id="CmUPmSr9XmsPCCZhWHxwQa" Patch="U03ZoRFkDn7LV4znazCv4j" Enabled="true" />
@@ -3089,6 +3090,7 @@
                 <CategoryReference Kind="RecordType" Name="AudioClip" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
               </p:NodeReference>
+              <Pin Id="QQcmlMDaGU5NQrpWaaazvO" Name="Node Context" Kind="InputPin" />
               <Pin Id="Qa79B73KYm6P65wx1eCCxv" Name="Name" Kind="InputPin" />
               <Pin Id="DAuF5U4oNTAOPAH8zArq1G" Name="Y" Kind="InputPin" />
               <Pin Id="Axp6KzF0JeWN1ggksYqAy1" Name="Startframe" Kind="InputPin" />

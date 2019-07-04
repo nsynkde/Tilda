@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0344-gd5eabf23a7" Version="0.128">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0411-gf6daa4918b" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -17,10 +17,10 @@
         <Patch Id="CzjSvRY5dvXQDxmAOA8mZj">
           <Patch Id="ESJZDDS0I02LAWDOx9RJVV" Name="Create" ParticipatingElements="NBGTjVkjaInPqQO9wcJi8Y" />
           <Patch Id="OkqGvJfa3PDOppp4PFQghD" Name="Update">
-            <Pin Id="KdnFOLBicZoPP1VHxxVt7K" Name="Editor" Kind="OutputPin" />
             <Pin Id="Lpv6PEyIE6FPVpP8xopZAx" Name="Editor" Kind="InputPin" />
-            <Pin Id="NAAupT5pinsPHYwkEEUTtg" Name="IClipForm" Kind="OutputPin" />
             <Pin Id="P0LMwXJS1RyONZ7pR9P3RV" Name="Renderer" Kind="InputPin" />
+            <Pin Id="KdnFOLBicZoPP1VHxxVt7K" Name="Editor" Kind="OutputPin" />
+            <Pin Id="NAAupT5pinsPHYwkEEUTtg" Name="IClipForm" Kind="OutputPin" />
             <Pin Id="ShxN6EWSIT6QJqOQtYZuOP" Name="isChanged" Kind="OutputPin" />
           </Patch>
           <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi" CanvasType="Group">
@@ -599,12 +599,12 @@
           <Patch Id="AgHijheXHN3NTMbWosn7Pl" Name="Create" />
           <Patch Id="EdiA9UYCBEhML9iXE5uYrS" Name="Update">
             <Pin Id="Bfaz1bSCfu3OUDRqG9UrfH" Name="Timeline" Kind="InputPin" Bounds="1160,73" />
-            <Pin Id="VZwP2iId3x4Noc5cyHXNoP" Name="Timeline" Kind="OutputPin" />
             <Pin Id="EGAm1Cqd98bO7DGoX0NYc2" Name="Editor" Kind="InputPin" />
-            <Pin Id="EZyqN4shQhWP59bFr91XvL" Name="Editor" Kind="OutputPin" />
             <Pin Id="Q4Ob5GXZwUMMVcsZNW3HoO" Name="IClipForm" Kind="InputPin" />
-            <Pin Id="TiAdasZhB2jPaRpWfzUEQV" Name="IClipForm" Kind="OutputPin" />
             <Pin Id="D7WDXhV0JR4QC99LfrVRg7" Name="IsChanged" Kind="InputPin" />
+            <Pin Id="VZwP2iId3x4Noc5cyHXNoP" Name="Timeline" Kind="OutputPin" />
+            <Pin Id="EZyqN4shQhWP59bFr91XvL" Name="Editor" Kind="OutputPin" />
+            <Pin Id="TiAdasZhB2jPaRpWfzUEQV" Name="IClipForm" Kind="OutputPin" />
             <Pin Id="QX0XbF4eT9JOUy4gj1uJ13" Name="IsChanged" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="ShVJk6fW2g3Lx9pZWHDk9x">
@@ -985,7 +985,6 @@
           </Canvas>
           <Patch Id="DBMHX3o22BCQGXz0olkGdl" Name="Create" />
           <Patch Id="EdCakr9ay9gLCih1EaWWhw" Name="Update">
-            <Pin Id="BRviW9UNo9qNQLUfNc1AjO" Name="IClipForm" Kind="OutputPin" />
             <Pin Id="QdLKNXVyNtSMtNNqLbN0fE" Name="IClipForm" Kind="InputPin" />
             <Pin Id="C1MhLEImu3xNc5iYlVUyoH" Name="Minimum" Kind="InputPin" DefaultValue="-2147483648">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -999,7 +998,6 @@
             </Pin>
             <Pin Id="EqM1R1y2q2DNU7CYj0YCYF" Name="Name" Kind="InputPin" />
             <Pin Id="MAeeT1YRg0QMipodgiUM1B" Name="Value" Kind="InputPin" />
-            <Pin Id="DM2n0jsCNJYLny2DkDK5Ix" Name="Delegates" Kind="OutputPin" />
             <Pin Id="FV2Vh2CTgJWLC1wWlRDJpv" Name="Delegates" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Dictionary" />
@@ -1025,6 +1023,8 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="M7rvagiySaiLIREJgqDPtx" Name="Delegate" Kind="InputPin" />
+            <Pin Id="BRviW9UNo9qNQLUfNc1AjO" Name="IClipForm" Kind="OutputPin" />
+            <Pin Id="DM2n0jsCNJYLny2DkDK5Ix" Name="Delegates" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="GLyo6dE0zQeMHfYDcRGDw1">
             <Fragment Id="K8fkR5y1209NRVl9FQmo6N" Patch="DBMHX3o22BCQGXz0olkGdl" Enabled="true" />
@@ -3062,13 +3062,13 @@
           <Patch Id="FdacMMEbSloPP7mitcCQLm" Name="Create" />
           <Patch Id="Qx3a3hkafXwPlY4gWRMMGt" Name="Update">
             <Pin Id="IKwmSlcu2RpNHj2ORgnKZG" Name="Renderer" Kind="InputPin" />
-            <Pin Id="EuVN8kkar6jLrXVb0Keu70" Name="Editor" Kind="OutputPin" />
             <Pin Id="CK6zB2XvNM3OdzWXPTXIn4" Name="Timeline" Kind="InputPin" />
             <Pin Id="PJ1ZLgqTO5BNHHXQYPbySp" Name="Editor" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Editor" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="EuVN8kkar6jLrXVb0Keu70" Name="Editor" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="DCiHcDYjECsMiJl8QFzPnv">
             <Fragment Id="Ftoy0uLANhlOcWclWhfi1W" Patch="FdacMMEbSloPP7mitcCQLm" Enabled="true" />
@@ -3214,8 +3214,8 @@
           </Canvas>
           <Patch Id="H7QVO46tb4ZOuE0wALZ04Z" Name="Create" />
           <Patch Id="KMm6H7ZSVruNdnrVwsXfL9" Name="Update">
-            <Pin Id="TqX7yYLuKs9LTnsavBKc7h" Name="Bounds" Kind="OutputPin" />
             <Pin Id="QBRjBVt0nBgLgMw7zHF4Co" Name="Renderer" Kind="InputPin" />
+            <Pin Id="TqX7yYLuKs9LTnsavBKc7h" Name="Bounds" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="Ebw7NJVxV32PoDbFT4AhPE">
             <Fragment Id="VZp9efLU8hrO7hkPNcvi6k" Patch="H7QVO46tb4ZOuE0wALZ04Z" Enabled="true" />
@@ -3288,13 +3288,13 @@
           <Patch Id="P8ycEUSJOwWOkBkEagsHCv" Name="Create" />
           <Patch Id="S40UjSReBXMQIOh6fsfgiW" Name="Update">
             <Pin Id="CVDjpuBW6pPLnd8h00xe5I" Name="Renderer" Kind="InputPin" />
-            <Pin Id="U2Ai1jlM8SyOP1FSHmmHvk" Name="Editor" Kind="OutputPin" />
             <Pin Id="CDw5G6ko7fhNjKWZ6pO2AS" Name="Timeline" Kind="InputPin" />
             <Pin Id="Jk95kAB5j1aLxM0bnT4ax0" Name="Editor" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Editor" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="U2Ai1jlM8SyOP1FSHmmHvk" Name="Editor" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="A0J2MiMTiHiP8k0NCfKnMS">
             <Fragment Id="THeGlM3anmePyjHu02fBD9" Patch="P8ycEUSJOwWOkBkEagsHCv" Enabled="true" />
@@ -4242,9 +4242,9 @@
           <Patch Id="Qo84lmRfHz7N3N71sjlL84" Name="Update">
             <Pin Id="NDmkDDQzf5zPmMAKst78xw" Name="Fill" Kind="InputPin" />
             <Pin Id="AI2jpkAt2bMM8GbkAwRNzf" Name="IClipForm" Kind="InputPin" />
-            <Pin Id="AVWHXdxKg7hPRp8oh103SQ" Name="IClipForm" Kind="OutputPin" />
             <Pin Id="CcfR0gdqANjQZR00J3vXnA" Name="HoveredClip" Kind="InputPin" />
             <Pin Id="SW0VQefAft7MfTwrsTv48b" Name="Timeline" Kind="InputPin" />
+            <Pin Id="AVWHXdxKg7hPRp8oh103SQ" Name="IClipForm" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="FGidmPfHg9nQUw4In1zpDR">
             <Fragment Id="ED6a85nCTXjNZN1BaSVMF6" Patch="J5eOLPjXSwBLntYUm4RRBT" Enabled="true" />
@@ -5531,9 +5531,9 @@
           <Link Id="Ech4cOOOwgWNf6wKEnhlIh" Ids="SS3biDLbVzfOYWsynwDrQn,BtVcH5YeNYYQIoUmtyFU0w" IsHidden="true" />
           <Link Id="BNftA5iSoC3QM2xUxZalRW" Ids="BtVcH5YeNYYQIoUmtyFU0w,S8v7LjgM0k6MDvK5eX0sND" />
           <Patch Id="Bh9C0L5IdHqMxpKj31YnEu" Name="AddTextBox" ParticipatingElements="RRwmiLvQ0ckQFWotg3I2NG,Om5uhDlUxk2P9dZkjd9Xbb,U4zGfwVj57mNexGgwREtNJ,QVMAxB0sSxcPpNN8MCLSBq,Cz7M5HQlVoRPGA4wpM7Axq">
-            <Pin Id="C3ztYO90EulLZrCB4JK43u" Name="TextBox" Kind="OutputPin" />
             <Pin Id="SS3biDLbVzfOYWsynwDrQn" Name="ControlName" Kind="InputPin" />
             <Pin Id="GDNmjUzXmxfOp6gAizB4Hk" Name="Text" Kind="InputPin" />
+            <Pin Id="C3ztYO90EulLZrCB4JK43u" Name="TextBox" Kind="OutputPin" />
           </Patch>
           <Link Id="VSR5lRHimC5PQhKekiXjHQ" Ids="NswcWrerPmsMGn6slpxUZ7,P4U0ZLE1uljOVtIQzrfWRg" />
           <Link Id="IYx2pHu7L4eOS20FNcbvHk" Ids="BtVcH5YeNYYQIoUmtyFU0w,KFx5Mn1dpjjO69uhPNdqt3" />
@@ -5547,11 +5547,11 @@
           <Link Id="ILXbXQA2FbWLTtTGcfLkRV" Ids="JjMbJV3gvpULA0AjUmi3Ue,HFUVMu8MK97PcwUBqsiUzx" IsHidden="true" />
           <Patch Id="IUiLh9GGHgcQTjreb6nZPN" Name="AddNumericUpDown" ParticipatingElements="HwbnmLbFST4MQa5bFJujrI,Ep9SPjPkpWiN9TmMd13zCu,AQNUZeY3EgyOzvosKEP7wb,TeMtghuSadkOhAFNGm4gcR,SWwq1msJV5qMTICEzxykKH,JKoXnAnjlMzQTs4eTcKqUQ,JgXA2T63JllOkJ7mnIET2M,VsGN1MerjMLMu26gC6PzVm">
             <Pin Id="OPW79ExgGw7PBXGt1dlCy5" Name="Parent" Kind="InputPin" />
-            <Pin Id="HFUVMu8MK97PcwUBqsiUzx" Name="FormElement" Kind="OutputPin" />
             <Pin Id="BMCt5BamqKlL5zHaqnyGMZ" Name="ControlName" Kind="InputPin" />
             <Pin Id="BXI2k87c0lqOftmqd69RfH" Name="Value" Kind="InputPin" />
             <Pin Id="Cnkgz7vRp5ROVsFDSi1MnI" Name="Min" Kind="InputPin" />
             <Pin Id="H8XDssH0DzMMTsJMd9kLX2" Name="Max" Kind="InputPin" />
+            <Pin Id="HFUVMu8MK97PcwUBqsiUzx" Name="FormElement" Kind="OutputPin" />
           </Patch>
           <Link Id="Qp4P30IisOAPcHc7NjNrHH" Ids="FlhBTqsS8qBQXssT0UExgH,JxJ4GWn3ailMJ8c4aitc77" />
           <Link Id="PjGxXgQojC9LcXHVbN4ekq" Ids="Ncut7wG8qHrMGqK5DpvNOy,GkENMG7el2gPqqPlEzdSKU" />
@@ -5586,7 +5586,6 @@
           <Link Id="HqfIJTpoWPlNG6inbvTerv" Ids="SruUW79CgtDOnW07MqU6Uz,S3N7eUxnx6lLQzjIbiDDZw" />
           <Link Id="PowVR09CWQWL9Ow79fs5ND" Ids="KrFiWo0AwX6MJ6DhRFAjQb,P6XK5X999tjLWSLSiBMe58" />
           <Patch Id="PUzZHjR1J9ONHuRtqxwd74" Name="AddComboBox" ParticipatingElements="LyNcoXihS9ELNJKHjb1UHr,T7OHyOGKxFAO8oHpMWwke1,OUhyO2UAW5bOs1AE7mjhF6,SOC1gXa9p7EPbnKAmibl2O,AupMWh2oTCDNctU7FTAo6L,Tt1COwQR2OYQQ1rLU1dWSb,TlZEBm2mViHLN03VYU1QZX,Eiy7MNIup0aORorLKcYdIk,Mam9TPUtzNXQQN1J31LtKr,I6MPzCtaK2FPVH4mbZxa8O,FixIRD9tNcBPpNpsLl9AyL,JV5kqJVTF2AOUGQcwzMsjd,GqutdLZVS4vOItFIKv0LbM,SRdkrpVE8znMniVjB6Ah6I,PKmM6flFkgzLv7Qs2cdZoK,QCMSWLOCYD5OfPpvccciLv,AkkdA3cIIYxLQfSoMFhlt6,QpdK75KqIdsPW1joIG4m32,HqfIJTpoWPlNG6inbvTerv,PowVR09CWQWL9Ow79fs5ND,Qbi57g5zsqwNHRZTsnxm1K">
-            <Pin Id="On6LUDjANHYMCrrgRXSACt" Name="CategoriesComboBox" Kind="OutputPin" />
             <Pin Id="TgGEHSLWPzxNbaxrU48yRt" Name="Parent" Kind="InputPin" />
             <Pin Id="SEaqxKDktWxOlChAKK5PZQ" Name="ControlName" Kind="InputPin" />
             <Pin Id="QoQeeHhRtWeM7S3Sm0jxuT" Name="Elements" Kind="InputPin">
@@ -5601,6 +5600,7 @@
             </Pin>
             <Pin Id="J3gXOAflQFENo2PJDk7Fj0" Name="Default" Kind="InputPin" />
             <Pin Id="PMBL3ReQ21TO4Laie8Rw8L" Name="Width" Kind="InputPin" />
+            <Pin Id="On6LUDjANHYMCrrgRXSACt" Name="CategoriesComboBox" Kind="OutputPin" />
           </Patch>
           <Link Id="KZDivBcPzGkO6M648EMqXZ" Ids="QoQeeHhRtWeM7S3Sm0jxuT,B9CqzLyofzrPVV6HqRaImO" IsHidden="true" />
           <Link Id="Lp3uwzdlMkdQOolMkkrO3Z" Ids="B9CqzLyofzrPVV6HqRaImO,SNN3lLhlYCrNtJDErcJTQj" />
@@ -5618,11 +5618,11 @@
           <Link Id="FVGiXZQtAZIOmzVxpbEZmG" Ids="LjZDCPAtex9NOR2CaWDRCT,OoTGSF7kV76LieCDarbosK" />
           <Link Id="EhTVSJRwIXjPEPau3NsVgF" Ids="LoKl4KqSyyOQUkYJXgl761,UaVzEaEZkIRMWhtLaodxtI" />
           <Patch Id="QW6RpamENqtMMOOjLP2uFH" Name="AddButton" ParticipatingElements="KM6ZKZSZ9loMYMwQxC0c7J">
-            <Pin Id="RIgWyzpLhzPPJkWMWO5xnm" Name="Output" Kind="OutputPin" />
             <Pin Id="DgHlwwMXrhPNwOk0q7XRSe" Name="ControlName" Kind="InputPin" />
             <Pin Id="CA5aKlfKOniN1eBAABHHvP" Name="Text" Kind="InputPin" />
             <Pin Id="Bvj9YD1b4YCPlhpSNeYJQL" Name="Height" Kind="InputPin" />
             <Pin Id="TpR6aKazPXsLF53SajYMwX" Name="Width" Kind="InputPin" />
+            <Pin Id="RIgWyzpLhzPPJkWMWO5xnm" Name="Output" Kind="OutputPin" />
           </Patch>
           <Link Id="LJPyIIfe67VMqUpRXz2eji" Ids="DgHlwwMXrhPNwOk0q7XRSe,Em6fZGQcesKPzjY6fETzhi" IsHidden="true" />
           <Link Id="GMnce4rgKIALQLUV4N6okl" Ids="Em6fZGQcesKPzjY6fETzhi,UUwuHd19JXMNyp2ygwo7YL" />
@@ -6266,12 +6266,12 @@
           </Canvas>
           <Patch Id="QZRPEqaytiOM97dZMRDRJp" Name="Create" />
           <Patch Id="GdytznHkDSsLqUjz8dCl8I" Name="Update">
-            <Pin Id="Ob0qRsHCNpJPRTGO2k7HEl" Name="IClipForm" Kind="OutputPin" />
             <Pin Id="L8pvs5eqi9PO8KjWtoR411" Name="IClipForm" Kind="InputPin" />
             <Pin Id="O7vwpXG3hXjPtXW5nkCl5y" Name="Timeline" Kind="InputPin" />
-            <Pin Id="GmOpKJv4j8qOGKDMaKl830" Name="CategoriesComboBox" Kind="OutputPin" />
             <Pin Id="G1iS5JijpvaMNU6BjrkXxu" Name="Category" Kind="InputPin" />
             <Pin Id="FrXhWP8faxhPR5o3UTUoRf" Name="ControlName" Kind="InputPin" />
+            <Pin Id="Ob0qRsHCNpJPRTGO2k7HEl" Name="IClipForm" Kind="OutputPin" />
+            <Pin Id="GmOpKJv4j8qOGKDMaKl830" Name="CategoriesComboBox" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="JiEX2aGmwbOL2WHsu7Q0A9">
             <Fragment Id="FqAqpVMDlzUN9NQ3cCOc58" Patch="QZRPEqaytiOM97dZMRDRJp" Enabled="true" />
@@ -6746,7 +6746,6 @@
                 <Choice Kind="TypeFlag" Name="IClipForm" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="HJhEACXNattLjYcSwxusrI" Name="Controls" Kind="OutputPin" />
             <Pin Id="BH0xSdH6ksXQNOzOUgy4pW" Name="Controls" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Dictionary" />
@@ -6762,6 +6761,7 @@
             </Pin>
             <Pin Id="OAZNTePvJE5OiKcrqZN0cN" Name="Timeline" Kind="InputPin" />
             <Pin Id="IzegpFv4Ql8MD4Lq1JMAlA" Name="TextChanged" Kind="InputPin" />
+            <Pin Id="HJhEACXNattLjYcSwxusrI" Name="Controls" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="FV6rvgA3InwLihidIU5UFM">
             <Fragment Id="Gmm80uyHgKtPIunHbx5KhZ" Patch="T8l0UIxUrJAMGYM89EmLDS" Enabled="true" />

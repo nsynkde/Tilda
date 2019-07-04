@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0344-gd5eabf23a7" Version="0.128">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0411-gf6daa4918b" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -373,10 +373,10 @@
           </Canvas>
           <Patch Id="QcXvSU45ajoL6TTUfYrAE7" Name="Create" />
           <Patch Id="LQwdRYDEHy9O8HRwLqFazn" Name="Update">
-            <Pin Id="ORGtUyAAuqlOZRxu2wfR01" Name="Layer" Kind="OutputPin" />
             <Pin Id="IgCiovPAWxGLGKmpK057fw" Name="BezierSpline" Kind="InputPin" />
             <Pin Id="Fi7ohu3IpUaPK6wwG20WPF" Name="Scale" Kind="InputPin" />
             <Pin Id="LVLJLJKCjMnLNMXU7WIlOZ" Name="Shift" Kind="InputPin" />
+            <Pin Id="ORGtUyAAuqlOZRxu2wfR01" Name="Layer" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="TiZ0j4q5k6SO0IaAfLwSyo">
             <Fragment Id="Npu8rWaTUgrNoAkQXujX2j" Patch="QcXvSU45ajoL6TTUfYrAE7" Enabled="true" />
@@ -756,9 +756,9 @@
           <Patch Id="JkXLgka2tXPPj1g4rghCeM" Name="Update">
             <Pin Id="N8TRtnM40faOez1PPMlUV7" Name="Scale" Kind="InputPin" />
             <Pin Id="QxAfwX8WgAaQCnqr8zQmAR" Name="Shift" Kind="InputPin" />
+            <Pin Id="MSdfNIwq7QFOpyx8vqUiU0" Name="BezierKnots" Kind="InputPin" />
             <Pin Id="CF1jNqS6iDwPSx5zaoFKUl" Name="HoveredCP" Kind="OutputPin" />
             <Pin Id="RWWZFGofw95QYtLB9VRyeN" Name="HoveredPoints" Kind="OutputPin" />
-            <Pin Id="MSdfNIwq7QFOpyx8vqUiU0" Name="BezierKnots" Kind="InputPin" />
           </Patch>
           <ProcessDefinition Id="KGk5NUKZJxwPfbLrg4GiYj">
             <Fragment Id="VR9ZK1rdG98QDxYIaaGKOD" Patch="UHbIlKKOQLuLBnN4MYnScn" Enabled="true" />
@@ -2127,7 +2127,6 @@
           </Canvas>
           <Patch Id="NCVSSovt6NqMCv4tXtEQvm" Name="Create" />
           <Patch Id="OUiB3mc4x1xOObTBjywXfw" Name="Update">
-            <Pin Id="V5R8ex0j35QP65WrPrTU59" Name="Transform" Kind="OutputPin" />
             <Pin Id="LoIn6FFJEoeOSxLkWHFFCJ" Name="ClientArea" Kind="InputPin" />
             <Pin Id="UZv7rpKcwCpLJBvhoaDTRC" Name="Scale" Kind="InputPin">
               <p:TypeAnnotation>
@@ -2139,6 +2138,7 @@
                 <Choice Kind="TypeFlag" Name="Vector2" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="V5R8ex0j35QP65WrPrTU59" Name="Transform" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="NhYx6VJV7plNgGlYTSOkd7">
             <Fragment Id="JrVmS1i1dWlMw6Ngpgroh7" Patch="NCVSSovt6NqMCv4tXtEQvm" Enabled="true" />
@@ -2632,6 +2632,7 @@
             <Fragment Id="O5iYQVb0YOQNfMlPkhHwTV" Patch="L7QezqIRf3GOXRExIu9hN4" Enabled="true" />
           </ProcessDefinition>
           <Patch Id="PubjmqvJpViO3MVx3WTZex" Name="Create" ParticipatingElements="KYtNs9fWh4OLg6xeuPnSxP,Tt1MWjLRkBzO62l6a9U4HS">
+            <Pin Id="BJSjDCzGn8hMEEL80IWsCg" Name="Node Context" Kind="InputPin" />
             <Pin Id="G0JlzJvVKC2PTcyIy5oFGz" MergeId="121329" Name="Name" Kind="InputPin" />
             <Pin Id="Q0I1R7DVMyWLQov900X0US" MergeId="121331" Name="Y" Kind="InputPin" />
             <Pin Id="O9UnQZSsSs8Lt0dViCdIEg" MergeId="121332" Name="Startframe" Kind="InputPin" />
@@ -3919,7 +3920,6 @@
           </Canvas>
           <Patch Id="M6Bqb2XIu3RO9m5eYLMjH2" Name="Create" ParticipatingElements="L8C03DAi4t2PNebz1wKARX" />
           <Patch Id="EH4y4tZE9zuQNgTdzxkXkv" Name="Update">
-            <Pin Id="S9pbptJAGazN5ZmLmWYGDB" Name="Interaction" Kind="OutputPin" />
             <Pin Id="P4uA9kOvqvSOz3ijQqvL1A" Name="Timeline" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="TildaTimeline" />
@@ -3930,12 +3930,13 @@
                 <Choice Kind="TypeFlag" Name="Editor" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="DK5PEQESawJQABfgOzYML0" Name="Editor" Kind="OutputPin" />
             <Pin Id="FrEpqFn7II4OfIqhJuLGYG" Name="Trimming" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="S9pbptJAGazN5ZmLmWYGDB" Name="Interaction" Kind="OutputPin" />
+            <Pin Id="DK5PEQESawJQABfgOzYML0" Name="Editor" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="E48waMtWFZMLWJrikH8sR7">
             <Fragment Id="IzeqnK65SXVQRqmWrDXyku" Patch="M6Bqb2XIu3RO9m5eYLMjH2" Enabled="true" />
@@ -5225,7 +5226,6 @@
           <Patch Id="QXuWycz3d7ROj3MiI7jT8S" Name="Create" />
           <Patch Id="RvLQhyAShieL2IxuhHiQ9q" Name="Update">
             <Pin Id="IKFbkG6FYC5PowFPXfYvpZ" Name="Timeline" Kind="InputPin" />
-            <Pin Id="ObYRt1DmLACLuWutwR32FV" Name="Value" Kind="OutputPin" />
             <Pin Id="Jg9Omm4OIFhMm9VRqFO5Jt" Name="EnvelopeClip" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Sequence" />
@@ -5238,6 +5238,7 @@
             </Pin>
             <Pin Id="BD9YbtVyOA1QWUwqrpFWpS" Name="Resolution" Kind="InputPin" />
             <Pin Id="UkdGTsi4fuHLMNDj9TqxNV" Name="ClampTo0-1" Kind="InputPin" Bounds="984,828" />
+            <Pin Id="ObYRt1DmLACLuWutwR32FV" Name="Value" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="SQjq0uJrdqtPHYj0iSMTIJ">
             <Fragment Id="N1ryBs2aQsVLl4uT55eAvL" Patch="QXuWycz3d7ROj3MiI7jT8S" Enabled="true" />
@@ -5590,7 +5591,6 @@
           <Patch Id="JlGOtxyTzsrMCFhft8b9JM" Name="Create" />
           <Patch Id="FZ6KcyhfvwSO42zFT6p93j" Name="Update" ParticipatingElements="AhHjeA5JRf5OzKUFEy44o4">
             <Pin Id="PzBsSlkAL51PCYcuVyEt3G" Name="ClipPosition" Kind="InputPin" />
-            <Pin Id="Q3slDeSmmd1OGA1Shfs06t" Name="Output" Kind="OutputPin" />
             <Pin Id="KKxBbwT5Mm8M6DoriacZ78" Name="Duration" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Integer32" />
@@ -5604,6 +5604,7 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="VSvfkucEfzLPl1mVgAIzdT" Name="Enabled" Kind="InputPin" />
+            <Pin Id="Q3slDeSmmd1OGA1Shfs06t" Name="Output" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="GtzpjtfDyhIOZ7YfzHWMC7">
             <Fragment Id="O5Y1tp74lArMYNHWLGZY61" Patch="JlGOtxyTzsrMCFhft8b9JM" Enabled="true" />
@@ -5908,7 +5909,6 @@
           </Canvas>
           <Patch Id="Ex0HdNeYZTDL4HF2NlrWVA" Name="Create" />
           <Patch Id="DTk5BfqXfdEMk7JNhWeKUW" Name="Update">
-            <Pin Id="HSmJGtML04YMJiubMosKi7" Name="BezierSpline" Kind="OutputPin" />
             <Pin Id="UxqHGlHZjwMLKfiLCjSmNW" Name="BezierSpline" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="BezierSpline" />
@@ -5919,6 +5919,7 @@
                 </p:TypeArguments>
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="HSmJGtML04YMJiubMosKi7" Name="BezierSpline" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="OW5chRn9vcbLZfe4QhJRkF">
             <Fragment Id="VzjSwKgRbn4PrfexoThSDc" Patch="Ex0HdNeYZTDL4HF2NlrWVA" Enabled="true" />
@@ -6034,12 +6035,12 @@
           </Canvas>
           <Patch Id="CV68qTovtBzNQ0lTFYBjE8" Name="Create" />
           <Patch Id="FW70bWnyVphOSVrvGVUVXC" Name="Update">
-            <Pin Id="OJQrYSm50KuNfv1unHI7es" Name="EnvelopeEditingOn" Kind="OutputPin" />
             <Pin Id="IScNCvUoXX9PTKdWNXZrmp" Name="State" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="OJQrYSm50KuNfv1unHI7es" Name="EnvelopeEditingOn" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="HeHvEEDr6fDNly85jsS1rw">
             <Fragment Id="QwMZbSJmRbVMKEPvA4bVMK" Patch="CV68qTovtBzNQ0lTFYBjE8" Enabled="true" />
@@ -6516,10 +6517,10 @@
           <Slot Id="C41KH7wlZfxObKuD7WZcD7" Name="BezierEditorControl" />
           <Patch Id="TZudoQTksc6OdSBHV3iv0J" Name="Join" IsGeneric="true">
             <Pin Id="UB6HxPAkUmJNKNHfzKpUbQ" MergeId="136466" Name="Keyboard" Kind="InputPin" />
-            <Pin Id="NE2J6XcZGhUQFYeKOgTENg" MergeId="136468" Name="BezierEditorControl" Kind="OutputPin" />
             <Pin Id="VtSqg94REkjQVTCIrRy4KL" Name="Insert" Kind="InputPin" />
             <Pin Id="QFPxy1fOwwAMTOmFWKgQka" MergeId="136470" Name="Mouse" Kind="InputPin" />
             <Pin Id="OYwgYL0v41sLnR8NWmkK15" MergeId="136472" Name="Enabled" Kind="InputPin" />
+            <Pin Id="NE2J6XcZGhUQFYeKOgTENg" MergeId="136468" Name="BezierEditorControl" Kind="OutputPin" />
           </Patch>
           <Link Id="TolfGseMBBHQO3DsMJjShA" Ids="UB6HxPAkUmJNKNHfzKpUbQ,AHhYGL3bjlGPZISjtH0hjk" IsHidden="true" />
           <Link Id="CLaZ71oFcw8NB5XGZkh9SB" Ids="QFPxy1fOwwAMTOmFWKgQka,P95Zhs03sT9N6nHa64GBaZ" IsHidden="true" />
@@ -6597,6 +6598,7 @@
                 <Choice Kind="OperationCallFlag" Name="Create" />
                 <CategoryReference Kind="RecordType" Name="EnvelopeClip" NeedsToBeDirectParent="true" />
               </p:NodeReference>
+              <Pin Id="SAGjV4NJYjnLJBfzhZKNoV" Name="Node Context" Kind="InputPin" />
               <Pin Id="NnVZtZqbaOYOFra9D0FbUO" Name="Name" Kind="InputPin" />
               <Pin Id="RMkEWptD96uMNto0hoElc7" Name="Y" Kind="InputPin" />
               <Pin Id="NabpKAD8N0tMnFxr0eLfVh" Name="Startframe" Kind="InputPin" />

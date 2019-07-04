@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="MZmd92n0x8tLLBfKYOnxOx" LanguageVersion="2019.1.0-0344-gd5eabf23a7" Version="0.128">
+<Document xmlns:p="property" Id="MZmd92n0x8tLLBfKYOnxOx" LanguageVersion="2019.1.0-0411-gf6daa4918b" Version="0.128">
   <NugetDependency Id="PB7aQYcnIK2N36ssi8KhV0" Location="VL.CoreLib.Standalone" Version="0.38.1043" />
   <NugetDependency Id="HbAhAevw0FVN9sGbXw9dz9" Location="VL.CoreLib" Version="0.38.1043" />
   <Patch Id="AXcrkz7wtuiLTLQMfXYFvQ">
@@ -1096,9 +1096,6 @@
                 <Link Id="ErcbbiuLQzoMtU4efLiCwO" Ids="S77yKxJpdROLmJB1d21HaN,EqZKlocMAn3Mkp4fTg1JPY" IsHidden="true" />
                 <ControlPoint Id="Ut2PklPR1JFL7toCdWLAga" Bounds="1821,464" />
                 <Link Id="DZI5zERwuyeMuX2anjqAMZ" Ids="Ut2PklPR1JFL7toCdWLAga,DioNmGR0U2tQHnfA4owq9B" IsHidden="true" />
-                <Pin Id="DioNmGR0U2tQHnfA4owq9B" Name="Output" Kind="OutputPin" Bounds="678,918" />
-                <Pin Id="S77yKxJpdROLmJB1d21HaN" Name="Input" Kind="InputPin" Bounds="691,672" />
-                <Pin Id="EE92lsw66BtNa09dsMRnwN" Name="Position" Kind="InputPin" Bounds="780,835" />
                 <Node Bounds="1821,427,33,22" Id="OTrJKefqAKBN8e1VMUeNcZ">
                   <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1112,6 +1109,9 @@
                 <Link Id="D48M6YwkBDsLXB6qwY1kcH" Ids="EqZKlocMAn3Mkp4fTg1JPY,K7QSfiJh3aWLVx1EJr97I5" />
                 <Link Id="VIGrmiQ1XsqMaO8EKY2EsC" Ids="KMTNRmuwkifOlpTejHgL4k,Hxq09eTk1xKOlW3YdrSzrw" />
                 <Link Id="O4JNAcsrkJmNVUba50dDsI" Ids="LdiGQY3MxzdPbRnaYaVIuW,Ut2PklPR1JFL7toCdWLAga" />
+                <Pin Id="S77yKxJpdROLmJB1d21HaN" Name="Input" Kind="InputPin" Bounds="691,672" />
+                <Pin Id="EE92lsw66BtNa09dsMRnwN" Name="Position" Kind="InputPin" Bounds="780,835" />
+                <Pin Id="DioNmGR0U2tQHnfA4owq9B" Name="Output" Kind="OutputPin" Bounds="678,918" />
               </Patch>
             </Node>
             <Node Bounds="480,548,93,19" Id="S6bcIDw093EOgoHGejLVen">
@@ -1470,12 +1470,12 @@
           </Canvas>
           <Patch Id="BuMCmsX6zonQMPpgroS7qh" Name="Create" ParticipatingElements="R7Gfyu8XumbOHKsCkR5kaa" />
           <Patch Id="FX8dwtqXRFJP6CJDQA47fo" Name="Update">
-            <Pin Id="SRr2SOgVTDnLw79OsTXgS2" Name="Description" Kind="OutputPin" Bounds="746,1076" />
             <Pin Id="UqDSWY9zT6xMrv7zFviROd" Name="File Path" Kind="InputPin" Bounds="1625,452" DefaultValue="Automata.xml">
               <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Path" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="SRr2SOgVTDnLw79OsTXgS2" Name="Description" Kind="OutputPin" Bounds="746,1076" />
           </Patch>
           <ProcessDefinition Id="I0Y4NCjvsHtNsLIJ99s6md">
             <Fragment Id="CcJpFggEALEMmOZtpzL1aG" Patch="BuMCmsX6zonQMPpgroS7qh" Enabled="true" />
@@ -1678,11 +1678,11 @@
           <ControlPoint Id="AKVnMfJrWhXPWc7ynaCXsI" Bounds="636,144" />
           <Link Id="KUbm7bNXi2wPoZ8IGJk2Md" Ids="JClY0QOvPfiMjep83bpNUC,AKVnMfJrWhXPWc7ynaCXsI" />
           <Link Id="OSkZruA2NVnOMAc9BLxuR0" Ids="AKVnMfJrWhXPWc7ynaCXsI,QSjq85LdPBqOyzeG53Vwpd" IsHidden="true" />
-          <Pin Id="IoJDeh3MrXfOZc16VRk0fb" Name="Output" Kind="OutputPin" Bounds="1123,214" />
           <Pin Id="CyejZ1xJ0KpNhUveghooCi" Name="Input" Kind="InputPin" Bounds="1022,101" />
           <Pin Id="KUh3QbDIhoAQXcUoK2inGc" Name="Key" Kind="InputPin" Bounds="1083,100" />
-          <Pin Id="QSjq85LdPBqOyzeG53Vwpd" Name="Success" Kind="OutputPin" Bounds="636,144" />
           <Pin Id="RrbRKFh2tPrOOCuvcirASC" Name="Default" Kind="InputPin" Bounds="1082,178" />
+          <Pin Id="IoJDeh3MrXfOZc16VRk0fb" Name="Output" Kind="OutputPin" Bounds="1123,214" />
+          <Pin Id="QSjq85LdPBqOyzeG53Vwpd" Name="Success" Kind="OutputPin" Bounds="636,144" />
         </Patch>
       </Node>
       <Pad Id="DYdIpII7y8PPI5sII5wzK5" Bounds="511,-40,123,21" ShowValueBox="true" isIOBox="true" Value="Should go to CoreLib">
@@ -2195,12 +2195,12 @@
               <Pin Id="RXvNY13GO9tPe0dakOgIOt" Name="Transition" Kind="OutputPin" />
             </Patch>
             <Patch Id="JstEFDAtvlfM9ysWP7DaYs" Name="Equals">
-              <Pin Id="H7Kf1KrqCirN7B0eN2CiEB" Name="Output" Kind="OutputPin" Bounds="487,618" />
               <Pin Id="Q1xh4PXkEudOZ7SmbZMqfy" Name="Obj" Kind="InputPin">
                 <p:TypeAnnotation>
                   <Choice Kind="TypeFlag" Name="Object" />
                 </p:TypeAnnotation>
               </Pin>
+              <Pin Id="H7Kf1KrqCirN7B0eN2CiEB" Name="Output" Kind="OutputPin" Bounds="487,618" />
             </Patch>
             <Link Id="RcGXUteRHtNQIH4XZ57v0i" Ids="Q1xh4PXkEudOZ7SmbZMqfy,Oz6bud4ogZhMcyRd0jpMMx" IsHidden="true" />
             <Link Id="TYHeRo3IcOKNucPCA3hM8e" Ids="Oz6bud4ogZhMcyRd0jpMMx,A1mXvDL0GmNM3fMSJrMGTA" />
@@ -2682,8 +2682,8 @@
                   <Link Id="VtZI3AyKDwONwIvRYs98bb" Ids="VKMngq6cXDwNJiGJ6mSyzP,JzzZNfdzjPAQa2FzeFBTSx" />
                   <Link Id="DughSDxkHGjORC9WFzk55A" Ids="JzzZNfdzjPAQa2FzeFBTSx,MQTFyJ8qhWnLjEQcTvMimY" IsHidden="true" />
                   <Pin Id="KpozzQmofOCMm2bhCZo0nN" Name="Input" Kind="InputPin" Bounds="1175,350" />
-                  <Pin Id="MQTFyJ8qhWnLjEQcTvMimY" Name="Output" Kind="OutputPin" Bounds="1195,485" />
                   <Pin Id="BErqh2C7SJGMsPGEFaj4sa" Name="Delta" Kind="InputPin" Bounds="1359,339" />
+                  <Pin Id="MQTFyJ8qhWnLjEQcTvMimY" Name="Output" Kind="OutputPin" Bounds="1195,485" />
                 </Patch>
               </Node>
               <ControlPoint Id="Okq2nMYnBDANgC8T6g00jT" Bounds="905,393" />
@@ -2905,8 +2905,8 @@
                         <Link Id="MGFakBP1retMjfZABrLCmm" Ids="KQw2x2bBS9TNrWzBMSOIga,MvhiWz3m2dDP6DAP9S4H8G" />
                         <Link Id="HR6Wok9DtN9L46ssSqskes" Ids="MvhiWz3m2dDP6DAP9S4H8G,ExtIj5dsZsxLtm7Q6lJp4t" IsHidden="true" />
                         <Pin Id="PbTjqCMcrYwM66uGaSXHiN" Name="Input" Kind="InputPin" Bounds="915,235" />
-                        <Pin Id="ExtIj5dsZsxLtm7Q6lJp4t" Name="Output" Kind="OutputPin" Bounds="985,427" />
                         <Pin Id="BquG575NQ98QQQkyCQcxwo" Name="Scalar" Kind="InputPin" Bounds="967,235" />
+                        <Pin Id="ExtIj5dsZsxLtm7Q6lJp4t" Name="Output" Kind="OutputPin" Bounds="985,427" />
                       </Patch>
                     </Node>
                     <ControlPoint Id="P3FP0iZ5UMOQIx8QLUTuq6" Bounds="220,750" />
@@ -3360,14 +3360,14 @@
             </Canvas>
             <Patch Id="FUF9u518lSLP1YAn0m84jB" Name="Create" />
             <Patch Id="FmSaZOdxZloNfFXLL9CVPM" Name="Update">
-              <Pin Id="KNo34D6eqLlLE52vACKon6" Name="Layer" Kind="OutputPin" />
               <Pin Id="QH3AjWKLmKCQHSyvU8Syi3" Name="Value" Kind="InputPin">
                 <p:TypeAnnotation>
                   <Choice Kind="TypeFlag" Name="State" />
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="MU8rjUVXuFEL1OTZ4uPykq" Name="Value" Kind="OutputPin" Bounds="480,462" />
               <Pin Id="U1nFpHaIRoTPYwjZhHbJ1l" Name="States" Kind="InputPin" Bounds="710,186" />
+              <Pin Id="KNo34D6eqLlLE52vACKon6" Name="Layer" Kind="OutputPin" />
+              <Pin Id="MU8rjUVXuFEL1OTZ4uPykq" Name="Value" Kind="OutputPin" Bounds="480,462" />
               <Pin Id="RjE0fiSGUreN2XR3CdZMYD" Name="New Transitions" Kind="OutputPin" Bounds="772,793" />
               <Pin Id="SR7m0ydSBJSMCbP7qudU7M" Name="Keep" Kind="OutputPin" Bounds="1305,909" />
             </Patch>
@@ -3657,11 +3657,11 @@
               </Pin>
             </Patch>
             <Patch Id="PA9TprDgBXjPhjwV1nBFff" Name="Update">
-              <Pin Id="NZO8CZzX4vqQCaQOUmxTH8" Name="Layer" Kind="OutputPin" Bounds="388,666" />
               <Pin Id="LPQmE6orvTMOjx89dQUIDl" Name="States" Kind="InputPin" />
               <Pin Id="PkMAcr5hy3ILHhMcDogekz" Name="Select Final State" Kind="InputPin" />
-              <Pin Id="HzP88YNdaUfQSh5ZMdKTGH" Name="New Transitions" Kind="OutputPin" />
               <Pin Id="DNVPyWuLscNNZiSHGRfgq7" Name="Pointer Position" Kind="InputPin" />
+              <Pin Id="NZO8CZzX4vqQCaQOUmxTH8" Name="Layer" Kind="OutputPin" Bounds="388,666" />
+              <Pin Id="HzP88YNdaUfQSh5ZMdKTGH" Name="New Transitions" Kind="OutputPin" />
             </Patch>
             <ProcessDefinition Id="Uqxx71pYazOPXFEdsEeaXr">
               <Fragment Id="MwpBMpfhW4eNfNPxZCFZ0A" Patch="SqxNx9EJui2PWv16jaEL4i" Enabled="true" />
@@ -4122,10 +4122,10 @@
             </Canvas>
             <Patch Id="JDflXAkkxuANTuse4kQnMk" Name="Create" />
             <Patch Id="MQTxlZwMM06PkCJAGOnhRF" Name="Update">
-              <Pin Id="R1panhJoobwPwOzl5ryQH0" Name="Layer" Kind="OutputPin" />
-              <Pin Id="QFTbRfH52DsPh6JqqXTlND" Name="Value" Kind="OutputPin" Bounds="480,462" />
               <Pin Id="VmgGiorkF2XPve3pO3Kg6D" Name="Value" Kind="InputPin" />
               <Pin Id="Eg9aytgTH9WQbbQCaKxqzW" Name="Lookup" Kind="InputPin" Bounds="666,180" />
+              <Pin Id="R1panhJoobwPwOzl5ryQH0" Name="Layer" Kind="OutputPin" />
+              <Pin Id="QFTbRfH52DsPh6JqqXTlND" Name="Value" Kind="OutputPin" Bounds="480,462" />
               <Pin Id="Dzzi9eX6SDpLEvF9vCkDvK" Name="Keep" Kind="OutputPin" Bounds="795,856" />
             </Patch>
             <ProcessDefinition Id="NN5mNMEO0s6LYh5bY0ng6u">
@@ -4431,13 +4431,13 @@
           </Canvas>
           <Patch Id="TzgNkJ9jEZUPrYJeRl4EMn" Name="Create" />
           <Patch Id="SXDfoszypQhMa3phbqgsUa" Name="Update">
+            <Pin Id="MqUURIOGJdqLWRIJOITI9K" Name="File Path" Kind="InputPin" Bounds="474,146" />
+            <Pin Id="RdlrujENGDCQLmiQCeI41R" Name="Read" Kind="InputPin" Bounds="611,172" />
             <Pin Id="FKPYhmqpu4nMUauvJwfLmM" Name="Output" Kind="OutputPin" Bounds="462,458">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="StateMachineDescription" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="MqUURIOGJdqLWRIJOITI9K" Name="File Path" Kind="InputPin" Bounds="474,146" />
-            <Pin Id="RdlrujENGDCQLmiQCeI41R" Name="Read" Kind="InputPin" Bounds="611,172" />
           </Patch>
           <ProcessDefinition Id="Rrvwbs7NwtfLSaaKGLFJU4">
             <Fragment Id="He0Kb5lY8ZWOfdH9qQ38aa" Patch="TzgNkJ9jEZUPrYJeRl4EMn" Enabled="true" />
@@ -4800,10 +4800,10 @@
             <Pin Id="EL3kMNQifKRNndh8nmau6R" Name="Initial Value" Kind="InputPin" />
           </Patch>
           <Patch Id="RBxdWJuw0RaO04x5EU5OQl" Name="Update">
+            <Pin Id="DliEL2V2WRyQMt3wOl44F1" Name="Value" Kind="InputPin" />
             <Pin Id="RRgawNTHhenPrfP1co8PgX" Name="Bounds" Kind="InputPin" />
             <Pin Id="L1S0NMehQvTN5A8S5VrkKz" Name="Result" Kind="OutputPin" />
             <Pin Id="CTr5pKSJEYLO3FtKCPVLmr" Name="New Value" Kind="OutputPin" Bounds="746,1076" />
-            <Pin Id="DliEL2V2WRyQMt3wOl44F1" Name="Value" Kind="InputPin" />
             <Pin Id="VnNwb1INzJcNechv3VQcb9" Name="Is Final" Kind="OutputPin" />
             <Pin Id="JO40mF9QApxMgAHoA5vS8y" Name="Is Active" Kind="OutputPin" />
           </Patch>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="RMDMfKmnIrVPStLdWe8u30" LanguageVersion="2019.1.0-0344-gd5eabf23a7" Version="0.128">
+<Document xmlns:p="property" Id="RMDMfKmnIrVPStLdWe8u30" LanguageVersion="2019.1.0-0411-gf6daa4918b" Version="0.128">
   <NugetDependency Id="QXe3JkcIP7ANPfYaJOCbvc" Location="VL.Core" Version="0.36.54-alpha-g0025c9adc6" />
   <NugetDependency Id="VC30lGKgHUyQCAswxdhkx9" Location="VL.CoreLib" Version="0.36.54-alpha-g0025c9adc6" />
   <Patch Id="C2JxqgLHRngQa6nhCBT2eq">
@@ -801,9 +801,9 @@
           <Patch Id="KNFZGPAcBpRLXoJeJWko44" Name="Create" />
           <Patch Id="QKTJOHwVMK4PpEnixgGXnM" Name="Update">
             <Pin Id="UhbvIounFpYLCFxhAq8vFJ" Name="File Path" Kind="InputPin" />
+            <Pin Id="EBqLs3DHWR2NY4MyrwJUhq" Name="Read" Kind="InputPin" />
             <Pin Id="U3yVrtkizTPQJS2O2spift" Name="Result" Kind="OutputPin" />
             <Pin Id="MMibZkteKIPPyRv7VKwxRQ" Name="On Data" Kind="OutputPin" Bounds="127,539" />
-            <Pin Id="EBqLs3DHWR2NY4MyrwJUhq" Name="Read" Kind="InputPin" />
           </Patch>
           <ProcessDefinition Id="MO9vLqFL3nCO9Oojp9QVek">
             <Fragment Id="FLaVFOJEu2JMl6mCJ9yJhv" Patch="KNFZGPAcBpRLXoJeJWko44" Enabled="true" />
@@ -990,13 +990,13 @@
             <Patch Id="R6xtKk0CWRdO6IUlDNnicp" Name="Create" IsGeneric="true" />
             <Patch Id="O38Nukwe945L1CXwGywfXm" Name="Update" ParticipatingElements="FYcNYnpiV9NMu6r4McBtMG" IsGeneric="true">
               <Pin Id="IZalSBlpXpOO8l5mKGrhxG" Name="Editing" Kind="InputPin" />
-              <Pin Id="Qe5OqZMdefaNpu0vneqIss" Name="Points" Kind="OutputPin" />
               <Pin Id="FAKYtwhyugMNpKj8CYwJ9N" Name="Points" Kind="InputPin" />
               <Pin Id="HH3njFnbO5MNdMFrqATrxe" Name="Selection Rectangle" Kind="InputPin" />
-              <Pin Id="O8pKfRrKEAxQbpEBSgXT5r" Name="Set Selection" Kind="OutputPin" />
               <Pin Id="LFEWH8VOY9EPFowZiNljDz" Name="Pick Size" Kind="InputPin" />
-              <Pin Id="KOGokkFJRvULDxGGHjbcc9" Name="Pressed" Kind="OutputPin" />
               <Pin Id="MmH2nWekt9TPvoaahKq3wx" Name="Mouse Buttons" Kind="InputPin" />
+              <Pin Id="Qe5OqZMdefaNpu0vneqIss" Name="Points" Kind="OutputPin" />
+              <Pin Id="O8pKfRrKEAxQbpEBSgXT5r" Name="Set Selection" Kind="OutputPin" />
+              <Pin Id="KOGokkFJRvULDxGGHjbcc9" Name="Pressed" Kind="OutputPin" />
               <Pin Id="RgM4e14IzN6O4OOKWUivDH" Name="Released" Kind="OutputPin" />
             </Patch>
             <Canvas Id="EoexrO7w6LCO4IqVvO9McM" BordersChecked="false">
@@ -1148,8 +1148,8 @@
             <Patch Id="CAYnO6DEbc8Nz3lGgLrPPa" Name="Create" IsGeneric="true" />
             <Patch Id="MsuEzIcULBAM9SGkddEFwY" Name="Update" ParticipatingElements="QaUCPpnN98gNO88Mn8I0Uz,EVeVUutpfzuPKx0SV0DnXN,P4U2fAvBFzuQMZCHndc3PR,RSynFcRpQpZOVA2MCt0r1e,KhVVwbDq4KDQOI6bDztppy,VrOBFf96cg2PymrMXAJfi9,I1WDUEGQrLXOVtDJ4Lru5c,LXHgK8gB3zeNjVxzcyIwV7" IsGeneric="true">
               <Pin Id="GmkrV19ssMkQIyG6GTHYsw" Name="Position" Kind="InputPin" />
-              <Pin Id="JcVv4sS5xZhPwVRmWsfmgL" Name="Selection" Kind="OutputPin" />
               <Pin Id="Qio0wL9n6daMd2Sov0iaPH" Name="Select" Kind="InputPin" />
+              <Pin Id="JcVv4sS5xZhPwVRmWsfmgL" Name="Selection" Kind="OutputPin" />
             </Patch>
             <Canvas Id="LpwEpDHY70yLgxBrtpIDGf" BordersChecked="false">
               <Pad Id="GH8gs5qckQ6MdJYXINco5T" Comment="Scalar" Bounds="416,382" ShowValueBox="true" isIOBox="true" Value="0.499999821">
@@ -3367,7 +3367,6 @@
                   </p:TypeArguments>
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="SrbehLnCMs1PspxeLQVQNI" Name="Result" Kind="OutputPin" />
               <Pin Id="Ij6LFmEhhrgMII2eWGoL6E" Name="Input 2" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="Editors" LastSymbolSource="VL.Editors.vl">
                   <Choice Kind="TypeFlag" Name="EditablePoint" />
@@ -3378,6 +3377,7 @@
                   </p:TypeArguments>
                 </p:TypeAnnotation>
               </Pin>
+              <Pin Id="SrbehLnCMs1PspxeLQVQNI" Name="Result" Kind="OutputPin" />
             </Patch>
           </Node>
           <!--
@@ -4150,22 +4150,22 @@
             <Patch Id="VSuCjVqPzJLPVdwVA4pS01" Name="Create" IsGeneric="true" />
             <Patch Id="BXDurI6rEybPPE76yoUMEm" Name="Update" ParticipatingElements="J8vy4MtljbKNPOJEjrOOEM,UEXfdwvcwXiMmmbbdHmlc4,JX8rDcUJtcROAjacxnE4sj,PW0BhJNW0oFPM9Qb1s2VxL,Kq8UuEpvaDGO7tWThpE31H,MMRf7IDtZ9XPOja6Z8kUah,Edw9NFEOq0cPQ0n0FkqvXe,JIEnk150J7FMHwMcZER1zu,Jpgf0TOvpZMLJMJ4Rx4lhz,L5d1om30HGkNE9EiP3CWOB,FmFtPLrzzzoPqdG9vUEULl,Nzf008XFg1oOlldEZMBJHC,AEsg9T58v5nNf4EqUEN2JQ,DITd2SzlxXiLbhPmo5DDKn,J6KoZwB12X6LA8zckU8och" IsGeneric="true">
               <Pin Id="JucD2mRbzhNP7nzb8lM4xb" Name="Knots" Kind="InputPin" />
-              <Pin Id="PANN2Cv5QdULgGzTSANYFO" Name="AddKnot" Kind="OutputPin" />
               <Pin Id="PW2roN7iR34Lx6YSiFG7R3" Name="Add" Kind="InputPin" />
-              <Pin Id="HzdwyDeY7t0NYhUGczPd3n" Name="LockControls" Kind="OutputPin" />
               <Pin Id="BIWdm0n7awhLxh1MeeN8IU" Name="LockControls" Kind="InputPin" />
-              <Pin Id="Bpvvo4xHb3vLNlPu30WDjJ" Name="HideEndsControls" Kind="OutputPin" />
               <Pin Id="QWN3lfTubqMMbEo6P6sM0o" Name="Closed" Kind="InputPin" />
+              <Pin Id="EILbjmAp0FGNv33iyGQXoc" Name="RemoveKnot" Kind="InputPin" />
+              <Pin Id="VQtOUFAaEXRM5cq5ZYXa13" Name="ToggleSmoothness" Kind="InputPin" />
+              <Pin Id="TytB3vZ2YwKL9FdScrDmxr" Name="ShiftKey" Kind="InputPin" />
+              <Pin Id="PANN2Cv5QdULgGzTSANYFO" Name="AddKnot" Kind="OutputPin" />
+              <Pin Id="HzdwyDeY7t0NYhUGczPd3n" Name="LockControls" Kind="OutputPin" />
+              <Pin Id="Bpvvo4xHb3vLNlPu30WDjJ" Name="HideEndsControls" Kind="OutputPin" />
               <Pin Id="Ul0bP4CHXshOuD0dcp6lqd" Name="SmoothEndsControls" Kind="OutputPin" />
               <Pin Id="MdUf8UR5tiQPTVRMTfXORj" Name="Closed" Kind="OutputPin" />
-              <Pin Id="EILbjmAp0FGNv33iyGQXoc" Name="RemoveKnot" Kind="InputPin" />
               <Pin Id="KfwJxAGCXcSPtNuchXfjp8" Name="PushHistory" Kind="OutputPin" />
               <Pin Id="DDRZ6qs5a6UOERN5IfiDGi" Name="RemoveKnot" Kind="OutputPin" />
               <Pin Id="Df4dYyevjIeL52jcjmeO5G" Name="AddKnotOnCurve" Kind="OutputPin" />
               <Pin Id="PrJFgITx2yzO6AYlaHW8Hf" Name="FindPointOnCurve" Kind="OutputPin" />
-              <Pin Id="VQtOUFAaEXRM5cq5ZYXa13" Name="ToggleSmoothness" Kind="InputPin" />
               <Pin Id="OYNXjzcti73MNaj3f2ZNwc" Name="ToggleSmoothness" Kind="OutputPin" />
-              <Pin Id="TytB3vZ2YwKL9FdScrDmxr" Name="ShiftKey" Kind="InputPin" />
             </Patch>
             <Canvas Id="TE89ZgaVvgMMVEaCOXKfxQ" BordersChecked="false">
               <Pad Id="QR49pKqYajDMUOsuoLtDJm" Bounds="646,194" ShowValueBox="true" isIOBox="true" Value="3">
@@ -11417,19 +11417,19 @@
               <Pin Id="TKIXJ8lRhC8NlbP9plFIDF" Name="Locked" Kind="InputPin" />
               <Pin Id="UmN0vMS7BHFNvulxiGXIgc" Name="PointEditorControls" Kind="InputPin" />
               <Pin Id="GD6Tk22De0zPrGAm0rWTti" Name="Gizmo Controls" Kind="InputPin" />
-              <Pin Id="KnBoG1OFXFbQKA3UxpdULc" Name="PointEditor State" Kind="OutputPin" />
               <Pin Id="Cmn8wU3XvmcPxD9S1a9HoQ" Name="View" Kind="InputPin" />
               <Pin Id="QRXKIMtntKXQMSYlBVeMLs" Name="Camera Zoom" Kind="InputPin" />
               <Pin Id="TpoBWCwmJO3LzkroLVDZg7" Name="Camera Idle" Kind="InputPin" />
-              <Pin Id="GNgIgc0HATeOp8eKtZdcqh" Name="Points" Kind="OutputPin" />
-              <Pin Id="BqSAGDIOO1OOz9e4OH4vFP" Name="Ids" Kind="OutputPin" />
               <Pin Id="SfMYJmsnt34PrUACcOQnuf" Name="Pick Size" Kind="InputPin" />
               <Pin Id="GAkafsap6smLLoc201uj8m" Name="Step Size" Kind="InputPin" />
-              <Pin Id="ULqOrsfDJIfLbJF86DNsnF" Name="Idle" Kind="OutputPin" />
               <Pin Id="R4nnhge2FuhN4JxXF8Ekpd" Name="Gizmo Size" Kind="InputPin" />
               <Pin Id="DmjY3YAlrMYMPYbBCcIE15" Name="File Path" Kind="InputPin" />
               <Pin Id="GbMulob1sWCPDpj9ISf4bR" Name="Load" Kind="InputPin" />
               <Pin Id="GvxEFjKg51GMK1iucMcSKF" Name="Save" Kind="InputPin" />
+              <Pin Id="KnBoG1OFXFbQKA3UxpdULc" Name="PointEditor State" Kind="OutputPin" />
+              <Pin Id="GNgIgc0HATeOp8eKtZdcqh" Name="Points" Kind="OutputPin" />
+              <Pin Id="BqSAGDIOO1OOz9e4OH4vFP" Name="Ids" Kind="OutputPin" />
+              <Pin Id="ULqOrsfDJIfLbJF86DNsnF" Name="Idle" Kind="OutputPin" />
             </Patch>
             <Canvas Id="GCEkSt6by5HMICmUCougKJ">
               <Pad Id="QzXy1Mur7tsLMV51KWPSh5" Comment="Levels" Bounds="375,733,24,19" ShowValueBox="true" isIOBox="true" Value="50">
@@ -12106,15 +12106,15 @@
             <Patch Id="KDYx8ibHB8JMl3dmxvqzWR" IsGeneric="true">
               <Patch Id="Eg6isDSEJCFLEpyNgeDe9e" Name="Create" IsGeneric="true" />
               <Patch Id="SYfN2q9F7YqM7MJfqIPP03" Name="Update" ParticipatingElements="JkI8POYsr3lMNMBqcW8x8W,Qat5u2P569wLekWWvj4LOj,JbxvfcSjAGLPlFzTwzjqhl,M9Bjf1ZVuxkMaTgvwSNHNw,TwRps7P1g3NMmpIoLzBttN,GlOoFpjULeuLyrmIRwgSZc,Nux9kmhe5GUOjHleUh2CPH,HSpLSXHV43rPLRJByCXFzH,VtXR7LvyeGVPgZpQFcITDb,F8QplYSmRqjPOcuYvqfsW2,QJvLUiRIcgEOcQmXcVM4Ux,D2r6kwhHoLiMMjPgwqlsIE,U98vSalMVqfQJ3jQ217jvB,C3IKS7OxGXlNbO7waCJAFP,TS3lOf9DZMoNttHQH5h7jr,UUCB3N2JaluO5ZfVbbBABg,MY4PVRsWvgYOsia3QoBzIU,MD13cE7j2HeLvrSsYgAG4B" IsGeneric="true">
-                <Pin Id="JUqNhPd8l5YPSWZ5CUOP4w" Name="Relative" Kind="OutputPin" />
                 <Pin Id="Tg8q8W1mfmzM1q3s7UuCrQ" Name="Editing" Kind="InputPin" />
-                <Pin Id="BCvln4XiLWjLZDdIjUpX39" Name="Absolute" Kind="OutputPin" />
                 <Pin Id="VD7qrNuZaCzL5GYRBj0QLE" Name="Position" Kind="InputPin" />
                 <Pin Id="EgfVMblhd7jPbHGjL60eJo" Name="View" Kind="InputPin" />
                 <Pin Id="VdUm7ym7fweMsUEtAvXyUc" Name="Step Size" Kind="InputPin" />
-                <Pin Id="Rep4KDfZhjEQMmOtvsnx9P" Name="Updated" Kind="OutputPin" />
                 <Pin Id="QhVhtsoEtIKN0nhocmBW2F" Name="Nudge" Kind="InputPin" />
                 <Pin Id="IyWxPP06WyKPoPn69OVR5f" Name="Scaling" Kind="InputPin" />
+                <Pin Id="JUqNhPd8l5YPSWZ5CUOP4w" Name="Relative" Kind="OutputPin" />
+                <Pin Id="BCvln4XiLWjLZDdIjUpX39" Name="Absolute" Kind="OutputPin" />
+                <Pin Id="Rep4KDfZhjEQMmOtvsnx9P" Name="Updated" Kind="OutputPin" />
               </Patch>
               <Canvas Id="RaMOtIQNVyAQAE9OKYwMk8" BordersChecked="false">
                 <Node Bounds="527,559,102,13" Id="FNoPYWPmHXbPsnbkRAihhk">
@@ -12366,24 +12366,24 @@
               <Patch Id="NE8JjHSh4QTNHx7TUz98eO" Name="Create" IsGeneric="true" />
               <Patch Id="Gp0JgqVYvDDNvCzsYYJivG" Name="Update" ParticipatingElements="S2fz7pVUvgCPDQ91SuCXAJ,Dv0Xlr22KpkOWZSyH9xL7B,C7Whi98HLJIOY5QfwvGChS,NSwxw74BM7yM3WiXAbeL83,DxiKCzHpAxnM9QS4mF4jlH" IsGeneric="true">
                 <Pin Id="ClZO7nHTnQXQVrMNp0N8X6" Name="Points" Kind="InputPin" />
+                <Pin Id="JMKDibHWRGxLqfdxPKqS5h" Name="PointEditor Controls" Kind="InputPin" />
+                <Pin Id="UiTUSGPzqOrMr0gBNW4XXM" Name="View" Kind="InputPin" />
+                <Pin Id="VMJ3CCge1wJNLuGbCIMyS3" Name="Pick Size" Kind="InputPin" />
+                <Pin Id="VGHNzmYgMdUL8etE0BMWvv" Name="Step Size" Kind="InputPin" />
+                <Pin Id="GNLBhw53JCVNbPZVbCdOaC" Name="Gizmo Size" Kind="InputPin" />
+                <Pin Id="SiaRXwLTB1VLKFrafn9cvk" Name="Camera Zoom" Kind="InputPin" />
+                <Pin Id="HD0glq9I3cSLOujFemAIrd" Name="Camera Idle" Kind="InputPin" />
+                <Pin Id="QXoSwAClEqPOTbywb2ScAK" Name="Gizmo Controls" Kind="InputPin" />
                 <Pin Id="EJFsJcbAPfhN0BmBeaIn3B" Name="Points" Kind="OutputPin" />
                 <Pin Id="AVcO0KC9CJXPJlsSRAIuuQ" Name="Result" Kind="OutputPin" />
                 <Pin Id="FZv0zZB83nrQALHZw0davk" Name="Editing" Kind="OutputPin" />
-                <Pin Id="JMKDibHWRGxLqfdxPKqS5h" Name="PointEditor Controls" Kind="InputPin" />
                 <Pin Id="Mju6YY7CrQVMNOOwCOn0K3" Name="Selection Changed" Kind="OutputPin" />
                 <Pin Id="KEuF5z1ENbBMZnkghNF9sY" Name="Selection Updated" Kind="OutputPin" />
-                <Pin Id="UiTUSGPzqOrMr0gBNW4XXM" Name="View" Kind="InputPin" />
                 <Pin Id="FmWdBkiU5bhMB5D7930nun" Name="Translate" Kind="OutputPin" />
-                <Pin Id="VMJ3CCge1wJNLuGbCIMyS3" Name="Pick Size" Kind="InputPin" />
                 <Pin Id="RLsPlQqXTqvPzld81tPx8y" Name="Rotate" Kind="OutputPin" />
-                <Pin Id="VGHNzmYgMdUL8etE0BMWvv" Name="Step Size" Kind="InputPin" />
                 <Pin Id="NAkmyuV1oVtOBEelCMRj9y" Name="Scale" Kind="OutputPin" />
-                <Pin Id="GNLBhw53JCVNbPZVbCdOaC" Name="Gizmo Size" Kind="InputPin" />
                 <Pin Id="QnzaOUxxVJ4LS9TG4InyGC" Name="Offset" Kind="OutputPin" />
-                <Pin Id="SiaRXwLTB1VLKFrafn9cvk" Name="Camera Zoom" Kind="InputPin" />
                 <Pin Id="TksZBl4cgY2PVwpBOsXUOi" Name="GizmoState" Kind="OutputPin" />
-                <Pin Id="HD0glq9I3cSLOujFemAIrd" Name="Camera Idle" Kind="InputPin" />
-                <Pin Id="QXoSwAClEqPOTbywb2ScAK" Name="Gizmo Controls" Kind="InputPin" />
               </Patch>
               <Canvas Id="KnMph1s743QPmIec4Qcqot">
                 <Node Bounds="234,1032,165,13" Id="S2fz7pVUvgCPDQ91SuCXAJ">
@@ -12981,23 +12981,23 @@
               <Patch Id="HXc5ar5zEjnNLPWN9FoxyU" Name="Create" IsGeneric="true" />
               <Patch Id="NcL42XU0O07QHg1Sqr0OQP" Name="Update" ParticipatingElements="RlpddkmznXTLTzBDaQiQTa,QBudu8ODT4nLfKjzo3cYpw,QUAHf7fif16M5kq0CVD4YH,CZgKo8Ef08tLZmjs8Q6R0i,L9xnafypigMMQkx9j5Bb2S,DNis5BDKT95OJcarrUsKDL,E24XYWuYSVOPsWDn1b4S9o" IsGeneric="true">
                 <Pin Id="GJWuNJhLCSRMKlUnqomtXP" Name="BezierPoints" Kind="InputPin" />
-                <Pin Id="K78bA1CEgHyOuf3g95YIMc" Name="BezierPoints" Kind="OutputPin" />
-                <Pin Id="Rw6sm45kU97OjlsPat0ulT" Name="Editing" Kind="OutputPin" />
                 <Pin Id="VHxpc4kpGDDNQ9X7Ve446O" Name="BezierPointEditorControls" Kind="InputPin" />
-                <Pin Id="UDyEbavAg3EO9XYhIWW7hD" Name="Selection Changed" Kind="OutputPin" />
                 <Pin Id="GLxrOT3VLPVO9PLPlWHsO2" Name="Gizmo Controls" Kind="InputPin" />
-                <Pin Id="HmahOs5fAJHPM84ARuE9mm" Name="Selection Updated" Kind="OutputPin" />
                 <Pin Id="AWPBERWXzrPNKFc12KNxjC" Name="Pick Size" Kind="InputPin" />
-                <Pin Id="VZZvt0WlFDCN7y0QDCaJiQ" Name="Translate" Kind="OutputPin" />
                 <Pin Id="TX5MQ0wPVDtPu3BrJz23vi" Name="Step Size" Kind="InputPin" />
-                <Pin Id="H94i8hKW6KoLWNw3v5TDVY" Name="Rotate" Kind="OutputPin" />
-                <Pin Id="E6ISpXJ9qnrOXQR9EVYE6O" Name="Scale" Kind="OutputPin" />
                 <Pin Id="HiArfAWaWAbNhS0pUS5584" Name="Gizmo Size" Kind="InputPin" />
-                <Pin Id="B5jvh24wr4IMc8dCE1nDIO" Name="Offset" Kind="OutputPin" />
                 <Pin Id="DZGAq2HDFyGLRZ7eJk78Dl" Name="ViewProjection" Kind="InputPin" />
-                <Pin Id="TlxV3GL64QsL384rBW5FY0" Name="GizmoState" Kind="OutputPin" />
                 <Pin Id="L5jQUvU98oxNEWr4zDj5Ha" Name="Camera Zoom" Kind="InputPin" />
                 <Pin Id="FEz2qL9jN6xMCiJqNVc2QB" Name="Camera Idle" Kind="InputPin" />
+                <Pin Id="K78bA1CEgHyOuf3g95YIMc" Name="BezierPoints" Kind="OutputPin" />
+                <Pin Id="Rw6sm45kU97OjlsPat0ulT" Name="Editing" Kind="OutputPin" />
+                <Pin Id="UDyEbavAg3EO9XYhIWW7hD" Name="Selection Changed" Kind="OutputPin" />
+                <Pin Id="HmahOs5fAJHPM84ARuE9mm" Name="Selection Updated" Kind="OutputPin" />
+                <Pin Id="VZZvt0WlFDCN7y0QDCaJiQ" Name="Translate" Kind="OutputPin" />
+                <Pin Id="H94i8hKW6KoLWNw3v5TDVY" Name="Rotate" Kind="OutputPin" />
+                <Pin Id="E6ISpXJ9qnrOXQR9EVYE6O" Name="Scale" Kind="OutputPin" />
+                <Pin Id="B5jvh24wr4IMc8dCE1nDIO" Name="Offset" Kind="OutputPin" />
+                <Pin Id="TlxV3GL64QsL384rBW5FY0" Name="GizmoState" Kind="OutputPin" />
               </Patch>
               <Canvas Id="Gp7ibfIZs1qO9voiMIUCpR">
                 <Node Bounds="327,166,103,13" Id="RlpddkmznXTLTzBDaQiQTa">
@@ -13262,12 +13262,10 @@
               <Pin Id="UGFabLcLk9wMn8bnG1S4xI" Name="Knots To Add" Kind="InputPin" />
               <Pin Id="DbqPh9PMo5lL0K05EXC1gk" Name="Add Knots" Kind="InputPin" />
               <Pin Id="D5ze8th7Pm8L63KyOQCNzW" Name="Add and Smooth" Kind="InputPin" />
-              <Pin Id="Btz8BocZ1qVM7fPhRcvXJN" Name="BezierEditorState" Kind="OutputPin" />
               <Pin Id="UoLrd34ZI37MDNYXvWhTCc" Name="Insert Knot" Kind="InputPin" />
               <Pin Id="UZlH3MZ9UXEQQJjB4i0OXh" Name="Clear" Kind="InputPin" />
               <Pin Id="OqFYhe04TtXLyL7JvnIDW3" Name="BezierEditorControls" Kind="InputPin" />
               <Pin Id="H5PNMxcc4ltNAyrHyTDYkU" Name="Gizmo Controls" Kind="InputPin" />
-              <Pin Id="FNANz6iiJdJMRDuKXTD1XF" Name="BezierSpline" Kind="OutputPin" />
               <Pin Id="BjGKmQWskZoLCXhSoLPCKK" Name="Pick Size" Kind="InputPin" />
               <Pin Id="LZFkD2OhiQANNolUpaaSl3" Name="Step Size" Kind="InputPin" />
               <Pin Id="Bh5Wq1G6hJfQFTgwlMWalx" Name="Gizmo Size" Kind="InputPin" />
@@ -13275,9 +13273,11 @@
               <Pin Id="OGu1t4fbigtQStdL5xYFHW" Name="Camera Idle" Kind="InputPin" />
               <Pin Id="ME8IWf3GTEcLXutYdBPMd9" Name="Camera Zoom" Kind="InputPin" />
               <Pin Id="M2y0wTrML2cP0ZAVWtrmq8" Name="File Path" Kind="InputPin" />
-              <Pin Id="Vv5gmRMct7QN2VrTeWnVD0" Name="Idle" Kind="OutputPin" />
               <Pin Id="R8HwnQrULZ3PvjIWvbab1X" Name="Load" Kind="InputPin" />
               <Pin Id="JUhzv4UXPVoNO6rJn1UpXn" Name="Save" Kind="InputPin" />
+              <Pin Id="Btz8BocZ1qVM7fPhRcvXJN" Name="BezierEditorState" Kind="OutputPin" />
+              <Pin Id="FNANz6iiJdJMRDuKXTD1XF" Name="BezierSpline" Kind="OutputPin" />
+              <Pin Id="Vv5gmRMct7QN2VrTeWnVD0" Name="Idle" Kind="OutputPin" />
             </Patch>
             <Canvas Id="UVDOXsuWdSJP0oq6dedquX">
               <Pad Id="CwDxijHRI4ULDJG0nKyNmH" Comment="Iteration Count" Bounds="322,265,30,19" ShowValueBox="true" isIOBox="true" Value="100">
@@ -13900,20 +13900,20 @@
               <Pin Id="Mr3YKwgPHyJNmKrDdsTvXU" Name="Add" Kind="InputPin" />
               <Pin Id="QQQ5ghLTV7vPIjdMEa4uYd" Name="Clear" Kind="InputPin" />
               <Pin Id="D2r0GOD1g3xL2ck4BftgRB" Name="Locked" Kind="InputPin" />
-              <Pin Id="Mw7xFBCn4DmNipryXeHpBn" Name="PointEditor State" Kind="OutputPin" />
               <Pin Id="U5gajWkYVrEPtWNSjQ9wAq" Name="PointEditor Controls" Kind="InputPin" />
               <Pin Id="OxAbLyIY7CbNAK7wCcgnVk" Name="Gizmo Controls" Kind="InputPin" />
-              <Pin Id="Uwg81kFdh0BNk1EHgoGvtq" Name="Points" Kind="OutputPin" />
               <Pin Id="VeNwOTgjOQlMYjtqokb07X" Name="View Projection" Kind="InputPin" />
-              <Pin Id="OMnUMY4yhPqPswNmOxc6Dz" Name="Ids" Kind="OutputPin" />
               <Pin Id="OdU9EQodNxWPX1EuIAzMAH" Name="Pick Size" Kind="InputPin" />
-              <Pin Id="D3GB525t5yYPFBRrECX5pS" Name="Idle" Kind="OutputPin" />
               <Pin Id="QlJYnNauyyYOV3Ud27HT4F" Name="Step Size" Kind="InputPin" />
               <Pin Id="B8c4KQOrvW3Oj7wneaT3KZ" Name="Gizmo Size" Kind="InputPin" />
               <Pin Id="VAKePCnDCizNkgCLWrksJl" Name="File Path" Kind="InputPin" />
               <Pin Id="FjEHCHHJ9Y5OqtGKQPYA0e" Name="Load" Kind="InputPin" />
               <Pin Id="V5yl5wCAIucMoGwHFLo2yL" Name="Save" Kind="InputPin" />
               <Pin Id="I4sDP5PnDODL65BBEXNCtX" Name="Camera Idle" Kind="InputPin" />
+              <Pin Id="Mw7xFBCn4DmNipryXeHpBn" Name="PointEditor State" Kind="OutputPin" />
+              <Pin Id="Uwg81kFdh0BNk1EHgoGvtq" Name="Points" Kind="OutputPin" />
+              <Pin Id="OMnUMY4yhPqPswNmOxc6Dz" Name="Ids" Kind="OutputPin" />
+              <Pin Id="D3GB525t5yYPFBRrECX5pS" Name="Idle" Kind="OutputPin" />
             </Patch>
             <Canvas Id="KkVNFIMs4eFNqQgilYOGQQ">
               <Pad Id="KaAcqAMuAScPCjPzTjNZAy" Comment="Levels" Bounds="417,770,24,19" ShowValueBox="true" isIOBox="true" Value="50">
@@ -14571,13 +14571,9 @@
               <Patch Id="Pk29tcrwZi4NqhgbLK1ZoL" Name="Create" IsGeneric="true" />
               <Patch Id="ODBdgP8pSxKN5wrQ3SgkKR" Name="Update" ParticipatingElements="SPAoS6CP73cP2762u1T7ey,SkybGpUedKzLxhEf8tnXWk,DDmQCNOciHvO2E736cQQEl,BOJBYzHHivGPNhPd1eANot,LqZbTsgPSLJMPtMleZ2mjl,V7R80on7ZJjOyZ4Y3dxvJz,JolHKnU7llxMaWGTlGccjU,LyHoAA0kTLtLtNCqQldDPo,QSCwWrsXRcMNTNZ9r7SRfm,RRzm0JuoUB9PO3LQrz8DOI,TYOVmn8mzsjLAlnBOSikbv,UfMyERQdJuLPqNoSc59zbi,FSGmklBmevnOCJtCXuyzVm,FLMF8U94rvwNc6tRDxxR7N,QIjX7URW1RzORBnfYLAifp,CdpPrY2ED8xM25Lmt4137f,N1JBdGj9T4mM0uLKym6jp2,VKzjVMCxoDQPJyL2lElnvd,BT9NJljmSLxOoHMCeNMXQo,U002GTCMhoxQUwuC9ubyDj,DMOwyRFittLNhZKPAicB79,QcC206OrsVzMC4i1B9yvCY,ANw9sVyobhYP8sO7IhNWTS,RlqMFaOSdW0Lu8hInsiE94,CzKKmflFBObMgK5axG23EZ,Dlp3jZlFcrkLMfAhfP6so1,Pdei1uTmlFEO0caQcbV59v,F5qu46nEegGMQ5fJjMjyrF,FfgGMnM6rfFMQbfcfsGZFS,B48B8Nvjw9ENzgyKL5UGV5,CTSVuLkLfymQAWUfq5qnAJ,VNOczuFFer2LYcDC2PjH89,TjevMJokno0NexCPYUXbUG,G2UjwooQzcxN3L6WM0Mrz4,ISO8BfJLJnUPDFJs6B6Ry1,Tt0mWcwtJGRNRQfqkgKppX,FrLQWRG05mINoLv2OUoZaT,NZ4Sv9efj8zNXeGQvejYHz,RU1qY6lKt9LPPsDwF2L7bZ,AQbJM8pdaA9NEIpzFiSEea,Mtwa45GuroeMeJzGlIpEme,SG3xLF7YyH5OcvIKlV8dpl,ONTlNHWtv4gQUO8UmnhSz8,RQaPqc8f3I2L6LTibA6bpC" IsGeneric="true">
                 <Pin Id="F209Q5N3d3NPrIgtnr7jDX" Name="Editing" Kind="InputPin" />
-                <Pin Id="UiVhFfnnT5QQOsgTMgMzoX" Name="Scale" Kind="OutputPin" />
                 <Pin Id="DTwtnlnDFynOhUdh7pzTdc" Name="Shift" Kind="InputPin" />
-                <Pin Id="PAZHeAAvo6VLVudHgOeESC" Name="Rotate" Kind="OutputPin" />
                 <Pin Id="NKnaRDBuQCRMhsnTxKQbCC" Name="Mouse Position" Kind="InputPin" />
-                <Pin Id="SyLddsHYdcjQDfG35TOvFb" Name="Translate" Kind="OutputPin" />
                 <Pin Id="K1W0ZXtDYPuQBJ8q0EiGxc" Name="Scale" Kind="InputPin" />
-                <Pin Id="Ah0yf1kBsylOBASChlvtTe" Name="Absolute" Kind="OutputPin" />
                 <Pin Id="RPqRVLUHsdoP8l2zhZctFR" Name="Rotate" Kind="InputPin" />
                 <Pin Id="UXxAxhQptsYPE5DMGyw0In" Name="Translate" Kind="InputPin" />
                 <Pin Id="FC24EXx41pRODmLIX5rt8E" Name="Step Size" Kind="InputPin" />
@@ -14586,6 +14582,10 @@
                 <Pin Id="RgYjZ6M0sxUMWBs3WL5BH5" Name="View Projection" Kind="InputPin" />
                 <Pin Id="G8O8zAbWYhiOWaPcCd9Guj" Name="Drag Plane Point" Kind="InputPin" />
                 <Pin Id="Bcub1BEwZCMLS5Uz9unMnE" Name="Edit in ViewSpace" Kind="InputPin" />
+                <Pin Id="UiVhFfnnT5QQOsgTMgMzoX" Name="Scale" Kind="OutputPin" />
+                <Pin Id="PAZHeAAvo6VLVudHgOeESC" Name="Rotate" Kind="OutputPin" />
+                <Pin Id="SyLddsHYdcjQDfG35TOvFb" Name="Translate" Kind="OutputPin" />
+                <Pin Id="Ah0yf1kBsylOBASChlvtTe" Name="Absolute" Kind="OutputPin" />
               </Patch>
               <Canvas Id="OVbWSYRFMLMN6gUYhcaWdD" BordersChecked="false">
                 <Pad Id="Tb5LDxuEGyxNDuQpUnNwrP" Comment="Normal" Bounds="917,202,33,57" ShowValueBox="true" isIOBox="true" Value="1, 0, 0">
@@ -15298,30 +15298,30 @@
               <Patch Id="VIEoOISkE4hMwkWWr7bpMf" Name="Create" IsGeneric="true" />
               <Patch Id="BoUmlFub1wlQFtx4uGLyLq" Name="Update" ParticipatingElements="S5PvOznxoddMIMducDrCyN,L1mv2OZtruVQOsQitJb9D7,TtuevwJhCILOdvIwBMPHXZ,SdHWHLJLvQQMPQ5oV1pRsv,Aukop5UPMRLMDE60wBlOau" IsGeneric="true">
                 <Pin Id="LeYZ6F50KX9QES3lyKrCRd" Name="Points" Kind="InputPin" />
-                <Pin Id="QRs6wrBlnt6PNgo97sIpbl" Name="Points" Kind="OutputPin" />
-                <Pin Id="IOAGpv8EiDJOdxbRregqSu" Name="Result" Kind="OutputPin" />
                 <Pin Id="CnCuCCOhMQhLVkgYAGDd78" Name="PointEditor Controls" Kind="InputPin" />
-                <Pin Id="TIC4x64n7IcNmzXcywegqo" Name="Editing" Kind="OutputPin" />
-                <Pin Id="QaMHQ7RMBByMAlfJuv7JrK" Name="Selection Updated" Kind="OutputPin" />
                 <Pin Id="Vhu5ssB1LLJOcFYWrW0Cg5" Name="Gizmo Controls" Kind="InputPin" />
                 <Pin Id="IaZTDdH2594QWE6uznCYrQ" Name="Step Size" Kind="InputPin">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
                 </Pin>
-                <Pin Id="MS1DZh69vZsLidLKmYXl1n" Name="Scale" Kind="OutputPin" />
                 <Pin Id="J6fCtkNBi6mM3UzWB8rPDK" Name="Gizmo Size" Kind="InputPin" />
+                <Pin Id="D9W6GJ4HqMMP91Z5P0qQAV" Name="ViewProjection" Kind="InputPin" />
+                <Pin Id="Qd6srJyTwzLNgTeyygqxOX" Name="Camera Idle" Kind="InputPin" />
+                <Pin Id="MHnUL4YwTE9MgSBcbzaN3v" Name="Pick Size" Kind="InputPin" />
+                <Pin Id="QRs6wrBlnt6PNgo97sIpbl" Name="Points" Kind="OutputPin" />
+                <Pin Id="IOAGpv8EiDJOdxbRregqSu" Name="Result" Kind="OutputPin" />
+                <Pin Id="TIC4x64n7IcNmzXcywegqo" Name="Editing" Kind="OutputPin" />
+                <Pin Id="QaMHQ7RMBByMAlfJuv7JrK" Name="Selection Updated" Kind="OutputPin" />
+                <Pin Id="MS1DZh69vZsLidLKmYXl1n" Name="Scale" Kind="OutputPin" />
                 <Pin Id="AABqYkfM1JuNMW54QiE9lX" Name="Rotate" Kind="OutputPin" />
                 <Pin Id="Tkuf3pu7KUaL11lS6v3YNx" Name="Translate" Kind="OutputPin" />
-                <Pin Id="D9W6GJ4HqMMP91Z5P0qQAV" Name="ViewProjection" Kind="InputPin" />
                 <Pin Id="Fq1AN8oIksPORgA8MwZscO" Name="Offset" Kind="OutputPin" />
                 <Pin Id="CIypSfSV4P1M2HeRJZ0hnR" Name="GizmoState" Kind="OutputPin">
                   <p:TypeAnnotation LastCategoryFullName="Editors.3D" LastSymbolSource="VL.3DGizmo.vl">
                     <Choice Kind="TypeFlag" Name="GizmoState" />
                   </p:TypeAnnotation>
                 </Pin>
-                <Pin Id="Qd6srJyTwzLNgTeyygqxOX" Name="Camera Idle" Kind="InputPin" />
-                <Pin Id="MHnUL4YwTE9MgSBcbzaN3v" Name="Pick Size" Kind="InputPin" />
               </Patch>
               <Canvas Id="G7wyMeXOSoOLB9IJ2IiCmS">
                 <Node Bounds="470,1195,145,13" Id="S5PvOznxoddMIMducDrCyN">
@@ -15809,15 +15809,15 @@
             <Patch Id="A6MU3Gntj4lLCYnyu03eIa" IsGeneric="true">
               <Patch Id="Bw7nJsNmMNWL6EqJMoOJR1" Name="Create" IsGeneric="true" />
               <Patch Id="IPQLz5zaATmOUyOwk0iQP8" Name="Update" ParticipatingElements="DdxMvSxygsYO2eVJ8PgEal,PbpAtQkmsNjM1JZpJ5llOs,OLrggA2le8VLrmQ9Oqrm5F,AJNvMOKpW9MLStSROVk59h,UdM8RD0Eh43QKIXUJij82n,D0LKMH08OS7O32PWoynvNr,DzpWAUgvI2LOPykW9aUou5,Hx8dPiZ0joXNBqcXuTyTv4,FfNAAPsdwa9LjAxFLx6DHK,FPzq0IoatxANJ8fqEfc4N3,Jq9KqTw6nNuMondqAyP91s,SRRQwl2Vj4bPX3Dctgcd8D,PfFx60gQ5SMNoWIQHPcoK8,Da7U4vVNQ5yMyUmh7ZtuPH,NgeBecuOUAAMXKdRG2loJI,E83Fmiwpnh2MYqsQVCjkMv,PXX4sk2h1jdLGMFYkvBWU7,G6iNxmc2YLuLu30BN3QKtg,R0g0C0OawKQPoOzzA6xD4J,TgqwSBGBqDyNNm1HGHfm97,Ly5LYAQUDFsMJ81OrRV9km" IsGeneric="true">
-                <Pin Id="IKpyG86SBE2L4fuqbgkRb7" Name="Edit in ViewSpace" Kind="OutputPin" />
                 <Pin Id="I02pZQFS1pHL2zEa2PpSQF" Name="PickRay" Kind="InputPin" />
-                <Pin Id="H6DZndhXZcjOuqwPpJfnWK" Name="Handler Active" Kind="OutputPin" />
                 <Pin Id="RWespQEpZwMNe3cX8rzyXL" Name="Sample" Kind="InputPin" />
-                <Pin Id="SiQ1PtW11yFNbMRYaEGA1c" Name="DragPlane Point" Kind="OutputPin" />
                 <Pin Id="ATrI6533zimLgqqrbcAPx1" Name="Points" Kind="InputPin" />
-                <Pin Id="J8Lt2evVCkBLCvJqxWr9wc" Name="Active Axis" Kind="OutputPin" />
                 <Pin Id="DDnuSbWNaPhMJ87KsBEfbJ" Name="Rotate" Kind="InputPin" />
                 <Pin Id="PcfI5hT1fuGPM8eoTms1gb" Name="Pick Size" Kind="InputPin" />
+                <Pin Id="IKpyG86SBE2L4fuqbgkRb7" Name="Edit in ViewSpace" Kind="OutputPin" />
+                <Pin Id="H6DZndhXZcjOuqwPpJfnWK" Name="Handler Active" Kind="OutputPin" />
+                <Pin Id="SiQ1PtW11yFNbMRYaEGA1c" Name="DragPlane Point" Kind="OutputPin" />
+                <Pin Id="J8Lt2evVCkBLCvJqxWr9wc" Name="Active Axis" Kind="OutputPin" />
               </Patch>
               <Canvas Id="AigpVds28hkL4VnCNqeyFv" BordersChecked="false">
                 <Pad Id="UGvkSsUwpMBP1rja4NQOO5" Comment="Radius" Bounds="299,519" ShowValueBox="true" isIOBox="true" Value="0.0200000033">
@@ -16195,12 +16195,12 @@
             <Patch Id="EKDCWdjxMXBOcUjrG8b3VO" IsGeneric="true">
               <Patch Id="Ddv3ctNZ7OVNcMyUJ9l4LQ" Name="Create" IsGeneric="true" />
               <Patch Id="R4QcN2bJV56NkHxihEsz0c" Name="Update" ParticipatingElements="NqYz5hNcE0WOz8b1Rqo3nj,UUXkvX1EEyJQMaanwqE9eg,VsKk5oKzzyWLCEQayVin1j,VQDQEKxMsZeNYOf8u2IDiw,P2S86dVJAq4OOmwSVzUNYB,H1ISgds51EdNHtywtowHOm,ET58JDGlxadMKzkzzqwSjk,LaTiKRR639ENEu2k2GQHn7,Kdo3v1hOlKBLozRp9FE9dd,TbpfRzeYz95NUVLaekC1Xx,PG4d83Q5NVlOQKp1VIDlHu,RzI3Il8oILeMTkR81afdNx" IsGeneric="true">
-                <Pin Id="PgGGfXF7TwLMSvBnn0b6DY" Name="Axis" Kind="OutputPin" />
                 <Pin Id="FC9aEe0a4sLPiPmIVsLScM" Name="Ray" Kind="InputPin" />
                 <Pin Id="Q5c0ivZkN96Nd6BMk0R5FE" Name="Triad Center" Kind="InputPin" />
                 <Pin Id="KEPGZCCeprCQU6W9oxQ6tS" Name="Axis Rotations" Kind="InputPin" />
-                <Pin Id="ShfzhMHL8pZL2AL2K7n7l8" Name="Hit Position" Kind="OutputPin" />
                 <Pin Id="HCnYkLH6XbfP1WkzH5uRjJ" Name="Pick Size" Kind="InputPin" />
+                <Pin Id="PgGGfXF7TwLMSvBnn0b6DY" Name="Axis" Kind="OutputPin" />
+                <Pin Id="ShfzhMHL8pZL2AL2K7n7l8" Name="Hit Position" Kind="OutputPin" />
               </Patch>
               <Canvas Id="V2MyUZUiX9ZPqkt22v7bXc" BordersChecked="false">
                 <Pad Id="O3IiioYdF2OMmjUvqlVmqb" Comment="Index" Bounds="430,623" ShowValueBox="true" isIOBox="true" Value="2">
@@ -16466,12 +16466,12 @@
             <Patch Id="J8ORtBnXhBzLKnSjC4vmrM" IsGeneric="true">
               <Patch Id="PmDdC8miYdSN4treMjS0TI" Name="Create" IsGeneric="true" />
               <Patch Id="LsKq8rXjtrzPv7waN8ulzO" Name="Update" ParticipatingElements="R1kfa0wOFI1PXf1caMRkkb,QCx6X5RfqpBPjRDAjVOmWI,FWlwFj4DlrIQB2pB0mfl9h,QZ9fyzUGAS7MzXqFouGLO8,FAiAdizgZTaOX5AinKjulk,JnVugZXJj0hLlSxzcgHKH5,JlllaPDXjI2P2kLIXYrSaA,VvAiPwG8DlCNCiJ9GWgQde,M9bkaFw38VUMBdYyZYeRs6,Ei0eWYCLkOSOzqI3PEMwwk,TDxcmZOA2NGQPdJcQDecNE" IsGeneric="true">
-                <Pin Id="GdImLeZxhTeNsQGjvfLlAw" Name="Axis" Kind="OutputPin" />
                 <Pin Id="OHqGfmH2UqSQG0kVxDzTpt" Name="Ray" Kind="InputPin" />
                 <Pin Id="PrSHhTenYxEP6p13hTVQrm" Name="Triad Center" Kind="InputPin" />
-                <Pin Id="Gd3r7KaSAJLNerZybWIcuQ" Name="Hit Position" Kind="OutputPin" />
                 <Pin Id="LcoQwryUVgXMQpIGlqxlLd" Name="Pick Size" Kind="InputPin" />
                 <Pin Id="N4DAgqAg8W9PGE3UZ3oMno" Name="Axis Rotations" Kind="InputPin" />
+                <Pin Id="GdImLeZxhTeNsQGjvfLlAw" Name="Axis" Kind="OutputPin" />
+                <Pin Id="Gd3r7KaSAJLNerZybWIcuQ" Name="Hit Position" Kind="OutputPin" />
               </Patch>
               <Canvas Id="RC3mZWAh25vMcDS0xG6PF8" BordersChecked="false">
                 <Pad Id="R71h0AUIRvbLM8mnzN9kai" Comment="Scalar" Bounds="912,354" ShowValueBox="true" isIOBox="true" Value="6">
@@ -20642,22 +20642,22 @@
               <Link Id="UfJgRjKXFaeQRi21r3Y859" Ids="QhklTJodlQdLnBm90Ist1G,NSuXlsnTifkP8AjejfAaeA" IsHidden="true" />
               <Patch Id="EdIPgJQUZ6TM3DpmpB41Mm" Name="Create (Hidden)" IsGeneric="true" />
               <Patch Id="AlzS5jFFt8KMwJX7quo5MN" Name="Update (Hidden)" ParticipatingElements="T20tABxhpRXPOUrB6RTTdQ,VI0eFwYInRGOjm6cATScJC,GdylUHFzBL8LXwypbF7ZNa,PbOJdUpKpEtNBAHpkwLkQg,MQyRnLug68ZO2T42VqdoPq,Ehrzx3GzSaNLlRtbq079Yi,UebCtnRcXR9PxiK4tMVvGg" IsGeneric="true">
-                <Pin Id="IL2uW2t4glINLE7Y3KRype" Name="BezierKnots" Kind="OutputPin" />
-                <Pin Id="PsWmIEGKkApNpz5wmSyLwM" Name="Editing" Kind="OutputPin" />
                 <Pin Id="IJzTiAjetN1LtRaF1wX1Vk" Name="BezierKnots" Kind="InputPin" />
-                <Pin Id="GUcZN92WcU0Mf49SBZnhUG" Name="Selection Updated" Kind="OutputPin" />
                 <Pin Id="KvIOKzBUCPOLtvkS7atDiQ" Name="BezierEditorControls" Kind="InputPin" />
-                <Pin Id="Mb8saAxrrFtP3tjXc0g58O" Name="Scale" Kind="OutputPin" />
-                <Pin Id="Aib1rzLunroNuBrkluCmP6" Name="Rotate" Kind="OutputPin" />
                 <Pin Id="L9eem6BUQ7NOkBAaRwJtGe" Name="Gizmo Controls" Kind="InputPin" />
-                <Pin Id="DrwtimKfwTJQU50hC9eUGR" Name="Translate" Kind="OutputPin" />
-                <Pin Id="GhEZA9Dvzw8OVFkBqeoyXD" Name="Offset" Kind="OutputPin" />
                 <Pin Id="Aaii6zi3FwFP065DlMoNuM" Name="Camera Idle" Kind="InputPin" />
-                <Pin Id="NSuXlsnTifkP8AjejfAaeA" Name="GizmoState" Kind="OutputPin" />
                 <Pin Id="KOSnRCGYDZGLm6gorJBSZs" Name="Step Size" Kind="InputPin" />
                 <Pin Id="MaUNmaO9SiNPv1riKHHJMu" Name="Pick Size" Kind="InputPin" />
                 <Pin Id="NhF1JtlNrfKMWJCh9ZUCR2" Name="Gizmo Size" Kind="InputPin" />
                 <Pin Id="QTAL0eebWVVOUKGxuCbi3o" Name="ViewProjection" Kind="InputPin" />
+                <Pin Id="IL2uW2t4glINLE7Y3KRype" Name="BezierKnots" Kind="OutputPin" />
+                <Pin Id="PsWmIEGKkApNpz5wmSyLwM" Name="Editing" Kind="OutputPin" />
+                <Pin Id="GUcZN92WcU0Mf49SBZnhUG" Name="Selection Updated" Kind="OutputPin" />
+                <Pin Id="Mb8saAxrrFtP3tjXc0g58O" Name="Scale" Kind="OutputPin" />
+                <Pin Id="Aib1rzLunroNuBrkluCmP6" Name="Rotate" Kind="OutputPin" />
+                <Pin Id="DrwtimKfwTJQU50hC9eUGR" Name="Translate" Kind="OutputPin" />
+                <Pin Id="GhEZA9Dvzw8OVFkBqeoyXD" Name="Offset" Kind="OutputPin" />
+                <Pin Id="NSuXlsnTifkP8AjejfAaeA" Name="GizmoState" Kind="OutputPin" />
               </Patch>
               <Link Id="Cc8z7oY0SgcNAy5pH730jt" Ids="Ndl6WJDFyx7NyomoqXgoKs,JzKN9JPmCP7OJPLKCkaGdr" />
               <Link Id="Cx5D2irnH9tPbOsxYDNpFQ" Ids="R2iws3GCSz3MUKKQHoB9yZ,SUJwwmbZKxXLju73gIkqGZ" />
@@ -21903,20 +21903,20 @@
               <Pin Id="RljXs1BD6CHPl89ft9g04t" Name="Knots To Add" Kind="InputPin" />
               <Pin Id="MBmAmhL8ULlNKZillhNZJP" Name="Add Knot" Kind="InputPin" />
               <Pin Id="V4AOcJp0htQLqviN2W99eN" Name="Add and Smooth" Kind="InputPin" />
-              <Pin Id="Vt4GfvZBk7NLWyxplBo34G" Name="BezierEditorState" Kind="OutputPin" />
               <Pin Id="GcznPg06mIXPyrXkEoti0W" Name="Insert Knot" Kind="InputPin" />
               <Pin Id="FrgFZEZPXfMMCmIv0iyajg" Name="Clear" Kind="InputPin" />
               <Pin Id="JS8SWZfbC43OgtS07TYNi4" Name="BezierEditorControls" Kind="InputPin" />
               <Pin Id="L6mINFDBXuAL0PkNlFV7Bz" Name="Gizmo Controls" Kind="InputPin" />
-              <Pin Id="Hq9IKW8UVtzOVLPrD8UzYH" Name="BezierSpline" Kind="OutputPin" />
               <Pin Id="EFLilqPETVZNq7X17h5O7q" Name="Pick Size" Kind="InputPin" />
               <Pin Id="AquN0xIpZNrNdmisEBDDJk" Name="Step Size" Kind="InputPin" />
               <Pin Id="IYsfwYK2r2TPLI45cv5CBP" Name="Gizmo Size" Kind="InputPin" />
               <Pin Id="OMouhmlDhpeNJrk6vUMMja" Name="ViewProjection" Kind="InputPin" />
               <Pin Id="CndWLgeQdLIQTcgGPNgksv" Name="File Path" Kind="InputPin" />
-              <Pin Id="KENH04rvqxFOv6EWjbbz56" Name="Idle" Kind="OutputPin" />
               <Pin Id="G1czyHV0BjBMZDbk74JZ56" Name="Load" Kind="InputPin" />
               <Pin Id="AXbrbGcF7JON2721Tn8qif" Name="Save" Kind="InputPin" />
+              <Pin Id="Vt4GfvZBk7NLWyxplBo34G" Name="BezierEditorState" Kind="OutputPin" />
+              <Pin Id="Hq9IKW8UVtzOVLPrD8UzYH" Name="BezierSpline" Kind="OutputPin" />
+              <Pin Id="KENH04rvqxFOv6EWjbbz56" Name="Idle" Kind="OutputPin" />
             </Patch>
             <Canvas Id="QpDQ5bSGwC7MTY93F0ak3R">
               <Pad Id="MGQwXsbWEtZLWTGBGya2e3" Comment="Levels" Bounds="594,1098,24,19" ShowValueBox="true" isIOBox="true" Value="50">
@@ -23684,10 +23684,10 @@
               </Canvas>
               <Patch Id="H7CPk1XuKh9NWKvavj12RR" Name="Create" />
               <Patch Id="DkGxew3vNheLhkVP2Js2DG" Name="Update">
-                <Pin Id="LMZAQpkmFJaQBf3wge3Njt" Name="Gizmo Controls" Kind="OutputPin" />
                 <Pin Id="QaMyCGhMVrVMaUZN3HBr1U" Name="Mouse" Kind="InputPin" />
                 <Pin Id="CHY0S9SocASNILl6hPAhZB" Name="Keyboard" Kind="InputPin" />
                 <Pin Id="O3NtTeLsV2ROdUDMYqk54o" Name="Enable" Kind="InputPin" />
+                <Pin Id="LMZAQpkmFJaQBf3wge3Njt" Name="Gizmo Controls" Kind="OutputPin" />
               </Patch>
               <ProcessDefinition Id="CgeLbUkK4wcMUe4duhzZJq">
                 <Fragment Id="GG7AOyqc5ejQFCEt73Ehin" Patch="H7CPk1XuKh9NWKvavj12RR" Enabled="true" />
@@ -24363,26 +24363,26 @@
               <Patch Id="O7x6QAYFZnXOcPgf0epm37" Name="Create" />
               <Patch Id="NJZeRW0J99UOBlzwzdxVjo" Name="Update" ParticipatingElements="Gz0FvnP1pcwL43DfhGqu8h,AOsGf5uBLjqLOKca0Z5ksl,Cwk0TBE2PLxP6LigHEnO4O,US22hOHbG2CNWcy3wnyFtq">
                 <Pin Id="Hwnn0ujbvGELry1HGDsq6C" Name="Gizmo Size" Kind="InputPin" />
-                <Pin Id="SIgMQM9AYfXOBWZ3MfZj9y" Name="GizmoState" Kind="OutputPin" />
                 <Pin Id="CxHKWXi9EeWPH8dE7To4GA" Name="Pick Size" Kind="InputPin" />
-                <Pin Id="OdzOsPTz24nMxWGKEvq4ej" Name="Translate Offset" Kind="OutputPin" />
                 <Pin Id="AJKTan3CrMuQVpWNlIfUIv" Name="Position" Kind="InputPin" />
                 <Pin Id="JtTI7rehQ9CLboMBjWO5G7" Name="Position Changed" Kind="InputPin" />
-                <Pin Id="TrMJnXpVY0MMvDHYR8Pitg" Name="Scale Offset" Kind="OutputPin" />
-                <Pin Id="PFaaG2wJldwM2kOXgyoTui" Name="Rotate Offset" Kind="OutputPin" />
                 <Pin Id="KMeoD8lwQQTMEwek16IB7n" Name="Active Plane" Kind="InputPin" />
                 <Pin Id="NGiVZZPtTPrLqPiBEdra3s" Name="Number of Points" Kind="InputPin" />
-                <Pin Id="MZcLMwkVMdBMWCDSdS9hR9" Name="Total Offset" Kind="OutputPin" />
                 <Pin Id="N1NYVPz93wqPi2n5mX1CSi" Name="Gizmo Controls" Kind="InputPin" />
-                <Pin Id="RLDwLaAq2ZsQQJD4w2QaP4" Name="Translation Active" Kind="OutputPin" />
                 <Pin Id="SBHyJMj8PEJPCH76wj37uk" Name="Step Size" Kind="InputPin" />
                 <Pin Id="JR8dlpfJwylMHesLsEj37F" Name="View Projection" Kind="InputPin" />
-                <Pin Id="BmP0Ykr2GHEOpFuhifPGBj" Name="Scale Active" Kind="OutputPin" />
                 <Pin Id="QpyVCUugw2NQPj34alLRT0" Name="Camera Idle" Kind="InputPin" />
-                <Pin Id="GYlNjamaMfGOJNJwIJpTe4" Name="Rotation Active" Kind="OutputPin" />
                 <Pin Id="DwxnSxtrCQMLgAvuBWklwD" Name="Default Visibility" Kind="InputPin" />
-                <Pin Id="PTIKmNRcZDdNvctINiwZ8h" Name="Active Axis" Kind="OutputPin" />
                 <Pin Id="ToRNSK5vq4zNdeRQBOPnpr" Name="Enabled" Kind="InputPin" />
+                <Pin Id="SIgMQM9AYfXOBWZ3MfZj9y" Name="GizmoState" Kind="OutputPin" />
+                <Pin Id="OdzOsPTz24nMxWGKEvq4ej" Name="Translate Offset" Kind="OutputPin" />
+                <Pin Id="TrMJnXpVY0MMvDHYR8Pitg" Name="Scale Offset" Kind="OutputPin" />
+                <Pin Id="PFaaG2wJldwM2kOXgyoTui" Name="Rotate Offset" Kind="OutputPin" />
+                <Pin Id="MZcLMwkVMdBMWCDSdS9hR9" Name="Total Offset" Kind="OutputPin" />
+                <Pin Id="RLDwLaAq2ZsQQJD4w2QaP4" Name="Translation Active" Kind="OutputPin" />
+                <Pin Id="BmP0Ykr2GHEOpFuhifPGBj" Name="Scale Active" Kind="OutputPin" />
+                <Pin Id="GYlNjamaMfGOJNJwIJpTe4" Name="Rotation Active" Kind="OutputPin" />
+                <Pin Id="PTIKmNRcZDdNvctINiwZ8h" Name="Active Axis" Kind="OutputPin" />
                 <Pin Id="BaI1hAzRc3eNOtQQB9cyiH" Name="Idle" Kind="OutputPin" />
               </Patch>
               <Link Id="HKVkuJgc41WLczROehLXLQ" Ids="CxHKWXi9EeWPH8dE7To4GA,OcVwlnYG74aOGH4FZ196bX" IsHidden="true" />
@@ -24559,9 +24559,9 @@
             <Patch Id="NoyQd8P9cIbPZOEpYUqY8s" Name="Create" IsGeneric="true" />
             <Patch Id="LatmMYt4wSVLidCX5XGGcy" Name="Join" ParticipatingElements="APKN61rjyvjNdZE9k5eud9,CyYOknX0AiXQWubwLri5U1,MmEHx9AUKr7O9uwKd3vf3m,OvpRzY8w25lN38psHTasRd,DOIM2xj2bc1NmOIdom8wic,K2c2JNCQ6EmOOJbW7NtBrX,ITdW6POld7sNznqLUPigUi,NiBKwV8M20cLyrlWcaszqW,PiyCGN1KvfpMqayhoxln0W,LHCm19rEffTL0oWuwUwyEw,TKvR9eIA4gtMDKW0lB4llu,FCJaYh2ea8FPSY5FztocUy,CEPnBhJpEZ9Np7p579eq7L,NxKI63YSrlOQBCQeL7u8wT,Mun8NYD9fNiMKyhVzGTC4A,Rq5ONiLaMJLNQaEvZFBdWh" IsGeneric="true">
               <Pin Id="Qh89qAFuKNcMROtJSxpW0a" Name="Mouse Device" Kind="InputPin" />
-              <Pin Id="RX8zkkF87D5O0QbRxmYJg2" Name="PointEditor Controls" Kind="OutputPin" />
               <Pin Id="UrqEOIyFnh0NkLloJVf2vJ" Name="Keyboard Device" Kind="InputPin" />
               <Pin Id="I43RTclzi2vNtU9QCEZet3" Name="Enabled" Kind="InputPin" />
+              <Pin Id="RX8zkkF87D5O0QbRxmYJg2" Name="PointEditor Controls" Kind="OutputPin" />
             </Patch>
             <Canvas Id="M6dzKGNHEaVOt5uOT84VfP">
               <Pad Id="Nt5p1teYvV8QYmErUzm8Lk" Comment="Key Name" Bounds="681,333,59,13" ShowValueBox="true" isIOBox="true" Value="ControlKey">
@@ -25795,9 +25795,9 @@
             <Patch Id="F4kV0U1lfGoMdAVqxyXlWc" Name="Create" IsGeneric="true" />
             <Patch Id="TgZmB5U4ZVoOZC095h2Sra" Name="Join" ParticipatingElements="KJ051O6RBEvNfp4TH0I7J9,A9s0QvxgdbWPkYFgg5UX1P,HtrdF0EcyYTLVAva5CfJc4,GwnuVhKzweiPgYLdQ4ziuB,BuuwaFT2Kf7MoAQEEODsBL,NKdbo8K7eAAOX6dDm5pubP,NYEHSZce1PiQXldysZUjgA" IsGeneric="true">
               <Pin Id="IzBxszl6UmnP8DiB9ve1Z1" Name="Keyboard" Kind="InputPin" />
-              <Pin Id="FteqQA9dn0lMbVm3oassdS" Name="BezierEditorControl" Kind="OutputPin" />
               <Pin Id="QZGxfjXdE46L5PbjQXpvej" Name="Mouse" Kind="InputPin" />
               <Pin Id="Oyc8Ldslxb7OLUldrNP58B" Name="Enabled" Kind="InputPin" />
+              <Pin Id="FteqQA9dn0lMbVm3oassdS" Name="BezierEditorControl" Kind="OutputPin" />
             </Patch>
             <Canvas Id="EWQ5KQmpZPjLpp7lpZD6gw">
               <Pad Id="EzbAPnA4pzvLMAoQmZC0Ed" Comment="Key Name" Bounds="344,257,24,19" ShowValueBox="true" isIOBox="true" Value="D1">
@@ -27399,9 +27399,9 @@
           </Canvas>
           <Patch Id="OhwnrQveHH7NnpLYPDMfjz" Name="Create" />
           <Patch Id="PgGKgodEs1VMJQOyGtsTCR" Name="Update">
-            <Pin Id="A7h8HYH1j2aLUYzN8B3WHT" Name="Result" Kind="OutputPin" />
             <Pin Id="MtMF6oZt1Z4Pn4j4X3nRrQ" Name="File Path" Kind="InputPin" />
             <Pin Id="KBMYrcAslswMrQwXl2Ygxd" Name="Read" Kind="InputPin" />
+            <Pin Id="A7h8HYH1j2aLUYzN8B3WHT" Name="Result" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="VBjjuOcd4eHOe2ga04ZaKX">
             <Fragment Id="LnvJe37u4QmONd2dhFNzqV" Patch="OhwnrQveHH7NnpLYPDMfjz" Enabled="true" />
@@ -27742,9 +27742,9 @@
           </Canvas>
           <Patch Id="HangINZ9mjzM6vZ5UYQmw0" Name="Create" />
           <Patch Id="HgUVpp1ZQovM3oe1soNjno" Name="Update">
-            <Pin Id="Fh9j62vH93IQKE85MGYrK4" Name="Result" Kind="OutputPin" />
             <Pin Id="BxtdNKs9J9DQRwAzfvKjUT" Name="File Path" Kind="InputPin" />
             <Pin Id="Fy8j4adMP7LQbM8KfnSuV4" Name="Read" Kind="InputPin" />
+            <Pin Id="Fh9j62vH93IQKE85MGYrK4" Name="Result" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="S5mK8uTBZCBPwddWcs322R">
             <Fragment Id="HNQhh5fIarkPJI6771px5x" Patch="HangINZ9mjzM6vZ5UYQmw0" Enabled="true" />
