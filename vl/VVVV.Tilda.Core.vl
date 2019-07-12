@@ -1595,7 +1595,7 @@
             <Pin Id="AFnDoitD2zjLwwabz9cKiM" Name="OnClipRemoved" Kind="OutputPin" Bounds="2303,1263" />
             <Pin Id="L6e6T7OX6kiNoTR5eXw2v0" Name="Categories" Kind="OutputPin" />
             <Pin Id="DaKl7s3nFZmNE7VIgVZmM3" Name="Framebase" Kind="OutputPin" />
-            <Pin Id="GUyS7QlgKdMO8mhlLhbsY1" Name="OnChange" Kind="OutputPin" />
+            <Pin Id="GUyS7QlgKdMO8mhlLhbsY1" Name="OnClipChanged" Kind="OutputPin" />
           </Patch>
           <Link Id="KESYwm8C4zkNzdbu7RGFhc" Ids="CGYvauTEA1fMVr6EhSd7zc,MsxUsrZktKUOA44RIpBdSm" />
           <Link Id="PjFsG7C11cRLhJJMUcl5f8" Ids="MsxUsrZktKUOA44RIpBdSm,Ub41etbqtPxPBXpxCCNyxW" IsHidden="true" />
@@ -1754,8 +1754,8 @@
           <Link Id="BcSsEAJKSHNLuBXtwqwG2T" Ids="FjvukdXqlE1MiuF8167lIn,Vq5F1x45W8UOUmGkzyVjY1" />
           <Link Id="NmCklXRit6pNA48Bh3cAGB" Ids="Vq5F1x45W8UOUmGkzyVjY1,LeS4vXePkafMtAIjjlqFRj" />
           <Link Id="Fe36fNUu8F3PcBoLmqq9s0" Ids="LeS4vXePkafMtAIjjlqFRj,JfUuvWL0VH2OmgEfde2Sfv" IsHidden="true" />
-          <Patch Id="M1Pyp6abeAKPIOWK2EJZMA" Name="OnChange">
-            <Pin Id="JfUuvWL0VH2OmgEfde2Sfv" Name="OnChange" Kind="OutputPin" />
+          <Patch Id="M1Pyp6abeAKPIOWK2EJZMA" Name="OnClipChanged">
+            <Pin Id="JfUuvWL0VH2OmgEfde2Sfv" Name="Clips" Kind="OutputPin" />
           </Patch>
           <Link Id="FHmobyp1359LBAZqxDFILC" Ids="Vq5F1x45W8UOUmGkzyVjY1,KCAEJo317quPMJCsJam6YK" />
           <Link Id="OrjcGyyUflWLauU0eCIHWF" Ids="KCAEJo317quPMJCsJam6YK,GUyS7QlgKdMO8mhlLhbsY1" IsHidden="true" />
@@ -1864,17 +1864,17 @@
           <Link Id="FG4zoTouVkNQMbrc5OC00N" Ids="KkDkzxrxzf1NLJyYSAiX8B,O3FU0ZotRUtP0OElKKTWNi" IsHidden="true" />
           <Link Id="Ub18g6uH3EIQAoVJIPUC4f" Ids="FjvukdXqlE1MiuF8167lIn,KkDkzxrxzf1NLJyYSAiX8B" />
           <Patch Id="GTtU5ClRLR4Ow3L8YaOlj9" Name="OnClipRemoved">
-            <Pin Id="EFzEB3iz4KZOYwIe55iczM" Name="OnClipRemoved" Kind="OutputPin" />
+            <Pin Id="EFzEB3iz4KZOYwIe55iczM" Name="Clips" Kind="OutputPin" />
           </Patch>
           <Link Id="DEUnxKVBRNPM2LzYxjqyCK" Ids="N6X8kiI569iPjACOoqZ9Cc,EFzEB3iz4KZOYwIe55iczM" IsHidden="true" />
           <Link Id="LQcYyJX9C7MO4ZNk4duYGx" Ids="UqpDjmkdVZKNYuyXgBjuY3,N6X8kiI569iPjACOoqZ9Cc" />
           <Patch Id="NHamL0uDFh0P34aheiAeEw" Name="OnClipAdded">
-            <Pin Id="O3FU0ZotRUtP0OElKKTWNi" Name="OnClipAdded" Kind="OutputPin" />
+            <Pin Id="O3FU0ZotRUtP0OElKKTWNi" Name="Clips" Kind="OutputPin" />
           </Patch>
           <Link Id="V3An6Mfz7nKMSN5P1blJOU" Ids="BDPGYOiST6lPfdihHsQPoS,NSPKL9ghFlhNRJdXduBpV0" IsHidden="true" />
           <Link Id="RQWo72BnpwmNDmpgU6tPfN" Ids="CWL6rWKKDMALgrU86w4742,BDPGYOiST6lPfdihHsQPoS" />
           <Patch Id="OU7N39Q9u5EN7hp9xKROuy" Name="OnClipUpdated">
-            <Pin Id="NSPKL9ghFlhNRJdXduBpV0" Name="OnClipUpdated" Kind="OutputPin" />
+            <Pin Id="NSPKL9ghFlhNRJdXduBpV0" Name="Clips" Kind="OutputPin" />
           </Patch>
           <Link Id="GFiFiN5pW2vPu5EVkelV2d" Ids="IgMDAXm3wRlON7UHaUAkQx,GXKUNmOlbCkOemts8GBBSG" IsHidden="true" />
           <Link Id="BSYnVcU0CilNhXF2JTc6hU" Ids="FPAVUWYSMimQBXQiE6HBiZ,MLe8UNZs9X0N0fIUhEzTpI" IsHidden="true" />
@@ -4477,7 +4477,7 @@
               <Pin Id="Rsqs9ySk3WXLBjX9MvxgIJ" Name="OnClipRemoved" Kind="OutputPin" />
               <Pin Id="QTD9wf1PTGWOHRPd440wLX" Name="Categories" Kind="OutputPin" />
               <Pin Id="G0qJTRympvxPpIjvXwfqCn" Name="Framebase" Kind="OutputPin" />
-              <Pin Id="EWTO8sFPBpFOqY1sh1MUv8" Name="OnChange" Kind="OutputPin" />
+              <Pin Id="EWTO8sFPBpFOqY1sh1MUv8" Name="OnClipChanged" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="EgLDNdif6dTPZrHzlC2pwn" Bounds="342,133" />
             <Node Bounds="230,335,65,22" Id="QCSMNjroRXjO3pEtEQBMf3">

@@ -1713,7 +1713,7 @@
               </p:NodeReference>
               <Pin Id="BK44P8xvfpGPW4OOyKr14Y" Name="Input" Kind="StateInputPin" />
               <Pin Id="DZNh7HNwwHjPRC9mI4cQ86" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="Lf9mdSQqSJaP6912djxuko" Name="OnClipUpdated" Kind="OutputPin" />
+              <Pin Id="HLFrH5wHGFQQMa2DjTBczS" Name="Clips" Kind="OutputPin" />
             </Node>
             <Node Bounds="899,481,53,19" Id="Q2fNQsdhx0cMbPivLhME4P">
               <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
@@ -1731,7 +1731,7 @@
               </p:NodeReference>
               <Pin Id="IaWvqg4dCwINGU9SHut4mB" Name="Input" Kind="StateInputPin" />
               <Pin Id="Rxz67LyIki9NS0YnybCAej" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="GAL0aKCgku3PcG5kHXCVbr" Name="OnClipRemoved" Kind="OutputPin" />
+              <Pin Id="USFWJgyy8W0QD8ha5e6Ekr" Name="Clips" Kind="OutputPin" />
             </Node>
             <Node Bounds="647,402,89,26" Id="GcC0JD9XDZ7MMDhN8FTlMf">
               <p:NodeReference LastCategoryFullName="VL.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
@@ -1740,7 +1740,7 @@
               </p:NodeReference>
               <Pin Id="Ug4efn10K37QVYirc6iBEy" Name="Input" Kind="StateInputPin" />
               <Pin Id="ESXDyYq3RprNT0DNtZsP4N" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="O76epGY50NeMkGpHjXnR0k" Name="OnClipAdded" Kind="OutputPin" />
+              <Pin Id="UaX2mMGztLaMJbrqAZsSxk" Name="Clips" Kind="OutputPin" />
             </Node>
             <Node Bounds="731,481,53,19" Id="EeoCS1qYFexOlig3nkd9vo">
               <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
@@ -2247,8 +2247,6 @@
             <Fragment Id="O0qyP6zob3VOjIkhk1SFC3" Patch="NQ1OeqwasqAPdeqtXkRBvB" Enabled="true" />
           </ProcessDefinition>
           <Slot Id="PZTzwCDWEONOaZaTxrVo0q" Name="Loaded" />
-          <Link Id="BqfjNrIa33DLw04C1TVAuR" Ids="GAL0aKCgku3PcG5kHXCVbr,IiW1zSsidM8M4rI7NJe46Z" />
-          <Link Id="BwdRXdejTndNFp6topDFwh" Ids="O76epGY50NeMkGpHjXnR0k,D6nGmySrL16MDbHApjrQoi" />
           <Link Id="Gn9j0O0zydRPCfZm9rY27y" Ids="UgaT2vR9jrPMtHUBTYBFaL,BKmh0P5TcJKMqoJJYOXetf" />
           <Link Id="OxYWFspSuLiOnebGMrMLLX" Ids="UgaT2vR9jrPMtHUBTYBFaL,KuLgZMmesmtMR2i6EoVhWj" />
           <Link Id="InHgLvdlthRNvtHWqGoftt" Ids="KH3oV9mOpEWLdifmfNQGIR,N599vnHLYWjMBm9cPMr4bS" />
@@ -2264,7 +2262,6 @@
           <Link Id="S7KvC0Vg1jvLX77EbtVL2r" Ids="EUEIJs15QwkPyiEeVjHjxS,QzhsjqyIM0mMp3Bi86omZh" />
           <Link Id="Ku2zvglLJ5dNVgacwIbQ7u" Ids="Nsu6eNsNqaWPj9NREuQkgk,TZHYliEfMPnQKqOl9FvS39" IsFeedback="true" />
           <Link Id="JL5eWhMA4FMMY0cppWXagu" Ids="Nsu6eNsNqaWPj9NREuQkgk,OeD70yqbQcxOidxcAo8J6y" />
-          <Link Id="P7cpN2sq51aMMyzP0cXrZ4" Ids="Lf9mdSQqSJaP6912djxuko,AIaPOOyDzhvObuuzLTQKa0" />
           <Link Id="Fz4nHo1sPLuP3aEf24xvW8" Ids="M89FwkAGzfiP3O3zA8KKXv,Nsu6eNsNqaWPj9NREuQkgk" />
           <Link Id="TbCYKRDqK5QQaMtQ3N2NMn" Ids="Cl8jZlXDlygNKiRgqdO3mZ,PZ4XHYzrCl3MUQBdO10PU3" />
           <Link Id="Ii4X4IMiI90N8Al3hQhQV3" Ids="BPu2GhA8ELKMxA5ks1v5FW,TZHYliEfMPnQKqOl9FvS39" />
@@ -2342,6 +2339,9 @@
           <Link Id="OvKSr4s1vwPQY74lZhj0gD" Ids="PQ0p5KXDc5tLgSWUJOBO3Y,PwU7TSt9FeHMaCHA5Yln2c" />
           <Link Id="Sl7TIUqpWrsOwBvZpwueW6" Ids="J0OcQa2BK5yN97MNYkGdpG,Um2qqXGP4DqO4mgph6MCyw" />
           <Link Id="G27svrfGQozL3kOFFLCPLX" Ids="Iuy80ZINuTFLMdo5wuLQTG,TPBkkc5lPIwQE1EbsQLqMH" />
+          <Link Id="NBRWKxyVjDpNo2OSvPkkmo" Ids="UaX2mMGztLaMJbrqAZsSxk,D6nGmySrL16MDbHApjrQoi" />
+          <Link Id="MwL1O8LdvqZNOhMtTW8kvh" Ids="USFWJgyy8W0QD8ha5e6Ekr,IiW1zSsidM8M4rI7NJe46Z" />
+          <Link Id="U3ToB5oUD6oMIZtnsTPL37" Ids="HLFrH5wHGFQQMa2DjTBczS,AIaPOOyDzhvObuuzLTQKa0" />
         </Patch>
       </Node>
       <!--
