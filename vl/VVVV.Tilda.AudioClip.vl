@@ -178,6 +178,8 @@
               <Pin Id="Jo2xsWveUNUPOvdOz8fu0K" Name="Input 2" Kind="InputPin" />
               <Pin Id="JYMgKcSWtt3PpgngAyJpwg" Name="Output" Kind="OutputPin" />
             </Node>
+            <ControlPoint Id="K8N7YCdPOe0QPof7REZ1z4" Bounds="2265,-790" />
+            <ControlPoint Id="CimTLU05BlYOOEOYeS5k5S" Bounds="2652,-806" />
           </Canvas>
           <ProcessDefinition Id="Rsc5P4G7zfvPw7hXgfUzgO" IsHidden="true">
             <Fragment Id="GRq1vcvT0efOlOJk4ikmdb" Patch="DcT1XXhyFmnQVKSjhigrUv" Enabled="true" />
@@ -208,6 +210,7 @@
           <Patch Id="DcT1XXhyFmnQVKSjhigrUv" Name="Create" ParticipatingElements="IQl4RrPjIzcP1Hr6wmdngn,O0F3Q6ATF79L3vf9pkyzU8">
             <Pin Id="IkjceZg5WaMQc1JCeYDAke" Name="Node Context" Kind="InputPin" />
             <Pin Id="JNyUel8McCXMOLSDgha3dX" MergeId="154895" Name="Name" Kind="InputPin" />
+            <Pin Id="P45kJYfSAfnPusxqeEwlf9" Name="GUID" Kind="InputPin" />
             <Pin Id="L6bzhOni1x0NS9lkM64QZ1" MergeId="154901" Name="Y" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Integer32" />
@@ -235,6 +238,8 @@
             </Pin>
             <Pin Id="CEgm30IvNX3LFhPmIQDqhd" MergeId="154920" Name="Variable" Kind="InputPin" />
             <Pin Id="KMnZMcBPOONQOKMxCoBlfq" MergeId="154921" Name="Category" Kind="InputPin" />
+            <Pin Id="D8nSgcsvD7oLWDzAZJu8el" Name="InPoint" Kind="InputPin" />
+            <Pin Id="D4fAWNdOd4EOjzGy89bi2H" Name="SourceDuration" Kind="InputPin" />
           </Patch>
           <Patch Id="Qo0J9y34s3SNZDh4MhsMmt" Name="Split">
             <Pin Id="UHkm2v2xgmhMUPKXhQwAgs" MergeId="154986" Name="Name" Kind="OutputPin" />
@@ -318,7 +323,7 @@
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
           </Slot>
-          <Patch Id="IeiI7nY0GzdOWdpmn4zyZa" Name="SetFileptah">
+          <Patch Id="IeiI7nY0GzdOWdpmn4zyZa" Name="SetFilepath">
             <Pin Id="UM7CFXV5T6JPktk8SBgAM2" MergeId="155316" Name="Filepath" Kind="InputPin" />
           </Patch>
           <Patch Id="HMGIlsGUTWoMmA2aHaAIgN" Name="GetFilepath">
@@ -440,8 +445,11 @@
           <Link Id="JA6DyYthgACNCl9orOp6Ss" Ids="PshlOyvmLS7QWIQCd7OoDh,Qi522J0ipEfMhOmmXJarHm" />
           <Link Id="UYV7qsX2JUINqxr5wxjjv4" Ids="RpvC6ApDBNnOA7WBk51xt0,Bqbo6h5D7nVNB22Tc5p3Pt" IsHidden="true" />
           <Link Id="KbxVh2oYtDeOmH2BPTNAcS" Ids="Qi522J0ipEfMhOmmXJarHm,RpvC6ApDBNnOA7WBk51xt0" />
-          <Link Id="FFUdZGM3GhxQUhNZT2VVo2" Ids="Au3KLy11M5nQVkb9XfOBwM,Qi522J0ipEfMhOmmXJarHm" />
           <Link Id="ShFxTmryPFzOMKcjkYahmP" Ids="JYMgKcSWtt3PpgngAyJpwg,PCAJGUVotlTOUcTwP5JB5V" />
+          <Link Id="FIq1lDmBRiQOxutERnOU96" Ids="K8N7YCdPOe0QPof7REZ1z4,CIPcCnhTsvZLXlTR8CYUi3" />
+          <Link Id="PYigEkiTccMNhCgleQxNln" Ids="D8nSgcsvD7oLWDzAZJu8el,K8N7YCdPOe0QPof7REZ1z4" IsHidden="true" />
+          <Link Id="KrWg0VGKZ7sOSoOtAzwkbj" Ids="CimTLU05BlYOOEOYeS5k5S,Qi522J0ipEfMhOmmXJarHm" />
+          <Link Id="PnWu733McQBL6zthxjQEpn" Ids="D4fAWNdOd4EOjzGy89bi2H,CimTLU05BlYOOEOYeS5k5S" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -3082,6 +3090,7 @@
               </p:NodeReference>
               <Pin Id="Es5tJPUTnlsOnQ36IxiBKn" Name="Input" Kind="StateInputPin" />
               <Pin Id="PTdCjqO4pxoOr3YLGfkByj" Name="Clip" Kind="InputPin" />
+              <Pin Id="RsF5WsD7k1ONEyyFiivPYl" Name="Observe" Kind="InputPin" />
               <Pin Id="O8smNR8dyKdPAWxjgMCShm" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Node Bounds="328,883,165,26" Id="DAcpROabmxJQRgiO69MQIf">
@@ -3091,6 +3100,7 @@
                 <Choice Kind="OperationCallFlag" Name="Create" />
               </p:NodeReference>
               <Pin Id="QQcmlMDaGU5NQrpWaaazvO" Name="Node Context" Kind="InputPin" />
+              <Pin Id="CUtifHRCixJO5YkFc0v4Yy" Name="GUID" Kind="InputPin" />
               <Pin Id="Qa79B73KYm6P65wx1eCCxv" Name="Name" Kind="InputPin" />
               <Pin Id="DAuF5U4oNTAOPAH8zArq1G" Name="Y" Kind="InputPin" />
               <Pin Id="Axp6KzF0JeWN1ggksYqAy1" Name="Startframe" Kind="InputPin" />
@@ -3103,6 +3113,8 @@
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pin>
+              <Pin Id="DGl0V8fNheyODa663F0ouB" Name="InPoint" Kind="InputPin" />
+              <Pin Id="OT4K75LJ0GCMho3OkJqtDx" Name="SourceDuration" Kind="InputPin" />
               <Pin Id="S6hSx9ljVAXOx8r6DJZzSP" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Node Bounds="534,952,216,184" Id="ISk1c86j5svL8mlj3kLPee">
@@ -3270,6 +3282,7 @@
           <Link Id="SvnufTT6Fi8MuabhShk5LK" Ids="BrPVGX20hkkMsYaUCbPNSK,J4VcPHOctwMPp8aZm0Bc94" />
           <Link Id="RiUefv5HElDNWGDrR9rauc" Ids="BrPVGX20hkkMsYaUCbPNSK,JIDBgKZuD1DOjXYq6DRp2m" />
           <Link Id="B8cPf1dcldjMe7lSNZa6Zu" Ids="BrPVGX20hkkMsYaUCbPNSK,Qhwgd7eRG1dOJ0jdw9mueJ" />
+          <Link Id="QZSOQG9OM3fPAdyPIKBRPF" Ids="RIqLTqzpQAeMJffPK0kFkl,OT4K75LJ0GCMho3OkJqtDx" />
         </Patch>
       </Node>
     </Canvas>

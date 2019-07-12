@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0344-gd5eabf23a7" Version="0.128">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0411-gf6daa4918b" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -22,8 +22,8 @@
         <Patch Id="CzjSvRY5dvXQDxmAOA8mZj">
           <Patch Id="ESJZDDS0I02LAWDOx9RJVV" Name="Create" ParticipatingElements="JNU18Rp3OssMp5sXKb1tOF,DVCU8LhVwWtOkZW96UB9rD">
             <Pin Id="GWr5zFroNlPOExkDlP8Mjt" Name="Node Context" Kind="InputPin" />
-            <Pin Id="AloJ3WfsJhZPRQtxTKosuC" Name="GUID" Kind="InputPin" />
             <Pin Id="QwaHK1XeeD6La0oo0iNT7F" Name="Name" Kind="InputPin" />
+            <Pin Id="AloJ3WfsJhZPRQtxTKosuC" Name="GUID" Kind="InputPin" />
             <Pin Id="VKQoNmdPZMgMqidgZlpjds" Name="Y" Kind="InputPin" />
             <Pin Id="DlN3C6jok57OCfZvipwhUH" Name="Startframe" Kind="InputPin" />
             <Pin Id="N037BqZfDEoPhzs2zi0eug" Name="Duration" Kind="InputPin" />
@@ -31,33 +31,35 @@
             <Pin Id="CyUMOlZyaYyMLHKnXsdWdA" Name="FadeOut" Kind="InputPin" />
             <Pin Id="IwjVrOjhnQoLQKalwIb6iM" Name="Variable" Kind="InputPin" />
             <Pin Id="DIefB1E51s4Noz96KptbiX" Name="Category" Kind="InputPin" />
+            <Pin Id="RkA9Z1GUmokLqmQCPI4ylu" Name="InPoint" Kind="InputPin" />
+            <Pin Id="MBoORd2jbk5Mpo8tvVNzbh" Name="SourceDuration" Kind="InputPin" />
           </Patch>
           <Patch Id="OkqGvJfa3PDOppp4PFQghD" Name="Update" />
           <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi" CanvasType="Group">
             <Pad Id="CYxkkni0b6tP16epRw2HEU" SlotId="LZ1gCzlfBoXPxLV1rU6MF5" Bounds="474,59">
               <p:ValueBoxSettings />
             </Pad>
-            <ControlPoint Id="M4FylHcbJcRLIpyUVK6WtD" Bounds="474,-321" />
+            <ControlPoint Id="M4FylHcbJcRLIpyUVK6WtD" Bounds="474,-334" />
             <Pad Id="HE4YN7BLD8UNlob7NVhgPK" SlotId="UIvPWtEuRkjPZ78CfOR4wz" Bounds="793,68">
               <p:ValueBoxSettings />
             </Pad>
-            <ControlPoint Id="D4HvnA0PKEjLaVsyzkntGr" Bounds="789,-323" />
+            <ControlPoint Id="D4HvnA0PKEjLaVsyzkntGr" Bounds="789,-334" />
             <Pad Id="JlvE2B2yFINOO6uCsX6h29" SlotId="RHpUBfQOpn9NT3TpyQrThU" Bounds="884,68">
               <p:ValueBoxSettings />
             </Pad>
-            <ControlPoint Id="MLqiooWa25SL1fmT7yUTZB" Bounds="885,-323" />
+            <ControlPoint Id="MLqiooWa25SL1fmT7yUTZB" Bounds="885,-334" />
             <Pad Id="VM8joX3xOSsO8kBAA8KXJ3" SlotId="CipeC4wxswAOMaptfD4Vl2" Bounds="1087,68">
               <p:ValueBoxSettings />
             </Pad>
-            <ControlPoint Id="TSdESpZvDDDPbv3HZ8wDv6" Bounds="1087,-323" />
+            <ControlPoint Id="TSdESpZvDDDPbv3HZ8wDv6" Bounds="1087,-334" />
             <Pad Id="MiL3FG5ZNyuLeW90DZrDlI" SlotId="Ip8774x24gGOykS5XYtdVZ" Bounds="1251,68">
               <p:ValueBoxSettings />
             </Pad>
-            <ControlPoint Id="UEMzLLvtKPQPqEkysSvu1x" Bounds="1251,-323" />
+            <ControlPoint Id="UEMzLLvtKPQPqEkysSvu1x" Bounds="1251,-334" />
             <Pad Id="M08urp3sNSHMt70DseVIQb" SlotId="BLAHbl1OYq9OqJU4IMRIXL" Bounds="1402,68">
               <p:ValueBoxSettings />
             </Pad>
-            <ControlPoint Id="AeU7kIAOIyBOb19mRbGvYf" Bounds="1414,-323" />
+            <ControlPoint Id="AeU7kIAOIyBOb19mRbGvYf" Bounds="1414,-334" />
             <ControlPoint Id="IEjAk4h3aCGMS8uEVdreE4" Bounds="474,263" />
             <ControlPoint Id="FxfITVa2uawOOG4sIM45sC" Bounds="792,263" />
             <ControlPoint Id="Sq8uHC9N7rNOOKwrHiJKMQ" Bounds="885,263" />
@@ -67,7 +69,7 @@
             <Pad Id="LqleHURvrDELwy7HsFBkQW" SlotId="KYnJUUOJaqeQaOgQLSoTxM" Bounds="113,59">
               <p:ValueBoxSettings />
             </Pad>
-            <ControlPoint Id="P9rT5VK2GElOadbpOfk9rs" Bounds="113,-321" />
+            <ControlPoint Id="P9rT5VK2GElOadbpOfk9rs" Bounds="113,-334" />
             <ControlPoint Id="SWUXzqaAeyZM9pMlSvpPr4" Bounds="113,263" />
             <ControlPoint Id="GMGyN5J0ZYLMOsjXV9fAFg" Bounds="807,-203" />
             <ControlPoint Id="QRJCAnclhAMPlT6WP0T9Ol" Bounds="520,-203" />
@@ -116,7 +118,7 @@
             <Pad Id="FkSvzEBZS92Lw5ATThX9bg" SlotId="SJeNHeNmqShMh4YCp1HB8Z" Bounds="1631,68">
               <p:ValueBoxSettings />
             </Pad>
-            <ControlPoint Id="IAHMxO5kh9RPo3mrHJmhBV" Bounds="1631,-323" />
+            <ControlPoint Id="IAHMxO5kh9RPo3mrHJmhBV" Bounds="1631,-334" />
             <ControlPoint Id="Ty9bEFB2tmeOFNPiPPkCw1" Bounds="1730,-203" />
             <ControlPoint Id="Rz9BpgnwTqYQFn62xnXFQD" Bounds="1631,262" />
             <ControlPoint Id="ClbxlKr8hezPdOLEGUiKYV" Bounds="1706,262" />
@@ -451,6 +453,8 @@
               <Pin Id="VumazZU8gLXP7ODtqzMfIf" Name="Input 2" Kind="InputPin" />
               <Pin Id="JHUuXjvgbvvPgQD9OKUHC7" Name="Output" Kind="OutputPin" />
             </Node>
+            <ControlPoint Id="Ji9DrL1Hd5MPIZkjX21eUp" Bounds="1841,-334" />
+            <ControlPoint Id="H1s0q0d8RljMqFjJNmkfOz" Bounds="2072,-334" />
           </Canvas>
           <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E" IsHidden="true">
             <Fragment Id="MRFnVwHDf0WOO7H3jKbCxI" Patch="ESJZDDS0I02LAWDOx9RJVV" Enabled="true" />
@@ -778,8 +782,11 @@
           <Link Id="HipPEsFI3qrLID7fQvrUiX" Ids="CEg8pzE99MxNsVcj66HvM0,IpVspw7ai0POfeHn7TObXL" />
           <Link Id="R25yMxCSZetMJHogjzeqfQ" Ids="JkrTWRPB9CSMtgVpcB5A3I,E7ydZCxMZG9LSsJVhhe4vN" IsHidden="true" />
           <Link Id="R6aC4biM4AMMhyhPUUhbyw" Ids="IpVspw7ai0POfeHn7TObXL,JkrTWRPB9CSMtgVpcB5A3I" />
-          <Link Id="GWGYlY5bjwiMqpiZtDJ2SV" Ids="MLqiooWa25SL1fmT7yUTZB,IpVspw7ai0POfeHn7TObXL" />
           <Link Id="RWyRxR3lxfbNlIirzbqxQO" Ids="JHUuXjvgbvvPgQD9OKUHC7,AyULmYOO2UsL8Bph9wLWsQ" />
+          <Link Id="RMa1SKIelN5Mwy3hiYNL25" Ids="Ji9DrL1Hd5MPIZkjX21eUp,ShpwMMgudTwLFp6fqtgCbq" />
+          <Link Id="EvS2DFVtYH1NEyqQWabwny" Ids="RkA9Z1GUmokLqmQCPI4ylu,Ji9DrL1Hd5MPIZkjX21eUp" IsHidden="true" />
+          <Link Id="ThYxOA6rZPAPQH4iFoieJK" Ids="H1s0q0d8RljMqFjJNmkfOz,IpVspw7ai0POfeHn7TObXL" />
+          <Link Id="ElkGOtJM1WSODmGTxHesvK" Ids="MBoORd2jbk5Mpo8tvVNzbh,H1s0q0d8RljMqFjJNmkfOz" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -1793,8 +1800,8 @@
           <Patch Id="VZ6RifCwfthM0ksp3pNzrt" Name="Create" />
           <Patch Id="Hx0zgxNw1gEL44SPpxJ0J2" Name="Update">
             <Pin Id="H0v1YojEytJMWQMw1LFGJF" Name="Timeline" Kind="InputPin" />
-            <Pin Id="Fi4VM4sML2rNSNsygnxliX" Name="KeyframesClip" Kind="OutputPin" />
             <Pin Id="V0QGy61cUVuMRTqIkqXQRD" Name="Editor" Kind="InputPin" />
+            <Pin Id="Fi4VM4sML2rNSNsygnxliX" Name="KeyframesClip" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="REpM2V7v17OON08dUyelJg">
             <Fragment Id="KQt48FYwBkxNMqsM5XSxqF" Patch="VZ6RifCwfthM0ksp3pNzrt" Enabled="true" />
@@ -2258,6 +2265,7 @@
                       </p:NodeReference>
                       <Pin Id="C7v2N6tYiPHMIrnWjhaDmO" Name="Input" Kind="StateInputPin" />
                       <Pin Id="JvhmtapTq4YPqO5NeWylS9" Name="Clip" Kind="InputPin" />
+                      <Pin Id="ILUYj0id2QVMx7r4czmQcw" Name="Observe" Kind="InputPin" />
                       <Pin Id="QkcDHlokcsuLTcc9wSMfIP" Name="Output" Kind="StateOutputPin" />
                     </Node>
                   </Patch>
@@ -2391,6 +2399,7 @@
                   </p:NodeReference>
                   <Pin Id="QaIbJg8j6xXOtezTcmnuRh" Name="Input" Kind="StateInputPin" />
                   <Pin Id="DT93OzhUOUjNY5J51fCXSQ" Name="Clip" Kind="InputPin" />
+                  <Pin Id="LkIcUfUXPmqPqOk09Ebt1z" Name="Observe" Kind="InputPin" />
                   <Pin Id="BxGLiZ5Yro3LlIASbKEKn4" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="-167,1298,99,19" Id="SpArxzWrCLoMpKKMF9ahfi">
@@ -2574,6 +2583,7 @@
                   </p:NodeReference>
                   <Pin Id="O87hRu2QoHbLSDdtEAZWVA" Name="Input" Kind="StateInputPin" />
                   <Pin Id="EAB8sh7thO2LMleeW3eyjt" Name="Clip" Kind="InputPin" />
+                  <Pin Id="IVqRmmh0sxPMklygfeCllN" Name="Observe" Kind="InputPin" />
                   <Pin Id="VjEmrMSkoBnM9kdgfmzAtN" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="-613,1069,104,26" Id="QJcDQL2PyF7LcQD6k6KmMu">
@@ -3298,12 +3308,10 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="BGMd2n510SSPTROqnAbb17" Name="Timeline" Kind="InputPin" />
-            <Pin Id="QwEv9m8LnJSLZdFF5hiof6" Name="Editing" Kind="OutputPin" />
             <Pin Id="O1btsEXmTf4LUTTEKKNDv0" Name="SnappingPoints" Kind="InputPin" />
             <Pin Id="NZ0jYRaFG7HMOwVtJ2je29" Name="MousePositionInFrames" Kind="InputPin" />
             <Pin Id="KzwUtm8zcl5Los24ittWz3" Name="DoubleClick" Kind="InputPin" />
             <Pin Id="Toz4QPqrO4YNuZXZ0iwILH" Name="PressedKeys" Kind="InputPin" />
-            <Pin Id="OGFWiAX6uJ8LDVJXnCLW8a" Name="SnappedFrame" Kind="OutputPin" />
             <Pin Id="JgLQqhhvEd1QWMjx6lwkmN" Name="MousePosition" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Vector2" />
@@ -3322,6 +3330,8 @@
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="QwEv9m8LnJSLZdFF5hiof6" Name="Editing" Kind="OutputPin" />
+            <Pin Id="OGFWiAX6uJ8LDVJXnCLW8a" Name="SnappedFrame" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="G6lVWC79TvVPiUlEQY606n">
             <Fragment Id="U6QPbg2GmFPOo6ECCcUscn" Patch="Ml3W7vH0aNIMvsKzUDfBAf" Enabled="true" />
@@ -4226,6 +4236,7 @@
                       </p:NodeReference>
                       <Pin Id="O502HF9todaOBeA1o5gXKo" Name="Input" Kind="StateInputPin" />
                       <Pin Id="BJ7YTKgUb9zPJYtSSUwYQA" Name="Clip" Kind="InputPin" />
+                      <Pin Id="Lnzl8rSykUsO5DiXWTZ5A5" Name="Observe" Kind="InputPin" />
                       <Pin Id="ECmaJsAx4JANV0HN7IKHU3" Name="Output" Kind="StateOutputPin" />
                     </Node>
                   </Patch>
@@ -4264,7 +4275,6 @@
           </Canvas>
           <Patch Id="MMpEvXPn2DdNRrMvn6U4rm" Name="Create" />
           <Patch Id="D10dhzeZCLYM1toHWlmJxL" Name="Update">
-            <Pin Id="MLX6JGG4Q1TMP8yyuqWBkI" Name="Timeline" Kind="OutputPin" />
             <Pin Id="E9aUdPY8uSwMETeToDY4AV" Name="Timeline" Kind="InputPin" />
             <Pin Id="MKpP0UDOj5rN2pwoZECqei" Name="KeyframeClip" Kind="InputPin">
               <p:TypeAnnotation>
@@ -4276,7 +4286,6 @@
                 </p:TypeArguments>
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="PMMNYbPvsUoMLfAfzP3O0Y" Name="Capacity" Kind="OutputPin" />
             <Pin Id="LQE1miyqxcmNQfSdCzhqmx" Name="Capacity" Kind="InputPin" DefaultValue="1">
               <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
                 <Choice Kind="TypeFlag" Name="Spread" />
@@ -4288,6 +4297,8 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="Kr8jj4iY204LTYOPrpURSL" Name="Set" Kind="InputPin" />
+            <Pin Id="MLX6JGG4Q1TMP8yyuqWBkI" Name="Timeline" Kind="OutputPin" />
+            <Pin Id="PMMNYbPvsUoMLfAfzP3O0Y" Name="Capacity" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="PhXhhgDnDziQc25LGKJSFA">
             <Fragment Id="IBKuvHb7SiEOFXdkROUSc1" Patch="MMpEvXPn2DdNRrMvn6U4rm" Enabled="true" />
@@ -4528,6 +4539,7 @@
                           </p:NodeReference>
                           <Pin Id="FYdMjBMH1V6QMgHxr1cI1R" Name="Input" Kind="StateInputPin" />
                           <Pin Id="Bqu0lsfnnViPJqkZvfRYiV" Name="Clip" Kind="InputPin" />
+                          <Pin Id="ClOqr2I5m1jNalS9IWenvH" Name="Observe" Kind="InputPin" />
                           <Pin Id="NScCdUc7ZA2MQL5iFI87uI" Name="Output" Kind="StateOutputPin" />
                         </Node>
                         <Node Bounds="195,1012,69,26" Id="F3B5y2VeUqvPrzSIqMuEK2">
@@ -4717,7 +4729,6 @@
           </Canvas>
           <Patch Id="EWunI3CtM4xMYswdyFsVpF" Name="Create" />
           <Patch Id="GGykHK9KobkLft0QboEo6m" Name="Update">
-            <Pin Id="LVvrRNRneP9LbQ9tLluQxe" Name="Timeline" Kind="OutputPin" />
             <Pin Id="HoqeZmUTDQ7M2vkrWonidN" Name="Timeline" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="TildaTimeline" />
@@ -4733,18 +4744,19 @@
                 </p:TypeArguments>
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="LKDufbPfEgkOe0ND1D0GKE" Name="Values" Kind="InputPin" />
+            <Pin Id="DKsBuhv9ublNQdXjF1iKEn" Name="Set" Kind="InputPin" />
+            <Pin Id="MNUQ4ShZWtDOa5GOH1tGdZ" Name="Capacity" Kind="InputPin" Bounds="649,335" />
+            <Pin Id="Ep325qlUwLuLvoFbARsNAA" Name="GoToPreviousKeyframe" Kind="InputPin" Bounds="782,347" />
+            <Pin Id="Q5OkcgzfkGNMeXwRr7LXTD" Name="GoToNextKeyframe" Kind="InputPin" />
+            <Pin Id="LVvrRNRneP9LbQ9tLluQxe" Name="Timeline" Kind="OutputPin" />
             <Pin Id="NfUeQT1TrmVLCyReuklmJ2" Name="Log" Kind="OutputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="LKDufbPfEgkOe0ND1D0GKE" Name="Values" Kind="InputPin" />
             <Pin Id="ArYHT0nfhjLM6AObb8TdXJ" Name="TC on Keyframe" Kind="OutputPin" Bounds="561,1239" />
-            <Pin Id="DKsBuhv9ublNQdXjF1iKEn" Name="Set" Kind="InputPin" />
-            <Pin Id="MNUQ4ShZWtDOa5GOH1tGdZ" Name="Capacity" Kind="InputPin" Bounds="649,335" />
             <Pin Id="QxboTn6xOx0Ptw1jeMt4D3" Name="ActiveKeyframe" Kind="OutputPin" />
-            <Pin Id="Ep325qlUwLuLvoFbARsNAA" Name="GoToPreviousKeyframe" Kind="InputPin" Bounds="782,347" />
-            <Pin Id="Q5OkcgzfkGNMeXwRr7LXTD" Name="GoToNextKeyframe" Kind="InputPin" />
           </Patch>
           <ProcessDefinition Id="Pp8DHN7MFRkLAdm0e7GQeS">
             <Fragment Id="ARXZQAQ0TtuQAr0lM3Uyv4" Patch="EWunI3CtM4xMYswdyFsVpF" Enabled="true" />
@@ -5414,14 +5426,12 @@
           </Canvas>
           <Patch Id="Gyz5MulOv5iM26z04lZ7zM" Name="Create" />
           <Patch Id="Ac3kCsbWPlbMl7HhRNcupy" Name="Update">
-            <Pin Id="OnkPi9zxdwtLU7pdR2cB23" Name="Timeline" Kind="OutputPin" />
             <Pin Id="PCR5mb8YAPEM56w6g9BhN6" Name="Timeline" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="TildaTimeline" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="O3piUSridvSNzGoRifsyyM" Name="UseThru" Kind="InputPin" Bounds="256,1762" />
-            <Pin Id="OhHpQ5MqjgxN3JFhxrcJy0" Name="Values" Kind="OutputPin" />
             <Pin Id="BEIGhSlDXLNQGrPp9YP2WG" Name="KeyframeClips" Kind="InputPin">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Spread" />
@@ -5433,6 +5443,8 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="DBmswGPavNFO0ExAXRmBXj" Name="Thru Values" Kind="InputPin" Bounds="583,1994" />
+            <Pin Id="OnkPi9zxdwtLU7pdR2cB23" Name="Timeline" Kind="OutputPin" />
+            <Pin Id="OhHpQ5MqjgxN3JFhxrcJy0" Name="Values" Kind="OutputPin" />
             <Pin Id="HNQmBqff1OXOtYx93e2Dv7" Name="PreviousKeyframeValues" Kind="OutputPin" />
             <Pin Id="SMlhENnWB0KODPHORI3iAW" Name="NextkeyframeValues" Kind="OutputPin" />
             <Pin Id="TRALWrd99TtNtG8WJptpc4" Name="LerpFactor" Kind="OutputPin" Bounds="799,1745" />
@@ -5974,7 +5986,6 @@
           </Canvas>
           <Patch Id="CZOBbvxSeUYLliqr0vXExD" Name="Create" />
           <Patch Id="JyvoAMowPSzMQT5hXA8uNu" Name="Update" ParticipatingElements="BtCGsXflcMGOecJ5LWuxGo,P2FnLHLdNo3OmZ6SPXB94Q">
-            <Pin Id="KgNDpCCfnxrLJyctTDCsDt" Name="Position" Kind="OutputPin" Bounds="553,548" />
             <Pin Id="Pj8W8ITgozhPuVLaGhUD8k" Name="Input" Kind="InputPin" Bounds="542,117" />
             <Pin Id="A1q5w70iGYNM0tIN3ZAETq" Name="Startframe" Kind="InputPin" Bounds="643,154">
               <p:TypeAnnotation>
@@ -5990,6 +6001,7 @@
             <Pin Id="Hd0zrHz9h2PPRJQYkMVXfi" Name="DrawOffset" Kind="InputPin" Bounds="848,173" />
             <Pin Id="DBSLdvtTVcTNKwcq9T2Bq7" Name="TrackHeight" Kind="InputPin" Bounds="946,137" />
             <Pin Id="VcWDBAdOSo3N6Om7ezqc9G" Name="ScalaHeight" Kind="InputPin" Bounds="1085,138" />
+            <Pin Id="KgNDpCCfnxrLJyctTDCsDt" Name="Position" Kind="OutputPin" Bounds="553,548" />
           </Patch>
           <ProcessDefinition Id="OUSdIYH2EMONc0eDBYMCiQ">
             <Fragment Id="OY3oVBqqkV3Nnfmc2QqimC" Patch="CZOBbvxSeUYLliqr0vXExD" Enabled="true" />
@@ -6105,7 +6117,6 @@
           </Canvas>
           <Patch Id="IfCGWyl874ZMczj3CHYCud" Name="Create" />
           <Patch Id="HzF0TBk7NZAOA2mhNGbihz" Name="Update">
-            <Pin Id="AoiCqmrWhtiNxaZ1DCgLPO" Name="Timeline" Kind="OutputPin" />
             <Pin Id="DAUH0ZnorlOQUOSxS2lMi9" Name="Timeline" Kind="InputPin" />
             <Pin Id="PlWskZm6lmXLiFyX5G9Vdn" Name="KeyframeClip" Kind="InputPin">
               <p:TypeAnnotation>
@@ -6128,6 +6139,7 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="M91GPiaejbENUJmB9ALNe2" Name="Set" Kind="InputPin" />
+            <Pin Id="AoiCqmrWhtiNxaZ1DCgLPO" Name="Timeline" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="LRTznWTvVPZOtEbcmAbfKh">
             <Fragment Id="TPtug5M6a57NjYYHrfUbSa" Patch="IfCGWyl874ZMczj3CHYCud" Enabled="true" />
@@ -6271,6 +6283,7 @@
                       </p:NodeReference>
                       <Pin Id="N7EKqqyZzMAMi0sVNLhUIN" Name="Input" Kind="StateInputPin" />
                       <Pin Id="PzSmMKvAq9lPZ6I3LxWjfy" Name="Clip" Kind="InputPin" />
+                      <Pin Id="LiciAjB40KZOotXVIstnNf" Name="Observe" Kind="InputPin" />
                       <Pin Id="SWupVD9fXftNQrlIx9ODlI" Name="Output" Kind="StateOutputPin" />
                     </Node>
                     <Node Bounds="324,742,99,19" Id="Fdky1a07quZNMGNKiiTxeU">
@@ -6359,6 +6372,7 @@
                       </p:NodeReference>
                       <Pin Id="PAUePN2ppvPPF7pVQ5B79J" Name="Input" Kind="StateInputPin" />
                       <Pin Id="LdHSFqogcuyL3UeXd569IM" Name="Clip" Kind="InputPin" />
+                      <Pin Id="Lov0JmU3msBQaW4fiB2Jgp" Name="Observe" Kind="InputPin" />
                       <Pin Id="KXu5yyCHx5UO7uwXih6pNY" Name="Output" Kind="StateOutputPin" />
                     </Node>
                   </Patch>
@@ -6409,21 +6423,13 @@
           </Canvas>
           <Patch Id="RHfnqOhFPs7MY54dANKWo0" Name="Create" />
           <Patch Id="MRGHLjSWpaCNpanTGUeATz" Name="Update">
-            <Pin Id="Khjjk1Ctmx3OHQmQm8PXoS" Name="Timeline" Kind="OutputPin" Bounds="-29,284" />
             <Pin Id="KKk5bVX9jnfPSCmcpd1ZmV" Name="Timeline" Kind="InputPin" Bounds="-28,46" />
-            <Pin Id="JXMzkkAoromLzyCtzqIL5g" Name="Values" Kind="OutputPin" Bounds="26,325" />
             <Pin Id="Dq25rs93XxvQUvLlHurnHl" Name="KeyframesClip" Kind="InputPin" Bounds="45,46" />
-            <Pin Id="DK6DJqlKKTEMABz5Nc4xft" Name="PreviousKeyframeValues" Kind="OutputPin" />
-            <Pin Id="LCUj5C5fZshNfGmmfKeSBB" Name="NextkeyframeValues" Kind="OutputPin" />
             <Pin Id="TOv0MSuCwtKOo0dKG2HTat" Name="UseThru" Kind="InputPin" Bounds="134,52" />
-            <Pin Id="Ldu8jBfBzQUMTOi8bc51T7" Name="LerpFactor" Kind="OutputPin" />
             <Pin Id="CB6G3PirSu6LueSXBWkNea" Name="Values" Kind="InputPin" Bounds="167,48" />
-            <Pin Id="NX0YFihu9ftLegHE9EyBMe" Name="Log" Kind="OutputPin" Bounds="117,314" />
             <Pin Id="C4Wa5TVciOGMEzohkbWkH2" Name="Set" Kind="InputPin" Bounds="268,37" />
             <Pin Id="Tc0hAvavrcRMZDuV07SBsl" Name="Capacity" Kind="InputPin" Bounds="322,64" />
-            <Pin Id="GOIoTG9q1ICNszPYWTLFsJ" Name="TC on Keyframe" Kind="OutputPin" Bounds="277,304" />
             <Pin Id="SqwcPxZel3cO1MZqNCYYXP" Name="GoToPreviousKeyframe" Kind="InputPin" Bounds="447,33" />
-            <Pin Id="Q77y17LuaoOO6pwVetc5JA" Name="ActiveKeyframe" Kind="OutputPin" Bounds="430,305" />
             <Pin Id="PlIA3WFhgGSNIvBrLaRLYv" Name="GoToNextKeyframe" Kind="InputPin" Bounds="617,39" />
             <Pin Id="OrEyqHnhM11LoDTdfwOPuR" Name="AddKeyframe" Kind="InputPin" Bounds="813,-53" DefaultValue="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -6431,6 +6437,14 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="DOW1J467H4WLAsJ8Vwb9KY" Name="RemoveKeyframe" Kind="InputPin" Bounds="985,-43" />
+            <Pin Id="Khjjk1Ctmx3OHQmQm8PXoS" Name="Timeline" Kind="OutputPin" Bounds="-29,284" />
+            <Pin Id="JXMzkkAoromLzyCtzqIL5g" Name="Values" Kind="OutputPin" Bounds="26,325" />
+            <Pin Id="DK6DJqlKKTEMABz5Nc4xft" Name="PreviousKeyframeValues" Kind="OutputPin" />
+            <Pin Id="LCUj5C5fZshNfGmmfKeSBB" Name="NextkeyframeValues" Kind="OutputPin" />
+            <Pin Id="Ldu8jBfBzQUMTOi8bc51T7" Name="LerpFactor" Kind="OutputPin" />
+            <Pin Id="NX0YFihu9ftLegHE9EyBMe" Name="Log" Kind="OutputPin" Bounds="117,314" />
+            <Pin Id="GOIoTG9q1ICNszPYWTLFsJ" Name="TC on Keyframe" Kind="OutputPin" Bounds="277,304" />
+            <Pin Id="Q77y17LuaoOO6pwVetc5JA" Name="ActiveKeyframe" Kind="OutputPin" Bounds="430,305" />
           </Patch>
           <ProcessDefinition Id="Rom0Vc1YuFOQF4zdJmC2wS">
             <Fragment Id="SDUWEduGRUaQYlda0zvrPQ" Patch="RHfnqOhFPs7MY54dANKWo0" Enabled="true" />
@@ -6525,6 +6539,7 @@
               </p:NodeReference>
               <Pin Id="Cn22H56ENIFPEt8QEhE2tl" Name="Input" Kind="StateInputPin" />
               <Pin Id="PqGk0rRJ41kOAUG8whB9lb" Name="Clip" Kind="InputPin" />
+              <Pin Id="JktcjNN3ZPOMUY6bWIDeum" Name="Observe" Kind="InputPin" />
               <Pin Id="GSJBEcFsg5LLrRef8dGZjW" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Node Bounds="441,922,165,26" Id="VsJn66ah32HOtA3k6jO67o">
@@ -6547,6 +6562,8 @@
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pin>
+              <Pin Id="MRtwar6ZLIvOFHFnYR4cDq" Name="InPoint" Kind="InputPin" />
+              <Pin Id="HHSN359QpA4OEJMlApUpUO" Name="SourceDuration" Kind="InputPin" />
               <Pin Id="BzHWYpk0nAwONofllhVu5k" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Node Bounds="647,991,216,184" Id="NENRPCHK92hMFH3oxUx4j3">
@@ -6714,6 +6731,7 @@
           <Link Id="VNcig3ibLCyNA9S7CN6p2O" Ids="MB6Pb4Hpn7BNfr34595fmJ,VnjLb1DxDUbNotgn76yBAw" />
           <Link Id="P4jYoSfrb3sPnDD68sgQR6" Ids="MB6Pb4Hpn7BNfr34595fmJ,MMX4ONUCeHSM6eEV0WnJ4q" />
           <Link Id="PPn4aXOWqwpOo8Gq0MTata" Ids="MB6Pb4Hpn7BNfr34595fmJ,NI3InavNdgGPRscZoYKgi8" />
+          <Link Id="AXnUcjrMbtCNlK99GdVe1f" Ids="KMclksUMXlaMyIX7xPGcSA,HHSN359QpA4OEJMlApUpUO" />
         </Patch>
       </Node>
       <Overlay Id="BeDdytWtEcRPk7PWgJGene" Name="Models" Bounds="143,-60,226,191" />
