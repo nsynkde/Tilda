@@ -542,6 +542,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="AddClips" />
               </p:NodeReference>
+              <Pin Id="ObEq5okKNs1MxSUKQQN4uT" Name="Timeline" Kind="InputPin" />
               <Pin Id="DLCROk45rmsMz3X2noTrjv" Name="TClient" Kind="InputPin" />
             </Node>
           </Canvas>
@@ -646,6 +647,7 @@
           <Link Id="ULcqZdwz4JtMfozfbNJcxe" Ids="UxQpPgh2NrMLQQ5JRBtj6I,BJKcxfiFtymORboc33Kt6O" />
           <Link Id="RD4VGdLyJnqNdHnfmCI5IG" Ids="AfAH8E3vuGnPZpU1LMMB0o,UPFhM5S9yxMPqHG9Q56tah" />
           <Link Id="PjrjaRNRSLzLdcQTePF95x" Ids="UxQpPgh2NrMLQQ5JRBtj6I,DLCROk45rmsMz3X2noTrjv" />
+          <Link Id="PJAb1rcrdtgOMzmjHOl8UG" Ids="AfAH8E3vuGnPZpU1LMMB0o,ObEq5okKNs1MxSUKQQN4uT" />
         </Patch>
       </Node>
       <!--
@@ -2303,7 +2305,7 @@
             <Pad Id="El9iaWlQfd5MWAURbHbzKt" SlotId="N8hSUqnBMgxNyD8ItshVYh" Bounds="706,298">
               <p:ValueBoxSettings />
             </Pad>
-            <Node Bounds="372,1134,955,275" Id="OObBpkTZHbAOgdzkQfnrkq">
+            <Node Bounds="976,952,955,275" Id="OObBpkTZHbAOgdzkQfnrkq">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -2313,7 +2315,7 @@
               <Patch Id="KZ8waHOwJdaNh9Kjg3FrLb" ManuallySortedPins="true">
                 <Patch Id="KgDDVQSu49sLH5ZpWAqXQS" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="Sbnj5rTRTMGLpiX1jyWX9H" Name="Then" ManuallySortedPins="true" />
-                <Pad Id="Dsd4B1r6GoGMsdSASF21g3" Bounds="511,1247,308,44" ShowValueBox="true" isIOBox="true" Value="prevents registering changes as events because we don't want feedback loop to happen">
+                <Pad Id="Dsd4B1r6GoGMsdSASF21g3" Bounds="1115,1065,308,44" ShowValueBox="true" isIOBox="true" Value="prevents registering changes as events because we don't want feedback loop to happen">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -2335,16 +2337,53 @@
               <Pin Id="BXozLJzLcUNMyjcq5qiGvs" Name="Unchanged" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="H3AIwmiBFP0L47Ou3vXcry" Bounds="325,176" />
+            <Node Bounds="380,1260,170,126" Id="EBGzg9UQYyyNON2vXLoyy7">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="COTOyW3qxTPMHSCJCBk3cx" Name="Condition" Kind="InputPin" />
+              <Patch Id="Adha6ssEQFsOFaiieBgjnT" ManuallySortedPins="true">
+                <Patch Id="G91d0t52a6TQbk6VKLfYxp" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="K18kFhQakq3M2qQHIHmoEV" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="432,1280,106,86" Id="LIXKwQ6qqV2PVky9f7Z5C2">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                    <CategoryReference Kind="Category" Name="Primitive" />
+                  </p:NodeReference>
+                  <Pin Id="U8T0HTpH5G7Nb2RkMgNPW3" Name="Break" Kind="OutputPin" />
+                  <Patch Id="G6ojrSHOXHyP4JPmXEo4II" ManuallySortedPins="true">
+                    <Patch Id="TVdCbmhrWqJOFKuSyB1ndP" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="PbC6xu9AuJQMwDHsHDPiQm" Name="Update" ManuallySortedPins="true" />
+                    <Patch Id="BWNzTwjitFFMq0GKuFUwXM" Name="Dispose" ManuallySortedPins="true" />
+                    <Node Bounds="444,1314,82,26" Id="MWKMMKl58x0LcfvqbOrzV7">
+                      <p:NodeReference LastCategoryFullName="VL.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="AddClip" />
+                      </p:NodeReference>
+                      <Pin Id="UPPlBAYSRRzMyqrVcVqhHY" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="NAFX09h1Bg9QY1IFAosogF" Name="Clip" Kind="InputPin" />
+                      <Pin Id="KklbbyicE1kOVJDnpADvwV" Name="Observe" Kind="InputPin" DefaultValue="False">
+                        <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="TypeFlag" Name="Boolean" />
+                        </p:TypeAnnotation>
+                      </Pin>
+                      <Pin Id="TRI1RfCQWrFMIDgwlJ5rrC" Name="Output" Kind="StateOutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="GkrPLirr1EjQWtplWUTGEU" Bounds="484,1287" Alignment="Top" />
+                </Node>
+              </Patch>
+            </Node>
+            <ControlPoint Id="OdzHaYCET51NIIewT9TGCi" Bounds="218,176" />
           </Canvas>
           <Patch Id="FFqI8FX9YUkNlFTlMWquAX" Name="Create" />
           <Patch Id="LfzVyJya6yYNX1RJOvpZs9" Name="Update">
             <Pin Id="FArmP5fcQaOLtGVLKivNHU" Name="TClient" Kind="InputPin" />
+            <Pin Id="F48b6GJx3EwMaAMAbL6eQL" Name="Timeline" Kind="InputPin" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="D2CBzgYeXlgPdek4e1jyRO">
             <Fragment Id="LzNVW1poaZbOLChcgXx7zy" Patch="FFqI8FX9YUkNlFTlMWquAX" Enabled="true" />
             <Fragment Id="N1PpKeQwJ3YPaXCYqHUDMt" Patch="LfzVyJya6yYNX1RJOvpZs9" Enabled="true" />
@@ -2375,6 +2414,36 @@
           <Link Id="AZWOxUe7WyTNRylM3ykCyh" Ids="S8dciBn7gcJLgKxhPEfnuw,JxiKLfhTtNRNVl8u6s6IhV" />
           <Link Id="UIqQ2HQpnFgNSgEOXcQ6HH" Ids="FArmP5fcQaOLtGVLKivNHU,H3AIwmiBFP0L47Ou3vXcry" IsHidden="true" />
           <Link Id="HFgWtWNPywDNjp3vmOdugF" Ids="H3AIwmiBFP0L47Ou3vXcry,PuNY6ccbOp9OSj3KQfHCYT" />
+          <Link Id="DIoPJnNvHpNNUnp58OszGm" Ids="SwtvIPRgLBnMwwiuxiqEib,COTOyW3qxTPMHSCJCBk3cx" />
+          <Link Id="NnuzuNQhRbnMJQxeNm12zK" Ids="F48b6GJx3EwMaAMAbL6eQL,OdzHaYCET51NIIewT9TGCi" IsHidden="true" />
+          <Link Id="VVSGdq14qEQO70fuL7Afpx" Ids="OdzHaYCET51NIIewT9TGCi,UPPlBAYSRRzMyqrVcVqhHY" />
+          <Link Id="MBDg2Fe5J2XNXzvjJ9qRpE" Ids="LZHN5ZTYY9SO1lIKfqpRVB,GkrPLirr1EjQWtplWUTGEU" />
+          <Link Id="DBegViLZQ2SMfodcVCw3av" Ids="GkrPLirr1EjQWtplWUTGEU,NAFX09h1Bg9QY1IFAosogF" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ CreateClips ************************
+
+-->
+      <Node Name="CreateClips" Bounds="410,200" Id="O9wJlUIV2R6OpCI5A8xKJf">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="VAapMFl4XrTOwJati779tM">
+          <Canvas Id="FbuIVEU0ZCKQSMS98QoUjN" CanvasType="Group" />
+          <Patch Id="Bi0ROl3PMbxPG4zyKUoe8D" Name="Create" />
+          <Patch Id="N4Unl77Oit9PIdCUWvkKdQ" Name="Update" />
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="J3jRpGU8MLJNOCbA9zCBV6">
+            <Fragment Id="BUoXAveZ7O6OObLCUD9iRm" Patch="Bi0ROl3PMbxPG4zyKUoe8D" Enabled="true" />
+            <Fragment Id="QplMUjOR6ivMkQfFABGSOQ" Patch="N4Unl77Oit9PIdCUWvkKdQ" Enabled="true" />
+          </ProcessDefinition>
         </Patch>
       </Node>
     </Canvas>
