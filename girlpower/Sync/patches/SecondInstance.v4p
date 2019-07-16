@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
    <PATCH nodename="D:\NSYNK\Tilda\girlpower\Sync\patches\SecondInstance.v4p" systemname="Sync_SecondInstance" filename="D:\NSYNK\Tilda\girlpower\Sync\Sync_SecondInstance.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="1035" top="16320" width="23880" height="13935">
+   <BOUNDS type="Window" left="735" top="17865" width="23880" height="13935">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4050" top="645" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Sync">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Sync-Second-Instance">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="|New Tilda Timeline|">
    </PIN>
@@ -25,7 +25,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7365" top="645" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\Sync-Timeline.xml">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\Sync-Timeline-Second-Instance.xml">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -84,20 +84,6 @@
    </LINK>
    <LINK srcnodeid="10" srcpinname="Timeline" dstnodeid="18" dstpinname="Timeline">
    </LINK>
-   <NODE id="39" systemname="Sync (Tilda)" filename="..\..\vl\VVVV.Tilda.Sync.vl" nodename="Sync (Tilda)" componentmode="Hidden">
-   <BOUNDS type="Node" left="5265" top="3690" width="1335" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5265" top="3690">
-   </BOUNDS>
-   <PIN pinname="Create" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Connect" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Options" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="10" srcpinname="Timeline" dstnodeid="39" dstpinname="TildaTimeline">
-   </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="40">
    <BOUNDS type="Node" left="5910" top="1725" width="100" height="100">
    </BOUNDS>
@@ -106,8 +92,6 @@
    <PIN pinname="Simulate" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="40" srcpinname="Bang" dstnodeid="39" dstpinname="Connect">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="41" systemname="IOBox (String)">
    <BOUNDS type="Box" left="7215" top="2895" width="2670" height="495">
    </BOUNDS>
@@ -122,8 +106,6 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="41" srcpinname="Output String" dstnodeid="39" dstpinname="Options">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="42">
    <BOUNDS type="Box" left="10530" top="645" width="480" height="480">
    </BOUNDS>
@@ -145,5 +127,23 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Load">
+   </LINK>
+   <NODE id="39" systemname="Sync (Tilda)" filename="..\..\..\vl\VVVV.Tilda.Sync.vl" nodename="Sync (Tilda)" componentmode="Hidden">
+   <BOUNDS type="Node" left="5265" top="3690" width="1335" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5265" top="3690">
+   </BOUNDS>
+   <PIN pinname="Create" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Connect" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Options" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Timeline" dstnodeid="39" dstpinname="TildaTimeline">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Bang" dstnodeid="39" dstpinname="Connect">
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Output String" dstnodeid="39" dstpinname="Options">
    </LINK>
    </PATCH>
