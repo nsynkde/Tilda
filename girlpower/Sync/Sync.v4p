@@ -110,34 +110,18 @@
    </LINK>
    <LINK srcnodeid="10" srcpinname="Timeline" dstnodeid="18" dstpinname="Timeline">
    </LINK>
-   <NODE id="39" systemname="Sync (Tilda)" filename="..\..\vl\VVVV.Tilda.Sync.vl" nodename="Sync (Tilda)" componentmode="Hidden">
-   <BOUNDS type="Node" left="5265" top="3690" width="1335" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5265" top="3690">
-   </BOUNDS>
-   <PIN pinname="Create" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Connect" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Options" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="10" srcpinname="Timeline" dstnodeid="39" dstpinname="TildaTimeline">
-   </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="40">
-   <BOUNDS type="Node" left="5910" top="1725" width="100" height="100">
+   <BOUNDS type="Node" left="7185" top="1725" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
    <PIN pinname="Simulate" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="40" srcpinname="Bang" dstnodeid="39" dstpinname="Connect">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="41">
-   <BOUNDS type="Box" left="7215" top="2895" width="2670" height="495">
+   <BOUNDS type="Box" left="6555" top="2895" width="2670" height="495">
    </BOUNDS>
-   <BOUNDS type="Node" left="7215" top="2895" width="0" height="0">
+   <BOUNDS type="Node" left="6555" top="2895" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="|localhost:6379,allowAdmin=True|">
    </PIN>
@@ -148,8 +132,6 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="41" srcpinname="Output String" dstnodeid="39" dstpinname="Options">
-   </LINK>
    <NODE systemname="SecondInstance" filename="patches\SecondInstance.v4p" nodename="patches\SecondInstance.v4p" componentmode="InAWindow" id="42">
    <BOUNDS type="Node" left="1830" top="3690" width="100" height="100">
    </BOUNDS>
@@ -179,5 +161,17 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Load">
+   </LINK>
+   <NODE id="46" systemname="Sync (Tilda)" filename="..\..\vl\VVVV.Tilda.Sync.vl" nodename="Sync (Tilda)" componentmode="Hidden">
+   <BOUNDS type="Node" left="5910" top="3690" width="1335" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5910" top="3690">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Timeline" dstnodeid="46" dstpinname="TildaTimeline">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Bang" dstnodeid="46" dstpinname="Connect">
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Output String" dstnodeid="46" dstpinname="Options">
    </LINK>
    </PATCH>
