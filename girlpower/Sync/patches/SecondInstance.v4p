@@ -85,7 +85,7 @@
    <LINK srcnodeid="10" srcpinname="Timeline" dstnodeid="18" dstpinname="Timeline">
    </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="40">
-   <BOUNDS type="Node" left="5910" top="1725" width="100" height="100">
+   <BOUNDS type="Node" left="6135" top="1725" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
@@ -139,11 +139,33 @@
    </PIN>
    <PIN pinname="Options" visible="1" slicecount="1" values="|localhost:6379,allowAdmin=True|">
    </PIN>
+   <PIN pinname="Slave" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="10" srcpinname="Timeline" dstnodeid="39" dstpinname="TildaTimeline">
    </LINK>
    <LINK srcnodeid="40" srcpinname="Bang" dstnodeid="39" dstpinname="Connect">
    </LINK>
    <LINK srcnodeid="41" srcpinname="Output String" dstnodeid="39" dstpinname="Options">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="43">
+   <BOUNDS type="Box" left="10065" top="2895" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10065" top="2895" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Slave">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="43" srcpinname="Y Output Value" dstnodeid="39" dstpinname="Slave">
    </LINK>
    </PATCH>
