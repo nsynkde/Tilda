@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
-   <PATCH nodename="D:\NSYNK\Tilda\girlpower\Sync\Sync.v4p" systemname="Sync" filename="D:\repositories\Tilda\girlpower\Sync\Sync.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="13650" top="14895" width="23895" height="13935">
+   <PATCH nodename="D:\NSYNK\Tilda\girlpower\Sync\Sync.v4p" systemname="Sync" filename="D:\repositories\Tilda\girlpower\Sync\Sync.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="9855" top="15915" width="23895" height="13935">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -117,7 +117,7 @@
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
-   <PIN pinname="Simulate" slicecount="1" values="0">
+   <PIN pinname="Simulate" slicecount="1" values="0" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="41">
@@ -197,9 +197,9 @@
    <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Slave">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48">
-   <BOUNDS type="Box" left="2415" top="2895" width="480" height="480">
+   <BOUNDS type="Box" left="1815" top="2895" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="2415" top="2895" width="0" height="0">
+   <BOUNDS type="Node" left="1815" top="2895" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -217,9 +217,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="49">
-   <BOUNDS type="Box" left="1830" top="2895" width="480" height="480">
+   <BOUNDS type="Box" left="1230" top="2895" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="1830" top="2895" width="0" height="0">
+   <BOUNDS type="Node" left="1230" top="2895" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -237,9 +237,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="50">
-   <BOUNDS type="Box" left="2940" top="2895" width="480" height="480">
+   <BOUNDS type="Box" left="2340" top="2895" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="2940" top="2895" width="0" height="0">
+   <BOUNDS type="Node" left="2340" top="2895" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -279,9 +279,9 @@
    <LINK srcnodeid="53" srcpinname="Y Output Value" dstnodeid="46" dstpinname="UploadTimeline">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="56">
-   <BOUNDS type="Box" left="3525" top="2895" width="480" height="480">
+   <BOUNDS type="Box" left="2925" top="2895" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3525" top="2895" width="0" height="0">
+   <BOUNDS type="Node" left="2925" top="2895" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -321,12 +321,14 @@
    <LINK srcnodeid="58" srcpinname="Y Output Value" dstnodeid="46" dstpinname="LoadFromServer">
    </LINK>
    <NODE systemname="SecondInstance" filename="patches\SecondInstance.v4p" nodename="patches\SecondInstance.v4p" componentmode="InAWindow" id="59">
-   <BOUNDS type="Node" left="1830" top="3690" width="1755" height="270">
+   <BOUNDS type="Node" left="1230" top="3690" width="1755" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="1830" top="3690">
+   <BOUNDS type="Box" left="1230" top="3690">
    </BOUNDS>
-   <BOUNDS type="Window" left="13650" top="14895" width="23895" height="13935">
+   <BOUNDS type="Window" left="9855" top="15915" width="23895" height="13935">
    </BOUNDS>
+   <PIN pinname="ConnectToRedis" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Load">
    </LINK>
@@ -335,5 +337,45 @@
    <LINK srcnodeid="50" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Slave">
    </LINK>
    <LINK srcnodeid="56" srcpinname="Y Output Value" dstnodeid="59" dstpinname="LoadFromServer">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="60">
+   <BOUNDS type="Box" left="4290" top="2895" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4290" top="2895" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ConnectToRedis">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="59" dstpinname="ConnectToRedis">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="61">
+   <BOUNDS type="Box" left="7740" top="1590" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7740" top="1590" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ConnectToRedis">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="61" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Simulate">
    </LINK>
    </PATCH>
