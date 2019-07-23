@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
-   <PATCH nodename="D:\NSYNK\Tilda\girlpower\Sync\Sync.v4p" systemname="Sync" filename="D:\repositories\Tilda\girlpower\Sync\Sync.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="810" top="14775" width="23880" height="13935">
+   <PATCH nodename="D:\NSYNK\Tilda\girlpower\Sync\Sync.v4p" systemname="Sync" filename="D:\repositories\Tilda\girlpower\Sync\Sync.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="13650" top="14895" width="23895" height="13935">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -91,7 +91,7 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="Tilda (Tilda)" filename="..\..\vl\VVVV.Tilda.vvvv.vl" nodename="Tilda (Tilda)" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="4050" top="1725" width="100" height="100">
+   <BOUNDS type="Node" left="4050" top="1725" width="1350" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="4050" top="1725">
    </BOUNDS>
@@ -100,6 +100,8 @@
    <PIN pinname="Save" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Load" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Changed" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="10" dstpinname="Name">
@@ -111,7 +113,7 @@
    <LINK srcnodeid="10" srcpinname="Timeline" dstnodeid="18" dstpinname="Timeline">
    </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="40">
-   <BOUNDS type="Node" left="6750" top="1725" width="100" height="100">
+   <BOUNDS type="Node" left="6420" top="1725" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
@@ -119,9 +121,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="41">
-   <BOUNDS type="Box" left="6345" top="2895" width="2670" height="495">
+   <BOUNDS type="Box" left="6180" top="2895" width="2670" height="495">
    </BOUNDS>
-   <BOUNDS type="Node" left="6345" top="2895" width="0" height="0">
+   <BOUNDS type="Node" left="6180" top="2895" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="|localhost:6379,allowAdmin=True|">
    </PIN>
@@ -130,20 +132,6 @@
    <PIN pinname="File Mask" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <NODE systemname="SecondInstance" filename="patches\SecondInstance.v4p" nodename="patches\SecondInstance.v4p" componentmode="InAWindow" id="42">
-   <BOUNDS type="Node" left="1830" top="3690" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1830" top="3690">
-   </BOUNDS>
-   <BOUNDS type="Window" left="810" top="14775" width="23880" height="13935">
-   </BOUNDS>
-   <PIN pinname="Load" visible="1">
-   </PIN>
-   <PIN pinname="Save" visible="1">
-   </PIN>
-   <PIN pinname="Slave" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="44">
@@ -175,6 +163,10 @@
    </BOUNDS>
    <PIN pinname="Slave" visible="1" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="UploadTimeline" visible="1">
+   </PIN>
+   <PIN pinname="LoadFromServer" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="10" srcpinname="Timeline" dstnodeid="46" dstpinname="TildaTimeline">
    </LINK>
@@ -183,9 +175,9 @@
    <LINK srcnodeid="41" srcpinname="Output String" dstnodeid="46" dstpinname="Options">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="47">
-   <BOUNDS type="Box" left="9405" top="2895" width="480" height="480">
+   <BOUNDS type="Box" left="9270" top="2895" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="9405" top="2895" width="0" height="0">
+   <BOUNDS type="Node" left="9270" top="2895" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -199,13 +191,15 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Slave">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Slave">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48">
-   <BOUNDS type="Box" left="3105" top="2895" width="480" height="480">
+   <BOUNDS type="Box" left="2415" top="2895" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3105" top="2895" width="0" height="0">
+   <BOUNDS type="Node" left="2415" top="2895" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -222,8 +216,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="42" dstpinname="Load">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="49">
    <BOUNDS type="Box" left="1830" top="2895" width="480" height="480">
    </BOUNDS>
@@ -244,12 +236,10 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="42" dstpinname="Save">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="50">
-   <BOUNDS type="Box" left="2460" top="2895" width="480" height="480">
+   <BOUNDS type="Box" left="2940" top="2895" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="2460" top="2895" width="0" height="0">
+   <BOUNDS type="Node" left="2940" top="2895" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -263,7 +253,87 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Slave">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="50" srcpinname="Y Output Value" dstnodeid="42" dstpinname="Slave">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="53">
+   <BOUNDS type="Box" left="10500" top="2895" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10500" top="2895" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="UploadTimeline">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="53" srcpinname="Y Output Value" dstnodeid="46" dstpinname="UploadTimeline">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="56">
+   <BOUNDS type="Box" left="3525" top="2895" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3525" top="2895" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="LoadFromServer">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="58">
+   <BOUNDS type="Box" left="11880" top="2895" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11880" top="2895" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="LoadFromServer">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="58" srcpinname="Y Output Value" dstnodeid="46" dstpinname="LoadFromServer">
+   </LINK>
+   <NODE systemname="SecondInstance" filename="patches\SecondInstance.v4p" nodename="patches\SecondInstance.v4p" componentmode="InAWindow" id="59">
+   <BOUNDS type="Node" left="1830" top="3690" width="1755" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1830" top="3690">
+   </BOUNDS>
+   <BOUNDS type="Window" left="13650" top="14895" width="23895" height="13935">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Load">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Save">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Slave">
+   </LINK>
+   <LINK srcnodeid="56" srcpinname="Y Output Value" dstnodeid="59" dstpinname="LoadFromServer">
    </LINK>
    </PATCH>
