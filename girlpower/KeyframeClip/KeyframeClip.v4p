@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
-   <PATCH nodename="C:\Users\nsynk\Desktop\Tilda\girlpower\KeyframeClip\KeyframeClip.v4p" systemname="KeyframeClip" filename="C:\Users\nsynk\Desktop\TildaTimeline\girlpower\KeyframeClip\KeyframeClip.v4p" scrollx="720" scrolly="0">
+   <PATCH nodename="D:\NSYNK\Tilda\girlpower\KeyframeClip\KeyframeClip.v4p" systemname="KeyframeClip" filename="C:\Users\nsynk\Desktop\TildaTimeline\girlpower\KeyframeClip\KeyframeClip.v4p" scrollx="720" scrolly="0">
    <BOUNDS type="Window" left="1935" top="11835" width="16680" height="22380">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="73">
@@ -108,20 +108,12 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (Tilda)" filename="..\..\vl\VVVV.Tilda.vvvv.vl" nodename="Renderer (Tilda)" componentmode="Hidden" id="171">
-   <BOUNDS type="Node" left="4035" top="6765" width="1785" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4035" top="6765">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="171" dstpinname="Enabled">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="247" systemname="IOBox (String)">
    <BOUNDS type="Box" left="2190" top="4530" width="1605" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="2190" top="4530" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\TildaTimeline">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\nodes">
    </PIN>
    <PIN pinname="Default" slicecount="1" values=".">
    </PIN>
@@ -234,20 +226,6 @@
    <PIN pinname="Size" slicecount="1" values="10">
    </PIN>
    </NODE>
-   <NODE systemname="GetClipsByCategory (Tilda)" filename="..\..\vl\VVVV.Tilda.vvvv.vl" nodename="GetClipsByCategory (Tilda)" componentmode="Hidden" id="258">
-   <BOUNDS type="Node" left="9180" top="11670" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Timeline" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Clips" visible="1">
-   </PIN>
-   <PIN pinname="Category" visible="1">
-   </PIN>
-   <PIN pinname="NormalizedTime" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="249" srcpinname="Y Output Value" dstnodeid="258" dstpinname="UnifiedMode">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="280">
    <BOUNDS type="Box" left="9930" top="10680" width="795" height="240">
    </BOUNDS>
@@ -262,8 +240,6 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="280" srcpinname="Output String" dstnodeid="258" dstpinname="Category">
-   </LINK>
    <NODE systemname="Camera (Transform Orbit)" filename="%VVVV%\lib\packs\VL.EditingFramework-2019.1.0-0344-gd5eabf23a7\vvvv\nodes\modules\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden" id="281">
    <BOUNDS type="Node" left="5955" top="12360" width="100" height="100">
    </BOUNDS>
@@ -412,30 +388,6 @@
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    </NODE>
-   <NODE id="296" systemname="Tilda (Tilda)" filename="..\..\vl\VVVV.Tilda.vvvv.vl" nodename="Tilda (Tilda)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="4020" top="5160" width="8685" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4020" top="5160" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
-   </BOUNDS>
-   <PIN pinname="Timeline" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="72" srcpinname="Y Output Value" dstnodeid="296" dstpinname="Load">
-   </LINK>
-   <LINK srcnodeid="73" srcpinname="Y Output Value" dstnodeid="296" dstpinname="Save">
-   </LINK>
-   <LINK srcnodeid="119" srcpinname="Output String" dstnodeid="296" dstpinname="Name">
-   </LINK>
-   <LINK srcnodeid="71" srcpinname="Output String" dstnodeid="296" dstpinname="File Path">
-   </LINK>
-   <LINK srcnodeid="296" srcpinname="Timeline" dstnodeid="171" dstpinname="Timeline" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="276" srcpinname="Cycles" dstnodeid="296" dstpinname="ExternalClock">
-   </LINK>
-   <LINK srcnodeid="296" srcpinname="Timeline" dstnodeid="258" dstpinname="Timeline">
-   </LINK>
    <LINK srcnodeid="290" srcpinname="Output 3" dstnodeid="295" dstpinname="FOV">
    </LINK>
    <LINK srcnodeid="295" srcpinname="Transform Out" dstnodeid="282" dstpinname="Projection">
@@ -632,16 +584,6 @@
    <PIN pinname="Set" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="GetPlayState (Tilda)" filename="..\..\vl\VVVV.Tilda.vvvv.vl" nodename="GetPlayState (Tilda)" componentmode="Hidden" id="311">
-   <BOUNDS type="Node" left="10455" top="7695" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Timeline" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="TC" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="296" srcpinname="Timeline" dstnodeid="311" dstpinname="Timeline">
-   </LINK>
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="312">
    <BOUNDS type="Node" left="11580" top="8250" width="100" height="100">
    </BOUNDS>
@@ -650,8 +592,6 @@
    <PIN pinname="OnChange" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="311" srcpinname="TC" dstnodeid="312" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="312" srcpinname="OnChange" dstnodeid="310" dstpinname="Reset">
    </LINK>
    <LINK srcnodeid="310" srcpinname="Output" dstnodeid="301" dstpinname="Y Input Value">
@@ -712,8 +652,6 @@
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
    </NODE>
-   <LINK srcnodeid="311" srcpinname="TC" dstnodeid="316" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="312" srcpinname="OnChange" dstnodeid="281" dstpinname="Reset" linkstyle="Bezier">
    <LINKPOINT x="11580" y="10425">
    </LINKPOINT>
@@ -820,9 +758,71 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    </NODE>
+   <NODE systemname="Renderer (Tilda)" filename="..\..\nodes\vl\VVVV.Tilda.vvvv.vl" nodename="Renderer (Tilda)" componentmode="Hidden" id="171">
+   <BOUNDS type="Node" left="4035" top="6765" width="1785" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4035" top="6765">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="171" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="GetClipsByCategory (Tilda)" filename="..\..\nodes\vl\VVVV.Tilda.vvvv.vl" nodename="GetClipsByCategory (Tilda)" componentmode="Hidden" id="258">
+   <BOUNDS type="Node" left="9180" top="11670" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Timeline" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Clips" visible="1">
+   </PIN>
+   <PIN pinname="Category" visible="1">
+   </PIN>
+   <PIN pinname="NormalizedTime" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="249" srcpinname="Y Output Value" dstnodeid="258" dstpinname="UnifiedMode">
+   </LINK>
+   <LINK srcnodeid="280" srcpinname="Output String" dstnodeid="258" dstpinname="Category">
+   </LINK>
    <LINK srcnodeid="258" srcpinname="NormalizedTime" dstnodeid="325" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="GetSetKeyframe (Tilda)" filename="..\..\vl\VVVV.Tilda.vvvv.vl" nodename="GetSetKeyframe (Tilda)" componentmode="Hidden" id="324">
+   <NODE id="296" systemname="Tilda (Tilda)" filename="..\..\nodes\vl\VVVV.Tilda.vvvv.vl" nodename="Tilda (Tilda)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="4020" top="5160" width="8685" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4020" top="5160" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Timeline" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="72" srcpinname="Y Output Value" dstnodeid="296" dstpinname="Load">
+   </LINK>
+   <LINK srcnodeid="73" srcpinname="Y Output Value" dstnodeid="296" dstpinname="Save">
+   </LINK>
+   <LINK srcnodeid="119" srcpinname="Output String" dstnodeid="296" dstpinname="Name">
+   </LINK>
+   <LINK srcnodeid="71" srcpinname="Output String" dstnodeid="296" dstpinname="File Path">
+   </LINK>
+   <LINK srcnodeid="276" srcpinname="Cycles" dstnodeid="296" dstpinname="ExternalClock">
+   </LINK>
+   <LINK srcnodeid="296" srcpinname="Timeline" dstnodeid="171" dstpinname="Timeline" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="296" srcpinname="Timeline" dstnodeid="258" dstpinname="Timeline">
+   </LINK>
+   <NODE systemname="GetPlayState (Tilda)" filename="..\..\nodes\vl\VVVV.Tilda.vvvv.vl" nodename="GetPlayState (Tilda)" componentmode="Hidden" id="311">
+   <BOUNDS type="Node" left="10455" top="7695" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Timeline" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="TC" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="311" srcpinname="TC" dstnodeid="312" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="311" srcpinname="TC" dstnodeid="316" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="296" srcpinname="Timeline" dstnodeid="311" dstpinname="Timeline">
+   </LINK>
+   <NODE systemname="GetSetKeyframe (Tilda)" filename="..\..\nodes\vl\VVVV.Tilda.vvvv.vl" nodename="GetSetKeyframe (Tilda)" componentmode="Hidden" id="324">
    <BOUNDS type="Node" left="9180" top="14235" width="7710" height="270">
    </BOUNDS>
    <PIN pinname="Timeline" visible="1" slicecount="1" values="||">

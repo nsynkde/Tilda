@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
    <PATCH nodename="D:\NSYNK\Tilda\girlpower\Sync\patches\SecondInstance.v4p" systemname="Sync_SecondInstance" filename="D:\NSYNK\Tilda\girlpower\Sync\Sync_SecondInstance.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="16050" top="15285" width="23895" height="13935">
+   <BOUNDS type="Window" left="7350" top="16155" width="23895" height="13935">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -56,38 +56,8 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (Tilda)" filename="..\..\vl\VVVV.Tilda.vvvv.vl" nodename="Renderer (Tilda)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="4050" top="5340" width="2565" height="270">
-   </BOUNDS>
-   <PIN pinname="Timeline" visible="1" slicecount="1" values="||">
-   </PIN>
-   <BOUNDS type="Box" left="4050" top="5340">
-   </BOUNDS>
-   <PIN pinname="Modules" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Tilda (Tilda)" filename="..\..\vl\VVVV.Tilda.vvvv.vl" nodename="Tilda (Tilda)" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="4050" top="1725" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4050" top="1725">
-   </BOUNDS>
-   <PIN pinname="Timeline" visible="1">
-   </PIN>
-   <PIN pinname="Save" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Load" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="10" dstpinname="Name">
-   </LINK>
-   <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="10" dstpinname="File Path">
-   </LINK>
-   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Save">
-   </LINK>
-   <LINK srcnodeid="10" srcpinname="Timeline" dstnodeid="18" dstpinname="Timeline">
-   </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="40">
-   <BOUNDS type="Node" left="5775" top="1725" width="100" height="100">
+   <BOUNDS type="Node" left="5685" top="1725" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
@@ -95,11 +65,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="41" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="5520" top="2895" width="2670" height="495">
+   <BOUNDS type="Box" left="5475" top="2895" width="2670" height="495">
    </BOUNDS>
-   <BOUNDS type="Node" left="5520" top="2895" width="0" height="0">
+   <BOUNDS type="Node" left="5475" top="2895" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="localhost:6379">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|localhost:6379,allowAdmin=True|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="localhost:6379">
    </PIN>
@@ -128,9 +98,145 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="45">
+   <BOUNDS type="Box" left="12135" top="645" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12135" top="645" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ConnectToRedis">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="45" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Simulate">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="46">
+   <BOUNDS type="Box" left="5910" top="4485" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5910" top="4485" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Status">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="47">
+   <BOUNDS type="Box" left="14115" top="2895" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14115" top="2895" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Disconnect">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48">
+   <BOUNDS type="Box" left="12315" top="2895" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12315" top="2895" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Pull/Push OnConnect|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="49">
+   <BOUNDS type="Box" left="9975" top="2235" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9975" top="2235" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="PullTimeline">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="50">
+   <BOUNDS type="Box" left="9330" top="1815" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9330" top="1815" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="PushTimeline">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (Tilda)" filename="..\..\..\nodes\vl\VVVV.Tilda.vvvv.vl" nodename="Renderer (Tilda)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="4050" top="5340" width="2565" height="270">
+   </BOUNDS>
+   <PIN pinname="Timeline" visible="1" slicecount="1" values="||">
+   </PIN>
+   <BOUNDS type="Box" left="4050" top="5340">
+   </BOUNDS>
+   <PIN pinname="Modules" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Tilda (Tilda)" filename="..\..\..\nodes\vl\VVVV.Tilda.vvvv.vl" nodename="Tilda (Tilda)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="4050" top="1725" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4050" top="1725">
+   </BOUNDS>
+   <PIN pinname="Timeline" visible="1">
+   </PIN>
+   <PIN pinname="Save" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Load" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="10" dstpinname="Name">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="10" dstpinname="File Path">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Save">
+   </LINK>
    <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Load">
    </LINK>
-   <NODE id="39" systemname="Sync (Tilda)" filename="..\..\..\vl\VVVV.Tilda.Sync.vl" nodename="Sync (Tilda)" componentmode="Hidden">
+   <LINK srcnodeid="10" srcpinname="Timeline" dstnodeid="18" dstpinname="Timeline">
+   </LINK>
+   <NODE id="39" systemname="Sync (Tilda)" filename="..\..\..\nodes\vl\VVVV.Tilda.Sync.vl" nodename="Sync (Tilda)" componentmode="Hidden">
    <BOUNDS type="Node" left="5265" top="3690" width="1335" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="5265" top="3690">
@@ -151,109 +257,33 @@
    </PIN>
    <PIN pinname="Disconnect" visible="1">
    </PIN>
+   <PIN pinname="Ping" visible="1">
+   </PIN>
+   <PIN pinname="PingTimeSpan" visible="1">
+   </PIN>
+   <PIN pinname="Pull/Push OnConnect" visible="1">
+   </PIN>
+   <PIN pinname="PullTimeline" visible="1">
+   </PIN>
+   <PIN pinname="PushTimeline" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="10" srcpinname="Timeline" dstnodeid="39" dstpinname="TildaTimeline">
-   </LINK>
    <LINK srcnodeid="40" srcpinname="Bang" dstnodeid="39" dstpinname="Connect">
    </LINK>
    <LINK srcnodeid="41" srcpinname="Output String" dstnodeid="39" dstpinname="Options">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="43">
-   <BOUNDS type="Box" left="10920" top="2895" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="10920" top="2895" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Slave">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="43" srcpinname="Y Output Value" dstnodeid="39" dstpinname="Slave">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="44">
-   <BOUNDS type="Box" left="12030" top="2895" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="12030" top="2895" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="LoadFromServer">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="39" dstpinname="LoadFromServer">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="45">
-   <BOUNDS type="Box" left="14085" top="645" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="14085" top="645" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="ConnectToRedis">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="45" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Simulate">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="46">
-   <BOUNDS type="Box" left="5265" top="4485" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5265" top="4485" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Status">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="39" srcpinname="Status" dstnodeid="46" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="39" dstpinname="Disconnect">
+   </LINK>
+   <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="39" dstpinname="Pull/Push OnConnect">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="39" dstpinname="PullTimeline">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Y Output Value" dstnodeid="39" dstpinname="PushTimeline">
    </LINK>
    <LINK srcnodeid="39" srcpinname="Layer" dstnodeid="18" dstpinname="Modules">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="47">
-   <BOUNDS type="Box" left="13515" top="2850" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="13515" top="2850" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Disconnect">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="39" dstpinname="Disconnect">
+   <LINK srcnodeid="10" srcpinname="Timeline" dstnodeid="39" dstpinname="TildaTimeline">
    </LINK>
    </PATCH>
