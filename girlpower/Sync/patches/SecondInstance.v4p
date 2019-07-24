@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
    <PATCH nodename="D:\NSYNK\Tilda\girlpower\Sync\patches\SecondInstance.v4p" systemname="Sync_SecondInstance" filename="D:\NSYNK\Tilda\girlpower\Sync\Sync_SecondInstance.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="9855" top="15915" width="23895" height="13935">
+   <BOUNDS type="Window" left="5730" top="18345" width="23895" height="13935">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -89,7 +89,7 @@
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
-   <PIN pinname="Simulate" slicecount="1" values="0" visible="1">
+   <PIN pinname="Simulate" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="41" systemname="IOBox (String)">
@@ -97,7 +97,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5520" top="2895" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|localhost:6379,allowAdmin=True|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="localhost:6379">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="localhost:6379">
    </PIN>
@@ -142,6 +142,8 @@
    <PIN pinname="Slave" visible="1">
    </PIN>
    <PIN pinname="LoadFromServer" visible="1">
+   </PIN>
+   <PIN pinname="Status" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="10" srcpinname="Timeline" dstnodeid="39" dstpinname="TildaTimeline">
@@ -209,5 +211,21 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="45" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Simulate">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="46">
+   <BOUNDS type="Box" left="5265" top="4485" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5265" top="4485" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Status">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Status" dstnodeid="46" dstpinname="Input String">
    </LINK>
    </PATCH>
