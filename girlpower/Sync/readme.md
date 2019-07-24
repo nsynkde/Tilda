@@ -8,13 +8,13 @@
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
-
 - Reboot Windows after making the change — note that you only need to do this one time.
 
 - Download and install one of the supported Linux distros from the Microsoft Store.
 
-- Install the latest Redis version
+- Install the latest Redis version:
 
+For that you need to open newly installed Linux terminal and try using this commands:
 
 ```
 wget http://download.redis.io/releases/redis-5.0.5.tar.gz
@@ -24,3 +24,5 @@ make
 
 sudo make install
 ```
+
+- To run server run start_redis.bat
