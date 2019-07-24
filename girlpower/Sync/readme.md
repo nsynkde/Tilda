@@ -17,6 +17,11 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 For that you need to open newly installed Linux terminal and try using this commands:
 
 ```
+sudo apt-get upgrade
+sudo apt-get update
+
+sudo apt-get install build-essential
+
 wget http://download.redis.io/releases/redis-5.0.5.tar.gz
 tar xzf redis-5.0.5.tar.gz
 cd redis-5.0.5
