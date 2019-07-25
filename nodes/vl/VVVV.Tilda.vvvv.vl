@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0411-gf6daa4918b" Version="0.128">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0417-g808f072318" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -4227,7 +4227,11 @@
             <Pin Id="AOpWAFMJhH7MyCbOj6WZ6B" Name="GoToPreviousKeyframe" Kind="InputPin" />
             <Pin Id="JcynsProKdNMKnoh5oAXal" Name="GoToNextKeyframe" Kind="InputPin" />
             <Pin Id="VumK2C6YMlBQbNIbESrl37" Name="AddKeyframe" Kind="InputPin" />
-            <Pin Id="U2enlrX9UAVPXZKZmRyPtc" Name="RemoveKeyframe" Kind="InputPin" />
+            <Pin Id="U2enlrX9UAVPXZKZmRyPtc" Name="RemoveKeyframe" Kind="InputPin" DefaultValue="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="A974VK8OeGQNxHXv2V0PkU" Name="Timeline" Kind="OutputPin" />
             <Pin Id="Jdg1P0vo0MiLzBT9Rl9NUq" Name="Values" Kind="OutputPin" />
             <Pin Id="NZEjbjnvW2HN8PM9IzQicC" Name="Log" Kind="OutputPin" />
