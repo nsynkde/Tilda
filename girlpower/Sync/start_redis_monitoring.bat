@@ -1,0 +1,3 @@
+wsl redis-cli monitor
+
+set /p DUMMY=Hit ENTER to continue...
