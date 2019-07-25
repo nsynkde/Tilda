@@ -36,6 +36,6 @@ NB: you will need to type in the password couple of times and say yes to everyti
 
 - You can monitor redis activity by running start_redis_monitoring.bat
 
-# VL dependencies hussle
+# VL dependencies hustle
 
-We tried to include all the neccessary dependencies incide repo, but on some machines FileNotFound exceptions could be thrown. Read them and install what is missing through VL nuget manager
+We tried to include all the neccessary dependencies inside, but on some machines FileNotFound exceptions could be thrown. Read them and install what is missing through VL nuget manager
