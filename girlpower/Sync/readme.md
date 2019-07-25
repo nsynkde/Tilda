@@ -35,3 +35,7 @@ NB: you will need to type in the password couple of times and say yes to everyti
 - To run server run start_redis.bat
 
 - You can monitor redis activity by running start_redis_monitoring.bat
+
+# VL dependencies hussle
+
+We tried to include all the neccessary dependencies incide repo, but on some machines FileNotFound exceptions could be thrown. Read them and install what is missing through VL nuget manager
