@@ -1907,7 +1907,7 @@
               <Pin Id="TnCD0YB4T2QOJAmTkYxQnd" Name="Up Edge" Kind="OutputPin" />
               <Pin Id="JUy8HPlasJLPOJkbitS7kj" Name="Down Edge" Kind="OutputPin" />
             </Node>
-            <Node Bounds="142,134,87,80" Id="KgdbcZlZTIlN6N3TdLmUXt">
+            <Node Bounds="142,179,87,80" Id="KgdbcZlZTIlN6N3TdLmUXt">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -1917,7 +1917,7 @@
               <Patch Id="VsUHv1tpGUrL8pZz3j0VL7" ManuallySortedPins="true">
                 <Patch Id="G4Y5ocuBcUgPTfP6ppcUHS" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="PPimdyxuUmlMWNTjOvZIYx" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="154,163,60,26" Id="Ua8mTBY9bjiNzZUw01VxRg">
+                <Node Bounds="154,208,60,26" Id="Ua8mTBY9bjiNzZUw01VxRg">
                   <p:NodeReference LastCategoryFullName="Tilda.Sync.TClient" LastSymbolSource="Tilda.Sync.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="TClient" NeedsToBeDirectParent="true" />
@@ -1929,14 +1929,14 @@
                 </Node>
               </Patch>
             </Node>
-            <ControlPoint Id="IefhpNi479bPXJmieVrg1f" Bounds="144,114" />
+            <ControlPoint Id="IefhpNi479bPXJmieVrg1f" Bounds="144,99" />
             <Overlay Id="P6LmsrduVtKPMz1a7WUu6W" Name="SendChangesToStream" Bounds="1133,-134,673,2007">
               <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
             </Overlay>
             <Overlay Id="N9OdK9kLcz3NEPVZ0dSrA1" Name="SetFromStream" Bounds="416,-134,672,2283">
               <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
             </Overlay>
-            <Overlay Id="HAVAEboXj3HLE0opVhaPus" Name="SubscribeToStreamNotifications" Bounds="21,66,323,178" />
+            <Overlay Id="HAVAEboXj3HLE0opVhaPus" Name="SubscribeToStreamNotifications" Bounds="21,66,323,216" />
             <Node Bounds="1192,1584,72,26" Id="JQ3tcm49LwcMuW8Jn46hGk">
               <p:NodeReference LastCategoryFullName="Tilda.Sync.TClient" LastSymbolSource="Tilda.Sync.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -2803,6 +2803,24 @@
             <Pad Id="RifbsC7iPI7QWG8a0B7gL7" SlotId="EQwBLJ7CKifMeXrJoVOqsQ" Bounds="1717,412">
               <p:ValueBoxSettings />
             </Pad>
+            <Node Bounds="107,10,72,26" Id="J7ippR7MSpjLCKruIHBWuf">
+              <p:NodeReference LastCategoryFullName="Tilda.Sync.TClient" LastSymbolSource="Tilda.Sync.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsConnected" />
+              </p:NodeReference>
+              <Pin Id="Dk3Cr6NeN8wPZobbnPRPjW" Name="Input" Kind="StateInputPin" />
+              <Pin Id="MIFqAnqxg8NO7OfEmVJDIw" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="ROhCEYw7zyzNJRhCQMwTv5" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="142,135,37,19" Id="Nqx7ZrYmAjZNE3LVWcsItI">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="AND" />
+              </p:NodeReference>
+              <Pin Id="U8Gwi4WUyVvOHc9SwZo5ur" Name="Input" Kind="StateInputPin" />
+              <Pin Id="RldWbzeurDQMOflrZMv5wq" Name="Input 2" Kind="InputPin" />
+              <Pin Id="LN0BPE6xMqWQHShjKkIdyQ" Name="Output" Kind="StateOutputPin" />
+            </Node>
           </Canvas>
           <Patch Id="FFqI8FX9YUkNlFTlMWquAX" Name="Create" />
           <Patch Id="LfzVyJya6yYNX1RJOvpZs9" Name="Update">
@@ -2854,7 +2872,6 @@
           <Link Id="OtkVmFhrWHgPfJPtiTxTV2" Ids="DzAbdVzKtnjP6lcEvAPFch,SmeeHsoGT3hNc1te0KrjO3" />
           <Link Id="E2yS42rUXnvPQKYDqWpFlV" Ids="SmeeHsoGT3hNc1te0KrjO3,S3joAaPdLu0NjWkuss9tfC" />
           <Link Id="Ef5ntLnqbN0LMO9aOowlrd" Ids="Qlh3yj8S8nbN3Rmo6JEQal,IefhpNi479bPXJmieVrg1f" IsHidden="true" />
-          <Link Id="Ls12x7lx7POQYZtf988ffO" Ids="IefhpNi479bPXJmieVrg1f,QSr73rK1BzYOMLYM0nZW7b" />
           <Link Id="B5Rivi1RC5kOUKYEuP9XxP" Ids="LVdIqre5ebKP9kR4Uwq0lG,Bn2MPtTGxekN7Cxvbf1LS6" />
           <Link Id="LK8YOeW2iiaLDl6EKwm1pd" Ids="M18ZMNK4P2zOU4G03Dnd0y,VjlMR3iKK5iLRzZznMLaxW" />
           <Link Id="BKaY6TsLJKsPmk9cFx1mtQ" Ids="JUy8HPlasJLPOJkbitS7kj,LphU0tgDpN4LzsXAzweuS5" />
@@ -3040,6 +3057,10 @@
           <Link Id="NC5a2V202kROxKR2Fxw4Zb" Ids="Pump9ZUJIjZPGoqIQK12br,BcKYMQqKk3SPbdfSv5D4hN" />
           <Link Id="JnBMWf7qJEzMYjdsOKSJtn" Ids="O8Gv5B6zR3CP2T31hAxpRJ,D7WV462uZ0YN4FLCla7aaN" />
           <Link Id="Nx039bdIRZGNWrYv6uL18H" Ids="G3Y8TIZC0qTOmgKQRhVH0u,P5Clj9hlhqNN9K8L0O4uvD" />
+          <Link Id="BgSkxqiQJrcMUOAAT0KJat" Ids="R3VNYVd3zjLO5hmVBLiBiO,Dk3Cr6NeN8wPZobbnPRPjW" />
+          <Link Id="T11vfYGGtyAL58ETThGynX" Ids="ROhCEYw7zyzNJRhCQMwTv5,RldWbzeurDQMOflrZMv5wq" />
+          <Link Id="V5QKTWVky7MOGzBJ9YaegB" Ids="IefhpNi479bPXJmieVrg1f,U8Gwi4WUyVvOHc9SwZo5ur" />
+          <Link Id="O6fx5rFYXtVNgUkswYWajn" Ids="LN0BPE6xMqWQHShjKkIdyQ,QSr73rK1BzYOMLYM0nZW7b" />
         </Patch>
       </Node>
       <!--
