@@ -33,3 +33,5 @@ wsl sudo make install
 NB: you will need to type in the password couple of times and say yes to everyting linux ask you.
 
 - To run server run start_redis.bat
+
+- You can monitor redis activity by running start_redis_monitoring.bat
