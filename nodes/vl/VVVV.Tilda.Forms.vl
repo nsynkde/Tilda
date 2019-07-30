@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0411-gf6daa4918b" Version="0.128">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0417-g808f072318" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -7886,6 +7886,59 @@
           <Link Id="Vw8Oc7mhb5aN4fhxZpxc8c" Ids="VXzkw4HHLxKPcmW9G7dfJM,HCLlrWSAbNVOHbBct2OxtT" />
           <Link Id="FJAzVNcuvZRMJJIlT5YHwz" Ids="MgYf7jECaYAQKi4QMczuYg,CWbfiJbrRgQNe61DkacJ6z" IsHidden="true" />
           <Link Id="UQBZcAyQYTpL15SATmbTpG" Ids="AqshTNn2meEN64TMyW2Mgk,MgYf7jECaYAQKi4QMczuYg" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ CheckIfActive ************************
+
+-->
+      <Node Name="CheckIfActive" Bounds="620,1000" Id="Psf8D0ZbaxFNmABBAQEYXK">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="RodUY66qlGzM78AAPsszKP">
+          <Canvas Id="Hvbz6lVxSDXPkP9u6bpBdJ" CanvasType="Group">
+            <ControlPoint Id="DiolUSSwJmKLFvlHjT3SIM" Bounds="331,319" />
+            <Node Bounds="411,316,67,19" Id="MBSlt9o2qHFOonxRyN6Vn2">
+              <p:NodeReference LastCategoryFullName="System.Windows.Forms.Form" LastSymbolSource="System.Windows.Forms.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="Form" />
+                <Choice Kind="OperationCallFlag" Name="ActiveForm" />
+              </p:NodeReference>
+              <Pin Id="A2mZ22XL1puMCwYwKQJyWd" Name="Active Form" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="391,364,25,19" Id="KuoZ9WOEWI9L0OWg3tAabL">
+              <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="=" />
+              </p:NodeReference>
+              <Pin Id="CjLh8Lf3FHpNYNUm5RJfvC" Name="Input" Kind="InputPin" />
+              <Pin Id="Jd2gIkx6yPjOMe84YVCrHI" Name="Input 2" Kind="InputPin" />
+              <Pin Id="LiHWKEp18zbMVoumy09Mhp" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="QlAuFv8kl4kMbD738Me1DM" Bounds="391,416" />
+          </Canvas>
+          <Patch Id="NUecFUGIINhLbMfmuO0jT7" Name="Create" />
+          <Patch Id="DSxKIkn5ingOKff4MOHQqD" Name="Update">
+            <Pin Id="TK23ZbFOjzbLUyWuuwl91C" Name="Input" Kind="InputPin" />
+            <Pin Id="QgYLwyTFxmON5n5TJW4DzS" Name="Result" Kind="OutputPin" Bounds="394,426" />
+          </Patch>
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="FvdkXN0eoh2MD7fklGk6Hw">
+            <Fragment Id="F5xg61BXdjfOJ7QLGYhAkW" Patch="NUecFUGIINhLbMfmuO0jT7" Enabled="true" />
+            <Fragment Id="G7rpOHeZajvOv3QZWuLlNm" Patch="DSxKIkn5ingOKff4MOHQqD" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="R0T57Qh7UzfNGOk0NdaNH3" Ids="TK23ZbFOjzbLUyWuuwl91C,DiolUSSwJmKLFvlHjT3SIM" IsHidden="true" />
+          <Link Id="M43ae93ySuiPyMOcbtZGkM" Ids="DiolUSSwJmKLFvlHjT3SIM,CjLh8Lf3FHpNYNUm5RJfvC" />
+          <Link Id="OuZmgq7hK4lOUyEGuLXnLw" Ids="A2mZ22XL1puMCwYwKQJyWd,Jd2gIkx6yPjOMe84YVCrHI" />
+          <Link Id="VvY4NGen7ZjPXGxer1KUGw" Ids="LiHWKEp18zbMVoumy09Mhp,QlAuFv8kl4kMbD738Me1DM" />
+          <Link Id="BSumB3wsC2mOb5Tj0loPf5" Ids="QlAuFv8kl4kMbD738Me1DM,QgYLwyTFxmON5n5TJW4DzS" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>
