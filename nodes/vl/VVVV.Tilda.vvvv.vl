@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0417-g808f072318" Version="0.128">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0562-g457400a887" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -5346,11 +5346,6 @@
             <Pin Id="Kt7vUqI65B1NyoizMNvoN6" Name="SourceTimeNormalized" Kind="OutputPin" />
             <Pin Id="Ku1akf15RFlPT11DU9KKsu" Name="SourceTime" Kind="OutputPin" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="LLCYsQFNVtrN8Ld0I8pV6y">
             <Fragment Id="IQjp4MHrByMPvZZ5jLDyya" Patch="PK4cFY0SgkePQY0JaMGouJ" Enabled="true" />
             <Fragment Id="VvDlxb2vTPMP4mweUmMmv8" Patch="F72btKaYILiOIilqyB357W" Enabled="true" />
@@ -5463,6 +5458,104 @@
           <Link Id="GPalUcyREr9PqcwqYcymx7" Ids="FKZEUdp4c8eNkBnE8jqG1d,K79l0Us90jmMm7tS5QvoKl" />
           <Link Id="RCfzwGucAjUL8xI9ij22YR" Ids="HcRgtVbzMN0QXbTPs6desz,N8qVPUricSYNX4BHS3BDLi" />
           <Link Id="JFZ2Qk2mdRHLEfIf4LvotZ" Ids="N8qVPUricSYNX4BHS3BDLi,TyrLtqrfJ9nOhrGBtfpAMs" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ GetKeyframeClipValue ************************
+
+-->
+      <Node Name="GetKeyframeClipValue" Bounds="1094,542" Id="VdzVLGHayaNN6BYMcG0uah">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="QL39dmKX73oLBB5EmbIKYs">
+          <Canvas Id="CLrKpIUoDUrPc76ifHgq1z" CanvasType="Group">
+            <ControlPoint Id="P3yZpkV4dxhQSNd9YmOcWd" Bounds="63,24" />
+            <Node Bounds="80,95,65,26" Id="QVRHMY8qlgCOKLoVSiCo6G">
+              <p:NodeReference LastCategoryFullName="VL.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="GetTC" />
+              </p:NodeReference>
+              <Pin Id="GVtUfYwAvwsODAqrPHiL80" Name="Input" Kind="StateInputPin" />
+              <Pin Id="ExTJqq1CuS1LOggUYTSuTJ" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="NqDM5zuXmG4OAV3cmz6QoW" Name="TC" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="KW096r29a0yMQpVvhdY6Lq" Bounds="82,81" />
+            <ControlPoint Id="CpFPKLXDXk3PmzHBUKMrAV" Bounds="82,237" />
+            <Node Bounds="61,41,49,19" Id="KIxHc5tgdr1MGa9t3X2Klg">
+              <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="OfType" />
+                <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="JgwlZiRCZiiMj701FGR37h" Name="Input" Kind="InputPin" />
+              <Pin Id="SHr3wbZe58cNgKTZTBxQ7l" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="48,131,109,92" Id="EBYdh6VAfYkOYStZLk5GPD">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="Qjsjb2F3zzKQaT1OapsiPB" Name="Break" Kind="OutputPin" />
+              <Patch Id="F5PzB71WvW3MSnZqAgYHr1" ManuallySortedPins="true">
+                <Patch Id="BtH6lDo9DwoOGME2Xn0SMm" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="E9Cs150QHR0LYP8rzz0DhG" Name="Update" ManuallySortedPins="true" />
+                <Patch Id="Hem0siUwsMsQGOT3BzNssx" Name="Dispose" ManuallySortedPins="true" />
+                <Node Bounds="60,163,85,26" Id="PA1nu9zhKngNscUEqmrCeY">
+                  <p:NodeReference LastCategoryFullName="VL.Tilda.KeyframesClip" LastSymbolSource="VVVV.Tilda.KeyframesClip.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="GetValue" />
+                    <CategoryReference Kind="RecordType" Name="KeyframesClip" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="Lm2QOClOEpnPl8V8Wukaq5" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="LEjZM7JOgGQMWWnCJxbBz5" Name="TC" Kind="InputPin" />
+                  <Pin Id="MHWpUAcTyw4LoDOseWHmIm" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="DfhayGZjd4SNeBs4Witecw" Name="Values" Kind="OutputPin" />
+                  <Pin Id="ItTRTRUCrNlNnoy8Sjv7qa" Name="Previous Keyframe Values" Kind="OutputPin" />
+                  <Pin Id="IDsCSNFs7fJOaHcB09GTIs" Name="Next Keyframe Values" Kind="OutputPin" />
+                  <Pin Id="FS0kCK6HJrYPEZupC8njVc" Name="LerpFactor" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="HZmI5KF58HiLDqFUJuwCSF" Bounds="62,138" Alignment="Top" />
+              <ControlPoint Id="PRiXtNOZbv6MSz5aNikpY6" Bounds="82,217" Alignment="Bottom" />
+            </Node>
+          </Canvas>
+          <Patch Id="C4mA35MXfVSNOXqvxDdxkd" Name="Create" />
+          <Patch Id="AI8meKJgUyLOS477xPJDWh" Name="Update">
+            <Pin Id="DoBXKfJifVYP9saNXKkqIj" Name="KeyframeClips" Kind="InputPin" Bounds="504,270">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="Spread" />
+                <p:TypeArguments>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="IClip" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="UacYOLO9ffrOijKZ6p8JKK" Name="Timeline" Kind="InputPin" Bounds="594,211" />
+            <Pin Id="C6Nd7EP6tTXPaXdA7rulfI" Name="Values" Kind="OutputPin" Bounds="521,373" />
+          </Patch>
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="EdEYIaIbbWbOpHKsb6939T">
+            <Fragment Id="DUKAdWXzj7gONFB63xAiN8" Patch="C4mA35MXfVSNOXqvxDdxkd" Enabled="true" />
+            <Fragment Id="GmSNmNLiq4TNZ6rDEZ2cW2" Patch="AI8meKJgUyLOS477xPJDWh" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="SGImxfSsOclPFDsZ9AhAcq" Ids="DoBXKfJifVYP9saNXKkqIj,P3yZpkV4dxhQSNd9YmOcWd" IsHidden="true" />
+          <Link Id="MB9J3Pd1pZLMi2272DCER8" Ids="KW096r29a0yMQpVvhdY6Lq,GVtUfYwAvwsODAqrPHiL80" />
+          <Link Id="QgXUGhqUHwpNpvCapf3Svx" Ids="UacYOLO9ffrOijKZ6p8JKK,KW096r29a0yMQpVvhdY6Lq" IsHidden="true" />
+          <Link Id="AQkKWysC7rFP4xRC1JPLu9" Ids="NqDM5zuXmG4OAV3cmz6QoW,LEjZM7JOgGQMWWnCJxbBz5" />
+          <Link Id="TYEPnFJppLVOJZSpwMHoC2" Ids="CpFPKLXDXk3PmzHBUKMrAV,C6Nd7EP6tTXPaXdA7rulfI" IsHidden="true" />
+          <Link Id="PyuifrxIfr1N8HYh6C8jGx" Ids="P3yZpkV4dxhQSNd9YmOcWd,JgwlZiRCZiiMj701FGR37h" />
+          <Link Id="NKQroPPl9cpPottiZxcl4W" Ids="SHr3wbZe58cNgKTZTBxQ7l,HZmI5KF58HiLDqFUJuwCSF" />
+          <Link Id="QwjPArGS5aoOveyid6zn06" Ids="HZmI5KF58HiLDqFUJuwCSF,Lm2QOClOEpnPl8V8Wukaq5" />
+          <Link Id="PfWFABR0fxlMHMq4jmaWf5" Ids="DfhayGZjd4SNeBs4Witecw,PRiXtNOZbv6MSz5aNikpY6" />
+          <Link Id="DUrbFCz2fgTMzzHlKkBe6F" Ids="PRiXtNOZbv6MSz5aNikpY6,CpFPKLXDXk3PmzHBUKMrAV" />
         </Patch>
       </Node>
     </Canvas>

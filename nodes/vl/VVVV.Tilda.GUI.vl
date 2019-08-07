@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0417-g808f072318" Version="0.128">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0562-g457400a887" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -20608,7 +20608,7 @@
             <Node Bounds="57,119,117,19" Id="UHJ4VpmT0OwNHDGF9gHYre">
               <p:NodeReference LastCategoryFullName="VL.Tilda" LastSymbolSource="VVVV.Tilda.KeyframesClip.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="GetKeyframeClipValue" />
+                <Choice Kind="ProcessNode" Name="GetKeyframeClipValue" />
               </p:NodeReference>
               <Pin Id="OX4SHB2ghsfN6rx7R561Tt" Name="Timeline" Kind="InputPin" />
               <Pin Id="QFVtWaF9EtoOeOSbknX7s2" Name="UseThru" Kind="InputPin" />
@@ -20655,6 +20655,32 @@
               </Pin>
               <Pin Id="DhCLOp0paxkNFepihJ6dTk" Name="Output" Kind="OutputPin" />
             </Node>
+            <Node Bounds="-95,109" Id="L9ei4NVDs5yPlUXUu1gGn4">
+              <p:NodeReference LastCategoryFullName="VL.Tilda.KeyframesClip" LastSymbolSource="VVVV.Tilda.KeyframesClip.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="GetValue" />
+                <CategoryReference Kind="RecordType" Name="KeyframesClip" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="FpFpTLmhbnzQM2XJcSyEXt" Name="Input" Kind="StateInputPin" />
+              <Pin Id="TZQOrRAXEiPLHbyJy8bWtL" Name="TC" Kind="InputPin" />
+              <Pin Id="V5MBv9t3VRhPX34GjeUCBk" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="BmI1od9GYrFMmjQ2lyCKsS" Name="Values" Kind="OutputPin" />
+              <Pin Id="C0vEWLCWPSYLI7j2ZF1SGs" Name="Previous Keyframe Values" Kind="OutputPin" />
+              <Pin Id="IT3QBW2QaOePJ47I59Bh3v" Name="Next Keyframe Values" Kind="OutputPin" />
+              <Pin Id="GzuuzxCx7yENMOVXVwrcEf" Name="LerpFactor" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="-76,44,65,26" Id="TfHY9y2PBWDMgiIqj6THk5">
+              <p:NodeReference LastCategoryFullName="VL.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="GetTC" />
+              </p:NodeReference>
+              <Pin Id="NaNRzYWMvBQMEmD1YR7brg" Name="Input" Kind="StateInputPin" />
+              <Pin Id="OwNsdUQhLedMLvjvkgswG2" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="L48hFduZu3FOqkf5s6bs8H" Name="TC" Kind="OutputPin" />
+            </Node>
+            <Pad Id="RBGG5LZFWwFQPxsjiFJD0S" Comment="Values" Bounds="-144,179,35,80" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="R2O2S5E7Z6VQZK53hH0Smo" Comment="Values" Bounds="-47,179,35,80" ShowValueBox="true" isIOBox="true" />
+            <Overlay Id="Ho9DkTp888HOhe5R1RNN79" Name="" Bounds="0,0,80,80" />
           </Canvas>
           <Patch Id="GIwo4gvwydKL69tGsBOC27" Name="Create" />
           <Patch Id="Maqgf1qCilYMJNsSUQzyuC" Name="Update">
@@ -20709,6 +20735,11 @@
           <Link Id="HUpRVVHQTDvP4BENSYXfJe" Ids="DhCLOp0paxkNFepihJ6dTk,Jr7txJ6T3LTNj4HHLxoc3m" />
           <Link Id="QKtQkSS9iwqLT2DQsQkAd9" Ids="ObhiCNUbLolLXS7K4w9st0,Qhx80YuBMyfLAEP5il3h0D" />
           <Link Id="LwGdCl1SkS4O44JvAi7CGj" Ids="OdvV4sHQAaIOaqpsMUuzJ6,FJ7582Vsmg9OHpzRaOEWyN" />
+          <Link Id="HninBeBAuWrLjW8j1qCe28" Ids="AtE1ODwWBmgMACayJRnvoZ,FpFpTLmhbnzQM2XJcSyEXt" />
+          <Link Id="BEfvLe3AJuNMzzTUuxcXxy" Ids="Exg5l2Wxho1MKJKOFJ8nw8,NaNRzYWMvBQMEmD1YR7brg" />
+          <Link Id="KDalemwkgG1NHvjQox3XSO" Ids="L48hFduZu3FOqkf5s6bs8H,TZQOrRAXEiPLHbyJy8bWtL" />
+          <Link Id="OYBsFd9vekgOTznQPB8qKF" Ids="BmI1od9GYrFMmjQ2lyCKsS,RBGG5LZFWwFQPxsjiFJD0S" />
+          <Link Id="Gu77Fbom0PmPpAamr2PYGM" Ids="PNkxaNnzD1zMq1j03urmuH,R2O2S5E7Z6VQZK53hH0Smo" />
         </Patch>
       </Node>
       <!--
@@ -20860,11 +20891,6 @@
             <Pin Id="GDWGYNpwqhzOtBTE9fVzzy" Name="KClip" Kind="InputPin" Bounds="873,479" />
             <Pin Id="BJSL09YZMKPMrmosGtZWWz" Name="Output" Kind="OutputPin" Bounds="557,483" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="DdFBeUYOmyJMHrYKgFSPGc">
             <Fragment Id="Fe8gwJ1nyfGLYND99hAb4z" Patch="RP9XMvdtw3rPeGtMNDlUKN" Enabled="true" />
             <Fragment Id="DDh6fJR4rsGLZlwUgy6ApX" Patch="LdZiZXECaeENLtSHpGi3Qv" Enabled="true" />
@@ -21066,11 +21092,6 @@
             <Pin Id="RFpv5MIIxpaQA86tBkaymi" Name="KClip" Kind="InputPin" Bounds="873,479" />
             <Pin Id="VoIgBWWEm1SMyEIP5ciDV6" Name="Output" Kind="OutputPin" Bounds="557,483" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="UoiMMN700xuMguXD2z7kzi">
             <Fragment Id="G3zxynGkK84MclGBpA9LsO" Patch="NSmgowb6kPwMcBSyeBsCj1" Enabled="true" />
             <Fragment Id="Jhy04VOaxdOLWtUqJCumDH" Patch="NqNxKxVY6k4PLfRdFIZbND" Enabled="true" />
@@ -21288,11 +21309,6 @@
             <Pin Id="NL9ScWJALJkO6xvHZQGfqh" Name="GoToNextKeyframe" Kind="InputPin" />
             <Pin Id="GAUn3SeHPN8NK5WSp8anlk" Name="KeyframeClip" Kind="InputPin" Bounds="1246,140" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="J6jqr24lSr8ONYW2DT28av">
             <Fragment Id="LRKShN88YFuNwzEt6LSoAU" Patch="GCMSy2NU7vQO2Fe0ZjaH3j" Enabled="true" />
             <Fragment Id="PIsdKsytsBlQHRwmxf0bCL" Patch="FspX06LjtsXO1HjMqVK9mp" Enabled="true" />
@@ -21399,11 +21415,6 @@
             </Pin>
             <Pin Id="Kb9bwdOlgZlLbcL6VqLlqz" Name="Editor" Kind="OutputPin" Bounds="154,353" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="SeTyRlR9f5yM3qwarEBUhV">
             <Fragment Id="C4FF2aKaEfjNs08N0mINA8" Patch="RhvlykqMx0tOoVm9xyjsWn" Enabled="true" />
             <Fragment Id="BaTRENISlgfMe575OT8s5y" Patch="RovqVM4dbrSOPA61T17M1s" Enabled="true" />
@@ -21558,11 +21569,6 @@
             <Pin Id="RUJ66AXd0BwMFP2hDtXQyw" Name="Mouse Position XY" Kind="InputPin" Bounds="1756,-440" />
             <Pin Id="Qdodfr1S6sSP22na0lVsjB" Name="Hovers Scala" Kind="OutputPin" Bounds="130,412" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="SmSflWgRfuvMSSC7Tzx1Xt">
             <Fragment Id="Ei0y3bMZgrFPk5aqPC7GlH" Patch="U77blYfCIKVMOXNRBXVRfQ" Enabled="true" />
             <Fragment Id="GDdIOj7yj7zMJ96L3ZBWmd" Patch="R0YlB0b5zNtPPEuITyAY9j" Enabled="true" />
@@ -21742,11 +21748,6 @@
             <Pin Id="G07vVWmx2nrPp5bEbeYYMn" Name="KeyframeClip" Kind="InputPin" Bounds="485,404" />
             <Pin Id="EeVINdHhc5APvFxUyng9Bp" Name="Labels" Kind="OutputPin" Bounds="676,826" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="HnKPM54nZZuOJSFbKrYQLR">
             <Fragment Id="CCcbhWsPhB3PS96tfsdWuV" Patch="CylHufr1umxLqJ5aQwfXfr" Enabled="true" />
             <Fragment Id="TXOjm6krmxjN6CEDLnJ4Mc" Patch="NazP9vw8OMpPywon7mTpLt" Enabled="true" />
