@@ -39,3 +39,6 @@ NB: you will need to type in the password couple of times and say yes to everyti
 # VL dependencies hustle
 
 We tried to include all the neccessary dependencies inside, but on some machines FileNotFound exceptions could be thrown. Read them and install what is missing through VL nuget manager
+
+Need to be installed:
+- System.Threading.Tasks.Extensions
