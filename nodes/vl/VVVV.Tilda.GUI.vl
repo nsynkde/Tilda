@@ -5465,7 +5465,7 @@
                 <Pin Id="Id0IR1Y2nyiNfuKsFUx3TR" Name="Is Down" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="ISq3ceslIsnPOWKMsExOlo" Bounds="486,165" />
-              <Node Bounds="234,531,212,172" Id="Vg7eg0cPt0vPEgwNxZLCcm">
+              <Node Bounds="234,531,234,230" Id="Vg7eg0cPt0vPEgwNxZLCcm">
                 <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -5507,7 +5507,7 @@
                     <Pin Id="E0gL5K04obeMttsPP0HwAb" Name="Input 2" Kind="InputPin" />
                     <Pin Id="EpkUFSxQs12MEkLfEOQB31" Name="Output" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="364,635,70,26" Id="KWEIUWzTBKHLw1GjRAanWp">
+                  <Node Bounds="386,634,70,26" Id="KWEIUWzTBKHLw1GjRAanWp">
                     <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="SetPlaystate" />
@@ -5516,9 +5516,28 @@
                     <Pin Id="QLQk59VYgbRMqSu4DCMz4R" Name="PlayState" Kind="InputPin" />
                     <Pin Id="AMXuGmuuEdCMRYREzQg4vA" Name="Output" Kind="StateOutputPin" />
                   </Node>
+                  <Node Bounds="384,715,43,26" Id="Jl5elcLlmJyNZZv7VIrSki">
+                    <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="RecordType" Name="Editor" />
+                      <Choice Kind="OperationCallFlag" Name="SetTC" />
+                    </p:NodeReference>
+                    <Pin Id="R0Bu3PIrFNLMwU3VNMwQXo" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="MQgAFRkCRPMNdfTdBdKwV2" Name="TC" Kind="InputPin" />
+                    <Pin Id="M8NS8C08Rs5NSGenleYfu7" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Node Bounds="246,676,65,26" Id="JUPV7SZtKUkLJ56XR6Uihj">
+                    <p:NodeReference LastCategoryFullName="VL.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="GetTC" />
+                    </p:NodeReference>
+                    <Pin Id="D50vd4DLcVuP7ipnzHceq7" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="Da996I18PfbNgdCQ1Blig5" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="O5Wpz3b01QmO5OIHXSfFZO" Name="TC" Kind="OutputPin" />
+                  </Node>
                 </Patch>
                 <ControlPoint Id="KH0ufnvdqwSLX9m82NDGzv" Bounds="383,538" Alignment="Top" />
-                <ControlPoint Id="Te6DIpaWyqEPFbCm2xCsbM" Bounds="366,698" Alignment="Bottom" />
+                <ControlPoint Id="Te6DIpaWyqEPFbCm2xCsbM" Bounds="386,723" Alignment="Bottom" />
               </Node>
               <Pad Id="LEKuZDcaSl4NP4xvGT47Hz" Comment="Key Name" Bounds="350,234,37,19" ShowValueBox="true" isIOBox="true" Value="Space">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -5779,7 +5798,7 @@
                 <Pin Id="JyEdLOMSEfMP5Jz5toI1tW" Name="Output" Kind="OutputPin" />
                 <Pin Id="FmUY7oHzKjHOjfVSlzf9yu" Name="PressedKeys" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="Uu5qDlOE0rtOR1DFltE90e" Bounds="368,768" />
+              <ControlPoint Id="Uu5qDlOE0rtOR1DFltE90e" Bounds="388,793" />
               <Node Bounds="487,-9,54,26" Id="KDhbntNJxFpNgMpR1Rvaw6">
                 <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -5813,7 +5832,6 @@
               <Fragment Id="CxSrQ9WNxC3Onhl4HDGNfb" Patch="OO7AhyMc9rGLp0FEY2QtpE" Enabled="true" />
               <Fragment Id="BSRuoPuRUGKQdQPHMYxSZr" Patch="Hm1krGR25xkPLNDsGGwswV" Enabled="true" />
             </ProcessDefinition>
-            <Link Id="Svjy52TveO6NTqjcQGhyP1" Ids="ISq3ceslIsnPOWKMsExOlo,Vx3My8egAzUNgw3ihX7keG" />
             <Link Id="NXYN9m5w5WALhTAD0viHwt" Ids="TjKrlG4usjJOptXLnFVp4p,ISq3ceslIsnPOWKMsExOlo" IsHidden="true" />
             <Link Id="FdsHqLziWRXLTu4DC6WAdX" Ids="ISq3ceslIsnPOWKMsExOlo,Nc3KWRLi9aHNjHY4wDbVxO" />
             <Link Id="PR0HRAR9mXxL2iz7mZIZPT" Ids="LEKuZDcaSl4NP4xvGT47Hz,CPD8xFUoUR1QRWvZqR1d6H" />
@@ -5864,10 +5882,14 @@
             <Link Id="BPcucNekPtJPIOAkwsKcca" Ids="KH0ufnvdqwSLX9m82NDGzv,Te6DIpaWyqEPFbCm2xCsbM" IsFeedback="true" />
             <Link Id="L22VERmNEUCNrOVH3jOr0F" Ids="OkGrmW825Q0M7pw45bSByf,KH0ufnvdqwSLX9m82NDGzv" />
             <Link Id="OzI7gLmeLXAOu7wXd6Hbtj" Ids="KH0ufnvdqwSLX9m82NDGzv,PKfGcqUEk5EQMythNkCjJP" />
-            <Link Id="L1n7GYX1TyUMOvJuAbuNoH" Ids="AMXuGmuuEdCMRYREzQg4vA,Te6DIpaWyqEPFbCm2xCsbM" />
             <Link Id="La2b1gcnoq7MVIrsYpNeTH" Ids="Te6DIpaWyqEPFbCm2xCsbM,Uu5qDlOE0rtOR1DFltE90e" />
             <Link Id="KQ8mEFNoFNgP4Sr4l9EsrZ" Ids="Ri2qHkOlegYNkFl5J9SS0i,DimLUJirx7ZNo4wDSUL6IH" />
             <Link Id="VpjkOzZjmpqPXDkk2CUC0h" Ids="B0MvRX9BCXKPRZq8OhsY7w,NlTBPgkFaraMWbYmajoPz8" />
+            <Link Id="A3eXhbSiZeuNovEfxt8h0C" Ids="AMXuGmuuEdCMRYREzQg4vA,R0Bu3PIrFNLMwU3VNMwQXo" />
+            <Link Id="RGmiwnqrliVLuBG1eckiTF" Ids="USRNjQIhAvyO58ps9qrZcf,D50vd4DLcVuP7ipnzHceq7" />
+            <Link Id="NUrGllYcTPXMZNT8tOtCng" Ids="O5Wpz3b01QmO5OIHXSfFZO,MQgAFRkCRPMNdfTdBdKwV2" />
+            <Link Id="EtJZ9SStqF3MF7wtLDRq8k" Ids="M8NS8C08Rs5NSGenleYfu7,Te6DIpaWyqEPFbCm2xCsbM" />
+            <Link Id="FwSsnpnYPwdPny2QFAewz1" Ids="VDyd6YcBXNGPETN80xPmBF,Vx3My8egAzUNgw3ihX7keG" />
           </Patch>
         </Node>
         <!--
