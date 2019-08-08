@@ -28,7 +28,9 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="Sf28a575WwOM5xmcdFoDw1" Name="Modules" Kind="InputPin" />
+            <Pin Id="AjKJuo3z00POvukcZa2tg1" Name="EnableTCChangesLocally" Kind="InputPin" Bounds="744,15" />
             <Pin Id="MtYYOL3unCRNvnO0PNIWfM" Name="Window Active" Kind="OutputPin" Bounds="79,1444" />
+            <Pin Id="QSuEl1P9NOPNlPLer9uGGN" Name="Editor" Kind="OutputPin" Bounds="332,1532" />
           </Patch>
           <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi" CanvasType="Group">
             <Node Bounds="346,1090,516,19" Id="JBk1hgu23rXP9YOmgNgTJ2">
@@ -37,7 +39,7 @@
                 <CategoryReference Kind="Category" Name="Skia" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="2661, 269, 2176, 830">
+              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="1386, 1199, 2176, 830">
                 <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                   <Choice Kind="TypeFlag" Name="Rectangle" />
                 </p:TypeAnnotation>
@@ -190,13 +192,13 @@
               <Pin Id="M4SLhtcQOfpPasMMxzrAy2" Name="TrackHeight" Kind="InputPin" />
               <Pin Id="JFPwkWRQFzCM6nQTqMWwt4" Name="Editor" Kind="OutputPin" />
             </Node>
-            <Pad Id="MPw1EUQVZbDOEVirHc0C32" SlotId="PQBycvIcWqFL7PAyZMnhvB" Bounds="609,75">
+            <Pad Id="MPw1EUQVZbDOEVirHc0C32" SlotId="PQBycvIcWqFL7PAyZMnhvB" Bounds="609,38">
               <p:ValueBoxSettings />
             </Pad>
             <Pad Id="CZ3A9IVItJUOBV1ILsNdpd" SlotId="PQBycvIcWqFL7PAyZMnhvB" Bounds="265,1537">
               <p:ValueBoxSettings />
             </Pad>
-            <Node Bounds="607,10,51,26" Id="Md4JjeTLWGhLSMoRIfY6i0">
+            <Node Bounds="607,-27,51,26" Id="Md4JjeTLWGhLSMoRIfY6i0">
               <p:NodeReference LastCategoryFullName="VVVV.Tilda.View" LastSymbolSource="VVVV.Tilda.GUI.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -248,6 +250,21 @@
             <Pad Id="H4QtHM6GPQCNtx3EaPNJUc" SlotId="AHSzGq5w1XXNu0t7Pbd1hx" Bounds="744,1137" />
             <Pad Id="EOZtY4BPC2WPeG3kBMkh2K" SlotId="AHSzGq5w1XXNu0t7Pbd1hx" Bounds="597,989" />
             <Pad Id="MHVUdKK40jiO6ACTbUMCju" SlotId="LG74QrKMe9nPLrioRMPd3P" Bounds="820,557" />
+            <ControlPoint Id="MybR2WTLVLsOvb3M60BWEu" Bounds="328,1537" />
+            <Node Bounds="608,69,142,26" Id="TOKqMfJz6qXO7J6ueB3TOq">
+              <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="SetEnableTCChangesLocally" />
+              </p:NodeReference>
+              <Pin Id="KzIqLJ2w2YkOExcmq3nfmw" Name="Input" Kind="StateInputPin" />
+              <Pin Id="QgrIYoRWm68PzLiLAfwyG3" Name="EnableTCChangesLocally" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="O9ilC9317yVPoWAcgqmrAR" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="TUITA35OPV6P22ot1bRdkM" Bounds="747,23" />
           </Canvas>
           <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
             <Fragment Id="MRFnVwHDf0WOO7H3jKbCxI" Patch="ESJZDDS0I02LAWDOx9RJVV" Enabled="true" />
@@ -272,7 +289,6 @@
           <Link Id="PDuPBjhjiOLQHjn3soGIlp" Ids="TR9whnNglWwNyGj6FenGTc,M4SLhtcQOfpPasMMxzrAy2" />
           <Link Id="E92Js2FHVMtPQr6LfHiTuL" Ids="ISoiKjVVPJQNXuVdBULEkd,S571PaKsvugN5FXYnwyyzm" />
           <Link Id="J52aPjDspzSPSeib2xSrUt" Ids="DPYmFqZ4XIlMi4ijZqlDbe,SDCCVRiyyPzPq0MVcVveYE" />
-          <Link Id="VcfyaNsSqnYO8ZIJOvemxA" Ids="MPw1EUQVZbDOEVirHc0C32,CHXiCqQJ4vGQbOzXgU2yee" />
           <Slot Id="PQBycvIcWqFL7PAyZMnhvB" Name="Editor" />
           <Link Id="BkotrDB0s2tO0Iq5eOVwZx" Ids="RU0MU0YhY5nNEatuNrnRP5,MPw1EUQVZbDOEVirHc0C32" />
           <Link Id="JtbBfSZvawhNogsCVPub3B" Ids="DuMUbNg7ItBMXS2Q55keuo,OQvsUNPeE9ULFfegMkLz9w" />
@@ -302,6 +318,12 @@
           <Slot Id="AHSzGq5w1XXNu0t7Pbd1hx" Name="Inspektor Panel" />
           <Link Id="Lv7WBkmvO7bN0JHDuV2mpg" Ids="DPYmFqZ4XIlMi4ijZqlDbe,L0UJGxnTLWNP0hupS4uNlG" />
           <Link Id="EVYeCSTixyHPmiL5xIgaDD" Ids="MHVUdKK40jiO6ACTbUMCju,KpEgkz1tHsCN7C75RH2gft" />
+          <Link Id="Aqd0nhDUzmQNWOctdBLpRk" Ids="MybR2WTLVLsOvb3M60BWEu,QSuEl1P9NOPNlPLer9uGGN" IsHidden="true" />
+          <Link Id="Q9uNDH0wNIDMwf2ltkejYg" Ids="VU9kECdpjKHL8iKGYWKw5P,MybR2WTLVLsOvb3M60BWEu" />
+          <Link Id="FF6pQqq6rKkPcUB3df3KRx" Ids="MPw1EUQVZbDOEVirHc0C32,KzIqLJ2w2YkOExcmq3nfmw" />
+          <Link Id="TfWp3RSkqrTLYyj5lRkVVq" Ids="O9ilC9317yVPoWAcgqmrAR,CHXiCqQJ4vGQbOzXgU2yee" />
+          <Link Id="DGdOhYfkKATL3RJZkq2OGv" Ids="TUITA35OPV6P22ot1bRdkM,QgrIYoRWm68PzLiLAfwyG3" />
+          <Link Id="PHMKCi0nnu5OQwVW9SUsUE" Ids="AjKJuo3z00POvukcZa2tg1,TUITA35OPV6P22ot1bRdkM" IsHidden="true" />
         </Patch>
       </Node>
       <Canvas Id="B57yESLzkYPPe12SwjH38r" Name="Operations" Position="188,291" CanvasType="Group">
@@ -378,8 +400,8 @@
                 </p:NodeReference>
                 <Pin Id="MmNP544euRaNWt8HyrNF7u" Name="Timeline" Kind="InputPin" />
                 <Pin Id="JMZrZVz0nMRQH1HdicMeuI" Name="Editor" Kind="InputPin" />
-                <Pin Id="UzedThOzlqlM82AomHXVT5" Name="Timeline" Kind="OutputPin" />
                 <Pin Id="SHJsZt8sCZuMtoykICpm63" Name="Editor" Kind="OutputPin" />
+                <Pin Id="UzedThOzlqlM82AomHXVT5" Name="Timeline" Kind="OutputPin" />
               </Node>
               <Node Bounds="371,834,120,19" Id="E4j98CEwa9VPXGOBbjdl0A">
                 <p:NodeReference LastCategoryFullName="VL.Tilda" LastSymbolSource="VVVV.Tilda.GUI.vl">
@@ -1014,6 +1036,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetView" />
                 </p:NodeReference>
                 <Pin Id="BlKQjt9vGXoNWHuhup6kDH" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Kt5fFeeu91IPP0Ft77tLY9" Name="Output" Kind="OutputPin" />
                 <Pin Id="P2gnh2mCEtILaGgZMJTcja" Name="DrawOffset" Kind="OutputPin" />
                 <Pin Id="QGS7ED66oTfMxNGcao7v6L" Name="FrameOffset" Kind="OutputPin" />
                 <Pin Id="BOlj7n4e9q7L906KxAvlDZ" Name="MousePositionInFrames" Kind="OutputPin" />
@@ -1028,6 +1051,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetScalaHeight" />
                 </p:NodeReference>
                 <Pin Id="FI9VX1CA0sLQItSCKAo6tO" Name="Input" Kind="StateInputPin" />
+                <Pin Id="HFu0MydCJ0JMKbT3VuSX63" Name="Output" Kind="OutputPin" />
                 <Pin Id="AowySBKcySALt95LxQmXXu" Name="Height" Kind="OutputPin" />
               </Node>
               <Node Bounds="670,-90" Id="Nj1b7VaB5VcQPDikurJHMn">
@@ -1049,6 +1073,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetTrackHeight" />
                 </p:NodeReference>
                 <Pin Id="JA2BT9jG19PL1BLT5EqkGh" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Vxe1kbYdIWjMBkk7C57b1R" Name="Output" Kind="OutputPin" />
                 <Pin Id="HVTmowQ1lR7O6NXfCcDSfL" Name="TrackHeight" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="SWbqhqrssFRNmAyTa6luzg" Bounds="264,-275" />
@@ -1490,7 +1515,7 @@
                 </Pin>
                 <Pin Id="C4Ld05gsUpJPndnb3oduO9" Name="Result" Kind="OutputPin" />
               </Node>
-              <Node Bounds="881,298,80,80" Id="U5AItx8GGWwLfrPzUZ3b0n">
+              <Node Bounds="763,320,176,110" Id="U5AItx8GGWwLfrPzUZ3b0n">
                 <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -1500,18 +1525,31 @@
                 <Patch Id="HozwV8pOSRCPl0VmN18XFi" ManuallySortedPins="true">
                   <Patch Id="AO3TmWObyd3PGunWi8APG3" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="Utq5Fka31yqM83ry8wGjrS" Name="Then" ManuallySortedPins="true" />
-                  <Node Bounds="895,333,52,13" Id="JWNqsott4tWNtgPDzn0jNf">
+                  <Node Bounds="775,376,65,26" Id="JWNqsott4tWNtgPDzn0jNf">
                     <p:NodeReference LastCategoryFullName="VL.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="SetTC" />
                     </p:NodeReference>
                     <Pin Id="Ca2fcHYbTj0MDZjuwy3m0f" Name="Input" Kind="InputPin" />
                     <Pin Id="DfAW5djKU3pOQqimjF8TOL" Name="TC" Kind="InputPin" />
+                    <Pin Id="IaxJf3Xou91OCKbUW4z0J6" Name="Apply" Kind="InputPin" />
                     <Pin Id="MBsyivHm5ztPBZgdKPLSfM" Name="Output" Kind="OutputPin" />
                   </Node>
+                  <Node Bounds="884,377,43,26" Id="G3WPPlofuaaMA5OWJsEtHE">
+                    <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="SetTC" />
+                      <CategoryReference Kind="RecordType" Name="Editor" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="JNSsZARpo8bQMPDyOK4zyU" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="SNhoBdbfhrIN1xRT5RCo1K" Name="TC" Kind="InputPin" />
+                    <Pin Id="BiTZJdqbssKN4id01h8LxD" Name="Output" Kind="StateOutputPin" />
+                  </Node>
                 </Patch>
+                <ControlPoint Id="JdV12NFtxFJNrk0nwTBkUM" Bounds="893,327" Alignment="Top" />
+                <ControlPoint Id="QwmJgP0QfisPgxbVExCMUu" Bounds="886,424" Alignment="Bottom" />
               </Node>
-              <ControlPoint Id="N8bXz4uqLyxNmkV0v5FzPU" Bounds="428,-66" />
+              <ControlPoint Id="N8bXz4uqLyxNmkV0v5FzPU" Bounds="512,16" />
               <Node Bounds="1066,-88,241,404" Id="SJjhMGRJwpSO6b6R02fl4l">
                 <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -1639,22 +1677,12 @@
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="718,238,81,22" Id="SEWe8VqubutQNxVYnNNOk2">
-                <p:NodeReference LastCategoryFullName="VL.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="SetPlayState" />
-                </p:NodeReference>
-                <Pin Id="HJLU4uCkVoKN9rGjFx3T6N" Name="Input" Kind="StateInputPin" />
-                <Pin Id="BrFvRBLvJZ4LuDmFZBQt4W" Name="PlayState" Kind="InputPin" />
-                <Pin Id="NC456jYtBzvO5iejhYRBbD" Name="Apply" Kind="InputPin" />
-                <Pin Id="C5iaTkslZIVNRnrg2m9hlh" Name="Output" Kind="StateOutputPin" />
-              </Node>
-              <Pad Id="Imp3e9TYsgIQVUhnQ96jU8" Comment="PlayState" Bounds="758,173,20,19" ShowValueBox="true" isIOBox="true" Value="0">
+              <Pad Id="Imp3e9TYsgIQVUhnQ96jU8" Comment="PlayState" Bounds="781,142,20,19" ShowValueBox="true" isIOBox="true" Value="0">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Integer32" />
                 </p:TypeAnnotation>
               </Pad>
-              <ControlPoint Id="IsyHXoc3hB5Mk6OnGuNT79" Bounds="919,431" />
+              <ControlPoint Id="IsyHXoc3hB5Mk6OnGuNT79" Bounds="919,111" />
               <Node Bounds="1372,-189,25,19" Id="Do4pTMuGlZ0P0S1AIL0w7W">
                 <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1729,15 +1757,16 @@
                 <Pin Id="MhrnE1pCjzALDaC7f4EkFt" Name="State" Kind="InputPin" />
                 <Pin Id="CTuMjTWBXydPok1jTEV3in" Name="EnvelopeEditingOn" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="IO79rPXdLVeMkiyXLnCctA" Bounds="394,38" />
+              <ControlPoint Id="IO79rPXdLVeMkiyXLnCctA" Bounds="507,555" />
               <ControlPoint Id="Jy207JRRkKmORHD8Oz9WBO" Bounds="590,-385" />
-              <Node Bounds="586,-209,185,26" Id="UqYzzLqWBOUMtpIobGSMTJ">
+              <Node Bounds="584,-249,265,26" Id="UqYzzLqWBOUMtpIobGSMTJ">
                 <p:NodeReference LastCategoryFullName="VVVV.Tilda.View" LastSymbolSource="VVVV.Tilda.GUI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Split" />
                   <CategoryReference Kind="Category" Name="Editor" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="BH389pIgQWTOE8wiCPSX3D" Name="Input" Kind="StateInputPin" />
+                <Pin Id="SJyUYl5YxN0LosNbxqAZ5w" Name="Output" Kind="OutputPin" />
                 <Pin Id="UfTGiTaazroO6LorCJrP4T" Name="DrawOffset" Kind="OutputPin" />
                 <Pin Id="JNS5oW2hVosMwjS1EF0czx" Name="FrameOffset" Kind="OutputPin" />
                 <Pin Id="Nu4o4S7M5uxM7tMk8NsX1j" Name="MousePositionInFrames" Kind="OutputPin" />
@@ -1763,7 +1792,7 @@
                 <Pin Id="LNaMgJvWaLbQXfxqORISPi" Name="Keyboard" Kind="OutputPin" />
                 <Pin Id="NR3gNvAW7r7O0G1ZrrmU9k" Name="PressedKeys" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="HoRxabMNEZrMlE9vKqS0Ey" Bounds="804,-222" />
+              <ControlPoint Id="HoRxabMNEZrMlE9vKqS0Ey" Bounds="887,481" />
               <Node Bounds="903,-167,36,26" Id="U3ZzmyYJSMbM1pf8KHfFSa">
                 <p:NodeReference LastCategoryFullName="VVVV.Tilda.Scala" LastSymbolSource="VVVV.Tilda.GUI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1787,13 +1816,60 @@
                 </Pin>
                 <Pin Id="FTGvjqd89FnP1rKMeBv1x1" Name="Output" Kind="OutputPin" />
               </Node>
-              <Node Bounds="747,-341" Id="Usz6TUCPUpeMjiO00vDnvO">
+              <Node Bounds="1325,-307,54,26" Id="Usz6TUCPUpeMjiO00vDnvO">
                 <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetState" />
                 </p:NodeReference>
                 <Pin Id="AHuFLs8WFeZOvdiPz8mbL8" Name="Input" Kind="StateInputPin" />
+                <Pin Id="HZxRznUOvR3PuceEq1S9Zn" Name="Output" Kind="OutputPin" />
                 <Pin Id="PdrlRrY1p3ZLUeJK6ufaJB" Name="State" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="890,268,70,26" Id="MHu6CMGuJhvL5BOyXdA78U">
+                <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="SetPlaystate" />
+                </p:NodeReference>
+                <Pin Id="SvEbp1mVoohPWCsCft5DlS" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Hko4NEpMDqkMiNCjU5zHgh" Name="PlayState" Kind="InputPin" />
+                <Pin Id="CKnqC9yFwboOYa0EXM9qLI" Name="Apply" Kind="InputPin" DefaultValue="False">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Boolean" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="Hb7COZWigpsOaH6bsXA6jJ" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="602,56,140,26" Id="Dcv3PYcMD4QOFnWqqoBxQL">
+                <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="GetApplyTCChangesLocally" />
+                </p:NodeReference>
+                <Pin Id="T5ZwjnfitT2OAtSwJbCWSI" Name="Input" Kind="StateInputPin" />
+                <Pin Id="AVvzGafEKOsMQFEf4l6gX3" Name="ApplyTCChangesLocally" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="491,278,107,129" Id="VJp44rRJC5HP3PIiPSLA6z">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <Pin Id="QSl46OlrUZ0QVTQRts32qk" Name="Condition" Kind="InputPin" />
+                <Patch Id="A9UEL8vVN76MAUxky99L0T" ManuallySortedPins="true">
+                  <Patch Id="MK1PkfRROL5QdJfiMeiK5f" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="JrdqOd2iZ8xN403FvQ8DfQ" Name="Then" ManuallySortedPins="true" />
+                  <Node Bounds="505,329,81,26" Id="SEWe8VqubutQNxVYnNNOk2">
+                    <p:NodeReference LastCategoryFullName="VL.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="SetPlayState" />
+                    </p:NodeReference>
+                    <Pin Id="HJLU4uCkVoKN9rGjFx3T6N" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="BrFvRBLvJZ4LuDmFZBQt4W" Name="PlayState" Kind="InputPin" />
+                    <Pin Id="NC456jYtBzvO5iejhYRBbD" Name="Apply" Kind="InputPin" />
+                    <Pin Id="C5iaTkslZIVNRnrg2m9hlh" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                </Patch>
+                <ControlPoint Id="AK1Lap10g2jNQLExKZVw64" Bounds="507,285" Alignment="Top" />
+                <ControlPoint Id="R2qg1VekpFRPkvaopEyTNL" Bounds="505,402" Alignment="Bottom" />
               </Node>
             </Canvas>
             <Patch Id="NDPxXLamlN5MFDuX6ozkq8" Name="Create" />
@@ -1838,7 +1914,6 @@
             <Link Id="NxY05cEdDEuPesvN1jAIhf" Ids="VabNbbK2oT3O1HmV9nro7u,DfAW5djKU3pOQqimjF8TOL" />
             <Link Id="FpHNNJnLUNUNpBQ3pYvHUq" Ids="NJCrnnbV3dBNvBoQZjUQ5a,CqKgWslEuu7NPPzUmHmtXJ" IsHidden="true" />
             <Link Id="OZDp8bJso3BMf0FfnX6Ng2" Ids="NNuSsyeDjZmLdD3WiF29WW,FsVXe5iKepvMLNKc3k2Yd0" />
-            <Link Id="HQw4FkFwBblLGwwclSlRc6" Ids="N8bXz4uqLyxNmkV0v5FzPU,HJLU4uCkVoKN9rGjFx3T6N" />
             <Link Id="AbuAe6hOhH5QUEQMJPSiW7" Ids="Imp3e9TYsgIQVUhnQ96jU8,BrFvRBLvJZ4LuDmFZBQt4W" />
             <Link Id="LS00XSP2Ly6Lfu1EavZDcQ" Ids="C4Ld05gsUpJPndnb3oduO9,IsyHXoc3hB5Mk6OnGuNT79" />
             <Link Id="TCJy9FRTf8nLanZi8aGOIN" Ids="IsyHXoc3hB5Mk6OnGuNT79,ELXtLsBCDawQEGFTUrQVt4" IsHidden="true" />
@@ -1849,7 +1924,6 @@
             <Link Id="L21bh0EcErnP0IZMksmkYH" Ids="DVD1qbQ8QqXP5OgBfBW5jV,URETrxIzKtuLvMBPB3MJXE" />
             <Link Id="Jj4S6r6Dbh4Oc3aLdJSSg7" Ids="C4Ld05gsUpJPndnb3oduO9,HJ8TNxsPRliMprkXxOi8EG" />
             <Link Id="Dn4hMZIWK9vLP8BXC3azBM" Ids="FPgnSqUsuxNLPCiOQORckT,DqJH4mnHMpzNQggE1Ktgi0" />
-            <Link Id="Kd3V5q6ukY3NyKeq59s4lO" Ids="DmhY756YyUiNMypBv2D8Uy,NC456jYtBzvO5iejhYRBbD" />
             <Link Id="CVsNAMQPyEGL3WLrj5j3JP" Ids="TruDz7BpAnsN71HSxRf5N1,Ssyp2NoRFklNNv0BtUGpCT" />
             <Link Id="BobGWhZ1WwMLm3Xgc5veO3" Ids="NRbEZfjXgk6MECqBSBQNVY,Pv28IGgpjX2Mx8TZ1anKt4" />
             <Link Id="K6fK2aT5XmWLg0YLYrkmxL" Ids="TwSsyMUqq8mP037us1fFIV,UztHKkLEdHPNjs3KxJZfGc" />
@@ -1857,7 +1931,6 @@
             <Link Id="LKc6dWbRQBlLVAaWWf6gdG" Ids="CTuMjTWBXydPok1jTEV3in,MdYan3A0ZbcMaXCPEugwKT" />
             <Link Id="NCyRG12GeFKNMKNoIyHauS" Ids="N8bXz4uqLyxNmkV0v5FzPU,Ca2fcHYbTj0MDZjuwy3m0f" />
             <Link Id="Nplww6DeZo6OZRyRrHyoKu" Ids="IO79rPXdLVeMkiyXLnCctA,OIvh0hNUgJLMtSA5oRzYYK" IsHidden="true" />
-            <Link Id="Ny1gtdBlgufNVTmwRYQSGK" Ids="N8bXz4uqLyxNmkV0v5FzPU,IO79rPXdLVeMkiyXLnCctA" />
             <Link Id="KA6tQry2qIiL1VKgwMCQYu" Ids="QBVzPGsDLMJLPiiodBtyzh,Jy207JRRkKmORHD8Oz9WBO" IsHidden="true" />
             <Link Id="QZPxz8Zvik1N1lRcj37Wzr" Ids="Jy207JRRkKmORHD8Oz9WBO,BH389pIgQWTOE8wiCPSX3D" />
             <Link Id="QMfILBl5mCPNmzxGDbusK3" Ids="JUGgtnNjDyLLgruMtJsi9O,T8q2gweIbNPLarj6q8qDAa" />
@@ -1868,13 +1941,30 @@
             <Link Id="SYBZivBrigqPp5xl4At362" Ids="PR17UAJRUWgOkmw0BmpISO,R8oHFtuSKK8MbD35dADPkP" />
             <Link Id="QyfNtOFinFuPwPbwqrQhT8" Ids="Nu4o4S7M5uxM7tMk8NsX1j,TzRIuKqpnpjPmo9sp4RS3z" />
             <Link Id="O6RbcmMasksM6q0u7tRg8o" Ids="HoRxabMNEZrMlE9vKqS0Ey,MwijrM6TDajQVlejV6DwGl" IsHidden="true" />
-            <Link Id="Tt1414UmmBcMYaiVhrtiua" Ids="Jy207JRRkKmORHD8Oz9WBO,HoRxabMNEZrMlE9vKqS0Ey" />
             <Link Id="Fsh7YVGCnvUPQIW8584AP2" Ids="PbKfLAErp3xMLX4NaTNI9x,KYcG5O8inzbNfcU62N9cio" />
             <Link Id="CjLwBv5M9LhMwxGuZZ4bp2" Ids="JxjuYUeiFL7OcQ78ItHH17,S7Dhod0CHQ2MYJoteKGekL" />
             <Link Id="A67hrgHNoqxMn9ny2fLHJU" Ids="FTGvjqd89FnP1rKMeBv1x1,VOB60YyovTQOeT43qsA9cd" />
             <Link Id="SuZD12ljoGBOTVzlbZA2xs" Ids="Jy207JRRkKmORHD8Oz9WBO,AHuFLs8WFeZOvdiPz8mbL8" />
             <Link Id="GSOPrshs91MMubIHaLYQx5" Ids="PdrlRrY1p3ZLUeJK6ufaJB,H0ZRyib0kkpMzF58UlIUpx" />
             <Link Id="ByxreVLihsiO3AJ7kGLcCn" Ids="PdrlRrY1p3ZLUeJK6ufaJB,MhrnE1pCjzALDaC7f4EkFt" />
+            <Link Id="DUERs0mV3oJOOYiPQJorji" Ids="VabNbbK2oT3O1HmV9nro7u,SNhoBdbfhrIN1xRT5RCo1K" />
+            <Link Id="GCZTN7SVU6bMp9gJyRyYjI" Ids="Imp3e9TYsgIQVUhnQ96jU8,Hko4NEpMDqkMiNCjU5zHgh" />
+            <Link Id="UQJCYFsxOm8MUNWup3O4tR" Ids="Jy207JRRkKmORHD8Oz9WBO,SvEbp1mVoohPWCsCft5DlS" />
+            <Link Id="JouToVEiIpkOr4XHBsBnTp" Ids="JdV12NFtxFJNrk0nwTBkUM,QwmJgP0QfisPgxbVExCMUu" IsFeedback="true" />
+            <Link Id="MveFXHfKkkGLx2BsQoHLnb" Ids="Hb7COZWigpsOaH6bsXA6jJ,JdV12NFtxFJNrk0nwTBkUM" />
+            <Link Id="UFp7waUSs0XLFljYo4k8N1" Ids="JdV12NFtxFJNrk0nwTBkUM,JNSsZARpo8bQMPDyOK4zyU" />
+            <Link Id="RNjXhC8dFPzLCvnSJiZCnH" Ids="BiTZJdqbssKN4id01h8LxD,QwmJgP0QfisPgxbVExCMUu" />
+            <Link Id="JG80jgWqoDhLnPxzD55WAn" Ids="QwmJgP0QfisPgxbVExCMUu,HoRxabMNEZrMlE9vKqS0Ey" />
+            <Link Id="VjHGCUeUKHtOoFoZpyoex4" Ids="DmhY756YyUiNMypBv2D8Uy,CKnqC9yFwboOYa0EXM9qLI" />
+            <Link Id="S8vYsc2U6M5NuZZY7w4kVq" Ids="Jy207JRRkKmORHD8Oz9WBO,T5ZwjnfitT2OAtSwJbCWSI" />
+            <Link Id="H83wCcMgzoON38KWiEZ2BH" Ids="AK1Lap10g2jNQLExKZVw64,R2qg1VekpFRPkvaopEyTNL" IsFeedback="true" />
+            <Link Id="BZD0MLZFoCoPQZDkDlDRXR" Ids="N8bXz4uqLyxNmkV0v5FzPU,AK1Lap10g2jNQLExKZVw64" />
+            <Link Id="MNvuExKHwd3QXXtFcBrQwQ" Ids="AK1Lap10g2jNQLExKZVw64,HJLU4uCkVoKN9rGjFx3T6N" />
+            <Link Id="C5kUmeIZ8krMnvprbvxqnL" Ids="C5iaTkslZIVNRnrg2m9hlh,R2qg1VekpFRPkvaopEyTNL" />
+            <Link Id="JVo5WvO9nS0NB0EtBPBZTU" Ids="R2qg1VekpFRPkvaopEyTNL,IO79rPXdLVeMkiyXLnCctA" />
+            <Link Id="IRt6tNOIXj4P7La5LBOmWw" Ids="DmhY756YyUiNMypBv2D8Uy,QSl46OlrUZ0QVTQRts32qk" />
+            <Link Id="PdC5lfCN8sXPxuvbf2EtJy" Ids="AVvzGafEKOsMQFEf4l6gX3,NC456jYtBzvO5iejhYRBbD" />
+            <Link Id="ERNjEbHvQgvL8ABa4QZ17X" Ids="AVvzGafEKOsMQFEf4l6gX3,IaxJf3Xou91OCKbUW4z0J6" />
           </Patch>
         </Node>
         <!--
@@ -2717,6 +2807,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetPressedKeys" />
                 </p:NodeReference>
                 <Pin Id="C5C1vKU5VSkMPoBXJ0lYLz" Name="Input" Kind="StateInputPin" />
+                <Pin Id="F0TffAGn2UoP2EreAccL2f" Name="Output" Kind="OutputPin" />
                 <Pin Id="KZXuPxK02kaMiNcyYWme6y" Name="PressedKeys" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="GFi1axA9e1DMFbeGwaehdw" Bounds="638,-13" />
@@ -2726,6 +2817,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetSelectedClips" />
                 </p:NodeReference>
                 <Pin Id="DEnh4wzuCYoPldjhNrC0g1" Name="Input" Kind="StateInputPin" />
+                <Pin Id="R3VRI2CJw1cLvoFbeJA9x8" Name="Output" Kind="OutputPin" />
                 <Pin Id="Rlm23cnFMGdLj6lpn8zOz6" Name="SelectedClips" Kind="OutputPin" />
               </Node>
               <Node Bounds="585,-98" Id="JRiskuOLG7eNIoQ9HjxzMx">
@@ -2734,6 +2826,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetState" />
                 </p:NodeReference>
                 <Pin Id="KDDjg7dakvuL213JpkTd28" Name="Input" Kind="StateInputPin" />
+                <Pin Id="DVu3dN6dPmEMjsrkjTdlZW" Name="Output" Kind="OutputPin" />
                 <Pin Id="JekZ4clSr5JM4bFG8JZqb8" Name="State" Kind="OutputPin" />
               </Node>
             </Canvas>
@@ -3082,6 +3175,7 @@
                   <CategoryReference Kind="Category" Name="Editor" />
                 </p:NodeReference>
                 <Pin Id="BOthXioGTK9MXdWfDJwwWZ" Name="Input" Kind="StateInputPin" />
+                <Pin Id="MQESlBngpliPEpSPB04br2" Name="Output" Kind="OutputPin" />
                 <Pin Id="SB8zKB0aUK1N7vnJ9PR3HO" Name="MousePositionInFrames" Kind="OutputPin" />
                 <Pin Id="TtN7xpfFGgPMNZ1sdGRDL5" Name="MousePosition" Kind="OutputPin" />
                 <Pin Id="ISnZJAHLmLoL3Cet5JJ77J" Name="Left Pressed" Kind="OutputPin" />
@@ -3094,6 +3188,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetPressedKeys" />
                 </p:NodeReference>
                 <Pin Id="IjtkiOyDrLqM4dNTdvX2vS" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Q1Eq5XrIHaPME9BLei0XM7" Name="Output" Kind="OutputPin" />
                 <Pin Id="EdNqCl83KNNOkSVk8ZWC03" Name="PressedKeys" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="M70n1lzG7mMPl5Rc2jydnE" Bounds="633,298" />
@@ -3658,6 +3753,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetPressedKeys" />
                 </p:NodeReference>
                 <Pin Id="QdWw72nqh8VM5DXfbNHqJz" Name="Input" Kind="StateInputPin" />
+                <Pin Id="KKBtGpm6NPBQQZCtP87bc1" Name="Output" Kind="OutputPin" />
                 <Pin Id="NnPCXVOPbBSQLlpSGVsBjI" Name="PressedKeys" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="JCbXV7XsYKNP06LBWQilXm" Bounds="776,149" />
@@ -3667,6 +3763,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetState" />
                 </p:NodeReference>
                 <Pin Id="UVfvtOkbJThLRauW6hzZAN" Name="Input" Kind="StateInputPin" />
+                <Pin Id="BmbEOxZclsCPaCTrylRrae" Name="Output" Kind="OutputPin" />
                 <Pin Id="TmDXiSsLdXYN61gmZ93kYr" Name="State" Kind="OutputPin" />
               </Node>
             </Canvas>
@@ -4579,6 +4676,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetPressedKeys" />
                 </p:NodeReference>
                 <Pin Id="CX3GkRXwetYN1OwiR8BUnI" Name="Input" Kind="StateInputPin" />
+                <Pin Id="HPItUsGjXffLJapxvqLhoC" Name="Output" Kind="OutputPin" />
                 <Pin Id="AG9j2n7Cn5lLOueKdKJ0o2" Name="PressedKeys" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="BfQ3oZA1ilYP8YTXJYq0Jm" Bounds="1630,1579" />
@@ -4588,6 +4686,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetLastCategory" />
                 </p:NodeReference>
                 <Pin Id="MhKGPacymAAMFCBFkFBmng" Name="Input" Kind="StateInputPin" />
+                <Pin Id="J3xAyJGGDC1PvaiqCeECbt" Name="Output" Kind="OutputPin" />
                 <Pin Id="C5MTFXR1K07LHiWrH0oxW0" Name="LastCategory" Kind="OutputPin" />
               </Node>
               <Node Bounds="1418,113,92,26" Id="Lay3Uvf2N2eNEmS6zvnnBX">
@@ -4596,6 +4695,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetSelectedClips" />
                 </p:NodeReference>
                 <Pin Id="GWvp9R3DyfJLRuvA3WmDyK" Name="Input" Kind="StateInputPin" />
+                <Pin Id="LDOLHqOQgacOl5waid8GAh" Name="Output" Kind="OutputPin" />
                 <Pin Id="JLS1ldUICljQMCAqqa2NoA" Name="SelectedClips" Kind="OutputPin" />
               </Node>
               <Node Bounds="1330,114,54,26" Id="HNKEkVzC6L7M7xX0bgZOCd">
@@ -4604,6 +4704,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetState" />
                 </p:NodeReference>
                 <Pin Id="IoCiVQUuqjRNr2405Z2cTI" Name="Input" Kind="StateInputPin" />
+                <Pin Id="OEvjCv0OTtnN45ys4uqgD2" Name="Output" Kind="OutputPin" />
                 <Pin Id="FbknqkhJOX1PevZPyelqib" Name="State" Kind="OutputPin" />
               </Node>
             </Canvas>
@@ -5149,6 +5250,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetPressedKeys" />
                 </p:NodeReference>
                 <Pin Id="Ep8ImgRr1yeMNX5mRdu8BK" Name="Input" Kind="StateInputPin" />
+                <Pin Id="PuIZce5oe4sLzCISMWGdGN" Name="Output" Kind="OutputPin" />
                 <Pin Id="S043tcVRoO1N7DOYFb3TT5" Name="PressedKeys" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="SOhhNySbLqnLHFzH4dT6Ve" Bounds="544,140" />
@@ -5158,6 +5260,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetMouse" />
                 </p:NodeReference>
                 <Pin Id="CEo135VRX1qOCog7CAF6rG" Name="Input" Kind="StateInputPin" />
+                <Pin Id="EX43JVWVIBTPYjn9AKLl9V" Name="Output" Kind="OutputPin" />
                 <Pin Id="JLOlqTAAkMpLLavLJFuq8g" Name="MousePositionInFrames" Kind="OutputPin" />
                 <Pin Id="CVdD9UlXYZFL8MRKI9px5c" Name="MousePosition" Kind="OutputPin" />
                 <Pin Id="I8aSAFNUjAlP4ADSKX3lrj" Name="Left Pressed" Kind="OutputPin" />
@@ -5171,6 +5274,7 @@
                   <CategoryReference Kind="Category" Name="Editor" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="L9q47TiaxHdNU6BMONovSW" Name="Input" Kind="StateInputPin" />
+                <Pin Id="C2H1mlE7TqNQOur0ZzzKiT" Name="Output" Kind="OutputPin" />
                 <Pin Id="IEC0X1OD2rbOfKXELQ1krI" Name="DrawOffset" Kind="OutputPin" />
                 <Pin Id="OmPeUqNKaXVQLoafsM1SFM" Name="FrameOffset" Kind="OutputPin" />
                 <Pin Id="A54gEpKVJBOP9X6YLQqos5" Name="MousePositionInFrames" Kind="OutputPin" />
@@ -5191,6 +5295,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetScalaHeight" />
                 </p:NodeReference>
                 <Pin Id="M7Oh2SgbRtwLHvRMQhclUA" Name="Input" Kind="StateInputPin" />
+                <Pin Id="N8eAVOQsU9XLsIohu395sQ" Name="Output" Kind="OutputPin" />
                 <Pin Id="LBVAiA5w8LdPi86QSAXHtf" Name="Height" Kind="OutputPin" />
               </Node>
               <Node Bounds="727,203,25,19" Id="Iib384uksWALk8n5YQaxxG">
@@ -5212,6 +5317,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetTrackHeight" />
                 </p:NodeReference>
                 <Pin Id="DBSizKAQEVbOMJTmhxNKrj" Name="Input" Kind="StateInputPin" />
+                <Pin Id="LgMSHLlB9TOPr154W92aIe" Name="Output" Kind="OutputPin" />
                 <Pin Id="EZCU7yp3eB1LZEI41Jq1VF" Name="TrackHeight" Kind="OutputPin" />
               </Node>
               <Node Bounds="1001,119,91,26" Id="GFE6f7Nxqg9Nt1OcSL4Tkc">
@@ -5220,6 +5326,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetLastCategory" />
                 </p:NodeReference>
                 <Pin Id="TOOwwH3kSrmPLjbRrsUc7c" Name="Input" Kind="StateInputPin" />
+                <Pin Id="SZF4DhdTPdnQNmWF25SQUb" Name="Output" Kind="OutputPin" />
                 <Pin Id="AkxSnWcCbE6QNudiCXJ5Hq" Name="LastCategory" Kind="OutputPin" />
               </Node>
               <Node Bounds="385,116" Id="MATcKkDLLqZO4s8QRtwN1V">
@@ -5228,6 +5335,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetState" />
                 </p:NodeReference>
                 <Pin Id="E7E5h1Z64W5PvVmKufGYmD" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Vhqe1AKb1agNp2NxgOzYyl" Name="Output" Kind="OutputPin" />
                 <Pin Id="P0lrYogsrzlQA5GmigDMPG" Name="State" Kind="OutputPin" />
               </Node>
               <Pad Id="UQfUk4Nu4EMQbASLcayEmj" Comment="" Bounds="648,358,35,35" ShowValueBox="true" isIOBox="true" />
@@ -5357,7 +5465,7 @@
                 <Pin Id="Id0IR1Y2nyiNfuKsFUx3TR" Name="Is Down" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="ISq3ceslIsnPOWKMsExOlo" Bounds="486,165" />
-              <Node Bounds="234,531,123,151" Id="Vg7eg0cPt0vPEgwNxZLCcm">
+              <Node Bounds="234,531,212,172" Id="Vg7eg0cPt0vPEgwNxZLCcm">
                 <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -5374,6 +5482,7 @@
                     </p:NodeReference>
                     <Pin Id="Vx3My8egAzUNgw3ihX7keG" Name="Input" Kind="StateInputPin" />
                     <Pin Id="VCjF1HbabhaLBlrJxW5122" Name="PlayState" Kind="InputPin" />
+                    <Pin Id="NlTBPgkFaraMWbYmajoPz8" Name="Apply" Kind="InputPin" />
                     <Pin Id="USRNjQIhAvyO58ps9qrZcf" Name="Output" Kind="StateOutputPin" />
                   </Node>
                   <Node Bounds="246,554,89,26" Id="VEu929dOOBVNUnyx2z2mRY">
@@ -5398,7 +5507,18 @@
                     <Pin Id="E0gL5K04obeMttsPP0HwAb" Name="Input 2" Kind="InputPin" />
                     <Pin Id="EpkUFSxQs12MEkLfEOQB31" Name="Output" Kind="OutputPin" />
                   </Node>
+                  <Node Bounds="364,635,70,26" Id="KWEIUWzTBKHLw1GjRAanWp">
+                    <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="SetPlaystate" />
+                    </p:NodeReference>
+                    <Pin Id="PKfGcqUEk5EQMythNkCjJP" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="QLQk59VYgbRMqSu4DCMz4R" Name="PlayState" Kind="InputPin" />
+                    <Pin Id="AMXuGmuuEdCMRYREzQg4vA" Name="Output" Kind="StateOutputPin" />
+                  </Node>
                 </Patch>
+                <ControlPoint Id="KH0ufnvdqwSLX9m82NDGzv" Bounds="383,538" Alignment="Top" />
+                <ControlPoint Id="Te6DIpaWyqEPFbCm2xCsbM" Bounds="366,698" Alignment="Bottom" />
               </Node>
               <Pad Id="LEKuZDcaSl4NP4xvGT47Hz" Comment="Key Name" Bounds="350,234,37,19" ShowValueBox="true" isIOBox="true" Value="Space">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -5656,16 +5776,26 @@
                   <Choice Kind="OperationCallFlag" Name="GetPressedKeys" />
                 </p:NodeReference>
                 <Pin Id="JUy6WaH6owsQGIE5FAVGtC" Name="Input" Kind="StateInputPin" />
+                <Pin Id="JyEdLOMSEfMP5Jz5toI1tW" Name="Output" Kind="OutputPin" />
                 <Pin Id="FmUY7oHzKjHOjfVSlzf9yu" Name="PressedKeys" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="Uu5qDlOE0rtOR1DFltE90e" Bounds="534,5" />
-              <Node Bounds="738,-29" Id="KDhbntNJxFpNgMpR1Rvaw6">
+              <ControlPoint Id="Uu5qDlOE0rtOR1DFltE90e" Bounds="368,768" />
+              <Node Bounds="487,-9,54,26" Id="KDhbntNJxFpNgMpR1Rvaw6">
                 <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetState" />
                 </p:NodeReference>
                 <Pin Id="SOtXBB5p7aoNFTVQqxB9ct" Name="Input" Kind="StateInputPin" />
+                <Pin Id="OkGrmW825Q0M7pw45bSByf" Name="Output" Kind="OutputPin" />
                 <Pin Id="OttfGizhBmqQUwBhEoa0Yd" Name="State" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="433,442,140,26" Id="RzZAFaXwMZXLEeqsSXUdAI">
+                <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="GetApplyTCChangesLocally" />
+                </p:NodeReference>
+                <Pin Id="DimLUJirx7ZNo4wDSUL6IH" Name="Input" Kind="StateInputPin" />
+                <Pin Id="B0MvRX9BCXKPRZq8OhsY7w" Name="ApplyTCChangesLocally" Kind="OutputPin" />
               </Node>
             </Canvas>
             <Patch Id="OO7AhyMc9rGLp0FEY2QtpE" Name="Create" />
@@ -5723,7 +5853,6 @@
             <Link Id="FI9hMqMgrXEPREC8yMJbsf" Ids="UOFEdP0MoivLNEESMgW1Dl,Ri2qHkOlegYNkFl5J9SS0i" IsHidden="true" />
             <Link Id="InAF4xdYw6KNqDMQkjSUgY" Ids="Ri2qHkOlegYNkFl5J9SS0i,JUy6WaH6owsQGIE5FAVGtC" />
             <Link Id="CKXhpJfljR9ODoRmUztBFZ" Ids="Uu5qDlOE0rtOR1DFltE90e,BzkzyDxBOm1Phln16n1mZN" IsHidden="true" />
-            <Link Id="MvnYbFDX6HROOk0JthtQud" Ids="Ri2qHkOlegYNkFl5J9SS0i,Uu5qDlOE0rtOR1DFltE90e" />
             <Link Id="HUMaB6ik5qxPjtP9cs4Toz" Ids="FmUY7oHzKjHOjfVSlzf9yu,TmNY8UosuD6OYn4qjC0vVg" />
             <Link Id="FVYLvu3EZdOMXvXXxvPBqw" Ids="FmUY7oHzKjHOjfVSlzf9yu,Kin8I9DCUrKOKWzSPwaGKj" />
             <Link Id="OYDP2Tq791VMkcZfKz013z" Ids="FmUY7oHzKjHOjfVSlzf9yu,LJcV8lpUsLZMjiZWDXOJ1l" />
@@ -5731,6 +5860,14 @@
             <Link Id="H9ggE5ZgX7xNao9ea6xGrJ" Ids="FmUY7oHzKjHOjfVSlzf9yu,OcOUy7zuywBNSq608VvPnt" />
             <Link Id="UIuIYRRXbryLB2HPGGl9tg" Ids="Ri2qHkOlegYNkFl5J9SS0i,SOtXBB5p7aoNFTVQqxB9ct" />
             <Link Id="PUDE0R8f5TpNdnjuNY253x" Ids="OttfGizhBmqQUwBhEoa0Yd,OLwmgPnshjbPTg73WkTrXV" />
+            <Link Id="TbnO3x18B2hMVzl8a1xqQF" Ids="EpkUFSxQs12MEkLfEOQB31,QLQk59VYgbRMqSu4DCMz4R" />
+            <Link Id="BPcucNekPtJPIOAkwsKcca" Ids="KH0ufnvdqwSLX9m82NDGzv,Te6DIpaWyqEPFbCm2xCsbM" IsFeedback="true" />
+            <Link Id="L22VERmNEUCNrOVH3jOr0F" Ids="OkGrmW825Q0M7pw45bSByf,KH0ufnvdqwSLX9m82NDGzv" />
+            <Link Id="OzI7gLmeLXAOu7wXd6Hbtj" Ids="KH0ufnvdqwSLX9m82NDGzv,PKfGcqUEk5EQMythNkCjJP" />
+            <Link Id="L1n7GYX1TyUMOvJuAbuNoH" Ids="AMXuGmuuEdCMRYREzQg4vA,Te6DIpaWyqEPFbCm2xCsbM" />
+            <Link Id="La2b1gcnoq7MVIrsYpNeTH" Ids="Te6DIpaWyqEPFbCm2xCsbM,Uu5qDlOE0rtOR1DFltE90e" />
+            <Link Id="KQ8mEFNoFNgP4Sr4l9EsrZ" Ids="Ri2qHkOlegYNkFl5J9SS0i,DimLUJirx7ZNo4wDSUL6IH" />
+            <Link Id="VpjkOzZjmpqPXDkk2CUC0h" Ids="B0MvRX9BCXKPRZq8OhsY7w,NlTBPgkFaraMWbYmajoPz8" />
           </Patch>
         </Node>
         <!--
@@ -6282,6 +6419,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetMouse" />
                 </p:NodeReference>
                 <Pin Id="RIy2lqqhKbAMgwaSJ4SdfV" Name="Input" Kind="StateInputPin" />
+                <Pin Id="ToohW0abzZpPf1g63oEXtm" Name="Output" Kind="OutputPin" />
                 <Pin Id="GRDP1DqphAFPXGEYxQdnIA" Name="MousePositionInFrames" Kind="OutputPin" />
                 <Pin Id="FnYpzlaDyiZPIS1MUxp4mw" Name="MousePosition" Kind="OutputPin" />
                 <Pin Id="VOGIkfUSk9iM3VTUYIatQU" Name="Left Pressed" Kind="OutputPin" />
@@ -6294,6 +6432,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetView" />
                 </p:NodeReference>
                 <Pin Id="ULtVqLxGwpgLfn85KznErM" Name="Input" Kind="StateInputPin" />
+                <Pin Id="AQmHi1aZLH3Ppu8x9iRjVl" Name="Output" Kind="OutputPin" />
                 <Pin Id="Rph42A2uoiDMH5eEP51SjS" Name="DrawOffset" Kind="OutputPin" />
                 <Pin Id="RrUGvt1FuJZLI5yy9obLoP" Name="FrameOffset" Kind="OutputPin" />
                 <Pin Id="CI8FleKgN7qOMBIRRYuiZ9" Name="MousePositionInFrames" Kind="OutputPin" />
@@ -6307,6 +6446,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetPressedKeys" />
                 </p:NodeReference>
                 <Pin Id="UGYo4syJyVQLfoF2DvBbeB" Name="Input" Kind="StateInputPin" />
+                <Pin Id="GO8So2Bg8Y4Ln0n0xDsluO" Name="Output" Kind="OutputPin" />
                 <Pin Id="G2p0MvqAFKMLQMxSq0fsZo" Name="PressedKeys" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="F2gILn5d2UWN0aFJfZCQaA" Bounds="526,1999" />
@@ -6317,6 +6457,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetSelectedClips" />
                 </p:NodeReference>
                 <Pin Id="BYLqfPvjipXNuuDEmdHflf" Name="Input" Kind="StateInputPin" />
+                <Pin Id="R11yQ7suANsNtSDdPhHL0u" Name="Output" Kind="OutputPin" />
                 <Pin Id="JJXBuTd8OvaM2YZagQvFZl" Name="SelectedClips" Kind="OutputPin" />
               </Node>
               <Node Bounds="524,1919,53,26" Id="DmvqNOnVnzFLGatL6e4myq">
@@ -6393,6 +6534,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetState" />
                 </p:NodeReference>
                 <Pin Id="BamwgyB4hPQQVtzBhkIlQo" Name="Input" Kind="StateInputPin" />
+                <Pin Id="DZ7LbQLYK9pPF8uQNXoC25" Name="Output" Kind="OutputPin" />
                 <Pin Id="EF8UhqFeAclMEUd8ksWFgG" Name="State" Kind="OutputPin" />
               </Node>
               <Node Bounds="595,328,27,19" Id="HwkLqiHR7HJQOQYSEQ1Q6C">
@@ -6442,6 +6584,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetHoveredClip" />
                 </p:NodeReference>
                 <Pin Id="S59DpC3TwhqOn5sJfuqamS" Name="Input" Kind="StateInputPin" />
+                <Pin Id="L7d7aPGk6c6PNMRmukvPGL" Name="Output" Kind="OutputPin" />
                 <Pin Id="QAKUSOrSpLXOI78Pz2k9wj" Name="HoveredClip" Kind="OutputPin" />
               </Node>
               <Node Bounds="669,148,65,26" Id="IlxEvaG3EMlLmzlhd3XBM0">
@@ -7194,6 +7337,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetMouse" />
                 </p:NodeReference>
                 <Pin Id="JWTy46qu7SPQYWRuROM9Z8" Name="Input" Kind="StateInputPin" />
+                <Pin Id="QRJesYsLNwGMzymDwVZTvD" Name="Output" Kind="OutputPin" />
                 <Pin Id="VFiDRoG4PsJNFrUtfk22wT" Name="MousePositionInFrames" Kind="OutputPin" />
                 <Pin Id="POjAxa8NS8iPOPndQFOdPq" Name="MousePosition" Kind="OutputPin" />
                 <Pin Id="Jfe4obFhe9nO5bYZMTJMa2" Name="Left Pressed" Kind="OutputPin" />
@@ -7206,6 +7350,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetPressedKeys" />
                 </p:NodeReference>
                 <Pin Id="VNRQ4GdP49ROvTTVgAI4IJ" Name="Input" Kind="StateInputPin" />
+                <Pin Id="I08RLMyj4TLMoPRwTgpoWR" Name="Output" Kind="OutputPin" />
                 <Pin Id="JY2Ls96rScUOK2axArA5hK" Name="PressedKeys" Kind="OutputPin" />
               </Node>
               <Node Bounds="693,2016,85,26" Id="HYcYRw4OFcjMr4mOE4i6rK">
@@ -7223,6 +7368,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetSelectedClips" />
                 </p:NodeReference>
                 <Pin Id="TxmcRc6nUkRLKKvNpyeSqo" Name="Input" Kind="StateInputPin" />
+                <Pin Id="LDknBj2MYW0OwPP5B70axE" Name="Output" Kind="OutputPin" />
                 <Pin Id="SEJcY2RuCSIQCdIEHhc5VO" Name="SelectedClips" Kind="OutputPin" />
               </Node>
               <Node Bounds="327,1073,571,516" Id="SWELVGK5ImfOPYYTutM5W0">
@@ -7454,6 +7600,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetState" />
                 </p:NodeReference>
                 <Pin Id="IfUmwvGYkD7M4pox5b4X3i" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Iei6YOG9vLmN69VF6KDfQj" Name="Output" Kind="OutputPin" />
                 <Pin Id="JPn94nG45lmNDXvG9GSL0B" Name="State" Kind="OutputPin" />
               </Node>
               <Node Bounds="692,2084,115,26" Id="BHjaFIp2y7YN9g9khyqx9s">
@@ -7481,6 +7628,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetOpenClipTrigger" />
                 </p:NodeReference>
                 <Pin Id="OLgCqXom83UMdOwrVsyKIA" Name="Input" Kind="StateInputPin" />
+                <Pin Id="BWqQVfrjLdhLKx4LBVgr6u" Name="Output" Kind="OutputPin" />
                 <Pin Id="IaBPuSmskcuOekiRHBUTtl" Name="OpenClip" Kind="OutputPin" />
               </Node>
               <Node Bounds="658,-569,56,19" Id="CAnWBasz362PK5itG1B45C">
@@ -8866,6 +9014,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetPressedKeys" />
                 </p:NodeReference>
                 <Pin Id="QS1p0XHwRzXNsENI9cx97A" Name="Input" Kind="StateInputPin" />
+                <Pin Id="N70doYtxDGFNutFsi0xssA" Name="Output" Kind="OutputPin" />
                 <Pin Id="UgJyW0l88s9Nc2VBenhKRn" Name="PressedKeys" Kind="OutputPin" />
               </Node>
               <Node Bounds="-658,-465,105,26" Id="URmLfpGbPmyNFosPy7Gsii">
@@ -8874,6 +9023,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetView" />
                 </p:NodeReference>
                 <Pin Id="QS0tR5SEq5tORCv80iBMRP" Name="Input" Kind="StateInputPin" />
+                <Pin Id="G926UR44fI7OgN9yvuMBv2" Name="Output" Kind="OutputPin" />
                 <Pin Id="N4p6M5iBi02QIZAc5mTS2q" Name="DrawOffset" Kind="OutputPin" />
                 <Pin Id="NQxO2yDV1fuNx2CLnETs2i" Name="FrameOffset" Kind="OutputPin" />
                 <Pin Id="F8xkXMRg56EQB0TlPHJTPP" Name="MousePositionInFrames" Kind="OutputPin" />
@@ -8887,6 +9037,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetMouse" />
                 </p:NodeReference>
                 <Pin Id="V1QYAlVhYmQQXRYXBylyX1" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Hi2dDURXc8zLvPihXVUxWF" Name="Output" Kind="OutputPin" />
                 <Pin Id="IToftIo92EfMTrkNCmKqFJ" Name="MousePositionInFrames" Kind="OutputPin" />
                 <Pin Id="V6grbXDAupMOjl4GWwmbVV" Name="MousePosition" Kind="OutputPin" />
                 <Pin Id="Rr3mWVOdnX9OmItIVd3MbO" Name="Left Pressed" Kind="OutputPin" />
@@ -8900,6 +9051,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetScalaHeight" />
                 </p:NodeReference>
                 <Pin Id="KihI3uSkGZhNBLH962J7X5" Name="Input" Kind="StateInputPin" />
+                <Pin Id="DE8zcwoRZSUPlN6Wn8LXFq" Name="Output" Kind="OutputPin" />
                 <Pin Id="VW0pwMzMNZ1Qd6j2swJFuQ" Name="Height" Kind="OutputPin" />
               </Node>
               <Node Bounds="-235,-352" Id="DjzUDlNNEbnNj7VMMJ3iqn">
@@ -8921,6 +9073,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetTrackHeight" />
                 </p:NodeReference>
                 <Pin Id="Khx68EjnS36MIlzhn5y82h" Name="Input" Kind="StateInputPin" />
+                <Pin Id="SOyKfdE8bWCPHBGpFb6Vc9" Name="Output" Kind="OutputPin" />
                 <Pin Id="HVcpngYBBfGMFwXhFSOLMx" Name="TrackHeight" Kind="OutputPin" />
               </Node>
               <Node Bounds="69,1252,52,26" Id="OBxSk6CMoRQQU4L60tgZW4">
@@ -8948,6 +9101,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetSelectedClips" />
                 </p:NodeReference>
                 <Pin Id="Vlj0MTu75HOPR9s9OCn4gr" Name="Input" Kind="StateInputPin" />
+                <Pin Id="I820t8DNwxnLa4OyB2AnhA" Name="Output" Kind="OutputPin" />
                 <Pin Id="MlNE6lo9shhOlABNy1q1br" Name="SelectedClips" Kind="OutputPin" />
               </Node>
               <Node Bounds="503,-329,54,26" Id="I1lozyLhfGtPWOHXYbwC1S">
@@ -8956,6 +9110,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetState" />
                 </p:NodeReference>
                 <Pin Id="JZQHO1Xm3kVLzbbpYFhB0H" Name="Input" Kind="StateInputPin" />
+                <Pin Id="GOEbxOkS9O9PQBhFGQGOo6" Name="Output" Kind="OutputPin" />
                 <Pin Id="Rj1IueYpb5dOAtn5thlX2v" Name="State" Kind="OutputPin" />
               </Node>
               <Pad Id="AMeQJ78vWDQMVjmT8povkx" Bounds="-1149,-681,551,71" ShowValueBox="true" isIOBox="true" Value="SORRY FOR THE MESS">
@@ -9009,6 +9164,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetHoveredClip" />
                 </p:NodeReference>
                 <Pin Id="FeSiBliA84DNepp1eLKJ9w" Name="Input" Kind="StateInputPin" />
+                <Pin Id="TkrgaOGiZ1DMWzEBNJrj8F" Name="Output" Kind="OutputPin" />
                 <Pin Id="Vggk6hwY40uOTg6ucxgaLx" Name="HoveredClip" Kind="OutputPin" />
               </Node>
               <Node Bounds="262,1263,37,19" Id="Jfr5tup2zGqMXFdO8GkrcD">
@@ -11021,6 +11177,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetPressedKeys" />
                 </p:NodeReference>
                 <Pin Id="UebuOxvuIqcPq0VDBcj5y0" Name="Input" Kind="StateInputPin" />
+                <Pin Id="HXtdpaybXhnOunpfd23WT6" Name="Output" Kind="OutputPin" />
                 <Pin Id="AKRvDg3mm2dMT4tZLmCDou" Name="PressedKeys" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="DHpzpkJz7IvLAZvklSi3BV" Bounds="1091,2158" />
@@ -11030,6 +11187,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetMouse" />
                 </p:NodeReference>
                 <Pin Id="SW05IXHhGZgN5MvOZsqsOE" Name="Input" Kind="StateInputPin" />
+                <Pin Id="T2bIii6fjT9PlPyeX8zGfn" Name="Output" Kind="OutputPin" />
                 <Pin Id="NpplHT85eQWLwtd8k32m4S" Name="MousePositionInFrames" Kind="OutputPin" />
                 <Pin Id="L8kJvHWk1HmOURpMvWj9FP" Name="MousePosition" Kind="OutputPin" />
                 <Pin Id="HokIQNWQfGcPW2xNx52hMQ" Name="Left Pressed" Kind="OutputPin" />
@@ -11042,6 +11200,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetState" />
                 </p:NodeReference>
                 <Pin Id="M3h7Dfm6eksLi3XOG2TM7d" Name="Input" Kind="StateInputPin" />
+                <Pin Id="VSGWwSJx9nfMAQ5HW9tjOF" Name="Output" Kind="OutputPin" />
                 <Pin Id="DkBRPydBeACLXjSBJPp6qK" Name="State" Kind="OutputPin" />
               </Node>
               <Node Bounds="1090,2089,74,26" Id="TqoylmHG0j4P7PBDZF4ZBd">
@@ -11583,6 +11742,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetView" />
                 </p:NodeReference>
                 <Pin Id="Tge0HTMVCX1Mn2CMcK1wTL" Name="Input" Kind="StateInputPin" />
+                <Pin Id="LzxfHuWw6IPMH2jEevOwPV" Name="Output" Kind="OutputPin" />
                 <Pin Id="LrU5tbQfaKOQPVPXYfGxLd" Name="DrawOffset" Kind="OutputPin" />
                 <Pin Id="CeDCPDlAsUMNxuExLmTtSX" Name="FrameOffset" Kind="OutputPin" />
                 <Pin Id="AwONmVUQpjJOxwXvOsKG3l" Name="MousePositionInFrames" Kind="OutputPin" />
@@ -11759,6 +11919,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetMouse" />
                 </p:NodeReference>
                 <Pin Id="FAI1tFc2B18OtVgb0vUKVA" Name="Input" Kind="StateInputPin" />
+                <Pin Id="JI2V4xiy3CBQQiawPFvr85" Name="Output" Kind="OutputPin" />
                 <Pin Id="AdSVAyY2SIELStT9nxrRmf" Name="MousePositionInFrames" Kind="OutputPin" />
                 <Pin Id="GxuQG8q9ESnLQmyilUrCfy" Name="MousePosition" Kind="OutputPin" />
                 <Pin Id="DIH6OUcdXEiQGnifHewg6N" Name="Left Pressed" Kind="OutputPin" />
@@ -11771,6 +11932,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetView" />
                 </p:NodeReference>
                 <Pin Id="LUFbs4G54NlLQ8TQ6BM9ex" Name="Input" Kind="StateInputPin" />
+                <Pin Id="EcBzSMt0cqCPfmCGRI92uN" Name="Output" Kind="OutputPin" />
                 <Pin Id="L34blALbcygNKIb90DvCPg" Name="DrawOffset" Kind="OutputPin" />
                 <Pin Id="BBjePGHn0A7OOFH80ftFpO" Name="FrameOffset" Kind="OutputPin" />
                 <Pin Id="R41J7mzbNVsMGe9CwNwZ6I" Name="MousePositionInFrames" Kind="OutputPin" />
@@ -11786,6 +11948,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetState" />
                 </p:NodeReference>
                 <Pin Id="GT3qLrkLQ88M7YkAg44EAc" Name="Input" Kind="StateInputPin" />
+                <Pin Id="MV2YYHgHm4yOQoP0k4zhoi" Name="Output" Kind="OutputPin" />
                 <Pin Id="QgNqaIw0n0tLtx3EgZLP44" Name="State" Kind="OutputPin" />
               </Node>
               <Node Bounds="517,672" Id="Rhodo4Jr6n7PjZMCCxixdm">
@@ -13000,6 +13163,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetHoveredClip" />
                 </p:NodeReference>
                 <Pin Id="JlvUBUxJ2s6MrcV4i9jQE1" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Jbo5Ft2MQo9PJWfqFLSN11" Name="Output" Kind="OutputPin" />
                 <Pin Id="S91ZmSMT0CUOTSxmE2s6M0" Name="HoveredClip" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="SsJy93uBrOGLufDunipTQX" Bounds="552,287" />
@@ -13020,6 +13184,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetMouse" />
                 </p:NodeReference>
                 <Pin Id="PwbxOiv0q8GQLe13SsG7af" Name="Input" Kind="StateInputPin" />
+                <Pin Id="FT52d79bm9NQKIZtTN0e3E" Name="Output" Kind="OutputPin" />
                 <Pin Id="UsVV75vH773L6a5YY7u75F" Name="MousePositionInFrames" Kind="OutputPin" />
                 <Pin Id="MfhR4WWa0htLBJB7XBSoHz" Name="MousePosition" Kind="OutputPin" />
                 <Pin Id="TzqU6soU1GgNPvnHkmeTOy" Name="Left Pressed" Kind="OutputPin" />
@@ -13032,6 +13197,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetTrackHeight" />
                 </p:NodeReference>
                 <Pin Id="FhhH6pTwiVaMILILRP18XT" Name="Input" Kind="StateInputPin" />
+                <Pin Id="EJAD16PKPQHMaHoiJPLeV3" Name="Output" Kind="OutputPin" />
                 <Pin Id="G5TeVXB77PoOLNYi4ukOCU" Name="TrackHeight" Kind="OutputPin" />
               </Node>
               <Node Bounds="799,375" Id="RPl3xgdB7wxO72VcrDhCn2">
@@ -13040,6 +13206,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetView" />
                 </p:NodeReference>
                 <Pin Id="Qg1A0wRSW7hM2HGppTzvaL" Name="Input" Kind="StateInputPin" />
+                <Pin Id="FE975GCMvDTP83K99DbBHI" Name="Output" Kind="OutputPin" />
                 <Pin Id="Sm3RJXJAiNnMGyHHO8zYaS" Name="DrawOffset" Kind="OutputPin" />
                 <Pin Id="VAJTcc3LSo3N0zLnJrxHlT" Name="FrameOffset" Kind="OutputPin" />
                 <Pin Id="OeIt37TpBvXOTDUWswRsVi" Name="MousePositionInFrames" Kind="OutputPin" />
@@ -13349,6 +13516,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetScalaHeight" />
                 </p:NodeReference>
                 <Pin Id="BOKmuLHJPPeM8wOrQwIbab" Name="Input" Kind="StateInputPin" />
+                <Pin Id="UYWYc6IvqoiNh0ZwQRT1dA" Name="Output" Kind="OutputPin" />
                 <Pin Id="H9ogGS8pro6P4iDVv0amXm" Name="Height" Kind="OutputPin" />
               </Node>
               <Node Bounds="753,229,87,26" Id="TFMRb6SKy0QLS19sOi2DYc">
@@ -13357,6 +13525,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetTrackHeight" />
                 </p:NodeReference>
                 <Pin Id="NXsxjxfjYpHQNeoWJs6K7o" Name="Input" Kind="StateInputPin" />
+                <Pin Id="RoZ3waCHNtFNJbgXuEfCMG" Name="Output" Kind="OutputPin" />
                 <Pin Id="UyP9kdTbhz4QXsYi1eEpbZ" Name="TrackHeight" Kind="OutputPin" />
               </Node>
               <Node Bounds="925,273,25,19" Id="CAr8ZuthY8eMROrmttx3Vi">
@@ -13764,6 +13933,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetSelectedClips" />
                 </p:NodeReference>
                 <Pin Id="OpL1ATBrqgDOCOPaZdgoUs" Name="Input" Kind="StateInputPin" />
+                <Pin Id="D3kG0SOjDoKMuFRCZJwl2U" Name="Output" Kind="OutputPin" />
                 <Pin Id="V2s9SPKQZTIP2ualJZ21JM" Name="SelectedClips" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="L38V28WRpmVP1oGB0PQi9Q" Bounds="591,478" />
@@ -13773,6 +13943,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetView" />
                 </p:NodeReference>
                 <Pin Id="D8mzZYtaedFMT6mQMFcpMi" Name="Input" Kind="StateInputPin" />
+                <Pin Id="EfWvsYuursKMUejMsETZbD" Name="Output" Kind="OutputPin" />
                 <Pin Id="Fhb1ZoQDcRSMqy1H0kDSId" Name="DrawOffset" Kind="OutputPin" />
                 <Pin Id="QgCUT1XD5DyOkRErMfhQcr" Name="FrameOffset" Kind="OutputPin" />
                 <Pin Id="LHaNTtit32GP9G66KNF0mn" Name="MousePositionInFrames" Kind="OutputPin" />
@@ -13786,6 +13957,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetScalaHeight" />
                 </p:NodeReference>
                 <Pin Id="Eas5qaABpcqMtLBVjSyHvs" Name="Input" Kind="StateInputPin" />
+                <Pin Id="JUBKPWxQOrTLJLf7DJ4Pk6" Name="Output" Kind="OutputPin" />
                 <Pin Id="QK4caLDEAQ3MzdysljlK2n" Name="Height" Kind="OutputPin" />
               </Node>
               <Node Bounds="882,625,25,19" Id="KX94girWUE9OafXlNAUct8">
@@ -13807,6 +13979,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetTrackHeight" />
                 </p:NodeReference>
                 <Pin Id="UaEzLXi1dlNLhf2DyEuBfq" Name="Input" Kind="StateInputPin" />
+                <Pin Id="NWYEQORf0IzPhnTS5oDehT" Name="Output" Kind="OutputPin" />
                 <Pin Id="UsNC6NUrZMzQSTuK4rfWF7" Name="TrackHeight" Kind="OutputPin" />
               </Node>
             </Canvas>
@@ -15095,6 +15268,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetView" />
                 </p:NodeReference>
                 <Pin Id="Esga0127uwEPeAqrmvK5m0" Name="Input" Kind="StateInputPin" />
+                <Pin Id="ALRbk4F7PU2PX5jZMOSMRM" Name="Output" Kind="OutputPin" />
                 <Pin Id="Co7auQlI39cM4JHhEJCrEo" Name="DrawOffset" Kind="OutputPin" />
                 <Pin Id="HPOLbQuMDKQLtICf6MAho5" Name="FrameOffset" Kind="OutputPin" />
                 <Pin Id="SiyApihD6ajPAJrtVDVHWw" Name="MousePositionInFrames" Kind="OutputPin" />
@@ -15108,6 +15282,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetTrackHeight" />
                 </p:NodeReference>
                 <Pin Id="DneanYmRq50OjC09drwMqX" Name="Input" Kind="StateInputPin" />
+                <Pin Id="CD5gjSsUttROXMrw7T0fdY" Name="Output" Kind="OutputPin" />
                 <Pin Id="FISeFYvqi1JNJzbCr4lB7t" Name="TrackHeight" Kind="OutputPin" />
               </Node>
               <Node Bounds="1274,-19,85,26" Id="Vvv67XWveIYNG4Ov7tQHPt">
@@ -15116,6 +15291,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetScalaHeight" />
                 </p:NodeReference>
                 <Pin Id="OD5KLC6YcOSLdb8gsZZj8R" Name="Input" Kind="StateInputPin" />
+                <Pin Id="LqSuaFvjT60PlJyKlUk4fc" Name="Output" Kind="OutputPin" />
                 <Pin Id="LfLenUfW6HmONJGInTHL4G" Name="Height" Kind="OutputPin" />
               </Node>
               <Node Bounds="1274,91,25,19" Id="QZpKvQY1mVBM8WNnEDBYsC">
@@ -15505,6 +15681,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetTimecode" />
                 </p:NodeReference>
                 <Pin Id="HtobUvmZ62WO2GS4eSILtn" Name="Input" Kind="StateInputPin" />
+                <Pin Id="AW0DyDBMZv5NknT8jh7Rw7" Name="Output" Kind="OutputPin" />
                 <Pin Id="HfXmnZbEyRwNjQdT8Isnom" Name="Timecode" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="PHiRKq77HrkPllCQTg8Ir5" Bounds="805,-68" />
@@ -16000,6 +16177,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetScala" />
                 </p:NodeReference>
                 <Pin Id="FeLxWaSWnrKLR1kTxuW9Jt" Name="Input" Kind="StateInputPin" />
+                <Pin Id="UG1iM2nwzVyPtoC1FYwZ1i" Name="Output" Kind="OutputPin" />
                 <Pin Id="BnxMz6pALUtMYKxO1XBLUS" Name="Scala" Kind="OutputPin" />
               </Node>
               <Node Bounds="182,244,37,26" Id="AnBzqUR2VQwPlgCvuEYLAL">
@@ -16032,6 +16210,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetView" />
                 </p:NodeReference>
                 <Pin Id="NXe9MkEO4bIPJlo3GQLZSn" Name="Input" Kind="StateInputPin" />
+                <Pin Id="BqUbuP4ctYEPMjMJdCq0hj" Name="Output" Kind="OutputPin" />
                 <Pin Id="Q1gdRh6HrbQMsMsJ7HCmWo" Name="DrawOffset" Kind="OutputPin" />
                 <Pin Id="PkGbULhLowpLD3kvoDdvh5" Name="FrameOffset" Kind="OutputPin" />
                 <Pin Id="NaG2JDgfjogM38kLMVXmYn" Name="MousePositionInFrames" Kind="OutputPin" />
@@ -16236,6 +16415,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetView" />
                 </p:NodeReference>
                 <Pin Id="HLQikYYJnzaOkqglUJhKrn" Name="Input" Kind="StateInputPin" />
+                <Pin Id="MY9YiiZrB02L68pU7BOI7k" Name="Output" Kind="OutputPin" />
                 <Pin Id="HB9u7DTuF6LOzWMDMIfbyE" Name="DrawOffset" Kind="OutputPin" />
                 <Pin Id="LdSFpC3tbyzPQW4Fy8jszl" Name="FrameOffset" Kind="OutputPin" />
                 <Pin Id="U66oLJaiaLFLXfZHv7aUWW" Name="MousePositionInFrames" Kind="OutputPin" />
@@ -16603,6 +16783,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetModifiers" />
                 </p:NodeReference>
                 <Pin Id="VXlXwGPRW4zLwUGOPgZgJg" Name="Input" Kind="StateInputPin" />
+                <Pin Id="MEYzXTXZ7oqLWIk4LOIGhI" Name="Output" Kind="OutputPin" />
                 <Pin Id="IcHxDsXDm4IP00RZDIZ1Me" Name="Modifiers" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="M33Ot0MHrzAQLdSsoyJqNE" Bounds="237,23" />
@@ -16767,6 +16948,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetSnap" />
                 </p:NodeReference>
                 <Pin Id="KSH9dY7GY8cPxeCIzAZeQ6" Name="Input" Kind="StateInputPin" />
+                <Pin Id="UlFvK8GtUrdLCzF5iCLJdC" Name="Output" Kind="OutputPin" />
                 <Pin Id="EM0kcLdUASfPF6N2BWucmh" Name="SnappedFrame" Kind="OutputPin" />
                 <Pin Id="RcGdLtjiOysOgAtrwORYTj" Name="IsSnapped" Kind="OutputPin" />
               </Node>
@@ -16777,6 +16959,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetView" />
                 </p:NodeReference>
                 <Pin Id="Oe6XIiV8fErNBsONOR33P0" Name="Input" Kind="StateInputPin" />
+                <Pin Id="NqY8iBHguLdPLdLa3o83Co" Name="Output" Kind="OutputPin" />
                 <Pin Id="MoaFq6SSUClPFrvg1AVHb0" Name="DrawOffset" Kind="OutputPin" />
                 <Pin Id="CeDhxCT718WNrlucm7zvWC" Name="FrameOffset" Kind="OutputPin" />
                 <Pin Id="MmGUAYIQLZRLsa3g8quFcD" Name="MousePositionInFrames" Kind="OutputPin" />
@@ -17022,6 +17205,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetView" />
                 </p:NodeReference>
                 <Pin Id="EX1Y9rNV63JLuhaH1eelpn" Name="Input" Kind="StateInputPin" />
+                <Pin Id="P8E6Sxc1w14MsyDz0a3WWu" Name="Output" Kind="OutputPin" />
                 <Pin Id="N5yt8E4N7NjPHHFQ12CNOM" Name="DrawOffset" Kind="OutputPin" />
                 <Pin Id="SHtIyvCfr06MLRqufUP5RR" Name="FrameOffset" Kind="OutputPin" />
                 <Pin Id="UR98Otk4sqQQEkMKzOwWVU" Name="MousePositionInFrames" Kind="OutputPin" />
@@ -17135,6 +17319,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetSelectionRectangle" />
                 </p:NodeReference>
                 <Pin Id="D6gDRg3QolAQAr7alzaaWr" Name="Input" Kind="StateInputPin" />
+                <Pin Id="CEEFnUyyYGgMSYMFoZKN4D" Name="Output" Kind="OutputPin" />
                 <Pin Id="LeJVVhs5LSlMeGUnbcPZne" Name="SelectionRectangle" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="Ew2fyE8Co7sOA0TK9lr0Ol" Bounds="315,114" />
@@ -17178,6 +17363,7 @@
                   <Choice Kind="OperationCallFlag" Name="GetVisibleClips" />
                 </p:NodeReference>
                 <Pin Id="T4unc9QhHBPPhoaZOYKzs7" Name="Input" Kind="StateInputPin" />
+                <Pin Id="PQANdJiqbJ7MFvKyZXAzxJ" Name="Output" Kind="OutputPin" />
                 <Pin Id="Fza7gmBhAnULqphdsGNBbZ" Name="VisibleClips" Kind="OutputPin" />
               </Node>
               <Node Bounds="309,578,199,226" Id="EDdygbJKlwtLlB7l5UE41v">
@@ -17651,8 +17837,54 @@
               <Pad Id="VnnAXymyuZtOJuErFOJIwz" SlotId="NYL3zEMl5AGNrD3b4p1P35" Bounds="4222,307">
                 <p:ValueBoxSettings />
               </Pad>
+              <Pad Id="T34hFsZ9SZHNSBpIUz1ga0" SlotId="NX2I1n21HZBNKH3eOo9IQ2" Bounds="1256,626">
+                <p:ValueBoxSettings />
+              </Pad>
+              <Pad Id="HKcQ1a0P5bNNTNNuZR1thc" SlotId="P6UaqLHM6VWM28ndAJR2KN" Bounds="1455,609">
+                <p:ValueBoxSettings />
+              </Pad>
+              <ControlPoint Id="Le4oRsw8CJvLARRGDDKqd1" Bounds="1256,705" />
+              <ControlPoint Id="HUUm9PnkBngMtRj3XYardF" Bounds="1455,705" />
+              <ControlPoint Id="SDFLy2MtghtMDQ5IsFsuh5" Bounds="1453,450" />
+              <ControlPoint Id="OIf9JMZEZh9OZ8qefsf1OB" Bounds="1257,450" />
+              <Node Bounds="1254,512,79,19" Id="EsQesmIO91yN2cEPRscllQ">
+                <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="ToObservable" />
+                </p:NodeReference>
+                <Pin Id="JpCytuqHSdVNzgbad9zEO7" Name="Message" Kind="InputPin" />
+                <Pin Id="F7CYBQ3ColMMnLqaux35bB" Name="Send" Kind="InputPin" DefaultValue="True">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Boolean" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="N0wXmcv6mAVOmbIVtznjJp" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="1453,512,79,19" Id="PJALNtilVs1M46jeean5vi">
+                <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="ToObservable" />
+                </p:NodeReference>
+                <Pin Id="Lb1eksibNBLP9ElWhAVIpx" Name="Message" Kind="InputPin" />
+                <Pin Id="VtnN71QAICQQKNCgPfieNH" Name="Send" Kind="InputPin" DefaultValue="True">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Boolean" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="HXKMW73BHGoPQ7MyWsr4lH" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Pad Id="A1tnlVt0AYhNflYBNptnRz" SlotId="U1mbsZrLukZOaZ0zmgViCf" Bounds="1702,612">
+                <p:ValueBoxSettings />
+              </Pad>
+              <Pad Id="PuzodxMZh0RMOdIdR6oZZI" Comment="ApplyTCChangesLocally" Bounds="1631,472,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pad>
+              <ControlPoint Id="FaDZIpJMNjCLEO3mrM3RMr" Bounds="1701,548" />
+              <ControlPoint Id="Cw5JOgaRbkTNsLYSwVj4VN" Bounds="1703,673" />
             </Canvas>
-            <Patch Id="JBkXcyxpKhfMjMv2QirMF4" Name="Create" ParticipatingElements="AJNShwa8ccUQCprQN418nL,Vs5yI8l5KEgOMTEvd00Bpc,E1n2fUcZC59LUHtyKtOooG,K38jhWxayNWPU38KNnIaPY" />
+            <Patch Id="JBkXcyxpKhfMjMv2QirMF4" Name="Create" ParticipatingElements="AJNShwa8ccUQCprQN418nL,Vs5yI8l5KEgOMTEvd00Bpc,E1n2fUcZC59LUHtyKtOooG,K38jhWxayNWPU38KNnIaPY,BZSAS0IIIH6L758NmgCWEk" />
             <Patch Id="T4EpTJRR1kSLJScx7jCnGn" Name="Update" />
             <ProcessDefinition Id="C5FP9rpq9sJL6ZBpyXve0D" IsHidden="true">
               <Fragment Id="T09ueC1IyRXM8vQX8ERrZq" Patch="JBkXcyxpKhfMjMv2QirMF4" Enabled="true" />
@@ -17701,6 +17933,12 @@
               <Fragment Id="GqyUjY6wGFUPvFeAsdduEF" Patch="QK97A1xrnQuLckIF7VsBhP" Enabled="true" />
               <Fragment Id="HylZbETjZ54N0xIiWiLWZo" Patch="U1rkwhcvvBiL2mMmD4Xx8c" Enabled="true" />
               <Fragment Id="P9NmOaKLoZPLd3aMp9Vklw" Patch="KCTcLwbL1q3PwbTkHCxFwG" Enabled="true" />
+              <Fragment Id="NbeGZL2XNWxOr48R3MF3Ue" Patch="QP2ZFpCbUUzP3GQr6DhvJO" Enabled="true" />
+              <Fragment Id="H6qTs3GhW92MJAs03TD6Gh" Patch="ITQod3DK7MxNs6ank0bEPE" Enabled="true" />
+              <Fragment Id="GpBngNUx3wsM9w9UJv3R6J" Patch="QSLaEA27qEfQRsNYtxdyCF" Enabled="true" />
+              <Fragment Id="LCJ33cyXfjjMRWIBgVyi2F" Patch="N9lTZoP5KqSOx8nVdU7w8y" Enabled="true" />
+              <Fragment Id="OS7KO6qYLUcOBkX84A9F4R" Patch="UcrrzxIowM5OwhIMX1r6be" Enabled="true" />
+              <Fragment Id="MrTkBOdL7FtMjXgZFUun5e" Patch="PUKtNbJP59sLh8DBN6TNLs" Enabled="true" />
             </ProcessDefinition>
             <Slot Id="H32NK13fIeRNC6XsBhWziP" Name="DrawOffset">
               <p:TypeAnnotation>
@@ -18158,6 +18396,58 @@
             <Patch Id="QK97A1xrnQuLckIF7VsBhP" Name="LoopSetStart" />
             <Patch Id="U1rkwhcvvBiL2mMmD4Xx8c" Name="LoopSetEnd" />
             <Patch Id="KCTcLwbL1q3PwbTkHCxFwG" Name="GetLoopRange" />
+            <Slot Id="NX2I1n21HZBNKH3eOo9IQ2" Name="onSetTC" />
+            <Slot Id="P6UaqLHM6VWM28ndAJR2KN" Name="onSetPlaystate" />
+            <Link Id="QsVfuLZGPQwO13WQjBQc1f" Ids="T34hFsZ9SZHNSBpIUz1ga0,Le4oRsw8CJvLARRGDDKqd1" />
+            <Link Id="P4KtmRkDDuPOk2FNxWUJLC" Ids="Le4oRsw8CJvLARRGDDKqd1,G1upFC5Efs1NG75jHoYmfK" IsHidden="true" />
+            <Link Id="UNQMy4ZH34FM3zkk9SwlKc" Ids="HKcQ1a0P5bNNTNNuZR1thc,HUUm9PnkBngMtRj3XYardF" />
+            <Link Id="KShePMQRzLYOieOChaA94N" Ids="HUUm9PnkBngMtRj3XYardF,MfWJ1hYmo4qOmqMvLcyowg" IsHidden="true" />
+            <Patch Id="QP2ZFpCbUUzP3GQr6DhvJO" Name="OnTCSet" ParticipatingElements="QsVfuLZGPQwO13WQjBQc1f">
+              <Pin Id="G1upFC5Efs1NG75jHoYmfK" Name="onSetTC" Kind="OutputPin" />
+            </Patch>
+            <Patch Id="ITQod3DK7MxNs6ank0bEPE" Name="OnPlaystateSet" ParticipatingElements="UNQMy4ZH34FM3zkk9SwlKc">
+              <Pin Id="MfWJ1hYmo4qOmqMvLcyowg" Name="onSetPlaystate" Kind="OutputPin" />
+            </Patch>
+            <Link Id="EAwmK16YxobQBWZNJVTrwC" Ids="RZH1SEjcGSDLXrzre3DySd,SDFLy2MtghtMDQ5IsFsuh5" IsHidden="true" />
+            <Patch Id="QSLaEA27qEfQRsNYtxdyCF" Name="SetPlaystate">
+              <Pin Id="RZH1SEjcGSDLXrzre3DySd" Name="PlayState" Kind="InputPin">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="Integer32" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+            <Link Id="MZAFp40bweYQbjAauoP0QE" Ids="UbO28AJFL8mLi7iXJ4KlTv,OIf9JMZEZh9OZ8qefsf1OB" IsHidden="true" />
+            <Patch Id="N9lTZoP5KqSOx8nVdU7w8y" Name="SetTC">
+              <Pin Id="UbO28AJFL8mLi7iXJ4KlTv" Name="TC" Kind="InputPin">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="Integer32" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+            <Link Id="Df3W02uVyUtNS1rNU3cMPd" Ids="OIf9JMZEZh9OZ8qefsf1OB,JpCytuqHSdVNzgbad9zEO7" />
+            <Link Id="OgHIoCQcRZOQbcFltqMZo4" Ids="N0wXmcv6mAVOmbIVtznjJp,T34hFsZ9SZHNSBpIUz1ga0" />
+            <Link Id="Mf8ow6De7vAPBdKEYPI62u" Ids="SDFLy2MtghtMDQ5IsFsuh5,Lb1eksibNBLP9ElWhAVIpx" />
+            <Link Id="DgKcvhsB4U1Lnf34aOSAU1" Ids="HXKMW73BHGoPQ7MyWsr4lH,HKcQ1a0P5bNNTNNuZR1thc" />
+            <Slot Id="U1mbsZrLukZOaZ0zmgViCf" Name="ApplyTCChangesLocally">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Slot>
+            <Link Id="BZSAS0IIIH6L758NmgCWEk" Ids="PuzodxMZh0RMOdIdR6oZZI,A1tnlVt0AYhNflYBNptnRz" />
+            <Link Id="UszpZkZJBj7O5QlGZWDIht" Ids="FaDZIpJMNjCLEO3mrM3RMr,A1tnlVt0AYhNflYBNptnRz" />
+            <Link Id="DHf1BL66DEUPVgCH8vb2S6" Ids="CrH1T5iFfLCM3RImZz1viu,FaDZIpJMNjCLEO3mrM3RMr" IsHidden="true" />
+            <Patch Id="UcrrzxIowM5OwhIMX1r6be" Name="SetEnableTCChangesLocally">
+              <Pin Id="CrH1T5iFfLCM3RImZz1viu" Name="EnableTCChangesLocally" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+            <Link Id="GpV5vC8p75YQBWegsWvft3" Ids="A1tnlVt0AYhNflYBNptnRz,Cw5JOgaRbkTNsLYSwVj4VN" />
+            <Link Id="Aevcsbd6BfnNztv0ZRTOUS" Ids="Cw5JOgaRbkTNsLYSwVj4VN,VAz6YbIgtSVQbRZu5x5KhS" IsHidden="true" />
+            <Patch Id="PUKtNbJP59sLh8DBN6TNLs" Name="GetApplyTCChangesLocally">
+              <Pin Id="VAz6YbIgtSVQbRZu5x5KhS" Name="ApplyTCChangesLocally" Kind="OutputPin" />
+            </Patch>
           </Patch>
         </Node>
         <!--
@@ -18914,6 +19204,7 @@
                 <Choice Kind="OperationCallFlag" Name="GetDevices" />
               </p:NodeReference>
               <Pin Id="Tb4jZljouSlOHOpuH9iZn2" Name="Input" Kind="StateInputPin" />
+              <Pin Id="TJGa7PjKsDdOlP4mAvkklR" Name="Output" Kind="OutputPin" />
               <Pin Id="BFqdk3mCBeLOcVCSruzpeq" Name="Devices" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="VMsED72KWB8PiQHX3edeGh" Bounds="344,34" />
@@ -19086,6 +19377,7 @@
                     <Choice Kind="OperationCallFlag" Name="GetView" />
                   </p:NodeReference>
                   <Pin Id="QDIstWz2fDZNRofs5eBmp8" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="OUwgOSYcPuKLnT7woyYS8m" Name="Output" Kind="OutputPin" />
                   <Pin Id="RorMOXy3xSeQSnImOdqHIP" Name="DrawOffset" Kind="OutputPin" />
                   <Pin Id="Qdilk5YOUOoMe4BSl9DFqV" Name="FrameOffset" Kind="OutputPin" />
                   <Pin Id="JyDVrHPQSuROZCdCKHTMgR" Name="MousePositionInFrames" Kind="OutputPin" />
@@ -19226,6 +19518,7 @@
                     <Choice Kind="OperationCallFlag" Name="GetScala" />
                   </p:NodeReference>
                   <Pin Id="LsdbT2Lpp4nNPLGmduGtuY" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="JIczbI9rmD3Qart6jxUELn" Name="Output" Kind="OutputPin" />
                   <Pin Id="MjZKcxzj1SdP2lmhc1mf1B" Name="Scala" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="84,318,36,26" Id="LdeHvTfSAQiPgrcl2CFsmm">
@@ -19761,6 +20054,7 @@
                 <Choice Kind="OperationCallFlag" Name="GetSelectedClips" />
               </p:NodeReference>
               <Pin Id="N63exwrh7WfL7FeVgltNoy" Name="Input" Kind="StateInputPin" />
+              <Pin Id="OMd1yRWWsEXOu98DkJy4z8" Name="Output" Kind="OutputPin" />
               <Pin Id="A1Vg1m1lACkOaA0IKEoLx2" Name="SelectedClips" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="KCDg3aq4GkcPweisGUw7Zz" Bounds="318,33" />
@@ -21472,6 +21766,7 @@
                 <Choice Kind="OperationCallFlag" Name="GetScala" />
               </p:NodeReference>
               <Pin Id="A3xwNf60Qr4PAthOXOK6ZH" Name="Input" Kind="StateInputPin" />
+              <Pin Id="RD1YsNJ3IIHOCJ8wbc3bsF" Name="Output" Kind="OutputPin" />
               <Pin Id="KTleerXKymGNoko4uUhlZI" Name="Scala" Kind="OutputPin" />
             </Node>
             <Node Bounds="132,90,36,26" Id="UAagESO7gc5QcDtA8LfZsb">
