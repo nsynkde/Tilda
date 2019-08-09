@@ -39,7 +39,7 @@
                 <CategoryReference Kind="Category" Name="Skia" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="1386, 1199, 2176, 830">
+              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="2598, 409, 2176, 830">
                 <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                   <Choice Kind="TypeFlag" Name="Rectangle" />
                 </p:TypeAnnotation>
@@ -1828,7 +1828,8 @@
               <Node Bounds="890,268,70,26" Id="MHu6CMGuJhvL5BOyXdA78U">
                 <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="SetPlaystate" />
+                  <Choice Kind="OperationCallFlag" Name="SetPlayState" />
+                  <CategoryReference Kind="RecordType" Name="Editor" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="SvEbp1mVoohPWCsCft5DlS" Name="Input" Kind="StateInputPin" />
                 <Pin Id="Hko4NEpMDqkMiNCjU5zHgh" Name="PlayState" Kind="InputPin" />
@@ -5510,7 +5511,8 @@
                   <Node Bounds="386,634,70,26" Id="KWEIUWzTBKHLw1GjRAanWp">
                     <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="OperationCallFlag" Name="SetPlaystate" />
+                      <Choice Kind="OperationCallFlag" Name="SetPlayState" />
+                      <CategoryReference Kind="RecordType" Name="Editor" NeedsToBeDirectParent="true" />
                     </p:NodeReference>
                     <Pin Id="PKfGcqUEk5EQMythNkCjJP" Name="Input" Kind="StateInputPin" />
                     <Pin Id="QLQk59VYgbRMqSu4DCMz4R" Name="PlayState" Kind="InputPin" />
@@ -8994,15 +8996,6 @@
                 <Pin Id="R1mx5YD5QDgNdNh0JpN8En" Name="Editor" Kind="InputPin" />
                 <Pin Id="U2a84pPRGghLVwhliH2q5n" Name="Timeline" Kind="InputPin" />
                 <Pin Id="Mv70x4H0YPvO4qfyYKiwv1" Name="SnappingPoints" Kind="InputPin" />
-                <Pin Id="KjWLuDRpJ4rMp4FPDwVtc2" Name="MousePositionInFrames" Kind="InputPin" />
-                <Pin Id="JX6canLnN1fLMgpiUihAG2" Name="DoubleClick" Kind="InputPin" />
-                <Pin Id="BRbmfxMHlbCP9E2ds2YVT5" Name="PressedKeys" Kind="InputPin" />
-                <Pin Id="N5hs675pdKDMMJobPrXEpg" Name="MousePosition" Kind="InputPin" />
-                <Pin Id="ObFnseyq9oMONuzC3ducN3" Name="LeftButton" Kind="InputPin" />
-                <Pin Id="Csns0IYzGeIOAgLPdDoqEK" Name="Zoom" Kind="InputPin" />
-                <Pin Id="S5JpL5lASrjPmidPs9sgf6" Name="DrawOffset" Kind="InputPin" />
-                <Pin Id="ToaA3mjHBRmQNWMsfGD8dZ" Name="ScalaHeight" Kind="InputPin" />
-                <Pin Id="NtbRueZsa7nNxrL1FgJUJc" Name="TrackHeight" Kind="InputPin" />
                 <Pin Id="Fxxf5NuljosNfNEBYeCkxX" Name="Editing" Kind="OutputPin" />
                 <Pin Id="UsUXUbgeCdQNguAGXyepVz" Name="SnappedFrame" Kind="OutputPin" />
               </Node>
@@ -17859,7 +17852,7 @@
               <Pad Id="VnnAXymyuZtOJuErFOJIwz" SlotId="NYL3zEMl5AGNrD3b4p1P35" Bounds="4222,307">
                 <p:ValueBoxSettings />
               </Pad>
-              <Pad Id="T34hFsZ9SZHNSBpIUz1ga0" SlotId="NX2I1n21HZBNKH3eOo9IQ2" Bounds="1256,626">
+              <Pad Id="T34hFsZ9SZHNSBpIUz1ga0" SlotId="NX2I1n21HZBNKH3eOo9IQ2" Bounds="1256,609">
                 <p:ValueBoxSettings />
               </Pad>
               <Pad Id="HKcQ1a0P5bNNTNNuZR1thc" SlotId="P6UaqLHM6VWM28ndAJR2KN" Bounds="1455,609">
@@ -18418,20 +18411,20 @@
             <Patch Id="QK97A1xrnQuLckIF7VsBhP" Name="LoopSetStart" />
             <Patch Id="U1rkwhcvvBiL2mMmD4Xx8c" Name="LoopSetEnd" />
             <Patch Id="KCTcLwbL1q3PwbTkHCxFwG" Name="GetLoopRange" />
-            <Slot Id="NX2I1n21HZBNKH3eOo9IQ2" Name="onSetTC" />
-            <Slot Id="P6UaqLHM6VWM28ndAJR2KN" Name="onSetPlaystate" />
+            <Slot Id="NX2I1n21HZBNKH3eOo9IQ2" Name="OnSetTC" />
+            <Slot Id="P6UaqLHM6VWM28ndAJR2KN" Name="OnSetPlaystate" />
             <Link Id="QsVfuLZGPQwO13WQjBQc1f" Ids="T34hFsZ9SZHNSBpIUz1ga0,Le4oRsw8CJvLARRGDDKqd1" />
             <Link Id="P4KtmRkDDuPOk2FNxWUJLC" Ids="Le4oRsw8CJvLARRGDDKqd1,G1upFC5Efs1NG75jHoYmfK" IsHidden="true" />
             <Link Id="UNQMy4ZH34FM3zkk9SwlKc" Ids="HKcQ1a0P5bNNTNNuZR1thc,HUUm9PnkBngMtRj3XYardF" />
             <Link Id="KShePMQRzLYOieOChaA94N" Ids="HUUm9PnkBngMtRj3XYardF,MfWJ1hYmo4qOmqMvLcyowg" IsHidden="true" />
-            <Patch Id="QP2ZFpCbUUzP3GQr6DhvJO" Name="OnTCSet" ParticipatingElements="QsVfuLZGPQwO13WQjBQc1f">
-              <Pin Id="G1upFC5Efs1NG75jHoYmfK" Name="onSetTC" Kind="OutputPin" />
+            <Patch Id="QP2ZFpCbUUzP3GQr6DhvJO" Name="OnSetTC" ParticipatingElements="QsVfuLZGPQwO13WQjBQc1f">
+              <Pin Id="G1upFC5Efs1NG75jHoYmfK" Name="OnSetTC" Kind="OutputPin" />
             </Patch>
-            <Patch Id="ITQod3DK7MxNs6ank0bEPE" Name="OnPlaystateSet" ParticipatingElements="UNQMy4ZH34FM3zkk9SwlKc">
-              <Pin Id="MfWJ1hYmo4qOmqMvLcyowg" Name="onSetPlaystate" Kind="OutputPin" />
+            <Patch Id="ITQod3DK7MxNs6ank0bEPE" Name="OnSetPlayState" ParticipatingElements="UNQMy4ZH34FM3zkk9SwlKc">
+              <Pin Id="MfWJ1hYmo4qOmqMvLcyowg" Name="OnSetPlayState" Kind="OutputPin" />
             </Patch>
             <Link Id="EAwmK16YxobQBWZNJVTrwC" Ids="RZH1SEjcGSDLXrzre3DySd,SDFLy2MtghtMDQ5IsFsuh5" IsHidden="true" />
-            <Patch Id="QSLaEA27qEfQRsNYtxdyCF" Name="SetPlaystate">
+            <Patch Id="QSLaEA27qEfQRsNYtxdyCF" Name="SetPlayState">
               <Pin Id="RZH1SEjcGSDLXrzre3DySd" Name="PlayState" Kind="InputPin">
                 <p:TypeAnnotation>
                   <Choice Kind="TypeFlag" Name="Integer32" />
