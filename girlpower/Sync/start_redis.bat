@@ -1,3 +1,3 @@
-wsl redis-server
+wsl redis-server --protected-mode no --bind 0.0.0.0
 
 set /p DUMMY=Hit ENTER to continue...
