@@ -5,10 +5,10 @@
     <Canvas Id="CGwE0uMSQXMQW6fhjvipNA" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory">
       <!--
 
-    ************************ UDPSyncReceiveTCSYNC ************************
+    ************************ UDPSendReceiveInteger ************************
 
 -->
-      <Node Name="UDPSyncReceiveTCSYNC" Bounds="200,100" Id="UctuZwePTmcOL353Kgr2sI">
+      <Node Name="UDPSendReceiveInteger" Bounds="200,100" Id="UctuZwePTmcOL353Kgr2sI">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
@@ -274,11 +274,6 @@
             <Pin Id="G4PjjJdyafCNqMmO6BNOVv" Name="Result" Kind="OutputPin" Bounds="520,577" />
             <Pin Id="MrFHIGtLW8sO0uZeZYBTO8" Name="On Data" Kind="OutputPin" Bounds="876,675" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="TxZacLmJBvvONJMouf5LDL">
             <Fragment Id="R2lcvqEl0tBQOzSuz02HoU" Patch="AmzXti07EuuMetME9HjLoR" Enabled="true" />
             <Fragment Id="H2Nig0EFw1SPKoQqcyL3fi" Patch="QuJhcTE9eidPZgdPSLjU1X" Enabled="true" />
@@ -328,24 +323,24 @@
       </Node>
       <!--
 
-    ************************ SyncTCOnUseINteraction ************************
+    ************************ SyncTCOnUserInteraction ************************
 
 -->
-      <Node Name="SyncTCOnUseINteraction" Category="VVVV" Bounds="620,100" Id="TZRsT6qOHarPLqMqK9a76U">
+      <Node Name="SyncTCOnUserInteraction" Category="VVVV" Bounds="620,100" Id="TZRsT6qOHarPLqMqK9a76U">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
         </p:NodeReference>
         <Patch Id="B0ybjYUsXX0N3AohFY8z9Q">
           <Canvas Id="LmjSaGSOQbOMMxbXrvcbr7" CanvasType="Group">
-            <ControlPoint Id="GGJRQGu9pH4OPKd0qqPLpO" Bounds="391,68" />
-            <ControlPoint Id="EPj0odCAoJBPpUjJTzoEgS" Bounds="361,124" />
-            <ControlPoint Id="EIJfw9Z3XuWQKOZGmeSP7l" Bounds="152,-117" />
-            <ControlPoint Id="FStlZwCD64POlv8tfi4y7U" Bounds="513,73" />
-            <ControlPoint Id="GAKPBeOkAOkMLlN32CTEnH" Bounds="641,39" />
-            <Node Bounds="328,228,126,19" Id="IVv452f4wknMyYbNVQBcyG">
+            <ControlPoint Id="GGJRQGu9pH4OPKd0qqPLpO" Bounds="376,39" />
+            <ControlPoint Id="EPj0odCAoJBPpUjJTzoEgS" Bounds="302,39" />
+            <ControlPoint Id="EIJfw9Z3XuWQKOZGmeSP7l" Bounds="252,-84" />
+            <ControlPoint Id="FStlZwCD64POlv8tfi4y7U" Bounds="529,39" />
+            <ControlPoint Id="GAKPBeOkAOkMLlN32CTEnH" Bounds="623,39" />
+            <Node Bounds="328,123,126,19" Id="IVv452f4wknMyYbNVQBcyG">
               <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VVVV.Tilda.SyncTC.vl">
-                <Choice Kind="ProcessNode" Name="UDPSyncReceiveTCSYNC" />
+                <Choice Kind="ProcessNode" Name="UDPSendReceiveInteger" />
               </p:NodeReference>
               <Pin Id="J5WlEz8TKDaOUStggxBGgD" Name="Enable Send" Kind="InputPin" />
               <Pin Id="OfGvFDGeBnGOqTFaLQWabl" Name="Target IP" Kind="InputPin" />
@@ -355,29 +350,29 @@
               <Pin Id="RTGmgYW96QEPCdxCAht444" Name="Result" Kind="OutputPin" />
               <Pin Id="H91sKstXCltPk0tSYu0txy" Name="On Data" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="P2CqEHM6zOLMb8zkixhlrD" Bounds="347,-129" />
-            <Node Bounds="543,-50,56,26" Id="PewdNSr51hQMautpnm171f">
+            <ControlPoint Id="P2CqEHM6zOLMb8zkixhlrD" Bounds="344,-84" />
+            <Node Bounds="533,-50,56,26" Id="PewdNSr51hQMautpnm171f">
               <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="OnTCSet" />
+                <Choice Kind="OperationCallFlag" Name="OnSetTC" />
               </p:NodeReference>
               <Pin Id="QIxa9KbuBIQL2hgzUPW8Fx" Name="Input" Kind="StateInputPin" />
               <Pin Id="Jtr61lHhKpmOsyzFoiTrdM" Name="Output" Kind="OutputPin" />
-              <Pin Id="L8bKK0ETGnYOGIqiiAEp17" Name="onSetTC" Kind="OutputPin" />
+              <Pin Id="L8bKK0ETGnYOGIqiiAEp17" Name="OnSetTC" Kind="OutputPin" />
             </Node>
-            <Node Bounds="344,-45,83,26" Id="MCS8b8cAofqQPjYM4Pg6zI">
+            <Node Bounds="342,-50,83,26" Id="MCS8b8cAofqQPjYM4Pg6zI">
               <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="OnPlaystateSet" />
+                <Choice Kind="OperationCallFlag" Name="OnSetPlayState" />
               </p:NodeReference>
               <Pin Id="NXAz0mbbuD3PvjVxATaFYf" Name="Input" Kind="StateInputPin" />
               <Pin Id="AXwZoLDRHSLQI16DrCwE97" Name="Output" Kind="OutputPin" />
-              <Pin Id="C1Ddm9euFimO3G0AdOjmun" Name="onSetPlaystate" Kind="OutputPin" />
+              <Pin Id="C1Ddm9euFimO3G0AdOjmun" Name="OnSetPlayState" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="Adb05ftCvzULo6GV2SKWQs" Bounds="659,435" />
-            <Node Bounds="495,231,126,19" Id="KvA5hrtiLYxN1PQImkAknr">
+            <ControlPoint Id="Adb05ftCvzULo6GV2SKWQs" Bounds="618,270" />
+            <Node Bounds="495,123,126,19" Id="KvA5hrtiLYxN1PQImkAknr">
               <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VVVV.Tilda.SyncTC.vl">
-                <Choice Kind="ProcessNode" Name="UDPSyncReceiveTCSYNC" />
+                <Choice Kind="ProcessNode" Name="UDPSendReceiveInteger" />
               </p:NodeReference>
               <Pin Id="HJL9mOOKnw4OrQKnza2xUl" Name="Enable Send" Kind="InputPin" />
               <Pin Id="RzO2ez2bCnfQO7A0RNYsc3" Name="Target IP" Kind="InputPin" />
@@ -387,20 +382,7 @@
               <Pin Id="Ua2oC3ZbBcmM4rqNN3UciN" Name="Result" Kind="OutputPin" />
               <Pin Id="FC544yLeIr2LDROhjhpD7d" Name="On Data" Kind="OutputPin" />
             </Node>
-            <Node Bounds="556,169,25,19" Id="AVKAxGedTa6QZeYJyhXzWF">
-              <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="+" />
-              </p:NodeReference>
-              <Pin Id="Std6RQzUyj7L7K983PcBfU" Name="Input" Kind="InputPin" />
-              <Pin Id="K71vwtN4Xc5OZ5BTZZqske" Name="Input 2" Kind="InputPin" DefaultValue="1">
-                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                  <Choice Kind="TypeFlag" Name="Integer32" />
-                </p:TypeAnnotation>
-              </Pin>
-              <Pin Id="MEDOGOa5ceBM69m5yRx269" Name="Output" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="505,393,65,26" Id="BN4sh9lbZ0zOhWIbW5W9Cv">
+            <Node Bounds="463,228,65,26" Id="BN4sh9lbZ0zOhWIbW5W9Cv">
               <p:NodeReference LastCategoryFullName="VL.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="SetTC" />
@@ -410,7 +392,7 @@
               <Pin Id="J2645HDkNfoP08Gcbaj4pC" Name="Apply" Kind="InputPin" />
               <Pin Id="BxhpoX1aTUKL7DpWDWmKTL" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="275,395,108,26" Id="GQTtgjqc237QKIADxDsWLr">
+            <Node Bounds="275,230,108,26" Id="GQTtgjqc237QKIADxDsWLr">
               <p:NodeReference LastCategoryFullName="VL.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="SetPlayState" />
@@ -420,7 +402,7 @@
               <Pin Id="L7hf9GTmdHjMYdXULoWTqw" Name="Apply" Kind="InputPin" />
               <Pin Id="KpUJKUnDDaWLxYDqagvCaV" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="658,393,30,19" Id="FtkA2uwFWy5NSWGJbRD2I3">
+            <Node Bounds="616,228,30,19" Id="FtkA2uwFWy5NSWGJbRD2I3">
               <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="OR" />
@@ -429,7 +411,7 @@
               <Pin Id="LHYHxP2f66MO04NhKvLmrV" Name="Input 2" Kind="InputPin" />
               <Pin Id="NJgJUVVUH8VNTzGzMP41NF" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="RmOKR3WYZs7O0zpPSq4Lo2" Bounds="768,-24,252,173" ShowValueBox="true" isIOBox="true" Value="To Do: Make sure that TC is the same after several Play Stop Commands. TC Shlould be sent anew on each Playstate command">
+            <Pad Id="RmOKR3WYZs7O0zpPSq4Lo2" Bounds="742,-40,252,173" ShowValueBox="true" isIOBox="true" Value="To Do: Make sure that TC is the same after several Play Stop Commands. TC Shlould be sent anew on each Playstate command">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -438,10 +420,11 @@
                 <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
               </p:ValueBoxSettings>
             </Pad>
+            <ControlPoint Id="JabYX2uTGH3LT7XsEYFVwm" Bounds="465,39" />
           </Canvas>
           <Patch Id="Q15QAqHeW8tLMsqkcmEmP1" Name="Create" />
           <Patch Id="HyjI89ngAWoO0IMerEpePp" Name="Update">
-            <Pin Id="Oz77KD5YxdKMezLA5GoxC8" Name="Port" Kind="InputPin" Bounds="633,124" DefaultValue="23485">
+            <Pin Id="Oz77KD5YxdKMezLA5GoxC8" Name="Port Playstate" Kind="InputPin" Bounds="633,124" DefaultValue="23485">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
@@ -471,13 +454,13 @@
                 <Choice Kind="TypeFlag" Name="Editor" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="K0hZkq3ImuaOkhCWZAT7o0" Name="Port TC" Kind="InputPin">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="Deh4EtG6Dy2MfFiStPVvpv" Name="On Data" Kind="OutputPin" Bounds="524,567" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="IHaykXZPkawPvDGgJNy7rO">
             <Fragment Id="LP3Paj355ddMh4UVDhw99L" Patch="Q15QAqHeW8tLMsqkcmEmP1" Enabled="true" />
             <Fragment Id="SknN54shKsDLF8JudioDAv" Patch="HyjI89ngAWoO0IMerEpePp" Enabled="true" />
@@ -499,8 +482,6 @@
           <Link Id="GIgTF0KRvVcOAI3S3Sn7Vk" Ids="FStlZwCD64POlv8tfi4y7U,HJL9mOOKnw4OrQKnza2xUl" />
           <Link Id="GUc45S8RsBdLvITpz6COiD" Ids="GAKPBeOkAOkMLlN32CTEnH,VIbDz1yLaWpQRXkpqaP9wB" />
           <Link Id="SkqHkI0eG3LLp1o8c574PN" Ids="C1Ddm9euFimO3G0AdOjmun,AQUQFJdYSX9NecOekRRvfd" />
-          <Link Id="Kr5ef1VrNMNNO5l03OLuSK" Ids="GGJRQGu9pH4OPKd0qqPLpO,Std6RQzUyj7L7K983PcBfU" />
-          <Link Id="R7lS1UspNQCMuAjOs5Le2I" Ids="MEDOGOa5ceBM69m5yRx269,OW5YGaKz718N2VojN3KotX" />
           <Link Id="OuoI4Cb9GfjMa23oQ1EWJs" Ids="EPj0odCAoJBPpUjJTzoEgS,RzO2ez2bCnfQO7A0RNYsc3" />
           <Link Id="Pu9m09tM0r9QOti6Kp5Qv8" Ids="L8bKK0ETGnYOGIqiiAEp17,Vsm0fOGfEgIPesfeUT3kZ5" />
           <Link Id="KUVrKu6UBQpLGtG9YnmsEd" Ids="FC544yLeIr2LDROhjhpD7d,J2645HDkNfoP08Gcbaj4pC" />
@@ -511,6 +492,8 @@
           <Link Id="NrUPZf5WextP4pQfHNP04Z" Ids="FC544yLeIr2LDROhjhpD7d,LHYHxP2f66MO04NhKvLmrV" />
           <Link Id="C4nXLneHCl9NQTxmHP5J89" Ids="H91sKstXCltPk0tSYu0txy,DLwJSOxmDElOnK8js2V4K1" />
           <Link Id="ReRRQXziJm1LiDTLwWimEp" Ids="NJgJUVVUH8VNTzGzMP41NF,Adb05ftCvzULo6GV2SKWQs" />
+          <Link Id="GpW78up8ruCOgfGYN6tIUV" Ids="K0hZkq3ImuaOkhCWZAT7o0,JabYX2uTGH3LT7XsEYFVwm" IsHidden="true" />
+          <Link Id="ANfnmm6fmkVM8JxAz2dt4U" Ids="JabYX2uTGH3LT7XsEYFVwm,OW5YGaKz718N2VojN3KotX" />
         </Patch>
       </Node>
     </Canvas>
@@ -528,11 +511,6 @@
         <Canvas Id="LETixC4564TLefZNfrIfKe" CanvasType="Group" />
         <Patch Id="VNRudMYlWcQMoj6i9To7LQ" Name="Create" />
         <Patch Id="Seh4V4e3mRsOZXjfg7tnIy" Name="Update" />
-        <!--
-
-    ************************  ************************
-
--->
         <ProcessDefinition Id="K3hB7Jdcn4GO2wRcWqRHPv">
           <Fragment Id="RsvKq5tvusvNeWa7R09F5R" Patch="VNRudMYlWcQMoj6i9To7LQ" Enabled="true" />
           <Fragment Id="FtfBwBmmiNFLbAV5kT6RQY" Patch="Seh4V4e3mRsOZXjfg7tnIy" Enabled="true" />

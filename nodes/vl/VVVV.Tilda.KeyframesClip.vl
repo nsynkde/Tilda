@@ -2522,15 +2522,6 @@
               <Pin Id="BZuCUWfS5b6Ok93ocdzOrY" Name="Output" Kind="StateOutputPin" />
               <Pin Id="BvJGrNCYOjcMx0QWq30tOD" Name="TC" Kind="OutputPin" />
             </Node>
-            <Node Bounds="277,336,56,26" Id="CxAt14RMpqDO9roxe5F2vO">
-              <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="RecordType" Name="Editor" />
-                <Choice Kind="OperationCallFlag" Name="OnTCSet" />
-              </p:NodeReference>
-              <Pin Id="JfuHdQRil1bOhWVcO2icsz" Name="Input" Kind="StateInputPin" />
-              <Pin Id="DBaYNx8X9l8OXHvsv7vmc9" Name="onSetTC" Kind="OutputPin" />
-            </Node>
             <Node Bounds="280,372,53,19" Id="UpX4ojC3Bh7QRJ2HOaJYgm">
               <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -2539,6 +2530,14 @@
               <Pin Id="DPqDv4XVoK4MccvfllizZR" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="HyMFMlz4Co4OHOqItfYueC" Name="Notifications" Kind="OutputPin" />
               <Pin Id="K2WtpdzGfr8QCLeK6RUAb4" Name="On Data" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="280,335,56,26" Id="BsgmCAx2cQWOjjGP0g9lgZ">
+              <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="OnSetTC" />
+              </p:NodeReference>
+              <Pin Id="DrcW1h7WCVEMi8hjoXavnM" Name="Input" Kind="StateInputPin" />
+              <Pin Id="C2gQb6mfIRcL9ZSnm9hKvH" Name="OnSetTC" Kind="OutputPin" />
             </Node>
           </Canvas>
           <Patch Id="VZ6RifCwfthM0ksp3pNzrt" Name="Create" />
@@ -2684,9 +2683,9 @@
           <Link Id="HshJTglcCjWMw7ehXD3Gq1" Ids="ElGdakQMwSMOrYZlivUwzU,Hxqfq6P9JeRNrzqwTCa7vF" />
           <Link Id="BHZEXF5VjG9LUxPNjnRjXf" Ids="I6JRZYV85VbM6gIfjEQmP8,AkVMmv205AFPSHolYfo5L7" />
           <Link Id="GoDN5JhIGwZLgJ6FXiyQal" Ids="JXjGoYmwcMKQUcwHo5ouag,PM40UP3avHZOYNK22gBYI2" />
-          <Link Id="OiqhUaGw3NkPrWYtMFsqtZ" Ids="EtZIp2nWMxBNAln4QkNUNd,JfuHdQRil1bOhWVcO2icsz" />
-          <Link Id="TwzUmWJSaI0PY1Ec44Dbsx" Ids="DBaYNx8X9l8OXHvsv7vmc9,DPqDv4XVoK4MccvfllizZR" />
           <Link Id="BwAQbhdueDcMZgFXw9k3tw" Ids="K2WtpdzGfr8QCLeK6RUAb4,JoIx1dLMDkVOQ9yuPqVesW" />
+          <Link Id="E910EKyKxtTNibxGbM2VZp" Ids="EtZIp2nWMxBNAln4QkNUNd,DrcW1h7WCVEMi8hjoXavnM" />
+          <Link Id="DNrUbbNCjXCNNhCl8TMVHs" Ids="C2gQb6mfIRcL9ZSnm9hKvH,DPqDv4XVoK4MccvfllizZR" />
         </Patch>
       </Node>
       <!--
