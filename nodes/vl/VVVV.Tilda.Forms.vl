@@ -1947,7 +1947,7 @@
                     </Node>
                   </Patch>
                 </Node>
-                <Node Bounds="59,1479,331,547" Id="QkmKMnxIc5XMsHfqySEfM9">
+                <Node Bounds="59,1479,376,547" Id="QkmKMnxIc5XMsHfqySEfM9">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -2043,7 +2043,7 @@
                       <Pin Id="Aj629G9IisCPB0GdywBxWb" Name="Result" Kind="OutputPin" />
                       <Pin Id="BAi9iiDJiM1LZdekbYeqHl" Name="Ok" Kind="OutputPin" />
                     </Node>
-                    <Pad Id="DrIYS4hI2yKMHTE4bgJ5fR" Comment="Title" Bounds="302,1683,35,15" ShowValueBox="true" isIOBox="true" Value="Select ">
+                    <Pad Id="DrIYS4hI2yKMHTE4bgJ5fR" Comment="Title" Bounds="280,1629,102,25" ShowValueBox="true" isIOBox="true" Value="Select ">
                       <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                         <Choice Kind="TypeFlag" Name="String" />
                       </p:TypeAnnotation>
@@ -2215,6 +2215,15 @@
                     <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
                   </p:ValueBoxSettings>
                 </Pad>
+                <Pad Id="OtU1Rw6coZaOQg47HeP8N8" Bounds="300,1459,195,19" ShowValueBox="true" isIOBox="true" Value="for future generations to come">
+                  <p:TypeAnnotation>
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                  <p:ValueBoxSettings>
+                    <p:fontsize p:Type="Int32">9</p:fontsize>
+                    <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  </p:ValueBoxSettings>
+                </Pad>
               </Patch>
               <ControlPoint Id="AAzk0w4sbDHP73mOCYRYAr" Bounds="1090,654" Name="Editor" Alignment="Top" />
               <ControlPoint Id="TOzpA5SQ1rGMYUrTolZc5U" Bounds="1090,2245" Name="Editor" Alignment="Bottom" />
@@ -2284,7 +2293,7 @@
               <Pin Id="J21Bg7VFB1jNrZiqBg2r19" Name="SelectedClips" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="TJuc8WJXJY8PIkax7lXWQk" Bounds="1057,-61" />
-            <Node Bounds="61,469,25,19" Id="N8HAs8Fs91IP8AhklCQTHp">
+            <Node Bounds="-160,445,25,19" Id="N8HAs8Fs91IP8AhklCQTHp">
               <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="=" />
@@ -2293,21 +2302,12 @@
               <Pin Id="NYhQwtuhtuzN5AFASEz70u" Name="Input 2" Kind="InputPin" />
               <Pin Id="VSXewlKvPGSQcKaD9goql9" Name="Result" Kind="OutputPin" />
             </Node>
-            <Pad Id="VeQGFAyHQUGNxu8eLqYvIn" Comment="" Bounds="84,440,99,15" ShowValueBox="true" isIOBox="true" Value="VL.Tilda.VideoClip">
+            <Pad Id="VeQGFAyHQUGNxu8eLqYvIn" Comment="" Bounds="-137,416,99,15" ShowValueBox="true" isIOBox="true" Value="VL.Tilda.VideoClip">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
               <p:ValueBoxSettings />
             </Pad>
-            <Node Bounds="61,527,37,19" Id="GmdPzYhKTlDLOoXsVWa27J">
-              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="NOT" />
-                <CategoryReference Kind="BooleanType" Name="Boolean" NeedsToBeDirectParent="true" />
-              </p:NodeReference>
-              <Pin Id="NNVBSWNplMAL0GdaUwAw5d" Name="Input" Kind="StateInputPin" />
-              <Pin Id="OlQ1uiHRE4DMb69R7cZuVQ" Name="Output" Kind="StateOutputPin" />
-            </Node>
             <Node Bounds="49,248,78,80" Id="LKauMOLrM30LwNoGFJfZLF">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -2489,8 +2489,6 @@
           <Link Id="CFzzGYrAYZiQaTChnwW3FR" Ids="MmINmjQEceRMneRjyfyCtC,MlFWVNpnNEgL0MnoQ2grln" />
           <Link Id="Lzlagj6GSgxLsNO7JnnWCY" Ids="F6nhP7DyvENLyVF995u0wd,R7PVvVwgI78PCVF7sktPyq" />
           <Link Id="LGNgiEwBoXhO5Ho8P5XgGJ" Ids="VeQGFAyHQUGNxu8eLqYvIn,NYhQwtuhtuzN5AFASEz70u" />
-          <Link Id="Oj5BNKQUQIxLADTJO96of8" Ids="VSXewlKvPGSQcKaD9goql9,NNVBSWNplMAL0GdaUwAw5d" />
-          <Link Id="IJNRIVRUavrQJHQEe1P0hq" Ids="OlQ1uiHRE4DMb69R7cZuVQ,QrkV3A8CLuEPJsQaTHUx7R" />
           <Link Id="PVittqtmFAaNYpDmyhO2V1" Ids="RAGQSM1WdRSNFmJM6o7XXK,Pa3n7zRrUu3LhdSyhLBlMD" />
           <Link Id="ECi2RYtbZr8NVWAlpLTold" Ids="NwE2ztfbZXhN8uPYhvfwpB,Es4ingTChciMyeMlDgNFQk" />
           <Link Id="UG8TY32PvlPNFrbzYVdRmg" Ids="TRxMW7HbBCXLSgqclEpdvi,Gy9RHRsfUAJM48BUBVjkSx" />
@@ -2502,7 +2500,6 @@
           <Link Id="Um4v7U02BgvM8ROTDRe7Nu" Ids="DrIYS4hI2yKMHTE4bgJ5fR,T18GCGjqzULQYc0W9Oqa0Q" />
           <Link Id="H83hQqClrirOPPb20BqCuA" Ids="BAi9iiDJiM1LZdekbYeqHl,EKOoHGQLGnaND7AVXzh12V" />
           <Link Id="LMAQReIfHl0OnXFO68Dr9M" Ids="O1CX0GJkdO5LmK2VDdMetB,VdeWY0Z4vyhOC9O5Qy8w4N" />
-          <Link Id="IyAcSCBqq0JLqgBhrc7OvE" Ids="VSXewlKvPGSQcKaD9goql9,DE1ed7xRxhgPwEAEHeToBx" />
           <Link Id="N5nrcL5v1FIOYGrfMsCTP3" Ids="Aj629G9IisCPB0GdywBxWb,FLqBXvJA6F4MtzKBMqi2h1" />
           <Link Id="Etfwo8Ob7w7M3kaLURghPt" Ids="AJW3cv9ig3WN0T3mu5jprr,NKo6cS7HoamLxA99pYyujB" />
           <Link Id="HyytuYjmDiCQEz25pkPAPl" Ids="JhJ6cn6BfQwMk0gUVTawV9,RM8h5V6HdNrMqZYLZMGzcX" />
@@ -2561,6 +2558,7 @@
           <Link Id="Ub0Ro6NgnjeNrKUZvafB9d" Ids="Grrb7YSsPxpMgXL8QBYbcm,DreB0gWfJ6qNFEd2TaAtKI" />
           <Link Id="PNmhyI1i16rMcsdzWqiA6q" Ids="Kcp5anrdgo1LbfZceTNud5,HLDb3QchtOzOO4P6fg6Rbg" />
           <Link Id="Lw2OYcYZZ8fOtNrsrQtS8J" Ids="J21Bg7VFB1jNrZiqBg2r19,Pj2gc8WxsydNltaRho5xr9" />
+          <Link Id="KmooqoUPvZwPBH1DWDzZ5m" Ids="VSXewlKvPGSQcKaD9goql9,QrkV3A8CLuEPJsQaTHUx7R" />
         </Patch>
       </Node>
       <!--
