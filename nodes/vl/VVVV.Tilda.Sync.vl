@@ -3031,9 +3031,16 @@
               <Pin Id="PUgmhD1mIEoMMj3N5InW2N" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Pad Id="MzQRl007UeNQDwWiacI2gA" Comment="" Bounds="1568,1457,179,128" ShowValueBox="true" isIOBox="true" />
-            <Pad Id="AFm3JkaYUDlM58mVCsu5E2" Comment="SendedClips" Bounds="1627,864,148,248" ShowValueBox="true" isIOBox="true" />
-            <Pad Id="FZBdpdpa5SuMNZtAsdPTGd" Comment="" Bounds="1188,960,35,35" ShowValueBox="true" isIOBox="true" />
-            <Pad Id="Qa0gMb37WPVPu1jzTbWWjf" Comment="Count" Bounds="1323,792,35,15" ShowValueBox="true" isIOBox="true" />
+            <Node Bounds="1426,815,36,19" Id="T1yGvPZIVLhNiumzs4t0dM">
+              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="S+H" />
+                <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="DAdSbUD0PNTPzCEj3Bm1aI" Name="Value" Kind="InputPin" />
+              <Pin Id="CDPjxFJrtuRQTaERrocFW0" Name="Sample" Kind="InputPin" />
+              <Pin Id="C0VOuqrbLMaP9WstMtwvt3" Name="Value" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <Patch Id="FFqI8FX9YUkNlFTlMWquAX" Name="Create" />
           <Patch Id="LfzVyJya6yYNX1RJOvpZs9" Name="Update">
@@ -3285,7 +3292,7 @@
           <Link Id="SUv3Osp7K9dOt575sZasBl" Ids="VUKWztrqz9vL3Nx39dWeE1,HaWaXZqHyKLOo5U0RmjfZr" />
           <Link Id="Vzq5LszZM5iNv2WLwBdQKz" Ids="UYeWibJNIkkMZeMC5j0jhi,NAFX09h1Bg9QY1IFAosogF" />
           <Link Id="BMyU1K51QyALeluIr0kdRN" Ids="CcqIexEMWwMPffBqcT3Ini,FJzox2qTLnhLdq1y3Qn4vd" />
-          <Link Id="Ugfc3SQWx0iL7oDzufQv3q" Ids="TZVJCrCZ0jBP5KE3zWsv2v,U9D0mARItZ9Pp4IPHQWNlI" />
+          <Link Id="Ugfc3SQWx0iL7oDzufQv3q" Ids="TZVJCrCZ0jBP5KE3zWsv2v,DAdSbUD0PNTPzCEj3Bm1aI" />
           <Link Id="JTSEGpymuufP5ZZwi1oWvn" Ids="D2YwUwKyD6eOKjhoh5iylR,LISEAcBsQonMMdm55A0TGA" />
           <Link Id="U5d1x6ZvqAOOrhZrc9Gd6n" Ids="MhjkhqpwwSZNJHJPc3wGnv,COiMiSWSov4PnLqvigdUJp" />
           <Link Id="HluJz3txKGLLLk2eiLzuNN" Ids="JUy8HPlasJLPOJkbitS7kj,NqR1tcweA5xNiKA4bVv6Vf" />
@@ -3296,15 +3303,14 @@
           <Link Id="BoGMfnYrfTtOliWm0HcnmR" Ids="QyTaXGgQzIRN2FkpV37tLc,ANRoRCyF2rJOhf19gHIS5f" IsFeedback="true" />
           <Link Id="MgHEs2tb2FHLr4a10sbTOB" Ids="VnmVw7sAThXPoZZEeCKroc,QyTaXGgQzIRN2FkpV37tLc" />
           <Link Id="R2Viv6sbfegMhjauPKT5jz" Ids="QyTaXGgQzIRN2FkpV37tLc,Ql4pdWg3RkBPKjF3dy3BCs" />
-          <Link Id="OdbOQfaL1hNMYe6Q0rRR31" Ids="TZVJCrCZ0jBP5KE3zWsv2v,RM3WqyL2Cg7MfElDcaSiA1" />
           <Link Id="OCHFH3dkwF8MZ5RGrgUrAr" Ids="TbNQt4QXZu9PDFOItIcgqy,GgITHUqzh5yLPGeDpVLXWQ" />
           <Link Id="HK9sooClM2PMAme30rjRT8" Ids="DzAbdVzKtnjP6lcEvAPFch,ANRoRCyF2rJOhf19gHIS5f" />
           <Link Id="KznUabro8LkOhL1txyiX7j" Ids="ANRoRCyF2rJOhf19gHIS5f,S3joAaPdLu0NjWkuss9tfC" />
           <Link Id="T6bRVknWPphLmyVfPn1yIA" Ids="RM3WqyL2Cg7MfElDcaSiA1,QepFCimf07IPQrsxFFUpOi" />
           <Link Id="HLtmWVi6OLxMHwk7fMGGaq" Ids="ANRoRCyF2rJOhf19gHIS5f,MzQRl007UeNQDwWiacI2gA" />
-          <Link Id="NCmumi5hKu7PaQrAFgCMm7" Ids="TbNQt4QXZu9PDFOItIcgqy,FZBdpdpa5SuMNZtAsdPTGd" />
-          <Link Id="IVwTEkZpR4yLcwBOS4Gbrz" Ids="TZVJCrCZ0jBP5KE3zWsv2v,AFm3JkaYUDlM58mVCsu5E2" />
-          <Link Id="LrbwAtwdlViLzd3vSjowqD" Ids="D2YwUwKyD6eOKjhoh5iylR,Qa0gMb37WPVPu1jzTbWWjf" />
+          <Link Id="CuVW5MDtZ3LNoHCf4sFcE3" Ids="C0VOuqrbLMaP9WstMtwvt3,U9D0mARItZ9Pp4IPHQWNlI" />
+          <Link Id="RWwHTuuIXwlMEziNgiYcLY" Ids="AbpjlftT4ulLwyKQ6BVYiG,CDPjxFJrtuRQTaERrocFW0" />
+          <Link Id="LSkHOi884oTLaWPDHhzvPV" Ids="C0VOuqrbLMaP9WstMtwvt3,RM3WqyL2Cg7MfElDcaSiA1" />
         </Patch>
       </Node>
       <!--
