@@ -1852,6 +1852,19 @@
             <Overlay Id="Hh227mY1kHoNE45UG7DJRe" Name="Update" Bounds="-646,941,716,890">
               <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
             </Overlay>
+            <Pad Id="DeDGlyht0onPOJbtIQ1kjJ" Comment="Clips" Bounds="1192,294,20,15" ShowValueBox="true" isIOBox="true">
+              <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
+                <Choice Kind="TypeFlag" Name="Dictionary" />
+                <p:TypeArguments>
+                  <TypeReference LastCategoryFullName="System" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="GUID" />
+                  </TypeReference>
+                  <TypeReference LastCategoryFullName="VL.Tilda" LastSymbolSource="VVVV.Tilda.Core.vl">
+                    <Choice Kind="TypeFlag" Name="IClip" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pad>
           </Canvas>
           <Patch Id="GBAAXQm3LPRO0HFs2wnCYY" Name="Create" ParticipatingElements="O3RsRIWeqH9LfpXhpWWR2P">
             <Pin Id="TKSMyMwapeuOyenrqrp0bQ" Name="GUID" Kind="InputPin">
@@ -1937,6 +1950,7 @@
             <Fragment Id="NTJ5uqQKRz7M1Vr2QBdXxB" Patch="CPVTYZTtmSsOQK6QPen9in" Enabled="true" />
             <Fragment Id="QEdvQirpSJvMgRiXKVITo0" Patch="MloJi9vhbbHMoVuuAs1Sol" Enabled="true" />
             <Fragment Id="VdtLH7WDuedOIW9VYhNV6m" Patch="SjULcFWncspMsSjeLIexHQ" Enabled="true" />
+            <Fragment Id="Izpdy4v3MknPhi3ivzapRV" Patch="Mf1Pv4Nn3OwNKcSbN8vudU" Enabled="true" />
           </ProcessDefinition>
           <Slot Id="IRwHRbZquD7LyWIyPtXIl8" Name="TC">
             <p:TypeAnnotation>
@@ -2589,6 +2603,8 @@
           <Link Id="UI8fVjR5ddlLG90ZLCR4YI" Ids="Dwiyey6xkaaPZ1GkFXG1zo,Tv9Hhy8Nk5WP1ZvHDiledP" />
           <Link Id="PWWH80GPpLKLAIpwcbSQDU" Ids="EN9aTyoB0nQQFTJAxsOZA2,Cufe83PtvxJN53EN7K3iVR" IsHidden="true" />
           <Link Id="SJlM8o3qB2JP8rxGTLKLZ0" Ids="UXOuTv93MZWOMn7SWaEK6H,EN9aTyoB0nQQFTJAxsOZA2" />
+          <Link Id="KVShvPAHEAPQXLl0KcIawf" Ids="DeDGlyht0onPOJbtIQ1kjJ,G8RYIs5eNtVOQr0Isn0vUf" />
+          <Patch Id="Mf1Pv4Nn3OwNKcSbN8vudU" Name="ClearClips" ParticipatingElements="KVShvPAHEAPQXLl0KcIawf" />
         </Patch>
       </Node>
       <!--
