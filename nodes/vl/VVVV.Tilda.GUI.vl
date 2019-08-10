@@ -39,7 +39,7 @@
                 <CategoryReference Kind="Category" Name="Skia" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="1714, 266, 2101, 811">
+              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="131, 1102, 2101, 811">
                 <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                   <Choice Kind="TypeFlag" Name="Rectangle" />
                 </p:TypeAnnotation>
@@ -84,7 +84,6 @@
               <Pin Id="K4ouLK3klH1OTr4zM8EQIc" Name="Timeline" Kind="InputPin" />
               <Pin Id="SyTTbnIgg1KLSJVU984xhy" Name="Editor" Kind="InputPin" />
               <Pin Id="TkXZnkROBs0LILfNbzgnF8" Name="Bounds" Kind="InputPin" />
-              <Pin Id="SPv4FxHeGCMLxJgpkWh25S" Name="InspectorBounds" Kind="InputPin" />
               <Pin Id="KpEgkz1tHsCN7C75RH2gft" Name="ClientBounds" Kind="InputPin" />
               <Pin Id="Khb4PCjZMZiQFSb0Vc7tiZ" Name="Timeline" Kind="OutputPin" />
               <Pin Id="IhKrb0NlD9OLGwdKh76uK1" Name="Editor" Kind="OutputPin" />
@@ -496,7 +495,6 @@
                 <Pin Id="UvOE25Iw8pON9rzdFfXUVX" Name="Timeline" Kind="InputPin" />
                 <Pin Id="I22mVJdGVVcPG6U9RFyoc9" Name="Editor" Kind="InputPin" />
                 <Pin Id="EGz6henhW53NxaNkCWN37r" Name="Trimming" Kind="InputPin" />
-                <Pin Id="BIBIdywQGfrMHHxsjlTYGB" Name="ClientBounds" Kind="InputPin" />
                 <Pin Id="OiBJOuK6nbNLE1rDbc7Nhd" Name="Interaction" Kind="OutputPin" />
                 <Pin Id="RjjsU8ogM6JQba8F1IDBLd" Name="Editor" Kind="OutputPin" />
               </Node>
@@ -643,7 +641,7 @@
               <Pad Id="D1BtUgQq8E2Mp3PzjjN60L" SlotId="POHXGxtivcfQUjg7W1P9iB" Bounds="659,282">
                 <p:ValueBoxSettings />
               </Pad>
-              <ControlPoint Id="GTXJ1rJqwtGQZlJuyBG5uz" Bounds="464,-302" />
+              <ControlPoint Id="GTXJ1rJqwtGQZlJuyBG5uz" Bounds="488,-294" />
               <ControlPoint Id="BvqpvLJ51seMlEwWnJuimT" Bounds="678,-1723" />
               <Node Bounds="370,-754,192,19" Id="BXYzSYCi8ylPucEfOps54g">
                 <p:NodeReference LastCategoryFullName="VL.Tilda" LastSymbolSource="VVVV.Tilda.GUI.vl">
@@ -657,7 +655,6 @@
               <Pad Id="FhAKShCRCeBM6NexlhrzuO" SlotId="MS3AE6VpESSMkmNDaROzZK" Bounds="907,-1813" />
               <ControlPoint Id="HBLNHI3Oi3tMoToqE0DhCy" Bounds="905,-1855" />
               <ControlPoint Id="PPmtgA33DEQPXSV7qetNfg" Bounds="710,283" />
-              <ControlPoint Id="JSo23VxwhAZOD75Fhuv2Ey" Bounds="639,1459" />
             </Canvas>
             <Patch Id="H1dSGBdMIBYQCF8GEVFmXT" Name="Create" />
             <Patch Id="JrtsKa09wk8M4eL0aY3FKV" Name="Update">
@@ -673,7 +670,6 @@
               </Pin>
               <Pin Id="OQZ9ElKpkSgNf0STkQnDXC" Name="Bounds" Kind="InputPin" />
               <Pin Id="Gwc1ZZBO7VDNNNl5DeO6h0" Name="ClientBounds" Kind="InputPin" Bounds="900,-1867" />
-              <Pin Id="OTznk1X8fiYNqRLQuTjl3N" Name="InspectorBounds" Kind="InputPin" />
               <Pin Id="L1uwmcMMIHUNSpQaQ7AzEf" Name="Timeline" Kind="OutputPin" />
               <Pin Id="Oc0bZWKH3EOOLsAo84ZzlK" Name="Editor" Kind="OutputPin" />
               <Pin Id="CxNr8DirDV8LuN0TDFoD42" Name="Bounds" Kind="OutputPin" />
@@ -772,8 +768,6 @@
             <Link Id="K8cxqqY3YiePpJLQHZW252" Ids="Gwc1ZZBO7VDNNNl5DeO6h0,HBLNHI3Oi3tMoToqE0DhCy" IsHidden="true" />
             <Link Id="QI6VUaABFtdMdFT9avVkZz" Ids="Gwc1ZZBO7VDNNNl5DeO6h0,PPmtgA33DEQPXSV7qetNfg" IsHidden="true" />
             <Link Id="TpLZ7gNwmt8LGODI1F85cy" Ids="PPmtgA33DEQPXSV7qetNfg,OhLuPyhvQ9vP4hQyNrheFI" />
-            <Link Id="JkRoljGbgmlNLpWYqW7ebz" Ids="OTznk1X8fiYNqRLQuTjl3N,JSo23VxwhAZOD75Fhuv2Ey" IsHidden="true" />
-            <Link Id="Gcgj6tpqL7wNhF9bXUBIwA" Ids="JSo23VxwhAZOD75Fhuv2Ey,BIBIdywQGfrMHHxsjlTYGB" />
           </Patch>
         </Node>
         <!--
@@ -7640,7 +7634,7 @@
                 <Pin Id="KIHQKnfr7yAL1Uj3h5w6Xf" Name="Input 2" Kind="InputPin" />
                 <Pin Id="NnMqAsDsmaROkJM2jjUYzX" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="554,-867,107,26" Id="OHZvdCV6q0MPLlwfGHGbfe">
+              <Node Bounds="655,-863,107,26" Id="OHZvdCV6q0MPLlwfGHGbfe">
                 <p:NodeReference LastCategoryFullName="VL.Tilda.Editor" LastSymbolSource="VVVV.Tilda.GUI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetOpenClipTrigger" />
@@ -11570,7 +11564,7 @@
                       <CategoryReference Kind="Float32Type" Name="Float32" NeedsToBeDirectParent="true" />
                     </p:NodeReference>
                     <Pin Id="G8B0KWEGZx9OMEKtLmeiQ6" Name="Input" Kind="InputPin" />
-                    <Pin Id="RBEQIQ1W5TnMIHlsddXwVJ" Name="Input 2" Kind="InputPin" DefaultValue="2">
+                    <Pin Id="RBEQIQ1W5TnMIHlsddXwVJ" Name="Input 2" Kind="InputPin" DefaultValue="3">
                       <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                         <Choice Kind="TypeFlag" Name="Float32" />
                       </p:TypeAnnotation>
@@ -20690,7 +20684,7 @@
               <Pin Id="OVa86kEcWv1L3x0LUUSAZp" Name="Y" Kind="InputPin" />
               <Pin Id="Gjs2FEIX7DUO7cX1U9spFa" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="IRW5yhRnwDPOzGfi5VEuVW" Comment="" Bounds="468,132,35,15" ShowValueBox="true" isIOBox="true" Value="2.83">
+            <Pad Id="IRW5yhRnwDPOzGfi5VEuVW" Comment="" Bounds="633,243,35,15" ShowValueBox="true" isIOBox="true" Value="2.83">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
@@ -20786,7 +20780,7 @@
             <ControlPoint Id="KppIFIYCfIkPs5o9gKS8N3" Bounds="143,632" />
             <ControlPoint Id="SPYSsZpMln4MQ0HLzsv2qj" Bounds="157,71" />
             <ControlPoint Id="Fi1zlHbcSBVNSKmoYICEcV" Bounds="529,75" />
-            <ControlPoint Id="UiUr4BHZARbPryFJRJ4W3Z" Bounds="705,75" />
+            <ControlPoint Id="UiUr4BHZARbPryFJRJ4W3Z" Bounds="852,61" />
             <ControlPoint Id="KWdzRaDfp9oOobeCGxzTFU" Bounds="701,702" />
           </Canvas>
           <Patch Id="LyDj9TwcKTAMfLTpO3kOL3" Name="Create" />
