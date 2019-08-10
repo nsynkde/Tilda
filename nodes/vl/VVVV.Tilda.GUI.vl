@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0417-g808f072318" Version="0.128">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0562-g457400a887" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -39,7 +39,7 @@
                 <CategoryReference Kind="Category" Name="Skia" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="2697, 404, 2101, 811">
+              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="1495, 157, 2101, 811">
                 <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                   <Choice Kind="TypeFlag" Name="Rectangle" />
                 </p:TypeAnnotation>
@@ -267,6 +267,26 @@
             </Node>
             <ControlPoint Id="TUITA35OPV6P22ot1bRdkM" Bounds="747,23" />
             <Pad Id="E2Sp4ciWTa4NHrk891yM2v" SlotId="AHSzGq5w1XXNu0t7Pbd1hx" Bounds="702,551" />
+            <Node Bounds="469,1193,43,19" Id="Cd4eMsTmp2LLkDD0tgplyz">
+              <p:NodeReference LastCategoryFullName="Graphics.Skia.Utils" LastSymbolSource="VL.Skia.Utils.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Skia" />
+                <CategoryReference Kind="Category" Name="Utils" />
+                <Choice Kind="ProcessAppFlag" Name="VSync" />
+              </p:NodeReference>
+              <Pin Id="EInsIVDB2YXMkH1HV5eiuJ" Name="Renderer" Kind="InputPin" />
+              <Pin Id="QUXx2G0EMj4Nbe1eP1iuMy" Name="VSync" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="QtUvszeHOeFM87tYAOb4QU" Name="Renderer" Kind="OutputPin" />
+            </Node>
+            <Pad Id="RdBlPbS6tF0NkrNV1IXitl" Comment="VSync" Bounds="508,1177,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pad>
           </Canvas>
           <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
             <Fragment Id="MRFnVwHDf0WOO7H3jKbCxI" Patch="ESJZDDS0I02LAWDOx9RJVV" Enabled="true" />
@@ -327,6 +347,8 @@
           <Link Id="DGdOhYfkKATL3RJZkq2OGv" Ids="TUITA35OPV6P22ot1bRdkM,QgrIYoRWm68PzLiLAfwyG3" />
           <Link Id="PHMKCi0nnu5OQwVW9SUsUE" Ids="AjKJuo3z00POvukcZa2tg1,TUITA35OPV6P22ot1bRdkM" IsHidden="true" />
           <Link Id="TGAkr47N3zLN4U4gmk0b5k" Ids="E2Sp4ciWTa4NHrk891yM2v,CpEUq8sDh6XP0VbBdymFwe" />
+          <Link Id="CKyO8i72Gi6LNMyGgKch9q" Ids="SOTE8fQAgr6NnCOLJ1QpWg,EInsIVDB2YXMkH1HV5eiuJ" />
+          <Link Id="E1w9KHTjHQVMoqGyt5KlET" Ids="RdBlPbS6tF0NkrNV1IXitl,QUXx2G0EMj4Nbe1eP1iuMy" />
         </Patch>
       </Node>
       <Canvas Id="B57yESLzkYPPe12SwjH38r" Name="Operations" Position="188,291" CanvasType="Group">
@@ -22368,4 +22390,5 @@
   <DocumentDependency Id="LNoaLCpduWaORdM3v4r8gf" Location="./VL.Automata/VL.Automata.vl" />
   <DocumentDependency Id="BZ455PfNRKyNPYZ2QXpDYY" Location="./VVVV.Tilda.KeyframesClip.vl" />
   <NugetDependency Id="GNVhGHrUlCCOtpew3VpQLD" Location="Elementa" Version="1.1.2-CI-20190805-175500" />
+  <DocumentDependency Id="VbJPt40L1X6NCVLfxlLOMe" Location="./VL.Skia.Utils.vl" />
 </Document>
