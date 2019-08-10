@@ -5127,6 +5127,92 @@
           <Link Id="RG7Sf8WQoOoPBfc6LDSPsR" Ids="IilC7osdnppQCOL5LyQVrG,NFmMAS0lnsrNAffqD3cKxD" />
         </Patch>
       </Node>
+      <!--
+
+    ************************ GetCustomVariable ************************
+
+-->
+      <Node Name="GetCustomVariable" Category="VVVV.Tilda" Bounds="620,300" Id="RwqAdZm8ZNaLGy7zT9DtTI">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="JZp5FkM2TbbQU3UEGWILef">
+          <Canvas Id="IqddV59vUY2MaaabZIWZXP" CanvasType="Group">
+            <ControlPoint Id="Mg0N5ohCtwxOPyhkI3tOl3" Bounds="372,118" />
+            <ControlPoint Id="TPZrmyxXVcYP3HP3dITAa5" Bounds="373,340" />
+            <Node Bounds="355,210,93,90" Id="SHxbauzPuO4O3GimeWN5hB">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="Ua3AfG8MH5FQNLgf3po1Ll" Name="Break" Kind="OutputPin" />
+              <Patch Id="NJhLEjlXtcMOl5Bm45yV4k" ManuallySortedPins="true">
+                <Patch Id="KXpnSy3TyguLuqrqmF0zaR" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="COwJX8Ayt3UOGlfoG4WfBI" Name="Update" ManuallySortedPins="true" />
+                <Patch Id="KXTyLqVJyMVLVtEocuDUjA" Name="Dispose" ManuallySortedPins="true" />
+                <Node Bounds="369,242,67,26" Id="K51Uit3bwALQQPsBgTqkU5">
+                  <p:NodeReference LastCategoryFullName="VL.Tilda.VideoClip" LastSymbolSource="VVVV.Tilda.VideoClip.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="GetCustom" />
+                  </p:NodeReference>
+                  <Pin Id="CNWnBGSnlLnLg174nVVtly" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="H3LdVOmOjHXLKPMId0IGYC" Name="Custom" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="F6aG9HmmUWbP7Zzxp12WGF" Bounds="369,216" Alignment="Top" />
+              <ControlPoint Id="Qe41BYLLfwXNtgBFjVvHVf" Bounds="374,294" Alignment="Bottom" />
+            </Node>
+            <Node Bounds="368,147,49,19" Id="AYaOKW2gzJpNTtCMnCXqa8">
+              <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="OfType" />
+                <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="FBgCcVNji8jMDF6qAL2IX6" Name="Input" Kind="InputPin" />
+              <Pin Id="OmK9Nt3NDIiPejNvityEe6" Name="Result" Kind="OutputPin" />
+            </Node>
+          </Canvas>
+          <Patch Id="A7bQF0M1UptQazNvsjujlI" Name="Create" />
+          <Patch Id="PMorI0ghwz3Lhhl72WPcct" Name="Update">
+            <Pin Id="NrmfwCz35oANSj9VCxCS2C" Name="Clips" Kind="InputPin" Bounds="374,157">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="Spread" />
+                <p:TypeArguments>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="IClip" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="S0Si4Mi46ObPtAoT0s4km9" Name="Custom" Kind="OutputPin" Bounds="370,312" />
+          </Patch>
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="BZ4Qw0ZdJMTPtwd73IHDDq">
+            <Fragment Id="BCbVQzoEr2CLxGquvim4C1" Patch="A7bQF0M1UptQazNvsjujlI" Enabled="true" />
+            <Fragment Id="SwILNasuwwTNn80Y4E572Z" Patch="PMorI0ghwz3Lhhl72WPcct" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="UWdVnb3GxSNOjjXYIY3lk0" Ids="NrmfwCz35oANSj9VCxCS2C,Mg0N5ohCtwxOPyhkI3tOl3" IsHidden="true" />
+          <Link Id="LF65cbgvrpGP1Szg2d4XqB" Ids="TPZrmyxXVcYP3HP3dITAa5,S0Si4Mi46ObPtAoT0s4km9" IsHidden="true" />
+          <Link Id="T5ehs2olL93Ot50fHpTftV" Ids="F6aG9HmmUWbP7Zzxp12WGF,CNWnBGSnlLnLg174nVVtly" />
+          <Link Id="IG8yu7WHQTeLjEqHveWzkk" Ids="H3LdVOmOjHXLKPMId0IGYC,Qe41BYLLfwXNtgBFjVvHVf" />
+          <Link Id="BQgZL7AqMW0Ma5ujYc2yfb" Ids="Qe41BYLLfwXNtgBFjVvHVf,TPZrmyxXVcYP3HP3dITAa5" />
+          <Link Id="SgD8temPVS3OsoSJvnMuiT" Ids="Mg0N5ohCtwxOPyhkI3tOl3,FBgCcVNji8jMDF6qAL2IX6" />
+          <Link Id="JkuWliy6kmyQOmE9Zk4OZ2" Ids="OmK9Nt3NDIiPejNvityEe6,F6aG9HmmUWbP7Zzxp12WGF" />
+        </Patch>
+      </Node>
+      <Node Bounds="822,-267" Id="NeHVAbRmPdJMx4iwXmfgvi">
+        <p:NodeReference LastCategoryFullName="VVVV.Tilda" LastSymbolSource="VVVV.Tilda.VideoClip.vl">
+          <Choice Kind="ProcessNode" Name="GetCustomVariable" />
+        </p:NodeReference>
+        <Pin Id="TU60fdrNqqFNIndTIbjTzl" Name="Clips" Kind="InputPin" />
+        <Pin Id="QuzRKZcywvaO5jZtYSliYq" Name="Custom" Kind="OutputPin" />
+      </Node>
     </Canvas>
     <!--
 
