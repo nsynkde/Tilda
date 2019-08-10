@@ -31,6 +31,7 @@
             <Pin Id="AjKJuo3z00POvukcZa2tg1" Name="EnableTCChangesLocally" Kind="InputPin" Bounds="744,15" />
             <Pin Id="MtYYOL3unCRNvnO0PNIWfM" Name="Window Active" Kind="OutputPin" Bounds="79,1444" />
             <Pin Id="QSuEl1P9NOPNlPLer9uGGN" Name="Editor" Kind="OutputPin" Bounds="332,1532" />
+            <Pin Id="Lec7BV95WDPL3cjiyMQyYD" Name="Renderer" Kind="OutputPin" Bounds="466,1507" />
           </Patch>
           <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi" CanvasType="Group">
             <Node Bounds="346,1090,516,19" Id="JBk1hgu23rXP9YOmgNgTJ2">
@@ -39,7 +40,7 @@
                 <CategoryReference Kind="Category" Name="Skia" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="131, 1102, 2101, 811">
+              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="1742, 42, 2101, 811">
                 <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                   <Choice Kind="TypeFlag" Name="Rectangle" />
                 </p:TypeAnnotation>
@@ -265,6 +266,22 @@
               <Pin Id="O9ilC9317yVPoWAcgqmrAR" Name="Output" Kind="StateOutputPin" />
             </Node>
             <ControlPoint Id="TUITA35OPV6P22ot1bRdkM" Bounds="747,23" />
+            <Node Bounds="468,1185,43,19" Id="QRFf5T2RO9PLofOnlfcHdU">
+              <p:NodeReference LastCategoryFullName="Graphics.Skia.Utils" LastSymbolSource="VL.Skia.Utils.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Skia" />
+                <CategoryReference Kind="Category" Name="Utils" />
+                <Choice Kind="ProcessAppFlag" Name="VSync" />
+              </p:NodeReference>
+              <Pin Id="BVA8vMJgp9RMQ0qjOv8Oux" Name="Renderer" Kind="InputPin" />
+              <Pin Id="GoLcRV17awhPUzc09yPCP6" Name="VSync" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="IIwRm0FPE9aMyvZdlUpMgt" Name="Renderer" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="CzNSID9ju6tMZVIpr3Rkl2" Bounds="466,1507" />
           </Canvas>
           <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
             <Fragment Id="MRFnVwHDf0WOO7H3jKbCxI" Patch="ESJZDDS0I02LAWDOx9RJVV" Enabled="true" />
@@ -324,6 +341,9 @@
           <Link Id="TfWp3RSkqrTLYyj5lRkVVq" Ids="O9ilC9317yVPoWAcgqmrAR,CHXiCqQJ4vGQbOzXgU2yee" />
           <Link Id="DGdOhYfkKATL3RJZkq2OGv" Ids="TUITA35OPV6P22ot1bRdkM,QgrIYoRWm68PzLiLAfwyG3" />
           <Link Id="PHMKCi0nnu5OQwVW9SUsUE" Ids="AjKJuo3z00POvukcZa2tg1,TUITA35OPV6P22ot1bRdkM" IsHidden="true" />
+          <Link Id="G8Vu1BJloZMK9muhXzQcGg" Ids="SOTE8fQAgr6NnCOLJ1QpWg,BVA8vMJgp9RMQ0qjOv8Oux" />
+          <Link Id="KXwwOFg1bjnN9ZEA1Mca3j" Ids="IIwRm0FPE9aMyvZdlUpMgt,CzNSID9ju6tMZVIpr3Rkl2" />
+          <Link Id="Qunnvc65rpRNcbSiq4BYrv" Ids="CzNSID9ju6tMZVIpr3Rkl2,Lec7BV95WDPL3cjiyMQyYD" IsHidden="true" />
         </Patch>
       </Node>
       <Canvas Id="B57yESLzkYPPe12SwjH38r" Name="Operations" Position="188,291" CanvasType="Group">
@@ -22360,4 +22380,5 @@
   <DocumentDependency Id="LNoaLCpduWaORdM3v4r8gf" Location="./VL.Automata/VL.Automata.vl" />
   <DocumentDependency Id="BZ455PfNRKyNPYZ2QXpDYY" Location="./VVVV.Tilda.KeyframesClip.vl" />
   <NugetDependency Id="GNVhGHrUlCCOtpew3VpQLD" Location="Elementa" Version="1.1.2-CI-20190805-175500" />
+  <DocumentDependency Id="SIfwTobDxdsMQzzv1FCqQf" Location="./VL.Skia.Utils.vl" />
 </Document>

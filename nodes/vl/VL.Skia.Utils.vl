@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="ExGxUqsKaVSMAeAd8dfSN9" LanguageVersion="2019.1.0-0552-g2194c41217" Version="0.128">
+  <NugetDependency Id="AHJleXFm3uPMgm7ICmRG26" Location="VL.CoreLib" Version="2019.1.0-552" />
+  <Patch Id="KW7HE1z0lqUNr2b948k5nA">
+    <Canvas Id="KvFhjwYt61qLDEe0P7U9Ko" DefaultCategory="Graphics.Skia.Utils" CanvasType="FullCategory">
+      <!--
+
+    ************************ VSync ************************
+
+-->
+      <Node Name="VSync" Bounds="200,100" Id="MPC2hDpGifCOc6YsAoB4VJ">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="NqEvmgGaTzMLB1aFrGC8x0">
+          <Canvas Id="NGVCEJ9V1BvOeZ8awkAVKA" CanvasType="Group">
+            <ControlPoint Id="Eap0ss2UydzNKEPJV13jlY" Bounds="398,348" />
+            <ControlPoint Id="GDeOqiHQIEHQXGteMqCWiX" Bounds="652,359" />
+            <ControlPoint Id="JbWvLYoQuBZPERylQbzQhx" Bounds="390,771" />
+            <Node Bounds="468,493,204,207" Id="Eg8BdFvYVsDMAkpwE2oI5G">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="PJnbSTj1doAN2SZtJnHka7" Name="Condition" Kind="InputPin" />
+              <Patch Id="G4KafCJFThbQGP5H90O2cd" ManuallySortedPins="true">
+                <Patch Id="AbzQLkxKmoDO3cyx4VDOTp" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="VAIcWRYXqWfMh2EO42vn4x" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="468,490,204,210" Id="DvjAB38pZdCLIhYrT8qpJv">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                    <FullNameCategoryReference ID="Primitive" />
+                  </p:NodeReference>
+                  <Pin Id="EwXlWS9tUcDMTLw3F0iAk3" Name="Force" Kind="InputPin" />
+                  <Pin Id="CRNwttMyL7BMdOWjS8C06c" Name="Dispose Cached Outputs" Kind="InputPin" />
+                  <Pin Id="P9RFpPnS1TZN7SZpgnoU2d" Name="Has Changed" Kind="OutputPin" />
+                  <Patch Id="RHOyE4A4EgwOLqWcNw3glj" ManuallySortedPins="true">
+                    <Patch Id="FHgShRwRPe3NnRRZGC52n3" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="Jf2mcTDcjHXNglYW5iagye" Name="Then" ManuallySortedPins="true" />
+                    <Node Bounds="480,516,55,26" Id="TWcsgD5sWAYNqWXOfCxJPb">
+                      <p:NodeReference LastCategoryFullName="System.Windows.Forms.Control" LastSymbolSource="System.Windows.Forms.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="Control" />
+                        <Choice Kind="OperationCallFlag" Name="Controls" />
+                      </p:NodeReference>
+                      <Pin Id="QYkFMkudQ14LqjHZuUwZvq" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="BmVBsZOkGtxNswEwfaWEOC" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="LDmy3PnMi9KMCe2nnpEI8m" Name="Controls" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="530,570,79,26" Id="P3zrXI5ymemMmzliK7IZrZ">
+                      <p:NodeReference LastCategoryFullName="System.Windows.Forms.Control.ControlCollection" LastSymbolSource="System.Windows.Forms.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="ControlCollection" />
+                        <Choice Kind="OperationCallFlag" Name="GetItem" />
+                        <PinReference Kind="InputPin" Name="Index" />
+                      </p:NodeReference>
+                      <Pin Id="Q2MkRDYkbfeN0iINmsMqC3" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="NBKMDpxEm2NL0yYafqvTkt" Name="Index" Kind="InputPin" />
+                      <Pin Id="EiT9y2iv9euLzxX87R5fDA" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="OXx2EO2mk25QdBDII8sAXO" Name="Item" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="604,616,48,19" Id="RJDS7SNzE71OEbHmrMLYBY">
+                      <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="CastAs" />
+                      </p:NodeReference>
+                      <Pin Id="FXMBjptYHYlLqPipY2L864" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="Vsijl6mSZfVOA0wb4Vnxej" Name="Default" Kind="InputPin" />
+                      <Pin Id="Qg9CMZQ3XTjLqijhdpqx8k" Name="Result" Kind="OutputPin" />
+                      <Pin Id="OV24BfHseBiLjvfp9XWFec" Name="Success" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="603,654,57,26" Id="PhtLaNC6sUON7f6ZD4nAYZ">
+                      <p:NodeReference LastCategoryFullName="OpenTK.GLControl" LastSymbolSource="OpenTK.GLControl.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="GLControl" />
+                        <Choice Kind="OperationCallFlag" Name="SetVSync" />
+                      </p:NodeReference>
+                      <Pin Id="H5S7z6Toj9JP58Sd7ENlkP" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="S82aZ6dASE2Oz2t6xj61ku" Name="Value" Kind="InputPin" />
+                      <Pin Id="Tx6QyeNrcTEOeg0R2QYj7s" Name="Output" Kind="StateOutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="CpXvCwlFzNpPJmvCJhjGnh" Bounds="656,497" Alignment="Top" />
+                  <ControlPoint Id="DGbgpUmwtclLEcc3908Azz" Bounds="482,497" Alignment="Top" />
+                </Node>
+              </Patch>
+            </Node>
+            <Node Bounds="424,442,65,19" Id="U5dcUOHd64DPRbKUYQlGBE">
+              <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+              </p:NodeReference>
+              <Pin Id="TBbSiUdpxYkPOjBtIUJTK3" Name="X" Kind="InputPin" />
+              <Pin Id="UHyPnw4SE5zPiXT2VEbisK" Name="Result" Kind="OutputPin" />
+              <Pin Id="VxCbB0bCt8rLdHMxmgGFRc" Name="Not Assigned" Kind="OutputPin" />
+            </Node>
+          </Canvas>
+          <Patch Id="PXyrenVIsisP3KLl0hyWmk" Name="Create" />
+          <Patch Id="OKCj2tDk3ABLq99J9lnGBe" Name="Update">
+            <Pin Id="RzuCrdO6nB8M5S4EGNosbb" Name="Renderer" Kind="InputPin" Bounds="457,322">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="SkiaRenderer" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="TOTGxJfbsaMNTSaJ8nhnEa" Name="VSync" Kind="InputPin" Bounds="700,357" />
+            <Pin Id="NVj3pqWwfOFOfYniUBsgTq" Name="Renderer" Kind="OutputPin" Bounds="427,671" />
+          </Patch>
+          <ProcessDefinition Id="D3tbeaA4wa7M9eQOpvi2eh">
+            <Fragment Id="QHoe9MH28PyO3dz0Pm2uC6" Patch="PXyrenVIsisP3KLl0hyWmk" Enabled="true" />
+            <Fragment Id="M9mLhEIKrl4PgylThqbdBt" Patch="OKCj2tDk3ABLq99J9lnGBe" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="UvxXLKo6nYmMYjzDVj2IXe" Ids="RzuCrdO6nB8M5S4EGNosbb,Eap0ss2UydzNKEPJV13jlY" IsHidden="true" />
+          <Link Id="TJg3lbXP0lpMT7zgNQ9GL1" Ids="TOTGxJfbsaMNTSaJ8nhnEa,GDeOqiHQIEHQXGteMqCWiX" IsHidden="true" />
+          <Link Id="ASoA7cDWTNRMeOTZ0qcEGM" Ids="Eap0ss2UydzNKEPJV13jlY,JbWvLYoQuBZPERylQbzQhx" />
+          <Link Id="JRebKZEgefpOXeTE3u9G43" Ids="JbWvLYoQuBZPERylQbzQhx,NVj3pqWwfOFOfYniUBsgTq" IsHidden="true" />
+          <Link Id="T8oEesFKp8aPqQE0MmENOK" Ids="Eap0ss2UydzNKEPJV13jlY,TBbSiUdpxYkPOjBtIUJTK3" />
+          <Link Id="V7ocaBdJ7evL7YoXphRY2R" Ids="UHyPnw4SE5zPiXT2VEbisK,PJnbSTj1doAN2SZtJnHka7" />
+          <Link Id="MDReMz6YEkEMEJPBuTWEsr" Ids="LDmy3PnMi9KMCe2nnpEI8m,Q2MkRDYkbfeN0iINmsMqC3" />
+          <Link Id="LIYISQ3SY32Naw2zNrc9Uh" Ids="OXx2EO2mk25QdBDII8sAXO,FXMBjptYHYlLqPipY2L864" />
+          <Link Id="MdqBeB7HDo4LGk8eFijfAI" Ids="Qg9CMZQ3XTjLqijhdpqx8k,H5S7z6Toj9JP58Sd7ENlkP" />
+          <Link Id="M7qk2B3B84DMidnDVU9y1z" Ids="GDeOqiHQIEHQXGteMqCWiX,CpXvCwlFzNpPJmvCJhjGnh" />
+          <Link Id="ElUdaYlt3CGPU0YA7bL8O9" Ids="CpXvCwlFzNpPJmvCJhjGnh,S82aZ6dASE2Oz2t6xj61ku" />
+          <Link Id="QSFNFh61ZeONOGhvOeJDLW" Ids="Eap0ss2UydzNKEPJV13jlY,DGbgpUmwtclLEcc3908Azz" />
+          <Link Id="NXYmzYap2usNdbt6gYPPBq" Ids="DGbgpUmwtclLEcc3908Azz,QYkFMkudQ14LqjHZuUwZvq" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="TZ6lzElx0k5NjMSHBKjvJR">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="TASTPi61OpsOr4LqZ3c8Y9">
+        <Canvas Id="EO2mcBYGmfAMt0PSBnH2DS" CanvasType="Group" />
+        <Patch Id="JAoqPxUaEyLObfOxxlGKRj" Name="Create" />
+        <Patch Id="L717aFBXZI3LNqPTK7M90E" Name="Update" />
+        <ProcessDefinition Id="LyezJroDykELwpNigS6VuZ">
+          <Fragment Id="NTfl0Y0lamUO7gsiA1H7eq" Patch="JAoqPxUaEyLObfOxxlGKRj" Enabled="true" />
+          <Fragment Id="NDP7BXzE9FzLdr2XoMu3er" Patch="L717aFBXZI3LNqPTK7M90E" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="H59saCk2i5mORzUMy6170b" Location="VL.Skia" Version="2019.1.0-0552-g2194c41217" />
+  <PlatformDependency Id="RVx9v4EPmftM7Ie3xSCecq" Location="../../../../../../Program Files/vvvv/vvvv_gamma_2019.1.0-0552-g2194c41217/lib/OpenTK.GLControl.dll" />
+  <PlatformDependency Id="PIt5dASERufPRXLDG9q2I0" Location="System.Windows.Forms" />
+</Document>
