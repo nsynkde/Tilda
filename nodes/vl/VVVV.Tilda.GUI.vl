@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0562-g457400a887" Version="0.128">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0417-g808f072318" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -39,7 +39,7 @@
                 <CategoryReference Kind="Category" Name="Skia" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="131, 1102, 2101, 811">
+              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="2697, 404, 2101, 811">
                 <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                   <Choice Kind="TypeFlag" Name="Rectangle" />
                 </p:TypeAnnotation>
@@ -84,6 +84,7 @@
               <Pin Id="K4ouLK3klH1OTr4zM8EQIc" Name="Timeline" Kind="InputPin" />
               <Pin Id="SyTTbnIgg1KLSJVU984xhy" Name="Editor" Kind="InputPin" />
               <Pin Id="TkXZnkROBs0LILfNbzgnF8" Name="Bounds" Kind="InputPin" />
+              <Pin Id="CpEUq8sDh6XP0VbBdymFwe" Name="Inspector Panel" Kind="InputPin" />
               <Pin Id="KpEgkz1tHsCN7C75RH2gft" Name="ClientBounds" Kind="InputPin" />
               <Pin Id="Khb4PCjZMZiQFSb0Vc7tiZ" Name="Timeline" Kind="OutputPin" />
               <Pin Id="IhKrb0NlD9OLGwdKh76uK1" Name="Editor" Kind="OutputPin" />
@@ -265,6 +266,7 @@
               <Pin Id="O9ilC9317yVPoWAcgqmrAR" Name="Output" Kind="StateOutputPin" />
             </Node>
             <ControlPoint Id="TUITA35OPV6P22ot1bRdkM" Bounds="747,23" />
+            <Pad Id="E2Sp4ciWTa4NHrk891yM2v" SlotId="AHSzGq5w1XXNu0t7Pbd1hx" Bounds="702,551" />
           </Canvas>
           <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
             <Fragment Id="MRFnVwHDf0WOO7H3jKbCxI" Patch="ESJZDDS0I02LAWDOx9RJVV" Enabled="true" />
@@ -324,6 +326,7 @@
           <Link Id="TfWp3RSkqrTLYyj5lRkVVq" Ids="O9ilC9317yVPoWAcgqmrAR,CHXiCqQJ4vGQbOzXgU2yee" />
           <Link Id="DGdOhYfkKATL3RJZkq2OGv" Ids="TUITA35OPV6P22ot1bRdkM,QgrIYoRWm68PzLiLAfwyG3" />
           <Link Id="PHMKCi0nnu5OQwVW9SUsUE" Ids="AjKJuo3z00POvukcZa2tg1,TUITA35OPV6P22ot1bRdkM" IsHidden="true" />
+          <Link Id="TGAkr47N3zLN4U4gmk0b5k" Ids="E2Sp4ciWTa4NHrk891yM2v,CpEUq8sDh6XP0VbBdymFwe" />
         </Patch>
       </Node>
       <Canvas Id="B57yESLzkYPPe12SwjH38r" Name="Operations" Position="188,291" CanvasType="Group">
@@ -495,6 +498,7 @@
                 <Pin Id="UvOE25Iw8pON9rzdFfXUVX" Name="Timeline" Kind="InputPin" />
                 <Pin Id="I22mVJdGVVcPG6U9RFyoc9" Name="Editor" Kind="InputPin" />
                 <Pin Id="EGz6henhW53NxaNkCWN37r" Name="Trimming" Kind="InputPin" />
+                <Pin Id="EccbZANtgr8L6AOBBbUQtO" Name="Inspector Panel" Kind="InputPin" />
                 <Pin Id="OiBJOuK6nbNLE1rDbc7Nhd" Name="Interaction" Kind="OutputPin" />
                 <Pin Id="RjjsU8ogM6JQba8F1IDBLd" Name="Editor" Kind="OutputPin" />
               </Node>
@@ -655,6 +659,7 @@
               <Pad Id="FhAKShCRCeBM6NexlhrzuO" SlotId="MS3AE6VpESSMkmNDaROzZK" Bounds="907,-1813" />
               <ControlPoint Id="HBLNHI3Oi3tMoToqE0DhCy" Bounds="905,-1855" />
               <ControlPoint Id="PPmtgA33DEQPXSV7qetNfg" Bounds="710,283" />
+              <ControlPoint Id="H4GoakfihxMQSqsdkmrOmD" Bounds="687,1440" />
             </Canvas>
             <Patch Id="H1dSGBdMIBYQCF8GEVFmXT" Name="Create" />
             <Patch Id="JrtsKa09wk8M4eL0aY3FKV" Name="Update">
@@ -670,6 +675,7 @@
               </Pin>
               <Pin Id="OQZ9ElKpkSgNf0STkQnDXC" Name="Bounds" Kind="InputPin" />
               <Pin Id="Gwc1ZZBO7VDNNNl5DeO6h0" Name="ClientBounds" Kind="InputPin" Bounds="900,-1867" />
+              <Pin Id="AVEIjB5IHRaMx5VH0uxx3h" Name="Inspector Panel" Kind="InputPin" />
               <Pin Id="L1uwmcMMIHUNSpQaQ7AzEf" Name="Timeline" Kind="OutputPin" />
               <Pin Id="Oc0bZWKH3EOOLsAo84ZzlK" Name="Editor" Kind="OutputPin" />
               <Pin Id="CxNr8DirDV8LuN0TDFoD42" Name="Bounds" Kind="OutputPin" />
@@ -768,6 +774,8 @@
             <Link Id="K8cxqqY3YiePpJLQHZW252" Ids="Gwc1ZZBO7VDNNNl5DeO6h0,HBLNHI3Oi3tMoToqE0DhCy" IsHidden="true" />
             <Link Id="QI6VUaABFtdMdFT9avVkZz" Ids="Gwc1ZZBO7VDNNNl5DeO6h0,PPmtgA33DEQPXSV7qetNfg" IsHidden="true" />
             <Link Id="TpLZ7gNwmt8LGODI1F85cy" Ids="PPmtgA33DEQPXSV7qetNfg,OhLuPyhvQ9vP4hQyNrheFI" />
+            <Link Id="CVB68ZUJCBxQYqMIswQSNK" Ids="AVEIjB5IHRaMx5VH0uxx3h,H4GoakfihxMQSqsdkmrOmD" IsHidden="true" />
+            <Link Id="Hgj9bHEJkaZP5MIa8QfZ2w" Ids="H4GoakfihxMQSqsdkmrOmD,EccbZANtgr8L6AOBBbUQtO" />
           </Patch>
         </Node>
         <!--
@@ -11564,7 +11572,7 @@
                       <CategoryReference Kind="Float32Type" Name="Float32" NeedsToBeDirectParent="true" />
                     </p:NodeReference>
                     <Pin Id="G8B0KWEGZx9OMEKtLmeiQ6" Name="Input" Kind="InputPin" />
-                    <Pin Id="RBEQIQ1W5TnMIHlsddXwVJ" Name="Input 2" Kind="InputPin" DefaultValue="3">
+                    <Pin Id="RBEQIQ1W5TnMIHlsddXwVJ" Name="Input 2" Kind="InputPin" DefaultValue="2">
                       <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                         <Choice Kind="TypeFlag" Name="Float32" />
                       </p:TypeAnnotation>
