@@ -3037,13 +3037,14 @@
         </p:NodeReference>
         <Patch Id="TD7Uw0yvdLIQKReMa0incp">
           <Canvas Id="UrjtEJL1OXPMTGuOsA1XES" CanvasType="Group">
-            <Node Bounds="228,280,73,19" Id="BLpyRRkUj97QLPkILFHHWN">
+            <Node Bounds="229,306,85,19" Id="BLpyRRkUj97QLPkILFHHWN">
               <p:NodeReference LastCategoryFullName="VL.Tilda" LastSymbolSource="VVVV.Tilda.GUI.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Editor" />
               </p:NodeReference>
               <Pin Id="I3jEPm6nxAYMm6xCztvN2a" Name="Timeline" Kind="InputPin" />
               <Pin Id="EJNxVSm3mOqPw83CesBYZj" Name="Modules" Kind="InputPin" />
+              <Pin Id="LTsVu30YCn1MR9nRbLarlt" Name="TrackLabels" Kind="InputPin" />
               <Pin Id="NwRr8Rm3OUyNeAZ3btiTye" Name="EnableTCChangesLocally" Kind="InputPin" />
               <Pin Id="F4xEmnNQGNdNkwyCsTFwiX" Name="Enabled" Kind="InputPin" />
               <Pin Id="TunzzJO4AdBLLQiDStLiBZ" Name="Window Active" Kind="OutputPin" />
@@ -3052,9 +3053,10 @@
             <ControlPoint Id="BOSSIZOuoy1OKDnisRtR6Q" Bounds="230,203" />
             <ControlPoint Id="Q6ojIkziWkUOJ12U6X9bV7" Bounds="299,203" />
             <ControlPoint Id="MeM16kin2tkMi5zFJeEUw9" Bounds="253,229" />
-            <ControlPoint Id="HDUpNuZ1qTiLz1LsKuxfs9" Bounds="230,351" />
-            <ControlPoint Id="Ef5xbXkXIqWO8Yz9GUF0x2" Bounds="301,401" />
-            <ControlPoint Id="PKif3xPmBSEO70QzPE5cKp" Bounds="275,259" />
+            <ControlPoint Id="HDUpNuZ1qTiLz1LsKuxfs9" Bounds="231,377" />
+            <ControlPoint Id="Ef5xbXkXIqWO8Yz9GUF0x2" Bounds="302,427" />
+            <ControlPoint Id="PKif3xPmBSEO70QzPE5cKp" Bounds="290,252" />
+            <ControlPoint Id="DxGwsyzvSSwMJ9BD2t84gO" Bounds="271,282" />
           </Canvas>
           <Patch Id="TQMlBZPCcmiLTRse0Z4ZTC" Name="Create" />
           <Patch Id="KWmoyraCuQFMD7V3biGD7u" Name="Update">
@@ -3062,6 +3064,7 @@
             <Pin Id="FiB7Jzh8UecL166spqiJam" Name="Enabled" Kind="InputPin" />
             <Pin Id="MqGJU5ekvF9LMZEmIikUUw" Name="Modules" Kind="InputPin" />
             <Pin Id="E4LtCqeqR0eQTM8UAX0hUa" Name="EnableTCChangesLocally" Kind="InputPin" Bounds="275,259" />
+            <Pin Id="KUkvQ7LIxD1NYE5bsfQMAP" Name="TrackLabels" Kind="InputPin" Bounds="274,283" />
             <Pin Id="T2tPjmbmu8JLlQf5MzFi3p" Name="Window Active" Kind="OutputPin" Bounds="230,351" />
             <Pin Id="DKctyZjGQEoMjHUul3KYwb" Name="Editor" Kind="OutputPin" Bounds="301,401" />
           </Patch>
@@ -3081,6 +3084,8 @@
           <Link Id="Edzq6h1eNFiMoazsog24TN" Ids="Ef5xbXkXIqWO8Yz9GUF0x2,DKctyZjGQEoMjHUul3KYwb" IsHidden="true" />
           <Link Id="RD4PpvyesKULLAwfN6HNZs" Ids="PKif3xPmBSEO70QzPE5cKp,NwRr8Rm3OUyNeAZ3btiTye" />
           <Link Id="FEUE0aRxrmlPuejsPk5v26" Ids="E4LtCqeqR0eQTM8UAX0hUa,PKif3xPmBSEO70QzPE5cKp" IsHidden="true" />
+          <Link Id="E6BYDHDTTzvLllMRfLMlJX" Ids="DxGwsyzvSSwMJ9BD2t84gO,LTsVu30YCn1MR9nRbLarlt" />
+          <Link Id="FFttR3SfVo5P0UO4uwtQ1t" Ids="KUkvQ7LIxD1NYE5bsfQMAP,DxGwsyzvSSwMJ9BD2t84gO" IsHidden="true" />
         </Patch>
       </Node>
       <Overlay Id="QOn5hJtyBenL6czvINqt9a" Name="Renderer" Bounds="-201,133,200,205">
