@@ -40,7 +40,7 @@
                 <CategoryReference Kind="Category" Name="Skia" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="1712, 1193, 2101, 740">
+              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="128, 144, 1724, 740">
                 <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                   <Choice Kind="TypeFlag" Name="Rectangle" />
                 </p:TypeAnnotation>
@@ -21205,6 +21205,7 @@
               <Pin Id="GWhi8jXaqzMPUmCRdn2Ihz" Name="Values" Kind="InputPin" />
               <Pin Id="TFugdFoT35YNoL9u4PBnml" Name="Set" Kind="InputPin" />
               <Pin Id="QDFMNXiAmuFO5k3w4zbG38" Name="Capacity" Kind="InputPin" />
+              <Pin Id="M3fhgP5feTFOaCPmV4w7TD" Name="Write if Single Keyframe" Kind="InputPin" />
               <Pin Id="I71nwjFMqW8PizEskr9H6F" Name="GoToPreviousKeyframe" Kind="InputPin" />
               <Pin Id="E2A1aIOQnJgO8PnUCu9C7j" Name="GoToNextKeyframe" Kind="InputPin" />
               <Pin Id="CeNRlBzaiHQOafz7nLa2Iw" Name="Timeline" Kind="OutputPin" />
@@ -21363,6 +21364,11 @@
             <Pad Id="RBGG5LZFWwFQPxsjiFJD0S" Comment="Values" Bounds="-144,179,35,80" ShowValueBox="true" isIOBox="true" />
             <Pad Id="R2O2S5E7Z6VQZK53hH0Smo" Comment="Values" Bounds="-47,179,35,80" ShowValueBox="true" isIOBox="true" />
             <Overlay Id="Ho9DkTp888HOhe5R1RNN79" Name="" Bounds="0,0,80,80" />
+            <Pad Id="SadJakHONOpQHStyt1cvZ8" Comment="Write if Single Keyframe" Bounds="585,578,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pad>
           </Canvas>
           <Patch Id="GIwo4gvwydKL69tGsBOC27" Name="Create" />
           <Patch Id="Maqgf1qCilYMJNsSUQzyuC" Name="Update">
@@ -21422,6 +21428,7 @@
           <Link Id="KDalemwkgG1NHvjQox3XSO" Ids="L48hFduZu3FOqkf5s6bs8H,TZQOrRAXEiPLHbyJy8bWtL" />
           <Link Id="OYBsFd9vekgOTznQPB8qKF" Ids="BmI1od9GYrFMmjQ2lyCKsS,RBGG5LZFWwFQPxsjiFJD0S" />
           <Link Id="Gu77Fbom0PmPpAamr2PYGM" Ids="PNkxaNnzD1zMq1j03urmuH,R2O2S5E7Z6VQZK53hH0Smo" />
+          <Link Id="IxdonsgyxgOM0G9IZrfpvr" Ids="SadJakHONOpQHStyt1cvZ8,M3fhgP5feTFOaCPmV4w7TD" />
         </Patch>
       </Node>
       <!--
