@@ -6377,7 +6377,7 @@
                   </Node>
                 </Patch>
               </Node>
-              <Pad Id="Jq9YQIDZNC0OE9Ky4rGvK2" Comment="EnableEditor" Bounds="918,1814,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+              <Pad Id="Jq9YQIDZNC0OE9Ky4rGvK2" Comment="EnableEditor" Bounds="918,1814,35,35" ShowValueBox="true" isIOBox="true" Value="False">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Boolean" />
                 </p:TypeAnnotation>
@@ -14742,12 +14742,11 @@
                 <p:NodeReference LastCategoryFullName="VL.Tilda" LastSymbolSource="VVVV.Tilda.GUI.vl">
                   <Choice Kind="ProcessNode" Name="RenderClipEditor" />
                 </p:NodeReference>
-                <Pin Id="B4nfFAgGiuOMLNsfi1s8V5" Name="Editor" Kind="InputPin" />
+                <Pin Id="UMip7J5I5cvQBLL4ZB1m75" Name="Editor" Kind="InputPin" />
                 <Pin Id="Vo4fYhSIGUQQQ5bEbrgBmN" Name="Timeline" Kind="InputPin" />
                 <Pin Id="O69m36DhXJSLl9XaBFzXfh" Name="Output" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="QFXEdttlkKBOLginiugwrQ" Bounds="1057,90" />
-              <ControlPoint Id="DBxokC6EG5aMM4oRl6u1jw" Bounds="1141,90" />
               <ControlPoint Id="VDmzsaCmeKyMOw3wnb0Zp0" Bounds="441,286" />
               <ControlPoint Id="JPQAMmwsDWFPusr8wNAczT" Bounds="3047,299" />
             </Canvas>
@@ -14833,9 +14832,7 @@
             <Link Id="TJzxzl6aYSYPluHQ6yx0Dx" Ids="ESytjDKF3tzPu8cNXdi2ai,PiQIJ6gkZMeOuyg0mYdFo1" />
             <Link Id="OTSpP9x6WpmMJ8EXvP0kUS" Ids="DLa0i6RfnFgPXvZHvAj5GL,VDmzsaCmeKyMOw3wnb0Zp0,JPQAMmwsDWFPusr8wNAczT,A5Z4wKSbQAGOZxrtAOxLKc" />
             <Link Id="J41EC7MauWmLo4JN9Az5tc" Ids="D7fO7JVsaeOLuGaCoayKxJ,QFXEdttlkKBOLginiugwrQ" IsHidden="true" />
-            <Link Id="MLGYgwaiW7aNaoA6QpYUFX" Ids="Q6aeJIBAH1JNdSXilLESAr,DBxokC6EG5aMM4oRl6u1jw" IsHidden="true" />
             <Link Id="E4v4zU8KdIuPSBG7Lba2Mf" Ids="QFXEdttlkKBOLginiugwrQ,Vo4fYhSIGUQQQ5bEbrgBmN" />
-            <Link Id="NJM80sdDZTKMemgGgz72Sd" Ids="DBxokC6EG5aMM4oRl6u1jw,B4nfFAgGiuOMLNsfi1s8V5" />
             <Link Id="LQuhkL7M2MZPMLjcxbQI4z" Ids="O69m36DhXJSLl9XaBFzXfh,DaJWCDDLZMGPu9xXKqIltt" />
             <Link Id="RLkBkQpP5sdLnhAN5fAFwj" Ids="Ts3JDVWFUZQP11r0RwAISO,IZawkArClpsMDrCy9Q3WgK" />
           </Patch>
@@ -25393,7 +25390,6 @@
         </p:NodeReference>
         <Patch Id="CfNtx8WNUsVNBurhheKUBz">
           <Canvas Id="BdyEUvdLlyGPBjvZOPIqoj" CanvasType="Group">
-            <ControlPoint Id="FI4k81nrbigPNXa9v4mLci" Bounds="97,32" />
             <ControlPoint Id="F8gjILH4PZnLZcYCryFGOg" Bounds="101,941" />
             <Overlay Id="SQLOemsTlDLNcWr9G7keL0" Name="Cliptype Editors" Bounds="405,318,578,302">
               <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
@@ -25635,21 +25631,22 @@
               <ControlPoint Id="F6ZwjNdlQ2nOvlT0r2ONXI" Bounds="103,150" Alignment="Top" />
             </Node>
             <ControlPoint Id="KraMsPFu9iaNl2M0a6xkqc" Bounds="289,32" />
-            <ControlPoint Id="C9G21Hg8RWpLMkkVYzbu32" Bounds="550,32" />
-            <ControlPoint Id="FxwBhR3dzuqQJPet4yIFdE" Bounds="897,32" />
+            <ControlPoint Id="ICOYPHwqPKSPWE1Q4QxY2Y" Bounds="97,-17" />
           </Canvas>
           <Patch Id="ExjVEwfBIb3Pxsc3aEuVof" Name="Create" />
           <Patch Id="F4EVp1VXlxfQTlFZFooUSO" Name="Update">
-            <Pin Id="C3XcIWX4FmVPdj4FUk2ofo" Name="Editor" Kind="InputPin" Bounds="130,122" />
             <Pin Id="RL2T0rpBtYjP9pySNka3bb" Name="Timeline" Kind="InputPin" Bounds="367,127" />
+            <Pin Id="CuRAyzUGnWvNCF2DC9Tx8m" Name="Editor" Kind="InputPin">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="Editor" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="SwSLLWYVtdvLqBBDu6gcMf" Name="Output" Kind="OutputPin" Bounds="305,433" />
           </Patch>
           <ProcessDefinition Id="JOIPAQH80q7QAbxY6VHXlq">
             <Fragment Id="H3aBbw2DLvtNV5bWqHzX0O" Patch="ExjVEwfBIb3Pxsc3aEuVof" Enabled="true" />
             <Fragment Id="BnhZRrUgkhgPfIU3HtIkNW" Patch="F4EVp1VXlxfQTlFZFooUSO" Enabled="true" />
           </ProcessDefinition>
-          <Link Id="KQ0cPm5ncnQP9zTbTWXaKK" Ids="FI4k81nrbigPNXa9v4mLci,PfyJCiAUGIjMOjdhhtRK01" />
-          <Link Id="L4pECy1e5X3MvqWxJBRUrE" Ids="C3XcIWX4FmVPdj4FUk2ofo,FI4k81nrbigPNXa9v4mLci" IsHidden="true" />
           <Link Id="NQCU709saAoLmg9LCHfmB7" Ids="F8gjILH4PZnLZcYCryFGOg,SwSLLWYVtdvLqBBDu6gcMf" IsHidden="true" />
           <Slot Id="E8diLmmBFsuMhdmAFsPTSz" Name="EnvelopeClip">
             <p:TypeAnnotation>
@@ -25666,8 +25663,6 @@
               <Choice Kind="TypeFlag" Name="IEditable" />
             </p:TypeAnnotation>
           </Slot>
-          <Link Id="OCiMyVSuOa3Pj3Nir90AMA" Ids="FI4k81nrbigPNXa9v4mLci,BAEkO4rQtUSOFrkE0THZE3" />
-          <Link Id="TSGOLYQGBC1NGbut6yQf9o" Ids="FI4k81nrbigPNXa9v4mLci,FloRmYgKbAvOvXLzcUwo8V" />
           <Link Id="IBmw5nthuSIMIooFcRRKeI" Ids="KGpv8zuFMA4LFNxKNcaJzU,EjnquJOIR92OLKltOz2Xfd" />
           <Link Id="RXXotoxV3gGMy0ynsjrPZv" Ids="UwiLGWlsXHGPZvgL0NwG1Y,DUNbgVR9bojOTjCxfPcXeh" />
           <Link Id="K6fruhH0y9OPD5RhAqXf3a" Ids="DUNbgVR9bojOTjCxfPcXeh,EmKD01PESqrPhr0hxPq6wk" />
@@ -25675,9 +25670,7 @@
           <Link Id="E82pWtcgAyGPZOkEsLuqgw" Ids="Qjjed0AZlXrPOnno4AMEg2,EfKgk8QLtWYPgFJKDC0Y3i" />
           <Link Id="VAlE7hQiPrTNNr3fMGhlhS" Ids="EfKgk8QLtWYPgFJKDC0Y3i,HSdMcq35sApMDt0yrcddj3" />
           <Link Id="K7LG0Slh9iJNE7rjItkIPA" Ids="N8jTEUbDCbZLhgwzSkQ1Nb,P2dwb6LBljKPOwY3pYiheu" />
-          <Link Id="B5qOwcZV0AIMfEkl3NEnDg" Ids="C9G21Hg8RWpLMkkVYzbu32,IRC3Gl5ffPqOvvDAOhH4yZ" />
           <Link Id="KNQjC9zHbjCPIQTRU3dzF4" Ids="P2dwb6LBljKPOwY3pYiheu,H9AlmqflrIcPcVV4H6Y4T6" />
-          <Link Id="URuBzwnWBZvOCcFHiNT2jO" Ids="FxwBhR3dzuqQJPet4yIFdE,Sa3vNPPa9NmPk4vmRJwqyu" />
           <Link Id="JXELrTur1pkP4x8MxnRuHL" Ids="Kri3jjbmDUDPbc3eA57Qi8,PnNrXw5AEaaM4u1fBUBHE1" />
           <Link Id="TBMsg1ryXFuOmbz1fxKJhp" Ids="DUNbgVR9bojOTjCxfPcXeh,N6zstDIbAPZMBvTS8pULHb" />
           <Link Id="SWSbFCiFc3MOE7NvX19hQp" Ids="PiZL0MPElkyNJon9AiB3IM,TlzFt42JRVXN1amF7kwKO0" IsFeedback="true" />
@@ -25708,9 +25701,13 @@
           <Link Id="UEpP1vWx5wGPrGCtVFtsxv" Ids="NwMZ6cwW7GaL5pE2hQGhcR,TWGYwgBWP0XPcXZX7sH5BB" />
           <Link Id="QVKNOmfx1DKOpXPzNK5EoV" Ids="TWGYwgBWP0XPcXZX7sH5BB,F8gjILH4PZnLZcYCryFGOg" />
           <Link Id="S3kDCRxasKENaS7FKzOjS0" Ids="RL2T0rpBtYjP9pySNka3bb,KraMsPFu9iaNl2M0a6xkqc" IsHidden="true" />
-          <Link Id="StXuO1RqmtuLMOkus8H9q0" Ids="C3XcIWX4FmVPdj4FUk2ofo,C9G21Hg8RWpLMkkVYzbu32" IsHidden="true" />
-          <Link Id="BiKDeyxVV5EQUI4I2o77u1" Ids="C3XcIWX4FmVPdj4FUk2ofo,FxwBhR3dzuqQJPet4yIFdE" IsHidden="true" />
           <Link Id="MSwtKz7IIhUQOcNRN6Ozcv" Ids="KraMsPFu9iaNl2M0a6xkqc,R4YnXQFr12iOs4CHBSAtPX" />
+          <Link Id="AO2nXLKEc3rNOB6eKJrDph" Ids="CuRAyzUGnWvNCF2DC9Tx8m,ICOYPHwqPKSPWE1Q4QxY2Y" IsHidden="true" />
+          <Link Id="D14ttb4MfaEPRC1a4EOH7H" Ids="ICOYPHwqPKSPWE1Q4QxY2Y,Sa3vNPPa9NmPk4vmRJwqyu" />
+          <Link Id="U751ryu64mgOe4q0ZNahwo" Ids="ICOYPHwqPKSPWE1Q4QxY2Y,IRC3Gl5ffPqOvvDAOhH4yZ" />
+          <Link Id="OOMAIBwLEoEMbdqda8aAbi" Ids="ICOYPHwqPKSPWE1Q4QxY2Y,PfyJCiAUGIjMOjdhhtRK01" />
+          <Link Id="KgTqmlMnsh5PHINMGjIcxj" Ids="ICOYPHwqPKSPWE1Q4QxY2Y,BAEkO4rQtUSOFrkE0THZE3" />
+          <Link Id="Np5dHmgaXRYNm2u7sBp7Fi" Ids="ICOYPHwqPKSPWE1Q4QxY2Y,FloRmYgKbAvOvXLzcUwo8V" />
         </Patch>
       </Node>
       <!--
@@ -26420,11 +26417,6 @@
             <Pin Id="PPXw155VYgkOEE4vQ6TS1Z" Name="Editor" Kind="InputPin" Bounds="316,127" />
             <Pin Id="QasqxlOMMQfPkRQI8q7pak" Name="Output" Kind="OutputPin" Bounds="114,476" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="F6mFmd5IdAiPbkZq3obp7B">
             <Fragment Id="Nx7Dp2gBhPpOG3Ayg2TKxt" Patch="GOj3eNo6yKHLh7vzD5X5Ro" Enabled="true" />
             <Fragment Id="TFK3SIdj54eLeSCZ9QKkc4" Patch="QJ5hIO2PGSsNIrijQnvX9R" Enabled="true" />
