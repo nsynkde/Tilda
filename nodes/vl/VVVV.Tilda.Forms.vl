@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0562-g457400a887" Version="0.128">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0574-g531e8dd97e" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -1333,7 +1333,7 @@
                               <Pin Id="JXdAq3wBd2rLVhexjGm0jN" Name="Key" Kind="InputPin" />
                               <Pin Id="DnDOVDOn2H9NlKIzNnuQsu" Name="Result" Kind="OutputPin" />
                             </Node>
-                            <Node Bounds="1182,1715,241,180" Id="RGpnXY3uDpQLvQzGiMx6v9">
+                            <Node Bounds="1182,1705,407,190" Id="RGpnXY3uDpQLvQzGiMx6v9">
                               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -1362,7 +1362,7 @@
                                   <Pin Id="GawDPPYLLOoM6VvnKM2Ti6" Name="Color" Kind="InputPin" />
                                   <Pin Id="Oo8eYjeT4CGLwEVpg6eTwP" Name="Output" Kind="StateOutputPin" />
                                 </Node>
-                                <Node Bounds="1329,1782,65,19" Id="GrR5ELPheslP76RTfz5xwR">
+                                <Node Bounds="1336,1782,65,19" Id="GrR5ELPheslP76RTfz5xwR">
                                   <p:NodeReference LastCategoryFullName="Color.RGBA" LastSymbolSource="CoreLibBasics.vl">
                                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                                     <CategoryReference Kind="ColorRGBAType" Name="RGBA" />
@@ -1378,7 +1378,7 @@
                                       <Choice Kind="TypeFlag" Name="Float32" />
                                     </p:TypeAnnotation>
                                   </Pin>
-                                  <Pin Id="KG8HwJiR3B9MwbBNdW7zKa" Name="Lightness" Kind="InputPin" DefaultValue="0.8">
+                                  <Pin Id="KG8HwJiR3B9MwbBNdW7zKa" Name="Lightness" Kind="InputPin">
                                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                                       <Choice Kind="TypeFlag" Name="Float32" />
                                     </p:TypeAnnotation>
@@ -1395,23 +1395,16 @@
                                   <Pin Id="Smid7qwBacfNx7SGqcoq1z" Name="To" Kind="InputPin" />
                                   <Pin Id="SOtMAHkzQ61NMHZtJiArSR" Name="Output" Kind="OutputPin" />
                                 </Node>
-                                <Node Bounds="1357,1739,54,19" Id="Id58UamQ8LUMVz52TfXe7b">
-                                  <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
-                                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                                    <Choice Kind="OperationCallFlag" Name="Random" />
-                                  </p:NodeReference>
-                                  <Pin Id="ExfqDHANnFBMbRKjNKEgip" Name="From" Kind="InputPin" DefaultValue="0.6">
-                                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                                      <Choice Kind="TypeFlag" Name="Float32" />
-                                    </p:TypeAnnotation>
-                                  </Pin>
-                                  <Pin Id="RWoe0Smhj0TPWE14zFIdns" Name="To" Kind="InputPin" DefaultValue="0.8">
-                                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                                      <Choice Kind="TypeFlag" Name="Float32" />
-                                    </p:TypeAnnotation>
-                                  </Pin>
-                                  <Pin Id="HALaUDQnY3xO7hIVDe6Ho7" Name="Output" Kind="OutputPin" />
-                                </Node>
+                                <Pad Id="FBRr2DeNUQCOcJe5RJuxYq" Comment="Lightness" Bounds="1443,1773,69,15" ShowValueBox="true" isIOBox="true" Value="0.5">
+                                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                                    <Choice Kind="TypeFlag" Name="Float32" />
+                                  </p:TypeAnnotation>
+                                </Pad>
+                                <Pad Id="LZBgh0O95XYLHHoN8zj6sw" Comment="Saturation" Bounds="1369,1733,35,15" ShowValueBox="true" isIOBox="true" Value="0.4">
+                                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                                    <Choice Kind="TypeFlag" Name="Float32" />
+                                  </p:TypeAnnotation>
+                                </Pad>
                               </Patch>
                             </Node>
                             <Pad Id="SjMdiq6Wp5hLmqQZL3jJrj" Comment="" Bounds="1292,1565,44,19" ShowValueBox="true" isIOBox="true" Value="Default">
@@ -2423,7 +2416,6 @@
           <Link Id="QfSgbPGyjALN8nzmkpFR5x" Ids="TTmEyr11QNVL2YJQ8Nuvrb,JXdAq3wBd2rLVhexjGm0jN" />
           <Link Id="F1UDrTkavJMOSH9GgRFcZ2" Ids="DnDOVDOn2H9NlKIzNnuQsu,C5L6QNsfIIKPYKKEW8QPCm" />
           <Link Id="GlPJvwzXI3kNR2MmEUEgvJ" Ids="C6cTniGR5WwNHaSWol2UrL,GJFwMNGXAh9LSddQvf67ff" />
-          <Link Id="MIbAJbHT8O6Nk9SIFDklRr" Ids="HALaUDQnY3xO7hIVDe6Ho7,KG8HwJiR3B9MwbBNdW7zKa" />
           <Link Id="KYo2KJwm4mEMClQMEx3HmL" Ids="O1CX0GJkdO5LmK2VDdMetB,AfdZQZYgWtvLnHdXVfcU26" />
           <Link Id="Or8hioKNwy2PktWPagaYpD" Ids="NrTGYGAOcQrNrOs3qGC0FW,CwojZJ1iHNkP78wrnvzTex" />
           <Link Id="KvuLTnhsRMROrtaSIdeyag" Ids="IwmpaAMWOpQOpN3F04UB68,Tq4rLd1pguBMTSleuR0jts" />
@@ -2559,6 +2551,8 @@
           <Link Id="PNmhyI1i16rMcsdzWqiA6q" Ids="Kcp5anrdgo1LbfZceTNud5,HLDb3QchtOzOO4P6fg6Rbg" />
           <Link Id="Lw2OYcYZZ8fOtNrsrQtS8J" Ids="J21Bg7VFB1jNrZiqBg2r19,Pj2gc8WxsydNltaRho5xr9" />
           <Link Id="KmooqoUPvZwPBH1DWDzZ5m" Ids="VSXewlKvPGSQcKaD9goql9,QrkV3A8CLuEPJsQaTHUx7R" />
+          <Link Id="I8wwgF4jJJ1LxAlaGv4gM4" Ids="FBRr2DeNUQCOcJe5RJuxYq,KG8HwJiR3B9MwbBNdW7zKa" />
+          <Link Id="Dnq9QFjTTraO80nXdNq3T9" Ids="LZBgh0O95XYLHHoN8zj6sw,BTzhjYNWarbL8xWSivAqMv" />
         </Patch>
       </Node>
       <!--

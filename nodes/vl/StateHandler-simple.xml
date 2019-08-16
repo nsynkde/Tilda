@@ -5,11 +5,12 @@
     <Item Id="9" Name="HoveringTC" Position_0="-1.506422, -1.41474" />
     <Item Id="10" Name="EditTC" Position_0="-2.074688, -2.174274" />
     <Item Id="11" Name="DraggingPH" Position_0="1.283541, -0.5554637" />
-    <Item Id="12" Name="Dragging" Position_0="0.2644355, 1.463359" />
-    <Item Id="13" Name="Hovering" Position_0="-1.992826, 0.5081732" />
-    <Item Id="14" Name="Envelope" Position_0="-0.814334, 0.1156154" />
-    <Item Id="15" Name="EnvelopeInteraction" Position_0="-0.8336143, 2.412313" />
-    <Item Id="16" Name="Editing" Position_0="-2.030291, 1.382158" />
+    <Item Id="12" Name="Dragging" Position_0="1.260286, 2.165987" />
+    <Item Id="13" Name="Hovering" Position_0="-1.939085, 1.289267" />
+    <Item Id="14" Name="Envelope" Position_0="1.530065, 1.202752" />
+    <Item Id="15" Name="EnvelopeInteraction" Position_0="1.987962, 2.246338" />
+    <Item Id="16" Name="Editing" Position_0="-1.600138, 1.992116" />
+    <Item Id="17" Name="ClipEditor" Position_0="0.08727539, 2.263209" />
   </States>
   <Transitions>
     <Item From="1" Name="HoverScale" To="8" />
@@ -38,5 +39,9 @@
     <Item From="16" Name="HoverEmpty" To="1" />
     <Item From="8" Name="LeftDown" To="11" />
     <Item From="11" Name="LeftUp" To="8" />
+    <Item From="1" Name="ToggleClipEditor" To="17" />
+    <Item From="17" Name="ToggleClipEditor" To="1" />
+    <Item From="13" Name="ToggleClipEditor" To="17" />
+    <Item From="17" Name="ToggleClipEditor" To="13" />
   </Transitions>
 </StateMachineDescription>
