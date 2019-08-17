@@ -1,0 +1,1076 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="JTnh8xTfguROWkU9vozr34" LanguageVersion="2019.1.0-0411-gf6daa4918b" Version="0.128">
+  <NugetDependency Id="FibXo138DHdLYSRsbk3OTX" Location="VL.CoreLib" Version="2019.1.0-411" />
+  <Patch Id="CdGddXyet8AOPdWJDMeyaO">
+    <Canvas Id="NDRbUseZ57ALKv7Xs1Bky3" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory">
+      <!--
+
+    ************************ MyStyleCatalog ************************
+
+-->
+      <Node Name="MyStyleCatalog" Bounds="200,100" Id="IALzJmtFaA5PreFAXsQDRc">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="BWzSvlITH2SNN32GFwlLRL">
+          <Canvas Id="JtLTjIpaqO9O0MGDfB7hqb" CanvasType="Group">
+            <Pad Id="FeVte43ffePQGCu2VJlOE5" Bounds="57,353,289,307" ShowValueBox="true" isIOBox="true" Value="The AddDescriptorToCatalog region allows you to define a style for a particular Elementum when it is a specitif state.&#xD;&#xA;&#xD;&#xA;Those states can be :&#xD;&#xA;&#xD;&#xA;- Hovered&#xD;&#xA;- Focused&#xD;&#xA;- Selected&#xD;&#xA;- TextPreview&#xD;&#xA;&#xD;&#xA;Here, we'll define a Style for when a Slider is Hovered. We want its foreground to become blue and stroked in white.&#xD;&#xA;&#xD;&#xA;Let's continue defining style descriptors.">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="LvN5764Q1ewN9lOLfPN5hG" SlotId="SvqIo3vrFWiPCxspewSa0t" Bounds="528,312" />
+            <Node Bounds="526,263,105,19" Id="HAkSmkNjpkzOefxUuJrQdP">
+              <p:NodeReference LastCategoryFullName="Elementa.Style" LastSymbolSource="Elementa.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="StyleCatalogDefault" />
+              </p:NodeReference>
+              <Pin Id="Jvl2uwMMzGqL23JgGMj0Or" Name="Style Sheet" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="ETBSaS9UUrdLERTQrX1M4r" Bounds="529,1534" />
+            <Pad Id="GPSFDAOyZ7CMeNGpi88KXi" Bounds="637,270,197,41" ShowValueBox="true" isIOBox="true" Value="Let's start with the default style catalog provided by the library">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="Jrm1970pfOKPlofLW3Htjm" Bounds="57,788,276,101" ShowValueBox="true" isIOBox="true" Value="We want all our Elementa to switch their font to an orange Trebuchet Italic when they are in Typing mode (double-clic). Note that we did not specify an Element name, this acts as a wildcard.">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="V2KgKDE6ndPPGvqiqBFt2c" Bounds="57,984,277,131" ShowValueBox="true" isIOBox="true" Value="We now want all our Vector2D to display text in a gorgeous Times New Roman when they are idle. Again, note we did not specify anything for the State pin. Soos as you double clic one of its components, it switches to the orange Trebuchet we defined earlier.">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="EZMlJvOalXyNf9ODgJuIJE" Bounds="57,1269,281,47" ShowValueBox="true" isIOBox="true" Value="Finally, we want our Slider2D to have no background, only a white stroke">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Node Bounds="398,342,601,1162" Id="LeZVQJCzRlfO3VQyTjG3D5">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <Pin Id="Napo4k1nYNjODrk34YN1PI" Name="Force" Kind="InputPin" />
+              <Pin Id="I8EsomTCba2LEQ0s1Hq2wG" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="IuUueR3Y6y6P9uLT0IeOBm" Name="Has Changed" Kind="OutputPin" />
+              <Patch Id="BwIkcoWhwZfOrlsrv82ifP" ManuallySortedPins="true">
+                <Patch Id="TAS7jN81TeFQFNrxlGziPJ" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="QME2dOaAyBpPfrRclMZlga" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="526,455,136,185" Id="ClJxcaUzZlIPX7YpCgVCwO">
+                  <p:NodeReference LastCategoryFullName="Elementa.Core.Style" LastSymbolSource="Elementa.Core.vl">
+                    <CategoryReference Kind="Category" Name="Style" />
+                    <Choice Kind="ProcessAppFlag" Name="AddDescriptorToCatalog" />
+                    <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+                  </p:NodeReference>
+                  <Pin Id="Gabv1iTAjQxMwwWE9qwSn3" Name="Style Sheet" Kind="InputPin" />
+                  <Pin Id="HJjh0WdFcafNEz6Ho85hli" Name="Element" Kind="InputPin" />
+                  <Pin Id="BYvx8edRnr3QS3SIOWhSsR" Name="State" Kind="InputPin" />
+                  <Pin Id="OGEuJndkrnbN9mqr4eIwnf" Name="Style Sheet" Kind="OutputPin" />
+                  <Patch Id="Opaiz6aiRQPNm8yy2WeBIr" Name="Delegate" ManuallySortedPins="true">
+                    <Pin Id="HyjGUazrlt1L8jsRe8voxx" Name="Arg" Kind="InputPin" />
+                    <Pin Id="IDqxZE2nYCLO0USMVeqQYc" Name="Result" Kind="OutputPin" />
+                    <ControlPoint Id="ItYDuYbqQwDMwhbj2Ea63A" Bounds="540,463" />
+                    <ControlPoint Id="FfhAk99vWFBMTzi519tRsd" Bounds="540,633" />
+                    <Node Bounds="538,525,96,26" Id="VI1y0568nthLudJ7t8Ao8a">
+                      <p:NodeReference LastCategoryFullName="Elementa.Style.Style" LastSymbolSource="Elementa.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="SetForegroundFill" />
+                      </p:NodeReference>
+                      <Pin Id="T0toLGWhk7cOBzrF5JO7w8" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="MRam6y1lAUMPD4NvS0x3C3" Name="Foreground_Fill_Enable" Kind="InputPin" />
+                      <Pin Id="Hq8jod7G2EfMixNDNVXL0w" Name="Foreground_Fill_Paint" Kind="InputPin" />
+                      <Pin Id="CICFcNQtLr0Mom6Ld2DnZ5" Name="Output" Kind="StateOutputPin" />
+                    </Node>
+                    <Node Bounds="538,575,112,26" Id="ClXkovz16oMMmHpZVBxC5w">
+                      <p:NodeReference LastCategoryFullName="Elementa.Style.Style" LastSymbolSource="Elementa.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="SetForegroundStroke" />
+                      </p:NodeReference>
+                      <Pin Id="QCFp2qFKXuKMFxXF7osIMg" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="AP0W5fQf8tPNJj0PJvppHD" Name="Foreground_Stroke_Enable" Kind="InputPin" DefaultValue="True">
+                        <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="TypeFlag" Name="Boolean" />
+                        </p:TypeAnnotation>
+                      </Pin>
+                      <Pin Id="B4R3jvJoFOgO9K8kJXCX8X" Name="Foreground_Stroke_Paint" Kind="InputPin" />
+                      <Pin Id="TWA9p3tmdqmMfKEsjQn70h" Name="Output" Kind="StateOutputPin" />
+                    </Node>
+                  </Patch>
+                </Node>
+                <Pad Id="FtQP3LDafOrLTNCEHw4YRu" Comment="Element" Bounds="593,370,43,15" ShowValueBox="true" isIOBox="true" Value="Slider">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Pad Id="Hvfj4irCuPGO5rFAYNXEmR" Comment="State" Bounds="659,401,59,15" ShowValueBox="true" isIOBox="true" Value="Hovered">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Node Bounds="680,474,45,19" Id="OMFjyU2N3D5P5fZkukl6oi">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastSymbolSource="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Fill" />
+                  </p:NodeReference>
+                  <Pin Id="DlLxlKb2y5qOIKCBITmPoK" Name="Input" Kind="InputPin" />
+                  <Pin Id="TwvWB8UNpQlLoe2yHzvQhG" Name="Color" Kind="InputPin" />
+                  <Pin Id="R3uScdCSzOiPWz4erOGYDQ" Name="Shader" Kind="InputPin" />
+                  <Pin Id="B2x0GLedRDtMJfQRwGdd2n" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pad Id="IWKNFzc7aO5M0HGZN6S2s7" Comment="Color" Bounds="702,452,136,15" ShowValueBox="true" isIOBox="true" Value="0, 0.5199995, 1, 1">
+                  <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="RGBA" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Node Bounds="526,757,162,170" Id="JuiQmsJT6STMZsU5vCUtFt">
+                  <p:NodeReference LastCategoryFullName="Elementa.Style" LastSymbolSource="Elementa.vl">
+                    <Choice Kind="ProcessAppFlag" Name="AddDescriptorToCatalog" />
+                    <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+                  </p:NodeReference>
+                  <Pin Id="ER4eIVB2BvjNGwLpWWhZeM" Name="Style Sheet" Kind="InputPin" />
+                  <Pin Id="Bk3zxtubYHRLfen58idUWM" Name="Element" Kind="InputPin" />
+                  <Pin Id="MOAQnb5M2UFMBbHOzEasy2" Name="State" Kind="InputPin" />
+                  <Pin Id="IIrBfv6FflENuRqkZFwnFQ" Name="Style Sheet" Kind="OutputPin" />
+                  <Patch Id="O2W4nii3mTsMovV5tjgQSi" Name="Delegate" ManuallySortedPins="true">
+                    <Pin Id="SBHdBQlVCHoMouVkspqWyk" Name="Arg" Kind="InputPin" />
+                    <Pin Id="N0oW3wCREceLFy8S9ewQtV" Name="Result" Kind="OutputPin" />
+                    <ControlPoint Id="FiKbKZXi2RTM0yxM69306s" Bounds="540,765" />
+                    <ControlPoint Id="LjfALrzPA2XLktvFXXqYz3" Bounds="540,920" />
+                    <Node Bounds="538,822,51,26" Id="PuTbGQ6fXJXLYs4EVwFTlk">
+                      <p:NodeReference LastCategoryFullName="Elementa.Core.Style.Style" LastSymbolSource="Elementa.Core.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="Category" Name="Style" />
+                        <Choice Kind="OperationCallFlag" Name="SetText" />
+                      </p:NodeReference>
+                      <Pin Id="JhrJjrZxzGeNxLMhNxWMPQ" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="F3YAKwx2a1vOzMqGTX5GHS" Name="Text_Enable" Kind="InputPin" />
+                      <Pin Id="FjPy6rDTbZOORAFTsbeUPO" Name="Text_Paint" Kind="InputPin" />
+                      <Pin Id="Co1z2Z8IADwLbPOLZSkNbz" Name="Output" Kind="StateOutputPin" />
+                    </Node>
+                    <Node Bounds="538,866,75,26" Id="H055C982oiCNT82wr3IofL">
+                      <p:NodeReference LastCategoryFullName="Elementa.Style.Style" LastSymbolSource="Elementa.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="SetTextColor" />
+                      </p:NodeReference>
+                      <Pin Id="VutqsUEz3VuO12OHh0HEGg" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="FO4x5bI1IIGN1MhOVbdelm" Name="Color" Kind="InputPin" />
+                      <Pin Id="LtUhuH18DjrNT9e72m8IYO" Name="Output" Kind="StateOutputPin" />
+                    </Node>
+                    <Pad Id="GeIXZ8pHvtRPrU9wQzU4Jl" Comment="Color" Bounds="610,855,20,15" ShowValueBox="true" isIOBox="true" Value="0.9799999, 0.5291998, 0, 1">
+                      <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+                        <Choice Kind="TypeFlag" Name="RGBA" />
+                      </p:TypeAnnotation>
+                    </Pad>
+                  </Patch>
+                </Node>
+                <Pad Id="TaACqHpvUujNlr4IBQgRlV" Comment="State" Bounds="685,679,68,15" ShowValueBox="true" isIOBox="true" Value="TextPreview">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Pad Id="SQSm9n3IUaaPX55K5lAeAy" Comment="Element" Bounds="607,662,35,15" ShowValueBox="true" isIOBox="true" Value="">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Pad Id="FNqO6uHeYTTMQIc5F39TMA" Comment="Family Name" Bounds="726,712,179,15" ShowValueBox="true" isIOBox="true" Value="Trebuchet MS">
+                  <p:TypeAnnotation LastCategoryFullName="Text" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="FontList" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Pad Id="VYbkkzOfUzXN4P3AsclsVX" Comment="Style" Bounds="746,734,70,15" ShowValueBox="true" isIOBox="true" Value="Italic">
+                  <p:TypeAnnotation LastCategoryFullName="Graphics.Skia.Unwrapped.Enums" LastSymbolSource="VL.Skia.vl">
+                    <Choice Kind="TypeFlag" Name="SKTypefaceStyle" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Node Bounds="704,788,165,19" Id="DuhtIopm4bEPClhdru55xt">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Text" LastSymbolSource="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="FontAndParagraph" />
+                  </p:NodeReference>
+                  <Pin Id="Nkh4DAORfHIMRv4tbv6TtF" Name="Input" Kind="InputPin" />
+                  <Pin Id="OaWoZkgJ5cpLSCr2B0yO4Y" Name="Family Name" Kind="InputPin" />
+                  <Pin Id="TMa28DCAYuJLT8H2ZsNffW" Name="Style" Kind="InputPin" />
+                  <Pin Id="VlqfDQfJTx0Md2LQM8iqxQ" Name="Size" Kind="InputPin" DefaultValue="0.09999999">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="GMAJdwdIQG9L9BV3x1uFhh" Name="Color" Kind="InputPin" DefaultValue="0.9, 0.9, 0.9, 1">
+                    <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="RGBA" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="UsLgQE62AHkPbhhDnmNfmu" Name="Line Height in em" Kind="InputPin" />
+                  <Pin Id="BWaFHBUY40zO0W7ska3VwC" Name="Horizontal Alignment" Kind="InputPin" />
+                  <Pin Id="Rwm1nYA4ELGPinHDTfDuZE" Name="Vertical Alignment" Kind="InputPin" DefaultValue="Bottom">
+                    <p:TypeAnnotation LastCategoryFullName="Graphics.Skia.Unwrapped.Enums" LastSymbolSource="VL.Skia.vl">
+                      <Choice Kind="TypeFlag" Name="VerticalTextAlignment" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="Hiv2QeI7IVuQPts6qxpkPz" Name="Show Helpers" Kind="InputPin" />
+                  <Pin Id="UZLExiOzRf0N4XcC35e7Eo" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="527,1018,83,95" Id="Dr0M5mHsoEgO6mROBVDBer">
+                  <p:NodeReference LastCategoryFullName="Elementa.Style" LastSymbolSource="Elementa.vl">
+                    <Choice Kind="ProcessAppFlag" Name="AddDescriptorToCatalog" />
+                    <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+                  </p:NodeReference>
+                  <Pin Id="FQLoNCWYmdIOclmaGik9LI" Name="Style Sheet" Kind="InputPin" />
+                  <Pin Id="NdKu1VF8tviOee6SmduS1D" Name="Element" Kind="InputPin" />
+                  <Pin Id="S3i2rPJf9P8PST6yrRul0E" Name="State" Kind="InputPin" />
+                  <Pin Id="A25cbWzSSq6L0PCEcIYvBd" Name="Style Sheet" Kind="OutputPin" />
+                  <Patch Id="GzeJwYYN4cBOggrJVBiM5J" Name="Delegate" ManuallySortedPins="true">
+                    <Pin Id="PQEIUMj5nwmLeL1Wfl07ST" Name="Arg" Kind="InputPin" />
+                    <Pin Id="N6YwgJSzAcaQCbQQHjwPfN" Name="Result" Kind="OutputPin" />
+                    <ControlPoint Id="D74lFf0mRppObYYAv6vuYH" Bounds="531,1026" />
+                    <ControlPoint Id="RF82dHMAuarPVGdpgeejB0" Bounds="531,1106" />
+                    <Node Bounds="547,1053,51,26" Id="QxPBMlerBYPL3Z00KunW9i">
+                      <p:NodeReference LastCategoryFullName="Elementa.Core.Style.Style" LastSymbolSource="Elementa.Core.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="SetText" />
+                        <CategoryReference Kind="RecordType" Name="Style" NeedsToBeDirectParent="true">
+                          <p:OuterCategoryReference Kind="Category" Name="Style" NeedsToBeDirectParent="true" />
+                        </CategoryReference>
+                      </p:NodeReference>
+                      <Pin Id="K9ELV7WZOATN4TnXk7QQdV" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="CrzYMKyRYKjNVpLqedFYXJ" Name="Text_Enable" Kind="InputPin" />
+                      <Pin Id="RfegngK3KeuParcAxPkexk" Name="Text_Paint" Kind="InputPin" />
+                      <Pin Id="JmvPE1ZGGYmP1VMDr7E5t4" Name="Output" Kind="StateOutputPin" />
+                    </Node>
+                  </Patch>
+                </Node>
+                <Pad Id="GD2rRl5ms6KQARlajvGXvK" Comment="Element" Bounds="568,958,56,15" ShowValueBox="true" isIOBox="true" Value="Vector2D">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Pad Id="UoUrISKp11MK9VXWKAU91K" Comment="Family Name" Bounds="729,922,179,15" ShowValueBox="true" isIOBox="true" Value="Times New Roman">
+                  <p:TypeAnnotation LastCategoryFullName="Text" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="FontList" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Pad Id="Q5NzLHTEUe9QcDMDuvEHKa" Comment="Style" Bounds="749,944,70,15" ShowValueBox="true" isIOBox="true" Value="Normal">
+                  <p:TypeAnnotation LastCategoryFullName="Graphics.Skia.Unwrapped.Enums" LastSymbolSource="VL.Skia.vl">
+                    <Choice Kind="TypeFlag" Name="SKTypefaceStyle" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Node Bounds="707,998,165,19" Id="IDoHD4ybmNJNwjlHTIUyN9">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Text" LastSymbolSource="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="FontAndParagraph" />
+                  </p:NodeReference>
+                  <Pin Id="VpdTaSgdggvNF00b7yX9vL" Name="Input" Kind="InputPin" />
+                  <Pin Id="VZcn2CxoHKxNxkDRvvZpEr" Name="Family Name" Kind="InputPin" />
+                  <Pin Id="IGg3P1MJ7JbMeMUb16RlyH" Name="Style" Kind="InputPin" />
+                  <Pin Id="Aw6kEDUlW2fL4v1kSEa6X6" Name="Size" Kind="InputPin" DefaultValue="0.09999999">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="NIfWeXtSp0vN6hExqqpTIX" Name="Color" Kind="InputPin" DefaultValue="0.9, 0.9, 0.9, 1">
+                    <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="RGBA" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="Sy1a3O7GspxMTkFEbg7Jfy" Name="Line Height in em" Kind="InputPin" />
+                  <Pin Id="MmeIGbV9rVAPQDF8M5AjtI" Name="Horizontal Alignment" Kind="InputPin" />
+                  <Pin Id="HidddVAKoT2OwYzHO6UWng" Name="Vertical Alignment" Kind="InputPin" DefaultValue="Bottom">
+                    <p:TypeAnnotation LastCategoryFullName="Graphics.Skia.Unwrapped.Enums" LastSymbolSource="VL.Skia.vl">
+                      <Choice Kind="TypeFlag" Name="VerticalTextAlignment" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="SAsLkX23WO8MqsfoRbz7Dd" Name="Show Helpers" Kind="InputPin" />
+                  <Pin Id="KluTcarTzElM5svdZfEUna" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="527,1212,152,95" Id="FpJfmtR39XEPTUz8vXZbZh">
+                  <p:NodeReference LastCategoryFullName="Elementa.Style" LastSymbolSource="Elementa.vl">
+                    <Choice Kind="ProcessAppFlag" Name="AddDescriptorToCatalog" />
+                    <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+                  </p:NodeReference>
+                  <Pin Id="PhTnfcsT7OQOemrpGEqIjn" Name="Style Sheet" Kind="InputPin" />
+                  <Pin Id="F5XVKKO2DqjO9APjGvbXB6" Name="Element" Kind="InputPin" />
+                  <Pin Id="VQ2z0eb8Z3DMJAzLNpzWth" Name="State" Kind="InputPin" />
+                  <Pin Id="EfZiXLXp1YVNtMi4Vw2K72" Name="Style Sheet" Kind="OutputPin" />
+                  <Patch Id="EM6h77WM9GCOcjpvPlj6kf" Name="Delegate" ManuallySortedPins="true">
+                    <Pin Id="HizRQjoI0MpOIja8EKi2Ip" Name="Arg" Kind="InputPin" />
+                    <Pin Id="D7mC5PLopkiN8jKMKvfY3u" Name="Result" Kind="OutputPin" />
+                    <ControlPoint Id="FdceFZWovqgLjpUmnCtcca" Bounds="531,1220" />
+                    <ControlPoint Id="HBffDmkD8bgOF2pYF4ykKJ" Bounds="531,1300" />
+                    <Node Bounds="542,1245,125,26" Id="SfsQVKWk9pfLolmIKmDDVB">
+                      <p:NodeReference LastCategoryFullName="Elementa.Style.Style" LastSymbolSource="Elementa.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="SetBackground" />
+                      </p:NodeReference>
+                      <Pin Id="S4AMlFeW0XaMTzFpZ2TmIN" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="D7U1MuJOB7ZLDH16P9zWQ6" Name="Background_Fill_Enable" Kind="InputPin" DefaultValue="False">
+                        <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="TypeFlag" Name="Boolean" />
+                        </p:TypeAnnotation>
+                      </Pin>
+                      <Pin Id="NRHUCkfM8LWMZLiSKCJhOB" Name="Background_Fill_Paint" Kind="InputPin" />
+                      <Pin Id="QmwMS1Xz0oIMJJk2PaL0lc" Name="Background_Stroke_Enable" Kind="InputPin" DefaultValue="True">
+                        <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="TypeFlag" Name="Boolean" />
+                        </p:TypeAnnotation>
+                      </Pin>
+                      <Pin Id="OsZb8X0IlZNQdxfPKlUAuJ" Name="Background_Stroke_Paint" Kind="InputPin" />
+                      <Pin Id="TBkx6SZRDB1PR2hJw7tjgS" Name="Background_Texture_Enable" Kind="InputPin" />
+                      <Pin Id="HJDxXS6bqgbLuUBj7OuGCD" Name="Background_Texture" Kind="InputPin" />
+                      <Pin Id="HyB4cHDtJVsNDnwjBu5NMm" Name="Output" Kind="StateOutputPin" />
+                    </Node>
+                  </Patch>
+                </Node>
+                <Pad Id="GrzmCD7XeLKOUrDxVuFumt" Comment="Element" Bounds="603,1166,63,15" ShowValueBox="true" isIOBox="true" Value="Slider2D">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Node Bounds="527,1377,152,95" Id="FoPPANJG8pmNv9imjyIDhs">
+                  <p:NodeReference LastCategoryFullName="Elementa.Style" LastSymbolSource="Elementa.vl">
+                    <Choice Kind="ProcessAppFlag" Name="AddDescriptorToCatalog" />
+                    <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+                  </p:NodeReference>
+                  <Pin Id="PZR6B41sgOvLmkEltTVLDQ" Name="Style Sheet" Kind="InputPin" />
+                  <Pin Id="RtEUBGdWjlpOIUibSL1GEI" Name="Element" Kind="InputPin" />
+                  <Pin Id="SIrBth2XbXFNGnPxDSqSqJ" Name="State" Kind="InputPin" />
+                  <Pin Id="E0hNwd3NiUEL1lZctNbFxW" Name="Style Sheet" Kind="OutputPin" />
+                  <Patch Id="Pf6LepGRucROGoLfL8j2c4" Name="Delegate" ManuallySortedPins="true">
+                    <Pin Id="AP7zuixq4QOOU29I4J3y2j" Name="Arg" Kind="InputPin" />
+                    <Pin Id="HDFl6OF3LZwLYYmbN7EZik" Name="Result" Kind="OutputPin" />
+                    <ControlPoint Id="Rj2r5Vg6qy3MM99MJxVw39" Bounds="531,1385" />
+                    <ControlPoint Id="PcYmS0SBxvHOz99EgX2kAZ" Bounds="531,1465" />
+                    <Node Bounds="542,1410,125,26" Id="DpXEgLH8oi4PJyCBpKKERV">
+                      <p:NodeReference LastCategoryFullName="Elementa.Style.Style" LastSymbolSource="Elementa.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="SetBackground" />
+                      </p:NodeReference>
+                      <Pin Id="CPJdc4WsTWrMK4Uw5sN41R" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="UePcAltVnhqPoL8QepclNy" Name="Background_Fill_Enable" Kind="InputPin" DefaultValue="False">
+                        <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="TypeFlag" Name="Boolean" />
+                        </p:TypeAnnotation>
+                      </Pin>
+                      <Pin Id="MlYXI01OvXgLaqiAZicQFa" Name="Background_Fill_Paint" Kind="InputPin" />
+                      <Pin Id="P8v2wBcniV7MwlYJaI6CVC" Name="Background_Stroke_Enable" Kind="InputPin" DefaultValue="True">
+                        <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="TypeFlag" Name="Boolean" />
+                        </p:TypeAnnotation>
+                      </Pin>
+                      <Pin Id="M80TVVTiZTCN7CCUtAMUci" Name="Background_Stroke_Paint" Kind="InputPin" />
+                      <Pin Id="CcrKvdhezuaLMhnOYIqb6F" Name="Background_Texture_Enable" Kind="InputPin" />
+                      <Pin Id="GoVnSVdEhPRLquSv9iGlFe" Name="Background_Texture" Kind="InputPin" />
+                      <Pin Id="GyiVeQ3JWsdMLn8Nubd4kU" Name="Output" Kind="StateOutputPin" />
+                    </Node>
+                  </Patch>
+                </Node>
+                <Pad Id="BKgqWmmvwgdN36Dq08Y4Rm" Comment="Element" Bounds="603,1346,63,15" ShowValueBox="true" isIOBox="true" Value="Slider2D">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Pad Id="MITyx0Pycj3LmV9Q47f6j3" Comment="State" Bounds="736,1347,55,15" ShowValueBox="true" isIOBox="true" Value="Hovered">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Node Bounds="707,1373,105,19" Id="GT7bXpMooQhMe2eXdel9Ni">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastSymbolSource="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Stroke" />
+                  </p:NodeReference>
+                  <Pin Id="SIriHNMRrqTMsCZOORJGgA" Name="Input" Kind="InputPin" />
+                  <Pin Id="ESB13mVbY9xNGXV0fWXnbX" Name="Color" Kind="InputPin" DefaultValue="1, 0.22, 0.7816002, 1">
+                    <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="RGBA" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="BIl5p4uQ2uwOeDp6YWcoI5" Name="Stroke Width" Kind="InputPin" />
+                  <Pin Id="UtNVLH50RPWMJBzewRUfYi" Name="Join" Kind="InputPin" />
+                  <Pin Id="UaUeesZ3UNBPBJWzUR8xK2" Name="Cap" Kind="InputPin" />
+                  <Pin Id="AZtSj3AaTo2PJeh860Lo59" Name="Miter" Kind="InputPin" />
+                  <Pin Id="VsrMEWWOx3BP6oM6NxOLVW" Name="Output" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="BynwALOukwLN40GD3FMgIY" Bounds="529,1499" Alignment="Bottom" />
+            </Node>
+            <Pad Id="FrjxnlHLcZMPFcFG5u7kaW" Bounds="57,1434,289,91" ShowValueBox="true" isIOBox="true" Value="This whole pipeline is cached since we don't want it to be generated everyframe. Also, our local override in the parrent patch would not be applied.">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Node Bounds="398,297,54,19" Id="Jgp7cut58KrM4EGTXPuBhg">
+              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="OnOpen" />
+              </p:NodeReference>
+              <Pin Id="N6PTgrSaXfBOquOsW1E1la" Name="Simulate" Kind="InputPin" />
+              <Pin Id="P5za1pUGFlPObYWBttbjVa" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="G1kK2nF27AeN9Soj1ESPIZ" Comment="Force update" Bounds="400,221,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+          </Canvas>
+          <Patch Id="AnaoS6uSvEIOkQ3n1zv3bu" Name="Create" ParticipatingElements="NX8hZ4ea3wCPkJvv4hpuk6" />
+          <Patch Id="AMpCCWPvUb6NwUbDs6N2AT" Name="Update">
+            <Pin Id="RysfRh06L12PuKR91qACQg" Name="Style Sheet" Kind="OutputPin" Bounds="513,798" />
+          </Patch>
+          <ProcessDefinition Id="UzV9obSH47aP9ZyajRBWmu">
+            <Fragment Id="Rhm5hBdHRsoLdJ2RKW28FM" Patch="AnaoS6uSvEIOkQ3n1zv3bu" Enabled="true" />
+            <Fragment Id="ByvRgGZEmfCMYUCTVmgH2Z" Patch="AMpCCWPvUb6NwUbDs6N2AT" Enabled="true" />
+          </ProcessDefinition>
+          <Slot Id="SvqIo3vrFWiPCxspewSa0t" Name="Stylesheet" />
+          <Link Id="NX8hZ4ea3wCPkJvv4hpuk6" Ids="Jvl2uwMMzGqL23JgGMj0Or,LvN5764Q1ewN9lOLfPN5hG" />
+          <Link Id="HEa6u5lErx0NLEFj9dVLbn" Ids="LvN5764Q1ewN9lOLfPN5hG,Gabv1iTAjQxMwwWE9qwSn3" />
+          <Link Id="Rr7FjUwyQwxLDpnBptk2mK" Ids="ETBSaS9UUrdLERTQrX1M4r,RysfRh06L12PuKR91qACQg" IsHidden="true" />
+          <Link Id="Jy2Rh5X6Fk7Mog14P3EMQT" Ids="HyjGUazrlt1L8jsRe8voxx,ItYDuYbqQwDMwhbj2Ea63A" IsHidden="true" />
+          <Link Id="PIXtA89TpWQMQSRJcPKFaC" Ids="FfhAk99vWFBMTzi519tRsd,IDqxZE2nYCLO0USMVeqQYc" IsHidden="true" />
+          <Link Id="JTD7O2qSQC9LNbiJKcFeRD" Ids="FtQP3LDafOrLTNCEHw4YRu,HJjh0WdFcafNEz6Ho85hli" />
+          <Link Id="AlTglsGlao8MRwkHJdhRBZ" Ids="Hvfj4irCuPGO5rFAYNXEmR,BYvx8edRnr3QS3SIOWhSsR" />
+          <Link Id="HCOq0RK0dcqN3Ze8byi7co" Ids="ItYDuYbqQwDMwhbj2Ea63A,T0toLGWhk7cOBzrF5JO7w8" />
+          <Link Id="LMdByx8rIQCPFH85uWw1I6" Ids="B2x0GLedRDtMJfQRwGdd2n,Hq8jod7G2EfMixNDNVXL0w" />
+          <Link Id="V2SvBWVwTRRNrvD1f8WAt4" Ids="IWKNFzc7aO5M0HGZN6S2s7,TwvWB8UNpQlLoe2yHzvQhG" />
+          <Link Id="NbpVdyuZHfWMVcemvZWiZh" Ids="CICFcNQtLr0Mom6Ld2DnZ5,QCFp2qFKXuKMFxXF7osIMg" />
+          <Link Id="SNKvxMenDy1QIzZAJXeGTR" Ids="TWA9p3tmdqmMfKEsjQn70h,FfhAk99vWFBMTzi519tRsd" />
+          <Link Id="DALfgI8oP18P8qPw7PeH0z" Ids="SBHdBQlVCHoMouVkspqWyk,FiKbKZXi2RTM0yxM69306s" IsHidden="true" />
+          <Link Id="Jf7IuTK7HmUMxeCGtC8iSl" Ids="LjfALrzPA2XLktvFXXqYz3,N0oW3wCREceLFy8S9ewQtV" IsHidden="true" />
+          <Link Id="NXsfzKGPXxpMNtJ7qJCBDA" Ids="OGEuJndkrnbN9mqr4eIwnf,ER4eIVB2BvjNGwLpWWhZeM" />
+          <Link Id="HuwrFfIvLNKK93BVW1zC7l" Ids="TaACqHpvUujNlr4IBQgRlV,MOAQnb5M2UFMBbHOzEasy2" />
+          <Link Id="Svw1aqwxZG2OlAO1P8vBv3" Ids="SQSm9n3IUaaPX55K5lAeAy,Bk3zxtubYHRLfen58idUWM" />
+          <Link Id="IZGvZ2FpYcZPIDBuHruoMj" Ids="GeIXZ8pHvtRPrU9wQzU4Jl,FO4x5bI1IIGN1MhOVbdelm" />
+          <Link Id="ApRsAPCjxBWMA6TnuxNgLs" Ids="FNqO6uHeYTTMQIc5F39TMA,OaWoZkgJ5cpLSCr2B0yO4Y" />
+          <Link Id="Nhy5bkWRQzaPFqz860g3n6" Ids="VYbkkzOfUzXN4P3AsclsVX,TMa28DCAYuJLT8H2ZsNffW" />
+          <Link Id="NQohrnusepENX8XlFx4jNX" Ids="UZLExiOzRf0N4XcC35e7Eo,FjPy6rDTbZOORAFTsbeUPO" />
+          <Link Id="NS2gRymbYN2QVNwITDOe96" Ids="FiKbKZXi2RTM0yxM69306s,JhrJjrZxzGeNxLMhNxWMPQ" />
+          <Link Id="UBkmOxS22GyLv2Zd8PHWE0" Ids="Co1z2Z8IADwLbPOLZSkNbz,VutqsUEz3VuO12OHh0HEGg" />
+          <Link Id="PoRHZFvWPn0PUfqPVNvpzi" Ids="LtUhuH18DjrNT9e72m8IYO,LjfALrzPA2XLktvFXXqYz3" />
+          <Link Id="PqWcW0XdzcxMKjRWAXeFq0" Ids="PQEIUMj5nwmLeL1Wfl07ST,D74lFf0mRppObYYAv6vuYH" IsHidden="true" />
+          <Link Id="R18MGaBZtteM0somtaQj4R" Ids="RF82dHMAuarPVGdpgeejB0,N6YwgJSzAcaQCbQQHjwPfN" IsHidden="true" />
+          <Link Id="Sd74sxpZW26PgWzL3eKwT3" Ids="D74lFf0mRppObYYAv6vuYH,K9ELV7WZOATN4TnXk7QQdV" />
+          <Link Id="EesDEedBqZPMKjQU8QZhSZ" Ids="JmvPE1ZGGYmP1VMDr7E5t4,RF82dHMAuarPVGdpgeejB0" />
+          <Link Id="JbDfwoQ3UNMLHJFrjTdEx1" Ids="IIrBfv6FflENuRqkZFwnFQ,FQLoNCWYmdIOclmaGik9LI" />
+          <Link Id="KceT82Gww9nLNwuKLb0UJg" Ids="GD2rRl5ms6KQARlajvGXvK,NdKu1VF8tviOee6SmduS1D" />
+          <Link Id="UYZjX7pfiqjOx2Doo7cTE6" Ids="UoUrISKp11MK9VXWKAU91K,VZcn2CxoHKxNxkDRvvZpEr" />
+          <Link Id="MSYoOvHRUm0OjUVN5qIl50" Ids="Q5NzLHTEUe9QcDMDuvEHKa,IGg3P1MJ7JbMeMUb16RlyH" />
+          <Link Id="MelRLetjJ5XMiGFIKnNsMD" Ids="KluTcarTzElM5svdZfEUna,RfegngK3KeuParcAxPkexk" />
+          <Link Id="G5mYacOU1JDMSfquhRBCpS" Ids="HizRQjoI0MpOIja8EKi2Ip,FdceFZWovqgLjpUmnCtcca" IsHidden="true" />
+          <Link Id="R3gjgIEt7MZNnWSjOLLYHd" Ids="HBffDmkD8bgOF2pYF4ykKJ,D7mC5PLopkiN8jKMKvfY3u" IsHidden="true" />
+          <Link Id="DqyUcLNfZvMQKmYv28kWpu" Ids="A25cbWzSSq6L0PCEcIYvBd,PhTnfcsT7OQOemrpGEqIjn" />
+          <Link Id="JHIarmxFBJpPH0owHYCWoV" Ids="FdceFZWovqgLjpUmnCtcca,S4AMlFeW0XaMTzFpZ2TmIN" />
+          <Link Id="Jo635ZvS03sP9Gwmv2LVX8" Ids="HyB4cHDtJVsNDnwjBu5NMm,HBffDmkD8bgOF2pYF4ykKJ" />
+          <Link Id="K6VqPncy3mqNabC36xsOeM" Ids="GrzmCD7XeLKOUrDxVuFumt,F5XVKKO2DqjO9APjGvbXB6" />
+          <Link Id="EhPTIlNF1pCMiwCqJaetHY" Ids="AP7zuixq4QOOU29I4J3y2j,Rj2r5Vg6qy3MM99MJxVw39" IsHidden="true" />
+          <Link Id="HQGuFX2kodGPgNwmmAgClX" Ids="PcYmS0SBxvHOz99EgX2kAZ,HDFl6OF3LZwLYYmbN7EZik" IsHidden="true" />
+          <Link Id="NChIf2XVJuyMkExBwBHoC8" Ids="Rj2r5Vg6qy3MM99MJxVw39,CPJdc4WsTWrMK4Uw5sN41R" />
+          <Link Id="VK7fhtlno7fMeoayhCTZvR" Ids="GyiVeQ3JWsdMLn8Nubd4kU,PcYmS0SBxvHOz99EgX2kAZ" />
+          <Link Id="B7rDedvJIRGQRFYcnDD1tl" Ids="BKgqWmmvwgdN36Dq08Y4Rm,RtEUBGdWjlpOIUibSL1GEI" />
+          <Link Id="NODCtpsPO4ULumuxjlwtPW" Ids="EfZiXLXp1YVNtMi4Vw2K72,PZR6B41sgOvLmkEltTVLDQ" />
+          <Link Id="EsHYgSuKgWqLRNuW7Ebo4E" Ids="MITyx0Pycj3LmV9Q47f6j3,SIrBth2XbXFNGnPxDSqSqJ" />
+          <Link Id="RdI7reXeH6YN9IyE5gPyMP" Ids="VsrMEWWOx3BP6oM6NxOLVW,M80TVVTiZTCN7CCUtAMUci" />
+          <Link Id="PQTn6BllAZsPDXRttln3o8" Ids="E0hNwd3NiUEL1lZctNbFxW,BynwALOukwLN40GD3FMgIY" />
+          <Link Id="TCssvSMCTgMM93QTpWtFcu" Ids="BynwALOukwLN40GD3FMgIY,ETBSaS9UUrdLERTQrX1M4r" />
+          <Link Id="R2lOSKPqmgPMSSxoanGaOd" Ids="P5za1pUGFlPObYWBttbjVa,Napo4k1nYNjODrk34YN1PI" />
+          <Link Id="P0scTPXICJJQLUSp6myrRu" Ids="G1kK2nF27AeN9Soj1ESPIZ,N6PTgrSaXfBOquOsW1E1la" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ MyStyleOverride ************************
+
+-->
+      <Node Name="MyStyleOverride" Bounds="620,100" Id="TnEggONdVPvQQpDmfRum59">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="RasygzkkuHaMAtBeAfaPJ8">
+          <Canvas Id="FIjKAMdW15DPHaWN3GvJ1z" CanvasType="Group">
+            <Pad Id="LYIHPhyjfbfLatvWKeAQ1G" SlotId="RV55JXcg2LhNO07YTiB22R" Bounds="446,329" />
+            <Node Bounds="444,280,105,19" Id="VyuaWXYtSRrLEQ0lqyIz1S">
+              <p:NodeReference LastCategoryFullName="Elementa.Style" LastSymbolSource="Elementa.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="StyleCatalogDefault" />
+              </p:NodeReference>
+              <Pin Id="IwSKtTZqJlVLnLFtaBTuAk" Name="Style Sheet" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="448,389,76,95" Id="O9g0v4L5ZJJMvVNLCXEhOC">
+              <p:NodeReference LastCategoryFullName="Elementa.Style" LastSymbolSource="Elementa.vl">
+                <Choice Kind="ProcessAppFlag" Name="AddDescriptorToCatalog" />
+                <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+              </p:NodeReference>
+              <Pin Id="LXOtRZglXOWNJxrFysy731" Name="Style Sheet" Kind="InputPin" />
+              <Pin Id="OT2zNdUW5TYNPq8iECkYN0" Name="Element" Kind="InputPin" />
+              <Pin Id="UgVrsZjb8nwMxk7jNA7PxN" Name="State" Kind="InputPin" />
+              <Pin Id="HlYhn3dMjk7O25pN36joV9" Name="Style Sheet" Kind="OutputPin" />
+              <Patch Id="E7smTt1mjjBQFTlrbcCwpP" Name="Delegate" ManuallySortedPins="true">
+                <Pin Id="RFPqYl62MTnP3mCfpjXjQH" Name="Arg" Kind="InputPin" />
+                <Pin Id="CPAv7ZhUMOcMQdRSMtxizg" Name="Result" Kind="OutputPin" />
+                <ControlPoint Id="PCaZj7yX2VXOezNOP5CFnF" Bounds="452,397" />
+                <ControlPoint Id="B2RKPGAAnLBOub9YsI13sk" Bounds="452,477" />
+                <Node Bounds="461,427" Id="JOn0V0FT1lHO7pjUUUzTcy">
+                  <p:NodeReference LastCategoryFullName="Elementa.Core.Style.Style" LastSymbolSource="Elementa.Core.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetText" />
+                    <CategoryReference Kind="RecordType" Name="Style" NeedsToBeDirectParent="true">
+                      <p:OuterCategoryReference Kind="Category" Name="Style" NeedsToBeDirectParent="true" />
+                    </CategoryReference>
+                  </p:NodeReference>
+                  <Pin Id="LhIWosiQRceLWbKkR2Xy2D" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="PPBMfebSGx3L7QSC3wH7on" Name="Text_Enable" Kind="InputPin" />
+                  <Pin Id="VOBkuqSBRPQOkNtZFOq3ZK" Name="Text_Paint" Kind="InputPin" />
+                  <Pin Id="JqTMIidFXrYOdCUX83YeP7" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <Pad Id="C22PjKTHIqFLCbTO3Oolx9" Comment="Element" Bounds="493,334,51,15" ShowValueBox="true" isIOBox="true" Value="Slider2D">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="S83IPDqiSATN4ObboZwuMk" Comment="State" Bounds="540,363,70,15" ShowValueBox="true" isIOBox="true" Value="TextPreview">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <ControlPoint Id="JIF46toWJWbM7FnEdkChZr" Bounds="446,530" />
+            <Pad Id="AvsAOjwqYlbLAnVfZvO0pu" Comment="Family Name" Bounds="645,496,179,15" ShowValueBox="true" isIOBox="true" Value="Segoe UI">
+              <p:TypeAnnotation LastCategoryFullName="Text" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="FontList" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="CzZrKb59UwVONvS4beYkYP" Comment="Style" Bounds="665,518,70,15" ShowValueBox="true" isIOBox="true" Value="BoldItalic">
+              <p:TypeAnnotation LastCategoryFullName="Graphics.Skia.Unwrapped.Enums" LastSymbolSource="VL.Skia.vl">
+                <Choice Kind="TypeFlag" Name="SKTypefaceStyle" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="623,572,165,19" Id="D2MbdtUNXk2OrDeWeVqUc5">
+              <p:NodeReference LastCategoryFullName="Graphics.Skia.Text" LastSymbolSource="VL.Skia.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="FontAndParagraph" />
+              </p:NodeReference>
+              <Pin Id="Eq4t7UW57dAQQV9u9sC9lW" Name="Input" Kind="InputPin" />
+              <Pin Id="GtkdurVxwx7Lk1gtEXWslG" Name="Family Name" Kind="InputPin" />
+              <Pin Id="MAzch7vrV7wMtW2ja02uwu" Name="Style" Kind="InputPin" />
+              <Pin Id="PCpOW6l0w4MNOGpM29raqq" Name="Size" Kind="InputPin" DefaultValue="0.09999999">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Float32" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="QjC5GLeeqQ3N1amD9dPUee" Name="Color" Kind="InputPin" DefaultValue="0.9, 0.9, 0.9, 1">
+                <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="RGBA" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="RtSuCaezE8pMSL6x0qhcSq" Name="Line Height in em" Kind="InputPin" />
+              <Pin Id="KYv4yEZrTkRNnBx4SH4Hzt" Name="Horizontal Alignment" Kind="InputPin" />
+              <Pin Id="PUHcRNNedqgO67Qmipx5Dw" Name="Vertical Alignment" Kind="InputPin" DefaultValue="Bottom">
+                <p:TypeAnnotation LastCategoryFullName="Graphics.Skia.Unwrapped.Enums" LastSymbolSource="VL.Skia.vl">
+                  <Choice Kind="TypeFlag" Name="VerticalTextAlignment" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="Ma0qt39HGl8MuPzzJX8XKy" Name="Show Helpers" Kind="InputPin" />
+              <Pin Id="Bt3aG1ZnRohMnocihgaEFm" Name="Output" Kind="OutputPin" />
+            </Node>
+          </Canvas>
+          <Patch Id="QLgx4Pm3LT3MTA10sIQaIR" Name="Create" ParticipatingElements="ExfVqfonCDdMQZBwcDTZ7z" />
+          <Patch Id="CMZJ681tv6YOq3SOMM7GMg" Name="Update">
+            <Pin Id="Rihk7VDfbjHOWcYxmJUgzA" Name="Style Sheet" Kind="OutputPin" Bounds="445,542" />
+          </Patch>
+          <ProcessDefinition Id="OFHiwRDIfMbMzCYuDAh6Yr">
+            <Fragment Id="VyADYjjnHxxQGkbyXyAHvx" Patch="QLgx4Pm3LT3MTA10sIQaIR" Enabled="true" />
+            <Fragment Id="Gpr7o4MsJFKNNAivjbKfd7" Patch="CMZJ681tv6YOq3SOMM7GMg" Enabled="true" />
+          </ProcessDefinition>
+          <Slot Id="RV55JXcg2LhNO07YTiB22R" Name="Stylesheet" />
+          <Link Id="ExfVqfonCDdMQZBwcDTZ7z" Ids="IwSKtTZqJlVLnLFtaBTuAk,LYIHPhyjfbfLatvWKeAQ1G" />
+          <Link Id="EgjE7esDSR4OD1RFvmbsLO" Ids="RFPqYl62MTnP3mCfpjXjQH,PCaZj7yX2VXOezNOP5CFnF" IsHidden="true" />
+          <Link Id="MR1PRiDC2PsM8ISMfx7hQi" Ids="B2RKPGAAnLBOub9YsI13sk,CPAv7ZhUMOcMQdRSMtxizg" IsHidden="true" />
+          <Link Id="AsfZ9cPbr2sMhCLORmTR8z" Ids="LYIHPhyjfbfLatvWKeAQ1G,LXOtRZglXOWNJxrFysy731" />
+          <Link Id="Qmt6Pv0NtDgOOrGSnYF916" Ids="C22PjKTHIqFLCbTO3Oolx9,OT2zNdUW5TYNPq8iECkYN0" />
+          <Link Id="I0kiRRQLlktMXzpcGh2Brv" Ids="S83IPDqiSATN4ObboZwuMk,UgVrsZjb8nwMxk7jNA7PxN" />
+          <Link Id="CN3UEqz2qJxPWFyoY1Znlr" Ids="HlYhn3dMjk7O25pN36joV9,JIF46toWJWbM7FnEdkChZr" />
+          <Link Id="FKiDFI6U8KqM5vYuMYTopE" Ids="JIF46toWJWbM7FnEdkChZr,Rihk7VDfbjHOWcYxmJUgzA" IsHidden="true" />
+          <Link Id="BhOhbCK9YAzMNJdyuXH610" Ids="PCaZj7yX2VXOezNOP5CFnF,LhIWosiQRceLWbKkR2Xy2D" />
+          <Link Id="UQJ1sdygV1dNAfCP7MsFt5" Ids="JqTMIidFXrYOdCUX83YeP7,B2RKPGAAnLBOub9YsI13sk" />
+          <Link Id="ODcNTJ6ZUUuNzEoe23xSbR" Ids="AvsAOjwqYlbLAnVfZvO0pu,GtkdurVxwx7Lk1gtEXWslG" />
+          <Link Id="PiMFaoW5SF1NqtRnzvifuz" Ids="CzZrKb59UwVONvS4beYkYP,MAzch7vrV7wMtW2ja02uwu" />
+          <Link Id="BKsydgODCuMO9wTVGRz3iL" Ids="Bt3aG1ZnRohMnocihgaEFm,VOBkuqSBRPQOkNtZFOq3ZK" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ MySpecialStyle ************************
+
+-->
+      <Node Name="MySpecialStyle" Bounds="200,200" Id="QyZU3JTYLQmMGIgeRTUXNU">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="BXAeAcMwjhBQBcLpjjb0uZ">
+          <Canvas Id="OPmrcnHM5oHOYJennLuTvP" CanvasType="Group">
+            <Pad Id="JS1hQyxi5lpLlhIY6Gdvzv" SlotId="QYbtjEwVCVWN3a6S5CZ5Ld" Bounds="403,290" />
+            <Node Bounds="401,241,105,19" Id="DOYi38ddteoLDMq5vK1jsU">
+              <p:NodeReference LastCategoryFullName="Elementa.Style" LastSymbolSource="Elementa.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="StyleCatalogDefault" />
+              </p:NodeReference>
+              <Pin Id="UUeCca3MLuuOLfn8BUaG6N" Name="Style Sheet" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="Dhjia4VsHPZNg0UfjiPmjh" Bounds="403,581" />
+            <Node Bounds="273,319,525,234" Id="HOfHpjxWSFFOx0n5PaMp4r">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <Pin Id="FUzlizFb8BFN8aLGo8qIVU" Name="Force" Kind="InputPin" />
+              <Pin Id="IarXxAglEwFNrH97pgB9RY" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="EPSJAPE31VvPpNwE76Jeg5" Name="Has Changed" Kind="OutputPin" />
+              <Patch Id="BKXomuppdkaQF3CxvTvi0T" ManuallySortedPins="true">
+                <Patch Id="FNk223gSBNHNGjSzBoTNMO" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="DqqFYp4M29rLB69GvG2oMq" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="401,339,75,185" Id="Gelchs8YgUrLeITX7cf0bt">
+                  <p:NodeReference LastCategoryFullName="Elementa.Core.Style" LastSymbolSource="Elementa.Core.vl">
+                    <CategoryReference Kind="Category" Name="Style" />
+                    <Choice Kind="ProcessAppFlag" Name="AddDescriptorToCatalog" />
+                    <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+                  </p:NodeReference>
+                  <Pin Id="ELIM81tEQD3OTcF7kgUcH6" Name="Style Sheet" Kind="InputPin" />
+                  <Pin Id="EXCr8ZKMUV8QBhu4VPVgH4" Name="Element" Kind="InputPin" />
+                  <Pin Id="F5RrWxXprrkMFUrlBDSy9D" Name="State" Kind="InputPin">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="String" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="Joyt3QTC6Y1P8QY1RbWeOD" Name="Style Sheet" Kind="OutputPin" />
+                  <Patch Id="OZPBCdWYpv7M2lxsNgsxnf" Name="Delegate" ManuallySortedPins="true">
+                    <Pin Id="ON0v88l511WLVkXgAPAyQM" Name="Arg" Kind="InputPin" />
+                    <Pin Id="HPWEuDiiuBoPHvzTSm1iab" Name="Result" Kind="OutputPin" />
+                    <ControlPoint Id="HzUNF1LpD0bMVTxjQkI2yV" Bounds="415,347" />
+                    <ControlPoint Id="RUSN3IiOfw0Lr0GRXuyI1u" Bounds="415,517" />
+                    <Node Bounds="413,434,51,26" Id="Mc1HcBQvxrsP05QAOd3Efh">
+                      <p:NodeReference LastCategoryFullName="Elementa.Core.Style.Style" LastSymbolSource="Elementa.Core.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="SetText" />
+                        <CategoryReference Kind="RecordType" Name="Style" NeedsToBeDirectParent="true" />
+                      </p:NodeReference>
+                      <Pin Id="GyIEMva0GdLNGz3UMHa5mY" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="CeJsyVd3T5wLAKeYVOxXO2" Name="Text_Enable" Kind="InputPin" />
+                      <Pin Id="SyNWUTz6LAiNdaAsgolv2a" Name="Text_Paint" Kind="InputPin" />
+                      <Pin Id="PM8OtlgLQXzOil8M9Q3y7j" Name="Output" Kind="StateOutputPin" />
+                    </Node>
+                  </Patch>
+                </Node>
+                <Node Bounds="506,380,165,19" Id="JjKHyejsmfeMb86qjIEkjv">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Text" LastSymbolSource="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="FontAndParagraph" />
+                  </p:NodeReference>
+                  <Pin Id="JzFDR8e7DpKQXZlqaRB8eR" Name="Input" Kind="InputPin" />
+                  <Pin Id="OU01gWWTZ7TL32FXfaVGL2" Name="Family Name" Kind="InputPin" DefaultValue="Comic Sans MS">
+                    <p:TypeAnnotation LastCategoryFullName="Text" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="FontList" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="MGwNrDFKtf5NhGZ9bovHcU" Name="Style" Kind="InputPin" DefaultValue="Italic">
+                    <p:TypeAnnotation LastCategoryFullName="Graphics.Skia.Unwrapped.Enums" LastSymbolSource="VL.Skia.vl">
+                      <Choice Kind="TypeFlag" Name="SKTypefaceStyle" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="M4XoMWex2w1MjLZviKJEVL" Name="Size" Kind="InputPin" />
+                  <Pin Id="HpGC4DqL9B0OacCwX5zDKV" Name="Color" Kind="InputPin" />
+                  <Pin Id="GFqDGoQT75tO4UP62mbGjN" Name="Line Height in em" Kind="InputPin" />
+                  <Pin Id="KzJC8ZI9OnhNV8a1ReTiPt" Name="Horizontal Alignment" Kind="InputPin" />
+                  <Pin Id="L9GLxehScR9MBR5v9aGn4S" Name="Vertical Alignment" Kind="InputPin" />
+                  <Pin Id="NB4QPyQAjmNMfX5OGA4Lz3" Name="Show Helpers" Kind="InputPin" />
+                  <Pin Id="IduL1wa36HCOItlgEgvQhb" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pad Id="Hc0uTouVVMZOxodQQvfyUJ" Comment="Family Name" Bounds="528,354,179,15" ShowValueBox="true" isIOBox="true" Value="Courier New">
+                  <p:TypeAnnotation LastCategoryFullName="Text" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="FontList" />
+                  </p:TypeAnnotation>
+                </Pad>
+              </Patch>
+              <ControlPoint Id="CCigCUcrXrWMfcTt5KMkXj" Bounds="403,548" Alignment="Bottom" />
+            </Node>
+            <Node Bounds="273,271,54,19" Id="NOuumNF145VNmoLyBE5nJ9">
+              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="OnOpen" />
+              </p:NodeReference>
+              <Pin Id="H6HJSsRjEXnMBHwb3JCKbb" Name="Simulate" Kind="InputPin" />
+              <Pin Id="P5CCyflEHFlNibDwToe4Lx" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="LGlne1timCNPKMO8DRi8jb" Comment="Simulate" Bounds="275,228,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="I7kuuJYVU8xNJBUZJR1XeQ" Bounds="151,414,97,96" ShowValueBox="true" isIOBox="true" Value="No need to calculate something every frame? Cache it!">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+          </Canvas>
+          <Patch Id="G3Hm5bgjepcLPThMx6Q8eo" Name="Create" ParticipatingElements="Cnh3dX8y0WOOmF0tI1PYOR" />
+          <Patch Id="Jm0vmtZStZgM58GJAYFnrt" Name="Update">
+            <Pin Id="JY5RfiW2sQPPdhB3vqJKev" Name="Style Sheet" Kind="OutputPin" Bounds="399,648" />
+          </Patch>
+          <ProcessDefinition Id="HPJE07ygDWsPJPbck7ZCUk">
+            <Fragment Id="SffMtawFI69P3Ocvu11FqO" Patch="G3Hm5bgjepcLPThMx6Q8eo" Enabled="true" />
+            <Fragment Id="GxZsZZRg7AkNNyxw7JtcBd" Patch="Jm0vmtZStZgM58GJAYFnrt" Enabled="true" />
+          </ProcessDefinition>
+          <Slot Id="QYbtjEwVCVWN3a6S5CZ5Ld" Name="Stylesheet" />
+          <Link Id="Cnh3dX8y0WOOmF0tI1PYOR" Ids="UUeCca3MLuuOLfn8BUaG6N,JS1hQyxi5lpLlhIY6Gdvzv" />
+          <Link Id="LDoNbfnWgXTLDWase4lErP" Ids="JS1hQyxi5lpLlhIY6Gdvzv,ELIM81tEQD3OTcF7kgUcH6" />
+          <Link Id="EpK5d0RpkwTNa0aNfn6pDL" Ids="Dhjia4VsHPZNg0UfjiPmjh,JY5RfiW2sQPPdhB3vqJKev" IsHidden="true" />
+          <Link Id="RnK8Tol5mvNNxK1RbsGvbT" Ids="ON0v88l511WLVkXgAPAyQM,HzUNF1LpD0bMVTxjQkI2yV" IsHidden="true" />
+          <Link Id="FUl29U6o8dtOfMoHHNpwy2" Ids="RUSN3IiOfw0Lr0GRXuyI1u,HPWEuDiiuBoPHvzTSm1iab" IsHidden="true" />
+          <Link Id="UmJiBh3gemRPSyDSaPTT3V" Ids="HzUNF1LpD0bMVTxjQkI2yV,GyIEMva0GdLNGz3UMHa5mY" />
+          <Link Id="DIZZxUE8Qq5P6fGecSg8si" Ids="PM8OtlgLQXzOil8M9Q3y7j,RUSN3IiOfw0Lr0GRXuyI1u" />
+          <Link Id="DA93h7b0iFXPYcEkUZUkI7" Ids="IduL1wa36HCOItlgEgvQhb,SyNWUTz6LAiNdaAsgolv2a" />
+          <Link Id="IwfTArE91IPQRLrK9XdB6k" Ids="Hc0uTouVVMZOxodQQvfyUJ,OU01gWWTZ7TL32FXfaVGL2" />
+          <Link Id="SXpw3RRGCLSMMhTyxVUYQr" Ids="Joyt3QTC6Y1P8QY1RbWeOD,CCigCUcrXrWMfcTt5KMkXj" />
+          <Link Id="MdStX2pGlkdM73dBhEuBAr" Ids="CCigCUcrXrWMfcTt5KMkXj,Dhjia4VsHPZNg0UfjiPmjh" />
+          <Link Id="Omh4FcMjpNbP1FpmwmnEqb" Ids="P5CCyflEHFlNibDwToe4Lx,FUzlizFb8BFN8aLGo8qIVU" />
+          <Link Id="UZP7VajNsRrQBhXGEXs7AI" Ids="LGlne1timCNPKMO8DRi8jb,H6HJSsRjEXnMBHwb3JCKbb" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Egw33PA4JnOQUswT0PtdWb">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="OfDb11cwD5QNEV68EASwOn">
+        <Canvas Id="DQnpAZ2EhI2NNHnHm7mTpQ" CanvasType="Group">
+          <Pad Id="QkziXGI5yoaNN5WV7c7Lrn" Bounds="73,89,78,41" ShowValueBox="true" isIOBox="true" Value="Style ">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">20</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Uw4x3luOQcoLyTtxWYTDLA" Bounds="73,138,652,40" ShowValueBox="true" isIOBox="true" Value="Elementa rendering can entirely be customized with Styles. The library provides a default one, but it can be overrided by your own Style Catalog. Let's see how you can create one.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="212,686,85,19" Id="UkaKYNt67cwMIAtDRoTaPZ">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo Style.vl">
+              <Choice Kind="ProcessNode" Name="MyStyleCatalog" />
+            </p:NodeReference>
+            <Pin Id="Csthcw68VfuMtnuT1nPRuH" Name="Style Sheet" Kind="OutputPin" />
+          </Node>
+          <Pad Id="CNnPI4IYefTP2n11UVsLdZ" Bounds="73,209,149,23" ShowValueBox="true" isIOBox="true" Value="Anatomy of a style">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">11</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MESNIituDwAPrKUkAEiCHE" Bounds="73,238,595,142" ShowValueBox="true" isIOBox="true" Value="Each Elementum is graphically made of different parts :&#xD;&#xA;&#xD;&#xA;- A foreground, that can be filled and/or stroked&#xD;&#xA;- A background, that can also be filled and/or stroked&#xD;&#xA;- A text, that displays its value&#xD;&#xA;&#xD;&#xA;All those elements can be individually defined in a Style Catalog.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="112,566,45,19" Id="KcDHjnONlgXPft8nEXVVQs">
+            <p:NodeReference LastCategoryFullName="Elementa.Widgets" LastSymbolSource="Elementa.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Slider" />
+            </p:NodeReference>
+            <Pin Id="NyinQvlDUAdPVHEsg6Ii9z" Name="Bounds" Kind="InputPin" />
+            <Pin Id="LbboPUBUK3hMj4TRiv6bBz" Name="Value" Kind="InputPin" />
+            <Pin Id="H98gbWGNIJALRUCJdlZvxf" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="CM3MSlzBNlVLj8lbCSlaYv" Name="On Interaction" Kind="OutputPin" />
+            <Pin Id="Sez7xXRPEDBNHJo4noRrAT" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="92,772,105,19" Id="I78QPImqMV5M5NlKVYxOTF">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Renderer" />
+            </p:NodeReference>
+            <Pin Id="ORkSg4hr8r5MYYUUljDeB7" Name="Bounds" Kind="InputPin" DefaultValue="1102, 325, 600, 400">
+              <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
+                <Choice Kind="TypeFlag" Name="Rectangle" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="LGBPBpaEZsXPD17IGSKnsr" Name="Input" Kind="InputPin" />
+            <Pin Id="VklALTyxkTjNHwhDKHHb9u" Name="Color" Kind="InputPin" />
+            <Pin Id="JBB1QSuIaACNoJuYSuhqnJ" Name="Clear" Kind="InputPin" />
+            <Pin Id="AK4sLm9CLzCNcGdYACytSw" Name="Space" Kind="InputPin" />
+            <Pin Id="MbYAFSWE1FBODUQOQu1sxB" Name="Enabled" Kind="InputPin" />
+            <Pin Id="NkLoJSxjKJBP1w40TrQEtw" Name="Form" Kind="OutputPin" />
+            <Pin Id="JQRSbgeFhV3PAgoOWJyT7q" Name="ClientBounds" Kind="OutputPin" />
+            <Pin Id="VDnpx8OF6eiMw5jVaNx5YN" Name="Render Time" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="112,416,85,19" Id="Mhkunln7uUFNoOGc2BZNoQ">
+            <p:NodeReference LastCategoryFullName="Elementa" LastSymbolSource="Elementa.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Bounds" />
+            </p:NodeReference>
+            <Pin Id="ROR2KEP59AvL7nHckwNNLl" Name="Position" Kind="InputPin" />
+            <Pin Id="IxLDAH1d4J5Po51WxPgzXW" Name="Size" Kind="InputPin" DefaultValue="0.98, 0.23">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Vector2" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="HDqLXCznDBDNqWmggGm7Cb" Name="Flexibility" Kind="InputPin" />
+            <Pin Id="TdB2HA8SZtLMfygbTqUh2E" Name="Min Size" Kind="InputPin" />
+            <Pin Id="VjyYfYAHjh5PKAEhSbFIVo" Name="Max Size" Kind="InputPin" />
+            <Pin Id="H78mLlBznIqLJrlN0lREiP" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="112,726,105,19" Id="Ni49zL0eoSYPFdVuhBNp9u">
+            <p:NodeReference LastCategoryFullName="Elementa" LastSymbolSource="Elementa.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ToSkiaLayer" />
+            </p:NodeReference>
+            <Pin Id="IJ4ptHzAERLMTrOZ3zqQTJ" Name="Input" Kind="InputPin" />
+            <Pin Id="HjnqKDuTN4XOH1EcXOGNOA" Name="Force Layout Update" Kind="InputPin" />
+            <Pin Id="VCiu6b4eldBOWOwjmjfvUd" Name="Style Sheet" Kind="InputPin" />
+            <Pin Id="CBYyZnp8xzdPeh7faA5bNH" Name="Output" Kind="OutputPin" />
+            <Pin Id="MuQb119FKeVPqUsPP1eiQz" Name="Mouse State" Kind="OutputPin" />
+            <Pin Id="PC4Jp4U1mFeQLqTmZoz69F" Name="Keyboard State" Kind="OutputPin" />
+            <Pin Id="PuL7c4AmHs6O0bnNY2P7zl" Name="Layout Rebuild" Kind="OutputPin" />
+            <Pin Id="HN9XfcyQL4oQIpBPg4W1ZU" Name="Selected Elementa" Kind="OutputPin" />
+            <Pin Id="RaXeou2lP4AMCfhaa05IGb" Name="Stream" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="112,630,490,19" Id="KMoxuhssmORQS8b379UVzw">
+            <p:NodeReference LastCategoryFullName="Elementa.Core.Layout" LastSymbolSource="Elementa.Core.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="StackX" />
+              <CategoryReference Kind="Category" Name="Layout" NeedsToBeDirectParent="true" />
+              <PinReference Kind="InputPin" Name="Components" />
+            </p:NodeReference>
+            <Pin Id="ON0YNLKW58LLy8eXPt5kGg" Name="Input" Kind="InputPin" />
+            <Pin Id="DU6aNe1PbvpNWR0eEud2Z3" Name="Input 2" Kind="InputPin" />
+            <Pin Id="AWvgx3YMmyVO7NuVB0DM4b" Name="Input 3" Kind="InputPin" />
+            <Pin Id="EUjBzOPWj97N0X4UDtaaPR" Name="Bounds" Kind="InputPin" />
+            <Pin Id="NgZLPGgYJ7aNvuxpuizLdK" Name="Spacing" Kind="InputPin" DefaultValue="0.09">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="ScnDmrdF5yCLdnaaPsmTf4" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="233,566,59,19" Id="RG3JP0HqAWQLtwXF53toT2">
+            <p:NodeReference LastCategoryFullName="Elementa.Widgets" LastSymbolSource="Elementa.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Vector2D" />
+            </p:NodeReference>
+            <Pin Id="QYdRxvJ6nEQM94fNgUc8xr" Name="Bounds" Kind="InputPin" />
+            <Pin Id="R44CB5dCusBN0j62V49Oby" Name="Orientation" Kind="InputPin" DefaultValue="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="DCmVENGKwGeQKNt3rd19LP" Name="Value" Kind="InputPin" />
+            <Pin Id="LgyRxFn0PEkNsyn4nZ7Ewv" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="CQdwyeaCyJFM5bmUxLqEUm" Name="On Interaction" Kind="OutputPin" />
+            <Pin Id="RFyKDFVsHlhPolxAzmosTI" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="233,416,85,19" Id="UlljKYP9r0AOROYJ3nL1my">
+            <p:NodeReference LastCategoryFullName="Elementa" LastSymbolSource="Elementa.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Bounds" />
+            </p:NodeReference>
+            <Pin Id="KOHM9zz6CxfONmpIsCpjRB" Name="Position" Kind="InputPin" />
+            <Pin Id="UFEIgcMXRSnM5Tvidycn4T" Name="Size" Kind="InputPin" DefaultValue="0.55, 0.45">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Vector2" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="AAPEeGp2jp0L7bCqXbp4lk" Name="Flexibility" Kind="InputPin" />
+            <Pin Id="IzFvKwtWnS3LqpUPS7iVL8" Name="Min Size" Kind="InputPin" />
+            <Pin Id="IxqMFNbS5TGPSMobrPG9Y6" Name="Max Size" Kind="InputPin" />
+            <Pin Id="LvirimkUxXYMPAEum6SHf5" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="476,590,85,19" Id="SCCel2vvungM3YesJsQMhW">
+            <p:NodeReference LastCategoryFullName="Elementa" LastSymbolSource="Elementa.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Bounds" />
+            </p:NodeReference>
+            <Pin Id="G7mTOmvkCNIMFmCpR9u1RY" Name="Position" Kind="InputPin" DefaultValue="-1.51, 0">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Vector2" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="PQ664dhjeGIQLOQ73WWZD4" Name="Size" Kind="InputPin" DefaultValue="0.98, 0.23">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Vector2" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="VG1fJNajwDmQWwnJRhCOgy" Name="Flexibility" Kind="InputPin" />
+            <Pin Id="U4AbXPut8ShMsi74l0Kbix" Name="Min Size" Kind="InputPin" />
+            <Pin Id="Igf6TPtlIfiN2v7XhDWxRE" Name="Max Size" Kind="InputPin" />
+            <Pin Id="LDtE0vOgCNaQO4MIEyuLSW" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="355,452,55,19" Id="GFIs3m5wc0sN1zbtNvu8F8">
+            <p:NodeReference LastCategoryFullName="Elementa.Widgets" LastSymbolSource="Elementa.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Slider2D" />
+            </p:NodeReference>
+            <Pin Id="SpJyiGmuep4Pp1bRFBMMf1" Name="Bounds" Kind="InputPin" />
+            <Pin Id="P1hdm3UemFDMqyRhlGHgKv" Name="Value" Kind="InputPin" />
+            <Pin Id="VUxJE3fZN27LsLeP27eGPJ" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="KOFsN3FPzFHLvoehFsLekB" Name="On Interaction" Kind="OutputPin" />
+            <Pin Id="DwQp2JrKQ03MmqGnRFB3dG" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="355,416,85,19" Id="TPR4tmwtoS5QJP8CPnSyGs">
+            <p:NodeReference LastCategoryFullName="Elementa" LastSymbolSource="Elementa.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Bounds" />
+            </p:NodeReference>
+            <Pin Id="FyI1IgZnZEWLwqP4rnwzsS" Name="Position" Kind="InputPin" />
+            <Pin Id="GssVtZ58xqKOIAY1Z8B0Sw" Name="Size" Kind="InputPin" DefaultValue="1.32, 0.67">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Vector2" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="CWiJf8zPnhuPOEaWrqZdDr" Name="Flexibility" Kind="InputPin" />
+            <Pin Id="ItVSFKlMag2MCI2Qou8kb9" Name="Min Size" Kind="InputPin" />
+            <Pin Id="RUIkNWuqPYwNUjE1jxe3Ts" Name="Max Size" Kind="InputPin" />
+            <Pin Id="E3Vs4KQ91OwQJs3jCPibji" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="ChlenUingKuMaCPS6w1lH0" Bounds="301,690,35,27" ShowValueBox="true" isIOBox="true" Value="1.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VZXsTpqET9ZPpaEFp0fp1x" Bounds="330,690,244,81" ShowValueBox="true" isIOBox="true" Value="Head over to this patch (middle-clic) to see how you can define your own Style Catalog. The style will be propagated upstream by the ToSkiaLayerNode">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="V5E3Kam6ZGkPBLKF7IOytf" Bounds="515,500,35,27" ShowValueBox="true" isIOBox="true" Value="2.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="426,497,82,19" Id="PIRFvksrn3xQT7NcR4hXfW">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo Style.vl">
+              <Choice Kind="ProcessNode" Name="MySpecialStyle" />
+            </p:NodeReference>
+            <Pin Id="L8t5j3SshXRMhE56Gf9l3a" Name="Style Sheet" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="355,533,76,19" Id="PVblK35NMkSMnJUsq6dXHp">
+            <p:NodeReference LastCategoryFullName="Elementa.Style" LastSymbolSource="Elementa.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SetStyleSheet" />
+              <CategoryReference Kind="Category" Name="Style" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="Elementa" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+            </p:NodeReference>
+            <Pin Id="P0Gn1n55QWOMnbI1fO3OhT" Name="Elementum" Kind="InputPin" />
+            <Pin Id="EVJjLdVccwpNHYs6wE6Ioy" Name="Force Update" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="MoCRdQrslbaLzrXxFBYF1k" Name="Style Sheet" Kind="InputPin" />
+            <Pin Id="IWPPE3mdS5XPr9cuvSs1M5" Name="Elementum" Kind="OutputPin" />
+          </Node>
+          <Pad Id="STeVmyhXN1hPKIjDNM9YDL" Bounds="543,504,259,58" ShowValueBox="true" isIOBox="true" Value="You can also locally override an element's style : here, we are setting our Slider2D's font to Courier New when it is idle.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="MiYJ94zDuwcLTMMcdQI8Pj" Name="Create" />
+        <Patch Id="JgkL8cazn4aNdGyPYL7CFz" Name="Update" />
+        <ProcessDefinition Id="CM6lZ25gPKQMDy8NbegzO7">
+          <Fragment Id="PTK0r8ZDz9DPddHoOUmOQ9" Patch="MiYJ94zDuwcLTMMcdQI8Pj" Enabled="true" />
+          <Fragment Id="HZlirLaluHKO2oXHHJgxuQ" Patch="JgkL8cazn4aNdGyPYL7CFz" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="L1tRAMUnPY5LQ1RHxWYVG5" Ids="H78mLlBznIqLJrlN0lREiP,NyinQvlDUAdPVHEsg6Ii9z" />
+        <Link Id="LnLeeoiAZVtNqMsHhUID3Y" Ids="CBYyZnp8xzdPeh7faA5bNH,LGBPBpaEZsXPD17IGSKnsr" />
+        <Link Id="VfXEo2NOw1SLFYaNpPxgM7" Ids="Csthcw68VfuMtnuT1nPRuH,VCiu6b4eldBOWOwjmjfvUd" />
+        <Link Id="PWvVLAkVYIbMIUc3oOdqn6" Ids="H98gbWGNIJALRUCJdlZvxf,ON0YNLKW58LLy8eXPt5kGg" />
+        <Link Id="FvczzhreRhlMJOjuD8KdWP" Ids="ScnDmrdF5yCLdnaaPsmTf4,IJ4ptHzAERLMTrOZ3zqQTJ" />
+        <Link Id="SycELV46h1kLZUnL6I4uVe" Ids="LgyRxFn0PEkNsyn4nZ7Ewv,DU6aNe1PbvpNWR0eEud2Z3" />
+        <Link Id="O36yIRXdqNMOh0AOoWupFg" Ids="LvirimkUxXYMPAEum6SHf5,QYdRxvJ6nEQM94fNgUc8xr" />
+        <Link Id="AgOEAW2Ms29MQ9Aemz8Ksb" Ids="LDtE0vOgCNaQO4MIEyuLSW,EUjBzOPWj97N0X4UDtaaPR" />
+        <Link Id="CAcJ1h2kJqVPTUPAzQ53fM" Ids="E3Vs4KQ91OwQJs3jCPibji,SpJyiGmuep4Pp1bRFBMMf1" />
+        <Link Id="FRRynLoK15dOZlRp9WBQt9" Ids="VUxJE3fZN27LsLeP27eGPJ,P0Gn1n55QWOMnbI1fO3OhT" />
+        <Link Id="QyW7p5ANme2N5hjkCWgCse" Ids="IWPPE3mdS5XPr9cuvSs1M5,AWvgx3YMmyVO7NuVB0DM4b" />
+        <Link Id="Ue7gwI3d6wyLWIr58babuh" Ids="L8t5j3SshXRMhE56Gf9l3a,MoCRdQrslbaLzrXxFBYF1k" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="Tx46qIhzBJkLLQL5BQgGmH" Location="VL.Skia" Version="2019.1.0-0411-gf6daa4918b" />
+  <DocumentDependency Id="SceFCh35947LsUME3dZKKN" Location="../../../Elementa.vl" />
+</Document>
