@@ -3043,6 +3043,7 @@
                 <Choice Kind="ProcessAppFlag" Name="Editor" />
               </p:NodeReference>
               <Pin Id="I3jEPm6nxAYMm6xCztvN2a" Name="Timeline" Kind="InputPin" />
+              <Pin Id="O9YWzs3jv9yLEOg49cPwbB" Name="Scale" Kind="InputPin" />
               <Pin Id="EJNxVSm3mOqPw83CesBYZj" Name="Modules" Kind="InputPin" />
               <Pin Id="LTsVu30YCn1MR9nRbLarlt" Name="TrackLabels" Kind="InputPin" />
               <Pin Id="NwRr8Rm3OUyNeAZ3btiTye" Name="EnableTCChangesLocally" Kind="InputPin" />
@@ -3057,6 +3058,7 @@
             <ControlPoint Id="Ef5xbXkXIqWO8Yz9GUF0x2" Bounds="252,229" />
             <ControlPoint Id="PKif3xPmBSEO70QzPE5cKp" Bounds="204,96" />
             <ControlPoint Id="DxGwsyzvSSwMJ9BD2t84gO" Bounds="156,71" />
+            <ControlPoint Id="L6Eet5My0yLPewPofAaoAs" Bounds="97,110" />
           </Canvas>
           <Patch Id="TQMlBZPCcmiLTRse0Z4ZTC" Name="Create" />
           <Patch Id="KWmoyraCuQFMD7V3biGD7u" Name="Update">
@@ -3065,6 +3067,7 @@
             <Pin Id="MqGJU5ekvF9LMZEmIikUUw" Name="Modules" Kind="InputPin" />
             <Pin Id="E4LtCqeqR0eQTM8UAX0hUa" Name="EnableTCChangesLocally" Kind="InputPin" Bounds="275,259" />
             <Pin Id="KUkvQ7LIxD1NYE5bsfQMAP" Name="TrackLabels" Kind="InputPin" Bounds="274,283" />
+            <Pin Id="Fx0oKDk9XarN1FRgwIUjaB" Name="Scale" Kind="InputPin" Bounds="97,110" />
             <Pin Id="T2tPjmbmu8JLlQf5MzFi3p" Name="Window Active" Kind="OutputPin" Bounds="230,351" />
             <Pin Id="DKctyZjGQEoMjHUul3KYwb" Name="Editor" Kind="OutputPin" Bounds="301,401" />
           </Patch>
@@ -3086,6 +3089,8 @@
           <Link Id="FEUE0aRxrmlPuejsPk5v26" Ids="E4LtCqeqR0eQTM8UAX0hUa,PKif3xPmBSEO70QzPE5cKp" IsHidden="true" />
           <Link Id="E6BYDHDTTzvLllMRfLMlJX" Ids="DxGwsyzvSSwMJ9BD2t84gO,LTsVu30YCn1MR9nRbLarlt" />
           <Link Id="FFttR3SfVo5P0UO4uwtQ1t" Ids="KUkvQ7LIxD1NYE5bsfQMAP,DxGwsyzvSSwMJ9BD2t84gO" IsHidden="true" />
+          <Link Id="OwwRAUPHD3zLJohOO7chNP" Ids="L6Eet5My0yLPewPofAaoAs,O9YWzs3jv9yLEOg49cPwbB" />
+          <Link Id="FczFuezk22LPkiCDUCgBct" Ids="Fx0oKDk9XarN1FRgwIUjaB,L6Eet5My0yLPewPofAaoAs" IsHidden="true" />
         </Patch>
       </Node>
       <Overlay Id="QOn5hJtyBenL6czvINqt9a" Name="Renderer" Bounds="-201,133,200,205">
