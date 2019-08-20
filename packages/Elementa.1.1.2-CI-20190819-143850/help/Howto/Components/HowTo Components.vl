@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="Bn19L5G2eEMPUa3pGP2uv3" LanguageVersion="2019.1.0-0411-gf6daa4918b" Version="0.128">
+  <NugetDependency Id="GppMEmuWTWwNu1380AsTBu" Location="VL.CoreLib" Version="2019.1.0-287" />
+  <Patch Id="U2OktPJIft6LmRYDfHRaRo">
+    <Canvas Id="OnAcnjd8HswONAJUfjLtjR" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="EoAbfNCWqS5MsdhUrqzi2E">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="VqFoQpeKjRwPzA7t9182BO">
+        <Canvas Id="FVfcVguj6qwOP9aPSWpeuE" CanvasType="Group">
+          <Pad Id="J4tDJCLEc0pPSN4rj3XEYM" Bounds="91,90,189,41" ShowValueBox="true" isIOBox="true" Value="Components">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">20</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MeI9sVnnnjaLzdheH0h5cw" Bounds="91,139,547,46" ShowValueBox="true" isIOBox="true" Value="Components are attributes that you can add to any Elementum. You could say that adding a Component to an Elementum allows it to do other things.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="IQX7OJ46xMFNfCz8gjKAOS" Bounds="91,213,665,23" ShowValueBox="true" isIOBox="true" Value="Here are all the components available in Elementa. They all have an help patch, check out the help browser.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="106,258,57,19" Id="PmBZ0bnihZ1P0MKIvKOtmd">
+            <p:NodeReference LastCategoryFullName="Elementa.Core.Component" LastSymbolSource="Elementa.Core.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Taskable" />
+            </p:NodeReference>
+            <Pin Id="BxsCSW7wYIOQPsx69mFZ3J" Name="Task" Kind="InputPin" />
+            <Pin Id="LVGfEw5U2xfO8lS1nW9OAG" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="286,258,58,19" Id="BgsDtJyhJWYLubH3R7kzXg">
+            <p:NodeReference LastCategoryFullName="Elementa.Core.Component" LastSymbolSource="Elementa.Core.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Taggable" />
+            </p:NodeReference>
+            <Pin Id="MqrYrRQRa89OiA3msz7tp2" Name="Tag" Kind="InputPin" />
+            <Pin Id="JHfWP6utpfvLj00YwHac7J" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="646,258,77,19" Id="TWNZgb4ywOPQAIGTklN8Kq">
+            <p:NodeReference LastCategoryFullName="Elementa.Core.Task" LastSymbolSource="Elementa.Core.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ContextMenu" />
+            </p:NodeReference>
+            <Pin Id="IrDjTLSZ3AvPTb81uOD9IS" Name="Entry" Kind="InputPin" />
+            <Pin Id="IpoUXq18VpdPoPvemKDI85" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="466,258,62,19" Id="RWFyXppbyEtLNTc6eONdWp">
+            <p:NodeReference LastCategoryFullName="Elementa.Core.Component" LastSymbolSource="Elementa.Core.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Selectable" />
+            </p:NodeReference>
+            <Pin Id="LjdN30zRyMqOO7ktNX4yOL" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="FDhoUTwtAASMwuMzcEf87j" Name="Selected" Kind="OutputPin" />
+          </Node>
+          <Pad Id="TVp1sEz0jdlPSsDHH2RwVf" Bounds="87,301,115,112" ShowValueBox="true" isIOBox="true" Value="A Taskable Elementum can execute user-defined tasks when interacted with. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EiifxY40p5zMnJshHNzymp" Bounds="271,301,113,153" ShowValueBox="true" isIOBox="true" Value="A Taggable Elementum can carry arbitrary data with it. This data can be retrieved when the Elementum is selected.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MCqbnQDpnjNMMbpdJzeZTx" Bounds="451,301,110,74" ShowValueBox="true" isIOBox="true" Value="All Selectable Elementum that are selected can be retrieved.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="N23IoKQbCijLVcATNcyEWO" Bounds="631,301,112,95" ShowValueBox="true" isIOBox="true" Value="Any Elementum can pop a context-menu when interacted with">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ITbidHNAUDOMgBDGK2idUV" Bounds="91,468,665,23" ShowValueBox="true" isIOBox="true" Value="To add a Component to an Elementum, simply select its node and CTRL/+ -">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="103,502,65,19" Id="KRio01oqG4RODN45U4wJ9E">
+            <p:NodeReference LastCategoryFullName="Elementa.Slider" LastSymbolSource="Elementa.Slider.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Slider" />
+            </p:NodeReference>
+            <Pin Id="DALvmLIIqbvQQvHZidwFa3" Name="Bounds" Kind="InputPin" />
+            <Pin Id="QpCRXpDQdxlLAJVcrRu8FR" Name="Value" Kind="InputPin" />
+            <Pin Id="ImD70tKJffZMTlhdU4gYlv" Name="Component" Kind="InputPin" />
+            <Pin Id="VhKXNNEjmvCPtMz5d6pMZr" Name="Component 2" Kind="InputPin" />
+            <Pin Id="BL3ALarMtoXNuE1HLqne3F" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="IxhDyQmsaL1QRQO6pwoQuO" Name="On Interaction" Kind="OutputPin" />
+            <Pin Id="T2cQEST73JrMNnvQ9LYWxI" Name="Value" Kind="OutputPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="KdTKK5TpWjnPJ5vScQ5VCP" Name="Create" />
+        <Patch Id="JqQ55xVIbp9PzgWa6c2UoC" Name="Update" />
+        <ProcessDefinition Id="KCbNdC3C1rvQSRlkzEaYM5">
+          <Fragment Id="JjAbZGkfQHNOouW7iiqGRz" Patch="KdTKK5TpWjnPJ5vScQ5VCP" Enabled="true" />
+          <Fragment Id="KgcjUwTNJcNPOmuabMBKZS" Patch="JqQ55xVIbp9PzgWa6c2UoC" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="BK19P87Va2DQHghawJyKCN" Location="VL.Skia" Version="2019.1.0-0287-g67d678e5a2" />
+  <DocumentDependency Id="DAVtKUI7grvNhdrYlYjL9a" Location="../../../Elementa.vl" />
+</Document>
