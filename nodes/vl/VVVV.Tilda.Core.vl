@@ -7128,13 +7128,57 @@
           <Choice Kind="InterfaceDefinition" Name="Interface" />
         </p:NodeReference>
         <Patch Id="EqtnKyk2898L4O0ggROWAn">
-          <Canvas Id="HsuZS3HwZLmQXaBNJZmg6x" BordersChecked="false" CanvasType="Group" />
-          <!--
-
-    ************************  ************************
-
--->
-          <ProcessDefinition Id="MbB09PyXUuOOshn90DdDMy" IsHidden="true" />
+          <Canvas Id="HsuZS3HwZLmQXaBNJZmg6x" CanvasType="Group">
+            <ControlPoint Id="I9UxtqxUcDpNJc3UyOaZxg" Bounds="73,183" />
+            <Pad Id="GSwrGpmXNW9PPjBFW0YCUg" Comment="Layer" Bounds="72,92,20,15" ShowValueBox="true" isIOBox="true">
+              <p:TypeAnnotation LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+                <Choice Kind="TypeFlag" Name="Layer" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="MY2N6kuhDUOMWK7j7J46vX" SlotId="Ih0QFQ8xJCoQJqBxz0w3qx" Bounds="220,140">
+              <p:ValueBoxSettings />
+            </Pad>
+            <ControlPoint Id="NOq95sTMi4bPg5UTn43CIN" Bounds="220,94" />
+            <ControlPoint Id="E4IU2AG95OKQQbBT74Ci01" Bounds="220,184" />
+          </Canvas>
+          <ProcessDefinition Id="MbB09PyXUuOOshn90DdDMy" IsHidden="true">
+            <Fragment Id="JfXMDHIj9QuPfW3Xae57O2" Patch="JDrt7mTJNfmPxxUQOdJFlD" Enabled="true" />
+            <Fragment Id="HGlc79QdRgJP6cYd2fS8y8" Patch="CtPyiaK1WC9MjNPSWbE3b9" Enabled="true" />
+            <Fragment Id="MxmtDadQeCDNXLEsHkJZRb" Patch="N1FWriWd2ezMNs8fAxgZe1" Enabled="true" />
+          </ProcessDefinition>
+          <Pin Id="BqJp5Hcf9G4LwW8r6sc9kM" Name="Layer" Kind="OutputPin">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="Layer" />
+            </p:TypeAnnotation>
+          </Pin>
+          <Link Id="FU5ko8HwoReN2XtvGPxaUd" Ids="I9UxtqxUcDpNJc3UyOaZxg,PiOHApgE8yCLcFdNp4Xllk" IsHidden="true" />
+          <Patch Id="JDrt7mTJNfmPxxUQOdJFlD" Name="Draw" ParticipatingElements="PI5vTlHo3XMMx0jTKbviJj">
+            <Pin Id="PiOHApgE8yCLcFdNp4Xllk" Name="Layer" Kind="OutputPin">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="Layer" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <Link Id="PI5vTlHo3XMMx0jTKbviJj" Ids="GSwrGpmXNW9PPjBFW0YCUg,I9UxtqxUcDpNJc3UyOaZxg" />
+          <Slot Id="Ih0QFQ8xJCoQJqBxz0w3qx" Name="Editor">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="Editor" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="OH9CRRtz1IzNpaQn8oHoVO" Ids="NOq95sTMi4bPg5UTn43CIN,MY2N6kuhDUOMWK7j7J46vX" />
+          <Link Id="TzGHzFfuYHVNKGpfNXD7nS" Ids="DdnxwPXeN1cLm3uddlGuQm,NOq95sTMi4bPg5UTn43CIN" IsHidden="true" />
+          <Patch Id="CtPyiaK1WC9MjNPSWbE3b9" Name="SetEditorReference">
+            <Pin Id="DdnxwPXeN1cLm3uddlGuQm" Name="Editor" Kind="InputPin">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="Editor" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <Link Id="KvZwq5B8p2GNqYQbcMDg1C" Ids="MY2N6kuhDUOMWK7j7J46vX,E4IU2AG95OKQQbBT74Ci01" />
+          <Link Id="EXkEoEOmtSMMyZsrajDMuF" Ids="E4IU2AG95OKQQbBT74Ci01,GErDUBtceSnQAjtRL2rWcY" IsHidden="true" />
+          <Patch Id="N1FWriWd2ezMNs8fAxgZe1" Name="GetEditorReference">
+            <Pin Id="GErDUBtceSnQAjtRL2rWcY" Name="Editor" Kind="OutputPin" />
+          </Patch>
         </Patch>
       </Node>
     </Canvas>
