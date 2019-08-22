@@ -289,7 +289,7 @@
             </Node>
             <ControlPoint Id="MGxiHVJYNVTPYm0tKfRvgk" Bounds="302,642" />
             <ControlPoint Id="RdnAIU8bD1DMTpUCBlWjMK" Bounds="1071,203" />
-            <Node Bounds="958,419,125,19" Id="GtfGsuegzaSLE76zqEes6k">
+            <Node Bounds="958,479,125,19" Id="GtfGsuegzaSLE76zqEes6k">
               <p:NodeReference LastCategoryFullName="System.Serialization" LastSymbolSource="System.Serialization.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Persistent" />
@@ -303,10 +303,10 @@
               <Pin Id="PTJRu0XSkN4QRWHh6wJPxQ" Name="Throw On Error" Kind="InputPin" />
               <Pin Id="NfJA6gyUFuJO7lVBdFwiP1" Name="Output" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="Rlv795TvM86LzluktG5BHI" Bounds="981,362" />
+            <ControlPoint Id="Rlv795TvM86LzluktG5BHI" Bounds="981,422" />
             <Pad Id="TPMBk8eTI1OLHihJdsDIc3" SlotId="MArAjIcwkXkN5FbOi1fup5" Bounds="960,176" />
-            <Pad Id="EQgZGdZTSCwMRdVSAmoLYj" SlotId="MArAjIcwkXkN5FbOi1fup5" Bounds="960,455" />
-            <ControlPoint Id="UaXzAHjmEXBQKTD7NafTwU" Bounds="960,511" />
+            <Pad Id="EQgZGdZTSCwMRdVSAmoLYj" SlotId="MArAjIcwkXkN5FbOi1fup5" Bounds="960,515" />
+            <ControlPoint Id="UaXzAHjmEXBQKTD7NafTwU" Bounds="960,571" />
             <Node Bounds="958,131,52,26" Id="NCcOdnAxoHfOJXNbMGTGE5">
               <p:NodeReference LastCategoryFullName="VVVV.Tilda.SyncRedis" LastSymbolSource="VVVV.Tilda.Sync.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -316,15 +316,7 @@
               <Pin Id="SZDDUAQSTIgOpRLUviwQN7" Name="PullPush On Connect" Kind="InputPin" />
               <Pin Id="D4YY62zNeBKQVjjQyEoiqf" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="VoSKekBbrivNttxunSY80D" Comment="Write" Bounds="1040,362,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-              <p:ValueBoxSettings>
-                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
-              </p:ValueBoxSettings>
-            </Pad>
-            <Pad Id="S0Wqo8BAFGrNnFL5SEXg4g" Comment="Read" Bounds="1134,362,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <Pad Id="S0Wqo8BAFGrNnFL5SEXg4g" Comment="Read" Bounds="1044,421,35,35" ShowValueBox="true" isIOBox="true" Value="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -341,11 +333,6 @@
               <Pin Id="KynRCDij9XXLbGiilmWJyG" Name="TClient" Kind="InputPin" />
               <Pin Id="EB2YG1cEcNyQJYMciWg3es" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="LcXl9A2AEt0PcoBaU1dQeF" Comment="Read On Open" Bounds="1247,359,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pad>
             <Node Bounds="958,276,68,26" Id="GEQcixp9onmOxKuVBE9a2A">
               <p:NodeReference LastCategoryFullName="VVVV.Tilda.SyncRedis" LastSymbolSource="VVVV.Tilda.Sync.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -478,6 +465,27 @@
               <Pin Id="MgRfAbuYLYGOiIBrckiulb" Name="Result" Kind="OutputPin" />
               <Pin Id="Taq0RXJ1PcCOdcl2KuJ48Q" Name="Result 2" Kind="OutputPin" />
             </Node>
+            <Node Bounds="976,336,52,26" Id="Bk0a79fTN8QLgjbjfk4by3">
+              <p:NodeReference LastCategoryFullName="VVVV.Tilda.SyncRedis" LastSymbolSource="VVVV.Tilda.Sync.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Split" />
+                <CategoryReference Kind="ClassType" Name="SyncRedis" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="OzC8MfYPvFnL6A7o6DgcAN" Name="Input" Kind="StateInputPin" />
+              <Pin Id="FqgszsTU930OL4OxiRKWlg" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="I0E5JUeylM4PSrXssXPTlH" Name="PullPush On Connect" Kind="OutputPin" />
+              <Pin Id="K3FpyCRHRq5LkIjLiDqK4n" Name="Connection Observables" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="999,378,57,19" Id="VvyLeWjwbclLUnGSPLYpvc">
+              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Changed" />
+                <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="MCo5lTdOXVXMODznbxdA1k" Name="Value" Kind="InputPin" />
+              <Pin Id="EtfrcL0ggBsNB7Fj5Rhjn4" Name="Result" Kind="OutputPin" />
+              <Pin Id="VKFwQD9zwbeQCkqL0TiMVu" Name="Unchanged" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <Patch Id="MDloefayvs7MMlS43jeM5e" Name="Create" ParticipatingElements="Tn8Wus4L6iCPvUdkhs1fvl,Kzwz8ArjV5LOR6MbPU3mYB" />
           <Patch Id="JRaWa08wlF8M4giYaydvhb" Name="Update">
@@ -575,11 +583,9 @@
           <Link Id="ULPZlniRGoNN9jdlZv6gl9" Ids="EQgZGdZTSCwMRdVSAmoLYj,UaXzAHjmEXBQKTD7NafTwU" />
           <Link Id="Afga65nFhpqNjurcdZQASy" Ids="UaXzAHjmEXBQKTD7NafTwU,JUVH4XGZMYPPxglfuy7uMl" IsHidden="true" />
           <Link Id="Kzwz8ArjV5LOR6MbPU3mYB" Ids="D4YY62zNeBKQVjjQyEoiqf,TPMBk8eTI1OLHihJdsDIc3" />
-          <Link Id="Ohjsqq3I3EDLrkKD38ekxS" Ids="VoSKekBbrivNttxunSY80D,FCfFrtQwaPlQJbX5IcmDMs" />
           <Link Id="EtNoSH0Z5BKOK3CWm4gZ7q" Ids="S0Wqo8BAFGrNnFL5SEXg4g,FRbIh70UNS8QHkWSaYGyfA" />
           <Link Id="ORAejdxS5kKNlh5JabtS9t" Ids="TPMBk8eTI1OLHihJdsDIc3,Tqxfq6BNKTaO69g6o6C2eQ" />
           <Link Id="HTvbrONDPsyLHQnepE9ngG" Ids="UxQpPgh2NrMLQQ5JRBtj6I,KynRCDij9XXLbGiilmWJyG" />
-          <Link Id="RkrgAA2r3ijP5Fq6mb3xpw" Ids="LcXl9A2AEt0PcoBaU1dQeF,HW1jChQbXksPJdkRJ37DWs" />
           <Link Id="Oi29MPmnu4zNriq3h8OLJD" Ids="EB2YG1cEcNyQJYMciWg3es,EN9HZTz9idVLeJxsgX1trB" />
           <Link Id="B1EDleRyKCgONOWKgFKTHB" Ids="Tt5rMII20hmNJIBrCyCkqI,EqYMr29sDwxPH3Fo5ghs1H" />
           <Link Id="MUsEhulCXVXOn7y3ZkNWB9" Ids="QvMCpMNoanWMwtWyhEhrNe,GJK45GBQlGyNOWzj4VRcjz" />
@@ -602,6 +608,9 @@
           <Link Id="EOchbuHgQtsPRfkFnH9Ygr" Ids="G7ftgH1igYeLW803XwIkhB,N2rHRnX4tMdQcmitcmsQ2M" />
           <Link Id="KnDQVktMjrdQOj82K2xQI2" Ids="MgRfAbuYLYGOiIBrckiulb,IuI34sMLzIkQK1uUvIGr8W" />
           <Link Id="KOJ9TjZWPaFMZGU1GPP50t" Ids="Taq0RXJ1PcCOdcl2KuJ48Q,QgtrpplghLrObzAudmSmaB" />
+          <Link Id="MPjYoUZU5lFMfEc0a4R4Wc" Ids="Tt5rMII20hmNJIBrCyCkqI,OzC8MfYPvFnL6A7o6DgcAN" />
+          <Link Id="KR07olDgZ09PiGFXxub6kh" Ids="I0E5JUeylM4PSrXssXPTlH,MCo5lTdOXVXMODznbxdA1k" />
+          <Link Id="MG6uRrQ3mnSOdTRcY8lqIO" Ids="EtfrcL0ggBsNB7Fj5Rhjn4,FCfFrtQwaPlQJbX5IcmDMs" />
         </Patch>
       </Node>
       <!--
