@@ -5604,12 +5604,12 @@
     ************************ Cons (Plugin) ************************
 
 -->
-      <Node Name="Cons (Plugin)" Bounds="834,972,173,117" Id="ViC6zAhaf48OZN8lc7EvAc">
+      <Node Name="Cons (Plugin)" Bounds="751,935,173,117" Id="ViC6zAhaf48OZN8lc7EvAc">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="OperationDefinition" Name="Operation" />
         </p:NodeReference>
         <Patch Id="FeZ037ASftOLZPMOQUWHpi">
-          <Node Bounds="865,1032,39,19" Id="HLgCN3duz81OtYYVFJJXee">
+          <Node Bounds="782,995,39,19" Id="HLgCN3duz81OtYYVFJJXee">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Cons" />
@@ -5619,7 +5619,7 @@
             <Pin Id="PfpDcPLTFSdMhgpfsw2HkL" Name="Input 2" Kind="StateInputPin" />
             <Pin Id="IkjWNMY8AQJOuDGxqNR2QP" Name="Result" Kind="OutputPin" />
           </Node>
-          <ControlPoint Id="HuP2b44veQrLgGtlwwCp1s" Bounds="848,991" />
+          <ControlPoint Id="HuP2b44veQrLgGtlwwCp1s" Bounds="765,954" />
           <Link Id="DXDhFOimxCTNpzX0kN4Sm6" Ids="HuP2b44veQrLgGtlwwCp1s,VY3k41NB1eFLL92lHFXOul" />
           <Pin Id="F3FOtCMPoWNOAXpyMCRFZs" Name="Input" Kind="InputPin" Bounds="848,991">
             <p:TypeAnnotation>
@@ -5627,14 +5627,57 @@
             </p:TypeAnnotation>
           </Pin>
           <Link Id="Qq7T1vrojzPMZVJIrpAk8y" Ids="F3FOtCMPoWNOAXpyMCRFZs,HuP2b44veQrLgGtlwwCp1s" IsHidden="true" />
-          <ControlPoint Id="HsiOf13e3DVNf8wOMC4h2x" Bounds="951,990" />
+          <ControlPoint Id="HsiOf13e3DVNf8wOMC4h2x" Bounds="868,953" />
           <Link Id="NLSPi9JuSSfQG03H7Kt6h1" Ids="HsiOf13e3DVNf8wOMC4h2x,PfpDcPLTFSdMhgpfsw2HkL" />
           <Pin Id="U5AxYLrRoBgOziNja65Aoe" Name="Input 2" Kind="InputPin" Bounds="890,999" />
           <Link Id="EC0xX7BZh0HQd3ZDjbaCQq" Ids="U5AxYLrRoBgOziNja65Aoe,HsiOf13e3DVNf8wOMC4h2x" IsHidden="true" />
-          <ControlPoint Id="McjLos5x07eL8lWgMnA8R7" Bounds="867,1072" />
+          <ControlPoint Id="McjLos5x07eL8lWgMnA8R7" Bounds="784,1035" />
           <Link Id="HaVNeROVO9qMM0qYm00tA7" Ids="IkjWNMY8AQJOuDGxqNR2QP,McjLos5x07eL8lWgMnA8R7" />
           <Pin Id="SVTEgX4aqkSPqUhhXf5Baz" Name="Result" Kind="OutputPin" Bounds="924,1031" />
           <Link Id="ShNis8TsP0cNznEB6549kk" Ids="McjLos5x07eL8lWgMnA8R7,SVTEgX4aqkSPqUhhXf5Baz" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ Add (Plugin) ************************
+
+-->
+      <Node Name="Add (Plugin)" Bounds="1012,924,151,161" Id="ERI25CQlONPP9GIuY9lHMe">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="OperationDefinition" Name="Operation" />
+        </p:NodeReference>
+        <Patch Id="HpK4VTFSVV4LurGIOCKSHK">
+          <Node Bounds="1045,978,45,26" Id="HOvViMPW6K0O3qA46XoNpM">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="Add" />
+            </p:NodeReference>
+            <Pin Id="F9wGNRWASjFPBsirAywxvW" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Ifg7ygH841GO4fxdjKul4d" Name="Item" Kind="InputPin" />
+            <Pin Id="FUZa9qdus6kLIdfxlqxjYL" Name="Output" Kind="OutputPin" />
+          </Node>
+          <ControlPoint Id="Cxnun0D4ESvPPV6x5Itd7t" Bounds="1026,942" />
+          <Pin Id="KX5AwyVOJvcPu5jJbotA2K" Name="Input" Kind="InputPin" Bounds="848,991">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="ITildaPlugin" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Pin>
+          <ControlPoint Id="Vb4EAqi27NHPIr0kGyT3b4" Bounds="1107,944" />
+          <Pin Id="LZxvemtbDETN2veEyo8E7s" Name="Input 2" Kind="InputPin" Bounds="890,999" />
+          <ControlPoint Id="Jg3Q2FvBBi6OskLhbboCCn" Bounds="1045,1068" />
+          <Pin Id="MHHhHShDBRyNOWHjwjwWmx" Name="Result" Kind="OutputPin" Bounds="924,1031" />
+          <Link Id="MZWSRW5LkxoQB5jdHfdtrt" Ids="Cxnun0D4ESvPPV6x5Itd7t,F9wGNRWASjFPBsirAywxvW" />
+          <Link Id="RpO62WcK7ZXM6cZYYXR8m6" Ids="KX5AwyVOJvcPu5jJbotA2K,Cxnun0D4ESvPPV6x5Itd7t" IsHidden="true" />
+          <Link Id="B4mBGdUOuJzNPaVsUt8sVj" Ids="LZxvemtbDETN2veEyo8E7s,Vb4EAqi27NHPIr0kGyT3b4" IsHidden="true" />
+          <Link Id="AFQStQ2JFkfO30VrlpEZc0" Ids="Jg3Q2FvBBi6OskLhbboCCn,MHHhHShDBRyNOWHjwjwWmx" IsHidden="true" />
+          <Link Id="PGnmCWtATiuOpOsE8Ifw1K" Ids="FUZa9qdus6kLIdfxlqxjYL,Jg3Q2FvBBi6OskLhbboCCn" />
+          <Link Id="OwqEWXNdstrOt8B8Yi7Vl9" Ids="Vb4EAqi27NHPIr0kGyT3b4,Ifg7ygH841GO4fxdjKul4d" />
         </Patch>
       </Node>
     </Canvas>
