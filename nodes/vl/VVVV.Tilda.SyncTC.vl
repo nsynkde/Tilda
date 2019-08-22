@@ -508,8 +508,18 @@
               <Pin Id="LyDcdVAZEqsQaVfzi3kNzP" Name="Input 2" Kind="InputPin" />
               <Pin Id="SkdlZNPfQk8PpJzyZolq82" Name="Output" Kind="StateOutputPin" />
             </Node>
+            <Node Bounds="336,-9,71,26" Id="PHQq8tgR1TDOjXUVG95Ww9">
+              <p:NodeReference LastCategoryFullName="Main.SyncTCSettings" LastSymbolSource="VVVV.Tilda.SyncTC.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+                <CategoryReference Kind="ClassType" Name="SyncTCSettings" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="Px9hduS4aOVPJCqxhp6wDD" Name="Sending" Kind="InputPin" />
+              <Pin Id="R8axRDMbT8mLjpw8nTFldM" Name="Receiving" Kind="InputPin" />
+              <Pin Id="EHJGYFtP7r3PtsrwUawkWA" Name="Output" Kind="StateOutputPin" />
+            </Node>
           </Canvas>
-          <Patch Id="Q15QAqHeW8tLMsqkcmEmP1" Name="Create" />
+          <Patch Id="Q15QAqHeW8tLMsqkcmEmP1" Name="Create" ParticipatingElements="R2UDOeQF1mpLTV3WXynIh5" />
           <Patch Id="HyjI89ngAWoO0IMerEpePp" Name="Update">
             <Pin Id="Oz77KD5YxdKMezLA5GoxC8" Name="Port Playstate" Kind="InputPin" Bounds="633,124" DefaultValue="23485">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -583,6 +593,7 @@
           <Link Id="SKxhDHREmijP4tNfntfm6Y" Ids="SkdlZNPfQk8PpJzyZolq82,GjOmOWEVILmPYrgIsjjCFj" />
           <Link Id="EYJbWBbR3vFO7STxa73mNi" Ids="GaT8oevALkyNaup3nUDKqj,VglmrPqZro4PYbXsSjTjqw" />
           <Link Id="GBZgqWvzBVcPslOmIvLxle" Ids="LXl3nLeK5tGMz7JVsV747W,TndWHVSLis2PtxXmg6RdlJ" />
+          <Link Id="R2UDOeQF1mpLTV3WXynIh5" Ids="EHJGYFtP7r3PtsrwUawkWA,BQ1fNnNJuyRNGcymfvYqP7" />
         </Patch>
       </Node>
       <!--
@@ -999,7 +1010,7 @@
           <Link Id="QtXHmrfZBrQP3cVDN8TlBF" Ids="MLK0djAh5nTL5yI7TD03QL,Pb3CRO6cm7kNbdabcgiyvr" />
           <Link Id="HtedN5R3i0xNnkkB0KlA2C" Ids="TJFaW3vQd9DNME24OrU15T,RrMnJeZHOf3MYzzdahhElq" />
           <Link Id="I0Y58CfKuj6QSaVk4aMtx2" Ids="F8I8QKp5pM7QKfGGNqjtxU,BPRimxCbDW4L4owzhiokOF" />
-          <Patch Id="OB9vK1RujbvNu8p4JSAX9S" Name="Draw" ParticipatingElements="BdEDufFXe2KP1Z3dxmMvOj,SicQ7BnOwgnMmr3IfnyoIj,OUvnnf84WnWPs0a42geqau,HA74lUBcaH5LmqgiYxVGEN,POzEaEQiYD2N8QBW9bK7Cr,FzBYNdVrJnYO3BXG2h8N9z,TcdTHRmNgfuLcTmz8iT0ZZ,IZMIWfm7yqvPnYYE0AhrQr,LoyOulLHZXAOEn2mBUozjX">
+          <Patch Id="OB9vK1RujbvNu8p4JSAX9S" Name="Draw" ParticipatingElements="POzEaEQiYD2N8QBW9bK7Cr,FzBYNdVrJnYO3BXG2h8N9z,TcdTHRmNgfuLcTmz8iT0ZZ,IZMIWfm7yqvPnYYE0AhrQr,BdEDufFXe2KP1Z3dxmMvOj,SicQ7BnOwgnMmr3IfnyoIj,OUvnnf84WnWPs0a42geqau,HA74lUBcaH5LmqgiYxVGEN,LoyOulLHZXAOEn2mBUozjX">
             <Pin Id="Pd7XKHoNo3aNdkRuZXWWmW" Name="Layer" Kind="OutputPin" />
           </Patch>
           <Link Id="F0kIlO5XzZZPZjKMuqYhSt" Ids="FZbXrS6FmNZLXYb6YLPc8w,Pd7XKHoNo3aNdkRuZXWWmW" IsHidden="true" />
