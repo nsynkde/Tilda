@@ -2286,46 +2286,69 @@
               <Pin Id="J21Bg7VFB1jNrZiqBg2r19" Name="SelectedClips" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="TJuc8WJXJY8PIkax7lXWQk" Bounds="1057,-61" />
-            <Node Bounds="-160,445,25,19" Id="N8HAs8Fs91IP8AhklCQTHp">
-              <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="=" />
-              </p:NodeReference>
-              <Pin Id="BwOUfqxICYiOtK7o9nPLmF" Name="Input" Kind="InputPin" />
-              <Pin Id="NYhQwtuhtuzN5AFASEz70u" Name="Input 2" Kind="InputPin" />
-              <Pin Id="VSXewlKvPGSQcKaD9goql9" Name="Result" Kind="OutputPin" />
-            </Node>
-            <Pad Id="VeQGFAyHQUGNxu8eLqYvIn" Comment="" Bounds="-137,416,99,15" ShowValueBox="true" isIOBox="true" Value="VL.Tilda.VideoClip">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="String" />
-              </p:TypeAnnotation>
-              <p:ValueBoxSettings />
-            </Pad>
-            <Node Bounds="49,248,78,80" Id="LKauMOLrM30LwNoGFJfZLF">
+            <Overlay Id="CMUfyvW1oHdPFSaSMECfRt" Name="Change text on clip change" Bounds="-534,1531,344,154" />
+            <Node Bounds="-251,250,128,178" Id="G0S8fQMxWlGLKCHIqOrdQf">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
-              <Pin Id="UQG3LnNfUoTOI7VLoxdI0q" Name="Condition" Kind="InputPin" />
-              <Patch Id="Vdk0jUBzR7DOA6SUe5tRze" ManuallySortedPins="true">
-                <Patch Id="SdV7KC4l8ZyMrooIXQS6o3" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="GKXisVfD063Nn5omnBenPa" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="61,276,54,26" Id="IXqOP7XWmGeM3dZ3szCZkN">
+              <Pin Id="QcqPuFsEtXHO58BFqq4JyD" Name="Condition" Kind="InputPin" />
+              <Patch Id="R0tl3lDgwsKLWpxdKrf6Yd" ManuallySortedPins="true">
+                <Patch Id="L6ewA4jL8raNRDj4PXdIQy" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="PVwoMAXvYcnP2aO7TXR7jN" Name="Then" ManuallySortedPins="true" />
+                <Patch Id="HGxyQns3RUDPudADungph2" Name="Update">
+                  <Pin Id="QR6EZdvoyqCPASrohvp89u" MergeId="287372" Name="TildaTimeline" Kind="InputPin" />
+                </Patch>
+                <Slot Id="H7tkYZHFz27OPEM2prhz7A" Name="VideoClip">
+                  <p:TypeAnnotation>
+                    <Choice Kind="TypeFlag" Name="VideoClip" />
+                  </p:TypeAnnotation>
+                </Slot>
+                <Node Bounds="-185,365,48,19" Id="Av6xNcw5lNQQFyciv7JlHR">
+                  <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="CastAs" />
+                  </p:NodeReference>
+                  <Pin Id="Cwt0NcEezmxLFPt572L33h" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="T0YISCHTa40LmxfFBuR1uO" Name="Default" Kind="InputPin" />
+                  <Pin Id="TdyzR22KtrVO9zkOtV9zlL" Name="Result" Kind="OutputPin" />
+                  <Pin Id="UQwSTXaJEYwMk6YvVCBkBF" Name="Success" Kind="OutputPin" />
+                </Node>
+                <Pad Id="KsLOOoI1MHMNsKiGfi2EkP" SlotId="H7tkYZHFz27OPEM2prhz7A" Bounds="-183,401" />
+                <Node Bounds="-203,273,55,26" Id="Kg8gCrK2OAEQE2yzBqWP9G">
                   <p:NodeReference LastCategoryFullName="VL.Tilda.IClipForm" LastSymbolSource="VVVV.Tilda.Forms.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="GetType" />
+                    <Choice Kind="OperationCallFlag" Name="GetGUID" />
                     <CategoryReference Kind="ClassType" Name="IClipForm" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
-                  <Pin Id="EMmHXZd9hXpMMseSHTIUzr" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="O4UWqj59aEfOGzcyyLRsrO" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="De4CtDC68l2OYwe6qkxq21" Name="Type" Kind="OutputPin" />
+                  <Pin Id="Sr9lovHNqUgN2MkyKB22gy" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Nfp9yMiObn4NWNV2B1zzVN" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="S5MWdEJnHlgNtbjdovszN4" Name="GUID" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="-215,328,65,26" Id="D8cJZ8iCmzKOmrIIGzCFo0">
+                  <p:NodeReference LastCategoryFullName="VL.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="GetClip" />
+                  </p:NodeReference>
+                  <Pin Id="IRGGbyAn7dKPYBf9CwLsNo" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="NtfSMeL9DhyPPkEj2lDNt0" Name="GUID" Kind="InputPin" />
+                  <Pin Id="AQtEfx0fTphLwnivL6h5R1" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="PEVa9tKLpC6MiSP82qTXL3" Name="Clip" Kind="OutputPin" />
+                  <Pin Id="UQ8CJjy8aDJOdBY3gNP5LI" Name="Exist" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="CGNW5v0nPjmQUf2jRWVw0p" Bounds="63,322" Alignment="Bottom" />
-              <ControlPoint Id="FdW8oDkoNzWLf9rFcnSIrl" Bounds="63,254" Alignment="Top" />
+              <ControlPoint Id="GpuMJ1OdqUrLQ14IERnEFY" Bounds="-140,423" Alignment="Bottom" />
+              <ControlPoint Id="PuqU9LvHYaKLrOz74yy6X9" Bounds="-142,257" Alignment="Top" />
             </Node>
-            <Overlay Id="CMUfyvW1oHdPFSaSMECfRt" Name="Change text on clip change" Bounds="-534,1531,344,154" />
+            <Pad Id="FZxdFp8fQKuLS42La2qKCJ" Comment="" Bounds="-140,451,35,35" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="AcyTnpxoigKMBRCRLgarnU" Comment="Allow for all Cliptypes" Bounds="-142,503,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pad>
+            <ControlPoint Id="EkZuDiC0sTDLJr0JfDnmtI" Bounds="-205,123" />
+            <ControlPoint Id="IaPGSfSCATFNIBejPYQMDg" Bounds="-225,172" />
           </Canvas>
           <Patch Id="DPtVUJmTSDhMSLK2mVmuQ6" Name="Create" />
           <Patch Id="JYzwRtTaCNXOtLDZcxJjTl" Name="Update">
@@ -2467,7 +2490,6 @@
           <Link Id="IzO5fqo3QA7QHAd8cGuPlx" Ids="HpBx8b8DmH8O7Boh3zNfqZ,TJuc8WJXJY8PIkax7lXWQk" IsHidden="true" />
           <Link Id="HafFLn5oNSEMILjPNb4Vop" Ids="TJuc8WJXJY8PIkax7lXWQk,QZ6RX1tcGXQOVffQVPjq9t" />
           <Link Id="KfOvDs2hyOCMm0c22DyCBh" Ids="EWAteVsGX1fMdc1RoiOUpN,SRFN1pIHmgNOFUYDYm6l8Y" />
-          <Link Id="HImcgRCNLKRM4cGtSlbtLs" Ids="Mol1iTkcE6xMJIxrNE1TBC,EMmHXZd9hXpMMseSHTIUzr" />
           <Link Id="DLq96ENPmP9OkTMGvBm5x7" Ids="D4EoFuO2P7TOonekuwQ6Yh,Paqciyenwv8LRytE3qegYX" />
           <Link Id="VFx5EdlcDUOLJZw8aJckTZ" Ids="LEOjNG3uzOcQbfSYbZlv7L,PTztp9k9ZKFMrzIxx2JpzP" />
           <Link Id="UUFQ66UBlqNN5OyiUZg3xA" Ids="B2GhuYK7ZlsQMzvPhPo4ue,JSIWdJ2crtcOJ4FhKf4s4b" />
@@ -2480,7 +2502,6 @@
           <Link Id="TCqI0yw6wz8P2TrRHA2Mb7" Ids="K2PQdTIZbJZOtRcZbmgxzu,RxYEbOxRh2sPVJX4S34jFK" />
           <Link Id="CFzzGYrAYZiQaTChnwW3FR" Ids="MmINmjQEceRMneRjyfyCtC,MlFWVNpnNEgL0MnoQ2grln" />
           <Link Id="Lzlagj6GSgxLsNO7JnnWCY" Ids="F6nhP7DyvENLyVF995u0wd,R7PVvVwgI78PCVF7sktPyq" />
-          <Link Id="LGNgiEwBoXhO5Ho8P5XgGJ" Ids="VeQGFAyHQUGNxu8eLqYvIn,NYhQwtuhtuzN5AFASEz70u" />
           <Link Id="PVittqtmFAaNYpDmyhO2V1" Ids="RAGQSM1WdRSNFmJM6o7XXK,Pa3n7zRrUu3LhdSyhLBlMD" />
           <Link Id="ECi2RYtbZr8NVWAlpLTold" Ids="NwE2ztfbZXhN8uPYhvfwpB,Es4ingTChciMyeMlDgNFQk" />
           <Link Id="UG8TY32PvlPNFrbzYVdRmg" Ids="TRxMW7HbBCXLSgqclEpdvi,Gy9RHRsfUAJM48BUBVjkSx" />
@@ -2500,10 +2521,6 @@
           <Link Id="Ipe8zsKH3DHLtl08GmcO0v" Ids="VjzNWz1bOD8OJ5uzE9vFjW,E8YD5jf3QWjPVgLNoxrDmd" IsFeedback="true" />
           <Link Id="SvMxgmU9vF5MvELEyp2Vu7" Ids="N2fRbvIENN0PvdRVajX8wR,E8YD5jf3QWjPVgLNoxrDmd" />
           <Link Id="MsvnQQQsIdBNQauyh52WIp" Ids="E8YD5jf3QWjPVgLNoxrDmd,Tojp4uarpjhQYrY7ZlsZK9" />
-          <Link Id="CHBxzpyai25LPpJBOPIJw6" Ids="HMWKdtVActINJsYD3sNTIp,UQG3LnNfUoTOI7VLoxdI0q" />
-          <Link Id="VwACcAmEG9lLNC924tqG6y" Ids="FdW8oDkoNzWLf9rFcnSIrl,CGNW5v0nPjmQUf2jRWVw0p" IsFeedback="true" />
-          <Link Id="HVvP1AwPSC6QMVwfm2YcMV" Ids="CGNW5v0nPjmQUf2jRWVw0p,BwOUfqxICYiOtK7o9nPLmF" />
-          <Link Id="HDqE4SEZQYDPpGKMKsOQ68" Ids="De4CtDC68l2OYwe6qkxq21,CGNW5v0nPjmQUf2jRWVw0p" />
           <Link Id="DaNL5JTW5RpLQ5l9xDDdtg" Ids="BnXbJsOb3dhNCHyAGMKti7,PATJPbms73iLGQFV7yKITH" IsFeedback="true" />
           <Link Id="EFXg0bniZLzNXrnnJx8QkW" Ids="UsrvTboMEA3QPcwRvPaWYT,PATJPbms73iLGQFV7yKITH" />
           <Link Id="Eq2Y8r3hcDbMtgXLQN1UGO" Ids="PATJPbms73iLGQFV7yKITH,O9TLFB2JTd7MSdCQJjJLdK" />
@@ -2550,9 +2567,20 @@
           <Link Id="Ub0Ro6NgnjeNrKUZvafB9d" Ids="Grrb7YSsPxpMgXL8QBYbcm,DreB0gWfJ6qNFEd2TaAtKI" />
           <Link Id="PNmhyI1i16rMcsdzWqiA6q" Ids="Kcp5anrdgo1LbfZceTNud5,HLDb3QchtOzOO4P6fg6Rbg" />
           <Link Id="Lw2OYcYZZ8fOtNrsrQtS8J" Ids="J21Bg7VFB1jNrZiqBg2r19,Pj2gc8WxsydNltaRho5xr9" />
-          <Link Id="KmooqoUPvZwPBH1DWDzZ5m" Ids="VSXewlKvPGSQcKaD9goql9,QrkV3A8CLuEPJsQaTHUx7R" />
           <Link Id="I8wwgF4jJJ1LxAlaGv4gM4" Ids="FBRr2DeNUQCOcJe5RJuxYq,KG8HwJiR3B9MwbBNdW7zKa" />
           <Link Id="Dnq9QFjTTraO80nXdNq3T9" Ids="LZBgh0O95XYLHHoN8zj6sw,BTzhjYNWarbL8xWSivAqMv" />
+          <Link Id="Ldjo7U0QLppOTNpHkKB0qm" Ids="TdyzR22KtrVO9zkOtV9zlL,KsLOOoI1MHMNsKiGfi2EkP" />
+          <Link Id="PqDgt80YKP9Ol6wVTGexdm" Ids="S5MWdEJnHlgNtbjdovszN4,NtfSMeL9DhyPPkEj2lDNt0" />
+          <Link Id="QEDq6ztKTy8O51Sgd9Rjs1" Ids="PEVa9tKLpC6MiSP82qTXL3,Cwt0NcEezmxLFPt572L33h" />
+          <Link Id="IYmiLcrkbxnLFliiIjXl3w" Ids="PuqU9LvHYaKLrOz74yy6X9,GpuMJ1OdqUrLQ14IERnEFY" IsFeedback="true" />
+          <Link Id="DnASV6pDjeALCR2lRWrO3e" Ids="UQwSTXaJEYwMk6YvVCBkBF,GpuMJ1OdqUrLQ14IERnEFY" />
+          <Link Id="AFD16yhqgJhPkej44Vgolr" Ids="GpuMJ1OdqUrLQ14IERnEFY,FZxdFp8fQKuLS42La2qKCJ" />
+          <Link Id="Qht9edEMB51NrXH0mrJiNW" Ids="AcyTnpxoigKMBRCRLgarnU,QrkV3A8CLuEPJsQaTHUx7R" />
+          <Link Id="PDMwZfmr0EWOIwGpZPW7DX" Ids="HMWKdtVActINJsYD3sNTIp,QcqPuFsEtXHO58BFqq4JyD" />
+          <Link Id="IxNo6miklQWOc34HKbzxlr" Ids="IjdgUck7Sx8LzjbScEbrl0,EkZuDiC0sTDLJr0JfDnmtI" IsHidden="true" />
+          <Link Id="VYRp4CKawnJLLz01TcqiZN" Ids="EkZuDiC0sTDLJr0JfDnmtI,Sr9lovHNqUgN2MkyKB22gy" />
+          <Link Id="LqyCj7vkIcrNrqCp2TYzhs" Ids="AL86HAG2kBJN26fmAx21ti,IaPGSfSCATFNIBejPYQMDg" IsHidden="true" />
+          <Link Id="GMqEvelM8OBNbVhMMb8SR5" Ids="IaPGSfSCATFNIBejPYQMDg,IRGGbyAn7dKPYBf9CwLsNo" />
         </Patch>
       </Node>
       <!--
