@@ -5492,18 +5492,8 @@
               <Pin Id="LogPT2WByjyL9fmRkCZ8Gp" Name="True" Kind="InputPin" />
               <Pin Id="BpTkTJ33g7mL7ttH6UYQln" Name="Output" Kind="OutputPin" />
             </Node>
-            <Pad Id="I8QNvEtF4pUOjcASTSzDfM" Comment="Disconnected" Bounds="463,733,136,15" ShowValueBox="true" isIOBox="true" Value="1, 0, 0, 1">
-              <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="RGBA" />
-              </p:TypeAnnotation>
-            </Pad>
-            <Pad Id="KcR7MtBXQLiN5JlpHj3jXf" Comment="Connected" Bounds="484,766,136,15" ShowValueBox="true" isIOBox="true" Value="0.4999969, 1, 0, 1">
-              <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="RGBA" />
-              </p:TypeAnnotation>
-            </Pad>
             <ControlPoint Id="HF6TygowufGNhGBiksswNo" Bounds="165,1027" />
-            <Node Bounds="163,775,105,19" Id="LbY8Z2XWez9NF6t7OdHR7c">
+            <Node Bounds="161,790,105,19" Id="LbY8Z2XWez9NF6t7OdHR7c">
               <p:NodeReference LastCategoryFullName="Elementa" LastSymbolSource="Elementa.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="ToSkiaLayer" />
@@ -5889,6 +5879,36 @@
             </Node>
             <Pad Id="AbMV6K6Qo0wPBlje2gpqbz" SlotId="Upuu7KJ1heVOkiCX84YBJW" Bounds="624,-70" />
             <ControlPoint Id="Cm8EbidCf8EOSzcTAzu8Iq" Bounds="625,-42" />
+            <Node Bounds="160,732,76,19" Id="I9OIJYbb9ZmNjQMTqGxmgm">
+              <p:NodeReference LastCategoryFullName="Elementa.Style" LastSymbolSource="Elementa.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="SetStyleSheet" />
+                <CategoryReference Kind="Category" Name="Style" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="Elementa" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="VsG746TkFH0O35wa72oe25" Name="Elementum" Kind="InputPin" />
+              <Pin Id="CYww0eaMCbxOy6znxUFLc6" Name="Force Update" Kind="InputPin" />
+              <Pin Id="GI1pytLBQENPm5P2RPZBw6" Name="Style Sheet" Kind="InputPin" />
+              <Pin Id="BXat1Mr4Qs1NtnwU9nFmkj" Name="Elementum" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="231,702,85,19" Id="BqwYnI7PUAGMdlNltpoR3v">
+              <p:NodeReference LastCategoryFullName="VL.Tilda" LastSymbolSource="VVVV.Tilda.GUI.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="TildaStylesheet" />
+              </p:NodeReference>
+              <Pin Id="GyErQWnccnSNI3mOfn75Me" Name="Style Sheet" Kind="OutputPin" />
+            </Node>
+            <Pad Id="F4MDGAwpiMaQPrjeHCBKgQ" Comment="Color" Bounds="471,734,136,15" ShowValueBox="true" isIOBox="true" Value="0.95, 0.2850013, 0, 1">
+              <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="RGBA" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="Gz1dXfSC89oN0pDQ8CFMfj" Comment="Color" Bounds="492,772,136,15" ShowValueBox="true" isIOBox="true" Value="0, 0.9100001, 0.4732002, 1">
+              <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="RGBA" />
+              </p:TypeAnnotation>
+            </Pad>
           </Canvas>
           <Patch Id="DWS6NWLOQBQNEY8xy0xU0P" Name="Create">
             <Pin Id="VUOkBVupW8xM2LhqLlzuNb" Name="PullPush On Connect" Kind="InputPin" />
@@ -5906,8 +5926,6 @@
           </ProcessDefinition>
           <Link Id="QhMHAdzdlndPq6YC22vWLr" Ids="EjlCT7i8SWMMmUMqIzKZqJ,FqIzNmTTwYjOe7GBu4oCzx" />
           <Link Id="FysyOkR5vFHNBRlIhLwdOa" Ids="BpTkTJ33g7mL7ttH6UYQln,PR7LnTz5918LVZ9AOheQMY" />
-          <Link Id="Fl4PusXYyZ6Oom3AXwIabv" Ids="I8QNvEtF4pUOjcASTSzDfM,SGfdyjXiJI6QLwmdvEoo32" />
-          <Link Id="Al0Vj7tnpE1LmhXyjddv9w" Ids="KcR7MtBXQLiN5JlpHj3jXf,LogPT2WByjyL9fmRkCZ8Gp" />
           <Patch Id="GUU1UHQTrz1NevHSEXhYNP" Name="Draw" ParticipatingElements="P3wBiJiUwZYO1Qpb25qDnW,KerKzB3ylh9MdzzSpn4tv4,PnldAwx970bO5RFcmDPKwi,RfWpGBFDOD4P8Uyh4O2EUv,Gu7ftk24mHkPSXYqOArQsq">
             <Pin Id="My7nSmRuTIqPB9SAgB177D" Name="Layer" Kind="OutputPin" />
           </Patch>
@@ -5943,7 +5961,6 @@
           <Link Id="IE465sl7DxeQN3zxZqIUgo" Ids="BGV39VGEuA0L1fSjLkddBO,MEapVz99HYVNKhArQm6sWW" />
           <Link Id="KCz7gYEzrnALZlLLieHqbg" Ids="O8cyiRW7iHjLD1uqWQJgw3,O9E5RpVXs7QMgCudO1q7l4" />
           <Link Id="FZM47m8wjvVPaqW5tTjcbd" Ids="M8H2ovSMmTxLg983vSNeUB,JA833M3HsCqNKmFENGCHu5" />
-          <Link Id="LXFKJ6eFDzwPc0c0fYy43p" Ids="GMki0j37j3tNap8tahiLX2,NYAUBVtQqXhOVD0NgrRQTY" />
           <Link Id="VHAJwkevnRsMafhGwDNcy1" Ids="JjnFqJ6HrywQXYgqmX1Kre,D38tWGIM4lQOWiZnBYIXkf" />
           <Link Id="QQTdGuzS8OULGJMo4oASyr" Ids="T8uF3rVs9fFNdxVW9Szo0Z,H9RIAmBRtgSOP40WlIXmoX" />
           <Link Id="Lzy7MWpHNxdLv7SrAOMyS1" Ids="QM6JoifLe5uPSHwJ4QYNN6,NzgzIl2SeEuQEs8hnqy5Sv" />
@@ -6006,6 +6023,11 @@
           <Link Id="ItG1mZjnRAzMl6CWyv2da9" Ids="DIsEcJnqCyhNYodI3mWzfy,Jl8hzxTQDvELcKiQ5kZLbm" />
           <Link Id="Uf4NJLOvQVuLMaqDZz2fo3" Ids="AbMV6K6Qo0wPBlje2gpqbz,Cm8EbidCf8EOSzcTAzu8Iq" />
           <Link Id="AIWJ1Xp3a6fQcx7iiitgn6" Ids="Cm8EbidCf8EOSzcTAzu8Iq,HYgQXNbZyexN0csmI5Vkf0" IsHidden="true" />
+          <Link Id="Of79Zi59iS9NhDXiKsiUu6" Ids="GyErQWnccnSNI3mOfn75Me,GI1pytLBQENPm5P2RPZBw6" />
+          <Link Id="TmyTQuQiV61NeGhuOlJ5al" Ids="GMki0j37j3tNap8tahiLX2,VsG746TkFH0O35wa72oe25" />
+          <Link Id="H6OO8QN42ODQCBlFg7brIl" Ids="BXat1Mr4Qs1NtnwU9nFmkj,NYAUBVtQqXhOVD0NgrRQTY" />
+          <Link Id="QDky6nT7jDLLWKrYxjqWTj" Ids="Gz1dXfSC89oN0pDQ8CFMfj,LogPT2WByjyL9fmRkCZ8Gp" />
+          <Link Id="HS8pDcFiMdMO3hH13iAdqT" Ids="F4MDGAwpiMaQPrjeHCBKgQ,SGfdyjXiJI6QLwmdvEoo32" />
         </Patch>
       </Node>
       <!--
