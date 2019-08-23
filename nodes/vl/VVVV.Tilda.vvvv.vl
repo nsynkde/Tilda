@@ -1466,6 +1466,7 @@
               <ControlPoint Id="HvKRnaBkMyFLMuYK3xxsm2" Bounds="1039,1406" Alignment="Bottom" />
               <ControlPoint Id="DfNy4vhgkOnOLaX6ij1Dni" Bounds="975,1406" Alignment="Bottom" />
               <ControlPoint Id="FRUvimcUCkrPMnIDgtEoTg" Bounds="1169,1406" Alignment="Bottom" />
+              <ControlPoint Id="Kih1kiz9HXMNIVc6N0jDF1" Bounds="1077,1406" Alignment="Bottom" />
             </Node>
             <Node Bounds="867,625,53,22" Id="Gqp9gWA4UUkNVn6ZcAjCP4">
               <p:NodeReference LastCategoryFullName="VL.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
@@ -1583,6 +1584,7 @@
             <ControlPoint Id="QED4GD3WgxQQYCCBogDN15" Bounds="1038,1448" />
             <ControlPoint Id="F8qOn3ynJNxMO4GDrNBkVO" Bounds="975,1466" />
             <ControlPoint Id="Pk6ey95R1nUO3VJ2KKl2eJ" Bounds="1170,1448" />
+            <ControlPoint Id="ABfgWU0SbZkNx6TyLBhlF0" Bounds="1078,1468" />
           </Canvas>
           <Patch Id="UaKecaWdFpRNrxHd4WILP8" Name="Create" />
           <Patch Id="Es1VXklZaKzLJU6AB03jMd" Name="Update">
@@ -1603,6 +1605,7 @@
             <Pin Id="UmwPOGD6jt2O7fwPw2T1Nu" Name="Duration" Kind="OutputPin" Bounds="1038,1448" />
             <Pin Id="IRT13VBVTECLkS6mnPVcQx" Name="Startframe" Kind="OutputPin" Bounds="984,1440" />
             <Pin Id="J0LwLTWHXaQLGSna6y1o78" Name="Category" Kind="OutputPin" Bounds="1170,1448" />
+            <Pin Id="OFa5GtEp5pcPsWG6f7UthJ" Name="FadeInTime" Kind="OutputPin" Bounds="1078,1468" />
           </Patch>
           <ProcessDefinition Id="Otkgo3ItfW4PbPw6NdVHGO">
             <Fragment Id="OsfX44K1wpnPbI57ahFzMI" Patch="UaKecaWdFpRNrxHd4WILP8" Enabled="true" />
@@ -1727,6 +1730,9 @@
           <Link Id="KX79tvGDXX3OfZJIFd0kfl" Ids="FIrGX6z3A7LN8s6zVyFObh,FRUvimcUCkrPMnIDgtEoTg" />
           <Link Id="KKZz4FIoef0OmcSASnZ25p" Ids="FRUvimcUCkrPMnIDgtEoTg,Pk6ey95R1nUO3VJ2KKl2eJ" />
           <Link Id="KCoHNrNDz3KPXgFGbfZQrw" Ids="Pk6ey95R1nUO3VJ2KKl2eJ,J0LwLTWHXaQLGSna6y1o78" IsHidden="true" />
+          <Link Id="FhKnAxq76yePwf7mSjODmD" Ids="A2sIbrZE6bBMiWwCbGtM2Q,Kih1kiz9HXMNIVc6N0jDF1" />
+          <Link Id="FlKfpOKnHXsNHG7uRSHKZf" Ids="Kih1kiz9HXMNIVc6N0jDF1,ABfgWU0SbZkNx6TyLBhlF0" />
+          <Link Id="J1CRIbsvx2ANG9mVU8oSWy" Ids="ABfgWU0SbZkNx6TyLBhlF0,OFa5GtEp5pcPsWG6f7UthJ" IsHidden="true" />
         </Patch>
       </Node>
       <!--
