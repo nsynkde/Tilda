@@ -672,7 +672,7 @@
             <ControlPoint Id="CooQNoyXntiO4eHO9m4Zb6" Bounds="750,207" />
             <ControlPoint Id="TTxjwXvJNkMMOWapVPMrRj" Bounds="92,36" />
             <ControlPoint Id="RMVZv2NJcT9PcVuee2L8SZ" Bounds="223,36" />
-            <ControlPoint Id="FZbXrS6FmNZLXYb6YLPc8w" Bounds="222,1052" />
+            <ControlPoint Id="FZbXrS6FmNZLXYb6YLPc8w" Bounds="225,1115" />
             <Node Bounds="103,504,59,19" Id="POzEaEQiYD2N8QBW9bK7Cr">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.Experimental.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -717,7 +717,7 @@
             <Pad Id="G1eFyE9Lbo3Lxss5LB32RX" SlotId="TJN9TK52KZ3Ps65ALdCkcM" Bounds="300,510">
               <p:ValueBoxSettings />
             </Pad>
-            <Node Bounds="220,994,105,19" Id="RqRxdXTKSqUMOH0nEYPayC">
+            <Node Bounds="223,1057,105,19" Id="RqRxdXTKSqUMOH0nEYPayC">
               <p:NodeReference LastCategoryFullName="Elementa" LastSymbolSource="Elementa.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="ToSkiaLayer" />
@@ -942,7 +942,27 @@
             <Pad Id="JdsqHbKRqNDMziz6UExO8H" SlotId="TJN9TK52KZ3Ps65ALdCkcM" Bounds="653,944">
               <p:ValueBoxSettings />
             </Pad>
-            <Overlay Id="VlFQTT1hDfUN7AhGnKCtG8" Name="Drawing" Bounds="17,424,749,719" />
+            <Overlay Id="VlFQTT1hDfUN7AhGnKCtG8" Name="Drawing" Bounds="17,424,1072,719" />
+            <Node Bounds="221,1005,76,19" Id="NRpSHLuPCjANfIAtoObAaW">
+              <p:NodeReference LastCategoryFullName="Elementa.Style" LastSymbolSource="Elementa.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="SetStyleSheet" />
+                <CategoryReference Kind="Category" Name="Style" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="Elementa" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="JLSjiAKExYxMkuVIqbGz85" Name="Elementum" Kind="InputPin" />
+              <Pin Id="Kw0Ue0RLkc1N6PzuCN5Nlo" Name="Force Update" Kind="InputPin" />
+              <Pin Id="Ul8wsf3CdzBMpTng4D8EuV" Name="Style Sheet" Kind="InputPin" />
+              <Pin Id="IPtwJGseGgbNO9sAF6tW2k" Name="Elementum" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="292,975,85,19" Id="UABO8VByh1OOWdS3nMXuUP">
+              <p:NodeReference LastCategoryFullName="VL.Tilda" LastSymbolSource="VVVV.Tilda.GUI.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="TildaStylesheet" />
+              </p:NodeReference>
+              <Pin Id="P6eMGtaVukEO54Bx9ZbVGT" Name="Style Sheet" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <Patch Id="BCGglqGdnl4QQrUNwvw7RO" Name="Create">
             <Pin Id="TJtVg8rLHojNfSpL7ioxSr" Name="Sending" Kind="InputPin" Bounds="32,20" />
@@ -1027,7 +1047,6 @@
           <Link Id="EKnr0jVytwULhJwBsHblAq" Ids="H5eIYEV7axRPktsIuCm5iz,LQTbySyaEdeQLIWA09iwGk" />
           <Link Id="BwI64Nhjku1PFoZbE4iYjs" Ids="SRtjBtPH4niNav4ER3OZye,ECuJeWlwMlMQC37VzAODvs" />
           <Link Id="B8kHzgsn3O9LVWxs4zuxZ9" Ids="L4dVTvD79TEQbXQX1iuZZ8,G57WyWGKONeMxZmqJl84f5" />
-          <Link Id="QmMwz4C3JQUMbPzk5YZoa3" Ids="R44xwBZXPsyLkXkKm3b7is,UMArmelsxmbNRNpUcXqQf6" />
           <Link Id="CsfHBIsiqI5NJGjivIDtml" Ids="Gll26Le4Eg6P1lQpWRogZK,Dkni2YCZFzEP9YvAwVOtWe" />
           <Link Id="GIg0YMa1tp0P1qAQSdh2y7" Ids="Dkni2YCZFzEP9YvAwVOtWe,GJrXIFO2EuIOQk6Jxxoz7Z" />
           <Link Id="JI5cLWOomxvLyzg2984JGb" Ids="HJuhUiYypF2MAzzVxWgyXe,KM7vwveo9x3LyhtjnkMfZG" />
@@ -1056,6 +1075,9 @@
           <Patch Id="RkqBiHVKFEeLHWnBhrgZWe" Name="GetEditorReference">
             <Pin Id="T7LSdcyJiuLQKISEd3PuvU" Name="Editor" Kind="OutputPin" />
           </Patch>
+          <Link Id="GxLbGcMJyCSPk69fsA27v9" Ids="R44xwBZXPsyLkXkKm3b7is,JLSjiAKExYxMkuVIqbGz85" />
+          <Link Id="THa1Co64qX0MJGX1KnQ57g" Ids="IPtwJGseGgbNO9sAF6tW2k,UMArmelsxmbNRNpUcXqQf6" />
+          <Link Id="PV4LRHRvHwTOKRycx7Lazz" Ids="P6eMGtaVukEO54Bx9ZbVGT,Ul8wsf3CdzBMpTng4D8EuV" />
         </Patch>
       </Node>
       <!--
@@ -1435,11 +1457,6 @@
             </Pin>
           </Patch>
           <Patch Id="TDGst3x0qPnQVF7lb2Kq6w" Name="Update" />
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="H9HxkfoSVJyMsCZwpuTSnm">
             <Fragment Id="G9zq89oEiIQOiphV5GFvfB" Patch="AgD3fbQDQNdMHJKWEKaKam" Enabled="true" />
             <Fragment Id="D9UyjmgEtwaQarj7yFZHgY" Patch="TDGst3x0qPnQVF7lb2Kq6w" Enabled="true" />
@@ -1513,11 +1530,6 @@
             <Pin Id="M7HCFi8uZGZLl04u0IngEo" Name="LTC" Kind="InputPin" Bounds="585,229" />
             <Pin Id="NhNFkIHseJKLx0YhKlCGQ6" Name="Plugin" Kind="OutputPin" Bounds="466,413" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="DX190SLMil9LnRPflvVsXO">
             <Fragment Id="E48YQ45DvlXNm3u4rYGIyB" Patch="Eteo7VYaXx4QFcLe3rpxzb" Enabled="true" />
             <Fragment Id="LLMVZscmWp0OSZwjWcfO6d" Patch="F3zPpleg7BlPdlGypZc4zH" Enabled="true" />
