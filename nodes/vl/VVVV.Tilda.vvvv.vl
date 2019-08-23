@@ -3324,12 +3324,12 @@
     ************************ GetPlayState ************************
 
 -->
-      <Node Name="GetPlayState" Bounds="388,558,297,174" Id="AY6XqgPPJXZLFfYlWgbbep">
+      <Node Name="GetPlayState" Bounds="375,496,297,174" Id="AY6XqgPPJXZLFfYlWgbbep">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="OperationDefinition" Name="Operation" />
         </p:NodeReference>
         <Patch Id="CLbjUBtzAblPafY2dXlblM">
-          <Node Bounds="400,624,83,19" Id="KQjdF7zwLxmLvmT5LkFsXd">
+          <Node Bounds="387,562,83,26" Id="KQjdF7zwLxmLvmT5LkFsXd">
             <p:NodeReference LastCategoryFullName="VVVV.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="TildaTimeline" NeedsToBeDirectParent="true" />
@@ -3339,15 +3339,15 @@
             <Pin Id="AWBdTGtz4C4PbCCRGcf7Px" Name="Output" Kind="StateOutputPin" />
             <Pin Id="RxfCA6lvYyxMcVbuBN7oZA" Name="PlayState" Kind="OutputPin" />
           </Node>
-          <ControlPoint Id="F4OFNdt1dKhOmQtWLgzNrk" Bounds="403,576" />
+          <ControlPoint Id="F4OFNdt1dKhOmQtWLgzNrk" Bounds="390,514" />
           <Link Id="QBrfDSKrDUdOpGHwdHXVbf" Ids="F4OFNdt1dKhOmQtWLgzNrk,DrPUxZTsjcEMaHYZeal9Zm" />
           <Pin Id="UopzCrK3R3vPX8JuHtroQb" Name="Timeline" Kind="InputPin" Bounds="72,1203" />
           <Link Id="PG8Oh9cupPZQCXxuNM2SLc" Ids="UopzCrK3R3vPX8JuHtroQb,F4OFNdt1dKhOmQtWLgzNrk" IsHidden="true" />
-          <ControlPoint Id="CEkWF5UvwTFNHcQtbzWpJ6" Bounds="481,715" />
+          <ControlPoint Id="CEkWF5UvwTFNHcQtbzWpJ6" Bounds="468,653" />
           <Link Id="LJOiB0QFoEeQRCzr6w9nPx" Ids="RxfCA6lvYyxMcVbuBN7oZA,CEkWF5UvwTFNHcQtbzWpJ6" />
           <Pin Id="VezYX9fCIdbP25jQxbgeld" Name="Playing" Kind="OutputPin" Bounds="148,1257" />
           <Link Id="CC2Cp0HL7SmPVkkp2NUe4c" Ids="CEkWF5UvwTFNHcQtbzWpJ6,VezYX9fCIdbP25jQxbgeld" IsHidden="true" />
-          <Node Bounds="587,623,65,26" Id="QLpoh82nw4LMozpCfMS9V0">
+          <Node Bounds="574,561,65,26" Id="QLpoh82nw4LMozpCfMS9V0">
             <p:NodeReference LastCategoryFullName="VL.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetTC" />
@@ -3357,7 +3357,7 @@
             <Pin Id="SRNSwgzXimPMQPzpTBDxI5" Name="TC" Kind="OutputPin" />
           </Node>
           <Link Id="TCK1NF1LcLONoaf6kZZHnz" Ids="F4OFNdt1dKhOmQtWLgzNrk,H9h0MiiJ4snORxpP6uIZ5O" />
-          <ControlPoint Id="U4zjpa3Msc8Nf17we3hMpt" Bounds="649,715" />
+          <ControlPoint Id="U4zjpa3Msc8Nf17we3hMpt" Bounds="636,653" />
           <Link Id="RBVFtxD72ObQXQnfR9ZDFy" Ids="SRNSwgzXimPMQPzpTBDxI5,U4zjpa3Msc8Nf17we3hMpt" />
           <Pin Id="CZRUGh3Uq3lNbirMCfn2ti" Name="TC" Kind="OutputPin" Bounds="312,1281" />
           <Link Id="IMYulv32z7ZNlcoNY68QBE" Ids="U4zjpa3Msc8Nf17we3hMpt,CZRUGh3Uq3lNbirMCfn2ti" IsHidden="true" />
@@ -5684,6 +5684,70 @@
           <Link Id="AFQStQ2JFkfO30VrlpEZc0" Ids="Jg3Q2FvBBi6OskLhbboCCn,MHHhHShDBRyNOWHjwjwWmx" IsHidden="true" />
           <Link Id="PGnmCWtATiuOpOsE8Ifw1K" Ids="FUZa9qdus6kLIdfxlqxjYL,Jg3Q2FvBBi6OskLhbboCCn" />
           <Link Id="OwqEWXNdstrOt8B8Yi7Vl9" Ids="Vb4EAqi27NHPIr0kGyT3b4,Ifg7ygH841GO4fxdjKul4d" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ SetPlayState ************************
+
+-->
+      <Node Name="SetPlayState" Bounds="11,651,340,177" Id="DfqUBCw7pGFLaigBVeMF0a">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+          <Choice Kind="OperationDefinition" Name="Operation" />
+        </p:NodeReference>
+        <Patch Id="HzltMFpdwtUPVl6ZFvpVj0">
+          <Node Bounds="23,720,83,26" Id="D77Dx4AXloBPjgCq2DcvQG">
+            <p:NodeReference LastCategoryFullName="VVVV.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="TildaTimeline" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="GetPlayState" />
+            </p:NodeReference>
+            <Pin Id="UuRCy0Jpy2fNLljASxZO89" Name="Input" Kind="StateInputPin" />
+            <Pin Id="EjxQ8ZVDBRUOmkjBrnpX5j" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="PivSD2mehFWOu4pGI6Pulz" Name="PlayState" Kind="OutputPin" />
+          </Node>
+          <ControlPoint Id="SI8LNsUTmwiOOlVf8Npvkn" Bounds="25,669" />
+          <Link Id="KFOUTTGdqwiL5puyLn1ABQ" Ids="SI8LNsUTmwiOOlVf8Npvkn,UuRCy0Jpy2fNLljASxZO89" />
+          <Link Id="Pn1QT15pZWnOv8gANkSTNI" Ids="QKtufJmHKaOMsWBYZCO75I,SI8LNsUTmwiOOlVf8Npvkn" IsHidden="true" />
+          <ControlPoint Id="O9vqSOtTOQ0P2ss3vw777j" Bounds="104,811" />
+          <Link Id="L25d3La9lt0Ldk4MrDzEza" Ids="PivSD2mehFWOu4pGI6Pulz,O9vqSOtTOQ0P2ss3vw777j" />
+          <Link Id="L3paPXM5cIXQE40lqy0nRg" Ids="O9vqSOtTOQ0P2ss3vw777j,BvEjFKzRZwUPzJISoSxvPN" IsHidden="true" />
+          <Node Bounds="253,719,65,26" Id="UpkEE1CE8tKPETCyTsLehk">
+            <p:NodeReference LastCategoryFullName="VL.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetTC" />
+            </p:NodeReference>
+            <Pin Id="UxyVwZMGh9HMffb1BClIb4" Name="Input" Kind="StateInputPin" />
+            <Pin Id="N8lBs9H5Kv6PTeHe49GHUN" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="OgAKIMvdNXAPk7EpVEET92" Name="TC" Kind="OutputPin" />
+          </Node>
+          <Link Id="Fs1e5TDbXTYPgTX3DI0bxO" Ids="SI8LNsUTmwiOOlVf8Npvkn,UxyVwZMGh9HMffb1BClIb4" />
+          <ControlPoint Id="DEQ4ZASUFezPWLjYPgKjEo" Bounds="315,811" />
+          <Link Id="N2itH2DT6JYOb6Sq6Jc4sL" Ids="OgAKIMvdNXAPk7EpVEET92,DEQ4ZASUFezPWLjYPgKjEo" />
+          <Link Id="IgsofWzQe6NNEJP1yrDNai" Ids="DEQ4ZASUFezPWLjYPgKjEo,RGw8AT9ikmhN299s6lLlAP" IsHidden="true" />
+          <Node Bounds="140,725,70,26" Id="I6taZ0tASalMcz5onp7pta">
+            <p:NodeReference LastCategoryFullName="VL.Tilda.TildaTimeline" LastSymbolSource="VVVV.Tilda.Core.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="SetPlayState" />
+              <CategoryReference Kind="ClassType" Name="TildaTimeline" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="Gme4maZJH8VPNMaildyxH1" Name="Input" Kind="StateInputPin" />
+            <Pin Id="OxezUTWiJPKN1f3TnCs6du" Name="PlayState" Kind="InputPin" />
+            <Pin Id="RuSFA0PEmw5Nlo9MoyhuPp" Name="Apply" Kind="InputPin" />
+            <Pin Id="UamS37WnHKzNae7N5R0r2E" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <ControlPoint Id="AKm2LszIszPQAm493uiFzx" Bounds="210,671" />
+          <Link Id="FQkfFA8dwUQNTD543SkjBt" Ids="AKm2LszIszPQAm493uiFzx,RuSFA0PEmw5Nlo9MoyhuPp" />
+          <Link Id="AExQ0g9ADBtPXz7k7VuczM" Ids="PKqljfRoIYiONztuf9fCbb,AKm2LszIszPQAm493uiFzx" IsHidden="true" />
+          <ControlPoint Id="S8LDJJFCjUCNTq4CwGV5b6" Bounds="130,671" />
+          <Link Id="RuQ4vqVEq9wOkQW7bRJb7z" Ids="S8LDJJFCjUCNTq4CwGV5b6,OxezUTWiJPKN1f3TnCs6du" />
+          <Link Id="Hxggxc9k5YnMSEU4wehrHs" Ids="SKuSwCYvaAdMo0pQ7oiY3m,S8LDJJFCjUCNTq4CwGV5b6" IsHidden="true" />
+          <Pin Id="QKtufJmHKaOMsWBYZCO75I" Name="Timeline" Kind="InputPin" Bounds="72,1203" />
+          <Pin Id="PKqljfRoIYiONztuf9fCbb" Name="Apply" Kind="InputPin" Bounds="210,671" />
+          <Pin Id="SKuSwCYvaAdMo0pQ7oiY3m" Name="PlayState" Kind="InputPin" Bounds="155,673" />
+          <Pin Id="BvEjFKzRZwUPzJISoSxvPN" Name="Playing" Kind="OutputPin" Bounds="148,1257" />
+          <Pin Id="RGw8AT9ikmhN299s6lLlAP" Name="TC" Kind="OutputPin" Bounds="312,1281" />
+          <Link Id="DRmtx0ki7k5Pti6aq6miYC" Ids="SI8LNsUTmwiOOlVf8Npvkn,Gme4maZJH8VPNMaildyxH1" />
         </Patch>
       </Node>
     </Canvas>
