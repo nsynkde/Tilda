@@ -6764,6 +6764,7 @@
                   <Pin Id="FmF0GH60qQkNPkKHTvxUP9" Name="Clock" Kind="InputPin" />
                   <Pin Id="IUF5AcB3U0INtFaF8ZBLum" Name="Speed" Kind="InputPin" />
                   <Pin Id="V6nqa68iN6TQIkOw7uHlHY" Name="SourceDuration" Kind="InputPin" />
+                  <Pin Id="K9U1uWPBkOuM2blk0h2XHQ" Name="Looping" Kind="OutputPin" />
                   <Pin Id="V3c2Csb4P2KOERmXVSltdr" Name="Format File" Kind="OutputPin" />
                   <Pin Id="I4bCfgEZwBWOrUCyq0tHMh" Name="Frame" Kind="OutputPin" />
                   <Pin Id="P2SptoASBIhLufTNgomkBg" Name="FrameNumber" Kind="OutputPin" />
@@ -6829,6 +6830,7 @@
               <ControlPoint Id="CbLOHHCPNCJMSl2c2X304x" Bounds="572,561" Alignment="Top" />
               <ControlPoint Id="IDx8vsINbKYPQLi6dupqlx" Bounds="79,848" Alignment="Bottom" />
               <ControlPoint Id="AhWjmBw30aDOh9hZ8Te4qA" Bounds="665,561" Name="LoopableHack" Alignment="Top" />
+              <ControlPoint Id="S1P3RD6rHa5M9UN9FkJhCc" Bounds="938,848" Alignment="Bottom" />
             </Node>
             <ControlPoint Id="PsHi4yJe4AFL7bYtGhtRGa" Bounds="746,85" />
             <ControlPoint Id="DCUBoekuEn4MOemW8vJjey" Bounds="52,85" />
@@ -7371,6 +7373,7 @@
               <Pin Id="SHD9K1IKrpjMrt9Xo8JNXJ" Name="Input" Kind="InputPin" />
               <Pin Id="QqhZ5KhzIdpLCfig0FpH3U" Name="Index" Kind="OutputPin" />
             </Node>
+            <Pad Id="FE71JcfFK16L9mZqkKhsTT" Comment="" Bounds="1053,907,35,17" ShowValueBox="true" isIOBox="true" />
           </Canvas>
           <Patch Id="SNHwam8S93NNYUwVq3ygh6" Name="Create" />
           <Patch Id="TESJEaqyfezOKXPEfBe6VO" Name="Update">
@@ -7580,6 +7583,8 @@
           <Link Id="EL0uYWFiWSOOoMpyy5cMe1" Ids="QDV0wIqk89NP8R9LgcXuMX,VfXeTwOgjt2PVdA48ObiTZ" IsHidden="true" />
           <Link Id="GIetg2D6pvjLjVizq4uEvu" Ids="Qz2uDDgLh0kQeACnNtOjFv,SHD9K1IKrpjMrt9Xo8JNXJ" />
           <Link Id="CJ9meeW3p2oLmoMm5do6ff" Ids="QqhZ5KhzIdpLCfig0FpH3U,O9erQLKCVFLLr6VmLlSmbI" />
+          <Link Id="CuPGAGHWEJIO63XpkeZe2F" Ids="K9U1uWPBkOuM2blk0h2XHQ,S1P3RD6rHa5M9UN9FkJhCc" />
+          <Link Id="JwBG3oBgNZvQbxZ1mgoRUi" Ids="S1P3RD6rHa5M9UN9FkJhCc,FE71JcfFK16L9mZqkKhsTT" />
         </Patch>
       </Node>
     </Canvas>
