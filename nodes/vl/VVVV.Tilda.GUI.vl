@@ -55,7 +55,7 @@
                 <CategoryReference Kind="Category" Name="Skia" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="21, 19, 2260, 775">
+              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="21, 19, 2260, 536">
                 <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                   <Choice Kind="TypeFlag" Name="Rectangle" />
                 </p:TypeAnnotation>
@@ -317,6 +317,8 @@
               <Pin Id="A7IUdwUOnS6OHeo0caek1c" Name="Update" Kind="InputPin" />
               <Pin Id="G2l8XgQrTzzNxczt3fE8xc" Name="Track Height" Kind="InputPin" />
               <Pin Id="EQnHAzoj75LNEKEaB5O2zR" Name="TextSize" Kind="InputPin" />
+              <Pin Id="IUf64aPujKJLEta2GlV4xj" Name="TrackSpacing" Kind="InputPin" />
+              <Pin Id="M9HtN8Y9DenLLU7bZkD7hQ" Name="SetGlobalTrackSpacing" Kind="InputPin" />
               <Pin Id="GtR5OjmIv05QaxDDQQwfXF" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Node Bounds="-237,96,72,19" Id="RvUog7FuHCsO7gZQYlM6Hl">
@@ -13972,7 +13974,7 @@
                 </p:NodeReference>
                 <Pin Id="G10oPof6AadQUfLzSkUHlh" Name="Singleton" Kind="OutputPin" />
               </Node>
-              <Node Bounds="701,698,89,26" Id="GExuB6IdXaFNQNUkokNpwm">
+              <Node Bounds="556,784,89,26" Id="GExuB6IdXaFNQNUkokNpwm">
                 <p:NodeReference LastCategoryFullName="VL.Tilda.EditorDrawingModel" LastSymbolSource="VVVV.Tilda.GUI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="SetTextSize" />
@@ -14016,11 +14018,81 @@
                 </p:TypeAnnotation>
               </Pad>
               <Pad Id="JM4fAoM0l6KOnu3JIAgSOy" Comment="" Bounds="819,687,35,15" ShowValueBox="true" isIOBox="true" />
-              <Pad Id="PbNWqsJh6YFLASuES4AKKV" Comment="TextSize" Bounds="818,728,35,15" ShowValueBox="true" isIOBox="true" Value="0.09999999">
+              <Pad Id="PbNWqsJh6YFLASuES4AKKV" Comment="TextSize" Bounds="793,720,35,15" ShowValueBox="true" isIOBox="true" Value="0.09999999">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Float32" />
                 </p:TypeAnnotation>
               </Pad>
+              <Node Bounds="549,1165,119,26" Id="Rvw8KD6u02bLfzJTpRuoOO">
+                <p:NodeReference LastCategoryFullName="VL.Tilda.EditorDrawingModel" LastSymbolSource="VVVV.Tilda.GUI.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="SetGlobalTrackSpacing" />
+                </p:NodeReference>
+                <Pin Id="QzWiX8we2p0Mx0NtyffpHN" Name="Input" Kind="StateInputPin" />
+                <Pin Id="JlAPG3AAMYgP89Ck4ZwJ5U" Name="TrackSpacing" Kind="InputPin" />
+                <Pin Id="VJQMLjpKnhGP0DiJWp7PJa" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pad Id="JQuE9eL0PB2OJ0Zak7MilS" Comment="TrackSpacing" Bounds="663,1133,36,15" ShowValueBox="true" isIOBox="true" Value="1">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Integer32" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Node Bounds="661,1004,85,19" Id="G3stlHd8jQLNbOBXFvaywU">
+                <p:NodeReference LastCategoryFullName="Math.Ranges" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Clamp" />
+                  <CategoryReference Kind="Category" Name="Ranges" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="DSxZQBOkzqwLLQBUar62IH" Name="Input" Kind="InputPin" />
+                <Pin Id="TZSKJWPkHkdMA8xxDHWOdD" Name="Minimum" Kind="InputPin" DefaultValue="1">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Float32" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="BKKEA7pXG4iLiAHJFXGLzS" Name="Maximum" Kind="InputPin" DefaultValue="5">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Float32" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="JdYR8hmaq4jLQoqEQpQtZl" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="661,1067,46,19" Id="DiZBErxKY58MASo3UedCJN">
+                <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Round" />
+                </p:NodeReference>
+                <Pin Id="PBtJcxHAwkCM59CRw9XFJg" Name="Input" Kind="InputPin" />
+                <Pin Id="Tb4wtd4PH72PyfK1kgLInb" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="661,910,85,19" Id="GpUazoCNiVtLpu8x0ssL7x">
+                <p:NodeReference LastCategoryFullName="Math.Ranges" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Map" />
+                </p:NodeReference>
+                <Pin Id="B8mN65LdxknLJ3wxHu35s5" Name="Input" Kind="InputPin" />
+                <Pin Id="GNC7LXdV1pAPD00aGuen1A" Name="Input Minimum" Kind="InputPin" DefaultValue="-17">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Float32" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="VnknPYpFJGDPn5s67zBDwR" Name="Input Maximum" Kind="InputPin">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Float32" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="VZKZp4GvFSxOEU5bb8hqr7" Name="Output Minimum" Kind="InputPin" DefaultValue="1">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Float32" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="NIT5gJAbRGPP3hkXf67BZt" Name="Output Maximum" Kind="InputPin" DefaultValue="5">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Float32" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="PfKXNTI3GIeLbWtCjnf6lI" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Pad Id="RhbL97YMcFkN3hYMmPdirH" Comment="" Bounds="720,969,35,15" ShowValueBox="true" isIOBox="true" />
             </Canvas>
             <Patch Id="Vwf9QhR0GWLPtX8wridtT5" Name="Create" ParticipatingElements="My4Sgso5K1VOS9exJZz31I,OaHFPdBFmdaPnqXO9acMgV">
               <Pin Id="SK12Dd6fvkEMk7LZfFSMgw" Name="ScalaHeight" Kind="InputPin" />
@@ -14059,7 +14131,6 @@
             <Link Id="OKczdqUGTKCQZRNza3Np77" Ids="Gl0vEHKMFFYM1YgoPApaZQ,MwfmYAJjX7sP9LS3ZJxgFW" />
             <Link Id="Ftj3mrVPutzMCSqWCrncB3" Ids="TuTXdKHgo8xPutNWe5rgHc,QesnBAW7CUkMLQCQa3fZ0d" />
             <Link Id="RdMEMuhBVbeOZvC8vv6Fhm" Ids="G10oPof6AadQUfLzSkUHlh,RA3LWJTqxX0OTgtW4IlA06" />
-            <Link Id="PULTI90KsDTLK55SrOOOCb" Ids="G10oPof6AadQUfLzSkUHlh,QqQFKoBscE3Mjr5WHvLB7s" />
             <Link Id="L7yxLpFbES8Ofl1vGHno2S" Ids="Gl0vEHKMFFYM1YgoPApaZQ,GSici3EPcrFPYrhKb9bH9o" />
             <Link Id="NBkBiSRupVmLpdYi7GTK9X" Ids="R2ZApvA5ZVyPxRbJAQncX4,TZ1fV8UP2F1LrdGyzT4JNO" />
             <Link Id="HZuQA0mzuiEOCHuB2GhaL0" Ids="TjnZDPOKhDeM8sb82QQS5e,Jmakb0A6dijM3ZmpUoC4cQ" />
@@ -14070,6 +14141,14 @@
             <Link Id="SCMgBrZh6QXPSoq11ILqvf" Ids="Nw5df9vKPPoOTvOioL0XDw,PVWdL3VblstL4birwZtowm" />
             <Link Id="DhCWtyWjmrBNS4JsPKOLg3" Ids="VVo7ECPFVD5Ou4eyEavIoE,KJywr9EqZLxLpSRfQ3AO1l" />
             <Link Id="BtoIrXoOUYzP7a9LPZwv6C" Ids="PF2gLvqaiVAOjDqMlgUpqA,MqbF7ytAGaRNah9hv53fuu" />
+            <Link Id="THoWzIvNsR3MtuAjey0who" Ids="JQuE9eL0PB2OJ0Zak7MilS,JlAPG3AAMYgP89Ck4ZwJ5U" />
+            <Link Id="BX0SyZLlX1wMP65TGDC0Gj" Ids="UjBJE9MO2VvMltvzUazGoz,QqQFKoBscE3Mjr5WHvLB7s" />
+            <Link Id="GQzzixviNV2Mw4loosE0Ra" Ids="T7jwK4OFAIeLcuMZn1zXOf,QzWiX8we2p0Mx0NtyffpHN" />
+            <Link Id="Gix8zZrPatnOyOvO4EtgJw" Ids="JdYR8hmaq4jLQoqEQpQtZl,PBtJcxHAwkCM59CRw9XFJg" />
+            <Link Id="DpvmyCwBRPmMPj7venMnSw" Ids="Gl0vEHKMFFYM1YgoPApaZQ,B8mN65LdxknLJ3wxHu35s5" />
+            <Link Id="UMFnRXEOvw9PyiVHamnQtj" Ids="PfKXNTI3GIeLbWtCjnf6lI,DSxZQBOkzqwLLQBUar62IH" />
+            <Link Id="Qquv2AJFbe3NxS2PNrcIWR" Ids="PfKXNTI3GIeLbWtCjnf6lI,RhbL97YMcFkN3hYMmPdirH" />
+            <Link Id="JLqrScSmMTMOrpYtg0q6Sz" Ids="Tb4wtd4PH72PyfK1kgLInb,JQuE9eL0PB2OJ0Zak7MilS" />
           </Patch>
         </Node>
         <!--
@@ -15191,7 +15270,7 @@
                 <Pin Id="OMaX2srRNvLLdOZaGjcW8w" Name="Input" Kind="StateInputPin" />
                 <Pin Id="Cq3QtmumSkXL8mZzVkWJsX" Name="TrackLabels" Kind="OutputPin" />
               </Node>
-              <Node Bounds="577,88,112,26" Id="G4yhpXdWWD1LVvTgjs1Dpx">
+              <Node Bounds="570,102,112,26" Id="G4yhpXdWWD1LVvTgjs1Dpx">
                 <p:NodeReference LastCategoryFullName="VL.Tilda.EditorDrawingModel" LastSymbolSource="VVVV.Tilda.GUI.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetGlobalTextStyle" />
@@ -15200,7 +15279,7 @@
                 <Pin Id="FJ7zciUv9NoLrwIEYlUMQp" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="Jffvf50LrKiMrZEU3UwtRM" Name="Default Text Style" Kind="OutputPin" />
               </Node>
-              <Node Bounds="577,58,59,19" Id="AYx9f9OB3csMJzB4Q7U6De">
+              <Node Bounds="578,14,59,19" Id="AYx9f9OB3csMJzB4Q7U6De">
                 <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.Experimental.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Singleton (OfPatch)" />
@@ -15228,7 +15307,7 @@
                 <Pin Id="G0ASr1YeVRpNHdQbTlyJKx" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="JR7nuEfIb4ZL86GjU6aaKa" Name="Global Scale Factor" Kind="OutputPin" />
               </Node>
-              <Pad Id="Gaf5CNaXYTDML5TpkXcA5Q" Comment="Force" Bounds="72,215,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+              <Pad Id="Gaf5CNaXYTDML5TpkXcA5Q" Comment="Force" Bounds="72,215,35,35" ShowValueBox="true" isIOBox="true" Value="True">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Boolean" />
                 </p:TypeAnnotation>
@@ -20631,8 +20710,16 @@
               <ControlPoint Id="Udz8U1leEzYLfgPFze9UpY" Bounds="645,342" />
               <ControlPoint Id="JRV7DWCkGwMPiKoTsU91ZS" Bounds="502,677" />
               <ControlPoint Id="KdgAEw1y8O2L7AY3CNsT3o" Bounds="-5,117" />
+              <Pad Id="GmjKaUEZBwtP9kfeVk0bfP" Comment="Zoom" Bounds="478,17,76,19" ShowValueBox="true" isIOBox="true" Value="0.0125">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Float32" />
+                </p:TypeAnnotation>
+                <p:ValueBoxSettings>
+                  <p:precision p:Type="Int32">7</p:precision>
+                </p:ValueBoxSettings>
+              </Pad>
             </Canvas>
-            <Patch Id="JBkXcyxpKhfMjMv2QirMF4" Name="Create" ParticipatingElements="AJNShwa8ccUQCprQN418nL,Vs5yI8l5KEgOMTEvd00Bpc,E1n2fUcZC59LUHtyKtOooG,K38jhWxayNWPU38KNnIaPY,BZSAS0IIIH6L758NmgCWEk" />
+            <Patch Id="JBkXcyxpKhfMjMv2QirMF4" Name="Create" ParticipatingElements="AJNShwa8ccUQCprQN418nL,Vs5yI8l5KEgOMTEvd00Bpc,E1n2fUcZC59LUHtyKtOooG,K38jhWxayNWPU38KNnIaPY,BZSAS0IIIH6L758NmgCWEk,DiBJHPvNn46OhVus5qzaYn" />
             <Patch Id="T4EpTJRR1kSLJScx7jCnGn" Name="Update" />
             <ProcessDefinition Id="C5FP9rpq9sJL6ZBpyXve0D" IsHidden="true">
               <Fragment Id="T09ueC1IyRXM8vQX8ERrZq" Patch="JBkXcyxpKhfMjMv2QirMF4" Enabled="true" />
@@ -21358,6 +21445,7 @@
             <Patch Id="NPaIAIA6OP2PKBZHgflFpi" Name="SetDrawOffsetX">
               <Pin Id="TmwqueJ83EBLgnhWonhI01" Name="DrawOffsetX" Kind="InputPin" />
             </Patch>
+            <Link Id="DiBJHPvNn46OhVus5qzaYn" Ids="GmjKaUEZBwtP9kfeVk0bfP,KDK2GLEva93OzZ5NW2AFqT" />
           </Patch>
         </Node>
         <!--
@@ -25754,11 +25842,6 @@
             <Pad Id="JqlQUt4ocNPK9nu5d9rw0P" SlotId="AQMd5g5Fna7M7qOHOP7AGH" Bounds="2161,794">
               <p:ValueBoxSettings />
             </Pad>
-            <Pad Id="GFA8y1dfw04NS3yb0itsYA" Comment="TrackSpacing" Bounds="2161,739,35,15" ShowValueBox="true" isIOBox="true" Value="5">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Integer32" />
-              </p:TypeAnnotation>
-            </Pad>
             <ControlPoint Id="I9o6dx1gvZJO2Bh2GCVqwV" Bounds="2161,842" />
             <Pad Id="BFZpJcGN16qPC1X5Tadkqx" SlotId="HL3lvO1fHqoQdCKMEcb8wt" Bounds="1534,966">
               <p:ValueBoxSettings />
@@ -25839,8 +25922,14 @@
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pad>
+            <ControlPoint Id="Itt9dLX8HVnPv8OZ4qdZvl" Bounds="2140,670" />
+            <Pad Id="ETcmwhkIMRdMkHaTHyffh4" Comment="TrackSpacing" Bounds="2176,736,35,15" ShowValueBox="true" isIOBox="true" Value="5">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pad>
           </Canvas>
-          <Patch Id="MZki9ObE6BPLQFyVUE2E2q" Name="Create" />
+          <Patch Id="MZki9ObE6BPLQFyVUE2E2q" Name="Create" ParticipatingElements="N93CjcWFUGPQb7OpFfFkdM" />
           <Patch Id="FPpbB7sKGBpLXRtPkpmsWD" Name="Update" ParticipatingElements="F5rH6WToZTYOSbIvSpX3it,NxjS6dzxypGM5Nw8UDGz64,TAbVpMcN19OLUTqnxSYecW" />
           <Slot Id="FVQCv1xOyoKOpgwBsgLu3v" Name="Global Scale Factor">
             <p:TypeAnnotation>
@@ -25876,6 +25965,7 @@
             <Fragment Id="CMKHfv1nWeyPPJsBcYcPcy" Patch="BUHcKByVs86M2BJ2Q2Xic3" />
             <Fragment Id="BWr1XBT3w1YLtZq9yjlHML" Patch="K8NvHQM1rJdN8mvWBSUOgL" Enabled="true" />
             <Fragment Id="A9LN6dmocmnQRm0Ol2978S" Patch="O2eSetx4lOkNjw7Sp9Pkmh" Enabled="true" />
+            <Fragment Id="RfYfuozJzrnOZWVwgve7EJ" Patch="G8zWuAKUHn0MRNzrg9FeIY" Enabled="true" />
           </ProcessDefinition>
           <Link Id="TFALmcUC3HMLM24tE5qxqV" Ids="DFRyNxEXQ7ZNk7gnDNjebt,IWSqgeLxs6oO61lGHFzlGR" />
           <Link Id="Dvce6OFsp5nPwQuWULUNQ8" Ids="RTBP1fKTPZaNZDJLO43vsY,Ttzjc4GVVkIOn9BHGL1DM6" />
@@ -25946,7 +26036,6 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Slot>
-          <Link Id="V4iA9Vilb6wLBE9iMmcOmz" Ids="GFA8y1dfw04NS3yb0itsYA,JqlQUt4ocNPK9nu5d9rw0P" />
           <Link Id="PMWoqnXXwyQOS84ioYjoLH" Ids="JqlQUt4ocNPK9nu5d9rw0P,I9o6dx1gvZJO2Bh2GCVqwV" />
           <Link Id="RZ6qoi86KafQHodlC9uyNk" Ids="I9o6dx1gvZJO2Bh2GCVqwV,DCXLoxXRKcTMoqLvKuSZYV" IsHidden="true" />
           <Patch Id="R2qp2TWGDm7LsGURRtnpKe" Name="GetGlobalTrackSpacing">
@@ -26015,6 +26104,12 @@
             <Pin Id="JBo1HGY1gBxQDgY8PBkZK4" Name="TextSize" Kind="InputPin" />
           </Patch>
           <Link Id="C7yqVPgw6jGOBJXH2EHRfC" Ids="TXKMmEbECsNPqWIcLGHmMU,HIBhdxpt9GWPzTrS9miK7O" />
+          <Patch Id="G8zWuAKUHn0MRNzrg9FeIY" Name="SetGlobalTrackSpacing">
+            <Pin Id="MMZsJRt8HAXNMZc9qXbakG" Name="TrackSpacing" Kind="InputPin" />
+          </Patch>
+          <Link Id="NVLgLFCCQkfLEHFw2wB9tm" Ids="MMZsJRt8HAXNMZc9qXbakG,Itt9dLX8HVnPv8OZ4qdZvl" IsHidden="true" />
+          <Link Id="N93CjcWFUGPQb7OpFfFkdM" Ids="ETcmwhkIMRdMkHaTHyffh4,JqlQUt4ocNPK9nu5d9rw0P" />
+          <Link Id="BFGzaHwRSSKOuoca6DA1nO" Ids="Itt9dLX8HVnPv8OZ4qdZvl,JqlQUt4ocNPK9nu5d9rw0P" />
         </Patch>
       </Node>
       <!--
