@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
-   <PATCH nodename="D:\NSYNK\Tilda\girlpower\VideoAndAudioClips\VideoAndAudioClips.v4p" systemname="Tilda Example Patch" filename="C:\REPOSITORIES\TildaTimeline\Tilda Example Patch.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="D:\NSYNK\Aufbau-FI-Connect19-VVVV\core\vvvv_50alpha38.2_x64\packs\Tilda\girlpower\VideoAndAudioClips\VideoAndAudioClips.v4p" systemname="Tilda Example Patch" filename="C:\REPOSITORIES\TildaTimeline\Tilda Example Patch.v4p" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="1920" top="11760" width="19155" height="16560">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="73">
@@ -385,9 +385,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="336">
-   <BOUNDS type="Node" left="4695" top="8385" width="2805" height="270">
+   <BOUNDS type="Node" left="4905" top="8190" width="2805" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4695" top="8385" width="7095" height="4455">
+   <BOUNDS type="Box" left="4905" top="8190" width="7095" height="4455">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|There was a bug in the contribution of the player, but we didn&apos;t want to hold back teh release. &cr;&lf;&cr;&lf;Will update the example in then next days and add video.|">
    </PIN>
@@ -436,7 +436,19 @@
    </NODE>
    <LINK srcnodeid="176" srcpinname="Timeline" dstnodeid="282" dstpinname="Timeline">
    </LINK>
-   <NODE systemname="TildaVideoPlayback (Tilda)" filename="..\..\nodes\vl\VVVV.Tilda.vvvv.vl" nodename="TildaVideoPlayback (Tilda)" componentmode="Hidden" id="292">
+   <NODE systemname="Renderer (Tilda)" filename="..\..\nodes\vl\VVVV.Tilda.vvvv.vl" nodename="Renderer (Tilda)" componentmode="Hidden" id="171">
+   <BOUNDS type="Node" left="2520" top="15285" width="1785" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2520" top="15285">
+   </BOUNDS>
+   <PIN pinname="Timeline" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="171" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="176" srcpinname="Timeline" dstnodeid="171" dstpinname="Timeline" linkstyle="Bezier">
+   </LINK>
+   <NODE systemname="StackClipsPlayback (Tilda)" filename="%VVVV%\packs\Tilda\nodes\vl\VVVV.Tilda.vvvv.vl" nodename="StackClipsPlayback (Tilda)" componentmode="Hidden" id="292">
    <BOUNDS type="Node" left="4635" top="8415" width="4800" height="270">
    </BOUNDS>
    <PIN pinname="LoopableClipCategory" visible="1" slicecount="1" values="Loop">
@@ -455,6 +467,10 @@
    </PIN>
    <PIN pinname="Format File Bin Size" visible="1">
    </PIN>
+   <PIN pinname="Timeline" visible="1">
+   </PIN>
+   <PIN pinname="StackClips" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="294" srcpinname="Output String" dstnodeid="292" dstpinname="LoopableClipCategory">
    </LINK>
@@ -470,18 +486,20 @@
    </LINK>
    <LINK srcnodeid="292" srcpinname="Format File Bin Size" dstnodeid="329" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="176" srcpinname="Timeline" dstnodeid="292" dstpinname="Timeline">
-   </LINK>
-   <NODE systemname="Renderer (Tilda)" filename="..\..\nodes\vl\VVVV.Tilda.vvvv.vl" nodename="Renderer (Tilda)" componentmode="Hidden" id="171">
-   <BOUNDS type="Node" left="2520" top="15285" width="1785" height="270">
+   <NODE systemname="GetClipsByCategory (Tilda)" filename="%VVVV%\packs\Tilda\nodes\vl\VVVV.Tilda.vvvv.vl" nodename="GetClipsByCategory (Tilda)" componentmode="Hidden" id="337">
+   <BOUNDS type="Node" left="4665" top="7830" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2520" top="15285">
-   </BOUNDS>
-   <PIN pinname="Timeline" visible="1" slicecount="1" values="||">
+   <PIN pinname="Timeline" visible="1">
+   </PIN>
+   <PIN pinname="Category" slicecount="1" values="Video">
+   </PIN>
+   <PIN pinname="Clips" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="171" dstpinname="Enabled">
+   <LINK srcnodeid="176" srcpinname="Timeline" dstnodeid="337" dstpinname="Timeline">
    </LINK>
-   <LINK srcnodeid="176" srcpinname="Timeline" dstnodeid="171" dstpinname="Timeline" linkstyle="Bezier">
+   <LINK srcnodeid="337" srcpinname="Timeline" dstnodeid="292" dstpinname="Timeline">
+   </LINK>
+   <LINK srcnodeid="337" srcpinname="Clips" dstnodeid="292" dstpinname="StackClips">
    </LINK>
    </PATCH>
