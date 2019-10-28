@@ -2009,7 +2009,7 @@
               <ControlPoint Id="THQisZJOrbPMosWFdIkgZX" Bounds="1095,1044" Alignment="Top" />
               <ControlPoint Id="AoYkFePLxBxOCeKfej6OKV" Bounds="1094,1521" Alignment="Bottom" />
             </Node>
-            <ControlPoint Id="PAPatNffQ3lM4aGrYpdGpQ" Bounds="1299,224" />
+            <ControlPoint Id="PAPatNffQ3lM4aGrYpdGpQ" Bounds="1269,224" />
             <Node Bounds="1238,694,42,19" Id="KTra7LDxnK9MzelqdFxtEP">
               <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -2216,7 +2216,7 @@
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="MnbHwmwlTvHLi7nDBZPmCy" Name="LoopableClipColor" Kind="InputPin" Bounds="1185,500" />
+            <Pin Id="MnbHwmwlTvHLi7nDBZPmCy" Name="LoopableClipCategory" Kind="InputPin" Bounds="1185,500" />
             <Pin Id="J5zOumJOVhaOq3KZDeotKy" Name="TC" Kind="InputPin" />
             <Pin Id="PbzM6BiIUXfPcuPgpofUuJ" Name="Preload" Kind="InputPin" />
             <Pin Id="TGOHpis5s2SOrpRgNBPW2f" Name="Clock" Kind="InputPin">
@@ -2758,10 +2758,10 @@
           <Link Id="IL1vQOqXGOlOejKCQwLse6" Ids="BJjkgjHLRZ6OUDrqjeLCxp,OYYlvrLRPhCPCK6YJg2hbs" />
           <Link Id="NtrCVPtfdbQNq2JTvtAMVw" Ids="IEIKLgVmetGM2LNfyDS5xb,Bm8KEBlGlHIPpcU2F7ng1m" />
           <Link Id="TajJKrSd8SdM5NsKo9GF6d" Ids="EtzQ9pPZKxBMGO4pMXKGZ0,PwyGWDayM1PLyzLIwzkxIk" />
-          <Patch Id="NZWOrIBKnhzNtRHakzG9p9" Name="GetPlayerAssignment">
+          <Patch Id="NZWOrIBKnhzNtRHakzG9p9" Name="GetOrderIndex">
             <Pin Id="ELe37uKLiILO9bExansvPv" Name="ClipOrderIndex" Kind="OutputPin" />
           </Patch>
-          <Patch Id="N5PkpUNDluYQALxCIiBfJW" Name="SetPlayerAssignment">
+          <Patch Id="N5PkpUNDluYQALxCIiBfJW" Name="SetOrderIndex">
             <Pin Id="QXS9GJdzmbHNRVTH9VYJUj" Name="ClipOrderIndex" Kind="InputPin" />
           </Patch>
           <Patch Id="CCwuh3iv4BbMJva2RHI2cf" Name="SetFramesNumber" />
