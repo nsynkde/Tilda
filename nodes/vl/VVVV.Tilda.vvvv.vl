@@ -4378,9 +4378,9 @@
               <Pin Id="EFixM2nGnjxOCU9NIDwjlE" Name="Output" Kind="StateOutputPin" />
               <Pin Id="ShQ9BVBATocOLOudHtZE57" Name="Framebase" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="NHPYd2FA58FLWAOYOOu8vP" Bounds="733,129" />
+            <ControlPoint Id="NHPYd2FA58FLWAOYOOu8vP" Bounds="778,128" />
             <ControlPoint Id="VqvOfe9qdmlODfW3MdDgzL" Bounds="264,129" />
-            <ControlPoint Id="EqF67OAKtowQGgnw4qbFsX" Bounds="797,129" />
+            <ControlPoint Id="EqF67OAKtowQGgnw4qbFsX" Bounds="842,128" />
             <Node Bounds="-22,909,720,382" Id="QpVd73gCQsSPeIVDP6z5cU">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -4433,7 +4433,7 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="GetFrames" />
                   </p:NodeReference>
-                  <Pin Id="MzNeHBZIDV6O8Aza6oVvSP" Name="Category" Kind="InputPin" />
+                  <Pin Id="MzNeHBZIDV6O8Aza6oVvSP" Name="CustomVariable" Kind="InputPin" />
                   <Pin Id="BKWYkht2p0IQACPFcAyDZn" Name="StartFrame" Kind="InputPin" />
                   <Pin Id="AhoL7EuuwFcMeHbtuGJ67Y" Name="Duration" Kind="InputPin" />
                   <Pin Id="MGVtBFjp4qwLsahxmPCsBE" Name="Frames" Kind="InputPin" />
@@ -4497,6 +4497,14 @@
                   <Pin Id="UrXwxT33YRxNBaJeWSAvuT" Name="Input" Kind="InputPin" />
                   <Pin Id="JDx3wz7y1JAQOzBTyiaZYW" Name="Input 2" Kind="InputPin" />
                   <Pin Id="PmgMlJQjS5lMJD8FTrkyBv" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="308,1045" Id="GgBCeQvMXw9Lp0icP6Ad61">
+                  <p:NodeReference LastCategoryFullName="VL.Tilda.VideoClip" LastSymbolSource="VVVV.Tilda.VideoClip.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="GetCustom" />
+                  </p:NodeReference>
+                  <Pin Id="Rrt1qz8xRApPIol4OclAPm" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="TFy6tSBjJE0QUUK0xrfLNh" Name="Custom" Kind="OutputPin" />
                 </Node>
               </Patch>
               <ControlPoint Id="AzOj2sAVPNJLz8C1KJcCGe" Bounds="-8,916" Alignment="Top" />
@@ -4978,6 +4986,7 @@
               </p:ValueBoxSettings>
             </Pad>
             <ControlPoint Id="ToD8Krkir22L2quCDzlo8q" Bounds="76,129" />
+            <ControlPoint Id="MTIzMl5q3BKNqTDsIndTfR" Bounds="687,1847" />
           </Canvas>
           <Patch Id="PJ7pXONpoCkNfYZAbvwFG0" Name="Create" />
           <Patch Id="VDHU5UCJQrFN9RUCJvzLD2" Name="Update">
@@ -4999,7 +5008,7 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="TWJ3jCxz3UZLfaTF1SaT16" Name="Preload" Kind="InputPin" />
-            <Pin Id="MIDtY5tw04yOfr9Hy1PeWI" Name="LoopableClipCategory" Kind="InputPin" Bounds="1318,162" />
+            <Pin Id="MIDtY5tw04yOfr9Hy1PeWI" Name="LoopableClipCustomVariable" Kind="InputPin" Bounds="1318,162" />
             <Pin Id="HQHZtko2TQMLB83BJY8pTy" Name="Clock" Kind="InputPin" />
             <Pin Id="NIEE1ND85KAL9zpGpoGLa4" Name="Unified" Kind="InputPin">
               <p:TypeAnnotation>
@@ -5032,6 +5041,7 @@
             <Pin Id="P1ryPYHVzYhOv3sLI1iR9I" Name="Frames" Kind="OutputPin" Bounds="383,3197" />
             <Pin Id="IeNPjc45ETeMhc0U2NRaor" Name="FrameNumber" Kind="OutputPin" Bounds="714,1230" />
             <Pin Id="ViLNiPihbCrMota4sb4LyF" Name="Blend" Kind="OutputPin" />
+            <Pin Id="RUqa7iJqqHmPMfwiNqHFFB" Name="Invert" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="PdPi4pmg0NWNGjWZle9Gdt">
             <Fragment Id="GCanMhNbhWWQElEbgQq3Kl" Patch="PJ7pXONpoCkNfYZAbvwFG0" Enabled="true" />
@@ -5073,7 +5083,6 @@
           <Link Id="PnTwobzoxk0LK7mqPJYsH6" Ids="VmdkrA8wlfwNxAUoPBUD8g,AhoL7EuuwFcMeHbtuGJ67Y" />
           <Link Id="ME7LcTJdG7aNm3E7ODA5ex" Ids="R8ciyUteYdJLVBXdLduw4S,IY9u3pnC0WhOfmRYE7BOpo" />
           <Link Id="M54Fr02K8jJNI6MfUFWBOC" Ids="OmlGRfDfqY9LRkKm26XamO,LffRvCp0SdGMPEXD81lqF7" />
-          <Link Id="LWo5WyKL53NOUtcAKEmlM4" Ids="COW3Gtv0lEINgI4zelZ6wP,MzNeHBZIDV6O8Aza6oVvSP" />
           <Link Id="HK17HEFYS4aMupeLkdU5YT" Ids="MWMNQWQ1RQEO7AzhXWeHwV,Ab7ewbgjLfVL1PjqQ0AAX7" />
           <Link Id="KNdQfNFgZnEO5qkPYkXdyY" Ids="AzOj2sAVPNJLz8C1KJcCGe,KNwGPV6eclOMXRxE7ZQBG1" />
           <Link Id="L2KtIUZvfLGOnbWUSkgnOt" Ids="RZ9hztpZJoGOY67nuO4IVr,PYK5DK2t6SJQDIXo12CMco" />
@@ -5173,6 +5182,10 @@
           <Link Id="G8DFtAWFFVeO7sT517yhWq" Ids="ROnVnlblkGZNpfLB1bAFSS,NMzTCumkaFxOPFC2N76DUV" />
           <Link Id="L0zWqTYn9xRNhtpNyscvYV" Ids="IpdOTyouJroNXSYWC5FyTb,MZHO1lsosOSLmXLe7DadlA" />
           <Link Id="MsoeWC9JI7dLbt4qhehxX7" Ids="IpdOTyouJroNXSYWC5FyTb,P7Ur97KbljUPMOwjaMWZge" />
+          <Link Id="H0JrUyafY9zNwXIhWtLXZX" Ids="AzOj2sAVPNJLz8C1KJcCGe,Rrt1qz8xRApPIol4OclAPm" />
+          <Link Id="NLW6bppj3maNGJTHIoaFZd" Ids="TFy6tSBjJE0QUUK0xrfLNh,MzNeHBZIDV6O8Aza6oVvSP" />
+          <Link Id="MCkNzrCVPj2QG2HBCKvXtl" Ids="MTIzMl5q3BKNqTDsIndTfR,RUqa7iJqqHmPMfwiNqHFFB" IsHidden="true" />
+          <Link Id="QfLaYt6fqjkLMwvjZMcczX" Ids="MmCJ9PJ7cqUPY0U6Myp0xa,MTIzMl5q3BKNqTDsIndTfR" />
         </Patch>
       </Node>
       <!--
@@ -5206,7 +5219,7 @@
               <Pin Id="IcG4XsdGONNPsz1iwCQkwk" Name="Frames" Kind="InputPin" />
               <Pin Id="RSwsVHqBsGzNlZWS06IvwE" Name="TC" Kind="InputPin" />
               <Pin Id="VtYu7iUn2pAOEa3GrBrMPG" Name="Preload" Kind="InputPin" />
-              <Pin Id="HFSn9KzN4yBObHo07AgcU3" Name="LoopableClipCategory" Kind="InputPin" />
+              <Pin Id="HFSn9KzN4yBObHo07AgcU3" Name="LoopableClipCustomVariable" Kind="InputPin" />
               <Pin Id="S0SptO2JfHHNLtmHc9SYXU" Name="Clock" Kind="InputPin" />
               <Pin Id="JBoU7tsQxp0NiwOAkccbZp" Name="Unified" Kind="InputPin" />
               <Pin Id="GDAhfZOxwEdLFu0vBQcOr3" Name="Fade" Kind="OutputPin" />
@@ -5214,6 +5227,7 @@
               <Pin Id="OC85MwxDa7dMmKcMFsZVE1" Name="Format File" Kind="OutputPin" />
               <Pin Id="DUO2h5yG3aXN6lbGabfcW6" Name="Frames" Kind="OutputPin" />
               <Pin Id="VIdWhg5KrdaLbfaEn1PCPT" Name="FrameNumber" Kind="OutputPin" />
+              <Pin Id="KHUWJtY0A5ALfr9n2L0fCL" Name="Invert" Kind="OutputPin" />
               <Pin Id="RiCQh8BvYrjPrbJHGW5EbP" Name="Blend" Kind="OutputPin" />
             </Node>
             <Node Bounds="252,1333,65,26" Id="MjWlG3IRK14LXrPPdNCutc">
@@ -5476,6 +5490,7 @@
             <ControlPoint Id="KfqXZKN1JWoOl4GKFAsA5w" Bounds="331,72" />
             <ControlPoint Id="TMCdU5ZWwqWQahU9DXI7Ts" Bounds="884,72" />
             <ControlPoint Id="K5Ii5be30ewO1hXVWg4HDC" Bounds="886,1655" />
+            <ControlPoint Id="E5PQHroA5nSNLPoT2sYn8o" Bounds="858,1684" />
           </Canvas>
           <Patch Id="Ui8ueoL8HT6LTvRMCe9mEX" Name="Create" />
           <Patch Id="NEIcRg9cJECND0T4YoDdl6" Name="Update">
@@ -5485,7 +5500,7 @@
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="E5Nylw7mONoPhCkizUabnA" Name="LoopableClipCategory" Kind="InputPin" Bounds="1479,-77" DefaultValue="Loop">
+            <Pin Id="E5Nylw7mONoPhCkizUabnA" Name="LoopableClipCustomVariable" Kind="InputPin" Bounds="1479,-77" DefaultValue="Loop">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -5512,6 +5527,7 @@
             <Pin Id="Rli0weNnv0UL9I6PiINqXF" Name="SearchPattern" Kind="OutputPin" />
             <Pin Id="MkR5gf7hVXaLfGKHkqjNy8" Name="FrameNumber" Kind="OutputPin" Bounds="968,1655" />
             <Pin Id="C79xzu4blSwMCKvSAVG8DZ" Name="UniformBlend" Kind="OutputPin" />
+            <Pin Id="HlNNRnOQaCrQGpWEsNIHQb" Name="Invert" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="GkIPBpWdUw8NvGuACPzO5v">
             <Fragment Id="K89D8JXyTC9LRXk2PMImub" Patch="Ui8ueoL8HT6LTvRMCe9mEX" Enabled="true" />
@@ -5608,6 +5624,8 @@
           <Link Id="DGSUP4YsQNFPGRJHLcvXRy" Ids="NGPVEFiCuwGLcSPYgKWdPe,IEKv0khtRR8MjEuRW4To62" />
           <Link Id="BhCVwBKfOhHLDLrEHc0ecr" Ids="IEKv0khtRR8MjEuRW4To62,GXkxbL3yHm7NhSN5YLAW5i" />
           <Link Id="BocaGi4IJbeLYAugyjZXCB" Ids="GXkxbL3yHm7NhSN5YLAW5i,OQx2MGwvORqMAyetLdOFk5" />
+          <Link Id="SU3jMjbe8CBMPZPmtftkCp" Ids="E5PQHroA5nSNLPoT2sYn8o,HlNNRnOQaCrQGpWEsNIHQb" IsHidden="true" />
+          <Link Id="IsHBfiJhdJcLOgnHljO2Re" Ids="KHUWJtY0A5ALfr9n2L0fCL,E5PQHroA5nSNLPoT2sYn8o" />
         </Patch>
       </Node>
       <Overlay Id="O07n6UrviMgNXNXGF3A7pq" Name="Video" Bounds="744,610,293,180" />
