@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0574-g531e8dd97e" Version="0.128">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0895-g40dc1190f8" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -55,7 +55,7 @@
                 <CategoryReference Kind="Category" Name="Skia" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="30, 72, 2677, 1308">
+              <Pin Id="JdscxdjxnBoNN8pRpeY3wR" Name="Bounds" Kind="InputPin" DefaultValue="3, 823, 2580, 500">
                 <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                   <Choice Kind="TypeFlag" Name="Rectangle" />
                 </p:TypeAnnotation>
@@ -72,6 +72,7 @@
                   <Choice Kind="TypeFlag" Name="CommonSpace" />
                 </p:TypeAnnotation>
               </Pin>
+              <Pin Id="G2vytf4FRmZOMy4puaSKQy" Name="VSync" Kind="InputPin" />
               <Pin Id="IqI4cA9X1JvM1P842ncUvk" Name="Enabled" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Boolean" />
@@ -1739,12 +1740,12 @@
                       <Node Bounds="725,662,45,19" Id="OSOfK0qiqfOLB4aJTwhQ8N">
                         <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <Choice Kind="OperationCallFlag" Name="Switch" />
-                          <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                          <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                          <FullNameCategoryReference ID="Control" />
                         </p:NodeReference>
                         <Pin Id="QFXL6KiSuuXQKkQVPDE992" Name="Condition" Kind="InputPin" />
-                        <Pin Id="RussOyFVGeBOW45cyMYoXF" Name="False" Kind="InputPin" />
-                        <Pin Id="Ugnkre2QuXjOKgrLJgjxIM" Name="True" Kind="InputPin" />
+                        <Pin Id="RussOyFVGeBOW45cyMYoXF" Name="Input" Kind="InputPin" />
+                        <Pin Id="Ugnkre2QuXjOKgrLJgjxIM" Name="Input 2" Kind="InputPin" />
                         <Pin Id="AKKgUsS3H2xLprq9abT1Q6" Name="Output" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="690,514,25,19" Id="LbNVPC1GYLYPfMpPrkWNzX">
@@ -2921,12 +2922,12 @@
                       <Node Bounds="1233,811,45,19" Id="VfXOcmD21bsPh0Eht2o2YO">
                         <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <Choice Kind="OperationCallFlag" Name="Switch" />
-                          <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                          <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                          <FullNameCategoryReference ID="Control" />
                         </p:NodeReference>
                         <Pin Id="Rr1BcirZv3XM8BfHuXXssU" Name="Condition" Kind="InputPin" />
-                        <Pin Id="OBOJDpKbBu2PdbZTsbMgpj" Name="False" Kind="InputPin" />
-                        <Pin Id="UhT5WhhYwzCPOF0G2DFp9L" Name="True" Kind="InputPin" />
+                        <Pin Id="OBOJDpKbBu2PdbZTsbMgpj" Name="Input" Kind="InputPin" />
+                        <Pin Id="UhT5WhhYwzCPOF0G2DFp9L" Name="Input 2" Kind="InputPin" />
                         <Pin Id="UvvGFUaBda2OSUkQqFGAoF" Name="Output" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="1309,769,25,19" Id="DfwFFG0i2mGQKaxNEwckA2">
@@ -2942,12 +2943,12 @@
                       <Node Bounds="1309,811,45,19" Id="PDWYomya4YDNGnhN9qlf4p">
                         <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <Choice Kind="OperationCallFlag" Name="Switch" />
-                          <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                          <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                          <FullNameCategoryReference ID="Control" />
                         </p:NodeReference>
                         <Pin Id="EfKdclgDI3OPLsrHQCBlZO" Name="Condition" Kind="InputPin" />
-                        <Pin Id="MT9G2nexEFGO0UxR1APDkv" Name="False" Kind="InputPin" />
-                        <Pin Id="KnCVQLP5pquLTSDpZB8UMp" Name="True" Kind="InputPin" />
+                        <Pin Id="MT9G2nexEFGO0UxR1APDkv" Name="Input" Kind="InputPin" />
+                        <Pin Id="KnCVQLP5pquLTSDpZB8UMp" Name="Input 2" Kind="InputPin" />
                         <Pin Id="SdRg5rfMzU2OlaOKFHEq8r" Name="Output" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="1349,734,25,19" Id="Fsk5AhzZFSPNus3Joebb86">
@@ -4274,23 +4275,23 @@
                   <Node Bounds="461,651,45,13" Id="MqralkPK2EWOBSa0mMoVZ0">
                     <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="OperationCallFlag" Name="Switch" />
-                      <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                      <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                      <FullNameCategoryReference ID="Control" />
                     </p:NodeReference>
                     <Pin Id="IcIHlP4dG0mPT7xbbc6wtu" Name="Condition" Kind="InputPin" />
-                    <Pin Id="Kr09tdMfZ1jM50xy97Dd0e" Name="False" Kind="InputPin" />
-                    <Pin Id="AJSFjUrttnZNLvuaMFAWer" Name="True" Kind="InputPin" />
+                    <Pin Id="Kr09tdMfZ1jM50xy97Dd0e" Name="Input" Kind="InputPin" />
+                    <Pin Id="AJSFjUrttnZNLvuaMFAWer" Name="Input 2" Kind="InputPin" />
                     <Pin Id="DDj3oCMw5HsMWqlsogAUwz" Name="Output" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="395,653,45,13" Id="NR3E9ZlQyjVPGXeZDwTCqt">
                     <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="OperationCallFlag" Name="Switch" />
-                      <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                      <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                      <FullNameCategoryReference ID="Control" />
                     </p:NodeReference>
                     <Pin Id="OTZOBUnggCiQCSlwlifJbL" Name="Condition" Kind="InputPin" />
-                    <Pin Id="PnEHzZx4pROQXybcUbqCYE" Name="False" Kind="InputPin" />
-                    <Pin Id="FQN2B3w0rcYPKTM4VYtAD8" Name="True" Kind="InputPin" />
+                    <Pin Id="PnEHzZx4pROQXybcUbqCYE" Name="Input" Kind="InputPin" />
+                    <Pin Id="FQN2B3w0rcYPKTM4VYtAD8" Name="Input 2" Kind="InputPin" />
                     <Pin Id="J0Bj5E2obKOMNWSoDPQb5h" Name="Output" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="583,451,62,86" Id="Svna5b2Tso6NOEJYswObh0">
@@ -4485,23 +4486,23 @@
                   <Node Bounds="544,735,45,13" Id="APDq66yXbNQL3Prh80gKch">
                     <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="OperationCallFlag" Name="Switch" />
-                      <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                      <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                      <FullNameCategoryReference ID="Control" />
                     </p:NodeReference>
                     <Pin Id="CATHIOnNOmTMfnWyXWBq5Y" Name="Condition" Kind="InputPin" />
-                    <Pin Id="In7bTbPAbEXPsCvYyklCMu" Name="False" Kind="InputPin" />
-                    <Pin Id="UdWnuztZuL6MopEiwmpXUc" Name="True" Kind="InputPin" />
+                    <Pin Id="In7bTbPAbEXPsCvYyklCMu" Name="Input" Kind="InputPin" />
+                    <Pin Id="UdWnuztZuL6MopEiwmpXUc" Name="Input 2" Kind="InputPin" />
                     <Pin Id="T55TgjMHeyFP4UHwTIUCdz" Name="Output" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="478,737,45,13" Id="D4g12EOOaDvMieIYrz2SzF">
                     <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="OperationCallFlag" Name="Switch" />
-                      <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                      <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                      <FullNameCategoryReference ID="Control" />
                     </p:NodeReference>
                     <Pin Id="Cy3k1qpho2ENZ3vmCpwsKi" Name="Condition" Kind="InputPin" />
-                    <Pin Id="IQsnNelxNeOOPMi0RFjKHK" Name="False" Kind="InputPin" />
-                    <Pin Id="TVWJ8s8J91KPWm268hzVm3" Name="True" Kind="InputPin" />
+                    <Pin Id="IQsnNelxNeOOPMi0RFjKHK" Name="Input" Kind="InputPin" />
+                    <Pin Id="TVWJ8s8J91KPWm268hzVm3" Name="Input 2" Kind="InputPin" />
                     <Pin Id="RQgQG0Pml90L0IJkbG01Nc" Name="Output" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="737,562,52,86" Id="JIFaPPBoxLrOSXYeZnNRWB">
@@ -5706,16 +5707,16 @@
               <Node Bounds="753,501,45,19" Id="Gx8jnpJ4tKwNmbt1lDHSWB">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="Dus5itudTO8OHLb8ToWmTM" Name="Condition" Kind="InputPin" />
-                <Pin Id="Cm33rfPg8ZAL1gr2TANcwD" Name="False" Kind="InputPin" DefaultValue="1">
+                <Pin Id="Cm33rfPg8ZAL1gr2TANcwD" Name="Input" Kind="InputPin" DefaultValue="1">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Integer32" />
                   </p:TypeAnnotation>
                 </Pin>
-                <Pin Id="ECTUL3X1DXHMD5dzJJ78bq" Name="True" Kind="InputPin" />
+                <Pin Id="ECTUL3X1DXHMD5dzJJ78bq" Name="Input 2" Kind="InputPin" />
                 <Pin Id="K0iYLgo1LnVMgL0ywonAFw" Name="Output" Kind="OutputPin" />
               </Node>
               <Pad Id="U2z6YvBQ1HTOMKdBAwjGH3" Bounds="639,74,382,41" ShowValueBox="true" isIOBox="true" Value="Jump forward, backward">
@@ -6548,12 +6549,12 @@
               <Node Bounds="715,721,45,19" Id="J6KS0ZfyBc4MBcCvQ7xqTd">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="Aq6I7owKT39MatG0A8PF9Z" Name="Condition" Kind="InputPin" />
-                <Pin Id="AR8eqyNxKGcODl99nKZF3p" Name="False" Kind="InputPin" />
-                <Pin Id="H0RxffI5EVEPYGYmsjBWaV" Name="True" Kind="InputPin" />
+                <Pin Id="AR8eqyNxKGcODl99nKZF3p" Name="Input" Kind="InputPin" />
+                <Pin Id="H0RxffI5EVEPYGYmsjBWaV" Name="Input 2" Kind="InputPin" />
                 <Pin Id="VSALDjAkbpqMHoxzBG01E9" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="808,675,37,19" Id="AhhDAFcMeGZPtIQ1AlVnn4">
@@ -6646,12 +6647,12 @@
               <Node Bounds="597,1456,45,19" Id="LVtbBTQ118vPYdVtXHQjVv">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="EOKtYa4qK8uOpj5HMV5Bqx" Name="Condition" Kind="InputPin" />
-                <Pin Id="NuxCGPzTar4LuHLATAMR0C" Name="False" Kind="InputPin" />
-                <Pin Id="NLs0I4X3PWDLKEsQK0gkGH" Name="True" Kind="InputPin" />
+                <Pin Id="NuxCGPzTar4LuHLATAMR0C" Name="Input" Kind="InputPin" />
+                <Pin Id="NLs0I4X3PWDLKEsQK0gkGH" Name="Input 2" Kind="InputPin" />
                 <Pin Id="GeteHmkQQiJM2TUk34RfqQ" Name="Output" Kind="OutputPin" />
               </Node>
               <Pad Id="VYaFOhF35ktK9XFHD63Nul" Comment="" Bounds="639,1438,162,15" ShowValueBox="true" isIOBox="true" Value="ToggleClipEditor">
@@ -7219,12 +7220,12 @@
               <Node Bounds="605,1514,45,19" Id="IhMK4YiiZDeOaVAzYHIQqA">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="IGMXPa3MakdP4txgHyPtMv" Name="Condition" Kind="InputPin" />
-                <Pin Id="Te1Ac5apKxCOXVIDJhpyXH" Name="False" Kind="InputPin" />
-                <Pin Id="UR7pTJSzDXEPquycRcQ1G7" Name="True" Kind="InputPin" />
+                <Pin Id="Te1Ac5apKxCOXVIDJhpyXH" Name="Input" Kind="InputPin" />
+                <Pin Id="UR7pTJSzDXEPquycRcQ1G7" Name="Input 2" Kind="InputPin" />
                 <Pin Id="H0QTL0vH6cdMLZgXZwaF3b" Name="Output" Kind="OutputPin" />
               </Node>
               <Pad Id="Ou5ODOx8L9eLKST0588i8s" Comment="True" Bounds="660,1485,97,3" ShowValueBox="true" isIOBox="true" Value="ToggleLock">
@@ -9034,12 +9035,12 @@
               <Node Bounds="795,1008,45,19" Id="BDbw30YLZWuOPKQvZyBocI">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="HGphxpmwnZfLCr6r9BlSkI" Name="Condition" Kind="InputPin" />
-                <Pin Id="H3WfAMzrbMVNCn9eQIpCG8" Name="False" Kind="InputPin" />
-                <Pin Id="K1WoN0aup4oM9K1gg35e6L" Name="True" Kind="InputPin" />
+                <Pin Id="H3WfAMzrbMVNCn9eQIpCG8" Name="Input" Kind="InputPin" />
+                <Pin Id="K1WoN0aup4oM9K1gg35e6L" Name="Input 2" Kind="InputPin" />
                 <Pin Id="DjTdTozv1nRPRmWvyKhfGv" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="816,1083,25,13" Id="CMRzN0xadRxQYCOz0N1Pig">
@@ -9086,16 +9087,16 @@
               <Node Bounds="816,1118,45,13" Id="ODluk2RWW25PIbo8dfOGfg">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="BJ3bGEAUepDNPp7Wyn3UV8" Name="Condition" Kind="InputPin" />
-                <Pin Id="Rbqy7HnprXBLkGKe1Mziyq" Name="False" Kind="InputPin" DefaultValue="1">
+                <Pin Id="Rbqy7HnprXBLkGKe1Mziyq" Name="Input" Kind="InputPin" DefaultValue="1">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
                 </Pin>
-                <Pin Id="K2QzFVn0dQIPDh6hUERuKo" Name="True" Kind="InputPin" DefaultValue="-1">
+                <Pin Id="K2QzFVn0dQIPDh6hUERuKo" Name="Input 2" Kind="InputPin" DefaultValue="-1">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
@@ -9118,16 +9119,16 @@
               <Node Bounds="895,1122,45,13" Id="IlvKIXJHVezO4zmIIeIZHW">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="ITADwAOiP4qNtG4nTMHFqb" Name="Condition" Kind="InputPin" />
-                <Pin Id="F5xu9I4WyWaLfT9acje403" Name="False" Kind="InputPin" DefaultValue="1">
+                <Pin Id="F5xu9I4WyWaLfT9acje403" Name="Input" Kind="InputPin" DefaultValue="1">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
                 </Pin>
-                <Pin Id="QJq42BfI7FUQNLmWVPb2S5" Name="True" Kind="InputPin" DefaultValue="-1">
+                <Pin Id="QJq42BfI7FUQNLmWVPb2S5" Name="Input 2" Kind="InputPin" DefaultValue="-1">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
@@ -9175,16 +9176,16 @@
               <Node Bounds="717,1223,45,19" Id="VM0PBXiCp0bP74tTAgAQfw">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="Ib1iryh8cZeLZkyCex4TAA" Name="Condition" Kind="InputPin" />
-                <Pin Id="S8l874O41fPOpVcA5iKR3U" Name="False" Kind="InputPin" DefaultValue="1">
+                <Pin Id="S8l874O41fPOpVcA5iKR3U" Name="Input" Kind="InputPin" DefaultValue="1">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
                 </Pin>
-                <Pin Id="F3Cw0MFc9aePwUJJLMShrp" Name="True" Kind="InputPin" DefaultValue="-1">
+                <Pin Id="F3Cw0MFc9aePwUJJLMShrp" Name="Input 2" Kind="InputPin" DefaultValue="-1">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
@@ -9194,16 +9195,16 @@
               <Node Bounds="780,1223,45,13" Id="M7lSMbeSLRILQn0xQ56ffq">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="KcR26ZjewDoMHbPt1cq4V9" Name="Condition" Kind="InputPin" />
-                <Pin Id="RTrb7hqwB99PuzUPHFg9VB" Name="False" Kind="InputPin" DefaultValue="1">
+                <Pin Id="RTrb7hqwB99PuzUPHFg9VB" Name="Input" Kind="InputPin" DefaultValue="1">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
                 </Pin>
-                <Pin Id="DGucB47e77ONxmGUPMcxvZ" Name="True" Kind="InputPin" DefaultValue="-1">
+                <Pin Id="DGucB47e77ONxmGUPMcxvZ" Name="Input 2" Kind="InputPin" DefaultValue="-1">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
@@ -9840,12 +9841,12 @@
               <Node Bounds="-322,1070,45,19" Id="Tts3zIpYUxRPzUv8Qbclat">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="MCrdx2VAVn3PEYLwEwey2n" Name="Condition" Kind="InputPin" />
-                <Pin Id="VHYaZFbi0NYN0HpbDcHKoL" Name="False" Kind="InputPin" />
-                <Pin Id="JW6l2VcDGAnLTkDQ8K3KV6" Name="True" Kind="InputPin" />
+                <Pin Id="VHYaZFbi0NYN0HpbDcHKoL" Name="Input" Kind="InputPin" />
+                <Pin Id="JW6l2VcDGAnLTkDQ8K3KV6" Name="Input 2" Kind="InputPin" />
                 <Pin Id="VMRLL43PAUxPoYQ7z892mC" Name="Output" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="AHV5v5y4o2OPzPqEqmAMRq" Bounds="-986,-438" />
@@ -11465,12 +11466,12 @@
               <Node Bounds="1060,1108,45,19" Id="N0fF4f6LtTWPNoU7m3aLbc">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="CtaUATChcI1OP4dZP0LKMX" Name="Condition" Kind="InputPin" />
-                <Pin Id="O9FH6RgyGDkOyQEmhlGF7i" Name="False" Kind="InputPin" />
-                <Pin Id="QDwcrl6IJr9LQULwOPkP7K" Name="True" Kind="InputPin" DefaultValue="-">
+                <Pin Id="O9FH6RgyGDkOyQEmhlGF7i" Name="Input" Kind="InputPin" />
+                <Pin Id="QDwcrl6IJr9LQULwOPkP7K" Name="Input 2" Kind="InputPin" DefaultValue="-">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -11490,12 +11491,12 @@
               <Node Bounds="993,1311,325,19" Id="Dkstbzy3maeOETKRPKkr6r">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="JmA1rYjybQZMZRut1lIhAj" Name="Condition" Kind="InputPin" />
-                <Pin Id="JgqOETEZjCrQBUtHFlicC7" Name="False" Kind="InputPin" />
-                <Pin Id="UzNMzqLEHAVPfSSa6a7AJ8" Name="True" Kind="InputPin" />
+                <Pin Id="JgqOETEZjCrQBUtHFlicC7" Name="Input" Kind="InputPin" />
+                <Pin Id="UzNMzqLEHAVPfSSa6a7AJ8" Name="Input 2" Kind="InputPin" />
                 <Pin Id="HRkYkph6lvzQGYHdvdJEA8" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="994,1247,48,19" Id="Iq1T6aAuQXmQUjHj311zV8">
@@ -11583,12 +11584,12 @@
               <Node Bounds="955,1715,98,19" Id="M87YvKLaLkAMITmL7IK1F8">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="Iz3xogFiscLMLxI7W30C4U" Name="Condition" Kind="InputPin" />
-                <Pin Id="FjJBr8QeO6uMSsDnr0jI0R" Name="False" Kind="InputPin" />
-                <Pin Id="NwBmSJS2wLJLYuu9oAM3Cz" Name="True" Kind="InputPin" />
+                <Pin Id="FjJBr8QeO6uMSsDnr0jI0R" Name="Input" Kind="InputPin" />
+                <Pin Id="NwBmSJS2wLJLYuu9oAM3Cz" Name="Input 2" Kind="InputPin" />
                 <Pin Id="RyooIWNC2emMdA6xItXCOz" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="792,1373,45,19" Id="UZcrk3OQGVXNIspM15dyfV">
@@ -11619,16 +11620,16 @@
               <Node Bounds="1185,1567,45,19" Id="FyinwUAURPEMp9bIkeNpDa">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="RzfJ8xqrmhFLSKWUyHGytU" Name="Condition" Kind="InputPin" />
-                <Pin Id="I1i581kjn0NOFhZQ9QgeKT" Name="False" Kind="InputPin" DefaultValue=" ">
+                <Pin Id="I1i581kjn0NOFhZQ9QgeKT" Name="Input" Kind="InputPin" DefaultValue=" ">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
                 </Pin>
-                <Pin Id="TuaW3CwmPXxOHqclb4olCg" Name="True" Kind="InputPin" />
+                <Pin Id="TuaW3CwmPXxOHqclb4olCg" Name="Input 2" Kind="InputPin" />
                 <Pin Id="KcXSbvuVfHFPpbE5ZbNAuq" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="1182,1473,65,19" Id="VnQlEP5vgEdObZ4RgsbcPj">
@@ -11748,23 +11749,23 @@
               <Node Bounds="1048,1658,170,19" Id="Fqp5ivlyx8fNhakzQIuMIA">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="FE1L5OaCXifOprK03WiuOZ" Name="Condition" Kind="InputPin" />
-                <Pin Id="OYsvN1HIvduOsljvvHYJ7R" Name="False" Kind="InputPin" />
-                <Pin Id="PAWe16FlXkOMY8FdUD7bZD" Name="True" Kind="InputPin" />
+                <Pin Id="OYsvN1HIvduOsljvvHYJ7R" Name="Input" Kind="InputPin" />
+                <Pin Id="PAWe16FlXkOMY8FdUD7bZD" Name="Input 2" Kind="InputPin" />
                 <Pin Id="J81l3oupYMnMmyrx1yrXA5" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="794,1833,45,19" Id="SGXaFr9B9TZOb5CwOvtpti">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="SraRgSc5abbP9VzPLi0d56" Name="Condition" Kind="InputPin" />
-                <Pin Id="FhqMmlXTuP6N9pj0UwkhPx" Name="False" Kind="InputPin" />
-                <Pin Id="D5WEaxIviaGNGI5FKkdaV9" Name="True" Kind="InputPin" />
+                <Pin Id="FhqMmlXTuP6N9pj0UwkhPx" Name="Input" Kind="InputPin" />
+                <Pin Id="D5WEaxIviaGNGI5FKkdaV9" Name="Input 2" Kind="InputPin" />
                 <Pin Id="FWZZA4UdDabLMlTIFhWr3B" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="743,1458,45,19" Id="RdC4wxq2xn6Nd1Wz1aJ2UO">
@@ -11953,12 +11954,12 @@
               <Node Bounds="1008,1401,45,19" Id="M4giqfDcgHqQcP6vDrnGYI">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="Kh03cQSB6gLPk8bNdGInFk" Name="Condition" Kind="InputPin" />
-                <Pin Id="KkAjhlGL1iTO14XROtXB8e" Name="False" Kind="InputPin" />
-                <Pin Id="QhYpXNJtd15PzTznbBqjyD" Name="True" Kind="InputPin" />
+                <Pin Id="KkAjhlGL1iTO14XROtXB8e" Name="Input" Kind="InputPin" />
+                <Pin Id="QhYpXNJtd15PzTznbBqjyD" Name="Input 2" Kind="InputPin" />
                 <Pin Id="OCPNJyzKP8gLNW03PaQ5wE" Name="Output" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="Ocqd7DngX8MOvcHpcNOei2" Bounds="96,395" />
@@ -12339,12 +12340,12 @@
                       <Node Bounds="695,707,67,19" Id="NZCGqa3bGFfMpfqwtkOn85">
                         <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <Choice Kind="OperationCallFlag" Name="Switch" />
-                          <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                          <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                          <FullNameCategoryReference ID="Control" />
                         </p:NodeReference>
                         <Pin Id="IX8VEvgQuF5PtP7voFaPRG" Name="Condition" Kind="InputPin" />
-                        <Pin Id="Niyv0NPGiM5PgOk7CHPbRJ" Name="False" Kind="InputPin" />
-                        <Pin Id="TLFKRSbKKbzNuggKh8OlXi" Name="True" Kind="InputPin" />
+                        <Pin Id="Niyv0NPGiM5PgOk7CHPbRJ" Name="Input" Kind="InputPin" />
+                        <Pin Id="TLFKRSbKKbzNuggKh8OlXi" Name="Input 2" Kind="InputPin" />
                         <Pin Id="CMaymvZJCFlLBkhcNOxD8R" Name="Output" Kind="OutputPin" />
                       </Node>
                     </Patch>
@@ -17365,16 +17366,16 @@
               <Node Bounds="102,183,45,19" Id="QY6IjcHmJXKNzZXcwZ92F0">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="CLisUAyGYYoPcSbMplzZCb" Name="Condition" Kind="InputPin" DefaultValue="True">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Boolean" />
                   </p:TypeAnnotation>
                 </Pin>
-                <Pin Id="I7bGRvOhpiuNM0szQEGMLg" Name="False" Kind="InputPin" />
-                <Pin Id="O7JkGlBqAXRMYtytpFSfji" Name="True" Kind="InputPin" />
+                <Pin Id="I7bGRvOhpiuNM0szQEGMLg" Name="Input" Kind="InputPin" />
+                <Pin Id="O7JkGlBqAXRMYtytpFSfji" Name="Input 2" Kind="InputPin" />
                 <Pin Id="Ni4B55eJpFvLTpQggKk2A2" Name="Output" Kind="OutputPin" />
               </Node>
             </Canvas>
@@ -17777,12 +17778,12 @@
               <Node Bounds="505,504" Id="QXJ6gMf8Zy0NS910CvWtbZ">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="PLsRM0MpBHWLHHcOrqYoWs" Name="Condition" Kind="InputPin" />
-                <Pin Id="AxPTz2itrq4LM4BN3ODxOi" Name="False" Kind="InputPin" />
-                <Pin Id="GAmXJossi0MOlNRiZEARvz" Name="True" Kind="InputPin" />
+                <Pin Id="AxPTz2itrq4LM4BN3ODxOi" Name="Input" Kind="InputPin" />
+                <Pin Id="GAmXJossi0MOlNRiZEARvz" Name="Input 2" Kind="InputPin" />
                 <Pin Id="DBG8pEFI9zmQVL0FqW5d6m" Name="Output" Kind="OutputPin" />
               </Node>
               <Pad Id="HxG8WqQFj0GM7bwJ9vljeW" Comment="Color" Bounds="631,424,136,15" ShowValueBox="true" isIOBox="true" Value="1, 0.9999999, 0.9999999, 1">
@@ -19412,12 +19413,12 @@
               <Node Bounds="1780,298,45,19" Id="Bv5zJT8trciO2s2bsw6GSo">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="OuePwHOKaTWNvskIK5kMlu" Name="Condition" Kind="InputPin" />
-                <Pin Id="EFyxMAMH8ywMTwxFf4ohr8" Name="False" Kind="InputPin" />
-                <Pin Id="NgIJXVMHFEQNNVpr6xIo6W" Name="True" Kind="InputPin" />
+                <Pin Id="EFyxMAMH8ywMTwxFf4ohr8" Name="Input" Kind="InputPin" />
+                <Pin Id="NgIJXVMHFEQNNVpr6xIo6W" Name="Input 2" Kind="InputPin" />
                 <Pin Id="DoCi0fmrM9pOx93CveeOcG" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="1032,471,69,19" Id="K8lnk0x6vNmLjIVQnDyFq8">
@@ -24841,23 +24842,23 @@
                 <Node Bounds="142,501,45,19" Id="M1mHikUuC9sQEfigFTAXlf">
                   <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Switch" />
-                    <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                    <FullNameCategoryReference ID="Control" />
                   </p:NodeReference>
                   <Pin Id="UK69AbgJQ6pLTFTBPGmGic" Name="Condition" Kind="InputPin" />
-                  <Pin Id="ODYfXhEQ5W1MntFEpN4JDL" Name="False" Kind="InputPin" />
-                  <Pin Id="Ky2XdhMGcXbQB66Y7rFLya" Name="True" Kind="InputPin" />
+                  <Pin Id="ODYfXhEQ5W1MntFEpN4JDL" Name="Input" Kind="InputPin" />
+                  <Pin Id="Ky2XdhMGcXbQB66Y7rFLya" Name="Input 2" Kind="InputPin" />
                   <Pin Id="TCR4vvBIfEqPA6vmU6Fty5" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="244,429,45,19" Id="Q0uXsNlSwxKNRSOcQlLUqy">
                   <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Switch" />
-                    <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                    <FullNameCategoryReference ID="Control" />
                   </p:NodeReference>
                   <Pin Id="B5QAwXM7t39NF3ySe2LyQd" Name="Condition" Kind="InputPin" />
-                  <Pin Id="BMX3CwvBl04M5OTTNTihoX" Name="False" Kind="InputPin" />
-                  <Pin Id="SYzaHbtCX5CLwEqJKSNNYM" Name="True" Kind="InputPin" />
+                  <Pin Id="BMX3CwvBl04M5OTTNTihoX" Name="Input" Kind="InputPin" />
+                  <Pin Id="SYzaHbtCX5CLwEqJKSNNYM" Name="Input 2" Kind="InputPin" />
                   <Pin Id="KqG1RGK55WzLTmcahNel8E" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="305,389,25,19" Id="DPMFluu4mGWNQ2gDiydOH6">
@@ -25537,12 +25538,12 @@
                 <Node Bounds="439,408,55,19" Id="VwDhFxoo2jbLHzDRrXQVcu">
                   <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Switch" />
-                    <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                    <FullNameCategoryReference ID="Control" />
                   </p:NodeReference>
                   <Pin Id="DirrUmAdNFFPoAiUK38cSX" Name="Condition" Kind="InputPin" />
-                  <Pin Id="LjdYggzmNpnPDdv4kdLIzl" Name="False" Kind="InputPin" />
-                  <Pin Id="RehCsqQqV71O3Z49byqsfn" Name="True" Kind="InputPin" />
+                  <Pin Id="LjdYggzmNpnPDdv4kdLIzl" Name="Input" Kind="InputPin" />
+                  <Pin Id="RehCsqQqV71O3Z49byqsfn" Name="Input 2" Kind="InputPin" />
                   <Pin Id="PkZbX22RYS2MTwTLRoHstn" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="542,263,70,26" Id="Te0YQQAy4pQLcu1y19Pc5V">
@@ -26993,12 +26994,12 @@
             <Node Bounds="308,123,45,19" Id="LYzcdpP9tm7Mno27M93WTX">
               <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="Switch" />
-                <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                <FullNameCategoryReference ID="Control" />
               </p:NodeReference>
               <Pin Id="SJjMSwYpECFMqZO5YpLmtS" Name="Condition" Kind="InputPin" />
-              <Pin Id="NIbnueqbFySO8gBRg7GyDU" Name="False" Kind="InputPin" />
-              <Pin Id="EGjMeT5WJM2LZie3yZIHC1" Name="True" Kind="InputPin" />
+              <Pin Id="NIbnueqbFySO8gBRg7GyDU" Name="Input" Kind="InputPin" />
+              <Pin Id="EGjMeT5WJM2LZie3yZIHC1" Name="Input 2" Kind="InputPin" />
               <Pin Id="LC5PwKRtq4uOE1HsPpqJka" Name="Output" Kind="OutputPin" />
             </Node>
             <Pad Id="KpHwhUVkiPuOcVjQ49oDIS" Comment="Color" Bounds="350,98,162,19" ShowValueBox="true" isIOBox="true" Value="1, 0.899997, 0, 1">
@@ -27612,12 +27613,12 @@
             <Node Bounds="245,138,45,19" Id="DgQ6o4I2mHzMkjym4NzBtj">
               <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="Switch" />
-                <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                <FullNameCategoryReference ID="Control" />
               </p:NodeReference>
               <Pin Id="Bnh3aIZ4QqIQMV27UgVECv" Name="Condition" Kind="InputPin" />
-              <Pin Id="T7ZpTkPo6xVN8yh87mOIn6" Name="False" Kind="InputPin" />
-              <Pin Id="NVr6JDbrk3tNx5Is6oVGE8" Name="True" Kind="InputPin" />
+              <Pin Id="T7ZpTkPo6xVN8yh87mOIn6" Name="Input" Kind="InputPin" />
+              <Pin Id="NVr6JDbrk3tNx5Is6oVGE8" Name="Input 2" Kind="InputPin" />
               <Pin Id="DIYg15eCLdeMPZ1gUNUn48" Name="Output" Kind="OutputPin" />
             </Node>
             <Pad Id="OPdAPcIVOYnNBzOT9ClG2J" Comment="" Bounds="287,111,35,15" ShowValueBox="true" isIOBox="true" Value="3.5">
