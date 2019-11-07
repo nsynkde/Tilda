@@ -1991,8 +1991,30 @@
               </p:NodeReference>
               <Pin Id="JWvelbMRqrYMuzF8AnoV5K" Name="Clips" Kind="InputPin" />
               <Pin Id="UIZ95sApX9nNnburoHLlWy" Name="TC" Kind="InputPin" />
+              <Pin Id="KfAmMytKXoDQVuQ83RqtwW" Name="LoopEvent" Kind="OutputPin" />
               <Pin Id="MUfREdYx6jSNCVBjgroO2F" Name="TC" Kind="OutputPin" />
             </Node>
+            <Pad Id="NEFgQZfTXwROikeW3Xydb6" SlotId="In5U6YEJTjNNhQ6NknVNqg" Bounds="-556,1864">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="-558,1806,79,19" Id="CJB5m5Uv0TvOp9SuupQm9k">
+              <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="ToObservable" />
+              </p:NodeReference>
+              <Pin Id="C6Vqa5qgSUoPCUXG9sbLWp" Name="Message" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="Tvtp9yk1BuCPtExvivz7qn" Name="Send" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="O0D1LyL1Q50PEyJMCx0sfs" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="H8Wl7yKyobQPxHK84Ds9jz" Bounds="-556,1910" />
           </Canvas>
           <Patch Id="GBAAXQm3LPRO0HFs2wnCYY" Name="Create" ParticipatingElements="O3RsRIWeqH9LfpXhpWWR2P">
             <Pin Id="TKSMyMwapeuOyenrqrp0bQ" Name="GUID" Kind="InputPin">
@@ -2081,6 +2103,7 @@
             <Fragment Id="Izpdy4v3MknPhi3ivzapRV" Patch="Mf1Pv4Nn3OwNKcSbN8vudU" Enabled="true" />
             <Fragment Id="Tr16MPu3y6mLloyaMKRHbU" Patch="Ebc5ztndBhYLvIlioDbCAu" Enabled="true" />
             <Fragment Id="H3yEATyads2QZFbtDHOfrt" Patch="P0sV695lKJuMHyGoFphb9G" Enabled="true" />
+            <Fragment Id="F6LM0zgzWs6LtFGNcEyIJU" Patch="OKznYYugQ8dNlNlhqZXWFc" Enabled="true" />
           </ProcessDefinition>
           <Slot Id="IRwHRbZquD7LyWIyPtXIl8" Name="TC">
             <p:TypeAnnotation>
@@ -2763,6 +2786,24 @@
           <Link Id="QOBjgFlzzYWOEfr8xYUR9M" Ids="NC0U88CIOwNMCoIDdFMS5J,JWvelbMRqrYMuzF8AnoV5K" />
           <Link Id="DSIYSjyoG6lMieB3PByaqc" Ids="S2dm2SSOxCdP93kfiaWefS,UIZ95sApX9nNnburoHLlWy" />
           <Link Id="KKIyF4BIDAuL84dUV4vkrY" Ids="MUfREdYx6jSNCVBjgroO2F,BTEaeggNIUzOD8Lxv5OsyF" />
+          <Link Id="VjEsz3h1czyOMYigZGLwyf" Ids="P1FxuH1tv79OCAhwfVuDRC,DBU0cS7KT5HME8YO7cFblC" />
+          <Slot Id="In5U6YEJTjNNhQ6NknVNqg" Name="LoopEvent">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="Observable" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="HQdGIpjfMEMOfOjIUNDDXi" Ids="O0D1LyL1Q50PEyJMCx0sfs,NEFgQZfTXwROikeW3Xydb6" />
+          <Link Id="BOh4QaH3xY1Mw6Oe7FYbGY" Ids="KfAmMytKXoDQVuQ83RqtwW,C6Vqa5qgSUoPCUXG9sbLWp" />
+          <Link Id="OM4X9tJ0qfNQbkmppXuspr" Ids="H8Wl7yKyobQPxHK84Ds9jz,RTsA9eg9Ka7OqnT11sWEX5" IsHidden="true" />
+          <Link Id="GUS9kOdiGCzOLm6PI164aq" Ids="NEFgQZfTXwROikeW3Xydb6,H8Wl7yKyobQPxHK84Ds9jz" />
+          <Patch Id="OKznYYugQ8dNlNlhqZXWFc" Name="GetLoopEvent">
+            <Pin Id="RTsA9eg9Ka7OqnT11sWEX5" Name="LoopEvent" Kind="OutputPin" />
+          </Patch>
         </Patch>
       </Node>
       <!--
@@ -7407,18 +7448,15 @@
               <ControlPoint Id="JOTbhGx0rhuQFP77G214cM" Bounds="671,1260" Alignment="Top" />
               <ControlPoint Id="MJqUCZdsaxrO5CYGZ2l44T" Bounds="671,1336" Alignment="Bottom" />
             </Node>
+            <ControlPoint Id="QPPzatjYLBUMGP8GxL5vuf" Bounds="603,1429" />
           </Canvas>
           <Patch Id="KnbPEruzMTRMBtKfDa6QhM" Name="Create" />
           <Patch Id="IKEGYZTBJ2BNn6RcxUY6ax" Name="Update">
             <Pin Id="HO1v21SC6o5OVlKbhkeSSm" Name="Clips" Kind="InputPin" Bounds="573,362" />
             <Pin Id="U7K908o8wtHPWRBVOdRsO5" Name="TC" Kind="InputPin" Bounds="1012,580" />
             <Pin Id="NzAA3uoL1mYO2nsD5wAuya" Name="TC" Kind="OutputPin" Bounds="1004,1366" />
+            <Pin Id="LdCoPZqlGlpQD7otGcsXgM" Name="LoopEvent" Kind="OutputPin" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="BERraZFT70vPshzMiETfRC">
             <Fragment Id="F9I8NoJoytGPNobdPwpO2P" Patch="KnbPEruzMTRMBtKfDa6QhM" Enabled="true" />
             <Fragment Id="Dxl4UrpHs8YN6aV9LlYI4x" Patch="IKEGYZTBJ2BNn6RcxUY6ax" Enabled="true" />
@@ -7462,6 +7500,8 @@
           <Link Id="PHPUjqSNtJxPxbVtrwx5i6" Ids="CYvGS7xagzSQMIJMcuxcko,BszZnCER4CuNgdR3BQQDen" />
           <Link Id="N71V7sE9Y45NSkBNHjh5Kz" Ids="CYvGS7xagzSQMIJMcuxcko,FZ1eb2iJfUXO0yrXrYufu7" />
           <Link Id="Bj459uGZDjlPZGl3zQFJII" Ids="NFpg2qICOaOPCbdyZN3B0y,G5gVuCcizxzNfsYLMkMZGv" />
+          <Link Id="VKrCxf8FaxQQW8oGlEgdEB" Ids="QPPzatjYLBUMGP8GxL5vuf,LdCoPZqlGlpQD7otGcsXgM" IsHidden="true" />
+          <Link Id="HT2efrbdpzjLTazlCRgFJ3" Ids="EBQB9irqGmZLZOWqzumvgm,QPPzatjYLBUMGP8GxL5vuf" />
         </Patch>
       </Node>
     </Canvas>
