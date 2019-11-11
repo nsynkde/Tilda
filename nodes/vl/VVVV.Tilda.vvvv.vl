@@ -3199,6 +3199,7 @@
                   </p:NodeReference>
                   <Pin Id="Cg5cphzW8XqMfJMk5REqIa" Name="Input" Kind="StateInputPin" />
                   <Pin Id="J8FcT25nNwXMkPzUMgCjsO" Name="TC" Kind="InputPin" />
+                  <Pin Id="O01UeSCs6q1Mu8D1PxdPoF" Name="Broadcast" Kind="InputPin" />
                   <Pin Id="Gfo9Ngws8MTPYQoK7SZSeY" Name="Output" Kind="StateOutputPin" />
                 </Node>
               </Patch>
@@ -3400,6 +3401,7 @@
                 </p:NodeReference>
                 <Pin Id="ERR2MdMVVfAMiuoaXjE0N9" Name="Input" Kind="StateInputPin" />
                 <Pin Id="FSlhRYVJRFFPLaGJpD3mFX" Name="TC" Kind="InputPin" />
+                <Pin Id="NKiOCVoJ8d7OE3fZw1fVOg" Name="Broadcast" Kind="InputPin" />
                 <Pin Id="MpMSqFKq0ulNPVAFfrZZbR" Name="Output" Kind="StateOutputPin" />
               </Node>
             </Patch>
@@ -3413,9 +3415,17 @@
           <ControlPoint Id="NsCa4JHhUwWMCi4rm74gcC" Bounds="568,937" />
           <Link Id="FrPUNiOLTB8NNquLOW3L8o" Ids="OdaoIkVCPeOM0XBI8A5Ksz,NsCa4JHhUwWMCi4rm74gcC" />
           <Link Id="BMyQlOe4Oi1MRPPc2vf9ZV" Ids="NsCa4JHhUwWMCi4rm74gcC,T7msW2tJmm5MrBSvUW4xPJ" IsHidden="true" />
+          <ControlPoint Id="ETERTPPTbZTQLAA93YFJ0Z" Bounds="627,812" />
+          <Link Id="QFbCAkXjjUQOdAer7BY7JD" Ids="OJR0L88NyL6PEnxz0PuYym,ETERTPPTbZTQLAA93YFJ0Z" IsHidden="true" />
+          <Link Id="NxpRxKXhBaVNv8QOm2uj6G" Ids="ETERTPPTbZTQLAA93YFJ0Z,NKiOCVoJ8d7OE3fZw1fVOg" />
           <Pin Id="DalaAYylIp9OWofNYsvQRx" Name="Timeline" Kind="InputPin" Bounds="1016,1028" />
           <Pin Id="I55rq9H1MckQSxx8C7hwLr" Name="DoSet" Kind="InputPin" Bounds="1105,1002" />
           <Pin Id="BO2VVYNKmF0MarIr8E5Lz8" Name="TC" Kind="InputPin" Bounds="1156,1027" />
+          <Pin Id="OJR0L88NyL6PEnxz0PuYym" Name="Broadcast" Kind="InputPin" DefaultValue="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pin>
           <Pin Id="T7msW2tJmm5MrBSvUW4xPJ" Name="TC" Kind="OutputPin" Bounds="1137,1103" />
         </Patch>
       </Node>
@@ -3453,6 +3463,7 @@
                   <Pin Id="Cz4dRgiPBL4NZ4DuOnOJw9" Name="Timeline" Kind="InputPin" />
                   <Pin Id="JTigiQTewwrQGg8kSrccpM" Name="DoSet" Kind="InputPin" />
                   <Pin Id="Q1EBpnxZ7NGM0yA3oMF6yl" Name="TC" Kind="InputPin" />
+                  <Pin Id="QEyoes8WzvON3ft2ohxFK4" Name="Broadcast" Kind="InputPin" />
                   <Pin Id="L6rJzWYVzdWMSldwaTV5lT" Name="TC" Kind="OutputPin" />
                 </Node>
               </Patch>
@@ -3491,6 +3502,7 @@
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="UUGdPzKlBtDMyMiL9UiAMs" Name="TC" Kind="InputPin" />
+                  <Pin Id="J2tO798q5w1QRjCaSLvjaS" Name="Broadcast" Kind="InputPin" />
                   <Pin Id="FVjHReem9fpOpEefGjNv3N" Name="TC" Kind="OutputPin" />
                 </Node>
               </Patch>
@@ -3568,6 +3580,7 @@
                   </p:NodeReference>
                   <Pin Id="IBVKwvQGPEeNiwWCKyI4vx" Name="Input" Kind="StateInputPin" />
                   <Pin Id="PR2UBdDel5LLE54Uk6ECaL" Name="PlayState" Kind="InputPin" />
+                  <Pin Id="IoHhjoWxYLgM4Re0duGk8i" Name="Broadcast" Kind="InputPin" />
                   <Pin Id="LGtKy74rPseOdf71NNCSm8" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Pad Id="JqehF7gpmKpO09uquzgzgp" Comment="PlayState" Bounds="1406,631,18,19" ShowValueBox="true" isIOBox="true" Value="1">
@@ -3596,6 +3609,7 @@
                   </p:NodeReference>
                   <Pin Id="EiVoC1vJLfSNAUVnFr5XNz" Name="Input" Kind="StateInputPin" />
                   <Pin Id="OAaOENM9F1oLELUvLn0BlZ" Name="PlayState" Kind="InputPin" />
+                  <Pin Id="AdDooooT0COP43VwaNpcm8" Name="Broadcast" Kind="InputPin" />
                   <Pin Id="IQrr7ZQjdPvO9YGKcRjc8U" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Pad Id="ST8IVPGlwk7M3Q5QUEMaPJ" Comment="PlayState" Bounds="1660,624,18,19" ShowValueBox="true" isIOBox="true" Value="0">
@@ -3624,6 +3638,7 @@
                   </p:NodeReference>
                   <Pin Id="Dp3Jp1XyYL6Nrd0zpavHOA" Name="Input" Kind="StateInputPin" />
                   <Pin Id="RRxwIt2oqQ6NuREqJYSKdx" Name="PlayState" Kind="InputPin" />
+                  <Pin Id="SnUJB7h3uYMLBTkNK2vtHQ" Name="Broadcast" Kind="InputPin" />
                   <Pin Id="DOwbaBoxg5bO1baCb23FLB" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="1838,621,89,19" Id="MtgXqMQKHpPLWiGaK0Gig4">
@@ -3687,7 +3702,7 @@
                   </p:NodeReference>
                   <Pin Id="DcREgDfbgQxOCduyIi56rz" Name="Input" Kind="StateInputPin" />
                   <Pin Id="EMBqXjKjlgTNOl3R353OUo" Name="PlayState" Kind="InputPin" />
-                  <Pin Id="N6wR5p2JSBRPPDuVHrdHF8" Name="Apply" Kind="InputPin" />
+                  <Pin Id="T7repUAN4hZMK0MPBRs6G7" Name="Broadcast" Kind="InputPin" />
                   <Pin Id="UXy6YEsSMzKQC93E3wcsik" Name="Output" Kind="StateOutputPin" />
                 </Node>
               </Patch>
@@ -6794,6 +6809,7 @@
             </p:NodeReference>
             <Pin Id="Gme4maZJH8VPNMaildyxH1" Name="Input" Kind="StateInputPin" />
             <Pin Id="OxezUTWiJPKN1f3TnCs6du" Name="PlayState" Kind="InputPin" />
+            <Pin Id="EkpeQz4GLp4LgKcisX66nL" Name="Broadcast" Kind="InputPin" />
             <Pin Id="RuSFA0PEmw5Nlo9MoyhuPp" Name="Apply" Kind="InputPin" />
             <Pin Id="UamS37WnHKzNae7N5R0r2E" Name="Output" Kind="StateOutputPin" />
           </Node>
@@ -6803,12 +6819,20 @@
           <ControlPoint Id="S8LDJJFCjUCNTq4CwGV5b6" Bounds="130,671" />
           <Link Id="RuQ4vqVEq9wOkQW7bRJb7z" Ids="S8LDJJFCjUCNTq4CwGV5b6,OxezUTWiJPKN1f3TnCs6du" />
           <Link Id="Hxggxc9k5YnMSEU4wehrHs" Ids="SKuSwCYvaAdMo0pQ7oiY3m,S8LDJJFCjUCNTq4CwGV5b6" IsHidden="true" />
+          <Link Id="DRmtx0ki7k5Pti6aq6miYC" Ids="SI8LNsUTmwiOOlVf8Npvkn,Gme4maZJH8VPNMaildyxH1" />
+          <ControlPoint Id="GhO205HWE8ONdLews6acpB" Bounds="273,674" />
+          <Link Id="IlHfFRhKObgP0Ht4TzIQ4A" Ids="MmPsiWBfwj9Lvf4faDvdSV,GhO205HWE8ONdLews6acpB" IsHidden="true" />
+          <Link Id="AZIG85Ez31PQb9NyuIThcD" Ids="GhO205HWE8ONdLews6acpB,EkpeQz4GLp4LgKcisX66nL" />
           <Pin Id="QKtufJmHKaOMsWBYZCO75I" Name="Timeline" Kind="InputPin" Bounds="72,1203" />
           <Pin Id="PKqljfRoIYiONztuf9fCbb" Name="Apply" Kind="InputPin" Bounds="210,671" />
           <Pin Id="SKuSwCYvaAdMo0pQ7oiY3m" Name="PlayState" Kind="InputPin" Bounds="155,673" />
+          <Pin Id="MmPsiWBfwj9Lvf4faDvdSV" Name="Broadcast" Kind="InputPin" DefaultValue="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pin>
           <Pin Id="BvEjFKzRZwUPzJISoSxvPN" Name="Playing" Kind="OutputPin" Bounds="148,1257" />
           <Pin Id="RGw8AT9ikmhN299s6lLlAP" Name="TC" Kind="OutputPin" Bounds="312,1281" />
-          <Link Id="DRmtx0ki7k5Pti6aq6miYC" Ids="SI8LNsUTmwiOOlVf8Npvkn,Gme4maZJH8VPNMaildyxH1" />
         </Patch>
       </Node>
     </Canvas>
