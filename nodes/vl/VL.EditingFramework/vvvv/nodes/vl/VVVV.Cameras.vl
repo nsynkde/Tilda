@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="T8MC1UqlraROvwGFbgPIQK" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" LanguageVersion="2019.1.0-0090-gf3b63593c6" Version="0.128" IsTrusted="true">
+<Document xmlns:p="property" Id="T8MC1UqlraROvwGFbgPIQK" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" LanguageVersion="2019.1.0-0959-g3a31ab0c51" Version="0.128">
   <NugetDependency Id="QL3woDJnBR0O8F5qk6PYrs" Location="VL.CoreLib" Version="0.36.118" />
   <NugetDependency Id="R9FrB194BAYQT60kKSW68w" Location="VL.CoreLib.VVVV" Version="0.36.118" />
   <NugetDependency Id="FKGJFwgkoxsM6pkv0K03yA" Location="VL.EditingFramework" Version="0.36.118-alpha-gd4e0de94f9" />
@@ -24,7 +24,6 @@
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="GOtY7mPPy5yM1Z753c9EY1" Name="Camera State" Kind="OutputPin" />
             <Pin Id="KgRP9OTJINYLJAoXjllY8t" Name="Initial Latitude" Kind="InputPin">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
@@ -37,6 +36,7 @@
             <Pin Id="EWx7uad864jPbQGxQoOTL4" Name="CameraControls3d" Kind="InputPin" />
             <Pin Id="Ekq47GiMCznPIDzCSLz2Tx" Name="Renderer Hovered" Kind="InputPin" />
             <Pin Id="TIBU50rnWPUMzuDAwca4No" Name="Reset" Kind="InputPin" />
+            <Pin Id="GOtY7mPPy5yM1Z753c9EY1" Name="Camera State" Kind="OutputPin" />
           </Patch>
           <Canvas Id="Gk9KT7qsoEMPD3e4FlnF4z" BordersChecked="false" CanvasType="Group">
             <Node Bounds="444,362,185,13" Id="Q2bMwHacCmmMnchvDn02xx">
@@ -112,11 +112,11 @@
             <Pin Id="Kcuat3Q2KOGPFonEgYpKO9" Name="Initial Interest" Kind="InputPin" />
             <Pin Id="T22M0rs9UCFLrT9QWSVruK" Name="Initial Zoom" Kind="InputPin" />
             <Pin Id="ReGVumoqP4INkuMyqOo5bJ" Name="Minimum Zoom" Kind="InputPin" />
-            <Pin Id="DWjH4s3fNnwMucTi00r0K8" Name="Camera State" Kind="OutputPin" />
             <Pin Id="F9F4FkvHOXGMfrJVW2q5wb" Name="Maximum Zoom" Kind="InputPin" />
             <Pin Id="C8gNhSXd7yxORSpN6CaDtY" Name="Camera Controls" Kind="InputPin" />
             <Pin Id="MlUQtC4IhrbNemdB54QuuD" Name="Renderer Hovered" Kind="InputPin" />
             <Pin Id="LrqFt3Bcwm9LvrZtKbMkeY" Name="Reset" Kind="InputPin" />
+            <Pin Id="DWjH4s3fNnwMucTi00r0K8" Name="Camera State" Kind="OutputPin" />
           </Patch>
           <Canvas Id="ETJC9J7cxfXQHut7RnccLI" BordersChecked="false" CanvasType="Group">
             <Node Bounds="430,260,125,13" Id="NrHEcvTkIlDPb8Dg6EYXfW">
@@ -448,10 +448,10 @@
           <Patch Id="AE5gRaQFSuCM4QNzKx5Onr" Name="Update">
             <Pin Id="D2NC1F1yxAiP85gZNJnKRO" Name="Camera Controls" Kind="InputPin" />
             <Pin Id="DchSkZrliaRO1iJ1n49gZn" Name="Mouse Device" Kind="InputPin" />
-            <Pin Id="MwaCJ9eKhrqOAj2VE0DxjM" Name="Camera Controls" Kind="OutputPin" />
             <Pin Id="OVOrKYaP0ulNiILIBL084C" Name="Keyboard Device" Kind="InputPin" />
             <Pin Id="Vjltd92FVv8QEbqjqzxvwS" Name="Zoom Speed" Kind="InputPin" />
             <Pin Id="OYj7DkwIsU7Pey0ovKkbgr" Name="Enabled" Kind="InputPin" />
+            <Pin Id="MwaCJ9eKhrqOAj2VE0DxjM" Name="Camera Controls" Kind="OutputPin" />
           </Patch>
           <Canvas Id="FxrwMeuknG1PggeMhP9F07" BordersChecked="false" CanvasType="Group">
             <Node Bounds="238,203,117,13" Id="SKAJcWKRukGNB7fggoTgl7">
@@ -506,10 +506,10 @@
           <Patch Id="PEgHCOQsIykOOlZ2XSDc9h" Name="Update">
             <Pin Id="PHxC8Cvw7E1LisamiS7TYD" Name="Camera Controls" Kind="InputPin" />
             <Pin Id="LZBjtLWSnzdQXLK5dbEjWp" Name="Mouse Device" Kind="InputPin" />
-            <Pin Id="S7VWSaskPqFQD3RELZGVxj" Name="Camera Controls" Kind="OutputPin" />
             <Pin Id="Jw2VdpMkDcvLsOecclteVA" Name="Keyboard Device" Kind="InputPin" />
             <Pin Id="LkgwEMBXt0iP9flejdcAwA" Name="Filter Time" Kind="InputPin" Bounds="416,172" />
             <Pin Id="HESkLPprQ5iMnPyw013BGe" Name="Enabled" Kind="InputPin" />
+            <Pin Id="S7VWSaskPqFQD3RELZGVxj" Name="Camera Controls" Kind="OutputPin" />
           </Patch>
           <Canvas Id="NAo59d9XKgiPeqwtaLyiJH" CanvasType="Group">
             <Node Bounds="220,240,124,13" Id="FJMWcndYK1XNloTxtnL5nT">
@@ -564,9 +564,9 @@
           <Patch Id="VGZPQKdrGnCNcLj68JqEq1" Name="Update">
             <Pin Id="MkJehVz7FqKLDbTYqlmrkn" Name="Camera Controls" Kind="InputPin" />
             <Pin Id="OCN60Er6C5VNp2IyZDqFCT" Name="Mouse Device" Kind="InputPin" />
-            <Pin Id="BwSFKgay4WJNrAzHPN6PY3" Name="Camera Controls" Kind="OutputPin" />
             <Pin Id="VsVsgIWGTb6PmoAJEER1wR" Name="Keyboard Device" Kind="InputPin" />
             <Pin Id="E8Qum5XIotxNHSbXbtSOhM" Name="Enabled" Kind="InputPin" />
+            <Pin Id="BwSFKgay4WJNrAzHPN6PY3" Name="Camera Controls" Kind="OutputPin" />
           </Patch>
           <Canvas Id="AAxdooCXKqMMKMoFsb08dj" BordersChecked="false" CanvasType="Group">
             <Node Bounds="267,263,147,13" Id="BwBZIeZp2iyNHSTCHv8cND">
