@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0574-g531e8dd97e" Version="0.128">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0959-g3a31ab0c51" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -119,12 +119,12 @@
             <Node Bounds="2047,-476,45,13" Id="Dk7IbHws5s9M5Atug5GRkr">
               <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="Switch" />
-                <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                <FullNameCategoryReference ID="Control" />
               </p:NodeReference>
               <Pin Id="DkD0mGhbZDvL3E4DEpCMlx" Name="Condition" Kind="InputPin" />
-              <Pin Id="G6fIyg7MAKKOMOjDjJZ9WR" Name="False" Kind="InputPin" />
-              <Pin Id="LfqPsaFhkZhOpxFFtlnCNY" Name="True" Kind="InputPin" DefaultValue="Default">
+              <Pin Id="G6fIyg7MAKKOMOjDjJZ9WR" Name="Input" Kind="InputPin" />
+              <Pin Id="LfqPsaFhkZhOpxFFtlnCNY" Name="Input 2" Kind="InputPin" DefaultValue="Default">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
@@ -1176,9 +1176,11 @@
               </p:NodeReference>
               <Pin Id="NQmHEny0agFP1xEESJcGEg" Name="Input" Kind="StateInputPin" />
               <Pin Id="QUXuZWsDrSfONA3x8XglkA" Name="DrawOffset" Kind="OutputPin" />
+              <Pin Id="PSEwziNz9TIOTYH0XljtWS" Name="DrawOffsetY" Kind="OutputPin" />
               <Pin Id="NVrTv4LA3nLNRXrkMsiYcJ" Name="FrameOffset" Kind="OutputPin" />
               <Pin Id="B4o76dbUNfdLOP0swV8fOr" Name="MousePositionInFrames" Kind="OutputPin" />
               <Pin Id="ORa6cucCXQjMCG0gVUWnq0" Name="Zoom" Kind="OutputPin" />
+              <Pin Id="EWSrmtIMeeNLf1HRdYRnGY" Name="ZoomY" Kind="OutputPin" />
               <Pin Id="EaNYusBvn6INhw3AVRgKvL" Name="RendererSize" Kind="OutputPin" />
               <Pin Id="Pr3OHJxYIA7N160jSaLsS7" Name="DraggingView" Kind="OutputPin" />
             </Node>
