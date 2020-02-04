@@ -1351,8 +1351,8 @@
             <Node Bounds="261,1701,236,26" Id="GN2HSiTGa6WOamE5zFu4B4">
               <p:NodeReference LastCategoryFullName="VL.Tilda.IClip" LastSymbolSource="VVVV.Tilda.Core.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="Create" />
                 <CategoryReference Kind="InterfaceTypeFlag" Name="IClip" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="Create (deprecated)" />
               </p:NodeReference>
               <Pin Id="Sr3vHASif3tOK7ZcDUugbx" Name="Input" Kind="InputPin" />
               <Pin Id="InSiRhaqhy7L5XABeOu1CP" Name="Name" Kind="InputPin" />
@@ -3676,8 +3676,6 @@
                     <Choice Kind="OperationCallFlag" Name="Create" />
                     <CategoryReference Kind="RecordType" Name="ControlClip" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
-                  <Pin Id="DVfdHuHcJ16MTpRCAexFOn" Name="Node Context" Kind="InputPin" />
-                  <Pin Id="Nk3MQNyrm3xORv3cqu57zi" Name="GUID" Kind="InputPin" />
                   <Pin Id="VixFAvUHaNYMnJrVuXWNW0" Name="Name" Kind="InputPin" />
                   <Pin Id="DW9mSNHrunsM08aDPnqXrN" Name="Y" Kind="InputPin" />
                   <Pin Id="LXGs8qyGucZPxObKEyAVAM" Name="Startframe" Kind="InputPin" />
