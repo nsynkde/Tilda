@@ -29,7 +29,6 @@
             <Pad Id="DTFZV8Ks8YCPKoeGI9ZzhF" SlotId="QVJTUA6tY6lMthcdXK3xbZ" Bounds="1256,364">
               <p:ValueBoxSettings />
             </Pad>
-            <Pad Id="VF7rdtcEsw2Lsj5N2YJhcg" Comment="Automata" Bounds="1301,869,484,1248" ShowValueBox="true" isIOBox="true" />
             <Node Bounds="864,567,100,98" Id="HrvWhHQpbLcP0jXF8nGIC6">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -76,11 +75,8 @@
                   </p:NodeReference>
                   <Pin Id="OaUaUQymmwaPvOI7xhD5Pj" Name="Input" Kind="StateInputPin" />
                   <Pin Id="RQrK3adp33PPUQtOEmy3BS" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="UCjYIhE7z6rOTqZZsFWXf1" Name="Automata" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="UWGKpf1Hz96MeRks95pL1n" Bounds="1303,695" Alignment="Bottom" />
-              <ControlPoint Id="DF6wiDdmqkiNOCeAyN5vBw" Bounds="1302,572" Alignment="Top" />
             </Node>
             <Node Bounds="1344,566,612,184" Id="E4VOJt6QL3CPS3LRuepnE1">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -116,11 +112,6 @@
                 <Pad Id="OYOBW5UlERhOTme9UuoAuM" Comment="Out" Bounds="1582,703,35,35" ShowValueBox="true" isIOBox="true" />
                 <Pad Id="TbKMnHiqMWVLH4B42yeovg" Comment="ElapsedTime" Bounds="1695,703,38,15" ShowValueBox="true" isIOBox="true" />
                 <Pad Id="RWUhPzv28AyPhW0ca2EEFo" Comment="FadeInOut" Bounds="1840,703,35,15" ShowValueBox="true" isIOBox="true" />
-                <Pad Id="Htjt36JIFMAO1C7qXRZGyk" Comment="State" Bounds="1498,594,71,15" ShowValueBox="true" isIOBox="true" Value="Menu">
-                  <p:TypeAnnotation LastCategoryFullName="VVVV.Tilda" LastSymbolSource="VVVV.Tilda.AutomataUI.vl">
-                    <Choice Kind="TypeFlag" Name="StatesEnum" />
-                  </p:TypeAnnotation>
-                </Pad>
               </Patch>
             </Node>
             <Node Bounds="1991,435,40,19" Id="KVPyCy44x8ANeddr5lIwIk">
@@ -168,11 +159,6 @@
                   <Pin Id="GfM7Ojil15ILPjLBK631zG" Name="Transition" Kind="InputPin" />
                   <Pin Id="ItCBNmfPfFZQRjwqIavpgP" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Pad Id="JP4dDk1G6znO3wL6etigva" Comment="Transition" Bounds="2162,609,80,15" ShowValueBox="true" isIOBox="true" Value="toMenu">
-                  <p:TypeAnnotation LastCategoryFullName="VVVV.Tilda" LastSymbolSource="VVVV.Tilda.AutomataUI.vl">
-                    <Choice Kind="TypeFlag" Name="TransitionsEnum" />
-                  </p:TypeAnnotation>
-                </Pad>
               </Patch>
             </Node>
             <Pad Id="SmjIxvwGQ5PMfwO3TEWO4w" Comment="Trigger" Bounds="2116,490,35,35" ShowValueBox="true" isIOBox="true" Value="False">
@@ -310,9 +296,6 @@
           <Link Id="TK9sAgkT5TmPL7UPejtuAW" Ids="DTFZV8Ks8YCPKoeGI9ZzhF,OaUaUQymmwaPvOI7xhD5Pj" />
           <Link Id="GlIKIA1FDleO6nhG5ORhzT" Ids="DTFZV8Ks8YCPKoeGI9ZzhF,DL85HtsSo5IMowvmpUXssG" />
           <Link Id="U1PcDrWIYzMM04qBEyTnRb" Ids="NV7mu92nWDuNnxvO03oUrm,C9ylXJrOCHuOBLrz6YpfRC" />
-          <Link Id="LLOip3VRH5vPSSz0dwSx5x" Ids="DF6wiDdmqkiNOCeAyN5vBw,UWGKpf1Hz96MeRks95pL1n" IsFeedback="true" />
-          <Link Id="KBg1MqTlV4gOGLEbzNo6vh" Ids="UCjYIhE7z6rOTqZZsFWXf1,UWGKpf1Hz96MeRks95pL1n" />
-          <Link Id="CPqX2xCdWolPx6z8NrhRm6" Ids="UWGKpf1Hz96MeRks95pL1n,VF7rdtcEsw2Lsj5N2YJhcg" />
           <Link Id="DoB3fTkxIS6OBynuWCdgym" Ids="DTFZV8Ks8YCPKoeGI9ZzhF,TnD4jpRhldJMuRkOm0iOXB" />
           <Link Id="AY35relxUfqQa4crzO1dka" Ids="DTFZV8Ks8YCPKoeGI9ZzhF,K1T11NaP46QPH6twTib0TE" />
           <Link Id="UWhU1wAviYkL1fCIXJWNhF" Ids="F7lXmU2R1yFM6rv7xpf3E1,NXcJejeO2BoPjsybzorQ2y" />
@@ -334,8 +317,6 @@
           <Link Id="FTKKXgL8odUNHZm1LYq2lw" Ids="U1Kd6Y1LXpMNpTVcypqgLr,ApJwBIRZUF1PNJJMnZ1EDe" />
           <Link Id="K3DDhaQ1f1gMjcl62DPsBc" Ids="IO5NY8eXEU4LXNbwW4YXxF,LxkyQ3keJ4eO2UHNL7yC27" />
           <Link Id="V3DyhpXS1zcNNo4wkprJBV" Ids="DTFZV8Ks8YCPKoeGI9ZzhF,ClyrZV6uD5XL04WEGFjGhI" />
-          <Link Id="LPaUnNl5DS4MRMxccMuv64" Ids="Htjt36JIFMAO1C7qXRZGyk,Kp3ymEZNHEPLxmhS6on59s" />
-          <Link Id="P3PUud1REa9NqjsCZo1qF9" Ids="JP4dDk1G6znO3wL6etigva,GfM7Ojil15ILPjLBK631zG" />
           <Link Id="LzPc2EGgPfxOo5xYH1iRHL" Ids="HcSD1HPe431O6xVvoQL2qw,JxKOn0h6u6KQXcFg02Jokl" />
           <Link Id="UhhPiBfHEjoLqpD8h1CDJw" Ids="DTFZV8Ks8YCPKoeGI9ZzhF,UxaYMKk7xqqMt220J7ZivJ" />
           <Link Id="LikBVx45NLRPzNTnoZZXwz" Ids="HSQRu47K0ElMOpwbQBkboS,G9f7ZZ4GW1uMHT5ftDtiDk" />
