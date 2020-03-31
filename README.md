@@ -20,6 +20,14 @@ Other clip types are built on top of these control clips. Currently there are au
 
 Refer to the help patches to see how to work with the getter nodes.
 
+##Installation
+
+After you clone or download a repo on it's first start you will most likely see that the Renderer (Tilda) node is red. It is because of missing Elementa dependency.
+
+In order to fix that you need to open Renderer (Tilda) by right click. Left click on gray square in the top left corner -> All Documents -> VVVV.Tilda.GUI.vl (should be red) -> Dependences -> right click on Elementa (also red) -> Install
+
+After that it should work fine. Maybe you need to restart vvvv
+
 ## Using Tilda
 
 ### Tilda was built and tested on vvvv_50alpha38.2 (14/05/2019) and won't work in previous versions!
