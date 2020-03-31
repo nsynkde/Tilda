@@ -20,7 +20,7 @@ Other clip types are built on top of these control clips. Currently there are au
 
 Refer to the help patches to see how to work with the getter nodes.
 
-##Installation
+## Installation
 
 After you clone or download a repo on it's first start you will most likely see that the Renderer (Tilda) node is red. It is because of missing Elementa dependency.
 
