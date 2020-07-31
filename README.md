@@ -30,7 +30,7 @@ After that it should work fine. Maybe you need to restart vvvv
 
 ## Using Tilda
 
-### Tilda was built and tested on vvvv_50alpha38.2 (14/05/2019) and won't work in previous versions!
+### Tilda was built and tested on vvvv_beta_40.1-0006_preview_x64 (28/07/2020) and won't work in previous versions!
 
 Navigating the timeline should be self explanatory. 
 
